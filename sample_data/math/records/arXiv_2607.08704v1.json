@@ -1,0 +1,17 @@
+{
+  "abstract": "Let \\[ F=\\mathbb{F}_q(\\!(t^{-1})\\!),\\qquad G=\\mathrm{SL}_2(F),\\qquad \u0393=\\mathrm{SL}_2(\\mathbb{F}_q[t]),\\qquad X=\u0393\\backslash G, \\] and let $K=\\mathrm{SL}_2(\\mathcal{O})$, where $\\mathcal{O}=\\mathbb{F}_q[\\![t^{-1}]\\!]$. We study right $K$-spherical averages along the upper unipotent subgroup, the horospherical subgroup associated with the standard cusp, on the Nagao lattice quotient. The basic observation is that the $K$-spherical projection converts two natural dynamical families - expanding translates of compact unipotent orbits and cusp-adapted truncations of dense unipotent orbits - into the same rooted descendant problem on the Bruhat--Tits tree. In the even bipartite sector the limiting height law is the explicit probability measure \\[ \u03c1^{\\mathrm{ev}}(0)=\\frac{q-1}{q},\\qquad \u03c1^{\\mathrm{ev}}(2m)=(q^2-1)q^{-2m-1}\\qquad (m\\ge 1). \\] We prove an exact discrepancy formula: in the backward state the error is a pure top-shell term minus a missing tail, while in the forward state the error is a first-turn weighted sum of backward errors. These formulas give quantitative $K$-spherical equidistribution for expanding translates of compact $U$-orbits and for dense-orbit truncations. For compactly supported $K$-spherical observables in the expanding translates of compact orbits, the discrepancy is eventually exactly zero. In the dense case the rate is controlled by the continued-fraction expansion of the boundary point attached to the orbit.",
+  "authors": [
+    "Sanghoon Kwon"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.08704v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08704v1",
+  "published": "2026-07-09T17:10:33+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "$K$-spherical horospherical averages on the Nagao quotient: tree combinatorics and exact discrepancy",
+  "updated": "2026-07-09T17:10:33+00:00"
+}

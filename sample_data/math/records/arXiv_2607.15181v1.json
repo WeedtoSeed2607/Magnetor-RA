@@ -1,0 +1,17 @@
+{
+  "abstract": "We study the optimal constants in higher-order Hardy inequalities on the lattice $\\mathbb{Z}^d$. For each fixed $\\ell \\in \\mathbb{N}$, we prove that the optimal constant $\\mathcal{C}_\\text{opt}^\\ell(d)$ in $$ \\sum_{n \\in \\mathbb{Z}^d} |\u0394^{\\ell/2}u(n)|^2 \\geq \\mathcal{C}_\\text{opt}^\\ell(d)\\sum_{n \\in \\mathbb{Z}^d} \\frac{|u(n)|^2}{|n|^{2\\ell}}. $$ satisfies $$ \\lim_{d\\rightarrow\\infty}\\frac{\\mathcal{C}_\\text{opt}^\\ell(d)}{d^\\ell} =2^\\ell. $$ The proof is based on a Fourier reduction to a family of singular Hardy inequalities on the flat torus, involving the weight \\[ \u03c9(x)^{-2\\ell}, \\qquad \u03c9(x)^2=\\sum_{j=1}^d\\sin^2\\left(\\frac{x_j}{2}\\right), \\] and zero average condition on admissible functions. We establish these torus inequalities by combining a ground state representation formula with a weighted integrated Bochner identity in an iterative scheme. The method yields explicit constants, defined recursively in the order $\\ell$, and requires only the classical unweighted Poincar\u00e9 inequality on the torus. The appearance of the limiting constant $2^\\ell$ is particularly striking, as it suggests that, in the high dimensional regime, the optimizers are localized near the unit sphere $\\{n\\in\\mathbb{Z}^d:|n|=1\\}$ in $\\mathbb{Z}^d$.",
+  "authors": [
+    "Shubham Gupta"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.15181v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15181v1",
+  "published": "2026-07-16T16:34:52+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Sharp asymptotics for higher-order Hardy constants on lattices",
+  "updated": "2026-07-16T16:34:52+00:00"
+}

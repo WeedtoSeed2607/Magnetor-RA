@@ -1,0 +1,18 @@
+{
+  "abstract": "Dysphagia poses a significant burden on global health, necessitating innovative neurorehabilitation tools. Brain-Computer Interfaces (BCIs) based on motor imagery offer a promising avenue, yet the neural differentiation between distinct swallowing paradigms remains under-explored. This study investigates the electrophysiological characteristics of imagined swallowing to establish a robust, subject-independent framework for neural decoding. We recorded EEG signals from 30 participants across two experimental paradigms: imagined saliva and imagined water swallowing. A rigorous analytical pipeline was implemented, featuring artifact removal, multidimensional feature extraction, and fold-wise statistical feature selection utilizing False Discovery Rate (FDR) correction and effect size criteria. To ensure the clinical translatability of the findings, a Leave-One-Subject-Out (LOSO) cross-validation scheme and permutation testing were employed for classification and statistical validation. Our findings demonstrate that EEG-based features can distinguish rest from imagined swallowing with near-ceiling performance (~99% accuracy), regardless of the paradigm. While the discrimination between imagined saliva and water yielded moderate accuracy (~63%), the results reveal critical insights into the inherent neural similarities of these motor imagery tasks. This study provides a statistically validated, subject-independent benchmark for decoding swallowing intentions. The high classification performance underlines the feasibility of EEG-based BCIs for dysphagia rehabilitation. While established as a proof-of-concept in healthy individuals, this framework paves the way for future neurofeedback applications in clinical populations.",
+  "authors": [
+    "G\u00f6k\u00e7e Aslan S",
+    "Y\u0131lmaz B"
+  ],
+  "doi": "10.1371/journal.pone.0353570",
+  "domain": "neuro",
+  "external_id": "PMC13367685",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-01-01T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Subject-independent EEG classification of imagined swallowing: Impact of saliva vs. water paradigms.",
+  "updated": null
+}

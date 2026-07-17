@@ -1,0 +1,18 @@
+{
+  "abstract": "We study the $L^p$ Neumann problem for the Stokes system on bounded Lipschitz domains in $\\mathbb R^n$ with $n\\ge 2$. Our main contribution is to introduce a nonlinear gradient quantity -- namely, the linear gradient weighted by a suitable power of the pair $(\\nabla u,\u03c6)$ -- in place of the standard linear gradient used in previous work by Geng and Shen (2025). This new approach allows us to establish a global second-order estimate, which in turn yields an improved reverse H\u00f6lder inequality and extends the known range of solvability for convex domains, particularly improving the upper bound for $n\\ge 3$. \\medskip \\noindent \\quad\\ Beyond the convex setting, our method also applies to semi-convex domains. Moreover, for more general Lipschitz domains, we prove solvability under a smallness condition on the second fundamental form of the boundary, assuming the boundary has second-order derivatives in the weak-type Lorentz spaces $W^2L^{n-1,\\infty}$ for $n\\ge 3$, or $W^2L^{1,\\infty}\\log L$ for $n=2$. In particular, our results cover all $W^{2,q}$ domains with $q>n-1$.",
+  "authors": [
+    "Qianyun Miao",
+    "Fa Peng"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.15042v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15042v1",
+  "published": "2026-07-16T14:21:34+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "The $L^p$ Neumann problem for the Stokes system in nonsmooth domains",
+  "updated": "2026-07-16T14:21:34+00:00"
+}

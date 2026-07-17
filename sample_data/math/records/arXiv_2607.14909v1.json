@@ -1,0 +1,19 @@
+{
+  "abstract": "Given $s\\in (0,1)$ and a bounded Lipschitz domain $\u03a9\\subset \\mathbb{R}^{n}$, we establish a quantitative Dahlberg theory for the $s$-harmonic measure of $\u03a9$, $\u03c9_s^x$. In the nonlocal setting, the natural reference measure is an integral weight $\u03c3_{s}$ in $\u03a9^{c}$ that behaves like $(1-s)\\text{dist}(\\cdot, \\partial \u03a9)^{-s}$ close to the boundary. Our main result is a scale-invariant reverse-H\u00f6lder estimate for the density $d\u03c9_{s}^{x}/d\u03c3_{s}$ on boundary-centered balls. As a consequence, we obtain $L^2(\u03a9^c,\u03c3_s)$-solvability of the exterior Dirichlet problem, with estimates for a nonlocal non-tangential maximal function and uniqueness in the natural distributional class. A weighted Gehring argument improves the reverse-H\u00f6lder exponent beyond $2$ and consequently yields $L^{q}$-solvability for a range of exponents extending strictly below $2$. Our results apply to general symmetric stable operators comparable to the fractional Laplacian. Moreover, the proofs are compatible with the limit $s\\to 1^-$ and thus yield the corresponding results for the Laplacian in the nonlocal-to-local limit. The main new step is to convert a fractional Pohozaev identity for the Green function into uniform square estimates on distance level sets of a Lipschitz boundary. As applications, we derive optimal Sobolev regularity estimates for the homogeneous weighted Dirichlet problem and for the inhomogeneous Poisson problem with zero exterior data.",
+  "authors": [
+    "Roberto Colombo",
+    "Xavier Fern\u00e1ndez-Real",
+    "Xavier Ros-Oton"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.14909v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14909v1",
+  "published": "2026-07-16T12:29:05+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "The fractional Laplacian in Lipschitz domains: Dahlberg's Theorem and $L^{2}$-solvability",
+  "updated": "2026-07-16T12:29:05+00:00"
+}

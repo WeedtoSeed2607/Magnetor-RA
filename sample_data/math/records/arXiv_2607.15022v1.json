@@ -1,0 +1,19 @@
+{
+  "abstract": "This study applied a mathematical tool from Topological Data Analysis (TDA), called the Mapper algorithm, to gene expression data from more than 1,000 TCGA-BRCA patients to identify hidden molecular patterns associated with survival. Patients located near high-risk regions of the network showed significantly poorer survival, and highly proliferative gene expression patterns were associated with worse outcomes overall, although treatment narrowed this survival gap across proliferation groups. The analysis further uncovered patients whose survival outcomes were inconsistent with their expected clinical behavior, including a subgroup of Basal-like patients with unexpectedly favorable outcomes linked to a distinct, more treatment-responsive gene signature, revealing molecular programs missed by traditional classification methods. Validation through training and testing on unseen patients confirmed that topology-derived risk groups remained significantly associated with survival after adjusting for age, tumor stage, and treatment, demonstrating that the geometric structure of gene expression data contains clinically meaningful prognostic information beyond traditional breast cancer classification methods.",
+  "authors": [
+    "Emmanuel Kibisi",
+    "Olakunle Abawonse",
+    "Donald Woukeng"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.15022v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15022v1",
+  "published": "2026-07-16T14:09:56+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Topology-Informed Survival Analysis of Breast Cancer Patients Using the Mapper Algorithm",
+  "updated": "2026-07-16T14:09:56+00:00"
+}

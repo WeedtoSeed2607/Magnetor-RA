@@ -1,0 +1,17 @@
+{
+  "abstract": "The Balister--Gy\u0151ri--Schelp (BGS) conjecture asks whether every zero-sum list of $2^{s-1}$ nonzero vectors in $\\mathbb{F}_2^s$ is the prescribed-difference profile of a perfect matching. The conjecture remains open in general, whereas the classical Hall hyperplane case is solved when all prescribed differences cross between two affine copies of a hyperplane. We isolate the smallest mixed case beyond Hall: exactly two prescribed differences are internal. Although only two requests have changed type, the complete Hall permutation is replaced by a prescribed-difference bijection between two punctured copies of the hyperplane, with two unknown deleted vertices on each side. We call this the two-hole problem. We develop a new combinatorial method for prescribed-difference matchings, based on counting and the character structure of the binary vector space. Unlike the known Hall-type methods, which construct a matching through a sequence of local algorithmic choices, our approach proves existence through a global noncancellation phenomenon. This loss of algorithmic structure is compensated by a different advantage: the method can retain global boundary information that local exchanges do not control. As a first application, it gives a new proof of the binary Hall theorem, and it then yields a complete solution of the two-hole problem with no multiplicity assumption. We also give direct constructive proofs for symmetric even-multiplicity two-hole and four-hole families. More broadly, the new technique provides a framework for studying further subfamilies of the BGS problem by measuring how far their matching structure departs from the Hall case.",
+  "authors": [
+    "Aryeh Lev Zabokritskiy"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.08630v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08630v1",
+  "published": "2026-07-09T16:00:50+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Perfect Matchings with Prescribed Differences Beyond Hall: The Two-Hole Problem",
+  "updated": "2026-07-09T16:00:50+00:00"
+}

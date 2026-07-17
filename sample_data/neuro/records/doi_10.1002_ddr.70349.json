@@ -1,0 +1,28 @@
+{
+  "abstract": "ABSTRACT A focused library of 19 donepezil\u2010linked chalcones (DLCs) was efficiently synthesised through microwave\u2010assisted Claisen\u2010Schmidt condensation and subsequently profiled for their inhibitory activities against cholinesterases (AChE and BuChE) as well as monoamine oxidases (MAO\u2010A and MAO\u2010B). The DLCs exhibited potent and selective inhibition of MAO\u2010B, with IC 50 values ranging from 0.019 to 18.98 \u03bcM, whereas activity toward MAO\u2010A was moderate to low (IC 50 = 0.81 to > 20 \u03bcM). Among the tested DLCs, DLC9 and DLC14 showed the highest MAO\u2010B inhibitory potential with IC 50 values of 0.054 \u00b1 0.004 \u03bcM and 0.019 \u00b1 0.0015 \u03bcM, respectively, and high selectivity indexes (> 370 and > 1052, respectively), whereas DLC12 displayed notable MAO\u2010A inhibition (IC 50 = 0.81 \u00b1 0.035 \u03bcM). Kinetic and reversibility studies revealed that the selected two lead DLCs ( DLC9 and DLC14 ) acted as mixed\u2010type reversible MAO\u2010B inhibitors, with K \u1d62 values of 20.0 \u00b1 2.83 nM and 10.0 \u00b1 2.82 nM, respectively. Furthermore, IC 50 values of AChE inhibitory activities ranged from 5.40 to > 40 \u00b5M, whereas those of BuChE inhibitory activity range from 4.30 to > 40 \u00b5M. DLC6 showed the best AChE inhibitory potential with IC 50 values of 5.40 \u00b1 0.29 \u00b5M, while DLC13 revealed effective BuChE inhibitory potential with an IC 50 value of 4.30 \u00b1 0.89 \u00b5M. Molecular docking studies performed on hMAO\u2010A and hMAO\u2010B revealed that DLC14 establishes favourable \u03c0\u2013\u03c0 stacking within the aromatic cage of hMAO\u2010B and maintains complementary hydrophobic contacts along the substrate cavity, whereas DLC6 lacks this key interaction due to steric interference of the ethoxy substituent. Among the three most potent MAO\u2010B inhibitors ( DLC2 , DLC9 , and DLC14 ), DLC2 exhibited the most favourable microsomal stability with the longest half\u2010life and lowest intrinsic clearance, whereas DLC14 showed comparable metabolic profiles in rat and human liver microsomes. Experimental BBB permeability assays were hindered by compound\u2010membrane interactions; however, in silico predictions indicated satisfactory oral bioavailability and brain penetration for all three candidates. In the MPTP \u2010induced rat model of parkinsonism, the selective MAO\u2010B inhibitor DLC14 and the non\u2010selective inhibitor DLC6 significantly improved motor deficits and behavioural impairments across open field, pole, bar, rotarod, and forced swim tests, with progressive improvements observed up to Day 28. Notably, DLC14 consistently outperformed DLC6 and demonstrated an efficacy profile comparable to that of Selegiline, highlighting its therapeutic potential as an antiparkinsonian agent. These results indicate that DLC14 is potent and selective MAO\u2010B inhibitor and could serve as promising candidate for the treatment of neurodegenerative disorders, such as Parkinson's disease.",
+  "authors": [
+    "Kirac\u2010Aydin A",
+    "Pandey BP",
+    "Mohanty S",
+    "Mondal R",
+    "Biswas A",
+    "Pattnaik AK",
+    "Mondal S",
+    "Basavanakatti VN",
+    "Bayrak N",
+    "Jayaprakash V",
+    "Kim H",
+    "TuYuN AF"
+  ],
+  "doi": "10.1002/ddr.70349",
+  "domain": "neuro",
+  "external_id": "PMC13372239",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-08-01T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Discovery of a Potent and Selective MAO\u2010B Inhibitor From a Donepezil\u2010Linked Chalcone Library With Promising Antiparkinsonian Activity.",
+  "updated": null
+}

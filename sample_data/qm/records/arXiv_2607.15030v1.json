@@ -1,0 +1,23 @@
+{
+  "abstract": "The current leading approach to the variational optimization of projected entangled-pair states (PEPS) is based on automatic differentiation, which allows for a convenient evaluation of the energy gradient with respect to the local variational degrees of freedom. However, evaluating the energy gradient not only remains a major computational bottleneck of the optimization procedure, but also suffers from frequent numerical instabilities. In this work, we adopt recent advances in implicit differentiation techniques to address these challenges in PEPS optimization. By reformulating the core step of the gradient computation in terms of a single characteristic equation for the contraction environment, we reduce the cost of the gradient computation and improve its scaling with the problem size. By choosing a suitable parametrization of this characteristic equation based on the intrinsic symmetries of the contraction environment, we can directly remove instabilities from the global gradient computation that would otherwise arise from the derivatives of subroutines of the contraction algorithm. Finally, we demonstrate how this approach drastically simplifies the practical implementation of stable gradient-based PEPS optimization.",
+  "authors": [
+    "Lander Burgelman",
+    "Anna Francuz",
+    "Paul Brehmer",
+    "Lukas Devos",
+    "Jutho Haegeman",
+    "Frank Verstraete",
+    "Bram Vanhecke"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.15030v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15030v1",
+  "published": "2026-07-16T14:13:33+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Implicit differentiation of tensor network algorithms",
+  "updated": "2026-07-16T14:13:33+00:00"
+}

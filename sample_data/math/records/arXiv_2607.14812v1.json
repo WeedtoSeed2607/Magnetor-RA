@@ -1,0 +1,17 @@
+{
+  "abstract": "We study the worst-case false discovery rate of the Benjamini-Hochberg procedure applied to two-sided Gaussian p-values when the correlation matrix is otherwise unrestricted. Dobriban [2026] shows that BH does not always control the FDR at its nominal level. An analogous folklore conjecture is that BH controls the FDR up to a universal multiplicative constant. We prove that this conjecture is false. In particular, we construct Gaussian models for which the inflation factor FDR(BH_q)/q diverges as q tends to 0. More precisely, for all sufficiently small q, the supremum over the number of hypotheses, mean vector, and correlation matrix is at least cq\\sqrt{log(1/q)} for a universal constant c > 0. Finally, for a broad class of common-factor Gaussian models with arbitrary means and loadings, we prove the matching-order upper bound FDR(BH_q) = O(q\\sqrt{log(1/q)}), and hence the lower bound is sharp in order for this class.",
+  "authors": [
+    "Lihua Lei"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.14812v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14812v1",
+  "published": "2026-07-16T10:30:15+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "No Universal Multiplicative FDR Bound for the Benjamini-Hochberg Procedure with Correlated Two-Sided Gaussian Tests",
+  "updated": "2026-07-16T10:30:15+00:00"
+}

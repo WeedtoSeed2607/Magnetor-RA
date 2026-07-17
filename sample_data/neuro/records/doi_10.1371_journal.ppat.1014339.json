@@ -1,0 +1,30 @@
+{
+  "abstract": "The role of glycoprotein G (gG-2) of herpes simplex virus type 2 (HSV-2) in viral pathogenesis remains poorly understood. gG-2 is cleaved into a secreted form (sgG-2) and a membrane-associated form (mgG-2), but the in vivo function of mgG-2 and the contribution of its glycosylation to immune responses have not been defined. Here, we provide a comprehensive characterization of the N- and O-linked glycosylation profile of mgG-2 and investigate its functional relevance for viral spread and vaccine-induced immunity. Using a mouse genital infection model, we show that an mgG-2-deficient HSV-2 mutant replicates in vaginal epithelial cells but is severely impaired in dissemination to dorsal root ganglia and the central nervous system, identifying mgG-2 as a key determinant of neuronal spread in vivo. In parallel, immunization with recombinant mgG-2 elicited strong humoral and Th1-polarized CD4 + T-cell responses and conferred protection against genital HSV-2 challenge. Importantly, glycosylation of mgG-2 was required for optimal immunogenicity and protection, as deglycosylated variants induced reduced CD4 + T-cell responses and allowed increased viral spread to neuronal tissues. Mechanistically, our findings suggest that glycosylation of mgG-2 modulates antigen recognition and shapes adaptive immune responses that limit viral dissemination after vaccination. Together, these results demonstrate that mgG-2 plays a critical role in HSV-2 pathogenesis and provide a strong rationale for targeting glycosylated mgG-2 in the development of both prophylactic and therapeutic vaccines against HSV-2.",
+  "authors": [
+    "K\u00f6nighofer E",
+    "Gustafsson C",
+    "Gudmundsdotter L",
+    "Mirgorodskaya E",
+    "Nilsson J",
+    "Ekblad M",
+    "Adamiak B",
+    "Jennische E",
+    "Lange S",
+    "Trybala E",
+    "G\u00f6rander S",
+    "Bergstr\u00f6m T",
+    "Liljeqvist J\u00c5",
+    "Nord\u00e9n R"
+  ],
+  "doi": "10.1371/journal.ppat.1014339",
+  "domain": "neuro",
+  "external_id": "PMC13349171",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-01T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Glycoprotein G enables HSV-2 neuroinvasion and provides protection as a glycosylated vaccine antigen.",
+  "updated": null
+}

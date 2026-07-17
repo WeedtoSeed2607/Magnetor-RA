@@ -1,0 +1,23 @@
+{
+  "abstract": "Quantum annealing is often limited by population trapped in local minima many spin flips from the solution. We introduce a mathematical framework to understand the connection between energy and Hamming distance in optimization problems. Using this, we build ZZ-catalysts from ground-state patterns of small frustration-free subproblems that make configurations far from the solution less energetically competitive. On sparse problems they multiply the near-solution probability at short sweeps, with gains persisting on fully-connected models and tunable via subproblem choice.",
+  "authors": [
+    "Andr\u00e9s N. C\u00e1liz",
+    "Carlos Ramon-Escandell",
+    "Finnley Paolella",
+    "Josep Bosch",
+    "Jan Nogu\u00e9",
+    "Arnau Riera",
+    "Jordi Riu"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.14063v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14063v1",
+  "published": "2026-07-15T17:35:56+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Reshaping quantum annealing landscapes with diagonal catalysts",
+  "updated": "2026-07-15T17:35:56+00:00"
+}

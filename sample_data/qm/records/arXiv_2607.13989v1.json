@@ -1,0 +1,24 @@
+{
+  "abstract": "Driven by recent discoveries regarding the quantum Mpemba effect, the anomalous relaxation dynamics of open quantum systems have garnered significant attention. While expediting thermalization to equilibrium has been extensively studied, dynamically accelerating the convergence toward nonequilibrium steady states remains a formidable challenge. In this article, we find a transient engineered nonreciprocal dissipative channel can provide a shortcut that accelerates convergence to the target reciprocal nonequilibrium steady state for the considered two-mode model and initial states. Using interacting bosonic modes, we demonstrate that the temporal activation of a nonreciprocal channel efficiently suppresses prolonged inter-mode energy oscillations, enforcing a rapid, unidirectional thermal dump into the environment. Counterintuitively, we find that this relaxation speedup is robust and independent of the direction of the nonreciprocity. Our results provide a powerful thermodynamic technique for rapid state preparation and cooling in continuous-variable quantum systems, particularly critical for low-temperature quantum information processing.",
+  "authors": [
+    "Xingyu Zhang",
+    "Yihan Ma",
+    "Yue Liu",
+    "Niaz Ali Khan",
+    "Chenlong Huang",
+    "Yuguo Su",
+    "Junyan Luo",
+    "Dahai He"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.13989v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.13989v1",
+  "published": "2026-07-15T16:17:41+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Nonreciprocal Relaxation Acceleration",
+  "updated": "2026-07-15T16:17:41+00:00"
+}

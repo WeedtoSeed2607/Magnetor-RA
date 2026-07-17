@@ -1,0 +1,18 @@
+{
+  "abstract": "We employ a mathematically equivalent form of the GKLS master equation to arrive at an exact theoretical description of a two-level system strongly coupled to the environment. The framework, while intuitive, shedding light on the physics of the problem, and agreeing with existing results, such as thermalisation to a non-canonical state, is based around three parameters that are unknown outside of the weak coupling regime -- the analogue to the detailed balance relation, and two coupling strength constants. As a way forward, we propose a feasible experimental protocol based on a solid-state electronic quantum dot device, through which the fundamental parameters of the problem can be revealed, which would further the fundamental understanding of strong coupling.",
+  "authors": [
+    "Eugenia Pyurbeeva",
+    "Ronnie Kosloff"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.15089v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15089v1",
+  "published": "2026-07-16T15:00:00+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "An experimental pathway towards an exact theory of strong coupling",
+  "updated": "2026-07-16T15:00:00+00:00"
+}

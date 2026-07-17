@@ -1,0 +1,23 @@
+{
+  "abstract": "Introduction Non-pharmacological methods including training and low-intensity transcranial electrical stimulation (tES) have demonstrated potential in delaying cognitive decline with aging. This study aims to investigate the efficacy of combining repeated tES targeting the left dorsolateral prefrontal cortex with task training on cognitive function in the healthy elderly. Methods In this triple-blind, randomized, sham-controlled study, fifty-five participants received ten 20-min sessions of concurrent task training and stimulation, including anodal transcranial direct current stimulation (tDCS + T), theta transcranial alternating current stimulation (tACS + T), or sham tES (sham + T). The training consisted of cognitive N-back tasks and dynamic balance exercises delivered across sessions. Attention Network Test (ANT) and the Stroop Color\u2013Word Test (SCWT) were administered before and after the intervention, with a four-week follow-up. Group \u00d7 Time effects were analyzed using linear or generalized linear mixed-effects models, adjusting for age, sex, and baseline cognitive status. Result Improved overall reaction time (RT) and executive network efficiency were observed in all groups after intervention in ANT. Participants in the sham + T group showed greater improvements with long-term efficacy across all cue-related conditions, and significantly faster RT than tDCS + T group under the double-cue condition at follow-up was observed (\u03c7 2 (2) = 6.60, p = 0.03, 95% CI [\u2212 0.11, \u2212 0.02], p = 0.002). All groups demonstrated enhanced SCWT performance post-intervention. A significantly stronger negative correlation between orienting network efficiency score and congruent SCWT performance was observed at the follow-up compared to the baseline in the sham + T group (t = 2.686, p = 0.024). Combining tDCS or tACS with task training did not yield superior benefits over sham stimulation. Conclusion The observed cognitive improvements likely resulted from training. The absence of add-on effects of tES suggested a potential cancellation between the stimulation-induced modulation and training-driven neural activation induced by task training. Improvements in SCWT performance appear to rely less on orienting or executive engagement after intervention, indicating a shift toward more automatized resource-efficient processing. Trial registration : German Clinical Trials Register, DRKS00031042, Registered June 16, 2023. Supplementary Information The online version contains supplementary material available at 10.1186/s12984-026-02077-5.",
+  "authors": [
+    "Jiang Y",
+    "Guo X",
+    "Wistuba I",
+    "Lesani A",
+    "Chakalov I",
+    "Ramasawmy P",
+    "Antal A"
+  ],
+  "doi": "10.1186/s12984-026-02077-5",
+  "domain": "neuro",
+  "external_id": "PMC13371604",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-14T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Training-induced cognitive coupling emerges under sham but not active transcranial electrical stimulation in older adults: a triple-blind, randomized, sham-controlled study.",
+  "updated": null
+}

@@ -1,0 +1,21 @@
+{
+  "abstract": "Progress in mathematics often requires more than a certificate of truth: it requires proof structures that are transparent, checkable, and reusable. Automated systems can increasingly certify that a result is true; what they typically return, however, is a dense certificate rather than an interpretable, reusable proof structure. Recent work on performance estimation problems has shown that performance bounds and complexity analyses of first-order optimization methods can be discovered by searching over a structured space of Lagrangian dual certificates. We cast the search for simpler proof structures as a second-stage optimization problem over these certificates. Starting from dual certificates, we develop post-processing procedures using tools from sparse optimization and statistical learning. We measure complexity through features such as active hypotheses and residual structure, and introduce methods based on exhaustive sparsification, weighted $\\ell_1$-type heuristics, and semidefinite programming (SDP) formulations for discovering simple proofs and intermediate lemmas. Examples on gradient descent, proximal methods, and fast-gradient methods show that these procedures can autonomously prune redundant inequalities, reveal structured proof patterns, and, in the proximal setting, recover Lyapunov functions as intermediate lemmas that lead to simple, streamlined proofs. By distilling dense machine-generated certificates into compact proof structures, this workflow acts as a pre-processing step for the final proof, reducing the complexity that must be managed during human interpretation, reuse, and formalization.",
+  "authors": [
+    "Daniel Berg Thomsen",
+    "Manu Upadhyaya",
+    "Baptiste Goujaud",
+    "Aymeric Dieuleveut",
+    "Adrien Taylor"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.08753v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08753v1",
+  "published": "2026-07-09T17:51:07+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Finding Simple Proofs for First-Order Optimization",
+  "updated": "2026-07-09T17:51:07+00:00"
+}

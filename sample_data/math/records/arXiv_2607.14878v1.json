@@ -1,0 +1,19 @@
+{
+  "abstract": "A coned polytope framework (CPF) is the bar-joint framework obtained from the 1-skeleton of a convex polytope by coning over some interior point. It was recently shown that CPFs are rigid, though the exact order of rigidity remained open. In this paper we introduce the Wachspress stress and use it to show that CPFs are prestress stable, in particular, second-order rigid. To this end, we resolve the stress-flex conjecture in the case of the Wachspress stress by identifying its dual formulation as a corollary of a vector-valued Schl\u00e4fli-type formula introduced by Schlenker and Souam. We give a new and purely discrete-geometric proof of this generalized Schl\u00e4fli formula.",
+  "authors": [
+    "Eleni Pachyli",
+    "Roman Prosanov",
+    "Martin Winter"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.14878v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14878v1",
+  "published": "2026-07-16T11:50:31+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Second-order rigidity of coned polytope frameworks and the stress-flex conjecture from a vector-valued Schl\u00e4fli formula",
+  "updated": "2026-07-16T11:50:31+00:00"
+}

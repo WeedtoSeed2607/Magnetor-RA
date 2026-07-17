@@ -1,0 +1,19 @@
+{
+  "abstract": "We establish operational limits on the broadcasting of genuine multipartite entanglement (GME) in quantum networks. Using a distributed protocol in which each of N parties locally implements optimal 1 $\\to$ 2 cloning via beam-splitter interactions, we derive exact expressions for the broadcast fidelity of Greenberger-Horne-Zeilinger (GHZ), W states, and Cluster states in a limited setting. We show that the fidelity decays exponentially with system size as [c(R)]$^N$, providing a quantitative expression of multipartite entanglement monogamy in the broadcasting setting, and that both state families share a universal normalisation factor arising from independent post-selection probabilities. Most significantly, we prove a no-go result for simultaneous GME certification: for all reflectivities and all system sizes, the two broadcast copies cannot be simultaneously certified as genuinely multipartite entangled within the standard framework of fidelity-based witnesses. We further check this behaviour for three- and four-party cluster states, finding consistent results that support the generality of the no-go beyond the GHZ and W families. This obstruction arises from the redistribution of multipartite coherence, which both reduces the achievable fidelity and increases the corresponding certification threshold. Our results reveal a fundamental trade-off between the broadcastability of multipartite entanglement and its operational certifiability, and delineate intrinsic limits on entanglement distribution in quantum networks.",
+  "authors": [
+    "Pritam Roy",
+    "William John Munro",
+    "Shashank Gupta"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.14864v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14864v1",
+  "published": "2026-07-16T11:37:05+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Limits on Broadcasting Genuine Multipartite Entanglement in Quantum Networks",
+  "updated": "2026-07-16T11:37:05+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "abstract": "Establishing the global-in-time smoothness of solutions to the 3D Navier-Stokes equations (NSEs) with large initial data remains a long-standing open problem. In this paper, we prove that the 3D NSEs driven by a suitably chosen transport noise -- a physically motivated stochastic perturbation -- admit global-in-time smooth solutions with high probability. This regularizing effect holds uniformly for initial data in arbitrarily large balls of subcritical function spaces with positive smoothness.",
+  "authors": [
+    "Antonio Agresti"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.15140v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15140v1",
+  "published": "2026-07-16T15:44:17+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Absence of blow-up in the 3D Navier-Stokes equations with transport noise",
+  "updated": "2026-07-16T15:44:17+00:00"
+}

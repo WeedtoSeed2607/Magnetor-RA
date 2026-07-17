@@ -1,0 +1,23 @@
+{
+  "abstract": "Quantum key distribution (QKD) brings the promise of communication with information-theoretic security but is limited in practice due to its susceptibility to noise, losses, and device imperfections. To address these challenges, we propose a robust high-dimensional (HD) one-sided device-independent QKD (1sDI-QKD) protocol and present a proof-of-principle experimental implementation using photons entangled in the transverse-spatial degree-of-freedom. We develop a systematic security analysis of HD 1sDI-QKD protocols, leveraging quantum steering to certify security, and evaluate achievable secret key rates for different measurement configurations and system dimensions using reverse reconciliation. Our analysis shows that increasing the dimension enhances robustness against both noise and loss. We then demonstrate the key experimental building blocks required for implementing the protocol: (a) a high-quality source of high-dimensional photonic entanglement, and (b) a fully programmable, high-dimensional multi-outcome measurement device operating in up to dimension 11. Using these components, we obtain positive key rates for all investigated dimensions under the fair-sampling assumption, with the highest key rates achieved for dimension d=7. Finally, we discuss the steps required for a practical, loophole-free implementation of 1sDI-QKD in realistic regimes of loss and noise.",
+  "authors": [
+    "Monika Mothsara",
+    "Suraj Goel",
+    "Bohnishikha Ghosh",
+    "Vatshal Srivastav",
+    "Will McCutcheon",
+    "Mehul Malik",
+    "Gl\u00e1ucia Murta"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.08709v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08709v1",
+  "published": "2026-07-09T17:18:46+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Robust One-Sided Device-Independent Quantum Key Distribution via High-Dimensional Steering",
+  "updated": "2026-07-09T17:18:46+00:00"
+}

@@ -1,0 +1,22 @@
+{
+  "abstract": "We consider adaptive finite element methods for symmetric second-order linear elliptic PDEs, where the adaptive algorithm steers the local mesh refinement as well as an iterative algebraic solver. Under abstract assumptions on the underlying a-posteriori error estimator and the solver, we prove that the usual adaptive algorithm leads to unconditional full R-linear convergence, independently of the user-chosen adaptivity parameters. For sufficiently small parameters, this guarantees optimal complexity in the sense that the decay rate of an appropriate quasi-error is optimal with respect to the overall computation cost (and hence time) measured in terms of the usual nonlinear approximation classes. Unlike available results in the literature, the main focus is on the analytical understanding of non-residual estimators like averaging-based estimators as proposed by Zienkiewicz and Zhu or estimators based on equilibrated fluxes.",
+  "authors": [
+    "Philipp Bringmann",
+    "Aleksandar Dadic",
+    "Dario Ferloni",
+    "Gregor Gantner",
+    "Dirk Praetorius",
+    "Julian Streitberger"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.14820v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14820v1",
+  "published": "2026-07-16T10:39:21+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Optimal complexity of adaptive FEM for second-order linear elliptic PDEs driven by non-residual estimators, Part I: Symmetric PDEs",
+  "updated": "2026-07-16T10:39:21+00:00"
+}

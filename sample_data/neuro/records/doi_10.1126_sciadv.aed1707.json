@@ -1,0 +1,33 @@
+{
+  "abstract": "The basal ganglia are characterized by somatotopic representation and are organized in parallel, functionally segregated corticostriatal circuits, but the impact of Parkinson\u2019s disease (PD) on this architecture is unknown. We mapped task-evoked dopamine release using [ 11 C]raclopride positron emission tomography/magnetic resonance in 13 early PD and 15 healthy control (HC) subjects during the performance of motor, cognitive, and reward tasks. In PD, motor tasks elicited decreased relative dopamine release in dorsal putamen but increased in less affected caudate and ventral striatum compared to HC. HC showed distinct dopaminergic topographies for upper versus lower limb activation; this somatotopy was absent in PD. HC exhibited segregated patterns of dopamine release across all tasks, but both anatomical and functional segregation were lost in PD. Compensatory effects of altered dopamine release topography may help to maintain function in patients with PD, but loss of segregation may contribute to challenges in discrete selection of movement and in multitasking.",
+  "authors": [
+    "Su D",
+    "Hanania JU",
+    "Pavel A",
+    "Bevington C",
+    "Fu JF",
+    "Matarazzo M",
+    "Cheng JCK",
+    "McKenzie J",
+    "Shahinfard E",
+    "Vafai N",
+    "Dhaliwal S",
+    "Miao Q",
+    "Seamans J",
+    "English C",
+    "Chen E",
+    "Sossi V",
+    "Stoessl AJ"
+  ],
+  "doi": "10.1126/sciadv.aed1707",
+  "domain": "neuro",
+  "external_id": "PMC13371900",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-17T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Functional segregation in Parkinson\u2019s disease.",
+  "updated": null
+}

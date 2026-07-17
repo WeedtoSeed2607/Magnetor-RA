@@ -1,0 +1,17 @@
+{
+  "abstract": "The Schur superalgebra $S(m,n;d)$ contains $S_{m}\\times S_{n}$ as a multiplicative subgroup. We consider the problem of determining the restriction coefficients when an irreducible supermodule of $S(m,n;d)$ is restricted to $S_{m}\\times S_{n}$. We introduce the notion of superplethysm and provide a superplethystic variant of Littlewood's formula for these restriction coefficients. As an application, we provide several unimodality results for bipartite superpartitions.",
+  "authors": [
+    "Tirtharaj Basu"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.14939v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14939v1",
+  "published": "2026-07-16T12:51:05+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "A superplethystic formula for superrestriction coefficients",
+  "updated": "2026-07-16T12:51:05+00:00"
+}

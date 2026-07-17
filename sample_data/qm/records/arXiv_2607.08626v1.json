@@ -1,0 +1,19 @@
+{
+  "abstract": "Quantum state purification aims to recover higher-fidelity quantum states from multiple noisy copies and is a fundamental primitive for quantum information processing. Magic resources enable operations beyond classically simulable dynamics and are central to universal fault-tolerant quantum computation. Recent no-go results show that classically simulable operations cannot achieve a nontrivial universal fidelity gain. This motivates a quantitative theory of the magic required for purification at prescribed success probability and target fidelity. For universal purification with two input copies, we prove an exact linear mana law in odd dimensions and a two-sided linear robustness law for multi-qubit systems, which becomes exact for a single qubit. We also identify an explicit successful purification map that makes the tradeoff transparent. These results establish universal purification as a task obeying a quantitative magic-fidelity law and link magic resources to error mitigation and fault-tolerant quantum information processing.",
+  "authors": [
+    "Keming He",
+    "Enji Xiong",
+    "Xin Wang"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.08626v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08626v1",
+  "published": "2026-07-09T15:57:19+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "A Nonstabilizerness Resource Law for Universal Quantum State Purification",
+  "updated": "2026-07-09T15:57:19+00:00"
+}

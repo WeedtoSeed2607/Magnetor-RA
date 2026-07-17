@@ -1,0 +1,17 @@
+{
+  "abstract": "In this paper, we introduce nonstandard versions of multistep multistage methods. While proving the convergence of these schemes, we also define nonstandard general linear methods. We show that the nonstandard methods can attain the same order as their standard counterparts while preserving certain qualitative properties (e.g., boundedness) for all positive step sizes. These results are also demonstrated by some numerical experiments.",
+  "authors": [
+    "Balint M. Takacs"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.08694v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08694v1",
+  "published": "2026-07-09T16:52:22+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Some properties of high-order nonstandard multistep multistage methods",
+  "updated": "2026-07-09T16:52:22+00:00"
+}

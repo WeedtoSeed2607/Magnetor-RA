@@ -1,0 +1,26 @@
+{
+  "abstract": "Quantum key distribution (QKD) can provide secret keys with security rooted in quantum mechanics, but operation alongside high-capacity classical traffic remains limited by the excess-noise budget of weak quantum states in conventional solid-core fiber. Here, we combine ultralow-loss anti-resonant hollow-core fiber with residual-carrier-assisted discrete-modulation continuous-variable QKD (DM-CV-QKD) to address both propagation-induced coexistence noise and low-SNR phase recovery. Over a 24.3-km hollow-core link with 3.3-dB end-to-end loss, a dual-polarization 15-Gbaud DM-CV-QKD channel achieves an average asymptotic secret-key rate (SKR) of 153.22 Mb/s and a finite-size SKR of 149.99 Mb/s, while 39 coherent wavelength-division-multiplexed channels deliver an aggregate data rate of 7.6 Tb/s and a net data rate of 7.2 Tb/s. The system can even sustain a positive SKR under a high classical launch power of up to 15 dBm, without an optical bandpass filter (BPF). Finite-size analysis against collective attacks further yields a projected positive secret-key rate at a 100-km-equivalent condition. These results show that an anti-resonant hollow-core fiber, combined with carrier-assisted phase recovery, can greatly extend the operating regime of shared-fiber quantum-secured coherent links, pointing to a promising approach for integrating high-rate CV-QKD with high-capacity optical networks.",
+  "authors": [
+    "Xitao Ji",
+    "Siyu Chen",
+    "Peng Li",
+    "Mingming Zhang",
+    "Yilun Chen",
+    "Jun Gao",
+    "Rui Lin",
+    "Bacco Davide",
+    "Siqi Yan",
+    "Ming Tang"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.14704v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14704v1",
+  "published": "2026-07-16T08:04:38+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "High-rate continuous-variable quantum key distribution coexisting with Tb/s coherent classical transmission in hollow-core fiber",
+  "updated": "2026-07-16T08:04:38+00:00"
+}

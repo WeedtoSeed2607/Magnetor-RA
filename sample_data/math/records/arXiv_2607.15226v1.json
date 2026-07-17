@@ -1,0 +1,17 @@
+{
+  "abstract": "In this paper, we establish an analogue of the K\u0151vari-S\u00f3s-Tur\u00e1n Theorem for $\\operatorname{GF}(q)$-representable matroids. For $2\\leq s\\leq t$, we show that if $M$ is a rank-$n$ simple $\\operatorname{GF}(q)$-representable matroid having no $M(K_{s,t})$-restriction, then \\[ |E(M)|=O_{q,s,t}\\bigl(q^{(1-1/s)n}\\bigr). \\] In particular, we prove that the maximum number of elements in a simple rank-$n$ binary matroid with no $M(K_{2,t})$-restriction is $\u0398_{t}(2^{n/2})$ where the lower bound is obtained using binary Sidon sets.",
+  "authors": [
+    "Wayne Ge"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.15226v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15226v1",
+  "published": "2026-07-16T17:29:00+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "The K\u0151vari-S\u00f3s-Tur\u00e1n theorem for $\\operatorname{GF}(q)$-representable matroids",
+  "updated": "2026-07-16T17:29:00+00:00"
+}

@@ -1,0 +1,21 @@
+{
+  "abstract": "Predicting early cognitive decline is important for timely interventions. However, existing approaches for early detection remain limited by cost, scalability, or concerns about their validity. This study evaluated the potential of lower-extremity force control capacities, a largely unexplored area, to improve prediction of cognitive status in older adults with and without Mild Cognitive Impairment (MCI). MCI refers to an early stage of cognitive decline that does not meet criteria for dementia. 224 participants aged 80\u201391 years completed a foot-pedal tracking task in which they continuously adjusted the force applied to a pedal to match a visual target curve presented at two different frequencies. The task was designed to capture ongoing visuomotor monitoring and fine motor control. Task performance was quantified using measures of tracking accuracy (Root Mean Square Error, RMSE) and signal complexity (Sample Entropy, SampEn). These reflect how precisely participants controlled force and how regular their output was over time. Participants with MCI showed lower accuracy and lower complexity than cognitively healthy individuals. Adding RMSE and SampEn to a baseline prediction model improved model performance, with the largest gains observed at the higher curve frequency: RMSE contributed 13% new predictive information, SampEn 17%, and both variables together 21%. These gains indicate that foot-controlled force measures added meaningful information beyond established predictors, although confirmation in independent samples is needed. Foot-controlled force tasks may therefore provide a quick-to-administer, objective complement for early detection of cognitive decline.",
+  "authors": [
+    "Koska D",
+    "Germano A",
+    "Schmidt D",
+    "Harsch AK",
+    "Maiwald C"
+  ],
+  "doi": "10.1038/s41598-026-62094-1",
+  "domain": "neuro",
+  "external_id": "PMC13372807",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-15T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Quantifying the added value of foot-controlled force variables in predicting mild cognitive impairment.",
+  "updated": null
+}

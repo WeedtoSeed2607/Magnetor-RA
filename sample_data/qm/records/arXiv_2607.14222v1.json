@@ -1,0 +1,18 @@
+{
+  "abstract": "Magic and entanglement are independent quantum resources, yet their exact relation in many-body dynamics has remained elusive. We uncover two structural principles. First, at any stabilizer state, the curvature of the second stabilizer R\u00e9nyi entropy under an arbitrary Hermitian generator equals the quantum Fisher information up to a fixed normalization, creating a bidirectional bridge between computational and metrological resources. Second, for commuting Ising evolution on any forest graph, a Clifford pruning circuit yields the full stabilizer-R\u00e9nyi family at arbitrary size and in any spatial embedding, thereby furnishing a graph-theoretic construction of families with finite magic density and vanishing entanglement density in the thermodynamic limit. We solve two paradigmatic one-dimensional realizations central to quantum simulation -- an Ising quench and a kicked Floquet chain -- exactly for arbitrary system size and directly in the thermodynamic limit, revealing finite magic density with vanishing entanglement density, distinct magic and entanglement revival periods, and Clifford points with zero magic but finite bipartite entanglement. The same tangent geometry fixes initial growth, perturbative revival lifting, and stability of thermodynamic magic minima. Large-scale Pauli-basis matrix-product-state calculations verify all predictions, and the tangent bridge yields a concrete protocol for detecting magic through established quantum-Fisher-information measurements.",
+  "authors": [
+    "Rishabh Jha",
+    "Karun Gadge"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.14222v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14222v1",
+  "published": "2026-07-15T18:00:28+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Magic Without Entanglement: Exact Revivals and Their Fisher Information Origin",
+  "updated": "2026-07-15T18:00:28+00:00"
+}

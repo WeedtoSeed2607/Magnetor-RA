@@ -1,0 +1,20 @@
+{
+  "abstract": "The free-particle and square-well potentials are two of the most emblematic problems in quantum mechanics, illustrating essential concepts such as matter waves, energy quantization, and bound states. It is therefore natural to consider how the free-particle solutions emerge from the square well as the width approaches infinity. In this work, we present a systematic procedure to demonstrate this transition by applying a Fourier transform to the wave equation.",
+  "authors": [
+    "Matheus D. Moro",
+    "Thiago T. Tsutsui",
+    "Antonio S. M. de Castro",
+    "Fabiano M. Andrade"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.13872v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.13872v1",
+  "published": "2026-07-15T14:19:50+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Continuous limit of the square well problem in quantum mechanics",
+  "updated": "2026-07-15T14:19:50+00:00"
+}

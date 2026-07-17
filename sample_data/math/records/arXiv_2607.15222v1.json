@@ -1,0 +1,18 @@
+{
+  "abstract": "We characterize bounded operators that are compact (respectively, Schatten-class) perturbations of scalar multiples of partial isometries with finite-dimensional kernel. Our characterizations are formulated in terms of the essential spectrum of $T^*T$, absolutely norm attaining operators, and the Moore-Penrose inverse. In particular, we show that an operator $T$ is a Schatten-class perturbation of a partial isometry with finite-dimensional kernel if and only if $\u03c3_{\\mathrm{ess}}(T^*T)$ is a singleton and the discrete spectrum of $T^*T$ satisfies a corresponding $\\ell^p$-summability condition. We further obtain equivalent criteria involving the compactness (or Schatten-class membership) of $\u03b1I-T^*T$ and $\u03b1T^\\dagger-T^*$. As applications, we establish characterizations of compact and Schatten-class perturbations of isometries, describe the corresponding behavior of Moore--Penrose inverses, and derive factorization results for closed-range operators. In particular, we provide a new Moore--Penrose inverse proof of a theorem of \u015eerban and Turcu and obtain an explicit formula for the factorizing operator.",
+  "authors": [
+    "Neeru Bala",
+    "Ramesh Golla"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.15222v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15222v1",
+  "published": "2026-07-16T17:27:23+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Spectral Characterizations of Schatten-class perturbations of Partial isometries",
+  "updated": "2026-07-16T17:27:23+00:00"
+}

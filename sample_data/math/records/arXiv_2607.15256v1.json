@@ -1,0 +1,18 @@
+{
+  "abstract": "Computer-assisted proofs of self-similar singularity formation for fluid equations often rely on numerically constructed approximate profiles. One effective approach to establishing stability of perturbations around a numerically constructed profile is to perform weighted energy estimates with singular weights near the singularity. However, the weighted norms require exact local vanishing conditions that are not automatically preserved by the equations nor the numerical construction. In this paper, we review an analytic low-rank correction method first developed in [ChenHou2023a,ChenHou2023b] to overcome this difficulty. The numerical step determines coefficients, rigorous bounds, and low-order defect modes in explicit global basis representations, while the required vanishing conditions are enforced analytically through low-rank corrections derived from Taylor expansions of the relevant quantities represented in a smooth basis. For completeness, we briefly review the singularly weighted estimates and a quantitative finite-rank perturbation method in the 2D Boussinesq / 3D Euler stability argument, where singular weights and the required vanishing order arise. Against this background, we formulate the local correction principle in a simplified setting, explain the correction of the residual error in numerical constructions of approximate space-time solutions and the stream function, and discuss its broader applicability to computer-assisted stability analysis for nonlocal PDEs.",
+  "authors": [
+    "Jiajie Chen",
+    "Thomas Y. Hou"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.15256v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15256v1",
+  "published": "2026-07-16T17:51:23+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Analytic finite-rank corrections for singularly weighted estimates in a computer-assisted proof of 3D Euler singularity",
+  "updated": "2026-07-16T17:51:23+00:00"
+}

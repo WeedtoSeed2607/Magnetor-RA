@@ -1,0 +1,33 @@
+{
+  "abstract": "Stretchable thermoelectric devices hold significant promise for thermal haptic interfaces. However, their development has been constrained by limited cooling capacity arising from inadequate thermal dissipation, restricting operation to low-power conditions. In addition, single stimulus units fail to evoke complex multimodal haptic perceptions. This work introduces a three-dimensional manufacturing strategy with embedded microfluidic architectures, which markedly enhance thermal flux and endow the resulting thermoelectric device array (TEDA) with superior cooling performance surpassing conventional designs. Integration of the TEDA with temperature sensors and control circuitry enables a wearable closed-loop platform capable of rapid and precise skin temperature regulation. Furthermore, diverse temperature modulation strategies, including variations in range, frequency, spatial distribution, and coordinated multi-device operation, are demonstrated to stimulate subcutaneous neural networks and elicit multimodal tactile sensations such as pressure, pain, and sliding. These advances establish an effective route for fabricating high-performance wearable thermoelectric devices and elucidating the mechanistic basis of sensory illusion regulation, underscoring their significance for next-generation haptic interfaces.",
+  "authors": [
+    "Cheng D",
+    "Huang Z",
+    "Chen T",
+    "Xie H",
+    "Yang L",
+    "Wang Y",
+    "Ji J",
+    "Liu J",
+    "Jiang Y",
+    "Wu T",
+    "Yan T",
+    "Chen M",
+    "Li H",
+    "Jiang B",
+    "Pan T",
+    "Gao M",
+    "Lin Y"
+  ],
+  "doi": "10.1038/s41378-026-01384-0",
+  "domain": "neuro",
+  "external_id": "PMC13369431",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-14T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Microfluidic-enabled stretchable thermoelectric device array for multimodal haptic interfaces.",
+  "updated": null
+}

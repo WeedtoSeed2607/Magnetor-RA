@@ -1,0 +1,22 @@
+{
+  "abstract": "Recent evidence suggests that ideomotor effect anticipations rely on transitions rather than end-states. That is, humans generate motor actions not by anticipating a desired end-state, but by anticipating the change from the current situation to that desired end-state. Here, we tested whether ideomotor learning mechanisms mirror this sensitivity to transitions. To this end, we conducted three preregistered experiments employing a prime-probe design. In the prime, an action produced a visual effect. In the subsequent probe, the stimulus always either matched or mismatched this previously produced end-state. Crucially, the probe stimulus either involved the same transition of producing a novel stimulus (onset stimuli) or, alternatively, it involved only the same end-state, but a different transition resulting in that end-state (offset stimuli). Evidence for action-effect binding as a precursor of ideomotor learning emerged only when the probe transition repeated the prime transition. This suggests that ideomotor learning is mainly sensitive to transitions rather than end-states. Supplementary Information The online version contains supplementary material available at 10.3758/s13423-026-02966-9.",
+  "authors": [
+    "Schaaf M",
+    "Tonn S",
+    "Kunde W",
+    "Schwarz KA",
+    "Foerster A",
+    "Pfister R"
+  ],
+  "doi": "10.3758/s13423-026-02966-9",
+  "domain": "neuro",
+  "external_id": "PMC13372912",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-15T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Short-term action-effect bindings encode perceptual transitions rather than perceptual end-states.",
+  "updated": null
+}

@@ -1,0 +1,18 @@
+{
+  "abstract": "We prove that the recognition problem for algebraic matroids is undecidable. Explicitly, this means that there is no algorithm that takes as input a finite set $S$ and a function $r\\colon\\mathcal{P}(S) \\to \\mathbb{Z}_{\\ge 0}$ (where $\\mathcal{P}(S)$ is the power set) and decides whether there exists a pair of fields $F \\subset K$, and a function $f\\colon S \\to K$, such that for all $A \\subseteq S$: $\\mathrm{tr.deg}_{K/F}(f(A)) = r(A)$. This problem is known to be decidable if the characteristic of the fields involved is constrained to be zero. We prove that it is undecidable if the characteristic is either left unspecified (in which case a realization over any characteristic is accepted) or fixed to be a prime $p$. The proof relies on Hrushovski--Zilber's Group Configuration Theorem and on the work of Evans and Hrushovski on \"Projective Planes in Algebraically Closed Fields\". We relate two different such projective planes, and eventually construct a reduction from the solvability of Diophantine equations over $\\mathbb{F}_p(x)$ ($p$ prime) to algebraicity of matroids. Solvability of Diophantine equations over $\\mathbb{F}_p(x)$ was proved to be undecidable by Pheidas for all $p > 2$, and later by Videla for $p=2$. A central part of our proof is a variant of the so-called Field Configuration Theorem.",
+  "authors": [
+    "Tobias Boege",
+    "Geva Yashfe"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.14907v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14907v1",
+  "published": "2026-07-16T12:25:38+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Recognition of algebraic matroids is undecidable",
+  "updated": "2026-07-16T12:25:38+00:00"
+}

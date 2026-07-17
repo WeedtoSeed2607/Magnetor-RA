@@ -1,0 +1,19 @@
+{
+  "abstract": "To numerically integrate a function, one may resort to Quasi-Monte Carlo estimators, that average integrand values at pseudo-random well-distributed uniform sampling locations. Better uniformity improves the worst-case integration-error bound. A standard measure of uniformity is given by an integer $t$ value, where $t=0$ yields the best uniformity. Producing sequences of samples with bounded $t$ values can be achieved with Sobol' recursive construction, that uses coefficients of irreducible polynomials. While $b$-dimensional sequences with $t=0$ can be obtained by taking $b$ polynomials of degree $1$ over the Galois Field $\\mathrm{GF}(b)$, we show conditions that guarantee $t=0$ for specific higher degree polynomials. In particular, we relate the Sobol' construction to tensorized powers of Pascal matrices when the chosen polynomials only differ by a constant and exhibit simple conditions to guarantee $t=0$ in this case. We then focus on Artin-Schreier irreducible polynomials, in the form $p_i(x) = x^b - x + c_i$, where $i \\in \\{1, \\dots, b-1\\}$ and $b$ is prime, and we make explicit conditions that always guarantees $t=0$ in $b-1$ dimensions. Combining $b$-dimensional Sobol' of degree $1$ and our $(b-1)$-dimensional Artin-Schreier sequence of degree $b$, we provide a fast greedy procedure that optimizes the $(2b-1)$-dimensional combined $t$ value, while guaranteeing $t=0$ projection in subspaces.",
+  "authors": [
+    "Nicolas Bonneel",
+    "David Coeurjolly",
+    "Victor Ostromoukhov"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.15141v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15141v1",
+  "published": "2026-07-16T15:44:36+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Perfectly equidistributed Quasi-Monte Carlo sequences from Artin-Schreier polynomials",
+  "updated": "2026-07-16T15:44:36+00:00"
+}

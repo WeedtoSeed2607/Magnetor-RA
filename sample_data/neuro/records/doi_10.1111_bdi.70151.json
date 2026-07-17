@@ -1,0 +1,32 @@
+{
+  "abstract": "ABSTRACT Objectives Lithium is recommended as the first\u2010line maintenance treatment for older adults with bipolar disorder (OABD). However, age\u2010related reduction in renal clearance, heightened sensitivity to adverse effects, and drug interactions increase the risk of toxicity and necessitate lower therapeutic serum levels in this population. Despite expert consensus supporting age\u2010adjusted targets, most clinical laboratories still do not report age\u2010specific therapeutic ranges. We conducted a systematic review on recommended serum lithium levels in OABD to update evidence supporting age\u2010specific therapeutic ranges for safe and effective lithium management. Methods We searched Medline, PsycINFO, Embase, and Cochrane Central Register of Controlled Trials since 2017 for studies analyzing lithium serum levels in individuals with bipolar disorder \u2265 60 years. Two reviewers independently screened titles, abstracts, and full texts. We used the National Institutes of Health Quality Assessment Tool to assess methodological quality. Results Fourteen studies, including 8808 older adults using lithium, met inclusion criteria. All studies were observational with cross\u2010sectional or cohort designs. Mean or median lithium levels ranged from 0.47\u20130.67 mmol/L. Levels of 0.82\u20131.00 mmol/L were associated with increased side effects or early toxicity signs, while levels of 1.20\u20131.25 mmol/L were overtly toxic. Impaired renal function and concomitant use of diuretics, ACE inhibitors, and NSAIDs required closer monitoring for toxicity. Conclusions These findings are consistent with age\u2010adjusted lithium therapeutic targets in older adults and provide additional observational support for clinical laboratories to adopt age\u2010specific therapeutic ranges. Clinicians should consider individualized monitoring accounting for age\u2010related physiological changes and medication interactions to ensure safer and effective lithium therapy.",
+  "authors": [
+    "Nunes PV",
+    "Olagunju AT",
+    "Zittema D",
+    "Dhyani A",
+    "Fu L",
+    "Chen P",
+    "Montejo L",
+    "Fries GR",
+    "Kessing LV",
+    "Vieta E",
+    "Forlenza OV",
+    "Dols A",
+    "Blumberg HP",
+    "Eyler LT",
+    "Shulman KI",
+    "the International Society for Bipolar Disorders (ISBD) Older Adults with Bipolar Disorder (OABD) Lithium Workgroup Task Force"
+  ],
+  "doi": "10.1111/bdi.70151",
+  "domain": "neuro",
+  "external_id": "PMC13373820",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-08-01T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Towards a Safe and Effective Lithium Therapeutic Range for Older Adults With Bipolar Disorder: An ISBD Task Force Systematic Review.",
+  "updated": null
+}

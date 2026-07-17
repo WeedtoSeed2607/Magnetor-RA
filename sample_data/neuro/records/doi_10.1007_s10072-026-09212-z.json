@@ -1,0 +1,18 @@
+{
+  "abstract": "Background Mitochondrial diseases are genetic multisystem disorders. Only symptomatic treatment is available, and clinical progression is common. We investigated whether two commonly used quantitative measures of functional capacity, modified Rankin scale (mRS) and Karnofsky Performance scale (KPS) scores, could be determined retrospectively based on electronic patient records (EPRs) and whether they provided insights into disability and disease progression. Methods Previously identified 52 patients (28 women) with clinically and genetically confirmed mitochondrial disease at Turku University Hospital (TUH, Turku, Finland) were investigated. Genetic diagnoses were the m.3243 A > G mitochondrial DNA (mtDNA) variant ( N = 21), other pathogenic mtDNA variants ( N = 22), and nuclear gene variants causing mitochondrial disease ( N = 9). Mean age was 50 years (range 10\u201385 years); average follow-up was nine years. Available neurology and emergency medicine EPRs were reviewed, and mRS and KPS scores determined. Results Patients harbouring the m.3243 A > G, other mtDNA variants, or nuclear gene variants were compared. In all groups, functional capacity declined over time. Those with m.3243 A > G had lower first and latest KPS and mRS values than those with nuclear gene variants ( p < 0.004 for all). Differences between the m.3243 A > G and other pathogenic mtDNA variants were not significant. Conclusion Functional decline seems a common feature in mitochondrial disease. The KPS and mRS scales may offer a simple tool for long-term evaluation of the functional capacity of patients with mitochondrial disease, especially in non-specialist and primary healthcare. Further studies are needed to confirm whether patients with nuclear gene defects are at particular risk of progression. Supplementary Information The online version contains supplementary material available at 10.1007/s10072-026-09212-z.",
+  "authors": [
+    "Koskiniatis JA",
+    "Martikainen MH"
+  ],
+  "doi": "10.1007/s10072-026-09212-z",
+  "domain": "neuro",
+  "external_id": "PMC13372874",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-15T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Karnofsky performance scale and modified Rankin scale as indicators of functional capacity in patients with mitochondrial disease.",
+  "updated": null
+}

@@ -1,0 +1,22 @@
+{
+  "abstract": "Based on a photonic computing platform, we experimentally validate a generalized variational quantum linear solver (VQLS) by systematically solving four-dimensional linear equation systems across different fields. In the complex field, in addition to solving non-singular systems that admit a unique solution, we investigate ill-conditioned problems arising from singularity--an issue frequently encountered in practical applications. To tackle these challenges, we introduce perturbation terms, a treatment inspired by Tikhonov regularization, and develop an algorithm capable of handling a wide range of systems. Furthermore, we extend the VQLS to the finite field F2 by redesigning the cost function to incorporate modulo 2 and imposing several constraints on the solution vector. This modulo 2 VQLS is inherently free from singularity. It is adapt to stabilizer coding theory and may find applications in areas such as decoders and the design of quantum gate sequences. Therefore, our work demonstrates the practical potential of VQLS in quantum computing, providing a solid experimental foundation and methodological guidance for its real-world applications.",
+  "authors": [
+    "Kang Gao",
+    "Zhao-An Wang",
+    "Ze-Guo Wang",
+    "Mao-Mao Huang",
+    "Hai Wei",
+    "Kai Wen"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.14477v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14477v1",
+  "published": "2026-07-16T01:49:19+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "A generalized variational quantum linear solver on photonic platform",
+  "updated": "2026-07-16T01:49:19+00:00"
+}

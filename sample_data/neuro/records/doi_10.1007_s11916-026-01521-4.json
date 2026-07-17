@@ -1,0 +1,26 @@
+{
+  "abstract": "Objective To evaluate the effectiveness and safety of spinal interventions for pediatric patients with chronic back and neck pain who failed conservative management. Design Systematic review. Methods Following PRISMA 2020 guidelines, a comprehensive search of PubMed, Embase, Web of Science, and Cochrane Central was performed through August 2024. Eligible studies included clinical reports of interventional procedures for pediatric spine related pain. Primary outcomes were pain reduction measured by subjective scales or validated instruments; secondary outcomes included safety and adverse events. Risk of bias and certainty of evidence were assessed using the MASTER and GRADE scales. Results Of 578 identified studies, 8 met inclusion criteria, encompassing 258 pediatric patients. Interventions included epidural steroid injections ( n = 227), sacroiliac joint injections ( n = 13), facet injections ( n = 2), ozone discolysis ( n = 2), medial branch blocks ( n = 1), interspinous ligament injections ( n = 1), and microdiscectomy ( n = 1). Across all studies, some degree of pain relief was reported, with functional improvement noted when measured. Adverse events were rare, mild, and transient, including a post-procedural headache and a transient sciatic motor block. No major long-term complications were reported. Evidence certainty was graded as \u2018very low\u2019 due to small sample sizes, observational designs, and heterogeneous methodologies. Conclusions Preliminary evidence suggests spinal interventions may provide pain relief and functional improvement for carefully selected pediatric patients refractory to conservative measures, with a safety profile comparable to adults. However, evidence remains limited and heterogeneous. Larger, controlled studies are needed to guide clinical practice and inform future guidelines. Supplementary Information The online version contains supplementary material available at 10.1007/s11916-026-01521-4.",
+  "authors": [
+    "Jevotovsky D",
+    "Dovlatyan R",
+    "Mermelstein S",
+    "Banks D",
+    "Medina R",
+    "Dukat A",
+    "Lee C",
+    "Hirani S",
+    "Portugal S",
+    "McKay TE"
+  ],
+  "doi": "10.1007/s11916-026-01521-4",
+  "domain": "neuro",
+  "external_id": "PMC13372936",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-16T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Minimally Invasive Spinal Interventions for Back and Neck Pain in the Pediatric Population: a Systematic Review.",
+  "updated": null
+}

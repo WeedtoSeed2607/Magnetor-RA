@@ -1,0 +1,18 @@
+{
+  "abstract": "We introduce low-rank optimal control (LROC), a method for designing control pulses in open quantum systems whose full density-matrix simulation is prohibitively expensive. The method exploits a feature of quantum computing itself: because protocols are designed to preserve purity, the density matrix is dominated by a few pure states and admits an accurate low-rank factorization. LROC propagates only this factorized form and, by deriving the corresponding adjoint equation, obtains the gradient of any differentiable objective at the same reduced cost as the simulation, leading to a quadratic improvement in time and memory compared to the full master equation. We illustrate the breadth of the method on four superconducting-circuit tasks: preparation of a five-qubit GHZ state, a CNOT gate, qubit readout, and an error correction primitive, modeled with realistic multilevel transmons, decay, and strong drives, in each case reaching fidelities consistent with the intrinsic dissipation limits. LROC thereby extends pulse-level optimization to system sizes beyond the reach of existing gradient-based methods.",
+  "authors": [
+    "Leo Goutte",
+    "Vincenzo Savona"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.14217v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14217v1",
+  "published": "2026-07-15T18:00:19+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Analytic gradients for low-rank quantum optimal control",
+  "updated": "2026-07-15T18:00:19+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "abstract": "Automated image captioning remains a challenge, as it enables machines to generate context-aware textual descriptions of visual content. Traditional deep learning approaches often rely on lexical overlap and fail to capture semantic relationships among objects, leading to captions that lack contextual richness. This study proposes an encoder\u2013decoder framework that integrates YOLOv5 with a generative transformer to generate descriptive image captions. The proposed model was evaluated against two baselines: CNN-LSTM (M1) and a BERT-based transformer model (M2). M1 achieves BLEU-1 (0.45) and ROUGE-L (0.42) but demonstrates limited semantic understanding with METEOR (0.18) and SPICE (0.07). M2 improves with higher METEOR (0.24) and CIDEr (0.62), although its BLEU scores remain low. The proposed model achieves the highest CIDEr (1.10) and SPICE (0.25), reflecting superior semantic understanding and better capture of object relationships. Despite a lower BLEU (0.40), it significantly outperforms traditional methods in caption quality. To further validate these results, we conducted an expert-based evaluation to assess semantic accuracy, visual grounding, and caption usefulness. The proposed model achieved 93% accuracy in expert evaluations across 500 images, indicating strong contextual alignment with human interpretation. Additionally, we employed exploratory data analysis to examine and visualize the text captions, aiming to gain a deeper understanding of the optimal caption.",
+  "authors": [
+    "Danyal M",
+    "Roman M",
+    "Shahid A",
+    "Yahya M"
+  ],
+  "doi": "10.1371/journal.pone.0353466",
+  "domain": "neuro",
+  "external_id": "PMC13349137",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-01-01T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Contextual image caption creation using object positional embedding and generative models.",
+  "updated": null
+}

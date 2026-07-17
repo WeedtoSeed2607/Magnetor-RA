@@ -1,0 +1,19 @@
+{
+  "abstract": "Comonads on Set generalize both categories and topological spaces. Expanding upon Garner's work on ionads, we develop aspects of the theory of topological spaces for arbitrary comonads on arbitrary categories. Our approach is centered around density comonads, which provide an abstraction of subbases. We study subbases as well as bases in terms of density comonads, and we study continuous maps of comonads in terms of functors between coalgebra categories, with definitions that recover the usual notions for topological spaces. Whereas Ahman and Uustalu characterized categories as precisely the polynomial comonads on Set, we characterize topological spaces as precisely the density comonads of diagrams of subsets of a set, which are familiar as topological subbases. We show that every comonad on Set has an underlying topological space, and that this construction is a reflection with respect to continuous maps; similarly, every comonad on Set has an underlying small category, and this construction is a coreflection. We also show that the category of all comonads on Set with continuous maps is complete, and that its full subcategory of accessible comonads is cocomplete. Continuous maps and ordinary comonad morphisms form a double category, which, in the case of the polynomial comonads on Set, recovers the double category of functors and retrofunctors of Clarke and Di Meglio. We find topological intuition for these concepts in terms of \"halos\", an abstraction of infinitesimal neighborhoods of points, defined as formal limits of neighborhood systems. We include a long appendix of counterexamples, many applicable to general (co)monad theory rather than the particular concerns of this text.",
+  "authors": [
+    "Aaron David Fairbanks",
+    "Kevin Carlson",
+    "David I. Spivak"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.15091v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15091v1",
+  "published": "2026-07-16T15:00:38+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Comonads as spaces",
+  "updated": "2026-07-16T15:00:38+00:00"
+}

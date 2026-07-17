@@ -1,0 +1,19 @@
+{
+  "abstract": "Exact fermion to qubit transformations are conventionally regarded as algorithmic tools that translate many-body Hamiltonians into qubit representations for quantum simulation. Here we show that they also define intrinsic geometric representations whose structure encodes physically meaningful information beyond spectral equivalence. We develop a geometric framework based on weighted hypergraphs and coupling space representations constructed from the Bravyi--Kitaev (BK) and Xia--Bian--Kais (XBK) encodings. Within the BK representation, we introduce a geometric observable that compares the algebraic connectivities of the kinetic and interaction hypergraphs, derive its exact analytical dependence on interaction strength, and uncover two geometric universality classes together with an exact spectral organization originating from the binary tree architecture of the encoding. The complementary XBK representation describes the evolution of encoded Hamiltonians through probability measures in coupling space, where optimal transport quantifies interaction-driven reorganization independently of the spectral analysis. Applications to the Hubbard, spinless tV , single impurity Anderson, and Kitaev models demonstrate that these connectivity and transport based geometric descriptions consistently capture the structural evolution of encoded quantum Hamiltonians across distinct classes of many-body systems. Our results establish hypergraph geometry as a new framework for understanding fermion-to-qubit encodings,revealing that they serve not only as computational mappings but also as geometric representations of quantum many-body Hamiltonians.",
+  "authors": [
+    "Lakshya Nagpal",
+    "Nishith Reen",
+    "S. R. Hassan"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.14883v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14883v1",
+  "published": "2026-07-16T11:57:14+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "A Geometric Theory of Fermion-to-Qubit Encodings",
+  "updated": "2026-07-16T11:57:14+00:00"
+}

@@ -1,0 +1,18 @@
+{
+  "abstract": "Let $\\mathscr{A}(X)$ and $\\mathscr{K}(X)$ denote the ideals of approximable and compact operators on a Banach space $X$, respectively. We construct a unital Banach algebra $A$ of density character $\\mathfrak c=2^{\\aleph_0}$, with exactly one non-zero proper closed two-sided ideal, such that, for every Banach space $X$, the algebra $A$ is isomorphic to neither $\\mathscr{B}(X)/\\mathscr{A}(X)$ nor $\\mathscr{B}(X)/\\mathscr{K}(X)$. Thus $A$ is not a Calkin algebra under either of the two customary conventions.",
+  "authors": [
+    "Antonio Acuaviva",
+    "Pablo Acuaviva"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.15075v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15075v1",
+  "published": "2026-07-16T14:46:04+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "A Unital Banach Algebra Which Is Not a Calkin Algebra",
+  "updated": "2026-07-16T14:46:04+00:00"
+}

@@ -1,0 +1,18 @@
+{
+  "abstract": "We perform a semiclassical, large-spin S, analysis of the quantum approximate optimization algorithm (QAOA) on the Sherrington-Kirkpatrick (SK) model, using the truncated Wigner approximation. Fixing the QAOA angles to their previously determined optimal S=1/2 values, we observe a non-monotonic dependence of the final energy on the spin. At small S the semiclassics is dominated by noise, while the large-S limit is constrained by the exponential growth of the initial fluctuations. For a depth-p QAOA one achieves the optimal balance at S of order p, resulting in a convergence of the final energy to the Parisi value like log(p)/p. We find that the semiclassics slightly outperforms the true spin-1/2 QAOA, and thus suggest they both converge to the Parisi value in the same way. Finally, removing all the initial noise, and re-optimizing the parameters to account for that change, results in superior performance with 1/p convergence.",
+  "authors": [
+    "Dries Sels",
+    "Flaviano Morone"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.08708v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08708v1",
+  "published": "2026-07-09T17:18:19+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Absence of quantum advantage for approximate spin glass optimization",
+  "updated": "2026-07-09T17:18:19+00:00"
+}

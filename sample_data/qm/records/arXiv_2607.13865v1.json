@@ -1,0 +1,19 @@
+{
+  "abstract": "In this paper, we study the non-Markovian quantum dynamics in quantum computations from the perspective of a Lie algebraic approach based on numerical analysis. By vectorizing the density matrix of quantum states, the non-Markovian evolutions can be represented with high-dimensional linear time-varying equations, where the time-varying parameters arise from the non-Markovian interactions between the quantum system and environment. We study the Magnus expansion of such linear time-varying quantum dynamics and clarify how the truncation errors for the first- and second-order Magnus expansions are influenced by the non-Markovian properties. Besides, when the quantum states are measured for filtering, the dynamics can be modeled as time-varying stochastic differential equations due to the existence of measurement noise. The Magnus expansions based on quantum stochastic filtering are different when the quantum measurement noises are modeled in an {It\u00f4} or Stratonovich approach, rendering different truncation errors. Based on this, numerical simulations further demonstrate the efficiency of Magnus expansions in simulating non-Markovian quantum dynamics without or with stochasticity, and how the truncation errors are influenced by the Lie algebras in the Liouville space.",
+  "authors": [
+    "Haijin Ding",
+    "Stephen S. -T. Yau",
+    "Zhiwen Zhang"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.13865v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.13865v1",
+  "published": "2026-07-15T14:11:46+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "A Lie-algebraic approach to non-Markovian quantum dynamics",
+  "updated": "2026-07-15T14:11:46+00:00"
+}

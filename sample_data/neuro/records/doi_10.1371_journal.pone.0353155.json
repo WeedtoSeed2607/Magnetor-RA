@@ -1,0 +1,20 @@
+{
+  "abstract": "Objective To evaluate the reliability and diagnostic performance of ChatGPT-o3 in conducting Risk of Bias (RoB) assessments of randomized clinical trials (RCTs) using the Cochrane RoB 2.0 tool. Materials and methods This methodological validation study analyzed 50 RCTs sampled from 50 published meta-analyses. Each trial was independently assessed by the original systematic review authors (OSRAs), our masked human panel, and ChatGPT-o3. Structured prompts based on RoB 2.0 guidelines were used to elicit ChatGPT-o3 assessments. Agreement was evaluated using weighted Cohen\u2019s kappa and Gwet\u2019s AC 2 . Diagnostic performance was measured by sensitivity, specificity, and balanced accuracy, with human ratings as the reference. Results ChatGPT-o3 classified 34% of trials as high risk, compared with 22% by our panel, and 12% by the OSRAs. Agreement was modest (median \u03ba: 0.33 with our panel; 0.14 with OSRAs). Overall Gwet\u2019s AC 2 was 0.30. For detecting high-risk trials, ChatGPT-o3 achieved a sensitivity of 0.46, specificity of 0.69, and balanced accuracy of 0.57. For low-risk trials, its sensitivity was 0.47, specificity was 0.86, and balanced accuracy was 0.66. Discussion The results indicate that ChatGPT-o3 produced more conservative RoB ratings than human reviewers, identifying a greater percentage of trials as having a high RoB. Conclusion While unsuitable to be used as a sole assessor, ChatGPT-o3 may serve as an adjunct tool to enhance the efficiency and consistency of RoB assessments in systematic reviews.",
+  "authors": [
+    "Gandhi S",
+    "Shokravi A",
+    "Chelliahpillai Y",
+    "Balas M"
+  ],
+  "doi": "10.1371/journal.pone.0353155",
+  "domain": "neuro",
+  "external_id": "PMC13349098",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-01-01T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Evaluating large language model performance in Risk of Bias assessments: A cross-sectional validation study.",
+  "updated": null
+}

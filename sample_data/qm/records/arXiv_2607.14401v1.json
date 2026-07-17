@@ -1,0 +1,20 @@
+{
+  "abstract": "We consider a broad family of Heisenberg-type quantum spin systems that were studied by Suzuki and Fisher in 1971. This family includes, for example, the Heisenberg antiferromagnet on any bipartite graph. The ground and Gibbs states of these models are Lee-Yang tensors with radius 1: they are associated with multilinear polynomials that possess an extraordinary zero-freeness property inside the unit polydisk in the complex plane. For each Hamiltonian in this family we show that the spectral gap between the first-excited and ground-state energies is lower bounded by $2\u03bc$, where $\u03bc$ is the magnetic field along the $Z$ direction. Using this result we obtain an efficient quantum adiabatic algorithm for the ground energy of any model in this family. The proof is based on a new inequality that relates the spectral gap of a positive semidefinite operator to its Lee-Yang radius -- a quantitative strengthening of prior work of the authors that may find applications elsewhere.",
+  "authors": [
+    "Sergey Bravyi",
+    "David Gosset",
+    "Yinchen Liu",
+    "Benjamin Wong"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.14401v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14401v1",
+  "published": "2026-07-15T22:36:21+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Efficient quantum algorithm for Heisenberg spin systems",
+  "updated": "2026-07-15T22:36:21+00:00"
+}

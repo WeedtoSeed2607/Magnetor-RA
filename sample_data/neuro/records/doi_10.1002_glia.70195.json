@@ -1,0 +1,23 @@
+{
+  "abstract": "ABSTRACT Astrocytes, known for their support roles, are emerging as active participants in synaptic plasticity and cognitive functions. Astrocytes actively regulate synaptic plasticity and memory through dynamic volume transients. Our previous research identified several key molecules, including TREK\u20101, TRPA1, and Best1 ion channels, as well as the gliotransmitter BDNF, as critical components of astrocytic volume transients. However, the precise mechanisms by which these volume transients influence synaptic plasticity and memory remain poorly understood. In this study, we investigate the roles of TREK\u20101 and TRPA1 in astrocytic volume dynamics and their downstream effects. Our findings, based on intrinsic optical signal imaging, electrophysiology, and behavioral assays, support a model in which neuronal stimulation induces astrocytic swelling, initiated by K + uptake through TREK\u20101 channels and regulated by Ca 2+ influx via TRPA1 channels. This swelling is closely associated with short\u2010 and long\u2010term potentiation (LTP), and exogenous BDNF restores LTP under conditions of calcium sequestration during astrocytic calcium clamping experiments. Disruption of ion channels associated with astrocytic volume transients leads to significant impairments in spatial memory, as demonstrated by deficits in object\u2010place recognition and passive avoidance tasks. Moreover, these channels contribute to the regulation of synaptic plasticity. These findings implicate astrocytic volume transients and BDNF as pivotal modulators of synaptic plasticity and memory, as well as potential therapeutic targets for addressing memory dysfunctions.",
+  "authors": [
+    "Drew VJ",
+    "Woo J",
+    "Lee JM",
+    "Koh W",
+    "Won J",
+    "Lee JH",
+    "Lee CJ"
+  ],
+  "doi": "10.1002/glia.70195",
+  "domain": "neuro",
+  "external_id": "PMC13373336",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-09-01T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "A TREK\u20101/AQP4/TRPA1/BDNF Signaling Axis Is Associated With Astrocytic Volume Transients, Synaptic Plasticity, and Spatial Memory.",
+  "updated": null
+}

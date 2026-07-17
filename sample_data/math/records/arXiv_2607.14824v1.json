@@ -1,0 +1,18 @@
+{
+  "abstract": "We construct Kakeya sets in arbitrary dimension $d\\geq 2$, generalizing the classical Perron tree construction beyond dimension $2$. The Kakeya sets we construct have $\u03b4$-neighbourhood of volume at most $C|\\log\u03b4|^{-(d-1)}$, which improves on previously known constructions, and which is conjecturally optimal. We further derive consequences for the $L^p$-boundedness of radial Fourier multipliers in terms of Besov spaces with logarithmic smoothness.",
+  "authors": [
+    "Rafael J. Fern\u00e1ndez-Delgado",
+    "Mikael de la Salle"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.14824v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14824v1",
+  "published": "2026-07-16T10:40:18+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "A construction of Kakeya Sets in Arbitrary Dimension",
+  "updated": "2026-07-16T10:40:18+00:00"
+}

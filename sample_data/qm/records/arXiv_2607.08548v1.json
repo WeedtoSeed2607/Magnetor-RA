@@ -1,0 +1,19 @@
+{
+  "abstract": "While quantum hardware remains limited, hybrid quantum-classical algorithms with complex control structures, including unbounded loops, are emerging, posing new challenges for quantum program analysis, including the accurate estimation of the resource consumption of a given program. Meanwhile, precise analysis techniques such as symbolic execution have largely left out hybridization and unbounded recursion. On the other hand, current quantum Hoare logics that generally support them are lacking in expressiveness and miss out on efficient computational equational reasoning that could be implemented in a semi-automated tool. This leaves a gap awaiting to be filled. In this work, we answer this challenge with the first semi-automated static analysis solution combining effective functional verification and resource (termination or cost) estimation for hybrid quantum programs with unbounded loops. Towards that end, we introduce integer hybrid path-sums (IHPS), extending path-sums to handle unbounded while loops, as a representation of possible executions of a program. A generic strategy for determining termination and expected resource consumption via loop invariants is also proposed and illustrated on several examples. Finally, the solution is implemented as a semi-automatic Haskell program. This work is the first step toward the design of a complete static resource analysis tool for hybrid quantum programs, essential for the development of real-world quantum computing.",
+  "authors": [
+    "Christophe Chareton",
+    "Jad Issa",
+    "Romain P\u00e9choux"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.08548v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08548v1",
+  "published": "2026-07-09T14:41:37+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "An Effective Quantum Hoare Logic for Hybrid Quantum Programs with Unbounded Loops",
+  "updated": "2026-07-09T14:41:37+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "abstract": "A graph $G$ with $m$ edges is said to be a Nosal graph if $\u03c1(G)>\\sqrt{m}$. For a graph $G$, we write $bk(G)$ for its maximum book size and $\u03c4(G)$ for the number of edges contained in triangles. Li, Liu and Zhang [J. Combin. Theory Ser. B 179 (2026) 219--249] proved that every $m$-edge Nosal graph satisfies $bk(G)> \\frac{1}{24}\\sqrt{m}$ and $\u03c4(G) > \\frac{1}{12}\\sqrt{m}$. Recently, Zhai, Li and Lou [arXiv:2601.10163v2] proved that every $m$-edge Nosal graph satisfies $bk(G)> \\frac{1}{9}\\sqrt{m}$. In this paper, we establish the following result: Every $m$-edge graph $G$ with no isolated vertices and $\u03c1(G)\\geq \\sqrt{m}$ that is not isomorphic to any complete bipartite graph satisfies $bk(G)\\geq\\frac{\u03c1(G)}{3}$ and $\u03c4(G)\\geq \u03c1(G)$. As direct consequences, we answer a question of Li, Liu and Zhang [J. Combin. Theory Ser. B 179 (2026) 219--249] and confirm a conjecture of Li, Feng and Peng [J. Graph Theory 110 (4) (2025) 408--425].",
+  "authors": [
+    "Xinghui Zhao",
+    "Lihua You",
+    "Jing Zeng",
+    "Xiaoxue Zhang"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.15071v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15071v1",
+  "published": "2026-07-16T14:43:37+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Two problems on booksize and triangular edges in Nosal graphs",
+  "updated": "2026-07-16T14:43:37+00:00"
+}

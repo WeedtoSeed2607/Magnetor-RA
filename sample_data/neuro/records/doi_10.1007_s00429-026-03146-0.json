@@ -1,0 +1,22 @@
+{
+  "abstract": "Relaxin family peptide receptor-3 (RXFP3) is a ligand-activated G-protein coupled receptor and the cognate receptor for the conserved neuropeptide relaxin-3. We recently demonstrated that chemogenetically activating an RXFP3-expressing population in the lateral hypothalamus and zona incerta (LH/ZI RXFP3 ) induced escape-like jumping behaviour following fear conditioning, but only in a subset of mice. Given the diverse hodology of the LH and ZI, we hypothesised that LH/ZI RXFP3 cells may consist of discrete subpopulations with unique connectivity patterns that govern different aspects of defensive behaviour. To explore this possibility, we unilaterally injected small volumes of a Cre-dependent anterograde viral tracer into four distinct sites of the LH/ZI in RXFP3-Cre mice and analysed their brain-wide efferent connectivity patterns. Each injection site group produced unique projection patterns, particularly to nuclei involved in threat and defensive behaviour. Of note were strong projections from the rostral ZI and anterior LH to the lateral habenula, and projections from the intermediate and caudal ZI to the ventrolateral periaqueductal gray. By combining retrograde tracing and RNAscope fluorescent in situ hybridisation, we identified that most LH/ZI RXFP3 projections to the lateral habenula arose from a subset of vGlut2-expressing lateral hypothalamus neurons, while most projections to the ventrolateral periaqueductal gray arose from a subset of GAD1-expressing zona incerta neurons. Taken together, our results strongly suggest that LH/ZI RXFP3 cells exhibit distinct efferent projection patterns throughout the brain depending on their topographical location within these nuclei, likely reflecting the functional diversity of these neurons. Supplementary Information The online version contains supplementary material available at 10.1007/s00429-026-03146-0.",
+  "authors": [
+    "Richards BK",
+    "Kilby AIJ",
+    "Cornish JL",
+    "Kim JH",
+    "Lawrence AJ",
+    "Perry CJ"
+  ],
+  "doi": "10.1007/s00429-026-03146-0",
+  "domain": "neuro",
+  "external_id": "PMC13372858",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-15T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Efferent projections of topographically distinct relaxin family peptide receptor-3 (RXFP3) lateral hypothalamus/zona incerta cells.",
+  "updated": null
+}

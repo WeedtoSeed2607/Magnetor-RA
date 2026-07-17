@@ -1,0 +1,23 @@
+{
+  "abstract": "We propose a machine-learning-empowered approach to the quantum sensing of the plaquette phase, a gauge-invariant quantity arising in three-level $\u0394$ systems. This phase profoundly affects the system dynamics, breaking coherent population trapping and inducing a non-trivial phase dependence of the dynamics. We demonstrate that a multi-layer perceptron (MLP), trained in a supervised-learning framework, can accurately estimate the plaquette phase from STImulated Raman Adiabatic Passage (STIRAP) population transfer efficiencies measured under different driving conditions, which provide experimentally accessible observables. Our results highlight how the combination of coherent control and machine learning (ML) enables effective phase identification in closed-loop quantum systems, opening new perspectives for quantum technologies, specifically quantum sensing applications including synthetic gauge fields.",
+  "authors": [
+    "Lorenzo Vitale",
+    "Shreyasi Mukherjee",
+    "Dario Fasone",
+    "Enrico Martello",
+    "Elisabetta Paladino",
+    "Luigi Giannelli",
+    "Giuseppe Falci"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.15040v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15040v1",
+  "published": "2026-07-16T14:20:26+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Machine-Learning-Empowered Quantum Sensing of the Plaquette Phase in a Three-Level Delta System",
+  "updated": "2026-07-16T14:20:26+00:00"
+}

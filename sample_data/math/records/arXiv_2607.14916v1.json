@@ -1,0 +1,20 @@
+{
+  "abstract": "The integrability of the Kudryashov-Sinelshchikov equation in (1+3) dimension is detected using its point symmetries and the Singularity analysis method. The symmetries mostly points to the existence of infinite-dimensional Lie algebra with the presence of mostly arbitrary functions. The reduction process is initiated by considering these arbitrary functions in the general symmetry vectors. For certain functions, trivial solutions for the general parent equation is obtained whereas for some of the functions, the reductions does not yield an unmitigated result. Finally, a positive result is listed for one of the arbitrary function, for which the singularity analysis method is employed to study the Painleve property. The resultant PDE happens to be a fourth-order equation and its approval of the Painleve property hints at the integrability of the Kudryashov- Sinelshchikov equation in the general case.",
+  "authors": [
+    "Amlan K Halder",
+    "Rajeswari Seshadri",
+    "A Paliathanasis",
+    "PGL Leach"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.14916v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14916v1",
+  "published": "2026-07-16T12:35:23+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Classical Symmetries and Painleve Analysis for the (1+3) Kudryashov-Sinelshchikov Equation",
+  "updated": "2026-07-16T12:35:23+00:00"
+}

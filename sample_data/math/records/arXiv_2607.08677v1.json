@@ -1,0 +1,17 @@
+{
+  "abstract": "We construct a measure that exhibits two aspects of a new type of universality and dramatically simplifies the integration of tensors $T_{a_1,a_2,\\ldots,a_D} \\in \\mathbb{C}$ ($a_1,\\ldots,a_D=1,\\ldots,N$) at large $N$. In contrast to matrix integration, in which matrix traces canonically yield the integrand, tensors need additional information (equivalent to a $D$-coloured graph $B$) to contract their indices and form a tensor trace $B(T)$. We show that, whenever each $B_1,\\ldots, B_n$ can be obtained by a recursive construction known as melonicity, then the leading order in $N$ of the integral of $ {B_1}(T) {B_2}(T) \\cdots {B_n}(T) $ is independent of the -- often intricate -- combinatorics of the traces $B_i$, but also, to our surprise, independent of $D$ as far as $D\\geq 3$. Instead, at large $N$, these integrals are some functions (indexed by $n$) of the number of vertices $2p_i$ of $B_i$ which we call melonic polynomials. Melonic traces cumulants with respect to any ('interacting') measure \\[ \\exp\\Big\\{-N^{D-1} \\sum_{i=1}^m g_i {B_i}(T)\\Big\\} \\mathrm{d}\u03bc_0(T) \\quad (g_1,\\ldots,g_m \\in \\mathbb{R}, \\mathrm{d}\u03bc_0(T) =\\text{the tensor Gaussian}) \\] with each $B_i$ melonic, can be computed with our universal measure that replaces each $B_i$ by a canonical trace depending only on $p_i$. We prove that any two melonic tensor models are indistinguishable at large-$N$, independently of the number of tensor indices (first universality aspect), and of the fine-grainedness of their interactions (second universality), being a sufficient condition that the couplings (the parameters $g_i$ above) agree and their respective traces are monomials with the same degree in $T$.",
+  "authors": [
+    "Carlos I. Perez-Sanchez"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.08677v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08677v1",
+  "published": "2026-07-09T16:41:50+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Twofold universality of large-$N$ melonic random tensors",
+  "updated": "2026-07-09T16:41:50+00:00"
+}

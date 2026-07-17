@@ -1,0 +1,23 @@
+{
+  "abstract": "Healthcare workers (HCWs) in emergency departments face significant mental health risk due to chronic stressors and repeated trauma, yet symptom underreporting and bias in self-reports hinder accurate assessments. Expressive flexibility, the ability to dynamically modulate and recover from stressor-related changes in emotional arousal as reflected in observable behavior, has been linked to resilience. This NIH-funded study (R01HL156134) utilized digital phenotyping and computer vision to analyze dynamic facial expressivity during video-recorded interviews about work-related stressful situations with 240 HCWs (278 assessments). Participants additionally completed validated questionnaires to assess burnout, PTSD, depression, anxiety, and resilience. Latent profile analysis revealed two clinical phenotypes: At-risk (57.6%) and Resilient/Adaptive (42.4%). Machine learning models demonstrated high classification performance (accuracy = 0.83 \u00b1 0.06, F1-score = 0.87 \u00b1 0.05). Our findings indicate that digital biomarkers of temporal facial dynamics may serve as objective behavioral proxies of expressive flexibility, potentially capturing dynamics consistent with underlying stress-regulatory processes. These findings highlight their potential to improve identification of resilience-related phenotypes and support well-being and mental health in HCWs.",
+  "authors": [
+    "Hilberdink CE",
+    "Zhao Y",
+    "McKernan S",
+    "Gershov S",
+    "Mueller V",
+    "Wall SP",
+    "Schultebraucks K"
+  ],
+  "doi": "10.1038/s44277-026-00067-y",
+  "domain": "neuro",
+  "external_id": "PMC13369946",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-15T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Bouncing back from stress: objective markers of expressive flexibility and resilience in emergency healthcare workers using computer vision.",
+  "updated": null
+}

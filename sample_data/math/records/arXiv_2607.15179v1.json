@@ -1,0 +1,17 @@
+{
+  "abstract": "Inference for infectious disease transmission on dynamic contact networks is complicated by latent infection times, partially observed network evolution, measurement error in contact data, and infection originating from outside the observed population. Existing likelihood-based approaches typically address these challenges separately and often rely on restrictive assumptions such as fully observed networks, closed populations, or symptom onset as a surrogate for infection time. We develop a unified complete-data likelihood framework for epidemic processes evolving on partially observed dynamic networks. The proposed formulation represents disease progression, network evolution, and observation mechanisms as interacting continuous-time stochastic processes within a common probabilistic framework. Specifically, we couple a susceptible-exposed-infectious-removed (SEIR) epidemic process with a status-dependent dynamic contact network and explicit observation models for symptoms and contacts. The resulting framework accommodates latent incubation periods, intermittent network observation, contact measurement error, and external infection pressure while preserving a coherent likelihood structure. Our principal contribution is the derivation of a complete-data event-history likelihood for the joint epidemic-network process under partial observation. The likelihood provides a rigorous foundation for likelihood-based and Bayesian inference through data augmentation, clarifies how information from disease progression and contact dynamics jointly determines parameter estimability, and reveals a broad class of existing epidemic network models as special cases. More generally, the framework contributes to statistical inference for partially observed interacting stochastic systems on evolving networks and establishes a foundation for uncertainty-aware analysis of complex transmission processes.",
+  "authors": [
+    "Md Asaduzzaman"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.15179v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15179v1",
+  "published": "2026-07-16T16:34:39+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "A Complete-Data Likelihood for Epidemic Processes on Partially Observed Dynamic Networks",
+  "updated": "2026-07-16T16:34:39+00:00"
+}

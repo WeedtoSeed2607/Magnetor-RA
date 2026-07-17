@@ -1,0 +1,21 @@
+{
+  "abstract": "The applications for which quantum computers will clearly outperform classical computers are still being identified and benchmarking such an advantage is challenging. We propose a scalable verification scheme for non-equilibrium quantum simulation based on stabilizer scars, a special class of quantum many-body scars, whose structure ensures both classical simulability and efficient direct fidelity estimation. Assuming a physically motivated error model, we show that the fidelity of quantum simulating these states bounds the fidelity of classically intractable simulations, providing a benchmark for quantum-advantage experiments in non-equilibrium dynamics.",
+  "authors": [
+    "Jeremy Hartse",
+    "Mohsin Raza",
+    "Shravan Shravan",
+    "Ivan H. Deutsch",
+    "Niklas Mueller"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.14212v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14212v1",
+  "published": "2026-07-15T18:00:01+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Benchmarking quantum simulation at scale",
+  "updated": "2026-07-15T18:00:01+00:00"
+}

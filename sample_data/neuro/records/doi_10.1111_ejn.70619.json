@@ -1,0 +1,21 @@
+{
+  "abstract": "ABSTRACT Bimanual motor performance declines with age and is accompanied by cortical thinning and alterations in white matter microstructure within motor control networks. Aging is also associated with increased interindividual variability in behavioral and structural markers, and some studies report stronger brain\u2013behavior associations in older compared with younger adults. We tested whether bimanual performance is related differently to structural brain properties in younger and older adults. Twenty\u2010three younger (22\u201327 years) and 23 older adults (65\u201370 years) performed a visually guided bimanual pinch\u2010force task and underwent whole\u2010brain structural magnetic resonance imaging (MRI). Fractional anisotropy (FA) and cortical thickness (CTh) were extracted from a predefined bilateral visuomotor network and compared between groups. In regions showing significant age\u2010related differences, we tested whether and how FA and CTh values correlate with bimanual performance within each age group. The older age group showed lower FA in the anterior portions of the bilateral superior longitudinal fasciculus (SLF) III and right inferior fronto\u2010occipital fasciculus (IFOF) and bilaterally in the corpus callosum (CC) tract connecting the supplementary motor area (SMA) of each hemisphere. They also showed lower CTh across most visuomotor regions, along with lower bimanual performance compared with the younger group. Bimanual performance correlated positively with FA in the anterior segment of the right SLF III in younger but not older adults. Furthermore, larger hemispheric asymmetries in cortical thickness between the dominant and nondominant SMA correlated positively with larger intermanual performance differences between the dominant and nondominant hand in the younger but not older age group. However, the differences between age groups in structure\u2013performance correlations were not statistically significant. Taken together, our findings suggest that intrahemispheric white\u2010matter integrity and interhemispheric differences in CTh support efficient bimanual control in early adulthood, but they provide no evidence that structure\u2013function relationships increase with age.",
+  "authors": [
+    "Nov\u00e9n M",
+    "Lundbye\u2010Jensen J",
+    "Lundell H",
+    "Siebner HR",
+    "Karabanov AN"
+  ],
+  "doi": "10.1111/ejn.70619",
+  "domain": "neuro",
+  "external_id": "PMC13369776",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-01T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Anterior Superior Longitudinal Fasciculus Microstructure Correlates With Bimanual Visuomotor Performance in Healthy Younger but Not Older Adults.",
+  "updated": null
+}

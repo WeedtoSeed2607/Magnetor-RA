@@ -1,0 +1,24 @@
+{
+  "abstract": "Purpose Previous studies have reported contradictory findings about the possible association between SARS-CoV-2 and diabetes. We therefore conducted a cohort study to determine whether there is any association between SARS-CoV-2 infection and (i) new onset Type 1 diabetes and (ii) new onset Type 2 diabetes. Methods We conducted a population-based cohort study on data from 01/01/2021 to 30/06/2022 using the UK Clinical Practice Research Datalink (CPRD) GOLD. In this database, the exposure cohort (Covid) was matched to the comparator cohort (No Covid), 1:1 with months as \u201cenrolment\u201d windows during 2021, without replacement. Large Scale Propensity Score matching was conducted using Lasso regression for variable selection. Then Poisson regression was used to examine the relationship between COVID-19 exposure and incident Type 1/Type 2 diabetes. A sensitivity analysis was performed by matching Covid cases with Negative tests. Results 161,870 COVID-19 patients were matched to 161,870 non-Covid controls; separately, 139,419 COVID-19 patients were matched to 139,419 test-negative participants. For Type 1 diabetes, the Poisson regression analysis gave an overall risk ratio of 1.27 (0.81\u20131.82); and a RR of 1.13 (0.66\u20131.84) when matching Covid with Negative tests. For Type 2 diabetes, we obtained an overall risk ratio of 1.10 (0.98\u20131.23); and a RR of 1.08 (0.96\u20131.20) when matching Covid with Negative tests. Conclusions We do not find evidence of an association between SARS-CoV-2 infection and new onset of Type 1 or Type 2 diabetes. However, uncertainty remains due to the small number of events, especially in the case of Type 1 diabetes. Clinical Trial Number Not applicable. Supplementary Information The online version contains supplementary material available at 10.1007/s40200-026-02002-6.",
+  "authors": [
+    "Spivakovsky P",
+    "Barclay NL",
+    "Burn E",
+    "Man WY",
+    "Delmestri A",
+    "J\u00f6dicke AM",
+    "Prieto-Alhambra D",
+    "Catal\u00e0 M"
+  ],
+  "doi": "10.1007/s40200-026-02002-6",
+  "domain": "neuro",
+  "external_id": "PMC13346412",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-12-01T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Association between SARS-CoV-2 and diabetes: A population-based cohort study using the UK CPRD GOLD database.",
+  "updated": null
+}

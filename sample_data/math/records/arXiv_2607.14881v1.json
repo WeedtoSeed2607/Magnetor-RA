@@ -1,0 +1,18 @@
+{
+  "abstract": "A Hamilton cover of a graph is a collection of Hamilton cycles whose union contains all edges. Since each Hamilton cycle covers two edges at every vertex, every Hamilton cover has size at least $\\lceil \u0394(G)/2\\rceil$. We prove that this lower bound is tight for binomial random graphs $G(n,p)$ throughout the widest possible range of edge probabilities: if $\u03c9(n)\\to\\infty$ and \\[ \\frac{\\log n+\\log\\log n+\u03c9(n)}{n} \\le p=p(n) \\le 1-\\frac{\u03c9(n)}{n^{2}}, \\] then $G\\sim G(n,p)$ with high probability has a Hamilton cover of size $\\left\\lceil \\frac{\u0394(G)}{2}\\right\\rceil. $ The main new contribution is the sparse regime near the Hamiltonicity threshold, where we prove a conjecture of Dragani\u0107, Glock, Munh\u00e1 Correia and Sudakov. Our proof develops constructive tools for decomposing such graphs into controlled forest systems and extending them, using reserved pseudorandom structure, into Hamilton cycles. We also prove the corresponding hitting-time result for the random graph process, answering a question of Hefetz, K\u00fchn, Lapinskas and Osthus. Finally, we use our methods to show that $G\\sim G(n,p)$ with high probability satisfies the celebrated Linear arboricity conjecture for every $p\\leq 1$.",
+  "authors": [
+    "Nemanja Dragani\u0107",
+    "Michael Krivelevich"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.14881v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14881v1",
+  "published": "2026-07-16T11:55:55+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Efficient Hamilton covers and linear arboricity of random graphs",
+  "updated": "2026-07-16T11:55:55+00:00"
+}

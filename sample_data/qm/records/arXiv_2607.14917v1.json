@@ -1,0 +1,17 @@
+{
+  "abstract": "We study a duality analysis in conjunction with the star-triangle transformation for symmetric-group permutation models on the triangular and honeycomb lattices. The calculation is motivated by the permutation-model description of random tensor networks and by earlier duality analyses of replicated spin glasses. The essential point is that the finite-basis unit is not a bare bond but a star-triangle block. Our analysis estimates the critical bond dimension for the honeycomb lattice to be 2.634929344884, and the associated single-bond duality relation yields the triangular-lattice estimate 1.475661534848.",
+  "authors": [
+    "Masayuki Ohzeki"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.14917v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14917v1",
+  "published": "2026-07-16T12:35:35+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Star-triangle duality estimates for triangular and honeycomb permutation models",
+  "updated": "2026-07-16T12:35:35+00:00"
+}

@@ -1,0 +1,18 @@
+{
+  "abstract": "For $r\\geq 3$ we denote by $\\mathcal{C}(D_r)$ the Cartan matrix of type $D_r$. Recently, Sun and Wang conjectured a Rogers--Ramanujan type identity for the Nahm sum associated with $\\mathcal{C}(D_r)^{-1}$ and the zero vector. They further conjecture that there exist $r-1$ companion modular Nahm sums associated with nonzero vectors. We partially prove this conjecture by constructing $\\lfloor (r+4)/2\\rfloor$ modular Nahm sums for $\\mathcal{C}(D_r)^{-1}$. To prove their modularity, we utilize the method of Bailey pairs to establish various Rogers--Ramanujan type identities. In particular, we confirm their conjectural identity.",
+  "authors": [
+    "Liuquan Wang",
+    "Shangwen Wang"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.08606v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08606v1",
+  "published": "2026-07-09T15:36:04+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Modular Nahm Sums for the Inverse Cartan Matrix of Type $D_r$",
+  "updated": "2026-07-09T15:36:04+00:00"
+}

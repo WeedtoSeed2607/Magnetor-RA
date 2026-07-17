@@ -1,0 +1,17 @@
+{
+  "abstract": "We construct an uncountable family of extremal Gibbs states of the low temperature Ising model on hyperbolic lattices embedded in the hyperbolic plane $\\mathbb{H}_2$ whose interfaces are complete geodesics of $\\mathbb{H}_2$. These states are extracted from the states constructed by D'Achille, Coquille and Le Ny in arXiv:2504.19553v2 by considering path in the dual lattice at close enough distance from geodesics of $\\mathbb{H}_2$ thanks to the Morse--Mostow lemma.",
+  "authors": [
+    "Jean Vereecke"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.08632v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08632v1",
+  "published": "2026-07-09T16:01:40+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Uncountably many extremal Series--Sinai states for the Ising model on Lobachevsky lattices",
+  "updated": "2026-07-09T16:01:40+00:00"
+}

@@ -1,0 +1,29 @@
+{
+  "abstract": "Abstract Fetal brains frequently exhibit anomalies arising from a broad spectrum of etiologies, such as genetic, infectious, hemorrhagic, or hypoxic-ischemic insults, many of which are associated with serious clinical morbidities. Unsupervised anomaly detection, which learns exclusively from normal cases to identify significant deviations from normative patterns without prior knowledge of specific anomaly types, offers a promising approach for automatic diagnosis of such conditions. In particular, recent studies have demonstrated that the absolute age difference (AAD) between predicted gestational age (PGA) of deep learning models from MRI images and biological gestational age (BGA) shows potential for detecting fetal brain anomalies, albeit with limited performance. To enhance anomaly detection capabilities, this study introduces a three-dimensional (3D) Patch-based brain ANomaly Detection framework via Age prediction (PANDA), utilizing the maximum AAD across all patches (MaxAAD) as a biomarker for identifying fetal brain anomalies. Experiments were conducted on MRI data from a large clinical cohort of 1,316 fetuses comprising 711 normal cases and 605 abnormal cases, including 343 with ventriculomegaly (VM), 50 with germinal matrix-intraventricular hemorrhage (GMH-IVH), and 212 with subependymal cysts (SEC). PANDA achieved the best diagnostic performance with an area under the receiver operating characteristic curve (AUROC) of 0.762 and an area under the precision-recall curve (AUPR) of 0.790. Subgroup analysis across the three disease categories further revealed consistently superior performance.",
+  "authors": [
+    "Hao Y",
+    "Liu M",
+    "Zhu J",
+    "Yang H",
+    "Li H",
+    "Kang M",
+    "Song Y",
+    "Lai H",
+    "Zhou X",
+    "Ning G",
+    "Liao Y",
+    "Qu H",
+    "Tian Q"
+  ],
+  "doi": "10.1162/IMAG.a.1293",
+  "domain": "neuro",
+  "external_id": "PMC13366612",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-01-01T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "PANDA: Patch-based unsupervised deep learning for brain anomaly detection via age prediction in fetal MRI.",
+  "updated": null
+}

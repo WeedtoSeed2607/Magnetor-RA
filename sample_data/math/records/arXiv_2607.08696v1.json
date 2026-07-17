@@ -1,0 +1,18 @@
+{
+  "abstract": "We study the spectrum of the adjacency matrix $A_n$ of directed inhomogeneous random graphs on $n$ vertices. We assume that $A_n$ has independent entries and diverging average degree scale $s_n$. This framework includes, as special cases, the directed Chung--Lu random graph and directed stochastic block models. Assuming boundedness of the variance profile and that $s_n$ diverges faster than a suitable logarithmic function of $n$, we show that the rank-one Chung--Lu model satisfies a non-homogeneous version of the circular law, which in some situations allows for an explicit expression. Moreover, under mild conditions, we identify the asymptotic singular value distribution using tools from free probability. Finally, for finite-rank directed models, we prove the existence of eigenvalues outside the bulk and establish their joint Gaussian fluctuations at the scale $\\sqrt{s_n/n}$, with an explicit covariance matrix. These results extend the theory of spectral outliers and their fluctuations to directed inhomogeneous random graphs.",
+  "authors": [
+    "Rajat Subhra Hazra",
+    "Giacomo Passuello"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.08696v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08696v1",
+  "published": "2026-07-09T16:53:19+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Spectrum of Directed Inhomogeneous Random Graphs",
+  "updated": "2026-07-09T16:53:19+00:00"
+}

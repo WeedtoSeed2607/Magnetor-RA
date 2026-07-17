@@ -1,0 +1,17 @@
+{
+  "abstract": "A set of points $C \\subset \\mathbb{R}^n$ is called canonically Ramsey if there is some set of points $S\\subset \\mathbb{R}^{n'}$ such that any colouring of $S$, using any number of colours, must contain either a monochromatic copy of $C$ or a rainbow copy of $C$. Mao, Ozeki, and Wang introduced this notion, showing that 30-60-90 triangles are canonically Ramsey. Since then, various other canonically Ramsey configurations have been identified. The author showed that cuboids are canonically Ramsey, while Ge, Shu, Xu, and Yu recently showed that simplices are canonically Ramsey. We extend both of these results, proving that all products of simplices are canonically Ramsey.",
+  "authors": [
+    "Benedict Randall Shaw"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.15264v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15264v1",
+  "published": "2026-07-16T17:55:08+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Products of simplices are canonically Ramsey",
+  "updated": "2026-07-16T17:55:08+00:00"
+}

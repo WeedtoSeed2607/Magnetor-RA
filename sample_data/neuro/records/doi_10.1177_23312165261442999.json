@@ -1,0 +1,26 @@
+{
+  "abstract": "Neural representations of task-relevant sounds are emphasized when they are attended to, compared with when they are ignored. Classic markers of this modulation, such as amplitude change of event-related potentials (ERPs) and attentional modulation indices (AMIs) derived from envelope-tracking analyses, provide robust quantitative measures of top-down attentional strength. However, it remains unclear how well modern auditory attention decoding (AAD) algorithms applied to short electroencephalography (EEG) segments reflect these established neural signatures. Here, we used a two-stream, colocated listening paradigm with fixed and highly regular temporal structure, enabling precise isolation of ERPs and reliable computation of AMI. Participants attended to one of two simultaneous speech streams and detected occasional pitch deviants, while a 64-channel EEG was recorded. We compared three decoding pipelines\u2014a forward linear model-based decoder, a backward linear model-based decoder, and a convolutional neural network (CNN) decoder\u2014in their ability to classify the attended stream from single 4-s trials, a window short enough to reveal performance differences while still supporting above-chance decoding. Importantly, we examined how decoding outcomes relate to classical attentional modulation, including ERP peak amplitudes and AMI. All models achieved significant AAD performance, with the CNN decoder yielding the highest accuracy. Decoding success of all models aligned with known attentional modulation of ERPs, while the forward model decoder exhibited stronger alignment to the N1 peak-related AMI. These findings demonstrate how fixed temporal structure and colocation provide a testbed linking attention decoding to underlying neural mechanisms.",
+  "authors": [
+    "Ham J",
+    "Pope I",
+    "Kim J",
+    "Shim H",
+    "Adhikari B",
+    "Wu YH",
+    "Lee K",
+    "Shinn-Cunningham BG",
+    "Chipara O",
+    "Choi I"
+  ],
+  "doi": "10.1177/23312165261442999",
+  "domain": "neuro",
+  "external_id": "PMC13373405",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": null,
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Linking Attentional Modulation to Auditory Attention Decoding: Using Colocated Stimuli With a Fixed Temporal Structure.",
+  "updated": null
+}

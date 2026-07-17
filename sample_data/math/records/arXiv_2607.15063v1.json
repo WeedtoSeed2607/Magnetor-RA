@@ -1,0 +1,19 @@
+{
+  "abstract": "In this paper, we propose an adaptive physics-preserving multiscale method for incompressible and immiscible two-phase flow in high-contrast porous media. The method couples a physics-preserving implicit-pressure explicit-saturation scheme (P-IMPES) with the mixed constraint energy minimizing generalized multiscale finite element method. The core algorithmic component is an adaptive update strategy for the saturation-dependent coefficient. Since the effective permeability \\(\u03ba_n=\u03bb_t(S_w^n)K\\) depends on the evolving saturation through the total mobility, we introduce an adaptive update algorithm that monitors the variation of the mobility-weighted coefficient and regenerates the multiscale spaces only when a prescribed tolerance is exceeded. A local postprocessing step is further used to recover fine-grid mass conservation. The analysis is a central part of the paper. We prove local conservation for both phases, the unbiased property of the phase formulation, and bounds preservation under a suitable CFL condition. For the advection-dominated case, we establish velocity and saturation error estimates, which clearly identify the contributions from the adaptive tolerance, the coarse mesh size, the spectral approximation, and the front-layer error. Numerical experiments on different high-contrast permeability fields confirm the physical properties of the method and show that smaller adaptive tolerances improve the saturation approximation while avoiding unnecessary updates of the multiscale spaces.",
+  "authors": [
+    "Junhao Huang",
+    "Eric Chung",
+    "Wing Tat Leung"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.15063v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15063v1",
+  "published": "2026-07-16T14:36:20+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "An Adaptive and Physics-Preserving Multiscale Method for Two-Phase Flow Simulations in High-Contrast Heterogeneous Porous Media",
+  "updated": "2026-07-16T14:36:20+00:00"
+}

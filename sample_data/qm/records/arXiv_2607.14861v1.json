@@ -1,0 +1,19 @@
+{
+  "abstract": "Gauge theories and quantum error-correcting codes share the same underlying structure: both use constraints to identify a specific subspace of the full Hilbert space. In quantum error correction, these constraints are known as stabilizers, while in gauge theories they correspond to Gauss law. In this work, we consider a family of discrete Abelian lattice gauge theories described by a $\\mathbb{Z}_{N}$ gauge group with $N$ an arbitrary power of two. In this setting, we find a set of stabilizers for the gauge-invariant subspace which is an alternative to the Gauss operators, and we call them binary Gauss stabilizers. We use this alternative stabilizer group to build practical error-correcting codes exploiting the gauge symmetries of the system without the addition of extra qubits. The applications of our finding are not limited to error correction though. We also provide a new strategy of gauge fixing to remove the redundancies based on our alternative stabilizer, which might provide advantages with respect to already-existing approaches such as the axial gauge. Our results provide new tools to study lattice gauge theories and their quantum simulation, and opens directions for future work at the interface of lattice gauge theory and quantum information.",
+  "authors": [
+    "Matteo Turco",
+    "Luca Spagnoli",
+    "Alessandro Roggero"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.14861v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14861v1",
+  "published": "2026-07-16T11:34:00+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Binary Gauss Stabilizers for Abelian Lattice Gauge Theories",
+  "updated": "2026-07-16T11:34:00+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "abstract": "We study Heilbronn's triangle problem in the unit right triangle, where $n$ points are placed to maximize the smallest of the $\\binom{n}{3}$ triangle areas they span. We prove a boundary-structure result: unless all three vertices are occupied, some optimal configuration with $n \\ge 5$ has at least four points on the boundary, one edge carrying two of them. With the affine $S_3$ symmetry this fixes four boundary points and $n$ orientation variables in a mixed-integer model that certifies global optimality for all $n \\le 8$, including $n = 7, 8$, where no proof was previously available, closing gaps left by grid search and by branch-and-bound. For $n \\le 7$ we obtain exact optima with explicit configurations. For $n = 8$ the optimum is conjectured to be the real root of a septic obtained by Chen, Zeng and Zhou, which our reconstruction confirms to $250$ digits. We show its Galois group is $S_7$, so on that conjecture no expression in radicals exists.",
+  "authors": [
+    "Nathan Sudermann-Merx"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.15021v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15021v1",
+  "published": "2026-07-16T14:08:12+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Heilbronn's Problem in the Unit Triangle: Certified Optimal Configurations for up to $n\\le 8$",
+  "updated": "2026-07-16T14:08:12+00:00"
+}

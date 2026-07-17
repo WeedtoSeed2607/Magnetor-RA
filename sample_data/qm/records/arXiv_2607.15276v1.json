@@ -1,0 +1,19 @@
+{
+  "abstract": "Deep thermalisation characterises the emergence of universal quantum state ensembles on subsystems due to projective measurements on their complement. We study the notion of locality, or lack thereof, in this phenomenon by considering a subsystem partitioned into two disjoint subregions which remain causally disconnected at all times under unitary dynamics. We show that the onset of deep thermalisation in this geometry is fundamentally bounded by measurement-induced entanglement teleportation between the subregions. While measurements on the environment generate entanglement across the disconnected partitions -- suggesting an apparent non-locality -- we demonstrate that generic locally interacting systems exhibit an emergent locality. Specifically, the timescales for both deep thermalisation and entanglement teleportation scale logarithmically with the distance separating the subregions. Exceptions to this include special circuits where the randomness of the measurement outcomes is perfectly transmitted to the ensemble of states of the subsystem, conditioned on the outcomes; in such cases the timescale for deep thermalisation is finite leading to genuine non-locality.",
+  "authors": [
+    "Saptarshi Mandal",
+    "Alan Sherry",
+    "Sthitadhi Roy"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.15276v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15276v1",
+  "published": "2026-07-16T17:59:16+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Locality of deep thermalisation through the lens of entanglement teleportation",
+  "updated": "2026-07-16T17:59:16+00:00"
+}

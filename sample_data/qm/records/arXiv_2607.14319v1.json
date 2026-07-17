@@ -1,0 +1,31 @@
+{
+  "abstract": "Hybrid superconducting-phonon quantum processing is promising for cavity QED, measurement-based quantum computing, and other quantum applications. Relative to microwave photons at the same frequency, phonons can provide ultra-compact footprints, extremely low losses, and greater connectivity. Phonons can also couple strongly to superconducting circuits through the piezoelectric effect. However, this promise rests on scalable platforms that achieve these benefits without degrading superconducting circuit performance. This motivates a monolithic platform combining low phononic loss, strong electromechanical coupling, and superconducting-circuit compatibility without requiring suspended phononics. Here, we characterize a monolithic quantum acoustic platform combining aluminum superconducting circuits on exposed silicon carbide (SiC) with piezoelectric aluminum scandium nitride (AlScN) on SiC for integrated phononics. This architecture is enabled by selective removal of AlScN from selected chip regions, allowing aluminum superconducting microwave resonators to be fabricated directly on the SiC while preserving adjacent AlScN-on-SiC regions for phonon transduction. The resulting Al-on-SiC resonators exhibit a coherent lifetime of 2.9 \u03bcs, demonstrating compatibility with aluminum superconducting quantum devices. In parallel, cryogenic surface acoustic delay-line measurements on the retained AlScN-on-SiC regions show low phononic propagation loss at 4.05 GHz, corresponding to an estimated phonon lifetime of 7.6 \u03bcs. Together with a previously demonstrated electromechanical coupling coefficient of about 4.3% and a theoretical upper bound of 8%, these results establish Al-on-SiC/AlScN-on-SiC as a promising monolithic platform for integrating superconducting microwave circuits with piezoelectric phononic components for quantum acoustic networking and hybrid quantum systems.",
+  "authors": [
+    "Yuanchen Deng",
+    "William W. Roberts",
+    "Sueli Skinner-Ramos",
+    "Dalton Anderson",
+    "Katherine Hewey",
+    "Xingyu Du",
+    "Michael Miller",
+    "Brandon Smith",
+    "Hwijong Lee",
+    "Pingping Chen",
+    "Charles Thomas Harris",
+    "Roy H. Olsson",
+    "Lisa Hackett",
+    "Rupert Lewis",
+    "Matt Eichenfield"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.14319v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14319v1",
+  "published": "2026-07-15T19:32:01+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Towards a monolithic platform for coupling superconducting circuits to low-loss microwave phonons in AlScN on 4H-SiC",
+  "updated": "2026-07-15T19:32:01+00:00"
+}

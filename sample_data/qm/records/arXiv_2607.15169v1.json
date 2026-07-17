@@ -1,0 +1,20 @@
+{
+  "abstract": "Dissipative preparation of quantum order offers a route to superconductivity that does not rely on enhancing attractive interactions. Here we propose a driven-dissipative protocol to prepare superconductivity as a stationary state of a two-dimensional moir\u00e9 heterostructure. The key ingredient is a bilayer moir\u00e9 platform in which the layer degree of freedom acts as a pseudospin, allowing the pseudospin structure required for pairing to be implemented through optically induced spatial operations. This preparation scheme requires local dissipation, which we show to arises naturally from weakly dispersive bosonic modes in the heterostructure. In contrast, in the opposite regime of collective dissipation, the same platform exhibits an early-time superradiant burst. Our results establish driven-dissipative moir\u00e9 heterostructures as a promising platform for preparing superconductivity, while also revealing a connection between steady-state pairing and transient superradiance.",
+  "authors": [
+    "Tsung-Sheng Huang",
+    "Atac Imamoglu",
+    "Mohammad Hafezi",
+    "Sebastian Diehl"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.15169v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15169v1",
+  "published": "2026-07-16T16:17:45+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Driven-dissipative superconductivity in moir\u00e9 heterostructure without attraction",
+  "updated": "2026-07-16T16:17:45+00:00"
+}

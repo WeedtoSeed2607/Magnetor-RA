@@ -1,0 +1,19 @@
+{
+  "abstract": "We study stochastic barycentric estimators for proximal points and metric projections obtained by exponentially reweighting Gaussian perturbations. Our main result is an abstract comparison theorem for probability measures with densities proportional to an exponential weight, under a radial dominance condition relative to a prescribed profile. This yields an explicit upper bound for the norm of the associated barycenter in terms of a one-dimensional comparison measure. We also provide tractable sufficient conditions for radial dominance, including strong convexity, addition of nonnegative convex terms, and star-shaped constraints. As a consequence, we obtain a refined convergence rate for stochastic proximal estimators of weakly convex functions, together with asymptotic sharpness of the constant. The same framework yields a corresponding rate for stochastic projection estimators onto closed convex sets. We further establish basic structural properties of the barycentric approximation operator, such as smoothness and cocoercivity. Numerical experiments illustrate the predicted rate, the dimensional scaling of the constant, and its asymptotic sharpness.",
+  "authors": [
+    "Gonzalo Contador",
+    "Pedro P\u00e9rez-Aros",
+    "Emilio Vilches"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.08670v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08670v1",
+  "published": "2026-07-09T16:35:22+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Sharp bounds for stochastic proximal and projection estimators via radial dominance",
+  "updated": "2026-07-09T16:35:22+00:00"
+}

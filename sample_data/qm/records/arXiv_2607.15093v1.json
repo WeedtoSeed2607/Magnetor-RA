@@ -1,0 +1,18 @@
+{
+  "abstract": "Magnetic monopoles lie at the crossroads of gauge fields, topology, geometric phases, and charge quantization, yet they remain elusive as fundamental particles. Here we show that an emergent Dirac-monopole framework arises naturally from the dynamics of massive quantum vortices in a spherical superfluid shell. Their dynamics is formally equivalent to that of interacting charged particles constrained to a sphere in the field of a magnetic monopole. The monopole charge is fixed by the superfluid density and automatically satisfies Dirac's quantization condition. The emergent monopole description predicts cyclotron-like vortex motion, in quantitative agreement with Gross--Pitaevskii simulations. We further show that topological frustration induced by two like-charged polar vortices gives rise to the formation of an equatorial vortex necklace, a configuration reminiscent of the polygonal cyclone clusters observed around Jupiter's poles, before its subsequent breakup through a Kelvin--Helmholtz-like instability. Within this framework, the vortex necklace may be viewed as a quantized analogue of Wu--Yang gauge patching. Our results establish spherical superfluids as a versatile platform for realizing and exploring fundamental aspects of Dirac-monopole physics.",
+  "authors": [
+    "Marianna Sorba",
+    "Andrea Richaud"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.15093v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15093v1",
+  "published": "2026-07-16T15:03:34+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "A magnetic monopole in a superfluid bubble",
+  "updated": "2026-07-16T15:03:34+00:00"
+}

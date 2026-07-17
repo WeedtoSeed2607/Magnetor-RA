@@ -1,0 +1,20 @@
+{
+  "abstract": "We construct a new family of Calderbank-Shor-Steane (CSS) codes using the generator and parity-check matrices of Low-Density Generator Matrix (LDGM) codes, with row operations applied to both matrices in order to achieve the desired quantum rate. Decoding is performed in an iterative manner, by applying message passing over the associated graph, and discrete Density Evolution (DDE) is used to optimize performance in the depolarizing channel. The proposed construction offers high flexibility and easiness in the design, producing quantum codes that possess excellent error correction capabilities. By properly designing the structure of the code, we are able to control and bound the weight of the stabilizer generators to a small value, which results in codes particularly well suited for fault-tolerant quantum computation. At the same time, these codes achieve very good performance in terms of error correction capability.",
+  "authors": [
+    "Yumin Li",
+    "Kejing Liu",
+    "Hanqing Lou",
+    "Javier Garcia-Frias"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.15159v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15159v1",
+  "published": "2026-07-16T16:02:16+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "LDGM-Based Quantum Codes for Fault-Tolerant Quantum Computation",
+  "updated": "2026-07-16T16:02:16+00:00"
+}

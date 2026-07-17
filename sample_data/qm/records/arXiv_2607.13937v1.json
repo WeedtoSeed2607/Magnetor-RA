@@ -1,0 +1,17 @@
+{
+  "abstract": "The classical observables of position and momentum are not well adapted to particles in a microphysical situation where typical probability distributions are characterized by a substantial dispersion. We propose the use of more robust quantum observables for probabilistic classical particles. The quantum observables are statistical observables which do not take fixed values for a given classical position and momentum. Solutions of the Liouville equation are discussed in the quantum formalism for classical statistics. Statistical observables are represented by non-commuting operators. No classical correlation function is defined for these observables and Bell's inequalities do not apply. We demonstrate for a general potential how a quantum system emerges from classical statistics. For the particular cases of a harmonic potential and a Coulomb potential we investigate subsystems which describe all features of a quantum particle. This covers the discrete energy spectrum of the hydrogen atom and quantum harmonic oscillator. We discuss the interference for the double-slit experiment. Conserved statistical observables may also be relevant for the probabilistic dynamics of dust or planets.",
+  "authors": [
+    "Christof Wetterich"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.13937v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.13937v1",
+  "published": "2026-07-15T15:19:49+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Quantum observables for probabilistic classical particles",
+  "updated": "2026-07-15T15:19:49+00:00"
+}

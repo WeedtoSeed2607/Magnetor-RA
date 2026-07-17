@@ -1,0 +1,30 @@
+{
+  "abstract": "Introduction Parkinson\u2019s disease (PD) affects approximately 1% of individuals over the age of 60, with its prevalence increasing in older populations. Clinical manifestations can be effectively controlled during the first years of disease but progressively medications effect shortens with appearance of motor complications and dyskinesia. Areas covered Management of PD primarily aims to restore dopaminergic activity through pharmacological interventions such as levodopa, which effectively alleviates motor symptoms and extends life expectancy. Early initiation of treatment improves bradykinesia, rigidity, and tremor; however, as the disease advances, the therapeutic response to levodopa shortens, leading to complications such as motor fluctuations and dyskinesia. In advanced Parkinson\u2019s disease (aPD), the emergence of the \u201cwearing-off\u201d phenomenon and unpredictable \u201con/off\u201d fluctuations\u2014where symptoms reappear despite medications\u2014poses significant challenges for disease management. Expert opinion Device-aided therapies, including deep brain stimulation and continuous infusion of apomorphine or levodopa, provide effective management options for advanced Parkinson\u2019s disease (aPD) when oral medications fail to adequately control symptoms. Continuous subcutaneous apomorphine infusion (CSAI) has demonstrated both efficacy and long-term tolerability; however, its clinical adoption remains limited due to challenges in patient selection and referral, treatment initiation and handling of the device. This review examines the available infusion therapies, with a particular focus on CSAI, and aims to provide clinicians with evidence-based guidance for optimizing treatment selection in aPD.",
+  "authors": [
+    "Stocchi F",
+    "Ceravolo R",
+    "Colosimo C",
+    "De Pandis MF",
+    "Modugno N",
+    "Pileri M",
+    "Tessitore A",
+    "Tinazzi M",
+    "Valzania F",
+    "Vitale C",
+    "Zangaglia R",
+    "Zappia M",
+    "Zibetti M",
+    "Antonini A"
+  ],
+  "doi": "10.1007/s10072-026-09228-5",
+  "domain": "neuro",
+  "external_id": "PMC13372871",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-15T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Device aided therapies in Parkinson disease: an expert view on apomorphine.",
+  "updated": null
+}

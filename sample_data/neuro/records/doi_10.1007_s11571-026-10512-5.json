@@ -1,0 +1,19 @@
+{
+  "abstract": "Musical performances, particularly in drumming, are characterized not only by their structured rhythmic patterns but also by the subtle variations in timing and amplitude series that create expressive complexity. This study proposes a neural-inspired computational model to investigate how the brain might learn and internalize such complex rhythms. Inspired by the established roles of the cerebellum and basal ganglia in production of rhythms and timings, we utilize an oscillation-driven reservoir computer, a recurrent neural network model for temporal learning, to simulate the generation of human-like expressive drumming performances. First, the model was trained to replicate Jeff Porcaro\u2019s distinctive hi-hat patterns. Analyses revealed that the outputs of the model incorporating high-frequency oscillators ([50, 100] Hz), closely matched the original drumming, reproducing its characteristic fluctuations and patterns in inter-beat timings (microtiming) and amplitudes. Next, the model was trained to generate multidimensional drum kit performances for various genres (funk, jazz, samba, and rock). The model\u2019s outputs exhibited timing deviation and audio features characteristic of the original performances. Our findings demonstrate that oscillation-driven reservoir computing can replicate the rhythmic complexity of professional drumming, suggesting it as a potential computational principle for motor timing and rhythm generation. This approach provides a powerful framework for understanding how the brain generates and processes intricate rhythmic patterns. Supplementary Information The online version contains supplementary material available at 10.1007/s11571-026-10512-5.",
+  "authors": [
+    "Kawai Y",
+    "Fujii S",
+    "Asada M"
+  ],
+  "doi": "10.1007/s11571-026-10512-5",
+  "domain": "neuro",
+  "external_id": "PMC13373152",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-12-01T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Modeling the rhythmic complexity of professional drumming with an oscillation-driven reservoir computer.",
+  "updated": null
+}

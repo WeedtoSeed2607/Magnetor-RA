@@ -1,0 +1,26 @@
+{
+  "abstract": "Cognitive impairment is an important constraint for PwPD with Parkinson\u2019s disease (PwPD). Digital assessments potentially provide more accessible measurements and obtain a richer set of data than traditional paper\u2013pencil-based instruments. Open-source generation can support the availability of comparable assessments in different cohorts. A digital, tablet-based cognitive assessment (DiCo) comprising 13 distinct tests was implemented as an open-source tool, expanding on available frameworks. Commonly used tests were selected to cover response inhibition, cognitive flexibility, attention, and working memory. After extensive usability testing, the DiCo was applied in participants without overt cognitive impairment. 97 participants (43% women) completed the entire DiCo. Clustering of DiCo feature correlations and conditional dependencies indicated a predominantly mutual organization of cognitive performance in PwPD. Exploratory factor analysis identified five interrelated latent factors. Most factors were derived from individual tests and correlated moderately with traditional neuropsychological tests and questionnaires. Machine learning identified a test of working memory (N-back) as the most predictive feature for the Montreal Cognitive Assessment. Latent profile analysis revealed four cognitive subgroups, mainly reflecting severity. The open-source digital cognitive assessment established in this study showed good usability by PwPD. The observed overlap between individual DiCo features and MoCA and FAB scores may inform future reduced task sets for research or selected clinical settings. Supplementary Information The online version contains supplementary material available at 10.1038/s41598-026-62324-6.",
+  "authors": [
+    "Feige T",
+    "Frank A",
+    "Bendig J",
+    "Epler A",
+    "Harbarth C",
+    "Kunze J",
+    "Jungk J",
+    "Schnalke N",
+    "Reichmann H",
+    "Falkenburger BH"
+  ],
+  "doi": "10.1038/s41598-026-62324-6",
+  "domain": "neuro",
+  "external_id": "PMC13373175",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-15T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Cognitive structure and progression in Parkinson's disease: insights from a tablet-based assessment.",
+  "updated": null
+}

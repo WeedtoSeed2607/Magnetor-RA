@@ -1,0 +1,19 @@
+{
+  "abstract": "Using a robust photon loss model for photonic quantum experiments, we derive $n-$th order parameter-shift rules for computing gradients of Fock boson sampling transition probabilities where $n$ photons are sent into a lossy interferometer. We also show that in general it is not possible to generalize this gradient recipe to the case of Gaussian boson sampling. Only in the specific case where the transmission matrix of the interferometer can be factorized as a diagonal loss matrix premultiplied by a pure unitary it is possible to obtain parameter-shift rules with a finite order given by twice the total number of photons detected. We demonstrate the efficacy of the proposed method by comparing its performance against finite differences on real hardware.",
+  "authors": [
+    "Marius Trudeau",
+    "Pierre-Emmanuel Emeriau",
+    "Nicol\u00e1s Quesada"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.15160v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15160v1",
+  "published": "2026-07-16T16:04:15+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Parameter-Shift Rules for Gradients in Boson Sampling Experiments",
+  "updated": "2026-07-16T16:04:15+00:00"
+}

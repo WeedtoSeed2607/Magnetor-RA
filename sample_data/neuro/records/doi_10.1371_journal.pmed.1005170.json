@@ -1,0 +1,20 @@
+{
+  "abstract": "Medical artificial intelligence research is shifting from single-task models toward multimodal large language model-based agents for complex clinical workflows, requiring benchmarks that assess clinical reasoning, process safety, and resource stewardship rather than final outputs alone.",
+  "authors": [
+    "Ruhrberg Est\u00e9vez S",
+    "Ferber D",
+    "van der Schaar M",
+    "Kather JN"
+  ],
+  "doi": "10.1371/journal.pmed.1005170",
+  "domain": "neuro",
+  "external_id": "PMC13349124",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-01T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "How to benchmark medical AI agents.",
+  "updated": null
+}

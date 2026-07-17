@@ -1,0 +1,17 @@
+{
+  "abstract": "We prove a Bombieri-Vinogradov type theorem for exponential sums over products of $k$ primes. As an application, we show the lower bound $$\\sup_{n\\le x} \\left|\\sum_{m\\le n} 1_{\u03a9(m) = k} e(\u03b1m)\\right| \\gg x^{1/6 - \\varepsilon}$$ for $2\\le k\\le (2-\\varepsilon)\\log\\log x$ and $\u03b1\\in\\mathbb{R},$ where we noted $e(\u03b2) := e^{2i\u03c0\u03b2}.$",
+  "authors": [
+    "Pierre-Alexandre Bazin"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.15137v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15137v1",
+  "published": "2026-07-16T15:42:39+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "A Bombieri-Vinogradov theorem for exponential sums over products of k primes",
+  "updated": "2026-07-16T15:42:39+00:00"
+}

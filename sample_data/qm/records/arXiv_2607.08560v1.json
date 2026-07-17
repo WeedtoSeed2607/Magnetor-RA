@@ -1,0 +1,25 @@
+{
+  "abstract": "The Quantum Scientific Computing Open User Testbed (QSCOUT) has developed a qubit-boson gate set for hybrid continuous-discrete variable (CV-DV) quantum computing. This document outlines how to utilize these gates on QSCOUT using Just Another Quantum Assembly Language, Jaqal\\textsuperscript{TM}.",
+  "authors": [
+    "Edward C. Tortorici",
+    "Ethan C. McGarrigle",
+    "Brian K. McFarland",
+    "Wes L. Johnson",
+    "Daniel S. Lobser",
+    "Melissa C. Revelle",
+    "Brandon P. Ruzic",
+    "Susan M. Clark",
+    "Christopher G. Yale"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.08560v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08560v1",
+  "published": "2026-07-09T14:53:19+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "QSCOUT's Qubit-Boson Gate Set",
+  "updated": "2026-07-09T14:53:19+00:00"
+}

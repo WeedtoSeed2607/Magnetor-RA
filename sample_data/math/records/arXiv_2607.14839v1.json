@@ -1,0 +1,18 @@
+{
+  "abstract": "This paper addresses stabilization of MIMO systems with uncertain time-varying diagonal input direction. We propose a modular switching sign-compensation layer acting as an outer wrapper around a nominal controller. Unlike Nussbaum-type gains, monitoring functions, or binary adaptive mechanisms, the method uses only bounded sign changes that preserve the nominal control magnitude and its properties. The compensation layer uses adaptive variables built from nominal Lyapunov quantities to search for the unknown input-sign configuration based on schedulers. Two schedulers are developed: a vector scheduler, where each input channel explores its own sign compensation and admits an online trapping certificate, and a scalar pattern scheduler, where one variable visits all diagonal sign matrices and gives a design-time recovery guarantee on sufficiently long constant-sign intervals. Once the correct sign configuration is set, the actual closed loop coincides with the nominal closed loop and the original nominal stability property is recovered. The approach is illustrated on a flight roll-reversal problem, a visual-servoing benchmark, and an underground-reservoir control example motivated by human induced-seismicity mitigation.",
+  "authors": [
+    "Diego Guti\u00e9rrez-Oribio",
+    "Ioannis Stefanou"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.14839v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14839v1",
+  "published": "2026-07-16T11:04:42+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Modular Sign Compensation for MIMO Systems with Unknown Control Direction: An Exact Nominal Recovery Approach",
+  "updated": "2026-07-16T11:04:42+00:00"
+}

@@ -1,0 +1,18 @@
+{
+  "abstract": "Roman domination and its variants form an important family of domination-type graph parameters motivated by protection, fault tolerance, and resource allocation. A Roman dominating function of a graph \\(G\\) is a function \\(f:V(G)\\rightarrow\\{0,1,2\\}\\) such that every vertex \\(v\\) with \\(f(v)=0\\) has a neighbour \\(u\\) with \\(f(u)=2\\). The weight of \\(f\\) is \\(w(f)=\\sum_{v\\in V(G)}f(v)\\), and the minimum weight of a Roman dominating function of \\(G\\) is the Roman domination number, denoted by \\(\u03b3_R(G)\\). In this paper, we study four variants of Roman domination on two natural subclasses of bipartite graphs, namely convex bipartite graphs and chordal bipartite graphs. On the positive side, we develop a unified left-to-right dynamic programming framework for Roman-\\(\\{2\\}\\) domination, double Roman domination, perfect Roman domination, and unique response Roman domination on convex bipartite graphs. The algorithms exploit the interval structure of one bipartition class and represent all unfinished requirements using a constant number of boundary indices. Consequently, each of the four parameters can be computed in \\(O(n^6)\\) time, where \\(n=|V(G)|\\). On the negative side, we prove that Roman-\\(\\{2\\}\\) domination, perfect Roman domination, and unique response Roman domination remain NP-complete on chordal bipartite graphs. These results establish a clear algorithmic separation between convex bipartite graphs, where the interval ordering yields polynomial-time solvability, and the broader class of chordal bipartite graphs, where several Roman-type domination problems remain computationally intractable.",
+  "authors": [
+    "Gautam K. Das",
+    "Kamal Santra"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.15026v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15026v1",
+  "published": "2026-07-16T14:12:33+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Roman-Type Domination on Convex and Chordal Bipartite Graphs: Algorithms and Hardness",
+  "updated": "2026-07-16T14:12:33+00:00"
+}

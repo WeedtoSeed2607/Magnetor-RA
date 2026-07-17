@@ -1,0 +1,19 @@
+{
+  "abstract": "Rapid release of neurotransmitters from presynaptic boutons is essential for brain function and is triggered by Ca 2+ influx through voltage-gated calcium channels (VGCCs), which consist of an \u03b11 pore-forming subunit, intracellular \u03b2 subunits, and mostly extracellular \u03b12\u03b4 auxiliary subunits. Neurexins (Nrxn) regulate neurotransmission and presynaptic Ca 2+ influx, but the physical interactions with VGCC subunits remain unknown. Here, we examined these interactions in recombinant VGCC-Nrxn complexes using a nanobody-based co-precipitation system. We found that the \u03b12\u03b4-1 and \u03b12\u03b4-3 variants bind to the \u03b11 pore-forming subunits of Ca V 2.1- and Ca V 2.2-type VGCCs with distinct preferences, whereas Nrxn1\u03b1 and Nrxn1\u03b2 do not directly interact with \u03b11. Since Nrxn1\u03b1 binds both \u03b12\u03b4 variants but Nrxn1\u03b1/\u03b12\u03b4 complexes do not include \u03b11, mobile \u03b12\u03b4 subunits may dynamically toggle between Nrxn1\u03b1 and the Ca V core. Additionally, Nrxn1\u03b1 associates with \u03b11 subunits independently of \u03b12\u03b4 through the intracellular scaffold protein Mint2, which enhances Nrxn1\u03b1/\u03b12\u03b4 complex formation by inhibiting full glycosylation of \u03b12\u03b4. Extracellularly shorter Nrxn1\u03b2 cannot bind \u03b12\u03b4 but can indirectly associate with Ca V 2 \u03b11 pore-forming subunits via either Mint2 or CASK proteins. Therefore, our findings reveal distinct molecular complexes through which \u03b1Nrxn and \u03b2Nrxn variants interact with VGCC subunits to regulate presynaptic Ca 2+ influx. (196 words) Supplementary Information The online version contains supplementary material available at 10.1038/s41598-026-62077-2.",
+  "authors": [
+    "Hohaus N",
+    "Reissner C",
+    "Missler M"
+  ],
+  "doi": "10.1038/s41598-026-62077-2",
+  "domain": "neuro",
+  "external_id": "PMC13373219",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-15T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Synaptic Ca2+ channels and neurexins are linked through direct and indirect binding complexes.",
+  "updated": null
+}

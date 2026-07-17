@@ -1,0 +1,17 @@
+{
+  "abstract": "We study the boundary asymptotic behavior of Bergman functions on planar domains. We prove that $\\partial\u03a9$ is uniformly perfect if and only if $K_\u03a9^{(1)}(w)\\asymp \u03b4_\u03a9(w)^{-4}$. For weakly uniformly perfect boundaries, we establish lower and upper bounds for $K_\u03a9^{(1)}$, which characterize weak uniform perfectness. Combining these estimates with capacity upper bounds for the Bergman kernel, we derive optimal growth rates for the Bergman metric and Bergman distance on Zalcman-type domains; in particular, we obtain $d_\u03a9\\gtrsim \\log\\log |z|^{-1}$ in the power-type case and $d_\u03a9\\gtrsim (\\log |z|^{-1})/(\\log\\log |z|^{-1})$ in the logarithmic-type case. Our results extend and refine earlier work of Chen and Xiong--Zheng.",
+  "authors": [
+    "Zhiyuan Zheng"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.14980v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14980v1",
+  "published": "2026-07-16T13:32:07+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Bergman functions on weakly uniformly perfect domains II",
+  "updated": "2026-07-16T13:32:07+00:00"
+}

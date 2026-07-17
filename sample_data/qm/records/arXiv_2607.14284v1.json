@@ -1,0 +1,19 @@
+{
+  "abstract": "Spacelike singularities supported by matter satisfying the null energy condition (NEC) are expected to fall within the Belinski--Khalatnikov--Lifshitz (BKL) paradigm. We show that controlled violations of the NEC in holography can lead to different black hole interiors. In a holographic model dual to a strongly coupled non-Hermitian $\\mathcal{PT}$-symmetric QFT, we uncover a novel non-Kasner regime within its real, $\\mathcal{PT}$-restored phase. The deep-interior geometry describes an isotropic FLRW cosmology undergoing super-accelerated expansion and approaching a Little Rip. This regime leaves a characteristic imprint on two-sided heavy-operator correlators, allowing it to be distinguished from a standard Kasner interior. Our construction provides a concrete holographic realization of a Little Rip cosmology and lays the groundwork for a Little Rip/CFT correspondence, in which such cosmological regimes can be explored through observables in a non-Hermitian quantum field theory.",
+  "authors": [
+    "Daniel Arean",
+    "David Garcia-Fari\u00f1a",
+    "Juan F. Pedraza"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.14284v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14284v1",
+  "published": "2026-07-15T18:46:31+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Non-Hermitian Holographic Flows to Little Rip Cosmologies",
+  "updated": "2026-07-15T18:46:31+00:00"
+}

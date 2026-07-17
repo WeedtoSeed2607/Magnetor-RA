@@ -1,0 +1,17 @@
+{
+  "abstract": "In this article, we investigate the arithmeticity of the one-cusped Dehn fillings of the $(-2,3,8)$-pretzel link complement and of the Berge manifold, which respectively are the sisters of the Whitehead and $6^2_2$ link complements. We show that for each such one-cusped hyperbolic Dehn filling, the cusp field, the trace field and the invariant trace field coincide. Moreover, we establish that no one-cusped hyperbolic Dehn filling of the Berge manifold is arithmetic and that the only arithmetic one-cusped hyperbolic Dehn filling of the $(-2,3,8)$-pretzel link complement is the sister of the figure eight knot complement. The techniques used to prove these results further show that each knot complement covering a one-cusped hyperbolic Dehn filling of either of these two sisters manifolds admits no hidden symmetries, effectively generalizing already known results in this regard.",
+  "authors": [
+    "Priyadip Mondal"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.08764v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08764v1",
+  "published": "2026-07-09T17:58:34+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "One-cusped Dehn fillings of the sisters of the Whitehead and $6^2_2$ link complements",
+  "updated": "2026-07-09T17:58:34+00:00"
+}

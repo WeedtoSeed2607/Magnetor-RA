@@ -1,0 +1,19 @@
+{
+  "abstract": "We prove equidistribution and Manin's conjecture for rational points outside the lines on smooth split quintic del Pezzo surfaces over number fields with respect to any anticanonical height. The proof is based on a general theorem that is broadly usable to deduce equidistribution when using the torsor method with several equivalent height functions to treat variants of Manin's problem.",
+  "authors": [
+    "Christian Bernert",
+    "Ulrich Derenthal",
+    "Florian Wilsch"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.14866v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14866v1",
+  "published": "2026-07-16T11:41:47+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Equidistribution and the torsor method",
+  "updated": "2026-07-16T11:41:47+00:00"
+}

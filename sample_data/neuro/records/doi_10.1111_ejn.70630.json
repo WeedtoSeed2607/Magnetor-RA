@@ -1,0 +1,28 @@
+{
+  "abstract": "ABSTRACT Freezing of gait (FOG) is a burdensome Parkinson's disease (PD) symptom. Gait control in people with PD relies on compensation from cognitive, sensory and limbic networks. Their integration is influenced by the noradrenergic ascending arousal system, modulated by the locus coeruleus. In PD, locus coeruleus degeneration has been linked to increased FOG severity. Atomoxetine, a selective noradrenaline reuptake inhibitor, may provide a novel therapeutic approach for FOG. However, to date, studies on atomoxetine's effect on FOG have been inconsistent and had small sample sizes. This study will evaluate the effects of atomoxetine on FOG severity, both in the dopaminergic OFF\u2010 and ON\u2010states. Moreover, we will investigate its mode of action by examining its influence on functional network topology. Additionally, we will examine clinical and imaging markers associated with an individual's treatment response. Sixty patients with frequent FOG will be recruited for a multicentre, single\u2010dose, double\u2010blind, placebo\u2010controlled, crossover clinical trial. Assessments include clinimetrics, cognition, MDS\u2010UPDRS III, gait assessments, pupillometry and neuroimaging, conducted in the dopaminergic OFF\u2010 and ON\u2010states. The primary outcome is FOG severity in the dopaminergic OFF\u2010state, quantified based on the percentage of time spent frozen during gait assessments. Resting\u2010state fMRI is conducted to assess network integration and segregation across brain regions and task\u2010fMRI to reveal neural circuitry changes during FOG. Lastly, locus coeruleus and substantia nigra integrity will be assessed using structural MRI. This study will provide insights into the role of the noradrenergic ascending arousal system and potentially identify a novel pharmaceutical treatment pipeline for FOG in PD.",
+  "authors": [
+    "Goossens FM",
+    "Ehgoetz Martens KA",
+    "Bloem BR",
+    "Helmich RC",
+    "Howe EE",
+    "Kessels RPC",
+    "Roerdink M",
+    "Bryant AG",
+    "Shine JM",
+    "Tosserams A",
+    "Lewis SJG",
+    "Nonnekes J"
+  ],
+  "doi": "10.1111/ejn.70630",
+  "domain": "neuro",
+  "external_id": "PMC13374367",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-01T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Pharmacologically Modulating the Noradrenergic Arousal System to Reduce Freezing of Gait in Parkinson's Disease: Study Protocol of the International AnTi\u2010FREEZE Study.",
+  "updated": null
+}

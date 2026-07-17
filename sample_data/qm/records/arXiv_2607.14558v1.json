@@ -1,0 +1,19 @@
+{
+  "abstract": "We investigate spin-resolved decay of an axion-like particle (ALP) into an electron--positron pair in an intense laser field. Using the Baier--Katkov quasiclassical operator formalism and the locally constant field approximation, we derive a compact analytic rate retaining finite ALP-mass effects and the lepton spin degrees of freedom. In the massless limit, the spin-summed rate has the same weak- and strong-field asymptotic scalings as the corresponding photon-induced pair-creation rate, while the pseudoscalar coupling induces distinct spin-resolved channels and spin correlations. A finite ALP mass reorganizes the spectrum across the vacuum threshold, producing purely field-induced pair creation below threshold and spin-dependent oscillatory modulations above threshold through the coherent interplay of vacuum and field-assisted contributions. The entanglement of the produced pair reflects the dominant production mechanism. Near the vacuum threshold in weak fields, the pair is nearly maximally entangled and singlet-like. Away from threshold, the reduced spin state becomes triplet-like, retaining a concurrence of \\(1/2\\) when strong-field production dominates but becoming separable when vacuum decay dominates. These results identify spin-resolved spectra and entanglement as signatures of finite-mass and threshold effects in strong-field ALP searches.",
+  "authors": [
+    "Xiaodan Mao",
+    "Yue-Yue Chen",
+    "Pei-Lun He"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.14558v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14558v1",
+  "published": "2026-07-16T04:37:37+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Spin-Resolved Decay of Axion-Like Particles into Electron--Positron Pairs in Strong Electromagnetic Fields",
+  "updated": "2026-07-16T04:37:37+00:00"
+}

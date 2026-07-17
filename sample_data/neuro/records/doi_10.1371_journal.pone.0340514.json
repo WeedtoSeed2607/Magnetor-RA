@@ -1,0 +1,18 @@
+{
+  "abstract": "Fixed poetic forms such as the sonnet, ottava rima, or terza rima are an important feature of European literary traditions, yet large-scale empirical research on their cross-lingual distribution and evolution has been limited so far. This paper introduces a fully language-independent, unsupervised method for identifying recurrent rhyme-based forms using local sequence alignment. Drawing on 187,719 poems from six European traditions (Czech, English, French, German, Italian, Russian) in the PoeTree collection, we encode rhyme schemes in a compact eight-symbol alphabet and apply the Smith\u2013Waterman algorithm via the Metronome package to compute pairwise distances. Dimensionality reduction (UMAP) and density-based clustering (HDBSCAN) yield 61 clusters, many of which align with known fixed forms. Evaluation against existing Czech and Russian annotations shows strong recall, while supervised classification experiments\u2014both within and across languages\u2014demonstrate that form categories are robustly learnable in the induced vector space. We illustrate the potential of such data for literary research in three showcases: cross-tradition influence in 19th-century Czech poetry, topical affinities of selected forms using multilingual topic modeling, and geographic associations revealed through geonym analysis.",
+  "authors": [
+    "Plech\u00e1\u010d P",
+    "\u0160e\u013ca A"
+  ],
+  "doi": "10.1371/journal.pone.0340514",
+  "domain": "neuro",
+  "external_id": "PMC13367689",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-01-01T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "A local sequence alignment approach to recognizing fixed poetic forms across languages.",
+  "updated": null
+}

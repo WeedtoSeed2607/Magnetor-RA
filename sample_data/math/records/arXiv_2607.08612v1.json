@@ -1,0 +1,17 @@
+{
+  "abstract": "We introduce the Point-Cross Dimension, a new pointwise invariant designed to measure the directional organization of a set at a single point. Whereas the Point-Extended Box Dimension quantifies local dispersion and covering complexity, the Point-Cross Dimension isolates a complementary layer: the coexistence of independent effective directions through the same germ. The construction assigns weights to admissible directional probes and aggregates them over projectively independent channels, thereby turning the elementary intuition of a cross into a flexible local dimension theory. This viewpoint separates phenomena that classical isotropic dimensions often collapse. A point may have small local box dispersion while carrying several independent directional channels. Conversely, large local covering complexity need not reflect genuine directional independence. We develop the theory in three successive layers. The first is a point-vector dimension, which records exact local directions. The second is a point-tangential dimension, which replaces exact directions by Bouligand effective directions. The third is the Point-Cross Dimension, which weights these effective projective channels by the point-extended box complexity detected along admissible probes. We establish the basic structural properties of these invariants and compute the resulting Point-Cross Dimension on a range of model configurations, including finite crosses, fractal coordinate frames, oscillatory germs, self-similar curves, Sierpi\u0144ski-type carpets, Cantor dusts, and infinite-rank outlook examples. The final part of the paper establishes comparison principles between the directional and dispersive layers of the theory.",
+  "authors": [
+    "Nadir Maaroufi"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.08612v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08612v1",
+  "published": "2026-07-09T15:42:27+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Point-dimension theory (part II): The point-cross dimension",
+  "updated": "2026-07-09T15:42:27+00:00"
+}

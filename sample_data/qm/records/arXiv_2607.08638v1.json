@@ -1,0 +1,19 @@
+{
+  "abstract": "The bosonic Kitaev chain (BKC) model is a deceptively simple looking quadratic pairing Hamiltonian. Despite being purely Hermitian, it exhibits a number of striking non-Hermitian topological phenomena, including skin effects. We show here how symmetries play a key role in this model, and how identifying these allows one to develop generalized BKC-like models. We emphasize the surprising fact that any quadratic bosonic pairing Hamiltonian with a sublattice (chiral) symmetry necessarily has a dynamical matrix with an effective time reversal symmetry. This symmetry is unrelated to physical time-reversal, but enables non-trivial topological invariants. We also discuss how this symmetry is unrelated to another key property of the BKC, the decoupling of quadrature dynamics. This feature can instead be connected to a distinct symmetry, namely an effective particle-hole symmetry of the dynamical matrix. We discuss non-trivial generalized BKC models that only keep one of these two effective symmetries intact. We also provide a classification of all translationally-invariant 1D pairing Hamiltonians, and show connections between the BKC and a well-studied non-Hermitian fermionic system, the symplectic Hatano-Nelson model.",
+  "authors": [
+    "Gideon Lee",
+    "Tony Jin",
+    "Aashish A. Clerk"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.08638v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08638v1",
+  "published": "2026-07-09T16:13:20+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Symmetry as a route to generalized bosonic Kitaev chains",
+  "updated": "2026-07-09T16:13:20+00:00"
+}

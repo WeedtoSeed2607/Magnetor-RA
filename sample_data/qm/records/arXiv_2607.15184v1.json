@@ -1,0 +1,20 @@
+{
+  "abstract": "We develop a backpropagation algorithm for evaluating parameter gradients in quantum circuits using Pauli propagation simulation. The method has computational complexity comparable to that of standard sparse Pauli simulation techniques, while producing gradients whose accuracy is of the same order as the corresponding observable expectation values. By exploiting the reversibility of quantum circuits, the algorithm reduces the memory cost by a factor of $\\mathcal{O}(n_\\text{param})$ compared with conventional reverse-mode automatic differentiation, where $n_\\text{param}$ denotes the number of parameters in the circuit. Compared with finite difference methods, the algorithm is $\\mathcal{O}(n_\\text{param})$ more efficient in function evaluations. These features enable efficient and accurate classical optimization of quantum circuits for applications such as state preparation and time-evolution compression, while also allowing operator-complexity measures such as the operator stabilizer R\u00e9nyi entropy to be monitored and regularized during optimization. We demonstrate the method by optimizing low-energy state-preparation circuits for transverse-field Ising models in one, two, and three dimensions and for the three-dimensional Heisenberg model, and by compressing two-dimensional time-evolution circuits.",
+  "authors": [
+    "Sheng-Hsuan Lin",
+    "Etienne Granet",
+    "Kevin H\u00e9mery",
+    "Henrik Dreyer"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.15184v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15184v1",
+  "published": "2026-07-16T16:35:38+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Backpropagating Pauli Propagation",
+  "updated": "2026-07-16T16:35:38+00:00"
+}

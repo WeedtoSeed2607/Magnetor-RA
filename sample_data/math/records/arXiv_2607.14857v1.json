@@ -1,0 +1,18 @@
+{
+  "abstract": "We present a general framework for producing families of harmonic maps from the unit ball into the Euclidean sphere starting from a fixed harmonic map. In particular, our analysis provides a theoretical background for a generalized radial projection which was recently introduced by Nakauchi. Our approach is based on work of Toth who established a machinery that generates eigenmaps between spheres from a given eigenmap. Finally, we point out how these families of harmonic maps can be used to construct solutions to associated variational problems such as intrinsic biharmonic and triharmonic maps, $p$-harmonic maps as well as extrinsic polyharmonic maps.",
+  "authors": [
+    "Volker Branding",
+    "Anna Siffert"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.14857v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14857v1",
+  "published": "2026-07-16T11:25:12+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "A framework for producing harmonic maps",
+  "updated": "2026-07-16T11:25:12+00:00"
+}

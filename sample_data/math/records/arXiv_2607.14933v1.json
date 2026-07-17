@@ -1,0 +1,17 @@
+{
+  "abstract": "Here we study the core entropy function $h: PM(d) \\rightarrow \\mathbb{R}$ defined on the space of degree $d$ primitive majors, a combinatorial model for the space of degree $d$ polynomials. In particular, we introduce techniques to classify the global maximum for each $d$ and the maxima along certain strata. We show that there are $d-1$ global maxima over all of $PM(d)$ and that the maxima on the unicritical stratum is a Cantor set.",
+  "authors": [
+    "Jacob Kewarth"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.14933v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14933v1",
+  "published": "2026-07-16T12:47:49+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Maximizing Core Entropy",
+  "updated": "2026-07-16T12:47:49+00:00"
+}

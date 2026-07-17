@@ -1,0 +1,18 @@
+{
+  "abstract": "We generalize work of Wei-Wu on Viehweg hyperbolicity for families of stable pairs over smooth projective varieties to the case of smooth Deligne-Mumford stacks. The results of Wei-Wu build on results of Popa-Schnell and Viehweg-Zuo, utilize a result of Campana-P\u0103un, and extend results of Kebekus-Kov\u00e1cs and Patakfalvi. We apply our results to smooth proper moduli stacks parameterizing generically klt relatively simple normal crossings KSBA stable pairs, showing that such moduli stacks naturally have big log canonical bundles. We also consider implications for their coarse moduli spaces.",
+  "authors": [
+    "Sebastian Casalaina-Martin",
+    "Shend Zhjeqi"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.15203v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15203v1",
+  "published": "2026-07-16T17:00:01+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Moduli spaces of snc klt KSBA stable pairs are naturally of log general type",
+  "updated": "2026-07-16T17:00:01+00:00"
+}

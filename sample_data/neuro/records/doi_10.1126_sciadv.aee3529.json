@@ -1,0 +1,20 @@
+{
+  "abstract": "Animals encounter a barrage of sensory stimuli, but only a subset of these are associated with appetitive outcomes. Thus, mechanisms for learning to distinguish reward-paired from unpaired cues are essential for reward-seeking behavior. The ventral striatum plays a critical role in reinforcement learning and stimulus discrimination, but the effect of learning on the selectivity of different cell types remains unclear. We examined ventral striatal D1 and D2 medium spiny neuron (MSN) firing properties as mice learned to distinguish between reward-paired and unpaired cues. As learning progressed within a single session, D1 MSN selectivity increased linearly with behavioral selectivity, while D2 MSNs exhibited modest, behaviorally uncorrelated changes in activity. Altered D1 MSN selectivity was primarily attributed to attenuated excitatory responses to the unrewarded cue, and increasing D1 MSN activity during the unrewarded cue impaired behavioral selectivity. Together, these findings reveal significantly more dynamic contributions of D1 MSNs to stimulus discrimination learning.",
+  "authors": [
+    "Daw TB",
+    "Cao J",
+    "Li R",
+    "Masmanidis SC"
+  ],
+  "doi": "10.1126/sciadv.aee3529",
+  "domain": "neuro",
+  "external_id": "PMC13371909",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-17T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Learning dynamically regulates stimulus discrimination of ventral striatal D1 receptor expressing neurons.",
+  "updated": null
+}

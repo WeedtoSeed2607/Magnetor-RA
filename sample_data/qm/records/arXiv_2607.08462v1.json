@@ -1,0 +1,19 @@
+{
+  "abstract": "Multipartite Bell nonlocality provides a device-independent probe of many-body quantum correlations, but its characterization is limited by the rapid growth of the underlying classical and quantum optimization problems. We develop a scalable method for constructing and certifying permutationally invariant Bell inequalities using only one- and two-body correlators. The construction gives families of inequalities with robust quantum violations for general $m$ measurements as the number of parties $N$ becomes large. To improve robustness against noise, we optimize the ratio of the quantum value to the classical bound for these families in the large-$N$ limit. We then certify the resulting quantum violation using semidefinite programming. For the broad class of Bell inequalities studied here, the infinite-$N$ ratios take simple rational values for finite $m$ and converge to $\\coth(1)$ as $m\\to\\infty$. The optimized inequalities efficiently detect many-body Bell nonlocality with collective measurements, with more measurement settings leading to stronger violations.",
+  "authors": [
+    "Jin-Fu Chen",
+    "Mengyao Hu",
+    "Jordi Tura"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.08462v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08462v1",
+  "published": "2026-07-09T13:21:09+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Optimizing and Certifying Multipartite Permutationally Invariant Bell Inequalities",
+  "updated": "2026-07-09T13:21:09+00:00"
+}

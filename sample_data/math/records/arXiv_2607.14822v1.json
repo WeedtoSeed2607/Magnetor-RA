@@ -1,0 +1,17 @@
+{
+  "abstract": "This survey offers a geometric and topological perspective on translation surfaces, with a focus on aspects that are often overshadowed by the dynamical viewpoint. After presenting several equivalent definitions of translation surfaces, particularly those based on polygonal models and fundamental domains, we explore the structure of their moduli spaces in the spirit of Thurston, including natural stratifications. The final part is devoted to the study of the period map, the realisation of representations as period characters and the fibres of the holonomy map. This approach highlights a foundational, yet sometimes underrated, facet of the theory.",
+  "authors": [
+    "Gianluca Faraco"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.14822v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14822v1",
+  "published": "2026-07-16T10:39:27+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "The dark side of translation surfaces: It is not all about dynamics",
+  "updated": "2026-07-16T10:39:27+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "abstract": "The Navascu\u00e9s--Pironio--Ac\u00edn (NPA) hierarchy gives the standard semidefinite outer approximations to quantum behaviors. Whether \\emph{any} finite level can already equal the quantum set has remained open even in the bipartite scenario with two binary measurements per party. We demonstrate that \\emph{no finite level} is exact. For the symmetric doubly tilted CHSH functional $h_\u03b1=A_0B_0+A_0B_1+A_1B_0-A_1B_1+\u03b1(A_0+B_0)$, set $T=1-\u03b1$. Its quantum maximum satisfies $[\u03c9_{\\rm Q}(1-T)-(4-2T)]/T^3\\to4/3$, whereas every fixed NPA level satisfies $[\u03c9_L(1-T)-\u03c9_{\\rm Q}(1-T)]/T^3\\to+\\infty$. Under the corresponding boundary rescaling, an explicit expectation of the positive operator $\u03c9_{\\rm Q}(1-t^2)I-H_t$ converges to the Motzkin polynomial. A bounded fixed-level error would therefore make the Motzkin polynomial plus a nonnegative constant a sum of squares, which is impossible. Consequently, every standard NPA relaxation based on a fixed finite list of words in the measurement projectors strictly contains the complete quantum set, and its nonquantum behaviors accumulate at a local deterministic behavior. Thus, the finite-level exactness of CHSH and all one-sided tilted CHSH maxima does not extend to an exact finite-level description of the complete quantum set in the minimal scenario.",
+  "authors": [
+    "Anubhav Chaturvedi"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.14569v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14569v1",
+  "published": "2026-07-16T04:52:11+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "No Finite NPA Level Characterizes the Complete Quantum Set in the Simplest Bell Scenario",
+  "updated": "2026-07-16T04:52:11+00:00"
+}

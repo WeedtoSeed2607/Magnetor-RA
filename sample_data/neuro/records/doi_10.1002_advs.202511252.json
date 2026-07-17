@@ -1,0 +1,29 @@
+{
+  "abstract": "ABSTRACT Brain\u2010machine interfaces (BMIs) for vision restoration require models that accurately simulate the anatomy and electrical properties of visual pathways. However, current models focus only on isolated structures, such as the retina or brain, and overlook surrounding tissues. Here, we present a comprehensive computational model of the human head that incorporates the entire visual pathway\u2014including the eye, optic nerve, and brain\u2014along with critical neighboring tissues such as the orbit and paranasal sinuses, thereby enabling precise simulations. Validation using human and large\u2010animal data shows a strong correlation between the simulated and measured electric potentials. Component\u2010elimination analysis reveals that the optimized comprehensive model outperforms simplified versions. The model demonstrates its utility in multiple applications: (1) comparative analysis of electrical neuromodulation technologies for optic neuropathy, revealing the electric field intensity limitations of noninvasive approaches and the safety concerns of invasive intraorbital approaches; (2) identification of the optimal stimulation site, showing that transnasal stimulation at the optic chiasm outperforms traditional approaches; and (3) in silico design of electrode arrays for optic nerve prostheses, demonstrating theoretical advantages in invasiveness and visual field coverage compared to existing retinal and cortical prosthetics. This validated and versatile computational resource supports the development of neuromodulation strategies and visual BMI technologies.",
+  "authors": [
+    "Lu S",
+    "Yang T",
+    "Geng Y",
+    "Wu H",
+    "Huang Y",
+    "Zheng T",
+    "Chen H",
+    "Huang S",
+    "Cao Y",
+    "Yang J",
+    "Yan W",
+    "Zhang Y",
+    "Wu W"
+  ],
+  "doi": "10.1002/advs.202511252",
+  "domain": "neuro",
+  "external_id": "PMC13373889",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-16T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "A Whole\u2010Head Finite Element Model for Electrical Neuromodulation via Visual Brain\u2010Machine Interfaces.",
+  "updated": null
+}

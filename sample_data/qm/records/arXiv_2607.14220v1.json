@@ -1,0 +1,18 @@
+{
+  "abstract": "We study the dynamics of Krylov state complexity in finite-dimensional quantum systems. Orthogonal polynomials built on a discrete energy spectrum crowd away from regions where the density of states is low at large Krylov index. The physical implication of this result is that, even using a minimalist Krylov state complexity which is defined over the entire spectrum, the Krylov complexity provably stops growing a little past the Heisenberg length in every low-energy state. This has interesting implications for the proposal that Krylov complexity is related to the wormhole length in 2D quantum gravity.",
+  "authors": [
+    "Andrew Lucas",
+    "Amit Vikram"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.14220v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14220v1",
+  "published": "2026-07-15T18:00:27+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Non-perturbative saturation of Krylov complexity, and its implications in quantum gravity",
+  "updated": "2026-07-15T18:00:27+00:00"
+}

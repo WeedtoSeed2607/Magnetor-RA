@@ -1,0 +1,31 @@
+{
+  "abstract": "Oncogenic KRAS mutations drive tumorigenesis by promoting pro-survival signaling and metabolic reprogramming, including the maintenance of redox balance to evade oxidative stress. A key mechanism involves the upregulation of the xCT cystine/glutamate antiporter, which sustains glutathione (GSH) synthesis and protects cells from oxidative damage and ferroptosis. While it is known that the ETS1-ATF4 complex mediates transcriptional upregulation of xCT, the upstream regulators linking KRAS signaling to this axis remain to be fully defined. Here, we demonstrate that oncogenic KRAS signaling induces the GSK3\u03b2-mediated proteasomal degradation of the tumor suppressor CCDC6. We show that CCDC6 acts as a negative regulator of the xCT-promoting transcription factor ATF4 by directly interacting with it and preventing its recruitment to the xCT promoter. Consequently, KRAS-driven CCDC6 degradation disinhibits ATF4, leading to increased xCT expression, elevated intracellular GSH, and enhanced resistance to ferroptosis. Crucially, pharmacological inhibition of CCDC6 turnover using proteasome, GSK3\u03b2, or specific KRAS mutant inhibitors (Sotorasib, Adagrasib, HRS4642) restored CCDC6 protein levels and robustly sensitized KRAS-mutated cells to ferroptosis-inducing agents like Sulfasalazine. Furthermore, validation in preclinical models and human colorectal cancer samples revealed that CCDC6 protein levels are predominantly downregulated in KRAS-mutant cases. This work uncovers a novel KRAS/CCDC6/xCT signaling axis that mediates ferroptosis resistance in KRAS-mutated cancers. Moreover, it identifies CCDC6 turnover as a critical vulnerability and a promising therapeutic target to enhance the efficacy of ferroptosis-inducing agents. Supplementary Information The online version contains supplementary material available at 10.1007/s10495-026-02400-4.",
+  "authors": [
+    "Criscuolo D",
+    "Catalano R",
+    "Baviello C",
+    "Fioravanti C",
+    "Vigliar E",
+    "Morra F",
+    "Marotta M",
+    "Mimura J",
+    "Iaccarino A",
+    "Pepe F",
+    "Belotti D",
+    "Troncone G",
+    "Merolla F",
+    "Melillo RM",
+    "Celetti A"
+  ],
+  "doi": "10.1007/s10495-026-02400-4",
+  "domain": "neuro",
+  "external_id": "PMC13369686",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-14T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "KRAS-mediated CCDC6 degradation drives xCT upregulation and ferroptosis evasion.",
+  "updated": null
+}

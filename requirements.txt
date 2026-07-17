@@ -1,0 +1,7 @@
+# Runtime dependencies for the hosted Streamlit dashboard (Streamlit Community
+# Cloud installs from this file). The magnetor package itself is imported from
+# ./src via streamlit_app.py, so it is not pip-installed here.
+streamlit>=1.50
+httpx>=0.28
+numpy>=2
+scikit-learn>=1.6

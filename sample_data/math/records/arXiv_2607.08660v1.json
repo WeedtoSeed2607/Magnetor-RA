@@ -1,0 +1,19 @@
+{
+  "abstract": "For a crystalline representation of the absolute Galois group of Q_p, with given Hodge-Tate weights, we obtain new constraints on the inertial weights of its mod p reduction. This allows us to formulate an explicit Serre weight conjecture, in the generality of L-parameters for unramified connected reductive groups over Q_p, and to prove the elimination direction of this conjecture. The proof uses prismatic techniques to show that the reductions modulo p of the Breuil-Kisin modules attached to crystalline Galois representations acquire a natural \u03bc_p-equivariant structure. Combining this with results on the geometry of the \u03bc_p-fixed points of affine Grassmannians leads to our new constraint.",
+  "authors": [
+    "Bhargav Bhatt",
+    "Toby Gee",
+    "Mark Kisin"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.08660v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08660v1",
+  "published": "2026-07-09T16:28:13+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Reduction modulo p of crystalline Galois representations via \u03bc_p-equivariance",
+  "updated": "2026-07-09T16:28:13+00:00"
+}

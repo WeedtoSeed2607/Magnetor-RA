@@ -1,0 +1,19 @@
+{
+  "abstract": "We investigate a special class of nonlinear infinite dimensional systems. These are obtained by subtracting a nonlinear maximal monotone (possibly multi-valued) operator M from the semigroup generator of a scattering passive linear system. While the linear system may have unbounded linear damping (for instance, boundary damping) which is only densely defined, the nonlinear damping operator M is assumed to be defined on the whole state space. We show that this new class of nonlinear infinite dimensional systems is well-posed and incrementally scattering passive. Our approach uses the theory of maximal monotone operators and the Crandall-Pazy theorem about nonlinear contraction semigroups, which we apply to a Lax-Phillips type nonlinear semigroup that represents the whole system.",
+  "authors": [
+    "Shantanu Singh",
+    "George Weiss",
+    "Marius Tucsnak"
+  ],
+  "doi": "10.1016/j.automatica.2022.110369",
+  "domain": "math",
+  "external_id": "2607.08637v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08637v1",
+  "published": "2026-07-09T16:11:34+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Aclass of incrementally scattering-passive nonlinear systems",
+  "updated": "2026-07-09T16:11:34+00:00"
+}

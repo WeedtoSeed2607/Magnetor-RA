@@ -1,0 +1,19 @@
+{
+  "abstract": "The Noisy Intermediate-Scale Quantum (NISQ) era poses a challenge for developers: hardware providers expose capabilities through heterogeneous interfaces with proprietary metrics varying widely across providers, hindering informed backend selection. Static characterization metrics - coherence times T1/T2, gate error rates - exhibit limitations: they fail to capture dynamic variability across successive executions, overlook the impact of transpilation, and lack architectural comparability across physically distinct technologies. We propose a Figure of Merit (FoM) based on Grover's algorithm as an algorithmic stress test evaluating quantum backend performance holistically. The metric combines success probability on target states with penalties for non-uniform amplification and leakage to non-marked states, yielding a unified score across hardware architectures. Implemented via the Qonscious framework - a conditional execution platform using polymorphic adapters, it executes agnostically on IBM, IonQ backends, and simulators. Main contributions: (1) proposal and validation of GroverFigureOfMerit, incorporating uniformity and leakage penalties (adapted from GRADE) with emphasis on noise, transpilation, and topological constraints; (2) systematic analysis of heterogeneity across nine quantum providers motivating agnostic metrics; and (3) experimental demonstration via ideal simulators and real-processor noise models, confirming sensitivity to noise, topology, and transpilation overhead. Results confirm the metric distinguishes backend performance under a unified score, capturing intrinsic algorithmic limits. Validation on physical QPUs is identified as a natural next step.",
+  "authors": [
+    "Tiago Restucha",
+    "Marcos Guillermo Lammers",
+    "Alejandro Fern\u00e1ndez"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.08636v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08636v1",
+  "published": "2026-07-09T16:08:48+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "GroverFigureOfMerit: An Agnostic Figure of Merit for Quantum Backend Characterization in the NISQ Era",
+  "updated": "2026-07-09T16:08:48+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "abstract": "We develop a general framework for understanding when graph alignment is information-theoretically feasible in sparse inhomogeneous random graph models, by studying the set of vertices on which the underlying matching can be recovered. Our main theorem gives a general lower bound on this set by leveraging the balanced load function introduced by Hajek (1990). The corresponding obstruction is captured by a new graph parameter, the self-overlap, which measures the extent to which a graph can imitate itself under a non-trivial relabelling. We then show that this criterion is sharp in a broad class of sparse inhomogeneous models, recovering known Erd\u0151s--R\u00e9nyi phenomena and yielding sharp thresholds for Chung--Lu graphs and stochastic block models.",
+  "authors": [
+    "Louis Vassaux"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.14948v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14948v1",
+  "published": "2026-07-16T12:57:28+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Graph alignment in sparse inhomogeneous models via self-overlap",
+  "updated": "2026-07-16T12:57:28+00:00"
+}

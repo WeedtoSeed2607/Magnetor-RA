@@ -1,0 +1,28 @@
+{
+  "abstract": "Understanding how complex systems transition between order and chaos is a central challenge of nonequilibrium physics. While weak perturbations of classical integrable systems give rise to a mixed phase space of coexisting regular and chaotic trajectories, analogous behavior in interacting quantum many-body systems has remained elusive. Here we develop and experimentally implement a hybrid quantum-classical feedback protocol that autonomously discovers and stabilizes long-lived regular trajectories in a superconducting quantum processor. Each iteration combines short-time quantum evolution with classical optimization that projects the dynamics back onto a low-entanglement variational manifold, effectively distilling coherence from chaotic evolution. The stabilized trajectories reveal a quantum many-body mixed phase space emerging from nonlinear variational dynamics, without a direct analogue in classical or few-body quantum systems. Our results establish a versatile framework for algorithmic discovery and control of coherent dynamics previously inaccessible to experiment.",
+  "authors": [
+    "Hang Dong",
+    "Jie Ren",
+    "Andrew Hallam",
+    "Han Wang",
+    "Zhengyi Cui",
+    "Yiren Zou",
+    "Junlin Wang",
+    "Hekang Li",
+    "Qiujiang Guo",
+    "Zhen Wang",
+    "Lei Ying",
+    "Zlatko Papic"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.14223v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14223v1",
+  "published": "2026-07-15T18:00:29+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Quantum many-body mixed phase space revealed by hybrid feedback control",
+  "updated": "2026-07-15T18:00:29+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "abstract": "A sequence $(a_n)_{n \\in \\mathbb{N}}$ of non-negative real numbers is called log-concave at $n$ if $a_n^2 \\geq a_{n+1}a_{n-1}$. This property has been generalised in various ways to families of polynomials. We introduce a new variant and show that certain types of D'Arcais polynomials have the respective properties at certain points.",
+  "authors": [
+    "Johann Stumpenhusen"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.14961v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14961v1",
+  "published": "2026-07-16T13:12:24+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "On the Log-Concavity of the D'Arcais Polynomials for Normalised Functions",
+  "updated": "2026-07-16T13:12:24+00:00"
+}

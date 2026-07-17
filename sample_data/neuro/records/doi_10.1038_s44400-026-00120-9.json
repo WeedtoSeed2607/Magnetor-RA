@@ -1,0 +1,29 @@
+{
+  "abstract": "Prediction models for cognitive aging measures have largely evaluated demographic variables and APOE carrier status in populations of European ancestry. To comprehensively assess prediction models among Hispanic/Latinos, we considered 12 models (6 predictor sets and 2 methods) for global cognitive score change (GCSC) and mild cognitive impairment (MCI) in the Study of Latinos-Investigation of Neurocognitive Aging (SOL-INCA) ( N = 5856). Based on the average mean squared error (MSE) for GCSC or average area under the curve (AUC) for MCI across 100 randomly split testing and training sets, performance was similar across models, but slightly better for the following models: the chronic conditions model and genetic model (mean MSEs = 0.2464) using gradient-boosted trees for GCSC prediction and the chronic conditions model (mean AUC = 62%) and metabolite model (mean AUC = 60%) using logistic regression for MCI prediction. Using the Shapley Additive Explanations (SHAP) method, age at baseline, time between exams, and sex were the most important predictors for GCSC, followed by diabetes and global ancestral proportions. Diabetes and the metabolite ribitol had the highest influence on prediction of MCI. Although prediction performance was not especially high and did not vary greatly across models, incorporating information on diabetes, ancestry and metabolites may help improve prediction of GCSC and MCI.",
+  "authors": [
+    "Wyss AB",
+    "Hrytsenko Y",
+    "Hu L",
+    "Broce IJ",
+    "Kaplan RC",
+    "Tarraf W",
+    "Yu B",
+    "Boerwinkle E",
+    "Qi Q",
+    "Fornage M",
+    "DeCarli C",
+    "Gonz\u00e1lez HM",
+    "Sofer T"
+  ],
+  "doi": "10.1038/s44400-026-00120-9",
+  "domain": "neuro",
+  "external_id": "PMC13345926",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-01-01T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "An integrated lifestyle-, genetic- and metabolomics-based prediction model for mild cognitive aging in the HCHS/SOL.",
+  "updated": null
+}

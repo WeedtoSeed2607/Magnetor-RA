@@ -1,0 +1,33 @@
+{
+  "abstract": "Osteosarcoma (OS) is a highly aggressive bone malignancy that predominantly affects adolescents and young adults. Despite the progress in conventional treatment approaches, such as surgery and chemotherapy, patient outcomes remain poor due to OS metastatic potential, chemoresistance and frequent recurrence. Although recent advancements in novel therapeutic strategies, such as molecular inhibitors, gene-based interventions, alongside immuno- and radiotherapies, have emerged in recent years, OS is still not well understood due to its complexity and heterogeneity. Tissue engineering and predictive preclinical models offer a good toolbox to study OS and produce patient-tailored therapeutic protocols. This review discusses the recent development of tissue engineering-based strategies and OS mimicking preclinical models like 3D in vitro models, organ-on-chip technologies, and predictive computational (in silico) models, ranging from mechanistic (white-box) to data-driven (black-box) and hybrid (grey-box) approaches. Based on these recent developments, researchers can better replicate the native OS tumour microenvironment, which opens the doors to a more representative high-throughput drug screening tools and patient-tailored treatment strategies.",
+  "authors": [
+    "Saqawa M",
+    "Coelho MV",
+    "Louren\u00e7o M",
+    "Villette C",
+    "Barata D",
+    "Apolloni L",
+    "Panseri S",
+    "Silva-Barroso AS",
+    "Seabra R",
+    "Pacheco D",
+    "Alves N",
+    "Faria P",
+    "Staumont B",
+    "Geris L",
+    "Mota C",
+    "Montesi M",
+    "Fernandes Patr\u00edcio TM"
+  ],
+  "doi": "10.1038/s42003-026-10650-w",
+  "domain": "neuro",
+  "external_id": "PMC13373180",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-15T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Next-generation osteosarcoma models for precision medicine.",
+  "updated": null
+}

@@ -1,0 +1,23 @@
+{
+  "abstract": "Despite growing recognition that natural rewards can mitigate stress responses, the underlying neurobiological mechanisms remain poorly understood. Here, we examined whether limited sucrose intake (LSI), a paradigm of repeated natural food reward, induces structural plasticity in parvalbumin-expressing (PV+) interneurons and their perineuronal nets (PNNs) within the medial prefrontal cortex (mPFC), a key region involved in stress and reward regulation. In a 2 \u00d7 2 design, adult male rats were exposed to 14 days of LSI (vs. water), along with repeated restraint stress (vs. no stress). Immunohistochemical analyses were used to assess PV+ interneurons, PNNs, and glutamatergic and GABAergic perisomatic appositions onto PV+ neurons in the prelimbic (PL) and infralimbic (IL) prefrontal cortices. While repeated restraint stress produced minimal effects, LSI induced subregion-specific changes. In the PL, LSI increased PNN investment on PV+ cells and reduced both excitatory and inhibitory appositions without altering their ratio. In contrast, in the IL, LSI shifted PNNs from full to partial forms without changing their overall prevalence. This was associated with an increased excitatory/inhibitory apposition ratio that was restricted to PNN-negative cells in stress-na\u00efve rats. While the functional consequences remain to be established, these LSI-induced PNN-mediated changes may serve to stabilize PV+ interneuron function and inform hypotheses regarding how natural rewards modulate prefrontal microcircuits relevant to stress regulation. Supplementary Information The online version contains supplementary material available at 10.1007/s00429-026-03141-5.",
+  "authors": [
+    "Nashawi H",
+    "Foltz CT",
+    "Oh N",
+    "Santiago EA",
+    "Selm DR",
+    "Herman JP",
+    "Ulrich-Lai YM"
+  ],
+  "doi": "10.1007/s00429-026-03141-5",
+  "domain": "neuro",
+  "external_id": "PMC13372925",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-15T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Limited sucrose intake produces subregion-specific remodeling of perineuronal nets in the medial prefrontal cortex.",
+  "updated": null
+}

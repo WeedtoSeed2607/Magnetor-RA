@@ -1,0 +1,19 @@
+{
+  "abstract": "Diabetic neuropathy, a prevalent and debilitating complication of diabetes mellitus, is characterized by progressive neuronal dysfunction. This study investigates the role of autophagy dysregulation in the pathogenesis of diabetic neuropathy and explores potential therapeutic interventions. Using a combination of in vitro and in vivo models, we demonstrate that chronic hyperglycemia leads to impaired autophagic flux in neurons, evidenced by decreased LC3I/II ratio and increased p62 accumulation. This autophagy dysfunction is associated with alterations in key signaling pathways, including mTOR activation and AMPK inhibition. Transcriptomic analysis reveals dysregulation of autophagy-related transcription factors, notably TFEB, FOXO3, and NRF2. We identify a novel bidirectional relationship between autophagy impairment and lipid metabolism dysregulation, suggesting a potential vicious cycle contributing to neuronal dysfunction. These findings provide new insights into the molecular mechanisms underlying diabetic neuropathy and highlight promising avenues for therapeutic intervention, potentially leading to improved management strategies for this challenging complication.",
+  "authors": [
+    "Song L",
+    "Zhou L",
+    "Li W"
+  ],
+  "doi": "10.1371/journal.pone.0344082",
+  "domain": "neuro",
+  "external_id": "PMC13349130",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-01-01T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Molecular mechanisms of autophagy disorder in diabetic neuropathy: Focusing on signaling pathways and regulation of lipid metabolism.",
+  "updated": null
+}

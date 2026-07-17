@@ -1,0 +1,19 @@
+{
+  "abstract": "We investigate how irreducible multipartite entanglement, a long-range correlation by nature, can emerge from short-range dynamics far from equilibrium. Focusing on the Markov gap as a probe of irreducible tripartite entanglement (IrTE) in free-fermion chains, we uncover qualitatively distinct dynamical behaviors: the Markov gap grows either quasi-linearly or in staircase-like jumps depending on the initial state. We also propose attainable upper and lower bounds for the onset time of IrTE based on the Lieb-Robinson bound. Strikingly, the Markov gap saturates to a volume-law value on a timescale $t\\sim\\! L^2$, much slower than the ballistic spreading of bipartite correlations. To understand what information about the wavefunctions is revealed by the Markov gap calculation, we introduce the concept of essential tripartite fermion (ETF) and an associated tripartite null matrix. The value of Markov gap closely tracks the number of small singular values of this tripartite null matrix, yielding a transparent, operational physical interpretation of the measure. We further demonstrate that several dynamical signatures persist in the interacting XXZ chain.",
+  "authors": [
+    "Zongsheng Zhou",
+    "Riqiang Zhang",
+    "Yu-Xiang Zhang"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.08615v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08615v1",
+  "published": "2026-07-09T15:47:51+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Operational meaning of Markov gap in tripartite entanglement of quantum dynamics",
+  "updated": "2026-07-09T15:47:51+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "abstract": "Coulomb branches of 3-dimensional $N=4$ gauge theories, as defined by Braverman--Finkelberg--Nakajima, form a large and interesting class of symplectic singularities. In this paper, we give a geometric description of these varieties in terms of blowups of toric compactifications, uniformly across the rational, $K$-theoretic, and elliptic settings, which in physics are often associated with 3-, 4-, and 5-dimensional versions of these theories. We use the resulting local description to classify the symplectic leaves of Coulomb branches and describe their transverse slices in terms of the classification of zero-dimensional leaves of certain smaller Coulomb branches. We also discuss related topics, including removing an unnecessary hypothesis from a theorem of Gannon and the author on functoriality for Coulomb branches, and clarifying the relationship with transverse Hilbert schemes by refining the approach of Bielawski and Foscolo.",
+  "authors": [
+    "Ben Webster"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.15177v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15177v1",
+  "published": "2026-07-16T16:32:37+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "On the geometry of Coulomb branches",
+  "updated": "2026-07-16T16:32:37+00:00"
+}

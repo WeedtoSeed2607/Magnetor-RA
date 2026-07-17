@@ -1,0 +1,19 @@
+{
+  "abstract": "Gilbreath's conjecture asserts that if one starts with the sequence of primes and takes successive absolute differences to create a triangular array, then the left diagonal of this array consists entirely of ones after the first row. In this paper, we show that the analogue of this conjecture for a Cram\u00e9r random model holds, in which the (normalized) prime gaps are replaced by independent random variables with geometric distributions of logarithmic size. We also give some preliminary analysis of the associated continuous probabilistic model for this problem, as well as a deterministic \"inverse theorem\" that isolates the specific obstructions to Gilbreath's conjecture (assuming a Cram\u00e9r type bound on prime gaps), namely long blocks of zeroes, or very long shallow $\\{0,d\\}$-valued blocks for some $d \\geq 2$.",
+  "authors": [
+    "Zachary Chase",
+    "Zach Hunter",
+    "Terence Tao"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.08712v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08712v1",
+  "published": "2026-07-09T17:23:57+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Gilbreath's conjecture: a Cram\u00e9r random model and a deterministic analysis",
+  "updated": "2026-07-09T17:23:57+00:00"
+}

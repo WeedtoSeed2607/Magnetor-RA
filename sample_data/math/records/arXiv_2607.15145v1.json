@@ -1,0 +1,17 @@
+{
+  "abstract": "We prove a Weyl law for the number of quasinormal modes (QNM) of a Schwarzschild black hole contained in a sector below the real axis. This requires introducing a new pseudodifferential operator calculus tailored to the study of semiclassical spectral problems near threshold energies. Elliptic theory in this calculus can be combined with the method of complex scaling to give uniform resolvent estimates near zero energy for operators that behave at infinity like a semiclassical Schr\u00f6dinger operator with a repulsive inverse-square potential. Applied to the Regge-Wheeler potential, our methods imply the absence of high angular momentum QNM from a disc whose radius grows linearly with the angular momentum. Together with the asymptotic description of Schwarzschild QNM recently obtained by Hitrik and Zworski, this shows that the number of QNM contained in a small sector below the real axis and with modulus bounded by $\u03bb$ grows as $C\u03bb^3$. We also study the effect of cutting off the Schwarzschild resolvent away from the event horizon and show that such a cutoff does not lead to any pole cancellations.",
+  "authors": [
+    "Thomas Stucker"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.15145v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15145v1",
+  "published": "2026-07-16T15:49:12+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Semiclassical estimates near threshold energies and resonance counting on Schwarzschild black holes",
+  "updated": "2026-07-16T15:49:12+00:00"
+}

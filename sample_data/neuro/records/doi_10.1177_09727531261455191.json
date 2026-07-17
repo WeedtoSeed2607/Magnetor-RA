@@ -1,0 +1,19 @@
+{
+  "abstract": "Background Speech perception in noise varies widely even among normal-hearing individuals and is strongly influenced by cognitive factors such as attention, working memory and linguistic abilities. Yoga is known to enhance these domains, yet its potential impact on speech-in-noise perception remains insufficiently explored. Purpose This study investigated whether yoga practitioners (YP) demonstrate superior speech-perception-in-noise (SPIN) performance compared to non-practitioners and whether differences could be attributed to enhanced selective attention, working memory and linguistic processing capabilities. Methods Sixty young adults (18\u201330 years) with normal hearing were recruited: 30 YP with a mean practice duration of 4.79 years and 30 non-yoga practitioners (NYP). Speech identification in noise was assessed using Kannada low-predictive sentences presented with speech babble and speech-shaped noise at varying signal-to-noise ratios. Cognitive measures included Stroop tasks (selective attention), digit span and N-back tests (working memory) and moving-average type-token ratio and generative naming (linguistic abilities). Scores were converted to rationalised arcsine units and group differences were analysed using independent t -tests and Mann\u2013Whitney U tests. Stepwise linear regression identified predictors of SPIN performance. Results YP demonstrated significantly superior performance in speech babble at 0 dBSNR ( p = .009) but not in speech-shaped noise conditions. Regression analyses revealed distinct predictive patterns: vocabulary (generative naming) predicted 26% of variance in NYP ( \u03b2 = 0.534, p = .002), while working memory (backward digit span) predicted 11.6% of variance in YP ( \u03b2 = 0.383, p = .037). Cognitive and linguistic measures showed no significant group differences. Conclusion YP exhibited superior speech identification under informational masking conditions, mediated by working memory capacity. Our findings suggest that yoga practice is associated with a shift from vocabulary-based to working memory-based strategies for speech-in-noise perception.",
+  "authors": [
+    "Manoj SD",
+    "Vijayasarathy S",
+    "Kooknoor V"
+  ],
+  "doi": "10.1177/09727531261455191",
+  "domain": "neuro",
+  "external_id": "PMC13346097",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-08T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Differential Cognitive Strategies for Speech-in-Noise Perception: A Comparative Study Between Yoga Practitioners and Non-practitioners.",
+  "updated": null
+}

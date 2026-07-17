@@ -1,0 +1,25 @@
+{
+  "abstract": "An identity term in the Hamiltonian is conventionally regarded as spectrally inert-it shifts energies but does not alter eigenstate topology. We show that under non-Hermitian skin pumping, this paradigm fails: a momentum-dependent identity term actively deforms the generalized Brillouin zone, thereby challenging established topological criteria that rely on fixed complex contours. Here, by introducing spin-orbit coupling into a Hatano-Nelson chain, we present an exact analytical solution for the entire non-Hermitian eigensystem under open boundary conditions. Our solution reveals how inter-cell spin-orbit coupling, synergizing with this non-trivial identity term, induces topological edge states and robust zero modes in the complete absence of chiral symmetry. This work establishes an exactly solvable paradigm for non-Hermitian topology beyond symmetry protection, and provides a rigorous benchmark for testing topological invariants in systems with momentum-dependent identity terms.",
+  "authors": [
+    "Lingfang Li",
+    "Yating Wei",
+    "Yang Ruan",
+    "Gangzhou Wu",
+    "Jun Wang",
+    "Shihua Chen",
+    "Tong Lin",
+    "Ching Hua Lee",
+    "Zhenhua Ni"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.08469v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08469v1",
+  "published": "2026-07-09T13:27:07+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Non-Hermitian topology driven by an identity term: An exactly solvable paradigm",
+  "updated": "2026-07-09T13:27:07+00:00"
+}

@@ -1,0 +1,18 @@
+{
+  "abstract": "We study matrix product factorizations (MPFs) in symmetric association schemes: identities $A_SA_T=A_U$ where $A_S,A_T,A_U$ are loopless unions of basic relations and the ordinary matrix product is again a $0$-$1$ adjacency matrix. We give equivalent structural and spectral criteria for MPFs, derive valency and rank restrictions, and analyze several standard families. For $2$-class schemes, the only nontrivial loopless MPF comes from the scheme of the $5$-cycle. For $P$-polynomial schemes, the distance-regular recurrence gives strong restrictions on products $A_1A_i$. We also prove a universal pentagon theorem for the case $A_SA_T=J-I$, and show that extremal rank forces all non-zero eigenvalues of $A_U$ to be $\\pm k(U)$, hence gives bipartiteness. Finally, in Hamming schemes we obtain rank obstructions and classify MPFs of the form $A_1A_T=A_U$: in $H(d,2)$, for $d\\ge2$, the only non-zero loopless example is $A_1A_d=A_{d-1}$, which is trivial since $A_d$ has valency $1$; for $q>2$, no non-zero example occurs.",
+  "authors": [
+    "Allen W. Herman",
+    "Bobby Miraftab"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.14848v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14848v1",
+  "published": "2026-07-16T11:16:08+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "On Matrix Product Factorization in Association Schemes",
+  "updated": "2026-07-16T11:16:08+00:00"
+}

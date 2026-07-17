@@ -1,0 +1,20 @@
+{
+  "abstract": "Recently, there has been significant interest in applying the method of moments developed by Wood and others to study distributions of finite abelian groups that arise in number theory and combinatorics. When the moments do not grow too fast, they determine a unique distribution. We construct large families of distributions that have the same moments. These families include several distributions that arise naturally in the study of sandpile groups of families of random graphs. Wood determined the distribution of Sylow $p$-subgroups of sandpile groups of Erd\u0151s--R\u00e9nyi random graphs. This was extended by M\u00e9sz\u00e1ros to sandpile groups of random $d$-regular graphs, who observed an interesting special case when $d$ is even and $p = 2$. We study Sylow $p$-subgroups of sandpile groups of random bipartite graphs and similarly find a special case for $p =2$. Although this distribution differs from that of M\u00e9sz\u00e1ros, we show that they have the same moments and fit into our broader construction. To compute the moments of the distributions we study, we apply combinatorial tools from the theory of Hall--Littlewood functions.",
+  "authors": [
+    "Jason Fulman",
+    "Nathan Kaplan",
+    "Deepesh Singhal",
+    "S. Ole Warnaar"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.08607v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08607v1",
+  "published": "2026-07-09T15:36:05+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Sandpile groups of random bipartite graphs and families of distributions with the same moments",
+  "updated": "2026-07-09T15:36:05+00:00"
+}

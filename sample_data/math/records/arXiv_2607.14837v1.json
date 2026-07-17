@@ -1,0 +1,19 @@
+{
+  "abstract": "A proper edge-coloring of a graph $G$ is a D-coloring if every subgraph isomorphic to $K_4-e$ is rainbow. The minimum number of colors in such a coloring is the D-chromatic index $\u03c7'_D(G)$. Wang conjectured that every planar graph of maximum degree $\u0394\\ge 4$ satisfies $\u03c7'_D(G) \\le 9$ for $\u0394= 4$, $\u03c7'_D(G) \\le 10$ for $\u0394= 5$, and $\u03c7'_D(G) \\le 2\u0394- 1$ for $\u0394\\ge 6$. We prove that every planar graph $G$ satisfies \\[ \u03c7_D'(G) \\leq \\begin{cases} 9, & \u0394(G) \\leq 4, \\\\ 10, & \u0394(G) = 5, \\\\ 2\u0394(G) - 1, & \u0394(G) \\geq 33. \\end{cases} \\] Each bound is best possible in its stated range. Consequently, Wang's conjecture remains open only for $6 \\le \u0394\\le 32$.",
+  "authors": [
+    "Xiaoxue Hu",
+    "Jiangxu Kong",
+    "Yiqiang Wang"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.14837v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14837v1",
+  "published": "2026-07-16T11:01:44+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "D-coloring of planar graphs",
+  "updated": "2026-07-16T11:01:44+00:00"
+}

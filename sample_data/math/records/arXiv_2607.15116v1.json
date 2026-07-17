@@ -1,0 +1,17 @@
+{
+  "abstract": "Let $T_k$ be the minimum positive integer $t$ such that, for every positive integer $n$, every equinumerous $t$-coloring of $[tn]$ contains a rainbow $k$-term arithmetic progression. Jungi\u0107, Licht, Mahdian, Ne\u0161et\u0159il and Radoi\u010di\u0107 conjectured that $T_k=\u0398(k^2)$, while Conlon, Fox and Sudakov proved that $T_k=O(k^2\\log k)$. We prove the matching lower bound $T_k=\u03a9(k^2\\log k)$, and hence $T_k=\u0398(k^2\\log k)$.",
+  "authors": [
+    "Jesse Geneson"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.15116v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15116v1",
+  "published": "2026-07-16T15:26:01+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "The order of long rainbow arithmetic progressions",
+  "updated": "2026-07-16T15:26:01+00:00"
+}

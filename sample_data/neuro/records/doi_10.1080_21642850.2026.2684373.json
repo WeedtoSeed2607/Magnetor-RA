@@ -1,0 +1,21 @@
+{
+  "abstract": "Abstract Background Autistic adults typically experience greater daily stress than their non-autistic counterparts, but professional mental health care is not always accessible or fitting. This qualitative study explored the user experiences of the Stress Autism Mate (SAM), a free co-created mobile application designed to reduce stress, among autistic adults not receiving mental health care. Methods A total of 15 autistic users (8 satisfied, 7 dissatisfied; aged 27\u201370; 4 men, 10 women, 1 non-binary) were recruited through a prior SAM trial database and autism-related social media groups for semi-structured online interviews. Interview questions were informed by the User Experience Technology Acceptance Model (UX-TAM), whereas themes were developed inductively through thematic analysis. Results Participants generally appreciated the SAM app\u2019s focus on enhancing stress recognition and its non-coercive, intuitive, and minimalist interface. Nevertheless, they found the app\u2019s stress tips insufficiently tailored to their context and the repeated login requirement frustrating. Satisfied users expressed a stronger need for stress-reducing support and greater trust in the app\u2019s developers and its scientific foundations. Dissatisfied users perceived the app\u2019s features as superficial and reported greater strain from attempting to adhere to its demands. Conclusions Despite the diverse user experiences, the findings highlight various avenues to improve the SAM app and similar standalone mHealth tools for autistic adults. Future adaptations should carefully balance the provision of structure and support with the risk of inducing technostress.",
+  "authors": [
+    "van Asselt A",
+    "Roke Y",
+    "Hoeberichts K",
+    "Begeer S",
+    "Scheeren A"
+  ],
+  "doi": "10.1080/21642850.2026.2684373",
+  "domain": "neuro",
+  "external_id": "PMC13348119",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-01-01T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "User experiences of the mobile stress autism mate (SAM) application: a qualitative study among autistic adults not receiving mental health care.",
+  "updated": null
+}

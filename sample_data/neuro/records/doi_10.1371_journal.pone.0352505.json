@@ -1,0 +1,17 @@
+{
+  "abstract": "Background Autism Spectrum Disorder (ASD) is characterized by social communication challenges, including difficulties interpreting figurative language, understanding conversational context, and expressing thoughts clearly. This feasibility study examined an NLP-based communication assistance tool for adolescents and young adults with ASD. The tool combined sentiment analysis, intent identification, and situational simplification to provide real-time feedback in digital communication. Methods Participants were 16 individuals with ASD (aged 15\u201328 years) and 16 neurotypical conversation partners in a within-subjects, mixed-methods design. The intervention lasted eight weeks. The tool was used in both structured tasks and naturalistic conversations. Results Preliminary data suggest associations between tool use and improved outcomes. Communication clarity increased from 3.12 to 3.89 (d = 0.74, 95% CI [0.28, 1.20], p < 0.001 after Bonferroni correction). Anxiety decreased by 2.3 points on a 7-point scale (d = 1.21, 95% CI [0.62, 1.80], p < 0.001). Confidence scores improved by 42% from baseline (d = 1.15, 95% CI [0.56, 1.74], p < 0.001). Qualitative thematic analysis (Braun & Clarke, 2006; inter-coder reliability, \u03ba = 0.81) identified five themes: reduced communication burden, learning through use, empowerment and autonomy, context-specific value, and desire for customization. These preliminary findings suggest that NLP-driven assistive technologies warrant further investigation in controlled trials. Conclusion This study demonstrates feasibility and provides preliminary evidence for NLP-based communication support, though causal conclusions cannot be drawn due to the absence of a control group, small sample size (N = 16), and short duration.",
+  "authors": [
+    "Algahtani F"
+  ],
+  "doi": "10.1371/journal.pone.0352505",
+  "domain": "neuro",
+  "external_id": "PMC13367686",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-01-01T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Using natural language processing to support digital communication in adolescents and young adults with autism spectrum disorder.",
+  "updated": null
+}

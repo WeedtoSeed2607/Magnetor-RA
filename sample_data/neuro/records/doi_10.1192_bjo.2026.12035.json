@@ -1,0 +1,29 @@
+{
+  "abstract": "Background Neuroimaging research in autism often excludes individuals with co-occurring intellectual impairment or minimally verbal status, limiting the generalisability of findings. Understanding magnetic resonance imaging (MRI) scan success predictors in a representative autistic sample is crucial for equitable research. Aims This study identified factors predicting successful brain MRI acquisition and data quality in diverse autistic individuals, focusing on including those with intellectual impairment or minimally verbal status. Method A total of 122 participants (83 autistic individuals (27 with intellectual impairment, 19 with minimally verbal status) and 39 typically developing controls) received multi-modal brain MRI scans (including structural, resting-state functional and diffusion MRI). Scan success, assessed using both binary criteria and quantitative data-quality metrics, was related to participant characteristics. Results Although overall scan success was high, specific factors differentiated success within subgroups. Key factors contributing to scan success included age, non-verbal intelligence and attention-deficit hyperactivity disorder (ADHD) symptoms. Older participants, those with fewer ADHD symptoms and those with higher non-verbal intelligence were more likely to achieve successful scans, regardless of autism diagnosis. Higher data quality, particularly in structural and functional MRI, was associated with higher intelligence, better adaptive functioning, fewer autistic and ADHD symptoms, and fewer behavioural problems. Conclusions Identifying these factors is key to designing more inclusive and effective neuroimaging protocols. This work paves the way for more comprehensive research into the neurobiology of the full autism spectrum, and offers insights for improving the clinical MRI experience for autistic individuals with diverse support needs. Individualised strategies may also be useful in clinical settings, helping to improve the experience of MRI scanning for autistic individuals.",
+  "authors": [
+    "Huang LW",
+    "Zhou YR",
+    "Yeh CH",
+    "Ni HC",
+    "Mulsant BH",
+    "Husain MI",
+    "Chang JC",
+    "Tu EN",
+    "Hsu MY",
+    "Wu YY",
+    "Chou TL",
+    "Gau SS",
+    "Lin HY"
+  ],
+  "doi": "10.1192/bjo.2026.12035",
+  "domain": "neuro",
+  "external_id": "PMC13372812",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-14T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Factors linked to successful brain magnetic resonance imaging scans and data quality in autistic individuals across the functioning spectrum.",
+  "updated": null
+}

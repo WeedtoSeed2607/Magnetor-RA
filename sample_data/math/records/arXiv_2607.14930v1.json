@@ -1,0 +1,18 @@
+{
+  "abstract": "We propose a goodness-of-fit test for semiparametric copula regression models. Such models express the regression function in terms of marginal distribution functions and copula densities and therefore provide a flexible way to avoid fully nonparametric estimation in high-dimensional regression problems. Their performance, however, depends crucially on the specification of the parametric copula family. Instead of testing the copula model itself, we assess misspecification directly at the level of the induced regression function. To this end, we introduce a weighted $L^2$-distance between the true regression function and its best approximation within the postulated copula regression model. A kernel-based estimator of this distance is proposed and shown to be consistent and asymptotically normal under both the null hypothesis of correct specification and fixed alternatives. We derive a classical specification test and, using a self-normalized sequential statistic, construct pivotal confidence intervals and tests for relevant deviations from the model. Finite-sample simulations demonstrate accurate level approximation and good power properties of the proposed procedures.",
+  "authors": [
+    "Holger Dette",
+    "Philip D\u00f6rr"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.14930v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14930v1",
+  "published": "2026-07-16T12:45:35+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Testing for correct model specification in copula regression models",
+  "updated": "2026-07-16T12:45:35+00:00"
+}

@@ -1,0 +1,18 @@
+{
+  "abstract": "Motivated by batch and semi-batch process operation, we study finite-horizon open-loop dynamic optimization problems with uncertain parameters. A common computational approach replaces the expected performance criterion by an average over finitely many sampled parameter realizations. We develop a statistical theory for the resulting sample-based optimal value as an estimator of the population optimal value. The analysis is based on a stability estimate showing that terminal losses depend Lipschitz continuously on the time-integrated control, which records the cumulative input delivered up to each time. This estimate yields a functional central limit theorem for the sample-based objective and a statistical limit theorem for the corresponding optimal value error. As a consequence, we obtain confidence intervals for the population optimal value. When the population optimizer is unique, the limit is Gaussian and leads to a plug-in confidence interval. When multiple optimal policies may exist, we use a subsampling confidence interval that does not require uniqueness. The methodology is illustrated on two fed-batch case studies in which feed-rate profiles are optimized under parametric uncertainty.",
+  "authors": [
+    "Aurya Javeed",
+    "Johannes Milz"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.14965v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14965v1",
+  "published": "2026-07-16T13:16:03+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Statistical Inference for Scenario-Based Dynamic Optimization under Uncertainty",
+  "updated": "2026-07-16T13:16:03+00:00"
+}

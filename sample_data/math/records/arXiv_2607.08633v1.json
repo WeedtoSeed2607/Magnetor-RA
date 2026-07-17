@@ -1,0 +1,19 @@
+{
+  "abstract": "We study a family of preconditioned primal dual algorithms for convex-concave saddle point problems by the dynamics introduced in \\cite{apidopoulos2026preconditioned}. The proposed framework exploits the possible smooth + nonsmooth structure of the saddle point formulation. It includes, but is not limited to, linearly constrained convex optimization problems. The proposed antisymmetric preconditioners allow us to establish non ergodic convergence rates, accounting for possible computational errors in the implementation of the method. Finally, we present numerical experiments to indicate our well performed preconditioned primal dual algorithms.",
+  "authors": [
+    "Huiyuan Guo",
+    "Juan Jos\u00e9 Maul\u00e9n",
+    "Juan Peypouquet"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.08633v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08633v1",
+  "published": "2026-07-09T16:02:07+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Preconditioned primal-dual algorithms for saddle point problems: non-ergodic convergence rates",
+  "updated": "2026-07-09T16:02:07+00:00"
+}

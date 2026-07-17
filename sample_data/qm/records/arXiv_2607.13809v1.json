@@ -1,0 +1,20 @@
+{
+  "abstract": "The Markovian dynamics of open quantum many-body systems are typically governed by the Lindblad master equation, yet obtaining the reduced density matrix for bosonic and fermionic systems remains a formidable numerical challenge due to the exponential growth of the Hilbert space. Here, we introduce a computationally efficient framework for constructing the reduced density matrix by modeling the environment as a copy of the primary system with a monotonically decaying coupling that enforces unidirectional energy flow. Our method directly yields exact solutions that rigorously satisfy the Lindblad master equation for both bosonic and fermionic cases, bypassing the need for costly Liouvillian diagonalization. We validate our approach through applications to paradigmatic models, demonstrating accurate reproduction of dissipative dynamics across a broad parameter regime. This work provides a straightforward and powerful tool for simulating Markovian open-system evolution, with immediate applicability to quantum transport and control problems in many-body physics.",
+  "authors": [
+    "Fardin Kheirandish",
+    "Zahra Iranshahi",
+    "Fatemeh Bakhtiari",
+    "Adam Moradian"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.13809v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.13809v1",
+  "published": "2026-07-15T13:12:44+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Markovian evolution from a novel scheme",
+  "updated": "2026-07-15T13:12:44+00:00"
+}

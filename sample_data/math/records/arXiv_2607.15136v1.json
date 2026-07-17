@@ -1,0 +1,18 @@
+{
+  "abstract": "The first main theme of this paper is to study symplectic (un-)knottedness of Lagrangian submanifolds which are not tori. Our construction of such Lagrangians is inspired by the generalized Polterovich Lagrangians of Oakley--Usher and relies on an adaption of symplectic reduction methods going back to Chekanov--Schlenk and McDuff's probes to the case of non-abelian group actions. We compare Oakley--Usher Lagrangians to their (un-)knotted cousins to find that, depending on the situation, they are: (1) not diffeomorphic, (2) diffeomorphic, but not Lagrangian isotopic; (3) Lagrangian isotopic, but not Hamiltonian isotopic, (4) Hamiltonian isotopic. This relationship between them frequently changes when the ambient space is compactified. The second main theme is an in-depth study of monotone Lagrangian tori obtained from appyling our constructions to the three-dimensional quadric $Q^3$. Computing the versal deformation of the $\u03a8$-invariant of Shelukhin--Tonkonog--Vianna, we find a torus which is knotted in a strong sense: it is not Hamiltonian isotopic to the Biran-lift of any Vianna torus in the two-dimensional quadric. Furthermore, we investigate enumerative properties of the Oakley--Usher torus in $Q^3$ and prove its non-displaceability, settling an open question asked by Oakley--Usher. We relate this to mirror symmetry by proving a split-generation result for the monotone Fukaya category of $Q^3$, which is inspired by, and can be compared to a similar result of Abouzaid--Diogo for cotangent bundles of the sphere.",
+  "authors": [
+    "Jo\u00e9 Brendel",
+    "Andrea Piccirilli"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.15136v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15136v1",
+  "published": "2026-07-16T15:42:27+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "On Lagrangians of Oakley-Usher type",
+  "updated": "2026-07-16T15:42:27+00:00"
+}

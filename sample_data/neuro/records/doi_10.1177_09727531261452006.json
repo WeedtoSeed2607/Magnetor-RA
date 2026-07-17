@@ -1,0 +1,24 @@
+{
+  "abstract": "Background Radiation-induced cognitive decline (RICD) is a common and debilitating late effect of cranial radiotherapy, particularly in long-term survivors of brain tumours and paediatric cancers. Despite advances in conformal radiation delivery and supportive care, progressive impairments in memory, attention and executive function continue to limit quality of life. Increasing evidence indicates that RICD is driven not by acute neuronal loss but by persistent neuroinflammation, oxidative stress, vascular dysfunction and metabolic failure within cognitive circuits. These converging processes highlight the need for disease-modifying targets that can regulate multiple pathological domains simultaneously. Summary Peroxisome proliferator-activated receptors (PPARs) are nuclear receptors that integrate inflammatory control, redox balance, lipid metabolism and mitochondrial function across neurons, glia and the neurovascular unit. Preclinical studies demonstrate that PPAR\u03b3 and PPAR\u03b1 agonists, including pioglitazone and fenofibrate, prevent or attenuate cognitive decline after fractionated whole-brain irradiation even when structural injury persists. PPAR\u03b2/\u03b4 agonists suppress radiation-induced neuroinflammation, while emerging evidence suggests that ligands capable of stabilising white matter and glial phenotypes may further enhance cognitive resilience. In parallel, phytochemical PPAR modulators, dual-isoform ligands, and advanced delivery strategies expand the therapeutic landscape beyond first-generation metabolic drugs. Key Message PPARs represent an integrative, circuit-level target for modifying the delayed trajectory of radiation-induced brain injury. Strategic deployment of PPAR-directed therapies during and after cranial radiotherapy offers a biologically grounded and clinically actionable approach to preserving long-term cognitive function in brain tumour survivors.",
+  "authors": [
+    "Ghanekar S",
+    "Raj JAT",
+    "Thiruselvan GK",
+    "Kulkarni R",
+    "Soni M",
+    "Chatterjee A",
+    "Patro I",
+    "Goda JS"
+  ],
+  "doi": "10.1177/09727531261452006",
+  "domain": "neuro",
+  "external_id": "PMC13372800",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-15T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Pharmacological Targeting of Peroxisome Proliferator-activated Receptors for Prevention of Radiation-induced Cognitive Decline.",
+  "updated": null
+}

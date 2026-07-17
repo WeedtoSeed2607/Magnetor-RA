@@ -1,0 +1,78 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "magnetor"
+version = "0.1.0"
+description = "Domain-Aware Research Platform — Phase 1: Acquisition layer (per Architecture Spec v2.1)"
+readme = "README.md"
+requires-python = ">=3.14"
+license = { text = "Proprietary — Internal Technical Document" }
+dependencies = [
+    "httpx>=0.28",
+    "numpy>=2",
+    "scikit-learn>=1.6",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=9",
+    "pytest-httpx>=0.36",
+    "ruff>=0.15",
+    "mypy>=2.1",
+]
+# Dashboard (Spec 11) is an optional presentation layer; the core acquire/
+# embed/route/deep-dive/trend pipeline runs without Streamlit.
+dashboard = [
+    "streamlit>=1.50",
+]
+
+[project.scripts]
+magnetor = "magnetor.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/magnetor"]
+
+# --- Baseline: autoformatter + linter (see docs/decisions/0001) ---
+[tool.ruff]
+line-length = 100
+target-version = "py314"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
+
+# --- Baseline: static type checking (see docs/decisions/0001) ---
+[tool.mypy]
+python_version = "3.14"
+strict = true
+files = ["src", "tests"]
+# src layout: treat `src` and the repo root as import bases so `magnetor.*` and
+# `tests.*` resolve to single, unambiguous module names.
+explicit_package_bases = true
+mypy_path = "src"
+
+# Tests use pytest fixtures (tmp_path, capsys, monkeypatch, httpx_mock) whose
+# parameters are injected untyped; annotating every one adds noise without
+# safety. Source stays fully strict; tests relax only the untyped-def rules.
+[[tool.mypy.overrides]]
+module = "tests.*"
+disallow_untyped_defs = false
+disallow_incomplete_defs = false
+
+# scikit-learn / scipy ship incomplete type info; don't fail strict on them.
+[[tool.mypy.overrides]]
+module = ["sklearn.*", "scipy.*", "streamlit.*"]
+ignore_missing_imports = true
+
+# The Streamlit UI leans on framework decorators (@st.cache_resource) whose
+# types are incomplete; relax the untyped-decorator rule for the UI shell only.
+# All testable logic lives in dashboard_data.py, which stays fully strict.
+[[tool.mypy.overrides]]
+module = "magnetor.dashboard"
+disallow_untyped_decorators = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

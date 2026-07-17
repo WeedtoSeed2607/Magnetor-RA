@@ -1,0 +1,33 @@
+{
+  "abstract": "Abstract The clinical presentation of lower extremity and autonomic dysfunction of persons with multiple sclerosis (pwMS) does not consistently correlate with central nervous system pathology noted on conventional magnetic resonance imaging (MRI). Diffusion tensor imaging (DTI) could provide more information about tissue microstructure and insight into pathophysiology but is understudied in relevant anatomies such as the lumbosacral spinal cord (LSC). We sought to explore how DTI measures change across LSC spinal levels and white matter (WM) columns in 29 persons with mild relapsing-remitting MS (pwRRMS) (Expanded Disability Status Scale Median [Min, Max] = 1 [0, 3.5]) and 27 age- and sex-matched healthy controls (HCs) at 3T and evaluate associations between DTI measures and clinical measures of disability. In HCs, differences across spinal levels and between WM columns were found in all DTI measures. However, there were no significant differences when comparing HC and normal-appearing tissue in pwRRMS. In pwRRMS, increased dorsal WM fractional anisotropy (FA) was associated with worse mobility and sensation. We observed heterogeneity in DTI measures throughout the LSC, emphasizing the importance of region-based analysis for future studies. In the LSC, higher FA may not reflect increased microstructural integrity, but expansion to MS populations with greater disability needs to be explored.",
+  "authors": [
+    "Cronin AE",
+    "Zhang X",
+    "Combes A",
+    "Vandekar S",
+    "Dunay GL",
+    "Narisetti L",
+    "Sweeney G",
+    "Prock L",
+    "Houston D",
+    "Salakhov A",
+    "Schilling KG",
+    "Stubblefield S",
+    "McKnight CD",
+    "Bagnato F",
+    "Sriram S",
+    "Smith SA",
+    "O'Grady KP"
+  ],
+  "doi": "10.1162/IMAG.a.1296",
+  "domain": "neuro",
+  "external_id": "PMC13347604",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-01-01T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Multi-shot diffusion tensor imaging in the lumbosacral spinal cord: Characterizing heterogeneity in healthy tissue and differences in multiple sclerosis.",
+  "updated": null
+}

@@ -1,0 +1,21 @@
+{
+  "abstract": "Brain\u2013computer interfaces (BCIs) offer the potential to restore function and augment human capabilities. However, non-invasive electroencephalography (EEG)-based BCIs still face challenges in learning efficiency and control precision, particularly for na\u00efve users performing complex tasks. Here, we present a sensory-guided joint learning framework that integrates human motor learning with adaptive machine learning to improve BCI training and performance. In 31 BCI-na\u00efve participants, the framework enabled rapid skill acquisition, achieving average online discrete accuracies of 86.0% for one-dimensional (1D) and 77.5% for two-dimensional (2D) motor imagery tasks, along with continuous control accuracies of 77.5% (1D) and 66.9% (2D). Mechanistically, tactile guidance reduced user exploration and accelerated neural adaptation, while sample reweighting aligned decoder updates with human learning trajectories. By coupling reinforcement-driven neural plasticity with adaptive algorithmic optimization, this framework advances BCI training from passive calibration to active human\u2013machine joint learning, enabling practical and scalable neural interfaces for communication and rehabilitation.",
+  "authors": [
+    "Wang H",
+    "Zhang Y",
+    "Karrenbach M",
+    "Ding Y",
+    "He B"
+  ],
+  "doi": "10.1038/s41467-026-75435-5",
+  "domain": "neuro",
+  "external_id": "PMC13373212",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-15T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Sensory-guided human-machine joint learning accelerates the acquisition of motor imagery brain computer interface control.",
+  "updated": null
+}

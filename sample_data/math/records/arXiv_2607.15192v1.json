@@ -1,0 +1,19 @@
+{
+  "abstract": "In this paper, we construct an efficient higher-order local time integration scheme for spatially discretized linear Friedrichs' systems. In particular, our interest is in problems where only a few of the mesh elements are small while the majority of the elements is much larger. The special combination of two methods like the leapfrog method on the coarse part of the mesh and the Crank-Nicolson method on the fine part as was done in Hochbruck, Sturm 2016 and Hochbruck, K\u00f6hler 2022 is not suitable for higher-order time integration. Therefore, we suggest to approximate the solution of the linear systems arising in each time step by a preconditioned Krylov subspace method, e.g., the quasi-minimal residual method by Freund and Nachtigal 1991. The techniques developed here for linear problems also carry over to nonlinear problems, where linear systems of the same type arise within a Newton-type iteration. Motivated by the analysis of locally implicit methods by Hochbruck and Sturm 2016, we show how to construct a preconditioner in such a way that the number of iterations required by the Krylov subspace method to achieve a certain accuracy is bounded independently of the diameter of the small mesh elements. We prove this behavior by using Faber polynomials and complex approximation theory. The cost to apply the preconditioner consists of the solution of a small linear system, whose dimension corresponds to the degrees of freedom within the fine part of the mesh (and its next coarse neighbors). If this dimension is small compared to the size of the full mesh, the preconditioner is very efficient. We conclude by verifying our theoretical results with numerical experiments for the fourth-order Gauss-Legendre Runge--Kutta method.",
+  "authors": [
+    "Marlis Hochbruck",
+    "Jonas K\u00f6hler",
+    "Malik Scheifinger"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.15192v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15192v1",
+  "published": "2026-07-16T16:47:51+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Efficient higher-order local time integration for Friedrichs' systems",
+  "updated": "2026-07-16T16:47:51+00:00"
+}

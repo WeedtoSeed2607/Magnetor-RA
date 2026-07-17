@@ -1,0 +1,19 @@
+{
+  "abstract": "We prove that the Cantor measure with base $b$ does not admit a Fourier frame whenever $b > 1$ is an odd integer. In particular, this answers a question of Strichartz on the existence of a Fourier frame for the middle third Cantor measure. A formalization of our main result in Lean 4 is also provided.",
+  "authors": [
+    "Jaume de Dios Pont",
+    "Lukas Liehr",
+    "Mitchell A. Taylor"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.08656v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08656v1",
+  "published": "2026-07-09T16:26:26+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Cantor measures with odd base do not admit Fourier frames",
+  "updated": "2026-07-09T16:26:26+00:00"
+}

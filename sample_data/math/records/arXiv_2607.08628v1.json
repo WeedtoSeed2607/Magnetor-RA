@@ -1,0 +1,19 @@
+{
+  "abstract": "We study the problem of matching two sets of noisy feature vectors when underlying true features are related by an unknown scalar affine transformation. Our method comprises two primary steps. First, we standardize the feature vectors to estimate the unknown scalar affine transformation. Subsequently, we estimate the permutation by minimizing the Least Sum of Logarithms (LSL) between two sets of observations using the estimated transformation. Our main result shows that the unknown permutation can be perfectly recovered given that the minimal separation distance of true feature vectors scales as $\\sqrt{\u03c1_\u03c3} \\vee (d\\log n)^{1/4} \\vee \\sqrt{\\log n}$, where $d$ is the ambient dimension, $n$ is the sample size, and $\u03c1_\u03c3$ is the maximal ratio of noise magnitudes. Interestingly, the obtained rate, under mild heteroscedasticity, coincides with that of the non-affine setting. We additionally demonstrate that there exist configurations requiring a larger minimal separation distance for perfect recovery. The latter makes the matching problem more challenging from minimax perspective compared to the non-affine setting. Consequently, we show that in the problem of feature matching, standardizing the data implicitly estimates the scalar affine parameters. As part of our analysis, we prove non-asymptotic concentration bounds for the affine parameter estimators in the presence of heterogeneous noise magnitudes.",
+  "authors": [
+    "Tigran Galstyan",
+    "Avetik Karagulyan",
+    "Arshak Minasyan"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.08628v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08628v1",
+  "published": "2026-07-09T15:59:11+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Exact Permutation Recovery Under Unknown Scalar Affine Transformation",
+  "updated": "2026-07-09T15:59:11+00:00"
+}

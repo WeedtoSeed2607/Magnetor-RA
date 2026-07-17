@@ -1,0 +1,17 @@
+{
+  "abstract": "Bulk reconstruction is a central problem in AdS/CFT, and entanglement wedge reconstruction is its subregion version. We argue that this subregion statement should be separated from the stronger holographic quantum error correction interpretation, in which one region-independent logical bulk operator has code-preserving representatives in several boundary regions. A simple locality argument shows that such a common reconstruction must commute with the code-preserving local algebras in the complementary regions. This is the mechanism realized in HaPPY-type codes: the erased regions are blind to a protected logical algebra. An ordinary finite $N$ holographic CFT does not have such a protected invisible sector for supergravity fields. Its low-energy local observables, in particular, suitably smeared stress tensors, detect the physical support and gravitational dressing of ordinary bulk operators, up to possible center or superselection data. Thus, there is no such holographic quantum error correction and the $N=\\infty$ agreement of global and subregion HKLL formulae is a free-theory statement. What remains is entanglement wedge reconstruction without holographic quantum error correction, or subregion complementarity: each boundary region has its own code-preserving low-energy algebra and its own region-adapted bulk interpretation, rather than a shared logical operator.",
+  "authors": [
+    "Seiji Terashima"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.08684v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08684v1",
+  "published": "2026-07-09T16:47:19+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Entanglement Wedge Reconstruction without Holographic Quantum Error Correction",
+  "updated": "2026-07-09T16:47:19+00:00"
+}

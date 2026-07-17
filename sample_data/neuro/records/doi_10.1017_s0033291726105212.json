@@ -1,0 +1,27 @@
+{
+  "abstract": "Background Mindfulness-based cognitive therapy (MBCT) was developed for relapse prevention in people with remitted depression but is increasingly used for those with difficult-to-treat depression (DTD). A key question regarding this broader application is whether ongoing depressive symptoms constrain therapeutic responsiveness or disrupt MBCT\u2019s proposed mechanism, decentering. We explored whether baseline depressive severity moderates clinical outcomes, whether changes in decentering mediate treatment effects, and whether this mediation varies by baseline severity. Methods Secondary moderation, mediation, and moderated mediation analyses were conducted using data from the RESPOND randomized trial ( N = 234), comparing MBCT plus treatment as usual (TAU) with TAU alone in adults not remitted after high-intensity psychological therapy. Depressive symptoms (PHQ-9) and decentering (Experiences Questionnaire) were assessed at baseline, post-treatment (10 weeks), and follow-up (34 weeks). Analyses were conducted using structural equation modelling. Results Higher baseline severity predicted greater symptom improvement across both groups. Treatment-related increases in decentering partially mediated the effect of MBCT on depressive symptoms at follow-up. Although baseline severity did not moderate the treatment effect, it moderated the indirect effect, with decentering more strongly associated with symptom reduction among those with higher baseline depression. Severity did not moderate the acquisition of decentering skills. Conclusions Concerns that more severe depressive symptoms limit the effectiveness of MBCT were not supported. MBCT\u2019s core mechanism remained operative under substantial symptom burden, with clinical impact amplified at higher severity. These findings reduce key uncertainties regarding the application of MBCT in DTD and support its use across a broad range of symptom severity.",
+  "authors": [
+    "Barnhofer T",
+    "Dunn BD",
+    "Strauss C",
+    "Ruths FA",
+    "Ryan M",
+    "Ladwa A",
+    "Stafford F",
+    "Fichera R",
+    "Metcalfe I",
+    "Young AH",
+    "Goldsmith K"
+  ],
+  "doi": "10.1017/S0033291726105212",
+  "domain": "neuro",
+  "external_id": "PMC13370192",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-13T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Mechanisms of mindfulness-based cognitive therapy in difficult-to-treat depression: moderation and mediation analyses from the RESPOND trial.",
+  "updated": null
+}

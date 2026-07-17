@@ -1,0 +1,28 @@
+{
+  "abstract": "A critical limitation of solid-state quantum devices arises from the materials from which they are fabricated: uncontrolled surfaces, interfaces, and structural imperfections introduce numerous sources of loss and decoherence. Despite extensive efforts, linking these decoherence mechanisms to their microscopic material origins -- essential for developing effective mitigation strategies -- remains an outstanding challenge that has slowed coherence improvements. Here, using scanning gate microscopy on live superconducting circuits we identify a previously unrecognised decoherence mechanism originating from Coulomb blockade and microwave-driven charge tunnelling in metallic grains. Such grains are ubiquitous in thin-film devices fabricated by standard lithography processes. By characterising multiple defects across different devices, we find such defects to be as common and as debilitating to device performance as two-level system (TLS) defects, while originating from a fundamentally different physical mechanism. Importantly, conventional characterisation techniques would misattribute this loss to other, microwave power-independent processes. Our observations thus reveal a widespread source of decoherence in superconducting circuits, challenging the prevailing paradigm that coherence lifetimes are primarily limited by TLS defects. Eliminating metallic grains during fabrication provides a clear and practical route to suppress this mechanism, offering a pathway towards improved coherence and reduced noise in microwave-based solid-state quantum devices.",
+  "authors": [
+    "R. Banerjee",
+    "L. P. Lindoy",
+    "M. Hegedus",
+    "A. Hutcheson",
+    "T. Hawkins",
+    "E. Daghigh-Ahmadi",
+    "S. Samaddar",
+    "T. Barker",
+    "J. P. Goff",
+    "A. Ya. Tzalenchuk",
+    "I. Rungger",
+    "S. E. de Graaf"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.15252v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15252v1",
+  "published": "2026-07-16T17:48:26+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Coulomb blockade in microscopic material defects as a source of decoherence and noise in solid-state quantum circuits",
+  "updated": "2026-07-16T17:48:26+00:00"
+}

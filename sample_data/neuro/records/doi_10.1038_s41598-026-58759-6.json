@@ -1,0 +1,21 @@
+{
+  "abstract": "Accurate measurement of sound localization depends not only on the acoustic setup but also on the response method used to report the perceived source direction, particularly when visual cues from loudspeaker arrays are minimized. This study compared two response tracking methods specifically designed for concealed horizontal loudspeaker arrays: An egocentric LED-based method and an exocentric tablet-based method. Both methods are compact and require moderate technical effort compared to high-end solutions such as head- or eye-tracking systems. 20 normal-hearing participants completed free-field sound localization tasks using both approaches. The egocentric LED-based method produced a significantly lower localization error (RMSE: 5.4\u00b0, 95% CI: 4.77\u00b0 to 6.10\u00b0) than the tablet-based method (7.4\u00b0, 95% CI: 6.75\u00b0 to 8.07\u00b0), but required longer trial durations (21% increase). Most of the difference in RMSE was attributable to the discrepancies between the finger position on the tablet surface and the intended target position. Angle-dependent analyses revealed systematic, method-specific effects: Both response methods exhibited a central shift in participants\u2019 responses and reduced precision at lateral source positions. Exploratory analyses of the tablet-based method suggested the effect was superimposed by an additional and constant lateral bias across the source angles. These findings demonstrate that the choice of response method can systematically influence measured localization performance and should therefore be taken into account when designing localization experiments and interpreting their results. Supplementary Information The online version contains supplementary material available at 10.1038/s41598-026-58759-6.",
+  "authors": [
+    "M\u00fcller FU",
+    "Roth S",
+    "Angermeier J",
+    "Hemmert W",
+    "Zirn S"
+  ],
+  "doi": "10.1038/s41598-026-58759-6",
+  "domain": "neuro",
+  "external_id": "PMC13373181",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-15T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Comparison of two response tracking methods for sound localization with concealed sound sources.",
+  "updated": null
+}

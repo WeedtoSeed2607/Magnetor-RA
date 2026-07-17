@@ -1,0 +1,21 @@
+{
+  "abstract": "The use of robots is playing an increasingly important role in industrial manufacturing. Collaborative robots operated alongside humans can pose a hazard. Pain perception as an injury risk indicator is contingent on several factors, especially contact surface, anatomical region and the difference between superficial and deep tissue pain. In this article, we have conducted an experimental load study with human subjects in which we have analyzed these factors to enable the development of a pain-sensitive dummy for testing collaborative robot against biomechanical thresholds. For the load test, we used our established algometer setup with three different contact bodies (7 \u00d7 7 mm 2 , 14 \u00d7 14 mm 2 and 24 \u00d7 24 mm 2 ) to evaluate six anatomical regions of the arm. Subjects were instructed to activate a switch whenever they sensed pain after starting the test procedure. The algometer increased the force in 5 N/s increments. We used topical anesthetic to distinguish between superficial and deep tissue pain. We had 11 male subjects for measurements. The greatest force had to be applied with the medium-sized contact body to induce pain perception. Local anesthetization made it necessary to increase the force of the small and large contact bodies significantly. Our finding that peak force is a reliable indicator of the perception of pain caused by the medium-sized contact body indicates that the contact body\u2019s size affects peak force magnitude significantly.",
+  "authors": [
+    "Lucas B",
+    "Behrens R",
+    "Echterbeck P",
+    "Pliske G",
+    "Piatek S"
+  ],
+  "doi": "10.1038/s41598-026-62170-6",
+  "domain": "neuro",
+  "external_id": "PMC13369729",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-14T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "The influence of contact body size on superficial and deep tissue pain perception for development of a collision dummy.",
+  "updated": null
+}

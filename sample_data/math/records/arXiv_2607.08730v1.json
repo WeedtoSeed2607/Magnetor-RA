@@ -1,0 +1,18 @@
+{
+  "abstract": "We investigate non-normal modal logics corresponding to provability predicates $\\mathrm{Pr}_T(x)$ satisfying the derivability condition $\\mathbf{C}$: $T\\vdash\\mathrm{Pr}_T(\\ulcorner \\varphi \\urcorner)\\land\\mathrm{Pr}_T(\\ulcorner \u03c8\\urcorner)\\to \\mathrm{Pr}_T(\\ulcorner \\varphi\\land\u03c8\\urcorner)$. The modal counterpart of this condition is the axiom scheme $\\mathsf{C}$: $\\Box A\\land\\Box B\\to\\Box(A\\land B)$. First, we introduce a new semantics based on closure operators for non-normal modal logics including logics adopting $\\mathsf{C}$ as an axiom scheme. We prove modal completeness for several non-normal modal logics studied in this paper with respect to this semantics. Second, we prove the arithmetical completeness theorems for the logics $\\mathsf{CN}$, $\\mathsf{CNP}$, $\\mathsf{CNF}$, $\\mathsf{CNPF}$, and $\\mathsf{CND}$ by using our new semantics.",
+  "authors": [
+    "Haruka Kogure",
+    "Taishi Kurahashi"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.08730v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08730v1",
+  "published": "2026-07-09T17:34:20+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Modal logics of conjunctively closed provability predicates",
+  "updated": "2026-07-09T17:34:20+00:00"
+}

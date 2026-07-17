@@ -1,0 +1,20 @@
+{
+  "abstract": "Let $f$ be a positive integer, and let $\u03c7$ be a primitive quadratic character of conductor $f$. Let $k$ be a positive integer, and write $B_k(\u03c7,X)$ for the $k$-th Bernoulli polynomial corresponding to $\u03c7$. Suppose $B_k(\u03c7,X)$ is irreducible and of degree at least $2$. Then for 100% of positive integers $m$ divisible by $f$, the Diophantine equation \\[ \u03c7(1) \\cdot (x+1)^k+\u03c7(2) \\cdot (x+2)^k+\\cdots+\u03c7(m) \\cdot (x+m)^k \\, =\\, y^n, \\] has no solutions with $x$, $y$, $n$ integers, and $n \\ge 2$.",
+  "authors": [
+    "K\u00e1lm\u00e1n Gy\u00f6ry",
+    "Vandita Patel",
+    "\u00c1kos Pint\u00e9r",
+    "Samir Siksek"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.15090v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15090v1",
+  "published": "2026-07-16T15:00:24+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "On a character-twisted analogue of Sch\u00e4ffer's equation",
+  "updated": "2026-07-16T15:00:24+00:00"
+}

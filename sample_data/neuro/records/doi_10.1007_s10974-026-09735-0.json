@@ -1,0 +1,27 @@
+{
+  "abstract": "Resistance training in rodent models is widely used to investigate muscular and cardiovascular adaptations. Traditional models often attach loads to the tail. The present study aimed to develop and validate a resistance training model for rats using a pulley system combined with a load-bearing vest, allowing progressive overload without tail attachment. Spontaneously hypertensive rats were assigned to control (CTR, n = 4) or resistance training (RT, n = 6) groups for a 10-week ladder climbing protocol. Functional and morphometric adaptations were evaluated in the soleus and flexor hallucis longus (FHL) muscles. Resistance training resulted in a significant increase in relative maximum load carried ( p = 0.0007), corresponding to a 79.5% improvement in strength capacity. The RT group also showed increased relative mass of the FHL muscle ( p = 0.002). Gene expression analyses did not show statistically significant differences between groups ( p > 0.05). The pulley\u2013vest system proved to be a viable and effective resistance training model for rats, allowing controlled overload while avoiding tail load attachment and potential vascular interference. This model represents a refined experimental approach for resistance training studies in rodent models, particularly in conditions where tail circulation must be preserved.",
+  "authors": [
+    "Dos Santos de Almeida RAC",
+    "da Silva Santos J",
+    "de Jesus GS",
+    "de Sousa Amorin L",
+    "da Silva ACP",
+    "de S\u00e1 Viana HAO",
+    "da Silva Lau R",
+    "da Costa AVCLJ",
+    "de Azevedo Cruz Seara F",
+    "da Silveira ALB",
+    "Olivares EL"
+  ],
+  "doi": "10.1007/s10974-026-09735-0",
+  "domain": "neuro",
+  "external_id": "PMC13369349",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-14T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "A novel pulley-vest model enables progressive resistance exercise in rats without tail loading.",
+  "updated": null
+}

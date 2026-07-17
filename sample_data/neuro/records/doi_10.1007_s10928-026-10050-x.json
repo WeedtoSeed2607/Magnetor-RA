@@ -1,0 +1,30 @@
+{
+  "abstract": "Adeno-associated virus (AAV) mediated monoclonal antibody (mAb) expression in the central nervous system (CNS) constitutes a promising approach for treating various CNS disorders. However, a comprehensive understanding of AAV biodistribution and antibody expression in the brain following viral vector administration via different local CNS routes and systemic administration is not well established. AAV9 and AAV5 vectors encoding antibody against a protein associated with neurodegeneration (i.e., anti-Target-X mAb), as well as AAV9 encoding a control antibody (Ctrl-mAb), were administered to rats via intravenous (IV), intra-cisterna magna (ICM), and intrastriatal (IST) routes. Effect of immunosuppression regimen was also investigated. Blood/plasma concentrations of the vector and mAb were measured at day 21 and day 56, the latter only for ICM group. AAV and mAb concentrations in different brain regions, interstitial fluid (ISF), cerebrospinal fluid (CSF), and some peripheral tissues were analyzed. Both the IST and ICM routes showed dose-proportional, and higher vector biodistribution and mAb expression in the brain compared to the IV route. Twenty-fold lower AAV dose administered via IST route produced similar transgene expression higher dose administered via ICM route. Non-immunosuppressed rats exhibited a sharp decline in mAb plasma concentration after 2nd week and lower brain and tissue homogenate concentrations at 3-week. IST and ICM administration of AAV results in higher and more sustained expression of antibody in the brain compared to IV delivery, particularly when immune responses are controlled using concomitant immunosuppression regimen.",
+  "authors": [
+    "Chowdhury EA",
+    "Meno-Tetang G",
+    "Liu S",
+    "Wu S",
+    "Desireddy N",
+    "Jerez A",
+    "Mahmood L",
+    "Rajwade A",
+    "Bulusu S",
+    "Jamier T",
+    "Nucitelli A",
+    "Cusdin F",
+    "Dobson C",
+    "Shah DK"
+  ],
+  "doi": "10.1007/s10928-026-10050-x",
+  "domain": "neuro",
+  "external_id": "PMC13372995",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-15T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Differential expression of monoclonal antibody in rat brain following systemic and local administration of AAV.",
+  "updated": null
+}

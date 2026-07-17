@@ -1,0 +1,19 @@
+{
+  "abstract": "Digital oncology has become increasingly sophisticated at predicting cancer risk, treatment response, and prognosis. Yet many tools still operate as static snapshots, while cancer care unfolds as a trajectory shaped by tumor biology, genetics, treatment, residual disease, toxicity, and patient priorities. We argue that oncology needs dynamic, multiscale Virtual Human Twins (VHTs) that represent the patient and disease as they evolve together, integrating multimodal data to support longitudinal clinical reasoning and decision simulation rather than prediction alone. High-risk triple-negative breast cancer provides a focused first use case because trajectories are heterogeneous, decisions are time-sensitive, and clinical utility can be tested in tumor-board workflows. A minimum viable VHT should make uncertainty visible, support clinically interpretable simulation of alternative management strategies, and be judged by clinical decision impact, not predictive performance alone.",
+  "authors": [
+    "Tan YY",
+    "Janickova I",
+    "Langs G"
+  ],
+  "doi": "10.1371/journal.pdig.0001548",
+  "domain": "neuro",
+  "external_id": "PMC13349087",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-01T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "From static prediction to dynamic cancer trajectories: Virtual Human Twins for breast cancer decision support.",
+  "updated": null
+}

@@ -1,0 +1,18 @@
+{
+  "abstract": "In this work we study the local well-posedness of aggregation equations in Morrey spaces for interaction kernels with an isolated analytic singularity at the origin. The velocity field is given by a nonlocal convolution involving the gradient of the kernel. We assume that, near the singularity, the gradient of the kernel is analytically comparable -- in the two-sided sense -- to a negative power of a real-analytic function with an isolated zero. Under this assumption, we give a complete geometric characterisation of the admissible range of Morrey exponents: $\\nabla K \\in L^p_{\\mathrm{loc}}$ if and only if $p < \\min_i (a_i+1)/(2N_i - M_i)$, where $(N_i, M_i, a_i)$ are the vanishing orders and discrepancy exponents arising from a log-resolution of the zero set of $f$. The real log-canonical threshold of $f$ provides a computable lower bound for this exact threshold, and the two coincide for Newton non-degenerate singularities. The proof relies on resolution of singularities, which reduces the analysis to a monomial model and yields the necessary integrability estimates. This yields a geometric criterion for the class of interaction kernels covered by the theory, including isotropic kernels of Riesz type and certain anisotropic kernels arising from analytic divisors. Our results show that the threshold for well-posedness in this setting is governed by resolution-theoretic (birational) data associated with the singularity.",
+  "authors": [
+    "Nivaldo Grulha",
+    "Andr\u00e9a Prokopczyk"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.14991v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14991v1",
+  "published": "2026-07-16T13:42:48+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Geometric Criteria for Morrey Admissibility via the Real Log-Canonical Threshold",
+  "updated": "2026-07-16T13:42:48+00:00"
+}

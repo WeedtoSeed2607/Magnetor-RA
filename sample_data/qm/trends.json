@@ -1,0 +1,134 @@
+{
+  "domain": "qm",
+  "generated_at": "2026-07-17T08:41:18.983279+00:00",
+  "n_slices": 2,
+  "slice_labels": [
+    "2026-07-09",
+    "2026-07-16"
+  ],
+  "interpretation": [
+    "Latest 7-day slice holds 24 doc(s); prior slice 106. Drift below is latest-vs-prior mean topic-probability.",
+    "Topic 0 [quantum, based, non, dynamics]: prevalence fell 19 points (n=24 vs 106).",
+    "Topic 1 [quantum, entanglement, state, spin]: prevalence rose 16 points (n=24 vs 106).",
+    "Topic 3 [quantum, state, states, finite]: prevalence rose 7 points (n=24 vs 106).",
+    "Emerging term 'entanglement': 1.29 mentions/doc (latest, n=24) vs 0.61 (prior).",
+    "Emerging term 'codes': 0.42 mentions/doc (latest, n=24) vs 0.09 (prior).",
+    "Emerging term 'css': 0.33 mentions/doc (latest, n=24) vs 0.02 (prior)."
+  ],
+  "topics": [
+    {
+      "id": 0,
+      "keywords": [
+        "quantum",
+        "based",
+        "non",
+        "dynamics",
+        "framework",
+        "classical",
+        "superconducting",
+        "states"
+      ],
+      "prevalence": [
+        0.3294,
+        0.1349
+      ],
+      "drift": -0.1945
+    },
+    {
+      "id": 1,
+      "keywords": [
+        "quantum",
+        "entanglement",
+        "state",
+        "spin",
+        "protocol",
+        "using",
+        "results",
+        "based"
+      ],
+      "prevalence": [
+        0.2422,
+        0.4029
+      ],
+      "drift": 0.1607
+    },
+    {
+      "id": 2,
+      "keywords": [
+        "quantum",
+        "field",
+        "non",
+        "like",
+        "gauge",
+        "finite",
+        "vacuum",
+        "energy"
+      ],
+      "prevalence": [
+        0.1236,
+        0.0854
+      ],
+      "drift": -0.0383
+    },
+    {
+      "id": 3,
+      "keywords": [
+        "quantum",
+        "state",
+        "states",
+        "finite",
+        "entanglement",
+        "time",
+        "information",
+        "local"
+      ],
+      "prevalence": [
+        0.3048,
+        0.3768
+      ],
+      "drift": 0.0721
+    }
+  ],
+  "anomalies": [
+    {
+      "term": "entanglement",
+      "latest_rate": 1.292,
+      "delta": 0.678
+    },
+    {
+      "term": "codes",
+      "latest_rate": 0.417,
+      "delta": 0.322
+    },
+    {
+      "term": "css",
+      "latest_rate": 0.333,
+      "delta": 0.314
+    },
+    {
+      "term": "detection",
+      "latest_rate": 0.375,
+      "delta": 0.309
+    },
+    {
+      "term": "gradient",
+      "latest_rate": 0.333,
+      "delta": 0.267
+    },
+    {
+      "term": "stabilizer",
+      "latest_rate": 0.375,
+      "delta": 0.252
+    },
+    {
+      "term": "demonstrate",
+      "latest_rate": 0.458,
+      "delta": 0.251
+    },
+    {
+      "term": "xyz",
+      "latest_rate": 0.25,
+      "delta": 0.25
+    }
+  ]
+}

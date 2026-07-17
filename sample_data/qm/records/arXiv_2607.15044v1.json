@@ -1,0 +1,22 @@
+{
+  "abstract": "Low-overhead quantum error-correction schemes are essential for enabling quantum computation on registers containing multiple logical qubits. For planar architectures with limited nearest-neighbor qubit connectivity, the surface code has emerged as the leading paradigm. Recent theoretical and experimental work has shown that a physical-qubit connectivity of degree three is sufficient to implement fault-tolerant quantum error correction. In this work, we study lattice surgery in the context of such trivalent architectures and introduce scalable circuit constructions to implement it. Compared with the four-valent measurement scheme, the trivalent lattice-surgery protocol reduces the required resources by $\\mathcal{O}(d)$ qubits out of a total qubit count of $\\mathcal{O}(d^2)$ and by $\\mathcal{O}(d)$ two-qubit gates out of a total two-qubit gate count of $\\mathcal{O}(d^3)$. We benchmark the logical fidelity of both lattice-surgery schemes in terms of experimentally realistic simulations targeting an implementation with a fluxonium qubit based architecture and find a potential improvement of up to $\\approx25\\%$ for distance-three. These results open a way for scalable planar trivalent qubit architectures to host a surface-code-based logical quantum processor.",
+  "authors": [
+    "Lukas B\u00f6deker",
+    "Luis Colmenarez",
+    "Sergey Blinov",
+    "Ants Remm",
+    "Simon Gustavsson",
+    "Markus M\u00fcller"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.15044v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15044v1",
+  "published": "2026-07-16T14:22:32+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Towards logical entanglement creation in trivalent planar architectures",
+  "updated": "2026-07-16T14:22:32+00:00"
+}

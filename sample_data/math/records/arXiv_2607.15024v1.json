@@ -1,0 +1,17 @@
+{
+  "abstract": "The least-squares splitting algorithm for the Monge-Amp\u00e8re equation has been used successfully in computations for several years, but a convergence theory for fully discrete splitting schemes of this type has remained unavailable. In this work, we introduce and analyze a finite element framework for smooth solutions of the Dirichlet Monge-Amp\u00e8re equation in two dimensions. The proposed schemes combine a discrete Hessian reconstruction with a local projection onto the determinant constraint. Under a discrete Miranda-Talenti estimate and standard approximation properties of the Hessian reconstruction, we prove local convergence of the iterative scheme and optimal-order convergence of its limit to the exact solution in an $H^2$-type norm. We verify the estimates for conforming $C^1$ schemes, including the Argyris element, and for $C^0$-interior penalty and DG schemes of degree at least three; quadratic $C^0$-interior penalty and DG schemes are also covered when $|u|_{H^3(\u03a9)}$ is sufficiently small. To the best of our knowledge, these discretizations have not previously been proposed or analyzed for least-squares splitting methods. Numerical experiments confirm the theoretical convergence rates.",
+  "authors": [
+    "Anna Peruso"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.15024v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15024v1",
+  "published": "2026-07-16T14:10:51+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Fully discrete least-squares splitting scheme for the Monge-Amp\u00e8re equation: finite element analysis and convergence",
+  "updated": "2026-07-16T14:10:51+00:00"
+}

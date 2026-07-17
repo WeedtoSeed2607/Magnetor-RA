@@ -1,0 +1,20 @@
+{
+  "abstract": "We investigate quantum state texture, genuine multipartite entanglement, and tripartite nonlocality of a tripartite mixed state in the black hole quantum atmosphere. By introducing the Hartle-Hawking local temperature into the Bogoliubov coefficients, we characterize the influence of the local Hawking effect on both physically accessible and inaccessible reduced states. We find that the extrema of these three quantities all lie in the same near horizon region and shift outward with increasing local Hawking temperature, coinciding with the peak region of the local Hawking temperature and indicating that different aspects of tripartite quantum information are most sensitive to the local Hawking effect in the same atmospheric region. In contrast to genuine multipartite entanglement, tripartite nonlocality is more fragile and is suppressed under stronger local Hawking effects. These results provide a unified characterization of density matrix restructuring, entanglement redistribution, and nonlocality in tripartite mixed states affected by the black hole quantum atmosphere.",
+  "authors": [
+    "Anqi Zhang",
+    "Yanze Zheng",
+    "Xiaofen Huang",
+    "Tinggui Zhang"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.14462v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14462v1",
+  "published": "2026-07-16T01:19:15+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Quantum correlations of tripartite mixed states in the black hole quantum atmosphere",
+  "updated": "2026-07-16T01:19:15+00:00"
+}

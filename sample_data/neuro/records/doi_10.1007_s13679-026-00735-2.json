@@ -1,0 +1,24 @@
+{
+  "abstract": "Background Obesity is a complex condition encompassing behavioral, psychological, and physiological factors, frequently associated with elevated mental health burden. Digital Mental Health Interventions (DMHIs) have emerged as promising tools to enhance accessibility, personalization, and scalability of psychological care in obesity management. However, evidence on their effectiveness across delivery modalities and outcomes remains fragmented. Objective This systematic review aimed to evaluate the effectiveness of DMHIs on obesity-related clinical, behavioral, and psychological outcomes; examine whether specific delivery modalities are differentially associated with particular outcomes; and identify methodological gaps to guide future research and implementation. Methods A systematic search was conducted in PubMed, Scopus, PsycINFO, Cochrane Library, Web of Science, and Google Scholar. The review followed PRISMA guidelines, applying rigorous inclusion criteria and independent screening by two reviewers. Quality appraisal was performed using the Cochrane Risk of Bias Tool (RoB 2.0), and studies rated as high risk of bias were excluded. Due to heterogeneity in study design and outcomes, data were synthesized narratively, and no claims of statistical superiority between modalities were made. Results Thirty-eight randomized controlled trials were included. DMHIs effectively targeted behavioral and psychological aspects of obesity when based on evidence-based psychotherapeutic frameworks - often independently of weight-related improvements. No single delivery format emerged as universally superior; rather, each modality appeared to serve distinct therapeutic purposes. Outcomes were more favorable in interventions that incorporated human guidance, although this finding should be interpreted cautiously because of heterogeneity and the absence of meta-analytic comparisons. Conclusions Digital mental health approaches\u2014particularly when integrated into stepped-care or hybrid models\u2014represent scalable, person-centered strategies to improve both physical and emotional well-being in adults with obesity. Supplementary Information The online version contains supplementary material available at 10.1007/s13679-026-00735-2.",
+  "authors": [
+    "Marchesi G",
+    "Rapelli G",
+    "Semonella M",
+    "Bruzzese A",
+    "Molinaro M",
+    "Andersson G",
+    "Castelnuovo G",
+    "Pietrabissa G"
+  ],
+  "doi": "10.1007/s13679-026-00735-2",
+  "domain": "neuro",
+  "external_id": "PMC13372837",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-16T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Digital Mental Health Interventions in Obesity Management: A Systematic Review and Evidence-Based Recommendations.",
+  "updated": null
+}

@@ -1,0 +1,22 @@
+{
+  "abstract": "Purpose To investigate large-scale structural brain network reorganization in primary angle-closure glaucoma (PACG) using regional radiomics similarity networks (R2SNs) and to characterize their associated molecular and neurobiological substrates. Design Case\u2013control study. Methods Structural magnetic resonance imaging data were acquired from 44 patients with PACG and 44 age- and sex-matched healthy controls. Individualized R2SNs were constructed to identify PACG-related structural network alterations. Partial least squares regression was used to link R2SN alterations with brain-wide transcriptomic profiles, followed by enrichment, cell-type, neurochemical, and epicenter analyses. Supervised machine learning was used to evaluate the discriminative value of R2SN-derived features. Results Compared with controls, patients with PACG demonstrated widespread R2SN alterations extending beyond the visual pathway, involving frontal, temporal, limbic, and subcortical regions. Network-level analyses revealed disrupted structural covariance across intrinsic functional systems, particularly within limbic, default mode, attentional, and frontoparietal control networks. Imaging\u2013transcriptomic analyses showed spatial coupling between PACG-related network alterations and gene expression profiles enriched in synaptic, cytoskeletal, and immune-related processes. Epicenter analysis identified highly connected hub regions within default mode and attentional systems. Machine learning classifiers based on R2SN features achieved robust discrimination between groups. Conclusion PACG is associated with widespread structural brain network reorganization beyond the visual system.R2SN-derived network features may provide sensitive imaging markers of central structural reorganization and offer a multiscale framework for understanding the neural mechanisms of PACG.",
+  "authors": [
+    "Hu D",
+    "Hu RY",
+    "Zhang YY",
+    "Cheng YY",
+    "Yu FL",
+    "Huang X"
+  ],
+  "doi": "10.2147/OPTH.S527088",
+  "domain": "neuro",
+  "external_id": "PMC13340297",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-01-01T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Mapping Multiscale Brain Changes in Primary Angle-Closure Glaucoma Using Regional Radiomics Similarity Networks.",
+  "updated": null
+}

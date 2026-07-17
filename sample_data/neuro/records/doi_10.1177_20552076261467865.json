@@ -1,0 +1,28 @@
+{
+  "abstract": "Background Chronic pain affects up to 20% of the population and often results in significant distress, disability, and reduced quality of life. Despite compelling evidence for behavioural treatments, treatment access remains limited. To improve access, a digital behavioural treatment for chronic pain was developed as part of the multi-phase \u2018DAHLIA\u2019 project. The present study evaluates the effects of this newly developed digital behavioural treatment. Methods Data were collected in a single-arm, iterative trial using a replicated single-case experimental design (SCED). In total, 56 participants received treatment (mean age 47, 87% female, varied pain regions). Participants completed twice daily digital diaries and questionnaires at pre-, and post-treatment, and at 3- and 6-months follow-ups. Diary items and questionnaires assessed psychological flexibility and acceptance, pain-related functioning, pain intensity, and general well-being. Daily diary data were examined using a combined p-value approach to conduct a meta-analysis of the SCED data, and questionnaire data were analysed using linear mixed models. Results Meta-analyses of daily diary data showed significant improvements in most pain-related items, indicating the utility of treatment in everyday life. Linear mixed model analyses of effects showed significant improvements over time in key outcomes with the largest changes observed in pain acceptance and psychological flexibility and smaller effects in pain-related functioning. Conclusion This study provides initial evidence for the newly developed digital behavioural treatment for chronic pain. Findings suggest that the treatment can improve resilience, daily functioning and symptoms and suggest the potential of the treatment as an effective evidence-based treatment for chronic pain.",
+  "authors": [
+    "Al Sharaa H",
+    "Bartels SL",
+    "Onghena P",
+    "Taygar A",
+    "Engman L",
+    "Flink I",
+    "Petersson S",
+    "Boersma K",
+    "McCracken LM",
+    "Simons L",
+    "Vlaeyen JWS",
+    "Wicksell RK"
+  ],
+  "doi": "10.1177/20552076261467865",
+  "domain": "neuro",
+  "external_id": "PMC13369405",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": null,
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Initial evidence of effects of a novel digital behavioural treatment for chronic pain: A series of replicated randomized single-case experimental design studies.",
+  "updated": null
+}

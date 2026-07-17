@@ -1,0 +1,18 @@
+{
+  "abstract": "The problem of recovering an (approximately) low-rank Hermitian matrix $\\pmb{M}_0 \\in \\mathbb{C}^{n \\times n}$ of rank $r$ from quadratic sampling matrices of the form $\\{\\pmb{a}_k \\pmb{a}_k^*\\}_{k=1}^m$ arises in a variety of applications, including phase retrieval. To obtain rigorous recovery guarantees, the sampling vectors $\\{\\pmb{a}_k\\}_{k=1}^m$ are typically modeled probabilistically. However, most existing theoretical results rely on Gaussian or sub-Gaussian assumptions, which may not accurately capture practical data models. In many applications, sampling vectors exhibit heavier tails, while theoretical understanding in such regimes remains scarce. In this paper, we bridge this gap. We show that two widely used convex approaches, nuclear norm minimization and semidefinite-constrained empirical risk minimization, achieve uniform, stable, and robust recovery under the mild assumption that the entries of the sampling vectors have only finite $4+\u03b4$ moments, with the optimal sample complexity $m = \\mathcal{O}(rn)$ up to moment-dependent constants. The two main ingredients of our analysis are moment estimates for quadratic forms established via decoupling, together with recent advances in covariance estimation in heavy-tailed settings. As byproducts, we also establish the optimal sample complexity for low-rank matrix recovery under complex projective $4$-design sampling, thereby improving upon previous results, and obtain stability guarantees for phase retrieval under similarly weak moment assumptions.",
+  "authors": [
+    "Gao Huang",
+    "Song Li"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.08671v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08671v1",
+  "published": "2026-07-09T16:36:06+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Low-Rank Matrix Recovery via Heavy-Tailed Quadratic Sampling",
+  "updated": "2026-07-09T16:36:06+00:00"
+}

@@ -1,0 +1,18 @@
+{
+  "abstract": "The problem of determining the existence of a spectral gap in a lattice quantum spin system was previously shown to be undecidable for one [J. Bausch et al., \"Undecidability of the spectral gap in one dimension\", Physical Review X 10 (2020)] or more dimensions [T. S. Cubitt et al., \"Undecidability of the spectral gap\", Nature 528 (2015) and Forum of Mathematics Pi, 10 (2022)]. In this work, we focus on the 1-dimensional result, showing that the constructed family with undecidable behavior is extremely sensitive to perturbations. In particular, for any $\\varepsilon > 0$, there exists a 1-local, rank 1, perturbation with norm $O(\\varepsilon)$, such that the spectral gap problem for the family in [J. Bausch et al., \"Undecidability of the spectral gap in one dimension\", Physical Review X 10 (2020)] now becomes decidable.",
+  "authors": [
+    "Laura Castilla-Castellano",
+    "Angelo Lucia"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.08686v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08686v1",
+  "published": "2026-07-09T16:48:59+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Instability of the undecidable behavior of the spectral gap in 1D",
+  "updated": "2026-07-09T16:48:59+00:00"
+}

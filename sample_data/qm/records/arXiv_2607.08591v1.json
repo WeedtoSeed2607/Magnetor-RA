@@ -1,0 +1,18 @@
+{
+  "abstract": "Entanglement is monogamous: if it is shared among more than two parties, the entanglement between any pair cannot be very strong. For an integer $k\\geq 2$, $k$-extendibility of a state $\u03c1_{AB}$ quantifies this as the number of copies of $B$ that can be simulated by the state's environment. We introduce fractional extendibility, which gives a finer characterization of the quantum correlation that is leaked to the environment, and prove that it is invariant under tensor products and monotonic under local processing. We also establish the distributed monogamy of entanglement: for any state on $AB_1B_2\\dots B_n$, the maximum average probability of extracting an EPR pair from a random subset of $k \\leq n/2$ systems among the $B_i$'s is the fraction $k/n$. With these tools we show that any quantum erasure channel with erasure probability more than a half cannot simulate a less noisy erasure channel, even with asymptotically many uses of the more noisy channel.",
+  "authors": [
+    "Rabsan Galib Ahmed",
+    "Graeme Smith"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.08591v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08591v1",
+  "published": "2026-07-09T15:26:41+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Distributed Monogamy of Entanglement limits Quantum Channel Simulation",
+  "updated": "2026-07-09T15:26:41+00:00"
+}

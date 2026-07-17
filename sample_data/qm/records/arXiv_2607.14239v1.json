@@ -1,0 +1,20 @@
+{
+  "abstract": "In this work, we develop a coherent control technique for cavity QED based on amplitude amplification. We consider two physical platforms. In the first setting, we study a three-level quantum emitter coupled to a single mode of an optical cavity and introduce a protocol for producing traveling single photons based on oblivious amplitude amplification. As the key ingredient of our protocol, we propose an extension of oblivious amplitude amplification which uses reflection unitaries solely on the signal qubit, along with $U$ and $U^\\dagger$, where the unitary $U$ prepares the initial state. Our approach improves the scaling of the single-photon-generation protocol length from $N\\sim 1/p$ to $N\\sim 1/\\sqrt{p}$, with $p$ denoting the success probability of obtaining a short single photon from a single application of the weak control pulse. Furthermore, our protocol also reduces the error from intrinsic cavity loss compared to protocols using a single strong control pulse in various experimentally relevant regimes, suggesting the application of our methods for error reduction. In the second setting, we consider a superconducting qubit coupled to a single bosonic mode of a microwave cavity in a circuit QED architecture in the dispersive regime for preparing Fock states. Using fixed-point amplitude amplification, we obtain a protocol for preparing Fock states whose length scales as $O(n^{1/4})$, where $n$ is the number of photons. Additionally, as an application of our methods for state preparation, we describe a protocol for preparing NOON states.",
+  "authors": [
+    "Sharoon Austin",
+    "Zhi-Yuan Wei",
+    "Kartik Srinivasan",
+    "Alexey V. Gorshkov"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.14239v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14239v1",
+  "published": "2026-07-15T18:01:49+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Fock-state preparation based on amplitude amplification in cavity QED",
+  "updated": "2026-07-15T18:01:49+00:00"
+}

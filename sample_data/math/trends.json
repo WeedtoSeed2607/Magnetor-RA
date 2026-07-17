@@ -1,0 +1,134 @@
+{
+  "domain": "math",
+  "generated_at": "2026-07-17T08:41:19.800126+00:00",
+  "n_slices": 2,
+  "slice_labels": [
+    "2026-07-09",
+    "2026-07-16"
+  ],
+  "interpretation": [
+    "Latest 7-day slice holds 28 doc(s); prior slice 102. Drift below is latest-vs-prior mean topic-probability.",
+    "Topic 1 [mathbb, mathcal, 3d, distance]: prevalence fell 8 points (n=28 vs 102).",
+    "Topic 2 [ell, prove, study, non]: prevalence rose 7 points (n=28 vs 102).",
+    "Topic 3 [problem, mathbb, based, prove]: prevalence rose 4 points (n=28 vs 102).",
+    "Emerging term 'dimensional': 0.79 mentions/doc (latest, n=28) vs 0.24 (prior).",
+    "Emerging term 'global': 0.46 mentions/doc (latest, n=28) vs 0.10 (prior).",
+    "Emerging term 'data': 0.50 mentions/doc (latest, n=28) vs 0.17 (prior)."
+  ],
+  "topics": [
+    {
+      "id": 0,
+      "keywords": [
+        "finite",
+        "dimension",
+        "point",
+        "dimensional",
+        "model",
+        "matrix",
+        "convergence",
+        "non"
+      ],
+      "prevalence": [
+        0.2149,
+        0.1896
+      ],
+      "drift": -0.0253
+    },
+    {
+      "id": 1,
+      "keywords": [
+        "mathbb",
+        "mathcal",
+        "3d",
+        "distance",
+        "set",
+        "model",
+        "finite",
+        "time"
+      ],
+      "prevalence": [
+        0.2264,
+        0.1447
+      ],
+      "drift": -0.0816
+    },
+    {
+      "id": 2,
+      "keywords": [
+        "ell",
+        "prove",
+        "study",
+        "non",
+        "theorem",
+        "log",
+        "models",
+        "methods"
+      ],
+      "prevalence": [
+        0.1979,
+        0.2684
+      ],
+      "drift": 0.0705
+    },
+    {
+      "id": 3,
+      "keywords": [
+        "problem",
+        "mathbb",
+        "based",
+        "prove",
+        "bound",
+        "graphs",
+        "conjecture",
+        "study"
+      ],
+      "prevalence": [
+        0.3608,
+        0.3973
+      ],
+      "drift": 0.0364
+    }
+  ],
+  "anomalies": [
+    {
+      "term": "dimensional",
+      "latest_rate": 0.786,
+      "delta": 0.55
+    },
+    {
+      "term": "global",
+      "latest_rate": 0.464,
+      "delta": 0.366
+    },
+    {
+      "term": "data",
+      "latest_rate": 0.5,
+      "delta": 0.333
+    },
+    {
+      "term": "local",
+      "latest_rate": 0.5,
+      "delta": 0.314
+    },
+    {
+      "term": "ell",
+      "latest_rate": 0.429,
+      "delta": 0.262
+    },
+    {
+      "term": "non",
+      "latest_rate": 0.536,
+      "delta": 0.261
+    },
+    {
+      "term": "networks",
+      "latest_rate": 0.286,
+      "delta": 0.256
+    },
+    {
+      "term": "method",
+      "latest_rate": 0.5,
+      "delta": 0.255
+    }
+  ]
+}

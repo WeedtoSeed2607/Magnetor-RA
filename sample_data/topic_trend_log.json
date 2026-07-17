@@ -1,0 +1,614 @@
+[
+  {
+    "timestamp": "2026-07-17T06:33:09.924934+00:00",
+    "domain": "qm",
+    "topics": [
+      {
+        "id": 0,
+        "keywords": [
+          "quantum",
+          "non",
+          "bound",
+          "time"
+        ],
+        "drift": 0.0
+      },
+      {
+        "id": 1,
+        "keywords": [
+          "state",
+          "gap",
+          "quantum",
+          "spin"
+        ],
+        "drift": 0.0
+      },
+      {
+        "id": 2,
+        "keywords": [
+          "quantum",
+          "statistics",
+          "dimensional",
+          "states"
+        ],
+        "drift": 0.0
+      },
+      {
+        "id": 3,
+        "keywords": [
+          "quantum",
+          "finite",
+          "divergences",
+          "measurement"
+        ],
+        "drift": 0.0
+      }
+    ],
+    "anomalies": []
+  },
+  {
+    "timestamp": "2026-07-17T06:33:10.125009+00:00",
+    "domain": "math",
+    "topics": [
+      {
+        "id": 0,
+        "keywords": [
+          "proof",
+          "study",
+          "moments",
+          "groups"
+        ],
+        "drift": 0.0
+      },
+      {
+        "id": 1,
+        "keywords": [
+          "point",
+          "dimension",
+          "local",
+          "hall"
+        ],
+        "drift": 0.0
+      },
+      {
+        "id": 2,
+        "keywords": [
+          "mathbb",
+          "ell",
+          "mathcal",
+          "non"
+        ],
+        "drift": 0.0
+      },
+      {
+        "id": 3,
+        "keywords": [
+          "conjecture",
+          "cycle",
+          "problem",
+          "type"
+        ],
+        "drift": 0.0
+      }
+    ],
+    "anomalies": []
+  },
+  {
+    "timestamp": "2026-07-17T06:33:10.452698+00:00",
+    "domain": "neuro",
+    "topics": [
+      {
+        "id": 0,
+        "keywords": [
+          "brain",
+          "using",
+          "clinical",
+          "model"
+        ],
+        "drift": 0.4992
+      },
+      {
+        "id": 1,
+        "keywords": [
+          "study",
+          "health",
+          "community",
+          "risk"
+        ],
+        "drift": 0.0011
+      },
+      {
+        "id": 2,
+        "keywords": [
+          "stress",
+          "aoa",
+          "pumilio",
+          "health"
+        ],
+        "drift": 0.0011
+      },
+      {
+        "id": 3,
+        "keywords": [
+          "type",
+          "speech",
+          "using",
+          "diabetes"
+        ],
+        "drift": 0.4985
+      }
+    ],
+    "anomalies": [
+      "neural",
+      "covid",
+      "language",
+      "type",
+      "diabetes"
+    ]
+  },
+  {
+    "timestamp": "2026-07-17T08:34:56.612043+00:00",
+    "domain": "qm",
+    "topics": [
+      {
+        "id": 0,
+        "keywords": [
+          "quantum",
+          "non",
+          "bound",
+          "time"
+        ],
+        "drift": 0.0
+      },
+      {
+        "id": 1,
+        "keywords": [
+          "state",
+          "gap",
+          "quantum",
+          "spin"
+        ],
+        "drift": 0.0
+      },
+      {
+        "id": 2,
+        "keywords": [
+          "quantum",
+          "statistics",
+          "dimensional",
+          "states"
+        ],
+        "drift": 0.0
+      },
+      {
+        "id": 3,
+        "keywords": [
+          "quantum",
+          "finite",
+          "divergences",
+          "measurement"
+        ],
+        "drift": 0.0
+      }
+    ],
+    "anomalies": []
+  },
+  {
+    "timestamp": "2026-07-17T08:34:56.818021+00:00",
+    "domain": "math",
+    "topics": [
+      {
+        "id": 0,
+        "keywords": [
+          "proof",
+          "study",
+          "moments",
+          "groups"
+        ],
+        "drift": 0.0
+      },
+      {
+        "id": 1,
+        "keywords": [
+          "point",
+          "dimension",
+          "local",
+          "hall"
+        ],
+        "drift": 0.0
+      },
+      {
+        "id": 2,
+        "keywords": [
+          "mathbb",
+          "ell",
+          "mathcal",
+          "non"
+        ],
+        "drift": 0.0
+      },
+      {
+        "id": 3,
+        "keywords": [
+          "conjecture",
+          "cycle",
+          "problem",
+          "type"
+        ],
+        "drift": 0.0
+      }
+    ],
+    "anomalies": []
+  },
+  {
+    "timestamp": "2026-07-17T08:34:56.999035+00:00",
+    "domain": "neuro",
+    "topics": [
+      {
+        "id": 0,
+        "keywords": [
+          "brain",
+          "using",
+          "clinical",
+          "model"
+        ],
+        "drift": 0.4992
+      },
+      {
+        "id": 1,
+        "keywords": [
+          "study",
+          "health",
+          "community",
+          "risk"
+        ],
+        "drift": 0.0011
+      },
+      {
+        "id": 2,
+        "keywords": [
+          "stress",
+          "aoa",
+          "pumilio",
+          "health"
+        ],
+        "drift": 0.0011
+      },
+      {
+        "id": 3,
+        "keywords": [
+          "type",
+          "speech",
+          "using",
+          "diabetes"
+        ],
+        "drift": 0.4985
+      }
+    ],
+    "anomalies": [
+      "neural",
+      "covid",
+      "language",
+      "type",
+      "diabetes"
+    ]
+  },
+  {
+    "timestamp": "2026-07-17T08:41:18.983279+00:00",
+    "domain": "qm",
+    "topics": [
+      {
+        "id": 0,
+        "keywords": [
+          "quantum",
+          "based",
+          "non",
+          "dynamics"
+        ],
+        "drift": -0.1945
+      },
+      {
+        "id": 1,
+        "keywords": [
+          "quantum",
+          "entanglement",
+          "state",
+          "spin"
+        ],
+        "drift": 0.1607
+      },
+      {
+        "id": 2,
+        "keywords": [
+          "quantum",
+          "field",
+          "non",
+          "like"
+        ],
+        "drift": -0.0383
+      },
+      {
+        "id": 3,
+        "keywords": [
+          "quantum",
+          "state",
+          "states",
+          "finite"
+        ],
+        "drift": 0.0721
+      }
+    ],
+    "anomalies": [
+      "entanglement",
+      "codes",
+      "css",
+      "detection",
+      "gradient"
+    ]
+  },
+  {
+    "timestamp": "2026-07-17T08:41:19.800126+00:00",
+    "domain": "math",
+    "topics": [
+      {
+        "id": 0,
+        "keywords": [
+          "finite",
+          "dimension",
+          "point",
+          "dimensional"
+        ],
+        "drift": -0.0253
+      },
+      {
+        "id": 1,
+        "keywords": [
+          "mathbb",
+          "mathcal",
+          "3d",
+          "distance"
+        ],
+        "drift": -0.0816
+      },
+      {
+        "id": 2,
+        "keywords": [
+          "ell",
+          "prove",
+          "study",
+          "non"
+        ],
+        "drift": 0.0705
+      },
+      {
+        "id": 3,
+        "keywords": [
+          "problem",
+          "mathbb",
+          "based",
+          "prove"
+        ],
+        "drift": 0.0364
+      }
+    ],
+    "anomalies": [
+      "dimensional",
+      "global",
+      "data",
+      "local",
+      "ell"
+    ]
+  },
+  {
+    "timestamp": "2026-07-17T08:41:20.518403+00:00",
+    "domain": "neuro",
+    "topics": [
+      {
+        "id": 0,
+        "keywords": [
+          "using",
+          "based",
+          "analysis",
+          "patients"
+        ],
+        "drift": 0.0027
+      },
+      {
+        "id": 1,
+        "keywords": [
+          "study",
+          "cognitive",
+          "brain",
+          "using"
+        ],
+        "drift": 0.0027
+      },
+      {
+        "id": 2,
+        "keywords": [
+          "brain",
+          "cognitive",
+          "learning",
+          "health"
+        ],
+        "drift": 0.992
+      },
+      {
+        "id": 3,
+        "keywords": [
+          "study",
+          "age",
+          "findings",
+          "related"
+        ],
+        "drift": 0.0026
+      }
+    ],
+    "anomalies": [
+      "gut",
+      "chain",
+      "branched",
+      "microbiota",
+      "amino"
+    ]
+  },
+  {
+    "timestamp": "2026-07-17T08:41:55.709317+00:00",
+    "domain": "neuro",
+    "topics": [
+      {
+        "id": 0,
+        "keywords": [
+          "using",
+          "based",
+          "analysis",
+          "patients"
+        ],
+        "drift": 0.0027
+      },
+      {
+        "id": 1,
+        "keywords": [
+          "study",
+          "cognitive",
+          "brain",
+          "using"
+        ],
+        "drift": 0.0027
+      },
+      {
+        "id": 2,
+        "keywords": [
+          "brain",
+          "cognitive",
+          "learning",
+          "health"
+        ],
+        "drift": 0.992
+      },
+      {
+        "id": 3,
+        "keywords": [
+          "study",
+          "age",
+          "findings",
+          "related"
+        ],
+        "drift": 0.0026
+      }
+    ],
+    "anomalies": [
+      "gut",
+      "chain",
+      "branched",
+      "microbiota",
+      "amino"
+    ]
+  },
+  {
+    "timestamp": "2026-07-17T08:41:58.954800+00:00",
+    "domain": "neuro",
+    "topics": [
+      {
+        "id": 0,
+        "keywords": [
+          "using",
+          "based",
+          "analysis",
+          "patients"
+        ],
+        "drift": -0.3302
+      },
+      {
+        "id": 1,
+        "keywords": [
+          "study",
+          "cognitive",
+          "brain",
+          "using"
+        ],
+        "drift": 0.001
+      },
+      {
+        "id": 2,
+        "keywords": [
+          "brain",
+          "cognitive",
+          "learning",
+          "health"
+        ],
+        "drift": 0.3282
+      },
+      {
+        "id": 3,
+        "keywords": [
+          "study",
+          "age",
+          "findings",
+          "related"
+        ],
+        "drift": 0.001
+      }
+    ],
+    "anomalies": [
+      "gut",
+      "chain",
+      "branched",
+      "microbiota",
+      "amino"
+    ]
+  },
+  {
+    "timestamp": "2026-07-17T08:42:50.358048+00:00",
+    "domain": "neuro",
+    "topics": [
+      {
+        "id": 0,
+        "keywords": [
+          "using",
+          "based",
+          "analysis",
+          "patients"
+        ],
+        "drift": 0.0027
+      },
+      {
+        "id": 1,
+        "keywords": [
+          "study",
+          "cognitive",
+          "brain",
+          "using"
+        ],
+        "drift": 0.0027
+      },
+      {
+        "id": 2,
+        "keywords": [
+          "brain",
+          "cognitive",
+          "learning",
+          "health"
+        ],
+        "drift": 0.992
+      },
+      {
+        "id": 3,
+        "keywords": [
+          "study",
+          "age",
+          "findings",
+          "related"
+        ],
+        "drift": 0.0026
+      }
+    ],
+    "anomalies": [
+      "gut",
+      "chain",
+      "branched",
+      "microbiota",
+      "amino"
+    ]
+  }
+]

@@ -1,0 +1,20 @@
+{
+  "abstract": "We investigate the Casimir effect for a massive real scalar field confined between two perfectly reflecting parallel plates in the presence of a position-dependent effective mass, a mechanism for coupling a scalar background to a scalar field. Exact normal modes are obtained by solving the corresponding Klein-Gordon equation, leading to a transverse energy spectrum that exhibits a characteristic Landau-like structure despite the absence of an external magnetic field. Upon quantization of the field, the vacuum energy is evaluated by means of generalized zeta-function regularization together with an appropriate renormalization procedure. The renormalized vacuum energy naturally separates into a Landau-like contribution and an additional term induced by the spatial dependence of the effective mass. We show analytically and numerically that both contributions are exponentially suppressed in the strong-coupling regime. In the opposite limit, the Landau-like contribution smoothly reproduces the standard vacuum energy for a massive scalar field confined between parallel plates, whereas the additional contribution becomes singular owing to the restricted domain of validity of the exact spectrum. Except in the vicinity of this singular limit, the vacuum energy is shown to be dominated by the Landau-like sector. Our results establish a direct connection between position-dependent effective masses and boundary-induced quantum vacuum phenomena, providing a new exactly solvable framework for the investigation of Casimir effects in spatially inhomogeneous relativistic systems.",
+  "authors": [
+    "R. L. Ara\u00fajo Xavier",
+    "M. H. B. Chaves",
+    "E. R. Bezerra de Mello",
+    "Herondy Mota"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.15070v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15070v1",
+  "published": "2026-07-16T14:43:33+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Casimir effect for a massive scalar field confined between parallel plates with a spatially varying effective mass",
+  "updated": "2026-07-16T14:43:33+00:00"
+}

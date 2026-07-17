@@ -1,0 +1,18 @@
+{
+  "abstract": "Thanks to low dissipation, superconducting devices are promising for a number of applications, such as detectors and implementations of quantum computation. However, their working can be adversely impacted by quasiparticles, which is why so-called quasiparticle poisoning mechanisms and their mitigation are under intense investigation. Here we focus on one poisoning mechanism, namely pair-breaking phonons, and its mitigation through down-conversion by a normal-metal film - the process in which scattering of high-energy phonons by electrons lowers the energy of the former below the pair-breaking threshold. To study the down-conversion, we introduce a model based on kinetic equations, which we solve both analytically (approximately) and numerically in the steady state. We use the solution the estimate a properly-defined down-conversion efficiency which depends on material parameters (such as the strength of electron-phonon interaction and the phonon transmission coefficient at interfaces) and film and substrate thicknesses. Interestingly, we find that the efficiency is nearly optimal over a finite range of metal thicknesses, with the minimum near-optimal thickness being typically of the order of a micron.",
+  "authors": [
+    "Guglielmo La Magna",
+    "Gianluigi Catelani"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.13870v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.13870v1",
+  "published": "2026-07-15T14:18:45+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Phonon down-conversion by normal metals for superconducting devices",
+  "updated": "2026-07-15T14:18:45+00:00"
+}

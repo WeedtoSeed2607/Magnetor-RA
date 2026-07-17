@@ -1,0 +1,18 @@
+{
+  "abstract": "Let $P,Q \\in \\mathbb{Z}^{d\\times d}$ be invertible coprime matrices such that all the eigenvalues of $Q^{-1}P$ have modulus greater than 1, and $\\mathbb{Z}^d[Q^{-1}P]$ be the smallest non-trivial $Q^{-1}P$-invariant $\\mathbb{Z}$-module containing $\\mathbb{Z}^d$. Suppose there is a finite digit set $\\mathcal{D}\\subseteq \\mathbb{Z}^d + P\\mathbb{Z}^d[Q^{-1}P]$ for which every vector $x \\in \\mathbb{Z}^d + P\\mathbb{Z}^d[Q^{-1}P]$ can be represented in the form \\[ x = \\sum_{i=0}^{\\ell-1} (Q^{-1}P)^i Q^{-1}d_i, \\] where the digits $d_i \\in \\mathcal{D}$ for all $i \\in \\{0,1,\\ldots,\\ell-1\\}$. We call such a representation a $P/Q$-expansion of $x$, and we say that the digit system $(P,Q,\\mathcal{D})$ has the finiteness property. If, in addition, $\\mathcal{D}$ is a complete set of residues of the quotient group $(\\mathbb{Z}^d + P\\mathbb{Z}^d[Q^{-1}P])/P\\mathbb{Z}^d[Q^{-1}P]$, then the digits $d_0, d_1, \\dots, d_{\\ell-1}$ in the $P/Q$-expansion of $x$ are unique whenever $\\ell \\in \\mathbb{Z}^+$ is minimal, and the resulting digit system is said to have the uniqueness property. We present sufficient conditions for the existence of a digit set $\\mathcal{D}$ in which $(P,Q,\\mathcal{D})$ has the finiteness property. For $d=2$, we make use of finite automata to construct digit systems $(P,Q,\\mathcal{D})$ having both the finiteness and uniqueness properties. We also obtain the $P/Q$-expansion of a vector $x$ in $\\mathbb{R}^d$ by means of the so-called expansion tree of the digit system $(P,Q,\\mathcal{D})$.",
+  "authors": [
+    "Anjelo Gabriel R. Cruz",
+    "Manuel Joseph C. Loquias"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.08732v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08732v1",
+  "published": "2026-07-09T17:34:30+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "A Matrix Analogue of Rational Number Systems",
+  "updated": "2026-07-09T17:34:30+00:00"
+}

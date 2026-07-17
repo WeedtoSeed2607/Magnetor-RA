@@ -1,0 +1,22 @@
+{
+  "abstract": "We examine the impact of scheduling errors on dynamical decoupling (DD) in trapped-ion quantum charge-coupled devices (QCCDs) and develop better strategies for reducing memory errors. In the QCCD architecture, qubit transport and control introduce stochastic pulse delays that impact the efficiency of DD. Using the filter-function formalism, we analyze the performance of DD in the presence of scheduling-induced timing errors, showing that they increase the sensitivity of standard DD to low-frequency fluctuations. For typical memory errors in trapped-ion platforms, we numerically demonstrate that increasing the DD pulse frequency beyond 2 Hz is generally counterproductive due to scheduling-induced timing errors. Furthermore, we introduce a real-time DD protocol that inserts refocusing pulses opportunistically during idle periods. We demonstrate our methods on Quantinuum H2-1 with Ramsey delay-type experiments.",
+  "authors": [
+    "William M. Watkins",
+    "Leigh M. Norris",
+    "Ross Hutson",
+    "Maxwell Urmey",
+    "Peter Siegfried",
+    "Charles H. Baldwin"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.14441v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14441v1",
+  "published": "2026-07-16T00:29:20+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Improving Dynamical Decoupling for Trapped-Ion QCCD Quantum Computers",
+  "updated": "2026-07-16T00:29:20+00:00"
+}

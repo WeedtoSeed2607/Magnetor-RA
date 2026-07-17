@@ -1,0 +1,20 @@
+{
+  "abstract": "The monogamy of quantum entanglement, applied by Almheiri-Marolf-Polchinski-Sully (AMPS) to black holes, obstructs a smooth horizon vacuum after the Page time. We transcribe this argument to Hawking-like phonon radiation from a sonic horizon in the Unruh acoustic metric. An exact purity identity shows that post-Page-time unitarity forces the entanglement between an outgoing phonon and its interior partner to vanish, selecting a non-Hadamard (Boulware-like) phonon state, which we define as an acoustic firewall. Its renormalized stress tensor differs from the smooth state by a constant, negative near-horizon flux, and the thermal-atmosphere energy density it removes, measured by a static calorimeter, grows as $(\u03b4r)^{-2}$ in the radial coordinate toward the horizon (singular in the free-fall frame), cut off at the healing length. The construction is kinematic and does not resolve the information paradox; it yields one concrete, falsifiable prediction: a differential phonon-calorimetry signal $\\mathcal{R}(\u03b4r)=|\u0394\\mathcal{E}|/\\mathcal{E}^{(0)}\\to(\\ell_\u03ba/\u03b4r)^{2}$, present only after the analogue Page time in a Bose-Einstein condensate.",
+  "authors": [
+    "Nikolay S. Akintsov",
+    "Artyom P. Nevecheria",
+    "Stepan N. Andreev",
+    "Qing-Hua Qin"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.14056v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14056v1",
+  "published": "2026-07-15T17:26:41+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Acoustic Firewalls: Analogue Gravity Perspective on the AMPS Paradox",
+  "updated": "2026-07-15T17:26:41+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "abstract": "Constrained combinatorial optimization underlies many industrial and technological decision problems. We develop a spectral theory that unifies many quantum optimization algorithms. We show that computational slowdown is driven by entanglement restructuring: the creation, redistribution, and destruction of entanglement during system evolution. The severity of the slowdown depends on how much entanglement must be changed. We show that algebraic properties of constraints induce such restructuring, and that constraint-aware dynamics reduce the associated slowdown by avoiding unnecessary restructuring. This framework explains why constraint-aware quantum methods can outperform generic penalty-based approaches. The theory connects constrained optimization, computational complexity, entanglement dynamics, and Hamiltonian spectral structure across continuous-time and circuit-based quantum optimization paradigms.",
+  "authors": [
+    "Einar Gabbassov",
+    "Gurpahul Singh",
+    "Achim Kempf"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.14227v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14227v1",
+  "published": "2026-07-15T18:00:31+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Principles of Quantum Optimization for Constrained Problems",
+  "updated": "2026-07-15T18:00:31+00:00"
+}

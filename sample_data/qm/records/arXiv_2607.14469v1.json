@@ -1,0 +1,19 @@
+{
+  "abstract": "Maximal quantum leakage (MQL) is a worst-case information leakage measure that quantifies an adversary's inference advantage gained from accessing quantum encoding of classical data with arbitrary measurements. While MQL admits an exact characterization for a given ensemble of quantum states, its robustness to implementation imperfections has not been systematically studied. In this paper, we analyze the sensitivity of maximal quantum leakage under perturbations of the quantum encoding. We establish a continuity bound in terms of the trace distance between ideal and perturbed quantum states, and show, via an example, that this bound is attainable. We further derive fidelity-based and relative-entropy-based sufficient conditions for bounding the variation of maximal quantum leakage, and illustrate numerically that these conditions can be loose.",
+  "authors": [
+    "Zijia Zhao",
+    "Shuixin Xiao",
+    "Farhad Farokhi"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.14469v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14469v1",
+  "published": "2026-07-16T01:33:23+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Perturbation Analysis of Maximal Quantum Leakage",
+  "updated": "2026-07-16T01:33:23+00:00"
+}

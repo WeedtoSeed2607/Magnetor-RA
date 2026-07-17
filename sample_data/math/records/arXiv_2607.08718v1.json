@@ -1,0 +1,17 @@
+{
+  "abstract": "We study the functional inequality \\[ f(r+s)\\le g(r)+\u03b1f(s) \\quad(r,s>0). \\] Here $g:(0,\\infty)\\to[0,\\infty)$ is a given decreasing function, $\u03b1$ is a constant such that $0<\u03b1<1$, and the problem is to determine whether the family of decreasing functions $f:(0,\\infty)\\to[0,\\infty)$ that satisfy this inequality is bounded above by some finite function on $(0,\\infty)$ and, if so, to find bounds for this function. We present a solution to this problem, and use it to give a new proof of a theorem of Domar on the uniform boundedness of certain families of subharmonic functions, in addition obtaining explicit bounds.",
+  "authors": [
+    "Thomas Ransford"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.08718v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08718v1",
+  "published": "2026-07-09T17:26:57+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "A functional inequality related to Domar's uniform boundedness theorem",
+  "updated": "2026-07-09T17:26:57+00:00"
+}

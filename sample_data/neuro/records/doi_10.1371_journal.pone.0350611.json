@@ -1,0 +1,26 @@
+{
+  "abstract": "Urban heat islands (UHIs) are areas of elevated surface temperature caused by limited vegetation and dense development. Extreme heat disproportionately affects older adults and may increase risk for Alzheimer\u2019s disease (AD) and related dementias (ADRD), but few studies have examined whether cumulative neighborhood-level heat exposure is associated with cognitive decline or ADRD biomarkers. This study will investigate whether recent UHI exposure is associated with cognitive function; determine whether cumulative UHI exposure is associated with cognitive decline, plasma ADRD biomarkers, and brain imaging biomarkers; and evaluate whether UHI exposure is associated with ADRD risk factors, including physical inactivity, social isolation, and inflammation, and whether tree canopy mitigates heat-ADRD associations. The study includes 500 adults aged \u226550 years from the Healthy Brain Initiative cohort in South Florida. Geocoded residential addresses will be linked to satellite-derived land surface temperature data to quantify recent exposure at the baseline cognitive visit and cumulative exposure during the month before, and 1 and 5 years before baseline. Participants complete annual clinical and neuropsychological assessments, brain MRI, and blood collection for ADRD biomarkers. A sub-sample of 200 participants will wear smartwatches during two 3-week periods to capture GPS-based heat exposure, physical activity, and daily cognitive testing. Analyses will be replicated using the nationally representative Health and Retirement Study. Primary outcomes include cognitive domain scores, brain imaging measures, and preclinical AD status determined from plasma biomarkers. This study will provide comprehensive data on cumulative UHI exposure and ADRD risk by integrating cognitive assessment, neuroimaging, and biomarkers. Findings will clarify whether neighborhood heat represents a modifiable ADRD risk factor and inform urban greening and brain health promotion strategies.",
+  "authors": [
+    "O'Shea DM",
+    "Chang LC",
+    "Chowdhury M",
+    "Cook DJ",
+    "Cresswell K",
+    "Minor BD",
+    "Mitsova D",
+    "Tourelle MS",
+    "Galvin JE",
+    "Besser LM"
+  ],
+  "doi": "10.1371/journal.pone.0350611",
+  "domain": "neuro",
+  "external_id": "PMC13349182",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-01-01T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "The heat exposure, aging trajectories, and Alzheimer's disease (HEAT-AD) study protocol.",
+  "updated": null
+}

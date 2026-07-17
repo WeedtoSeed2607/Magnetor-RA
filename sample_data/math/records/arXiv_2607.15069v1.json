@@ -1,0 +1,19 @@
+{
+  "abstract": "Given a solution of Brent equations, we often fix a partial solution of it and make substitution. Then in the reduced polynomial system, we can find a parameterized solution set. However, there is a positive dimensional isotropy group action on the solution set. The parameterized solution may belong to the same isotropy group orbit. In this paper, we find a method to fix the partial solution such that the parameterized solution set intersects different isotropy group orbits. By this method, we can obtain nontrivial parameterized solution sets from many known solutions. In particular, a solution found by Dumas, Pernet and Sedoglavic is parameterized. In the parameterized solution set, we can find infinitely many inequivalent algorithms for 48 multiplications with only rational coefficients.",
+  "authors": [
+    "Xin Li",
+    "Yu Wang",
+    "Shenglong Hu"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.15069v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15069v1",
+  "published": "2026-07-16T14:43:28+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Substitution and quotient of the isotropy group action",
+  "updated": "2026-07-16T14:43:28+00:00"
+}

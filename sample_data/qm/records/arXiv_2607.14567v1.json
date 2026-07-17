@@ -1,0 +1,26 @@
+{
+  "abstract": "The quest for superconductivity created by light extends for more than half a century, yet direct evidence of a true zero-resistance state -whose macroscopic quantum phase coherence is both created and controlled by light -- has remained elusive. Here we report for the first time on a complex but robust light-programmable superconducting (LiPS) state at an aluminium-silicon heterojunction that is created and fully controlled with femtosecond laser pulses. The superconducting critical temperatures -- ranging from 1.8-8.5 K, can be increased or erased at will by the application of tailored pulse sequences. At low temperatures the LiPS state shows features characteristic of a Berezinski-Kosterlitz-Thouless topological transition, but another distinct state appears at temperatures above 2 K, which shows clear signatures of quantum phase disorder. In the presence of a magnetic field we observe behaviour characteristic of vortex pinning and creep consistent with the 2-dimensional (2D) nature of the phase coherent system. The origin of the LiPS effect is attributed to light pulse control of the Moire-like superlattice of misfit dislocations (MDs) that naturally occur as a result of discommensurations between Al and Si lattices at the interface, and is clearly observable by high-resolution electron microscopy. We show how light pulses can be used to control the superlattice periodicity and highlight the appearance of topologically protected soliton-like kinks along the dislocation lines, important for imparting metastability to the system. The demonstration of LiPS opens a route to the design of metastable long-range phase coherent superconducting states, leading to light-engineering of quantum circuits, local gap tuning in quantum processors and novel devices utilizing switchable superconductivity.",
+  "authors": [
+    "Viktoria Yursa",
+    "Igor Vaskivskyi",
+    "Anze Mraz",
+    "Damjan Svetin",
+    "Sergej Raznjevic",
+    "Vinko Srsan",
+    "Saso Sturm",
+    "Tomaz Mertelj",
+    "Mikhail Feigelman",
+    "Dragan Mihailovic"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.14567v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14567v1",
+  "published": "2026-07-16T04:48:30+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Phase coherence control of a programmable high-Tc superconductor created by light",
+  "updated": "2026-07-16T04:48:30+00:00"
+}

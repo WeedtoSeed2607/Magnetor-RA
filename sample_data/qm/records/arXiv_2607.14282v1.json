@@ -1,0 +1,20 @@
+{
+  "abstract": "The performance of quantum annealing depends critically on how the available annealing time is distributed along the evolution. Although the Roland Cerf local adiabatic schedule is theoretically optimal, it requires complete knowledge of the instantaneous spectral gap, making it impractical for large optimization problems. We propose a computationally inexpensive surrogate schedule based on the worldline magnetization susceptibility measured during simulated quantum annealing. The susceptibility is obtained directly from equilibrium Monte Carlo sampling and identifies the critical region of the anneal without requiring spectral information. Using exact diagonalization of Sherrington Kirkpatrick spin glass instances as ground truth, we show that the resulting schedule consistently outperforms conventional linear annealing and, for a substantial fraction of instances, also surpasses the exact Roland Cerf schedule. We demonstrate that this unexpected behaviour originates from two finite time failure modes of exact local adiabatic scheduling a boundary gap trap, in which the minimum spectral gap occurs at the end of the anneal, and an oscillatory instability caused by excessively localized time allocation around an interior minimum gap. These results suggest that robust scheduling based on inexpensive equilibrium observables can outperform exact spectral gap based strategies under realistic finite time conditions. The complete methodology is implemented in the open source Qanneal framework.",
+  "authors": [
+    "Suraj Singh",
+    "Lakshya Nagpal",
+    "Vikas Chauhan",
+    "S. R. Hassan"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.14282v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14282v1",
+  "published": "2026-07-15T18:40:27+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Worldline-Susceptibility Scheduling for Quantum Annealing Beyond Local-Adiabatic Evolution",
+  "updated": "2026-07-15T18:40:27+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "abstract": "For a bipartite entanglement measure $\\mathcal{E}$ that satisfies the $\u03b3$th-power monogamy inequality (Eq.~\\eqref{e:chap1-ineq1}), and for its assisted counterpart $\\mathcal{E}_a$ that obeys the $\u03b4$th-power polygamy inequality (Eq.~\\eqref{e:chap1-ineq2}), we introduce a unified, tunable framework indexed by a parameter $m\\geq1$. Within this framework, we derive two hierarchical families of refined inequalities: a tightened $\u03b1$-power monogamy relation for $\\mathcal{E}$, valid for all $\u03b1\\geq m\u03b3$; a tightened $\u03b2$-power polygamy relation for $\\mathcal{E}_a$, applicable for $(m-1)\u03b4< \u03b2\\leq m\u03b4$. As $m$ increases, the bounds become progressively tighter, recovering known results at $m=1$. Notably, the optimal monogamy bound emerges as a piecewise function of $\u03b1$, with additional correction terms activated as $\u03b1$ crosses successive integer thresholds, thereby offering a sharper characterization of entanglement distribution. We demonstrate that our results generalize and strengthen existing monogamy and polygamy relations through analytical comparisons and numerical evaluations using concurrence and concurrence of assistance. This hierarchical, parameterized approach offers enhanced and flexible tools for applications in quantum communication, quantum networks, and multipartite quantum information processing.",
+  "authors": [
+    "Yue Cao",
+    "Naihuan Jing",
+    "Kailash Misra",
+    "Yiling Wang"
+  ],
+  "doi": "10.1007/s11128-026-05076-6",
+  "domain": "qm",
+  "external_id": "2607.14370v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14370v1",
+  "published": "2026-07-15T21:17:33+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Unified monogamy and polygamy relations for multipartite systems",
+  "updated": "2026-07-15T21:17:33+00:00"
+}

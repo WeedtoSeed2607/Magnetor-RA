@@ -1,0 +1,20 @@
+{
+  "abstract": "Phenomena that slip beyond the grasp of our classical intuition reveal uniquely quantum effects that deepen our understanding of the physical world and enable advances in information processing, particularly in quantum communication and computation. One such phenomenon is quantum steering, whereby measurements performed by one party influence the conditional states of another when the two share an entangled quantum system. If the observed correlations cannot be explained by a local hidden state model, the state is said to be steerable. In this work, we investigate the typicality of this behavior: given a generic two-qubit state and $m$ Haar-random projective measurements, what is the probability of observing steering? We derive analytical expressions for the steering probability $\\mathcal{P}_S$ of Werner states in two- and three-setting scenarios, the latter restricted to coplanar projective measurements on the Bloch sphere. For larger numbers of settings and various random states ensembles, we perform numerical analyses showing that $\\mathcal{P}_S$ increases systematically with the number of measurements and substantially exceeds the corresponding probabilities associated with Bell nonlocality. Our results demonstrate that random states with minimal environmental coupling exhibit a high probability of steering for finite $m$ and approach genuine typicality, $\\mathcal{P}_S=100\\%$, as the number of settings increases. We provide a detailed characterization of $\\mathcal{P}_S$ across different state ensembles and specific families, including Bell-diagonal and Werner states, identifying those with the greatest non-classical potential and highlighting their relevance for protocols in which steering serves as a key resource.",
+  "authors": [
+    "Gerard Angl\u00e8s Munn\u00e9",
+    "Pawe\u0142 Cie\u015bli\u0144ski",
+    "Tam\u00e1s V\u00e9rtesi",
+    "Wies\u0142aw Laskowski"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.08762v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08762v1",
+  "published": "2026-07-09T17:56:34+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Typicality of Steering for Two-qubit States",
+  "updated": "2026-07-09T17:56:34+00:00"
+}

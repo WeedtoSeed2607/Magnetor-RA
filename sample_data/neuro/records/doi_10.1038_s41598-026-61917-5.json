@@ -1,0 +1,31 @@
+{
+  "abstract": "Preterm birth is a major risk factor for childhood psychopathology, including higher rates of anxiety and avoidant personality traits persisting into adulthood. While extensive research has documented volumetric reductions in various brain structures associated with emotional processing in preterm individuals, the habenula, a key component in affective and reward processing, has not yet been studied in this context. This study examines whether adults born very preterm show alterations in the habenula volume and whether these alterations are linked to higher anxiety, depression and avoidant personality traits. This study utilized data from the Bavarian Longitudinal Study, comprising 103 preterm-born individuals (defined as very preterm (VP) < 32 weeks of gestational age and/or very low birth weight (VLBW) <1500 g) and 110 term-born (TB) controls. Habenula volumes were assessed using manual segmentation on T1-weighted MRI scans. Additionally, participants completed standardized psychological assessments measuring anxiety, depression, and avoidant personality traits (Achenbach Young Adult Self-Report (YASR) and Beck Depression Inventory ). A higher relative right habenula volume was observed at trend-level in the VP sub-sample when compared to TB controls (Bonferroni-corrected p = 0.080). VP/VLBW showed a significant positive correlation between the relative right habenula volume with intensity of neonatal treatment. Additionally, VP and VP/VLBW exhibited higher scores on YASR anxiety and avoidant personality scales when compared to TB controls, yet were not correlated with habenula volumes. Our findings indicate that very preterm birth is associated with a trend towards relatively increased right habenula volume and higher levels of anxiety and avoidant personality traits in adulthood. While habenula volume was not directly linked to these traits, its association with intensity of neonatal treatment suggests a genuine role of perinatal stress on adult habenular morphology. Supplementary Information The online version contains supplementary material available at 10.1038/s41598-026-61917-5.",
+  "authors": [
+    "St\u00fcwe T",
+    "Maurer A",
+    "Daamen M",
+    "Wichtmann BD",
+    "Ko HS",
+    "Upadhyay N",
+    "Schmitz-Koep B",
+    "Essler M",
+    "Luetkens J",
+    "Zimmer C",
+    "Bartmann P",
+    "Wolke D",
+    "Hedderich D",
+    "Sorg C",
+    "Boecker H"
+  ],
+  "doi": "10.1038/s41598-026-61917-5",
+  "domain": "neuro",
+  "external_id": "PMC13369503",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-14T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Habenula volume alterations in adults born very preterm.",
+  "updated": null
+}

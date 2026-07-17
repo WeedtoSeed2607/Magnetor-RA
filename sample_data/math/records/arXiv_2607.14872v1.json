@@ -1,0 +1,20 @@
+{
+  "abstract": "Given integers $1\\leq t\\leq k$, a family of $k$-matchings in a complete $r$-partite $r$-uniform hypergraph is said to be $t$-intersecting if any two of its members share at least $t$ common edges. This concept unifies several well-studied classes of intersecting families, including classical intersecting families, intersecting families of permutations, partial permutations, and generalized permutations, as well as intersecting families of injections. In this paper we employ two approaches to determine the maximum size of $t$-intersecting families of $k$-matchings and to characterize the extremal families that attain this bound. Using a recent result of Keller, Lifshitz, Minzer, and Sheinfeld on $t$-intersecting families of permutations, we obtain Erd\u0151s-Ko-Rado-type theorems whose thresholds depend only on $t$. We also develop a $t$-cover-based approach that offers a complementary characterization of the extremal families.",
+  "authors": [
+    "Binwei Zhao",
+    "Tao Feng",
+    "Xiaomiao Wang",
+    "Menglong Zhang"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.14872v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14872v1",
+  "published": "2026-07-16T11:44:53+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Erd\u0151s-Ko-Rado-type problem for hypergraph matchings",
+  "updated": "2026-07-16T11:44:53+00:00"
+}

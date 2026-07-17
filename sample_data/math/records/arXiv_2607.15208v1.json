@@ -1,0 +1,20 @@
+{
+  "abstract": "Unadjusted samplers such as unadjusted Hamiltonian Monte Carlo and underdamped Langevin are well-known to be biased. Metropolis--Hastings adjustment has been conventionally incorporated into Hamiltonian Monte Carlo to eliminate the bias. However, this adjustment can significantly increase the iteration complexity due to the small step size required for reasonable Metropolis acceptance rates. In this work, we extend the \\emph{delocalization of bias} phenomenon, previously established for the overdamped Langevin algorithm, to these two unadjusted algorithms. We show that to control the $W_2$ bias of any $K$-dimensional marginal of a high-dimensional distribution, $O(\\sqrt{K})$ integration steps suffice up to $\\log d$ terms, assuming either weak or sparse interactions among variables. The discrete-time integrators here introduce technical difficulties beyond those of the overdamped setting, which we address through a broadly applicable matrix-polynomial framework that characterizes their propagators. Our result for the underdamped Langevin algorithm is valid for all large friction parameters, implying that the Leimkuhler-Matthews integrator for the overdamped Langevin dynamics also exhibits delocalization of bias.",
+  "authors": [
+    "Yifan Chen",
+    "Xiaoou Cheng",
+    "Jonathan Niles-Weed",
+    "Jonathan Weare"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.15208v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15208v1",
+  "published": "2026-07-16T17:07:42+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Delocalization of bias in unadjusted Hamiltonian Monte Carlo and underdamped Langevin",
+  "updated": "2026-07-16T17:07:42+00:00"
+}

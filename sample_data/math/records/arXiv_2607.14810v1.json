@@ -1,0 +1,18 @@
+{
+  "abstract": "We study the existence of standing wave solutions for the following quasilinear Schr\u00f6dinger equations with critical growth on the Heisenberg group $$ -\u0394_{\\mathbb{H}} u +V(\u03be)u-\u0394_{\\mathbb{H}} (\\left|u\\right|^{2\u03b1})\\left|u\\right|^{2\u03b1-2} u= \u03bb\\left|u\\right|^{q-2}u + \\left|u\\right|^{p-2}u \\text{ in }\\mathbb{H}^N $$ where $\\mathbb{H}^N$ is Heisenberg group, $\u0394_{\\mathbb{H}}$ is Kohn Laplacian operator, $4\u03b1<q<p \\leq 2\u03b1Q^{*}$, \\(Q^{*}= \\frac{2Q}{Q-2}\\) is the critical Folland--Stein exponent, $\u03bb$ and $\u03b1$ are positive parameters, $\u03b1> \\frac{1}{2}.$ By a suitable nonlinear change of variables, the quasilinear equation is transformed into a semilinear one, allowing the use of variational methods in the Folland--Stein Sobolev space $S^{1,2}(\\mathbb{H}^N)$. Applying the mountain pass theorem together with a concentration--compactness argument adapted to the sub-Riemannian framework, we establish the existence of a nontrivial solution.",
+  "authors": [
+    "Ankit Mishra",
+    "Divya Goel"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.14810v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14810v1",
+  "published": "2026-07-16T10:28:00+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Quasilinear Schr\u00f6dinger Critical Problem on the Heisenberg group \\(\\mathbb{H}^N\\)",
+  "updated": "2026-07-16T10:28:00+00:00"
+}

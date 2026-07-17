@@ -1,0 +1,21 @@
+{
+  "abstract": "Medicinal plants offer promising multi-target therapeutic agents due to their diverse bioactive compounds. This study explored LC\u2013MS profiling, network pharmacology, molecular docking, and molecular dynamics simulation to investigate the potential antidepressant-related mechanisms of Leonotis leonurus and Mentha longifolia . A total of 20 and 15 compounds were identified in L. leonurus and M . longifolia , respectively. Target prediction and overlap analysis revealed 16 and 22 depression-associated targets for each plant. These targets were used to construct protein\u2013protein interaction networks and perform Gene Ontology and KEGG pathway enrichment analyses. For L . leonurus , the key targets included SLC 6 A 4 , PTGS 2 , MAOA , and MAOB were enriched in serotonergic and dopaminergic synapse pathways, neuroactive ligand\u2013receptor interaction, and PI 3 K/Akt signalling, suggesting, suggesting potential involvement in neurotransmission and neuroinflammatory regulation. Molecular docking showed strong interactions of procyanidin B5 and chrysoeriol with SLC 6 A 4 and MAOA , respectively, while baicalin demonstrated the most favourable binding affinity (\u2212 39.45 kcal/mol), exceeding that of fluoxetine (\u2212 14.69 kcal/mol), both surpassing fluoxetine\u2019s affinity (\u2212 14.69 kcal/mol) to SLC 6 A 4 . For M. longifolia , targets such as DRD 4 , DRD 3 , GSK 3 \u03b2 , COMT , and AKT 1 were linked to dopaminergic synapse and neuroactive ligand\u2013receptor pathways. Key compounds, including baicalin, salvianolic acid A, and rosmarinic acid, showed strong binding to DRD 4 , DRD 3 , and GSK 3 \u03b2 . Notably, quercetin 3-galactoside exhibited the highest affinity toward DRD 4 (\u2212 46.74 kcal/mol), outperforming fluoxetine (\u2212 24.91 kcal/mol). Collectively, these findings suggest that both plants may possess antidepressant-related potential through predicted multi-component, multi-target modulation of neurotransmitter systems and neuroinflammatory pathways. However, these findings remain computational and require experimental validation to confirm biological efficacy and therapeutic relevance. This study provides a mechanistic framework to support future pharmacological investigations into the traditional use of these medicinal plants for mental health applications. Graphical abstract Supplementary Information The online version contains supplementary material available at 10.1007/s40203-026-00689-2.",
+  "authors": [
+    "Mooki C",
+    "Ayodele OM",
+    "Sabiu S",
+    "Aremu AO",
+    "Lekhooa M"
+  ],
+  "doi": "10.1007/s40203-026-00689-2",
+  "domain": "neuro",
+  "external_id": "PMC13365280",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-01-01T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Therapeutic potential of Leonotis leonurus and Mentha longifolia in depression: insights from network pharmacology and molecular dynamics stimulation-based study.",
+  "updated": null
+}

@@ -1,0 +1,17 @@
+{
+  "abstract": "The description of the optomechanical system is commonly based on the quantum Langevin equation formalism. This framework is introduced phenomenologically or based on a model Hamiltonian. However, once dealing with the optomechanical Fabry-Perot cavity or the modified Michelson-Sagnac interferometer with a semitransparent mechanically active membrane inside, a model-free consideration is also possible by using an alternative approach. Such an approach, which is based on the classical wave equations in the systems, is popular in the gravitational-wave community where it is termed as input-output relations approach. In this work, using the aforementioned approach, we derived the equations for the ladder operator of the intracavity field, stochastic back-action force, and the relation between the fields at the input mirror. Then we simplified the obtained results down to the range of applicability of the Langevin equation formalism and compared these with the corresponding predictions of the latter formalism. This enabled us to critically assess the validity of the Langevin equation formalism and rectify its range of applicability. In the case where the dissipative optomechanical coupling is involved we identified appreciable problems with this formalism. We found that, disregarding the fact that decay rate of the optomechanical Fabry-Perot cavity depends on its length, no dissipative optomechanical coupling is generated. This is in contrast with the prediction of the standard Langevin-equation based treatment. We found that, staying inside the range of applicability of the Langevin equation formalism, the relation between the fields at the input mirror may not be correct. We found that the Langevin equation formalism misses a phase factor at the input field, this factor turns out to be important for the situation involving the dissipative optomechanical coupling.",
+  "authors": [
+    "Alexander K. Tagantsev"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.08530v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08530v1",
+  "published": "2026-07-09T14:26:38+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "The Langevin-equation description of optomechanics with the dispersive and dissipative optomechanical coupling",
+  "updated": "2026-07-09T14:26:38+00:00"
+}

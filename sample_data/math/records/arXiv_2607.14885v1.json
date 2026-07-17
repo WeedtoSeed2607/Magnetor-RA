@@ -1,0 +1,17 @@
+{
+  "abstract": "Given a scalar observable of an ergodic dynamical system with a low-dimensional attractor, two families of methods reconstruct and predict the underlying state: recurrence-based methods (the method of analogues and its descendants), which wait for the trajectory to return to an $\\varepsilon$-neighborhood of a previously observed state, and observer-based methods, which fit a converging state estimator on the delay reconstruction. We formalize and empirically verify an exponential separation between the two: the expected cost of recurrence scales as $\\varepsilon^{-d}$, where $d$ is the pointwise dimension of the invariant measure (a consequence of the Kac lemma and quantitative Poincare recurrence), whereas a detectable linear observer converges in $\u0398(\\log(1/\\varepsilon)/(1-\u03c1(A_{cl})^2))$ steps, where $\u03c1(A_{cl})$ is the closed-loop spectral radius of the Riccati fixed point. Both laws are verified numerically (return-time exponent $-1.8$ on the Lorenz attractor against the theoretical $-2.05$; observer cost linear in $\\log(1/\\varepsilon)$ with $R^2=1.000$ and in $(1-\u03c1^2)^{-1}$ with $R^2=0.985$), yielding a measured cost gap of $\\sim 10^{9}$ at $\\varepsilon=10^{-6}$ for $d\\approx 2$. We complement the theorem with an admission protocol (the Kac-Riccati gate) deciding whether a signal lies inside the theorem's class, via surrogate-data prediction gating; it also explains the folklore of \"universal\" fractal dimensions as a dataset-size artifact bounded by $2\\log_{10}N$. On real data the gate admits the Santa Fe laser benchmark ($\\hat D_2=2.0$) and refuses the monthly sunspot series, reproducing the settled resolution of historical low-dimensionality claims. All results reproduce from a single verification script (17/17 checks).",
+  "authors": [
+    "Pavel Popovich"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.14885v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14885v1",
+  "published": "2026-07-16T11:58:44+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Contraction versus Recurrence: An Exponential Separation in Observation-Based Prediction of Deterministic Dynamics",
+  "updated": "2026-07-16T11:58:44+00:00"
+}

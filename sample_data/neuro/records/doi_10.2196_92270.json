@@ -1,0 +1,19 @@
+{
+  "abstract": "Abstract Background Posttraumatic stress disorder (PTSD) affects up to 25% of trauma-exposed adolescents; yet, access to evidence-based treatment remains limited in rural regions. Trauma-focused cognitive behavioral therapy (TF-CBT) is the first-line intervention, but structural barriers such as long travel distances and therapist shortages hinder implementation. Digital and blended formats may improve accessibility, but evidence for adolescents with PTSD is limited. Shame and self-criticism are common following interpersonal trauma and can reduce engagement; compassion-focused strategies target these mechanisms and aim to enhance emotional safety. Objective This protocol outlines a pilot randomized controlled trial (RCT) evaluating the feasibility of delivering blended trauma-focused cognitive behavioral therapy with compassion (bTF-CBT-C) for adolescents with PTSD in routine clinical care. A secondary aim is to assess the acceptability of the intervention among adolescents and caregivers. In addition, the study explores patterns and variability in clinical outcomes to inform the design of a future noninferiority trial. Methods A 2-arm parallel-group pilot RCT will randomize 40 adolescents (12\u201017 years) with DSM-5 ( Diagnostic and Statistical Manual of Mental Disorders [Fifth Edition]) PTSD to bTF-CBT-C or standard TF-CBT in routine child and adolescent psychiatric services. The intervention includes an approximately 5-week web-based stabilization phase, followed by 7\u201014 therapist-led sessions delivered primarily via videoconference, with some in-person sessions. Primary outcomes will assess feasibility (recruitment, retention, adherence, data completeness, and adverse events) and acceptability (satisfaction, alliance, and qualitative interviews). Exploratory outcomes include PTSD symptoms, self-compassion, emotion regulation, depression, anxiety, suicidality, and dissociation. Assessments will be conducted at baseline, poststabilization, posttreatment, and 6-month follow-up. Feasibility and acceptability will be summarized descriptively. Exploratory analyses using analysis of covariance and mixed effects models will estimate variance parameters, confidence intervals, and descriptive change trajectories without hypothesis testing. Qualitative data will be analyzed using reflexive thematic analysis. Results Recruitment started in February 2026, and data collection is projected to be completed by December 2028. Feasibility and acceptability outcomes, along with exploratory clinical patterns, will be reported in accordance with the CONSORT (Consolidated Standards of Reporting Trials) extension for pilot and feasibility trials. Conclusions Findings will inform the refinement of the intervention, the assessment of trial feasibility, and the selection of outcomes for a fully powered noninferiority RCT. The study will also contribute to understanding how compassion-focused strategies may support emotional safety and engagement in trauma-focused treatment for adolescents.",
+  "authors": [
+    "Wallin L",
+    "Svedin CG",
+    "Dennhag I"
+  ],
+  "doi": "10.2196/92270",
+  "domain": "neuro",
+  "external_id": "PMC13372296",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-15T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Blended Trauma-Focused Cognitive Behavioral Therapy With Compassion for Adolescents With Posttraumatic Stress Disorder: Protocol for a Pilot Randomized Controlled Trial in Northern Sweden.",
+  "updated": null
+}

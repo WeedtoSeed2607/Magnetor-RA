@@ -1,0 +1,23 @@
+{
+  "abstract": "Background: Knee osteoarthritis (KOA) is a leading cause of chronic pain and disability worldwide. Although exercise therapy is the recommended first-line treatment, many patients continue to experience pain and functional limitations. Dry needling (DN) has emerged as a potential adjunct therapy targeting myofascial and neuropathic pain mechanisms. Objectives: To evaluate the effectiveness of DN combined with exercise therapy compared with exercise therapy alone for pain reduction and functional improvement in patients with KOA. Design: Systematic review and meta-analysis of randomized controlled trials. Data sources and methods: A systematic search of PubMed, ClinicalTrials.gov, and the Cochrane Library was conducted from inception to October 23, 2025, following Preferred Reporting Items for Systematic Reviews and Meta-Analyses 2020 guidelines. Studies involving adults with KOA comparing DN plus exercise with exercise alone or sham DN plus exercise were included. The primary outcome was pain intensity (Visual Analog Scale/Numeric Pain Rating Scale), while secondary outcomes included WOMAC scores, neuropathic pain, functional performance, and psychosocial measures. Pooled mean differences (MDs) with 95% confidence intervals (CIs) were calculated using a random-effects model. Heterogeneity was assessed with the I 2 statistic, and risk of bias was evaluated using the Cochrane RoB-2 tool. Results: Six randomized controlled trials involving 453 participants were included. Compared with exercise alone, DN plus exercise significantly reduced pain at 3 months (MD \u22121.91; 95% CI \u22122.60 to \u22121.21; I 2 = 66%). Significant improvements were also observed in WOMAC pain, stiffness, and physical function at short- and mid-term follow-up. Long-term outcomes (6\u201312 months) showed favorable trends, although CIs were wider. Conclusion: DN combined with exercise therapy may offer short- to mid-term improvements in pain and function in patients with KOA compared with exercise alone. However, the evidence is limited by a small number of studies, moderate certainty, and substantial heterogeneity, warranting cautious interpretation. The long-term benefits remain uncertain. Trial registration : PROSPERO (Registration ID: (CRD420261285294)).",
+  "authors": [
+    "Tayyab M",
+    "Khan AA",
+    "Syed R",
+    "Shah S",
+    "Al Meqbaali M",
+    "Khan A",
+    "Al Sinani M"
+  ],
+  "doi": "10.1177/1759720X261463350",
+  "domain": "neuro",
+  "external_id": "PMC13365652",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-01-01T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Effectiveness of dry needling combined with exercise therapy versus exercise alone for pain and functional outcomes in knee osteoarthritis: a systematic review and meta-analysis of randomized controlled trials.",
+  "updated": null
+}

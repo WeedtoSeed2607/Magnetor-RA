@@ -1,0 +1,19 @@
+{
+  "abstract": "We study the critical properties of random quantum circuits with a $U(1)$ symmetry subject to local projective measurements that explicitly break this symmetry. We find that, at the measurement-induced phase transition, symmetry-breaking measurements act as a relevant perturbation at large scales, leading to the same universal critical properties as the corresponding monitored random circuit with non-symmetric unitary dynamics. In particular, we consider monitored $U(1)$-symmetric Haar-random circuits in the limit of large local Hilbert-space dimension, where the trajectory-averaged entanglement entropy can be exactly obtained in terms of a classical statistical mechanics model. In this model, the charge associated with the conservation law follows a symmetric simple exclusion process, in which symmetry-breaking measurements correspond to disordered defects that create and destroy charges. We prove that the charge correlation length remains finite for any measurement rate, ruling out a charge-sharpening transition, in contrast to the case of symmetry-preserving measurements. We further support our predictions at finite local Hilbert-space dimension through numerical finite-size scaling analyses of the entanglement transition in monitored $U(1)$-symmetric Haar and stabilizer random circuits.",
+  "authors": [
+    "Angelo Russotto",
+    "Filiberto Ares",
+    "Pasquale Calabrese"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.08589v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08589v1",
+  "published": "2026-07-09T15:24:48+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Universality of Measurement-Induced Criticality under Symmetry-Breaking Measurements",
+  "updated": "2026-07-09T15:24:48+00:00"
+}

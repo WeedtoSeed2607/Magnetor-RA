@@ -1,0 +1,20 @@
+{
+  "abstract": "This paper addresses the robust control of switched systems under arbitrary switching with performance guarantees. We propose a framework that jointly synthesizes a feedback policy and a certified upper bound on its corresponding infinite-horizon closed-loop value function. The proposed upper bound not only certifies the performance of the synthesized policy, but can also be optimized during controller synthesis. More precisely, our approach associates functions with the nodes of a path-complete graph and enforces graph-based Bellman inequalities along its edges. Exploiting a newly introduced notion of reachability graph, these functions are combined into both a feedback policy and a certified upper bound on its corresponding closed-loop value function, expressed as a pointwise min-max combination of the graph-indexed functions. For linear switched systems with quadratic stage costs, the proposed framework admits tractable computational formulations based on semidefinite programming and alternating optimization. Numerical experiments, including a building temperature regulation benchmark, demonstrate the practical usefulness of the proposed approach both for direct feedback control using the synthesized policy and for model predictive control using the certified upper bound as a terminal cost.",
+  "authors": [
+    "L\u00e9a Ninite",
+    "Adrien Banse",
+    "Guillaume O. Berger",
+    "Rapha\u00ebl M. Jungers"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.15055v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15055v1",
+  "published": "2026-07-16T14:31:25+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Robust Optimal Control of Arbitrarily Switched Systems: A Path-Complete Framework",
+  "updated": "2026-07-16T14:31:25+00:00"
+}

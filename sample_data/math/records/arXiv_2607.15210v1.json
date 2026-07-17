@@ -1,0 +1,19 @@
+{
+  "abstract": "Additivity of minimum output entropies is a central problem in quantum information theory. Nonadditivity is known for every R\u00e9nyi order $p>1$, at the von Neumann point $p=1$, and near $p=0$, while most of the interval $0<p<1$ has remained open. We prove that for every R\u00e9nyi order $p$ satisfying either $p>3/4$ or $0\\leq p<1/4$, there exist finite-dimensional projection-induced quantum channels such that additivity of the minimum output $p$-R\u00e9nyi entropy fails. The proof combines two correlated random-projection constructions: a product-conjugate Bell-state witness for $p>3/4$, and a transpose-complement rank-defect witness for $p<1/4$. Thus the unresolved part of $0<p<1$ is reduced to $[1/4,3/4]$. Our estimates also improve the output dimension threshold for additivity violation of minimum output von Neumann entropy, first established in Belinschi, Collins and Nechida.",
+  "authors": [
+    "Debbie Leung",
+    "Benjamin Lovitz",
+    "Peixue Wu"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.15210v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15210v1",
+  "published": "2026-07-16T17:08:47+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Counterexamples to additivity of minimum output $p$-R\u00e9nyi entropy of quantum channels for $p>3/4$ and $0\\leq p<1/4$",
+  "updated": "2026-07-16T17:08:47+00:00"
+}

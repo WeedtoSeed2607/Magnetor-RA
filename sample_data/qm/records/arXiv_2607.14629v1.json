@@ -1,0 +1,24 @@
+{
+  "abstract": "Logical Kochen-Specker (KS) contextuality is widely regarded as an intrinsic property of specially constructed measurement configurations. We show instead that it can emerge from KS-colorable vector sets through a constructive procedure we call the Hamilton extension. Defined for four-dimensional vector sets, the Hamilton extension associates each real vector with a measurement context while inducing additional measurement contexts among Hamilton-extended children of distinct parent vectors. These emergent contexts fundamentally alter the compatibility structure, transforming KS-colorable configurations into KS-uncolorable ones and recovering logical contextuality lost under apex-vertex augmentation. We establish a sharp and optimal threshold -- the Hamilton extension of every five-vector parent set remains KS-colorable, whereas suitably chosen six-vector parent sets already generate logical KS contradictions. Thus, six vectors constitute the smallest parent set capable of generating KS contradiction through this mechanism. Our results reveal a new structural route to contextuality, provide a systematic framework for constructing compact KS sets, and have implications for contextuality-based quantum information protocols and graph-theoretic approaches to nonclassicality.",
+  "authors": [
+    "Jayashree Karmakar",
+    "Biswadeep Chatterjee",
+    "Rafiuddin Gazi",
+    "Anushko Chattopadhyay",
+    "Ananya Chakraborty",
+    "Snehasish Roy Chowdhury",
+    "Amit Mukherjee",
+    "Manik Banik"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.14629v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14629v1",
+  "published": "2026-07-16T06:47:20+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Emergence and Recovery of (logical) Kochen-Specker Contextuality via Hamilton Extension",
+  "updated": "2026-07-16T06:47:20+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "abstract": "In this paper, we study the optimization landscape induced by the true loss for shallow polynomial neural networks (PNNs) with $\\mathfrak{h} \\in \\mathbb{N}$ neurons on the hidden layer, one-dimensional input and output layers, and a monomial activation of degree $d \\in \\mathbb{N}$, trained against a non-constant affine linear target function. Our first main result provides for arbitrary activation degree $d$ a sharp existence/non-existence criterion for \\emph{global minimizers} with necessary structural conditions. We show that the infimum of the loss is always zero and achievable with at least $d$ active and visible hidden neurons -- that is, hidden neurons with non-zero inner and outer weights -- with pairwise distinct pivots. In contrast, if $\\mathfrak{h} < d$, then the infimum cannot be attained and any minimizing sequence of parameters necessarily diverges to infinity. In the second main result, we provide a complete classification of all critical points of the loss function for the cubic activation. We show that the loss landscape admits no \\emph{local maximizers}, critical points cannot have exactly two distinct pivots, global minimizers require at least three distinct pivots, critical points with no active hidden neurons correspond to \\emph{saddle points} only, and consequently, \\emph{non-global local minimizers} and non-trivial saddle points arise only in networks where all pivots coincide. Moreover, non-global local minimizers require all hidden neurons to be active and visible with exactly one hidden neuron having a slope sign matching that of the target function. Our second main result also guarantees that each hidden neuron of a critical point that is not a global minimizer has either input-dependent or zero contribution, but has no nonzero input-independent contribution, to its corresponding realization function.",
+  "authors": [
+    "Shokhrukh Ibragimov",
+    "Ilkhom Mukhammadiev",
+    "Diyora Salimova"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.15173v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15173v1",
+  "published": "2026-07-16T16:22:16+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Landscape analysis for shallow neural networks: Complete classification of critical points for cubic activation and affine target functions",
+  "updated": "2026-07-16T16:22:16+00:00"
+}

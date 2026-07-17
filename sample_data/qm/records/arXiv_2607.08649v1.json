@@ -1,0 +1,21 @@
+{
+  "abstract": "Conformal field theory provides universal predictions for Loschmidt amplitudes following quenches from product states to critical Hamiltonians. Building on this observation, we develop a route to extracting conformal data from real-time dynamics without preparing critical low-energy states. After analytic continuation, the Loschmidt amplitude is described by a boundary-CFT partition function on a strip, whose transverse transfer matrix encodes both the boundary operator spectrum and the central charge. Local space-time perturbations of the amplitude are governed by equilibrium correlation functions, and therefore provide access to critical exponents. In parallel, generalized temporal entropies exhibit scaling with time analogous to the equilibrium scaling of spatial entanglement entropy. We show that the low-lying boundary spectrum can be reconstructed from the system-size dependence of finite-chain Loschmidt echoes, whose damped oscillations encode differences of boundary scaling dimensions. Finally, we propose a finite-size scaling protocol that can extract these quantities from simulations or experiments on state-of-the-art quantum platforms.",
+  "authors": [
+    "Aleix Bou-Comas",
+    "Stefano Carignano",
+    "Sergio Cerezo-Roquebr\u00fan",
+    "Esperanza Lopez",
+    "Luca Tagliacozzo"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.08649v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08649v1",
+  "published": "2026-07-09T16:19:42+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Extracting conformal data from Loschmidt echoes after critical quenches",
+  "updated": "2026-07-09T16:19:42+00:00"
+}

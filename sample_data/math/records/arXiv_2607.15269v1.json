@@ -1,0 +1,19 @@
+{
+  "abstract": "We prove, for all fixed $0 < \u03b4< 1$, and all sufficiently large $n$, that there exists $S \\subset [n]$ with $|S| \\ge \u03b4n$ such that $A + B \\not \\subset S$ for all ${A, B \\subset \\mathbb{N}}$ satisfying $$\\min\\big\\{|A|, |B|\\big\\} \\ge \\big(3 + o(1)\\big) \\frac{\\log n }{ \\log (1 / \u03b4)}.$$ A very recent result of Hern\u00e1ndez and Hetzel shows that our bound is sharp up to a factor of 3, and together our results settle a conjecture of Kra, Moreira, Richter, and Robertson. In fact, we prove that a $\u03b4$-dense random subset of $[n]$ is a valid choice for $S$ with high probability, and that one can take $n^{-\u03b1} \\le \u03b4\\le 1 - c$ where $c > 0$ is fixed and $\u03b1> 0$ depends only on the $o(1)$ error, answering another question of the same authors in a strong form.",
+  "authors": [
+    "Gabriel Dahia",
+    "Jo\u00e3o Pedro Marciano",
+    "Victor Souza"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.15269v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15269v1",
+  "published": "2026-07-16T17:57:34+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Dense sets without large sumsets",
+  "updated": "2026-07-16T17:57:34+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "abstract": "In this paper we give a systematic and unified treatment and extensions of various results on a new notion of quantum $f$-divergences defined from quantum hockey stick divergences, the theory of which has been developed recently in \\cite{BHT_fdiv,HircheTomamichel_integral,LiuHircheCheng2025}. In particular, we consider non-normalized states and hockey stick $f$-divergences defined from more general notions of quantum hockey stick divergences, as well as a somewhat more general form of the integral representation defined in terms of an additional real parameter. We also consider the extension of the theory to general von Neumann algebras, and extend various results from \\cite{HircheTomamichel_integral,LiuHircheCheng2025} to this setting. Our main results here are the representation of the hockey stick $f$-divergences in terms of Neyman-Pearson error probabilities, which was given in the finite-dimensional case in \\cite{LiuHircheCheng2025}, an extension of Jen\\v cov\u00e1's result \\cite{Jencova2023} on the detection of reversibility of a quantum channel on a pair of states in terms of the hockey stick divergences, and an extension of a result in \\cite{HircheTomamichel_integral} showing that the regularized hockey stick R\u00e9nyi $\u03b1$-divergences coincide with the Petz-type R\u00e9nyi divergences for $\u03b1\\in(0,1)$ and with the sandwiched R\u00e9nyi divergences for $\u03b1>1$. Moreover, we give some partial results on the characterization of when different notions of quantum $f$-divergences give the same value on a pair of quantum states.",
+  "authors": [
+    "Fumio Hiai",
+    "Mil\u00e1n Mosonyi",
+    "Marco Tomamichel"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.08760v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08760v1",
+  "published": "2026-07-09T17:56:17+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Hockey stick $f$-divergences",
+  "updated": "2026-07-09T17:56:17+00:00"
+}

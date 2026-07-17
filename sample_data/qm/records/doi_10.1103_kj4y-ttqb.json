@@ -1,0 +1,21 @@
+{
+  "abstract": "We establish a rigorous framework that identifies imaginarity as a fundamental resource inherent in quantum coherence. By means of a geometric decomposition, we partition coherence into distinct imaginarity and residual components, thereby revealing a universal hierarchical relationship among these resources. For bipartite systems, this decomposition provides explicit bounds on the extent to which nonlocal correlations and imaginarity limit local coherence generation. Furthermore, we devise an explicit operational protocol that converts imaginarity into usable coherence, demonstrating the direct interconvertibility of these resources under physically admissible operations. The dynamical evolution under diagonal Hamiltonians is fully characterized, showing that while total coherence is conserved, imaginarity and residual coherence exhibit complementary oscillations. Our results provide a rigorous geometric and operational characterization of imaginarity as a fundamental constituent of quantum coherence, offering concrete insights for resource management in distributed quantum technologies. The geometric framework and theoretical bounds established herein are fully general, while the explicit conversion protocol and dynamical analysis serve as a compelling proof-of-principle demonstration in qubit systems.",
+  "authors": [
+    "Meng-Li Guo",
+    "Nannan Guan",
+    "Bo Li",
+    "Bin Hu",
+    "Shao-Ming Fei"
+  ],
+  "doi": "10.1103/kj4y-ttqb",
+  "domain": "qm",
+  "external_id": "2607.14435v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14435v1",
+  "published": "2026-07-16T00:05:02+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Imaginarity as a Resource within Quantum Coherence: Geometric Decomposition and Operational Conversion",
+  "updated": "2026-07-16T00:05:02+00:00"
+}

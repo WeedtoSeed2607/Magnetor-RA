@@ -1,0 +1,17 @@
+{
+  "abstract": "Gleason's theorem identifies the Born rule via non-contextuality over an infinite continuous lattice of projectors, while its corollary the Kochen-Specker (KS) theorem rules out the specific class of deterministic ($\\{0,1\\}$-valued) noncontextual models using finite sets of projectors. Gleason's theorem also indicates the existence of KS-type finite vector constructions to rule out other discrete nondeterministic alternatives to quantum theory beyond the $\\{0, 1\\}$ case. Here, we construct finite measurement configurations to rule out noncontextual empirical models with outcome probabilities drawn from an arbitrary finite subset $O \\subset [0,1]$. We do this by two means: (i) constructing a family of experimentally feasible state-dependent Hardy-type tests, and (ii) proving a generalized KS theorem for a broad class of $O$ that includes prior results as special cases. In the sheaf-theoretic framework of Abramsky and Brandenburger, a hierarchy of probabilistic-possibilistic-strong contextuality has been established quantifying contextuality as a resource. We extend this framework by introducing strong $O$-valued contextuality, showing that quantum theory evades global sections of all finite-valued presheaves. We also discuss the implications of the result on finite many-valued logics as viable ontological models for quantum theory and for contextuality-based (semi)-device-independent protocols.",
+  "authors": [
+    "Ravishankar Ramanathan"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.14931v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14931v1",
+  "published": "2026-07-16T12:46:16+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Strong $O$-valued contextuality: ruling out discrete nondeterministic alternatives to quantum theory",
+  "updated": "2026-07-16T12:46:16+00:00"
+}

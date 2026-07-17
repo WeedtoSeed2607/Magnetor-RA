@@ -1,0 +1,18 @@
+{
+  "abstract": "A positive integer $m$ is termed a \\emph{Hall number} if every finite group $G$ whose order is precisely divisible by $m$ possesses a Hall subgroup of order $m$. Seeking generalizations of Sylow's theorem and Hall's theorem for finite solvable groups, Jiping Zhang asked for a full classification of Hall numbers, a problem recently solved by Guo, Hu and Li. Inspired by Zhang's problem, Guohua Qian put forward an analogous problem on a full classification of Hall complement numbers. Recall that a positive integer $m$ is called a \\emph{Hall complement number} provided that every finite group $G$ with $m$ precisely dividing $|G|$ admits a Hall subgroup of order $|G|/m$. In the present paper, we prove that every Hall complement number is either $1$ or of the form $4k+2$ for some non-negative integer $k$, thus answering Qian's problem.",
+  "authors": [
+    "Yu Zeng",
+    "Hangyang Meng"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.15010v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15010v1",
+  "published": "2026-07-16T13:59:12+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Hall complement numbers",
+  "updated": "2026-07-16T13:59:12+00:00"
+}

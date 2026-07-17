@@ -1,0 +1,18 @@
+{
+  "abstract": "The entanglement-assisted capacity of a quantum channel admits an additive single-letter characterization, implying that joint encodings across channel uses cannot increase the ultimate communication rate. Here, we show that this additive picture does not extend to communication reliability. Specifically, we prove that the Petz-R\u00e9nyi channel information can be strictly superadditive for every $\u03b1\\in[1/2,1)$, yielding a genuine multi-copy enhancement of the entanglement-assisted random-coding error exponent, even though the entanglement-assisted capacity remains additive. We establish this phenomenon analytically already for measurement channels, which are entanglement-breaking and have additive unassisted capacity. Remarkably, this strict superadditivity is witnessed by a separable, classically correlated two-copy channel-input marginal, demonstrating that no entanglement between the transmitted systems is required. Our results show that, although correlations across channel uses cannot increase the ultimate rate of entanglement-assisted communication, they can enhance its reliability.",
+  "authors": [
+    "Hao-Chung Cheng",
+    "Mario Berta"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.15151v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15151v1",
+  "published": "2026-07-16T15:52:04+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Superadditivity for Entanglement-Assisted Communication",
+  "updated": "2026-07-16T15:52:04+00:00"
+}

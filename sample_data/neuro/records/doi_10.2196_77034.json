@@ -1,0 +1,19 @@
+{
+  "abstract": "Abstract Background The use of remote teaching in medical education has increased since the COVID-19 pandemic. However, the effectiveness of synchronous remote teaching for specific psychomotor components of the neurological examination, such as tendon reflex assessment, remains underexplored. Objective This study aimed to evaluate the short-term effectiveness of synchronous remote teaching compared with traditional in-person teaching for training medical students in tendon reflex examination skills and related neurological examination knowledge. Methods This quasi-experimental study enrolled 110 fifth-year medical students between August 2022 and April 2024, who were assigned to either synchronous remote teaching (n=46) or in-person teaching (n=64). The participants completed pre- and postcourse knowledge tests and an objective structured clinical examination (OSCE) assessing tendon reflex examination skills. Motivational beliefs related to self-regulated learning and technology acceptance were measured at baseline. Group differences were analyzed using t tests, Mann-Whitney U tests, and correlational analyses. Results Posttest knowledge scores were higher in the synchronous remote teaching group than in the in-person group (mean difference 0.86, 95% CI 0.21\u20101.51; Cohen d =0.50; P =.01), indicating a modest effect size. Both groups demonstrated substantial improvements in tendon reflex OSCE performance; however, the between-group difference in OSCE score improvement was not statistically significant (mean difference \u22123.64; 95% CI \u22129.36 to 2.08; Cohen d =\u22120.26; P =.21). Within the synchronous remote teaching group, higher motivational beliefs were positively correlated with OSCE score gains (Pearson r =0.34; P =.04; n=46), suggesting a potential role of self-regulated learning\u2013related motivational processes. These exploratory findings should be interpreted with caution. Conclusions Under the conditions of this study, synchronous remote teaching was associated with modest improvements in knowledge outcomes and with OSCE-assessed tendon reflex examination skill gains that were comparable to those of traditional in-person teaching, without statistically significant between-group differences in psychomotor performance. These findings do not establish durable skill acquisition and should not be interpreted as evidence of equivalence or superiority of synchronous remote teaching over in-person instruction. Unlike many prior remote medical education studies that primarily focused on asynchronous learning or self-reported outcomes, this study incorporated synchronous interactive instruction with objective OSCE-based psychomotor assessment. These findings contribute to the emerging literature on synchronous remote clinical skills education, although future randomized and longitudinal studies are needed to evaluate long-term skill retention and broader applicability.",
+  "authors": [
+    "Huang CS",
+    "Tang KP",
+    "Wu MS"
+  ],
+  "doi": "10.2196/77034",
+  "domain": "neuro",
+  "external_id": "PMC13373527",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-15T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Synchronous Remote Teaching for Neurological Examination Training in Fifth-Year Medical Students: Quasi-Experimental Study.",
+  "updated": null
+}

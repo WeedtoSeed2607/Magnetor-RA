@@ -1,0 +1,22 @@
+{
+  "abstract": "We present a trade-off between the amount of observed measurement incompatibility and the capabilities of a classical Eavesdropper in a prepare-and-measure scenario. The result is based on a qualitative connection between measurement incompatibility and randomness generation together with the utilization of incompatibility witnesses as randomness certificates. This allows one to use a geometric measure of incompatibility, the generalised robustness, to bound Eve's strategies through a semi-definite program, while providing an explicit protocol for generating randomness from any set of incompatible measurements. By translating the result to quantum steering, we find a tight connection between steerability and randomness generation in a setting using any finite number of measurement inputs. We further show how our techniques can be generalised to scenarios where Eve has a quantum memory by using a dimensional generalisation of joint measurability.",
+  "authors": [
+    "Sebastian Schl\u00f6sser",
+    "Pauli Jokinen",
+    "Martin Pl\u00e1vala",
+    "Leevi Lepp\u00e4j\u00e4rvi",
+    "Leonardo S. V. Santos",
+    "Roope Uola"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.08697v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08697v1",
+  "published": "2026-07-09T16:54:26+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Quantifying randomness with measurement incompatibility",
+  "updated": "2026-07-09T16:54:26+00:00"
+}

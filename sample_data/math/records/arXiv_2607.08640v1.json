@@ -1,0 +1,17 @@
+{
+  "abstract": "Economic policies rarely affect only their direct targets. To study these spillovers, researchers summarize who else was treated with a simple exposure measure, such as the share of treated neighbors within a radius. But for many settings, economic theory provides little guidance on choosing the functional form (e.g., ring) of that measure or its parameters (e.g., radius). We show that the data can inform both choices. Correctly specified exposure measures imply orthogonality conditions that can be used for both estimation and testing. We establish consistency and asymptotic normality of the resulting estimator under spatial and network dependence in a design-based framework, with all randomness arising from treatment assignment. We then characterize the efficient moment conditions. Applied to two large-scale anti-poverty programs, the framework supports some prior radius estimates but rejects others. In the latter case, the revised radius yields substantively different policy-effect estimates.",
+  "authors": [
+    "Yechan Park"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.08640v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08640v1",
+  "published": "2026-07-09T16:16:17+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "A Design-Based Approach to Testing and Inference in (Quasi-)Experiments with Spillovers",
+  "updated": "2026-07-09T16:16:17+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "abstract": "Whether a heat engine can approach Carnot efficiency while maintaining finite power is a fundamental question in finite-time thermodynamics. For classical Markovian heat engines with local interactions, the power-efficiency trade-off forbids an asymptotic approach to Carnot efficiency at finite power. In quantum systems, by contrast, degeneracy, symmetry, and collective jumps have been theoretically predicted to enable such an asymptotic attainment by enhancing activity. It has remained open, however, whether this mechanism can be realized in an experimentally implementable heat engine. In this Letter, we propose a superconducting-circuit heat engine that emulates the collective enhancement, thereby enabling an asymptotic approach to Carnot efficiency at finite power. This result demonstrates that, in an implementable model, such an enhanced dissipative mechanism circumvents the power-efficiency trade-off of classical Markovian engines. Our work connects abstract bounds in finite-time thermodynamics to a concrete circuit-QED platform and suggests a route toward quantum-device design based on collectively enhanced dissipative processes.",
+  "authors": [
+    "Shogo Toma",
+    "Atsushi Noguchi",
+    "Ken Funo",
+    "Hiroyasu Tajima"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.08713v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08713v1",
+  "published": "2026-07-09T17:24:27+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Approaching Carnot Efficiency at Finite Power in an Experimentally Feasible Quantum Heat Engine",
+  "updated": "2026-07-09T17:24:27+00:00"
+}

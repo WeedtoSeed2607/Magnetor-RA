@@ -1,0 +1,17 @@
+{
+  "abstract": "Nondegenerate cycle sets were introduced by Rump as an algebraic framework for nondegenerate, involutive solutions to the Yang--Baxter equation. Nondegenerate cycle set structures on abelian groups, such as translation-invariant and quasilinear cycle sets, are of particular interest when studying the retraction problem in the theory of the Yang--Baxter equation. In this article, we solve the retraction problem for finite quasilinear cycle sets by showing that each nontrivial quasilinear cycle set is retractable, thus proving a conjecture of Rump.",
+  "authors": [
+    "Carsten Dietzel"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.08609v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08609v1",
+  "published": "2026-07-09T15:38:33+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Proof of Rump's Retraction Conjecture for Quasilinear Cycle Sets",
+  "updated": "2026-07-09T15:38:33+00:00"
+}

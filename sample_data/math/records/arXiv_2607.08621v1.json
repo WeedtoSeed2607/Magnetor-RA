@@ -1,0 +1,17 @@
+{
+  "abstract": "Let $ X $ be a closed, oriented manifold with $ \\dim X \\geqslant 5 $. In this article, we show that 2006 Rosenberg's $ \\mathbb{S}^{1} $-stability holds when $ X $ has zero Euler characteristic. The 2006 Rosenberg-Stolz Conjecture for $ X \\times \\mathbb{R} $ also follows under the same assumption, provided that the Riemannian metric $ g $ on $ X \\times \\mathbb{R} $ is complete, is of bounded curvature, and whose smallest eigenvalue is uniformly bounded below by some positive constant. We then show a $ \\mathbb{T}^{n} $-stability theorem with the same hypothesis of $ X $.",
+  "authors": [
+    "Jie Xu"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.08621v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08621v1",
+  "published": "2026-07-09T15:54:14+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "The Rosenberg $ \\mathbb{S}^{1} $-Stability Conjecture for $ \u03c7(X) = 0 $",
+  "updated": "2026-07-09T15:54:14+00:00"
+}

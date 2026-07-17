@@ -1,0 +1,24 @@
+{
+  "abstract": "Organisms adjust their physiology and behavior in response to seasonal changes. The current working model indicates that the circadian clock is involved in this process, but the molecular mechanisms mediating the integration of seasonal cues are still unclear. Notably, the circadian neuropeptide pigment-dispersing factor (PDF), an output of the circadian clock, has been shown to alter its expression and activity in response to seasonal changes to facilitate seasonal adaptations in insects. Here, we show that the alternative splicing of a circadian clock gene, timeless ( tim ), regulates the seasonal responses through PDF in Drosophila melanogaster . We found that tim-sc , the predominant isoform in winter, is regulated by photoperiod, while the canonical tim-l isoform is not. In addition, we demonstrated that tim-sc is used to maintain physiology and behavior in a \u201cwinter lock\u201d state by modulating PDF. Our results support a role of isoform-specific characteristics in providing circadian clock components with the ability to modulate seasonal physiology.",
+  "authors": [
+    "Hidalgo S",
+    "Del Rio R",
+    "Tabuloc CA",
+    "Perez Hernandez LA",
+    "Berry AL",
+    "Cai YD",
+    "Lewald KM",
+    "Chiu JC"
+  ],
+  "doi": "10.1126/sciadv.aed4249",
+  "domain": "neuro",
+  "external_id": "PMC13371921",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-17T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Splicing of a core circadian clock gene regulates seasonal adaptations by a winter gating mechanism.",
+  "updated": null
+}

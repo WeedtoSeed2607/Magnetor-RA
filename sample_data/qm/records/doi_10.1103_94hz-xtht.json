@@ -1,0 +1,28 @@
+{
+  "abstract": "Entanglement distribution is the overarching purpose of quantum networks. While communication over long distances can use deployed fiber infrastructure, it requires photons in the telecom band. However, advanced quantum network nodes do not operate at such wavelengths. Here we overcome this limitation with two tailor-made low-noise quantum-frequency converters to distribute entanglement between a single atom and a resonant photon over 14km line-of-sight via 24km of a deployed commercial fiber. The photon at wavelength 780nm is first entangled with the atom, then converted to the telecom S-band, and finally back-converted after propagation through the fiber. This link enables a photon transfer efficiency of 1.7% while affecting the atom-photon entanglement fidelity by less than 1%. This brings integration of atomic quantum nodes with existing long-distance fiber networks into reach, enabling novel applications in quantum information processing.",
+  "authors": [
+    "Maya B\u00fcki",
+    "Pooja Malik",
+    "Florian Fertig",
+    "Tobias Frank",
+    "Marvin Scholz",
+    "Tommy Block",
+    "Gianvito Chiarella",
+    "Yiru Zhou",
+    "Emanuele Distante",
+    "Pau Farrera",
+    "Gerhard Rempe",
+    "Harald Weinfurter"
+  ],
+  "doi": "10.1103/94hz-xtht",
+  "domain": "qm",
+  "external_id": "2607.08513v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08513v1",
+  "published": "2026-07-09T14:07:45+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Metropolitan entanglement distribution between an atom and a near-visible photon",
+  "updated": "2026-07-09T14:07:45+00:00"
+}

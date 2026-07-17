@@ -1,0 +1,18 @@
+{
+  "abstract": "For the Selberg zeta function of geometrically finite infinite-area hyperbolic orbisurfaces with twists by finite-dimensional unitary representations, we establish a factorization formula in terms of a Weierstrass product of the Laplace resonances of the considered hyperbolic orbisurface, Barnes G-functions, gamma functions, and the singularity degrees of the representation. We thereby provide an interpretation of the zeros and poles of the Selberg zeta function by spectral and geometric entities of the orbisurface and the representation. This formula generalizes the factorization result by Borthwick, Judge and Perry to hyperbolic orbisurfaces with orbifold singularities as well as to unitary twists. Also in the untwisted case, the presence of orbifold singularities yields a separate, previously unobserved contribution to the factorization formula.",
+  "authors": [
+    "Moritz Doll",
+    "Anke Pohl"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.14981v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14981v1",
+  "published": "2026-07-16T13:34:29+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "The divisor of the twisted Selberg zeta function",
+  "updated": "2026-07-16T13:34:29+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "abstract": "Many datasets encountered across a wide range of domains possess rich geometric and topological structure that is difficult to capture using conventional vector-based representations. Quantum machine learning offers the possibility of processing high-dimensional data in Hilbert spaces, but its practical success depends critically on how classical data is encoded into quantum states. We introduce \\emph{quantum topological data encoding} (QTDE), a general framework for encoding topological information into quantum states via topology-driven quantum evolution. Our method generalises an existing topology-driven quantum encoding framework to higher-dimensional data. We test the proposed method on clique-complexes classification tasks, and provide preliminary evidence that topology-driven quantum representations can capture discriminative information beyond that available through direct comparisons of classical topological descriptors. The proposed quantum representations consistently outperform a baseline based on direct comparisons of the combinatorial Laplacians describing the underlying topological structure. We indicate several areas of application where the framework can be used to provide a more efficient and reliable data representation.",
+  "authors": [
+    "Adam Weso\u0142owski",
+    "Dimitrios Thanos",
+    "Daniel Leykam",
+    "Lirand\u00eb Pira"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.13847v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.13847v1",
+  "published": "2026-07-15T13:53:48+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Quantum Topological Data Encoding",
+  "updated": "2026-07-15T13:53:48+00:00"
+}

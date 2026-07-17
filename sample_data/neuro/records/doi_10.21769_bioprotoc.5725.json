@@ -1,0 +1,17 @@
+{
+  "abstract": "Whole-mount techniques are widely used in medical and biological research to analyze protein expression and tissue organization in intact specimens. Traditional approaches for protein localization include section-based immunohistochemistry and in situ hybridization; however, these methods can be limited by tissue disruption and loss of spatial context. Whole-mount protocols generally involve tissue fixation, permeabilization, and staining with specific probes, but their effectiveness varies depending on the antigen\u2013antibody combination and the specimen type. Consequently, no universal protocol is suitable for all experimental conditions. This protocol presents a detailed whole-mount immunostaining protocol for evaluating tyrosine hydroxylase (TH) expression, a key marker of dopaminergic neurons, in zebrafish ( Danio rerio ) larvae. The procedure outlines critical steps from sample preparation to staining optimization to ensure reproducible and specific signal detection. This approach enables accurate visualization and analysis of dopaminergic neuron distribution in intact larvae. The protocol offers a reliable and adaptable approach that preserves tissue integrity, enables three-dimensional visualization, and is particularly well-suited for developmental and neurobiological studies using zebrafish larvae. Key features \u2022 Optimized whole-mount immunofluorescence protocol for detecting tyrosine hydroxylase in intact zebrafish larvae. \u2022 Permeabilization and bleaching steps were included to improve antibody penetration and reduce pigmentation-related signal interference \u2022 Three-dimensional brain architecture is preserved, enabling spatial analysis of dopaminergic neuron distribution without tissue sectioning, including region-specific fluorescence quantification using defined regions of interest (ROIs). \u2022 Provides a straightforward approach for assessing dopaminergic neuron distribution through fluorescence imaging and quantitative analysis. \u2022 Suitable for neurodevelopmental and neurotoxicity studies using zebrafish larvae.",
+  "authors": [
+    "F\u00e9lix L"
+  ],
+  "doi": "10.21769/BioProtoc.5725",
+  "domain": "neuro",
+  "external_id": "PMC13346890",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-05T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Whole-Mount Immunostaining of Tyrosine Hydroxylase for Dopaminergic Neuron Analysis in Zebrafish Larvae.",
+  "updated": null
+}

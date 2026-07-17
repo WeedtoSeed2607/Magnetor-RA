@@ -1,0 +1,26 @@
+{
+  "abstract": "Functional imaging of neural structures at the base of the cranium, including the trigeminal ganglion (TG), is technically challenging due to limited optical access. The TG\u2014the largest sensory ganglion in the head\u2014houses primary afferent neurons that relay information from the teeth, oral cavity, and face, yet investigation of somatosensory processing at the population level has remained limited. Here, we present a surgical procedure for an optical-window preparation that enables direct optical access to the TG. The ganglion is exposed by a large temporal craniotomy with removal of overlying tissue, and a glass cuboid is then placed in direct contact with the TG to suppress motion while maintaining the cranial cavity as a closed compartment without continuous perfusion. This preparation allows reliable visualization and recording of individual TG neurons during controlled stimulation of diverse facial and intraoral sites. Our approach provides a practical platform to map peripheral sensory representations within the TG and to investigate mechanisms underlying dental sensation, orofacial pain, and trigeminal circuit function. Key features \u2022 Establishes stable optical access to the mouse trigeminal ganglion using a hemispherectomy-based glass cuboid cranial window preparation. \u2022 Reduces motion artifacts through direct cuboid-TG contact, enabling robust single-neuron calcium imaging. \u2022 Provides a large field of view of the whole TG with fluorescence microscopy hardware and supports imaging in vivo.",
+  "authors": [
+    "Iwamoto R",
+    "Matunis A",
+    "Stacy E",
+    "Abe K",
+    "Tamura S",
+    "Kambe Y",
+    "Itokazu T",
+    "Hikida T",
+    "Sato TK",
+    "Sato TR"
+  ],
+  "doi": "10.21769/BioProtoc.5716",
+  "domain": "neuro",
+  "external_id": "PMC13347131",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-05T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Hemispherectomy-Based Optical Window for In Vivo Visualization of Trigeminal Ganglion Neurons in Mice.",
+  "updated": null
+}

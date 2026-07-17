@@ -1,0 +1,23 @@
+{
+  "abstract": "Abstract Transcutaneous spinal direct current stimulation (tsDCS) is a relatively recent method for non-invasively modulating neural activity in the spinal cord. Despite its growing prominence, comprehensive studies addressing its potential adverse effects (AEs) and unspecific effects (UEs) are lacking. In this study, we conducted a systematic investigation of the potential AEs and UEs of tsDCS in healthy volunteers (N=20) who underwent a double-blind within-participant design, employing anodal, cathodal, and sham tsDCS of the thoracolumbar spinal cord. Our approach involved utilizing a newly developed structured questionnaire (to assess subjectively reported AEs) in combination with tsDCS-concurrent recording of skin conductance, cardiac and respiratory activity (to assess UEs in bodily state). The most frequent participant-reported AEs were sensations of burning, tingling, and itching, although they were largely described as mild; skin redness (experimenter-reported) occurred even more frequently. Importantly, when comparing AEs between active and sham tsDCS via frequentist and Bayesian analysis approaches, the results were largely in favour of no difference between conditions (with the exception of skin redness). A similar picture emerged for most UE metrics, suggesting that tsDCS does not induce changes in bodily state, at least as measured by our autonomic nervous system metrics. We believe that the strategy employed here could serve as a starting point for a systematic AE and UE assessment in clinical populations, longitudinal designs, and when targeting different spinal sites. Taken together, our results contribute to assessing the tolerability and specificity of tsDCS, in order to further the application of this spinal neuromodulation method in health and disease.",
+  "authors": [
+    "Zhao H",
+    "Horn U",
+    "Freund M",
+    "Bujanow A",
+    "Gundlach C",
+    "Hartwigsen G",
+    "Eippert F"
+  ],
+  "doi": "10.1162/IMAG.a.1292",
+  "domain": "neuro",
+  "external_id": "PMC13370751",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-01-01T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Assessing adverse effects and unspecific effects of transcutaneous spinal direct current stimulation (tsDCS).",
+  "updated": null
+}

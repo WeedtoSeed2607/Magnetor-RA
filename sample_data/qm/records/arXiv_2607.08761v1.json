@@ -1,0 +1,17 @@
+{
+  "abstract": "Programmable quantum simulators are beginning to access correlators of increasing complexity, ranging from four-point out-of-time-ordered correlators to even higher-order many-body correlators. The theoretical framework for interpreting such data, however, remains comparatively underdeveloped. Although a variety of higher-order correlators can be constructed straightforwardly, their physical meaning is often difficult to infer. A further complication is that different correlators are generally not independent: some may be mutually redundant, while others may encode genuinely distinct information. These features make it necessary to analyze correlators not as isolated quantities, but as a structured family. In this work, we develop a geometric framework for the collective analysis of higher-order correlator families. By representing correlators as inner products between operator words, we recast each family as a geometry in operator space. The key idea is to introduce conditioning subspaces that separate this geometry into reducible information, already explained by a chosen resolved sector, and irreducible information, encoded in the residual correlator geometry. Focusing on the latter component, we define irreducible volume profiles that quantify how broadly the unexplained part of a correlator family spreads over independent geometric directions. This perspective leads to several complementary forms of conditioning. Canonical conditioning optimally explains a correlator family. Targeted conditioning fixes the resolved sector to isolate a chosen physical feature. Krylov and cross conditioning extend the framework from a single correlator family to comparisons among correlator geometries. Our framework reveals irreducible structures hidden at the level of individual correlator values and establishes correlator geometry as a higher-level description of quantum many-body dynamics.",
+  "authors": [
+    "Kaito Kobayashi"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.08761v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08761v1",
+  "published": "2026-07-09T17:56:23+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Irreducible Geometry of Higher-Order Correlator Families",
+  "updated": "2026-07-09T17:56:23+00:00"
+}

@@ -1,0 +1,18 @@
+{
+  "abstract": "Optimizing arbitrary quantum state vectors is like navigating the unit sphere in Hilbert space: beyond target reachability, optimization asks for coordinates, local distance information, and measurable directions. We introduce the Hopf ansatz, a binary-tree circuit for arbitrary normalized real and complex state vectors. Internal angles steer probability between subtrees, leaf phases carry the complex degrees of freedom, and the same tree gives state preparation and an explicit inverse map from amplitudes to physical angles. Together these structures act as a compass for the search: the inverse map gives coordinates, the diagonal induced metric gives local distance information, and nonzero coordinate tangents become preparable normalized states. For Hamiltonian objectives, and for objectives with the same local transition-moment form, each gradient component is a known scale factor times a transition moment between the current state and a tangent state. A branch-state construction expresses these moments through expectation-value measurements, while the tree organizes the compiled gradient settings by magnitude layer and leaf-indexed phase family. Thus the number of distinct compiled gradient-access circuit families grows only logarithmically with Hilbert-space dimension, while the measurement budget required for a chosen precision remains a separate statistical cost. In deterministic real-state benchmarks with exact costs, exact gradients, and known global optima, metric-aware Hopf optimizers reach numerical-precision median gaps, with the clearest baseline gains in smaller VQE mean final gaps and stronger concentration of metrology-inspired traces at numerical precision. The Hopf ansatz turns universal state preparation into a navigable framework for arbitrary pure-state optimization.",
+  "authors": [
+    "Ruge Lin",
+    "Guangxi Li"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.14231v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14231v1",
+  "published": "2026-07-15T18:00:41+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "A Compass on the Quantum State Sphere: The Hopf Ansatz for Arbitrary Pure-State Optimization",
+  "updated": "2026-07-15T18:00:41+00:00"
+}

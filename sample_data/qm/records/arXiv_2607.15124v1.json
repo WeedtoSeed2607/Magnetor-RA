@@ -1,0 +1,21 @@
+{
+  "abstract": "The concept of finite entanglement scaling forms one of the pillars on which the tensor network ecosystem is built. In this paper, we resolve the open problem of determining the actual perturbations induced by matrix product state approximations of critical systems, and we demonstrate that these can be quite different than the ones predicted by conformal field theory. To that aim, we develop a sparse linear solver to calculate the forward and backward derivatives of 2-dimensional tensor networks with respect to their defining parameters in an implicit way. This algorithm is of independent interest as it provides a primitive for the variational optimization of projected entangled pair states that circumvents the instabilities plaguing traditional automatic differentiation methods.",
+  "authors": [
+    "Luke Hodgkiss",
+    "Laurens Lootens",
+    "Atsushi Ueda",
+    "Bram Vanhecke",
+    "Frank Verstraete"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.15124v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15124v1",
+  "published": "2026-07-16T15:33:30+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "On the origin of finite entanglement scaling",
+  "updated": "2026-07-16T15:33:30+00:00"
+}

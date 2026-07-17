@@ -1,0 +1,17 @@
+{
+  "abstract": "Let $(X,\\mathcal E)$ and $(Y,\\mathcal F)$ be uniformly locally finite coarse spaces. We prove that every $C^*$-algebra isomorphism $C_u^*(X,\\mathcal E)\\cong C_u^*(Y,\\mathcal F)$ forces $(X,\\mathcal E)$ and $(Y,\\mathcal F)$ to be bijectively coarsely equivalent. This completely resolves the isomorphism rigidity problem for uniform Roe algebras over arbitrary uniformly locally finite coarse spaces.",
+  "authors": [
+    "Teng Zhang"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.15096v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15096v1",
+  "published": "2026-07-16T15:08:34+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Isomorphism rigidity of uniform Roe algebras over arbitrary uniformly locally finite coarse spaces",
+  "updated": "2026-07-16T15:08:34+00:00"
+}

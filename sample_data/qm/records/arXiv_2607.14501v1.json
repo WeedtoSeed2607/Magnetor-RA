@@ -1,0 +1,21 @@
+{
+  "abstract": "The slowest Liouvillian mode often bottlenecks the relaxation of an open quantum system to its steady state. Standard strategies circumvent this bottleneck by selecting special initial states or engineering the dissipator. Here we show that neither is necessary. We introduce a pre-dissipative geometric steering protocol that reshapes any given pure or mixed state before relaxation begins -- coherent rotations interleaved with nonselective projective measurements -- at fixed Lindblad generator. By steering the state's Bloch direction along geodesic paths, the protocol suppresses its overlap with the slowest Liouvillian modes. The prepared state then starts farther from equilibrium yet relaxes faster, realizing the quantum Mpemba effect, whenever two computable conditions hold: reduced slow-mode overlap and a larger initial distance to stationarity. Our framework treats real and complex spectral gaps uniformly, and we demonstrate robust Mpemba acceleration in driven qubit and multiqubit systems using operations available in trapped-ion and superconducting platforms.",
+  "authors": [
+    "Yingying Hong",
+    "Longxing Xu",
+    "Weiwei Zhang",
+    "Jie Ren",
+    "Jianhui Wang"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.14501v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14501v1",
+  "published": "2026-07-16T02:36:11+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Geometric Mode Steering of the Quantum Mpemba Effect",
+  "updated": "2026-07-16T02:36:11+00:00"
+}

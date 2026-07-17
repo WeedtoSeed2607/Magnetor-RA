@@ -1,0 +1,21 @@
+{
+  "abstract": "Background Parkinson\u2019s disease (PD) is a progressive neurodegenerative disorder characterized by motor and non-motor symptoms, including autonomic dysfunction. Increasing evidence suggests that PD pathology may originate in the enteric nervous system and propagate to the brain via the vagus nerve. Accordingly, structural alterations of the vagus nerve could reflect disease-related neurodegeneration and may serve as a biomarker for PD. Vagus nerve ultrasound enables non-invasive measurement of the vagus nerve by measuring the cross-sectional area (CSA). However, existing studies report conflicting findings regarding vagus nerve CSA in PD. This meta-analysis evaluates whether vagus nerve CSA is decreased in persons with PD compared to controls. Methods Online databases were searched up to January, 2026, for studies measuring the CSA of the vagus nerve in PD patients using ultrasound. Twelve studies with a total of 1091 participants (541 PD and 550 controls) were included. Inclusion criteria encompassed peer-reviewed studies with PD patients and controls. Quality assessment was conducted using the Newcastle\u2013Ottawa Scale. Meta-analysis was performed using a random effects model accounting for between-study heterogeneity. Results This meta-analysis showed a statistically significant reduction in CSA of PD patients compared to the controls. The mean CSA of the right and left vagus nerve was 1.97 mm 2 and 1.70 mm 2 in PD patients and, 2.21 mm 2 and 1.89 mm 2 in controls. Study quality was moderate to high but high heterogeneity was observed. Conclusions On a group level, there is a reduction of CSA of the vagus nerve in PD patients measured by ultrasound. Supplementary Information The online version contains supplementary material available at 10.1007/s00415-026-13993-w.",
+  "authors": [
+    "Sijben LCJ",
+    "van Kuijk SMJ",
+    "Jahanshahi A",
+    "Mess WH",
+    "Janssen MLF"
+  ],
+  "doi": "10.1007/s00415-026-13993-w",
+  "domain": "neuro",
+  "external_id": "PMC13372917",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-15T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Ultrasonography demonstrates vagus nerve atrophy in Parkinson's disease: a meta-analysis.",
+  "updated": null
+}

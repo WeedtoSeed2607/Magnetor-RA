@@ -1,0 +1,19 @@
+{
+  "abstract": "We study a finite-time quantum information engine in which a two-level system is measured by a quantum harmonic oscillator acting as a meter and where useful work is extracted conditionally on the measurement outcome. Using multi-objective optimisation, we find a Pareto-optimal trade-off between extractable work and its fluctuations and show that reducing fluctuations entails higher thermodynamic costs: greater information consumption, more engine cycles, longer operation time, and reduced average work output. In the limit of a highly accurate meter, we obtain the work distribution, its moments, and the Pareto front analytically. In this regime, the work statistics of the engine reduce to those of a qubit in contact with a single thermal bath. We further analyse the associated information flows by examining the mutual information and Fisher information, and show that the Pareto-optimal engine designs lie very close to local maxima of the latter with respect to the operation time of the device. Our results provide a compact description of the trade-offs between work, its fluctuations, and thermodynamic costs in quantum information engines.",
+  "authors": [
+    "Jonas Berx",
+    "Ted Olander",
+    "Henning Kirchberg"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.14973v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14973v1",
+  "published": "2026-07-16T13:28:49+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Pareto-optimal work extraction and the thermodynamic cost of precision in quantum information engines",
+  "updated": "2026-07-16T13:28:49+00:00"
+}

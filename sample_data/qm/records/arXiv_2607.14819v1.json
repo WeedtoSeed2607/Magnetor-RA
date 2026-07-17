@@ -1,0 +1,18 @@
+{
+  "abstract": "Quantum remote control, also known as quantum remote implementation of an operator (QRIO), enables the remote manipulation of an arbitrary quantum state by implementing a desired quantum operation at a distant location. Significant progress has recently been made in developing QRIO protocols and their variants. Most existing schemes employ hyperentangled states where entanglement is shared across multiple degrees of freedom (DOFs). However, these protocols typically exploit only one degree of freedom at a time. In this work, we propose a QRIO protocol that simultaneously utilizes the polarization and spatial DOFs of a two-qubit hyperentangled state to remotely implement an arbitrary hybrid operator on an unknown single-photon two-qubit hyperstate. The shared hyperentangled resource is realized using the polarization and spatial modes of photons, while the protocol is constructed using linear optical elements and cross-Kerr nonlinear interactions to facilitate effective photon-photon coupling. Furthermore, the effects of measurement errors arising from finite coherent state distinguishability and coherent state dissipation are analyzed and the corresponding success probability of the protocol is evaluated. The results demonstrate that an appropriate choice of the cross-Kerr phase shift and coherent state amplitude significantly enhances the protocol performance, making the proposed scheme a promising candidate for hybrid quantum communication and distributed quantum information processing.",
+  "authors": [
+    "Satish Kumar",
+    "Anirban Pathak"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.14819v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14819v1",
+  "published": "2026-07-16T10:38:50+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Quantum Remote Implementation of Hybrid Operations on Hyperstates Using Hyperentangled States",
+  "updated": "2026-07-16T10:38:50+00:00"
+}

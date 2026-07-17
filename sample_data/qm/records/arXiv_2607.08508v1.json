@@ -1,0 +1,19 @@
+{
+  "abstract": "Quantum gate teleportation is a key technique in fault-tolerant quantum computation that uses resource states to implement logical gates. Here, we develop a theory of quantum gate teleportation protocols that implement non-Clifford gates on arbitrary input states without revealing any information about them; we refer to these protocols as magic gate teleportation (MGT). We uncover a hidden structure within MGT -- after backpropagating the Pauli measurements, MGT protocols can be viewed as encoding the input state into a stabilizer code heralded by the measurement outcomes, followed by a logical non-Clifford gate. Using this structure, we construct MGT protocols for any resource state obtained by applying commuting Pauli rotations to a stabilizer state, and provide an efficient algorithm for synthesizing their circuit implementations. Conversely, we prove that useful resource states for MGT, i.e., states that can be used for non-Clifford gates through MGT protocols, are necessarily Clifford-equivalent to diagonal states; in particular, the output state distilled from the $[\\![5, 1, 3]\\!]$ protocol is not useful for MGT. Finally, we identify conditions under which the feedforward operators can be implemented by Pauli operators, shedding light on the paradigm of algorithmic fault tolerance and simplifying the feedforward operations needed for quantum computing.",
+  "authors": [
+    "Yunzhe Zheng",
+    "Allen Zang",
+    "Aleksander Kubica"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.08508v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08508v1",
+  "published": "2026-07-09T14:03:43+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Magic Gate Teleportation: Structure, Useful Resource States, and Simpler Feedforward",
+  "updated": "2026-07-09T14:03:43+00:00"
+}

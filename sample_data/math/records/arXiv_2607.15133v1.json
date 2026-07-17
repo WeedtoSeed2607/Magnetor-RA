@@ -1,0 +1,20 @@
+{
+  "abstract": "We investigate a second-order Modica-Mortola functional of the form \\[ E_\\varepsilon[u] := \\int_\u03a9\\frac{1}{\\varepsilon} W(x, \\nabla u) + \\varepsilon|\\nabla^2 u|^2 \\, dx, \\] which models solid--solid phase transitions in heterogeneous media. We neglect the assumption of frame indifference in the elastic energy density $W$ while allowing for space-dependent, pointwise-compatible wells. Under suitable assumptions on $W$ and regularity conditions on the associated rank-one connection, we prove that $E_\\varepsilon$ $\u0393$-converges to a local interfacial energy defined for suitable laminate-type configurations.",
+  "authors": [
+    "Elisa Davoli",
+    "Jakob Deutsch",
+    "Manuel Friedrich",
+    "Kerrek Stinson"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.15133v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15133v1",
+  "published": "2026-07-16T15:41:45+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Solid-solid phase transitions with space-dependent wells",
+  "updated": "2026-07-16T15:41:45+00:00"
+}

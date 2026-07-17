@@ -1,0 +1,27 @@
+{
+  "abstract": "Dynamic entanglement distribution is a key requirement for scalable, multi-user and multi-protocol quantum networks. We demonstrate a metropolitan-scale entanglement-based quantum communication network enabled by a quantum reconfigurable optical add-drop multiplexer (q-ROADM), which dynamically distributes polarisation-entangled photon pairs from a broadband source to six users over deployed campus and metropolitan fibre. The network supports programmable full-mesh, partial-mesh and sliced sub-network configurations, enabling flexible allocation of entanglement resources according to link condition and service requirement. We demonstrate stable six-user full-mesh operation over more than 150 hours, compare full-mesh and time-shared partial-mesh strategies under different source and detector conditions, and realise quantum network slicing with optional/additional interconnection links. We also show that the same infrastructure can support different quantum protocols by showcasing Secure Inaugural Authentication-Transfer (SIAT) combined with Network flooding over multiple paths to improve the security of onboarding a new user. These results demonstrate a q-ROADM-enabled entanglement distribution architecture as a novel route towards reconfigurable, service-oriented quantum networking over optical fibre infrastructure.",
+  "authors": [
+    "Rui Wang",
+    "Marcus J. Clark",
+    "Obada Alia",
+    "Sima Bahrani",
+    "Djeylan Aktas",
+    "Matej Perani\u0107",
+    "Mario Stip\u010devi\u0107",
+    "Martin Lon\u010dari\u0107",
+    "John Rarity",
+    "Siddarth K. Joshi",
+    "Dimitra Simeonidou"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.15262v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15262v1",
+  "published": "2026-07-16T17:54:43+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Dynamic Entanglement Distribution for Multi-User and Multi-Protocol Quantum Networking",
+  "updated": "2026-07-16T17:54:43+00:00"
+}

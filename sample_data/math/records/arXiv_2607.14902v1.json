@@ -1,0 +1,18 @@
+{
+  "abstract": "On $d$-dimensional cylinders $\\mathcal{C}= \\mathbb{R}^k\\times N$, with a closed manifold $N$ as base and large scale dimension $k\\in[1,d)$, we prove quadratic estimates in weighted $L^2$ space for Dirac operators perturbed by bounded, measurable and accretive coefficients. This gives in particular homogeneous Kato square root estimates on $\\mathcal{C}$ for Riesz transforms associated with second order divergence form elliptic operators, having measurable coefficients with degeneracy governed by a Muckenhoupt $A_2$ weight. By localisation and scaling, it also yields local quadratic estimates for perturbed Dirac operators on general manifolds with locally thin cylindrical geometry, and possibly with zero injectivity radius.",
+  "authors": [
+    "Gianmarco Brocchi",
+    "Andreas Ros\u00e9n"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.14902v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14902v1",
+  "published": "2026-07-16T12:20:30+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Global quadratic estimates for degenerate elliptic operators on cylinders",
+  "updated": "2026-07-16T12:20:30+00:00"
+}

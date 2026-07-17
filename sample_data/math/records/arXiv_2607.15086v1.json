@@ -1,0 +1,18 @@
+{
+  "abstract": "We study time-discrete parametric approximations of evolution equations in Hilbert spaces based on residual minimization. The solution is represented by a parametrized ansatz belonging to a low-dimensional nonlinear manifold, and time stepping is performed by minimizing suitably defined residuals at each step. Two natural residual formulations are considered: discretization followed by parametrization of the evolution equation, and discretization of the Dirac--Frenkel variational principle governing the parameter dynamics. A unified error analysis is developed for both approaches within the family of $\u03b6$-methods. The resulting bounds separate the effects of time discretization from those of residual minimization and yield first- and second-order convergence under Lipschitz, one-sided Lipschitz, and dissipativity assumptions. For the variational formulation, additional stability conditions involving the conditioning of the parametrization map arise naturally. The framework is applied to Gaussian approximation manifolds, for which residual norms and gradients admit explicit closed-form expressions when polynomial operators are involved. This enables efficient implementation without spatial discretization. Numerical experiments for time-dependent Schr\u00f6dinger equations illustrate the theoretical convergence rates and the influence of residual accuracy on conservation properties.",
+  "authors": [
+    "Eddy de Leon",
+    "Caroline Lasser"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.15086v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15086v1",
+  "published": "2026-07-16T14:57:44+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Residual-Based Time Discretization on Nonlinear Approximation Manifolds: Analysis and Gaussian Applications",
+  "updated": "2026-07-16T14:57:44+00:00"
+}

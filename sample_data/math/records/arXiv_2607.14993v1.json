@@ -1,0 +1,18 @@
+{
+  "abstract": "We show sharpness of the phase transition for a nearest-neighbour percolation model on $\\mathbb Z^d$, where vertices carry independent types and the percolation probability of edges depends on the type of the adjacent vertices. Our proof uses the OSSS inequality and adapts to our setup the method developed in Duminil-Copin et al. (2017) for the random cluster model. Additionally, we provide a more extensive study of the special case of combined Bernoulli bond and site percolation featuring a phase transition with two parameters.",
+  "authors": [
+    "Olivier Henry",
+    "Peter M\u00f6rters"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.14993v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14993v1",
+  "published": "2026-07-16T13:44:35+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Sharp phase transition for percolation with short-range dependencies",
+  "updated": "2026-07-16T13:44:35+00:00"
+}

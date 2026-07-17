@@ -1,0 +1,22 @@
+{
+  "abstract": "The rapid advancement of diffusion models has raised concerns about their misuse in generating deceptive visual content, motivating growing interest in AI-generated image detection. Many existing detection methods rely on image semantic features, but modern diffusion models are optimized to closely match the semantic structure of real images, reducing the effectiveness of semantic-based detection. An alternative line of work exploits differences revealed through diffusion reconstruction; however, most existing approaches treat reconstruction error as a static and passive metric, which can be sensitive to generators or post-processing, thereby limiting robustness. In this work, we propose Adversarial Diffusion Reconstruction Distance (ADRD), a detection framework that models diffusion reconstruction as a dynamic response process rather than a fixed descriptor. ADRD actively probes the reconstruction behavior by introducing perturbation in latent space and measuring how reconstruction deviations respond under identical perturbations. We empirically observe that real images typically exhibit larger and more variable reconstruction responses, while diffusion-generated images tend to show more stable reconstruction behavior, reflecting differences in their alignment with the diffusion model\u2019s implicit data manifold. By characterizing reconstruction sensitivity instead of absolute reconstruction error, ADRD provides a complementary perspective to existing reconstruction-based detectors. Experimental evaluations on multiple benchmarks suggest that reconstruction response under controlled perturbations constitutes a meaningful signal for diffusion-generated image detection. The code is available at https://github.com/ezell-chou/adrd",
+  "authors": [
+    "Zhou Y",
+    "Hu X",
+    "Tong J",
+    "Lin C",
+    "Sun M",
+    "Chen S"
+  ],
+  "doi": "10.1371/journal.pone.0350655",
+  "domain": "neuro",
+  "external_id": "PMC13367716",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-01-01T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "ADRD: Detecting diffusion-generated images via adversarial perturbation induced reconstruction discrepancy.",
+  "updated": null
+}

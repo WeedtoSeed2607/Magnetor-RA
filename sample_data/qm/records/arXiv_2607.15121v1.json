@@ -1,0 +1,22 @@
+{
+  "abstract": "In recent years, quantum lock-in detection has emerged as a promising technique to accurately detect weak signals submerged in background noise. However, the signal-to-noise ratio of existing protocols is severely limited by spectral leakage resulting from control operations implemented in pulse form. Here, we propose a general protocol for realizing quantum lock-in detection by employing successive quantum adiabatic evolution. In our protocol, the signal modulation is achieved by adiabatically controlling the time evolution of the quantum probe, which enables the implementation of triangular modulation functions. The realization of triangular-wave modulation fundamentally solves the problem of spectral leakage and facilitates the extraction of the complete characteristics of the target signals. We present a practical implementation scheme of adiabatic quantum lock-in detection based on nitrogen-vacancy centers in diamond, and demonstrate that the proposed protocol possesses strong resilience against experimental imperfections. Our results establish adiabatic quantum lock-in detection as a robust and experimentally accessible approach to detection of weak alternating signals in noisy environments, thus promoting the advance of real-world quantum sensing technologies.",
+  "authors": [
+    "Kangze Li",
+    "Siqi Chen",
+    "Hao Zhang",
+    "Jiazhao Tian",
+    "Liantuan Xiao",
+    "Gerardo Adesso"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.15121v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15121v1",
+  "published": "2026-07-16T15:29:48+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Quantum Lock-In Detection via Successive Adiabatic Evolution",
+  "updated": "2026-07-16T15:29:48+00:00"
+}

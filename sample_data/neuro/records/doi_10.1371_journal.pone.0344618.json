@@ -1,0 +1,20 @@
+{
+  "abstract": "In response to growing demands for sustainable, scalable, and learner-centered feedback practices in higher education, this study examined the effects of different feedback modalities on Foreign Language (FL) learners\u2019 self-regulated learning (SRL) strategies and writing performance within the Turkish university context. Guided by self-regulated learning theory and national digital transformation priorities, a quasi-experimental design was employed with three groups: an Automated Feedback (AF) group using Grammarly, a Generative AI Feedback (GenAI-F) group using ChatGPT, and an Instructor-Mediated Feedback (IMF) group without automated feedback. Eighty-four preparatory school students participated in a ten-week intervention involving multiple argumentative writing tasks, pre- and post-writing assessments, and a validated SRL strategy questionnaire. Mixed factorial ANOVAs revealed significant main effects of time on cognitive and metacognitive SRL strategies, alongside significant interaction effects between feedback type and time for idea planning and interest enhancement. The GenAI-F group demonstrated the largest gains in metacognitive and motivational regulation strategies and achieved significantly higher improvements in overall writing performance and content quality compared with the AF and IMF groups. Moderation analyses further indicated that CEFR-based proficiency levels shaped feedback effectiveness, with GenAI-F yielding stronger benefits for intermediate-level learners. These findings suggest that generative AI-mediated feedback can support sustainable EFL writing instruction by fostering autonomous learning capacities, with potential implications for reducing instructor workload through scalable feedback support, although this dimension was not directly measured in the present study, and promoting lifelong learning skills aligned with higher education sustainability agendas.",
+  "authors": [
+    "Selvi AE",
+    "Irgato\u011flu A",
+    "Yurttadur O",
+    "Da\u011fba\u015f\u0131 G"
+  ],
+  "doi": "10.1371/journal.pone.0344618",
+  "domain": "neuro",
+  "external_id": "PMC13367666",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-01-01T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Sustainable L2 writing pedagogy in Turkish higher education: Effects of AI-mediated feedback on self-regulated learning and writing performance.",
+  "updated": null
+}

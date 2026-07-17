@@ -1,0 +1,18 @@
+{
+  "abstract": "We extend the limited participation model in Basak and Cuoco (1998) to allow for traders with different time-preference coefficients but identical constant relative risk-aversion coefficients. Our main result gives parameter restrictions which ensure the existence of a Radner equilibrium. As an application, we give further parameter restrictions which ensure all traders survive in the long run.",
+  "authors": [
+    "Jin Choi",
+    "Kasper Larsen"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.15057v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15057v1",
+  "published": "2026-07-16T14:32:13+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Existence and convergence of discrete-time Kyle models with multiple insiders",
+  "updated": "2026-07-16T14:32:13+00:00"
+}

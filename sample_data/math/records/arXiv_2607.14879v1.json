@@ -1,0 +1,18 @@
+{
+  "abstract": "A Banach space $X$ is said to have the ball covering property (BCP) if the unit sphere of $X$ can be covered by countably many open balls $B(x_i, r_i)$ with $r_i\\leq \\|x_i\\|$ for each $i\\in\\mathbb{N}$. If there are $R, \u03b4>0$ so that $r_i\\leq R$ and $\\|x_i\\|-r_i>\u03b4$ for all $i\\in\\mathbb{N}$, then we say that $X$ has the uniform ball covering property (UBCP). In this paper, we show that if $X$ has an $1$-unconditional basis or $X$ is an $1$-complemented subspace of a Banach space with a shrinking $1$-unconditional basis, then the Calkin algebra $\\mathcal{B}(X)/\\mathcal{K}(X)$ fails the BCP. It is also shown that if $X$ has a shrinking unconditional basis with unconditional constant less than 2, then $\\mathcal{B}(X)$ has the UBCP.",
+  "authors": [
+    "Sreejith Siju",
+    "Bentuo Zheng"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.14879v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14879v1",
+  "published": "2026-07-16T11:52:47+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Ball Covering Property on Operators and Calkin Algebra",
+  "updated": "2026-07-16T11:52:47+00:00"
+}

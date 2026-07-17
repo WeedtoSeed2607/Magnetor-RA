@@ -1,0 +1,19 @@
+{
+  "abstract": "We numerically analyze a discretized version of the quantum contact process, a non-equilibrium model having a competition between a coherent infection process and a dissipative recovery process. Previously, the continuous-time version has been discussed to have a phase transition in a novel quantum universality class, while experimental investigations of a related process have pointed towards the transition being in the classical directed percolation class. We demonstrate that these differences stem from details of the discretization of the process and construct a systematic way to continuously interpolate between these results. Finally, we provide evidence that the modification of the universality class is due to destructive interference effects, showing a clear quantum-mechanical origin.",
+  "authors": [
+    "Robin Prampain dit Boulan",
+    "Jerom Jebai",
+    "Hendrik Weimer"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.14663v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14663v1",
+  "published": "2026-07-16T07:30:20+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Tuning the universality class of a quantum process by Trotterization",
+  "updated": "2026-07-16T07:30:20+00:00"
+}

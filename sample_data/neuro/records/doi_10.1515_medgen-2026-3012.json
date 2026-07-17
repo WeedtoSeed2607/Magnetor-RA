@@ -1,0 +1,20 @@
+{
+  "abstract": "Abstract Polygenic scores are nowadays common tools in psychiatric genetic research and are also increasingly applied in clinical settings. In this article, we give an overview of polygenic scores in psychiatric research, focusing on recent trends and novel applications such as using polygenic scores in family studies. Furthermore, we discuss use cases of polygenic scores in clinical studies and clinical practice, for instance using polygenic scores to predict treatment response to medication. While some challenges of polygenic scores are not unique to psychiatry (e.g. limited reliability or transferability across ancestries), we also highlight the specialties of using polygenic scores in psychiatric research and clinical practice (e.g. clinical and biological heterogeneity across and within psychiatric conditions), as well as limitations of other applications beyond research, e.g. using polygenic scores for psychiatric conditions for embryo selection. We further make the case for careful communication of genetics to patients and the general public. We conclude by providing an outlook which includes future directions and applications of polygenic scores in psychiatric research and clinical practice.",
+  "authors": [
+    "Frach L",
+    "David FS",
+    "N\u00f6then MM",
+    "Forstner AJ"
+  ],
+  "doi": "10.1515/medgen-2026-3012",
+  "domain": "neuro",
+  "external_id": "PMC13340641",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-01T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Polygenic scores in psychiatric research and clinical practice.",
+  "updated": null
+}

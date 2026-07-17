@@ -1,0 +1,32 @@
+{
+  "abstract": "The scalability of neutral atom quantum computing demands integrated electronic control systems with low latency, modular architecture, and real-time feedback capability. Here, we present an FPGA-based electronic control system that eliminates the PC from the feedback loop, integrating photon counting, real-time decision-making, and waveform generation within a unified PXIe architecture. The system achieves a total feedback latency of $282\\,\\mathrm{\u03bcs}$ and is validated in practical experiments by assembling defect-free atom arrays from 24 stochastically loaded optical tweezers. A single-round rearrangement achieves a filling fraction of $\\sim96\\%$, while feedback-controlled iterative rearrangement over five rounds boosts the success probability for generating a 10-atom defect-free array from $65.7\\%$ to $95.4\\%$. This system establishes the electronic infrastructure necessary for mid-circuit measurement and real-time quantum error correction on neutral-atom platforms.",
+  "authors": [
+    "Ya-Dong Hu",
+    "Dong-Qi Ma",
+    "Tian-Yang Zhang",
+    "Liang Chen",
+    "Yi-Chen Zhang",
+    "Xiao-Kang Zhong",
+    "Wen-Yi Zhu",
+    "Hong-Jie Fan",
+    "Qing-Xuan Jie",
+    "Yan-Lei Zhang",
+    "Gang Li",
+    "Xi-Feng Ren",
+    "Xu-Liang Zhang",
+    "Guang-Can Guo",
+    "Zhu-Bo Wang",
+    "Chang-Ling Zou"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.08687v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08687v1",
+  "published": "2026-07-09T16:49:29+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Low-latency FPGA-based electronic control system for fast preparation of defect-free atom arrays",
+  "updated": "2026-07-09T16:49:29+00:00"
+}

@@ -1,0 +1,27 @@
+{
+  "abstract": "Chronic kidney disease (CKD) leads to bone loss and bone marrow adipose tissue (BMAT) accumulation. Sclerostin and dickkopf-1 (DKK1) are two inhibitors of Wnt signalling, which suppress bone formation, promote bone marrow adipogenesis, and are elevated in CKD. However, therapies targeting sclerostin have shown limited efficacy in improving bone health in CKD animal models. Herein, we explored whether dual inhibition of sclerostin and DKK1 via a rodent bispecific antibody (rbsAb) could prevent bone loss and suppress BMAT accumulation in a CKD mouse model. CKD was induced using an adenine-supplemented diet in male mice, with CKD and control mice treated weekly for 6-weeks with vehicle or 30 mg/kg body weight of rbsAb. Circulating sclerostin and DKK1 were ~2- and ~3-fold higher, respectively, in CKD mice compared to controls. Proteomic profiling by LC-MS/MS and functional enrichment analysis suggested that in CKD mice, adipogenesis, osteoclast differentiation and bone resorption were increased whereas osteoblast differentiation was inhibited. These changes were prevented by antibody treatment. MicroCT revealed that long bones of CKD mice were characterised by lower bone mineral density, trabecular and cortical bone, and impaired biomechanical properties, but their vertebrae were unaffected. RbsAb treatment prevented cortical and trabecular bone loss and restored biomechanical properties. BMAT, as visualised by microCT imaging of osmium-stained bones, was elevated in CKD but reduced to control levels by rbsAb treatment. In conclusion, dual inhibition of sclerostin and DKK1 improved bone integrity and suppressed BMAT in experimental CKD, suggesting a promising therapeutic avenue for renal osteodystrophy.",
+  "authors": [
+    "Promruk W",
+    "Jayash SN",
+    "Chutoe C",
+    "Ke HZ",
+    "Liu X",
+    "Wade RL",
+    "von Kriegsheim A",
+    "Cawthorn WP",
+    "Staines KA",
+    "Stephen LA",
+    "Farquharson C"
+  ],
+  "doi": "10.1038/s41413-026-00556-y",
+  "domain": "neuro",
+  "external_id": "PMC13373193",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-15T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Bispecific antibody against sclerostin and DKK1 improves bone health and reduces bone marrow adipose tissue accumulation in experimental chronic kidney disease.",
+  "updated": null
+}

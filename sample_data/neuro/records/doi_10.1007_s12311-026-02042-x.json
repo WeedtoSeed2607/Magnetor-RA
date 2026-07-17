@@ -1,0 +1,20 @@
+{
+  "abstract": "The cerebellum, long known for its role in motor control, has increasingly been implicated in cognitive and affective functions. Despite this broadened perspective, its connectivity remains undercharacterized relative to the cerebral cortex. Here, we present the first comprehensive cerebellar connectome analysis derived from a large-scale, meta-analytic database of over 7,800 high-resolution tract-tracing studies in the rat brain. Leveraging the neuroVIISAS framework, we constructed a directionally weighted, hierarchically organized cerebellar subnetwork integrating both intrinsic and extrinsic connections, including lateralization and interhemispheric projections. Our methodological pipeline involved region expansion, graph-theoretical filtering, and systematic edge weighting by anatomical significance. The resulting network, encompassing 862 regions and over 21,000 edges, was analyzed across multiple topological scales. Mesoscale analysis revealed hallmark properties of small-world and scale-free networks, while motif and modularity analyses identified non-random, functionally coherent microcircuits and subsystems. Local connectome metrics uncovered key integrative hubs\u2013especially within brainstem-cerebellar loops\u2013and exposed gradients of modularity, controllability, and vulnerability. A novel vulnerability analysis showed that the removal of high-significance edges leads to rapid and irregular degradation of clustering in the empirical network, in contrast to the robustness of rewired surrogate models. This indicates the presence of structurally privileged bottlenecks essential for cerebellar integration. Our results collectively highlight the cerebellum\u2019s dual design: functionally specialized yet structurally efficient, with both local modularity and long-range integration. This study establishes a robust foundation for future multimodal, dynamic, and cross-species connectomic research. Integrating empirical data on neuronal dynamics, synaptic plasticity, and gene expression will be essential to fully realize the translational potential of cerebellar network models in both health and disease.",
+  "authors": [
+    "Schmitt O",
+    "Morawska P",
+    "Prathapan V",
+    "Eipert P"
+  ],
+  "doi": "10.1007/s12311-026-02042-x",
+  "domain": "neuro",
+  "external_id": "PMC13372957",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-16T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "The Cerebellar Connectome.",
+  "updated": null
+}

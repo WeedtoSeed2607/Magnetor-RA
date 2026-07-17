@@ -1,0 +1,18 @@
+{
+  "abstract": "In this paper, we propose a novel tamed stochastic gradient Hamiltonian Monte Carlo (tSGHMC) algorithm for sampling and stochastic optimization problems with superlinearly growing stochastic gradients. Under a certain continuity in average condition and a strong convexity condition, we establish a non-asymptotic error bound in Wasserstein-2 distance for tSGHMC with the rate of convergence equal to $1/4$. Then, we derive an upper estimate for the associated expected excess risk, which provides a theoretical guarantee for the performance of tSGHMC. To illustrate the effectiveness of the proposed algorithm, we apply tSGHMC to practical examples, including a newsvendor problem and a Conditional Value-at-Risk minimization problem, using synthetic and real-world datasets. Numerical results support our theoretical findings. Furthermore, we compare tSGHMC with its first-order counterpart, namely, the tamed unadjusted stochastic Langevin algorithm. Simulation results demonstrate that tSGHMC achieves lower root mean square error and expected excess risk across a range of tasks.",
+  "authors": [
+    "Zhuoran Wang",
+    "Ying Zhang"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.14862v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14862v1",
+  "published": "2026-07-16T11:36:00+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Tamed Stochastic Gradient Hamiltonian Monte Carlo",
+  "updated": "2026-07-16T11:36:00+00:00"
+}

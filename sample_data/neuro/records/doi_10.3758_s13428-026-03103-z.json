@@ -1,0 +1,17 @@
+{
+  "abstract": "The exactness of pupil-based video-oculography (pVOG) is limited by the pupil size artifact (PSA), involving shifts in pupil position with changes in pupil diameter. This study investigates PSA\u2019s effects on fixation drift measurement and compares two correction methods. The first, the \u201cinterpolation method,\u201d creates calibrations for different pupil sizes by adjusting illumination and interpolating between them based on the current pupil diameter. The second, the \u201cregression method,\u201d uses natural fluctuations in pupil size during fixation to estimate PSA gain via regression, then corrects pupil position accordingly. Here, the regression method was optimized for correcting fixation drift measurements by removing microsaccades and frequency components below 1 Hz and above 15 Hz. PSA was compared with size-related pupil displacements relative to the limbus to better investigate its cause. Pupil dilation caused downward and temporal shifts (PSA gains: 0.23 deg/mm horizontally, 0.62 deg/mm vertically). The PSA affected vertical fixation drifts ( R 2 = 14%) more strongly than horizontal drifts ( R 2 = 1.5%). The mean and precision of PSA gain estimates did not differ between methods. Both reduced the determination of fixation drift by pupil diameter changes ( R 2 ). PSA stability over 12 min was confirmed in 77% of cases. Power spectral density analysis supported the effectiveness of the regression correction, aligning with previous findings. PSA is probably caused mainly by the shift of the pupil relative to the limbus, as it did not differ significantly from the shift in camera coordinates. Overall, the regression method is a promising technique for correcting PSA in pVOG to improve fixation drift measurements. Supplementary Information The online version contains supplementary material available at 10.3758/s13428-026-03103-z.",
+  "authors": [
+    "Eggert T"
+  ],
+  "doi": "10.3758/s13428-026-03103-z",
+  "domain": "neuro",
+  "external_id": "PMC13369443",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-14T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Correction for the pupil size artifact improves the measurement of fixation drift with a head-mounted pupil tracker.",
+  "updated": null
+}

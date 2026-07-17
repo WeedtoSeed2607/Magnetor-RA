@@ -1,0 +1,20 @@
+{
+  "abstract": "Abstract Non-invasive transcranial ultrasound stimulation (TUS) enables deep brain therapeutic exploration at unprecedented scale. However, its optimal use is limited by the uncertainty surrounding ultrasound sensitivity across brain regions and cell types. This uncertainty often forces selection of sub-optimal parameter\u2013target treatment paradigms guided solely by precedent, rather than an unbiased search of the larger combinatorial space. In principle, human brain-wide gene expression data could allow for a refinement of the search space based on known mechanisms and associated gene expression. In this perspective, we discuss the practicality of genetically informed TUS parameter search in humans using the Allen Brain Atlas and incorporating a broad set of genes related to the hypothesized mechanisms of TUS neuromodulation. We define principal component expression patterns across the brain, enabling dimensionality reduction and spatial clustering of ultrasound-relevant gene expression data. We identify regional clusters of covarying gene expression profiles across the brain topology that are likely to have similar responsivity to TUS. These findings may explain previous perplexities around highly variant neuronal response across brain areas and highlight the need to optimize stimulation parameters in the context of brain region and its molecular profile.",
+  "authors": [
+    "Fan JM",
+    "Tadayon E",
+    "Krystal AD",
+    "Murphy KR"
+  ],
+  "doi": "10.1162/IMAG.a.1294",
+  "domain": "neuro",
+  "external_id": "PMC13347599",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-01-01T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Toward a transcriptomic framework for ultrasound neuromodulation: A perspective on gene expression and regional brain sensitivity.",
+  "updated": null
+}

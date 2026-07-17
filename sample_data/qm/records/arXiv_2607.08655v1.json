@@ -1,0 +1,17 @@
+{
+  "abstract": "Temperature is one of the central concepts of thermodynamics, yet its meaning away from equilibrium remains elusive. This problem is particularly acute in isolated quantum many-body systems: their states evolve unitarily, need not be close to equilibrium, and can retain energy coherence, a feature with no classical thermodynamic analogue. A non-stationary quantum state contains two kinds of energy fluctuations. One is associated with energy populations and has the usual thermodynamic interpretation; the other arises from coherence between energy sectors and drives time dependence. We propose that temperature, also out of equilibrium, locates the state within the family of regular states compatible with its energy-coherence structure. This leads to a natural definition of temperature for regular nonequilibrium states. The resulting inverse temperature is not generally the derivative of thermodynamic entropy with respect to energy. Indeed the principle of maximum entropy does not extend in its usual form; it is replaced by a principle of minimum discrimination information. We also develop the corresponding theory for subsystems, where temperature cannot in general be inferred from the reduced state alone. Instead, it is determined by the induced local thermodynamic structure, with boundary ambiguities removed in the thermodynamic limit.",
+  "authors": [
+    "Maurizio Fagotti"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.08655v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08655v1",
+  "published": "2026-07-09T16:24:55+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Temperature Beyond Equilibrium in Isolated Quantum Many-Body Systems and Their Subsystems",
+  "updated": "2026-07-09T16:24:55+00:00"
+}

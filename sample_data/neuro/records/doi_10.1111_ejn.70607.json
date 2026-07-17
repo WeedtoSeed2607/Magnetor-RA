@@ -1,0 +1,22 @@
+{
+  "abstract": "ABSTRACT The right central amygdala (CeA) is involved in the processing of emotional\u2010affective dimensions of pain. Through the spino\u2010parabrachio\u2010amygdaloid pain pathway, the CeA receives nociceptive information from calcitonin gene\u2010related peptide (CGRP) neurons in the parabrachial nucleus. Recent evidence indicates that the glutamate delta 1 (GluD1) receptor, an atypical ionotropic glutamate receptor that largely functions as a synaptogenic molecule involved in the formation and maintenance of synapses, regulates this projection in mice. Despite its strong cellular expression, little is known about the subsynaptic localization of GluD1, and its potential interaction with CGRP terminals, in CeA neurons. To address this issue and further characterize the ultrastructure and synaptic connectivity of CGRP terminals across species, we used single and double immuno\u2010electron microscopy techniques in mice and monkeys. For all ultrastructural parameters examined, no species difference was found. In both species, CGRP\u2010positive (CGRP+) terminals formed symmetric or asymmetric synapses with dendrites, symmetric synapses with soma, and less commonly, asymmetric synapses with spines. Almost 90% of CGRP+ terminals forming asymmetric or symmetric synapses expressed vGluT2 immunoreactivity confirming the glutamatergic and peptidergic nature of this projection. Confocal microscopic analyses confirmed the perisomatic association between CGRP+ and GluD1+ puncta in mice and monkeys. At the ultrastructural level, GluD1 was expressed in the core of symmetric axo\u2010dendritic and axo\u2010somatic synapses and perisynaptic to asymmetric synapses formed by CGPR+ terminals. These findings demonstrate that the CGRP+ PB\u2010CeA projection mediates its effects through a heterogeneous population of terminals that display strong synaptic relationships with GluD1 in rodents and primates.",
+  "authors": [
+    "Choi D",
+    "Villalba RM",
+    "Dalal K",
+    "Par\u00e9 JF",
+    "Dravid SM",
+    "Smith Y"
+  ],
+  "doi": "10.1111/ejn.70607",
+  "domain": "neuro",
+  "external_id": "PMC13373983",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-01T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Calcitonin Gene\u2010Related Peptide (CGRP)\u2010Containing Terminals in the Central Amygdala of Mice and Monkeys: Ultrastructural Analysis and Subsynaptic Expression of GluD1.",
+  "updated": null
+}

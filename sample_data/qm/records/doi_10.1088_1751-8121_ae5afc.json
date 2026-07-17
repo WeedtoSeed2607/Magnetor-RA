@@ -1,0 +1,19 @@
+{
+  "abstract": "Uncertainty relations quantify fundamental limits on simultaneous measurement of quantum observables. While conventional formulations are state-dependent, state-independent uncertainty relations (SIURs) impose universal bounds determined solely by the algebraic structure of the operators, with applications across metrology, quantum cryptography, and entanglement detection. Despite extensive study, exact analytical variance-based SIURs have so far been established primarily for one- and bi-partite systems, while entropic SIURs have been extended to multipartite and memory-assisted settings through information-theoretic constructions. In contrast, exact variance-based SIURs beyond the bipartite level have remained analytically unresolved.} Here we develop a representation-theoretic framework for multipartite SIURs in collective spin-$\\tfrac{1}{2}$ systems. Using the Clebsch--Gordan decomposition and extremal analysis of total spin variance, we derive exact state-independent bounds up to quintipartite systems. A clear structural dichotomy emerges: odd $n$ systems exhibit strictly positive universal bounds (e.g., $\u0394^2(\\mathfrak{su}_2)\\!\\ge\\!4/11$ for $n=3$), whereas even $n$ admit vanishing variance on trivial sectors but retain positive reduced-space bounds (e.g., $\u0394^2(\\mathfrak{su}_2)\\!\\ge\\!1/8$ for $n=4$). These results establish the first unified, algebraic framework for multipartite variance-based SIURs in qubit ensembles.",
+  "authors": [
+    "Yiling Wang",
+    "Kailash Misra",
+    "Naihuan Jing"
+  ],
+  "doi": "10.1088/1751-8121/ae5afc",
+  "domain": "qm",
+  "external_id": "2607.14376v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14376v1",
+  "published": "2026-07-15T21:28:02+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "State-independent uncertainty relations on multipartite spin $1/2$-systems",
+  "updated": "2026-07-15T21:28:02+00:00"
+}

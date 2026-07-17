@@ -1,0 +1,26 @@
+{
+  "abstract": "The snake-in-the-box problem, introduced by Kautz in 1958, asks for the longest induced (chordless) path, called a snake, in the hypercube graph $Q_n$. The maximum length $a(n)$ is known in each dimension $n \\leq 8$. We give snakes that are longer than the previous best-known in every dimension from $9$ to $13$, improving the lower bound on $a(n)$. All record-length paths are provided in a computer-verifiable dataset.",
+  "authors": [
+    "Paul Orland",
+    "Lucas Fagan",
+    "Michele Tarquini",
+    "Davide Passaro",
+    "Maksymilian Manko",
+    "Elli Heyes",
+    "Angus Gruen",
+    "Giorgi Butbaia",
+    "Justin Tan",
+    "Sergei Gukov"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.15270v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15270v1",
+  "published": "2026-07-16T17:57:52+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "A Census of New Snake-in-the-Box Records",
+  "updated": "2026-07-16T17:57:52+00:00"
+}

@@ -1,0 +1,22 @@
+{
+  "abstract": "Spatial proteomics uncovers the molecular basis of cellular function in intact tissues. Laser capture microdissection coupled with mass spectrometry enables comprehensive proteomic profiling of selected tissue regions but typically does not support cell-type-specific proteomic analysis. We present NicheProt, a 3D optical microscopy-guided and photobleaching-mediated cell barcoding approach for isolating intact, specific cell types from defined microanatomical tissue compartments or niches. Using sequential bottom-up proteomic analysis, we defined two distinct phenotypes of CD11c + dendritic cells based on their spatial locations in the inflamed mouse spleen. These two compartment-specific dendritic cell populations were characterized by proteomic signatures differing in the levels of 54 proteins. This 3D tissue microscopy-guided method offers cell-type and microregion-resolved proteomic analysis, facilitating the proteomic discovery of previously unrecognized cell subtypes and their functional roles in distinct tissue compartments.",
+  "authors": [
+    "Wu YC",
+    "Schwartz D",
+    "Khalil EA",
+    "Upadhye A",
+    "Rehman J",
+    "Lee SSY"
+  ],
+  "doi": "10.1126/sciadv.aee6237",
+  "domain": "neuro",
+  "external_id": "PMC13371888",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-17T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "NicheProt: Cell-type-resolved proteomics of tissue compartments.",
+  "updated": null
+}

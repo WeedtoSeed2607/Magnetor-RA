@@ -1,0 +1,18 @@
+{
+  "abstract": "We obtain a quantitative form of Schur's comparison theorem for curves with finite total curvature in CAT(k) spaces. This sharpens and extends the classical arm and bow lemmas in Euclidean space, as well as their Riemannian analogues. The proof is based on a comparison formula for curves in model planes, expressed in terms of curvature measures and a notion of moment arm borrowed from mechanics. Another ingredient is a refinement of Reshetnyak's theorem that controls the curvature of the majorizing curve.",
+  "authors": [
+    "Mohammad Ghomi",
+    "John Ioannis Stavroulakis"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.15106v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15106v1",
+  "published": "2026-07-16T15:17:42+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "A quantitative Schur comparison theorem for curves in CAT(k) spaces",
+  "updated": "2026-07-16T15:17:42+00:00"
+}

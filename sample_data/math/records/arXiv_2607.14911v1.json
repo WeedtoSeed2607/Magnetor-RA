@@ -1,0 +1,19 @@
+{
+  "abstract": "We investigate finite-dimensional feedback stabilization for nonlinear nonautonomous stochastic parabolic equations driven by $Q$-Wiener, covering both additive and multiplicative perturbations. The control is given by a finite linear combination of localized indicator-type actuators whose supports are selected as part of the construction and may have arbitrarily small total measure. The feedback law is constructed by means of oblique projections onto suitable finite-dimensional subspaces. Within the variational Gelfand triple framework, we prove well-posedness of the closed-loop system under standard coercivity, growth, and global Lipschitz assumptions. By appropriately choosing the actuator configuration and feedback strength, we establish exponential mean-square stabilization of the stochastic dynamics and, for pure multiplicative noise, almost-sure stabilization. A fully discrete three-layer implementation complements the theoretical results. Numerical experiments illustrate the influence of number of actuators, noise intensity, and nonlinear effects on the closed-loop stabilization behavior.",
+  "authors": [
+    "Behzad Azmi",
+    "Jonas von der Heydt",
+    "Sergio Rodrigues"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.14911v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14911v1",
+  "published": "2026-07-16T12:29:18+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Finite-Dimensional Feedback Stabilization of Nonautonomous Stochastic Parabolic Equations",
+  "updated": "2026-07-16T12:29:18+00:00"
+}

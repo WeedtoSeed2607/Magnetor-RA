@@ -1,0 +1,19 @@
+{
+  "abstract": "No signaling in time (NSIT) has often been treated as the clean operational remnant of noninvasive measurability. If an earlier measurement leaves every later marginal unchanged, the temporal process appears classical. We show that this inference is false. We introduce common fixed points (CFPs) of nonselective measurement channels as an exact mechanism that erases all marginal evidence of invasiveness while preserving disturbed outcome conditioned branches. For a qutrit ring subject to a local degenerate Luders measurement, we solve the full CFP manifold analytically. Every state on this manifold satisfies exact pairwise NSIT, yet every nontrivial member violates a Leggett Garg inequality, including the maximally mixed state. The violation is governed by finite branch displacement, not by residual signaling. Hidden variable reconstruction, entropic witnesses, protocol landscape scans, noise robustness, and finite shot simulations show that exact NSIT certifies only the disappearance of marginal signals after outcome erasure, not the existence of a classical temporal history.",
+  "authors": [
+    "Minsu Kim",
+    "Jeongho Bang",
+    "Han Seb Moon"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.14583v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14583v1",
+  "published": "2026-07-16T05:23:14+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Exact No Signaling in Time without Temporal Classicality",
+  "updated": "2026-07-16T05:23:14+00:00"
+}

@@ -1,0 +1,24 @@
+{
+  "abstract": "Physical activity is believed to positively influence brain health and cognition and is considered a modifiable lifestyle factor that may protect against cognitive decline and neurodegeneration. In this observational study, we investigated the cross-sectional and longitudinal effects of self-reported total and moderate-to-vigorous physical activity on cognitive scores on the Trail Making Test (TMT-A and TMT-B), hippocampal volume, and Brain Age Gap Estimate (BrainAGE) in a large population-based cohort from the LIFE-Adult Study (n=2576). Furthermore, we examined the effect of objectively measured physical activity on brain structure in a subgroup with available accelerometry data (n=227). Multiple linear regression analyses did not show any positive effects of self-reported or objectively measured physical activity on hippocampal volume or processing speed and executive function. Longitudinal path analyses suggested a potential for reverse causation, where a higher BrainAGE at baseline was associated with lower physical capacity at follow-up. Additionally, we observed an age-related bias in the self-reporting of physical activity, indicating that older individuals tend to overestimate their level of activity. Future interventions targeting middle-aged adults may be necessary to raise awareness of potential misperception and encourage increased physical activity.",
+  "authors": [
+    "Kalc P",
+    "Dahnke R",
+    "Sanders C",
+    "Beyer F",
+    "Z\u00fclke A",
+    "Riedel-Heller S",
+    "Witte AV",
+    "Gaser C"
+  ],
+  "doi": "10.7554/eLife.109461",
+  "domain": "neuro",
+  "external_id": "PMC13372311",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-15T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "The effect of physical activity on brain structure and cognitive function in the population-based cohort of LIFE-Adult Study.",
+  "updated": null
+}

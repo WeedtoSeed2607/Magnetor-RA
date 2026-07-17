@@ -1,0 +1,20 @@
+{
+  "abstract": "We study one-way quantum communication lower bounds for search problems. Unlike decision problems, search problems can have many valid outputs, which pose a fundamental barrier to standard quantum lower-bound techniques. We overcome this by developing a novel method based on matrix discrepancy, which allows us to bound the output measurements of a quantum protocol jointly. As applications of our method, we establish the first tight quantum lower bounds for two fundamental search problems in some natural parameter regimes: collision finding and triangle finding. For collision finding, we prove a tight $\u03a9(N^{1/4})$ one-way quantum communication lower bound. Previously, the best-known quantum communication lower bound for collision finding was $\u03a9(N^{1/12})$ due to G\u00f6\u00f6s and Jain (RANDOM 2022), and no stronger bound was known even under the one-way restriction. For triangle finding in graph streams, we prove a one-pass quantum streaming space lower bound of $\u03a9\\left(\\sqrt{\u0394_V}\\right)$ for graphs with $m$ edges, $\u0398(m)$ triangles, and constant $\u0394_E$, where $\u0394_V$ and $\u0394_E$ denote the maximum number of triangles sharing a common vertex and edge, respectively, under the condition that $1\\le \u0394_V\\le m^{2/3}$. This constitutes the first nontrivial quantum space lower bound in this regime, matching the classical upper bound of Jayaram and Kallaugher (RANDOM 2021) up to logarithmic factors. Notably, our method also recovers the classical lower bound of Kallaugher and Price (SODA 2017) through an entirely different argument, avoiding their Boolean-Hidden-Matching reduction that breaks down for quantum protocols.",
+  "authors": [
+    "Minbo Gao",
+    "Chenghua Liu",
+    "Guangxu Yang",
+    "Tianyi Zhang"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.08517v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08517v1",
+  "published": "2026-07-09T14:11:09+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Quantum Communication Lower Bounds for Search Problems via Matrix Discrepancy",
+  "updated": "2026-07-09T14:11:09+00:00"
+}

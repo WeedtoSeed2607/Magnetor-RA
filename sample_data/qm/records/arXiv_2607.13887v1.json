@@ -1,0 +1,19 @@
+{
+  "abstract": "Quantum gate synthesis is essential for implementing quantum algorithms on real hardware, yet existing methods are often computationally demanding. Here, we introduce a novel approach based on reservoir computing, which we name Group Reservoir Computing, an efficient machine-learning paradigm for learning temporal dynamics whose training reduces to a single linear regression, to reduce the resources required. The method is grounded in the Wei--Norman decomposition, which provides a compact description of the evolution. We prove that the reconstructed dynamics always remain unitary by construction and derive formal error bounds that establish the theoretical validity of the strategy. On the standard single-qubit gate set the trained network produces a control pulse in a single pass, with mean fidelity 0.94 across the eight benchmark gates; used to warm-start gradient-based optimization, it roughly halves the number of iterations that plain gradient ascent needs to reach a target fidelity, so that the relevant figure of merit is the time to reach that threshold rather than the final accuracy after a fixed budget. Owing to its general formulation, the method applies to any finite-dimensional hardware platform; the route to multiqubit synthesis is discussed in the closing section.",
+  "authors": [
+    "Francesco Caravelli",
+    "Roberto Menta",
+    "Antonio Sannia"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.13887v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.13887v1",
+  "published": "2026-07-15T14:34:25+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "A Reservoir Computing Approach to Quantum Gate Synthesis",
+  "updated": "2026-07-15T14:34:25+00:00"
+}

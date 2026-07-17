@@ -1,0 +1,20 @@
+{
+  "abstract": "We study strong temporal approximation of periodic stochastic Korteweg--de Vries equation driven by small additive \\(Q\\)-Wiener noise of amplitude \\(\\mathcal O(\\varepsilon)\\), \\(0<\\varepsilon\\ll1\\). Strong error analysis for temporal approximations of stochastic KdV is a challenging problem, due to the additional derivative term in the nonlinearity and thanks to the lack of suitable exponential moment bounds for the exact solutions. Exploiting the small-noise regime, we first decompose the solution into a deterministic KdV flow and a stochastic component; then we linearize the obtained stochastic equation and approximate the resulting equation by means of Fourier analytic techniques. Combining the small-noise linearization error, the discretization error of the linearized equation, and the deterministic temporal approximation error, we prove strong convergence rates of order \\(\\mathcal O(\\max(\\varepsilon^2,\u03c4,\\varepsilon\u03c4^{1/2}))\\) under \\(H^1\\)-regularity and \\(\\mathcal O(\\max(\\varepsilon^2,\u03c4))\\) under \\(H^2\\)-regularity, for the obtained approximation of the original stochastic KdV. To the best of our knowledge, these are the first explicit strong convergence rates shown for numerical time approximations of the stochastic KdV.",
+  "authors": [
+    "Jianbo Cui",
+    "Raffaele D'Ambrosio",
+    "Stefano Di Giovacchino",
+    "Liying Sun"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.14813v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14813v1",
+  "published": "2026-07-16T10:30:17+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Strong error analysis of a temporal approximation for stochastic Korteweg-de Vries equation with small additive noise",
+  "updated": "2026-07-16T10:30:17+00:00"
+}

@@ -1,0 +1,21 @@
+{
+  "abstract": "Superconducting circuits embedding Josephson junctions leverage microwave drives for control and measurement of quantum states. Although increasing the drive power is desirable for improving the efficiency of these operations, it eventually triggers unwanted transitions to uncontrolled states. While careful choice of circuit symmetries and parameters can mitigate these effects, the presence of spurious circuit modes spoils the resilience to high power. In this work, we engineer a transmon-resonator system free of any detrimental unwanted transitions. This resilience enables us to access drive powers at which we uncover a remarkable physical phenomenon: the collapse and inversion of the Josephson potential. Through spectroscopy and readout experiments, we confirm that the driven potential goes to zero and inverts as the power increases. The inversion corresponds to the dynamical stabilization of the transmon at its unstable equilibrium point, directly analogous to an inverted pendulum. This result reveals a new limitation of strongly driven superconducting circuits beyond drive-induced transitions. In addition, the dynamical renormalization of the Josephson potential opens up novel avenues for the control of superconducting circuits, and the autonomous stabilization of noise-resilient quantum states.",
+  "authors": [
+    "Sercan Deve",
+    "Marius Villiers",
+    "Marijn A. Morssink",
+    "Robin C. Dekker",
+    "Gary A. Steele"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.14344v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14344v1",
+  "published": "2026-07-15T20:15:58+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Collapse and Inversion of the Josephson Potential in a Strongly Driven Superconducting Circuit",
+  "updated": "2026-07-15T20:15:58+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "abstract": "Quantum phase transitions provide a controlled route for generating many-body excitations, but the dynamics after the critical point can be as important as the initial defect creation. Recent progress in quantum annealing has made it possible to access coherent nonequilibrium dynamics in programmable Ising systems with thousands of superconducting qubits. Here we use this capability to study a longitudinally biased quantum Ising chain, where Kibble--Zurek defect creation is followed by nonintegrable post-critical dynamics. The longitudinal bias confines kink--antikink excitations into mesonic bound states, so that the final spin configurations encode both the production of defects near the critical point and the subsequent evolution of the confined excitations. Using energy-scale rescaling and zero-noise extrapolation, we find that the defect density follows the expected biased Kibble--Zurek/Landau--Zener crossover and agrees with matrix-product-state simulations with uniform bias. In contrast, magnetization, spatial profiles, and minority-domain statistics reveal that mesonic evolution is interrupted by localization of the post-critical domain pattern. Matrix-product-state simulations with disorder reproduce this separation between robust defect creation and localized post-critical dynamics. Our results show that large-scale quantum annealers can probe the fate of critical excitations beyond defect counting.",
+  "authors": [
+    "Francis A. Bayocboc",
+    "Jacek Dziarmaga",
+    "Marek M. Rams",
+    "Jaka Vodeb"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.13842v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.13842v1",
+  "published": "2026-07-15T13:48:10+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Post-Critical Meson Dynamics of Kibble-Zurek Excitations in a 5,564-Qubit Quantum Annealer",
+  "updated": "2026-07-15T13:48:10+00:00"
+}

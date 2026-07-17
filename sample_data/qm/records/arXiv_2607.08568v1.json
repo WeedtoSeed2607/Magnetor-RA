@@ -1,0 +1,19 @@
+{
+  "abstract": "Renormalization provides a framework for relating microscopic models of physical systems to effective descriptions at larger length scales. This procedure is studied for the boundary states of non-chiral two-dimensional topologically ordered models. The initial data consist of renormalization fixed points built from representations of finite-dimensional $C^*$-Hopf algebras, which are then perturbed by uniform on-site noise quantum channels and repeatedly coarse-grained. The resulting flows admit an intrinsic algebraic description in terms of completely positive maps on the $C^*$-Hopf algebra or, equivalently, positive linear functionals on its enveloping $C^*$-Hopf algebra. Their iteration is governed by convolution powers, and convergent trajectories yield new matrix product density operator fixed points, described by finite $*$-quantum hypergroups. This provides a concrete physical interpretation of such structures. For finite group algebras and their duals, we provide explicit classifications via Goursat's lemma for groups. Finally, we formulate and prove a quantum generalization of Goursat's lemma for finite-dimensional $C^*$-Hopf algebras, a result of independent interest, which gives an explicit structural description of all convergent renormalization trajectories.",
+  "authors": [
+    "L\u00e9o Le-Nestour",
+    "David P\u00e9rez-Garc\u00eda",
+    "Alberto Ruiz-de-Alarc\u00f3n"
+  ],
+  "doi": null,
+  "domain": "qm",
+  "external_id": "2607.08568v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08568v1",
+  "published": "2026-07-09T14:56:47+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Renormalization flows for 1D mixed states and a quantum Goursat lemma",
+  "updated": "2026-07-09T14:56:47+00:00"
+}

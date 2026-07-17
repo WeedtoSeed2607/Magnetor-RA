@@ -1,0 +1,20 @@
+{
+  "abstract": "Let $k$ and $\\ell$ be positive integers. The family $C(k,\\ell)$ consists of all digraphs obtained from two internally vertex-disjoint directed paths of lengths at least $k$ and $\\ell$, respectively, and identifying their initial vertices and their terminal vertices. Addario-Berry, Havet and Thomass\u00e9 (JCT-B, 2007) asked whether, for any positive integers $k$ and $\\ell$ with $k+\\ell \\ge 4$, the chromatic number $\u03c7(D)$ is at most $k+\\ell-1$ for every $C(k,\\ell)$-free strongly connected digraph $D$. Let $D$ be a $C(k,\\ell)$-free Hamiltonian digraph. Kim, Kim, Ma and Park (JGT, 2018) showed that $\u03c7(D) \\le k+\\ell$ and the bound is attained when $k+\\ell=5$. In this paper, we prove that $\u03c7(D) \\le k+\\ell-1$ for $k+\\ell\\ge 6$ and this bound is best possible for all $k+\\ell\\geq 6$, which resolves the problem posed by Addario-Berry, Havet and Thomass\u00e9 for Hamiltonian digraphs.",
+  "authors": [
+    "Ruilin Zheng",
+    "Junying Lu",
+    "Xiaolin Wang",
+    "Yaojun Chen"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.08664v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.08664v1",
+  "published": "2026-07-09T16:32:28+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Two-block cycles and chromatic number of Hamiltonian digraphs",
+  "updated": "2026-07-09T16:32:28+00:00"
+}

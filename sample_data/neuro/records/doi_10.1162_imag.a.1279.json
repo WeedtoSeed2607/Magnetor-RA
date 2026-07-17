@@ -1,0 +1,23 @@
+{
+  "abstract": "Abstract Understanding how brain structure gives rise to function remains a central challenge in neuroscience. Post-mortem histology provides unparalleled microstructural insight into cytoarchitecture, myeloarchitecture, and cell-type distributions, yet lacks information on functional coupling. Conversely, in-vivo MRI can reveal functional dynamics but with limited microstructural specificity. Bridging these modalities is, therefore, essential for advancing our understanding of cortical organization. Here, we investigate laminar organization across the human visual hierarchy by integrating post-mortem and in-vivo imaging. Specifically, we combined post-mortem histology and quantitative MRI (qMRI) from the Alkemade and colleagues\u2019 dataset ( Alkemade et al., 2022 ) with in-vivo ultra-high resolution q T 2 * MRI (0.35 mm isotropic) and resting-state layer-fMRI (0.8 mm isotropic), focusing on areas V1, V2, V3, and hMT+. Among post-mortem measures, parvalbumin (PV) interneuron distributions across cortical layers best discriminated visual areas, outperforming cell body density (Nissl) and fiber density (Bielschowsky). Furthermore, comparing laminar R 2 * profiles across modalities revealed systematic differences between post-mortem and in-vivo MRI, attributable to the absence of vascular contributions in post-mortem data. Extending these laminar analyses to resting-state fMRI acquisition (here only the temporal mean is used for the laminar profiles) represents a first step toward linking structural and functional profiles across layers. Finally, we make our analysis framework publicly available to enable broader exploration of laminar organization across cortical systems using the Alkemade et al. (2022) dataset. This integrative approach sets the stage for future frameworks that unite microstructural and functional data, advancing the development of next-generation models of cortical computation.",
+  "authors": [
+    "Pizzuti A",
+    "Bazin PL",
+    "Ivanov D",
+    "Dresbach S",
+    "Peters JC",
+    "Goebel R",
+    "Gulban OF"
+  ],
+  "doi": "10.1162/IMAG.a.1279",
+  "domain": "neuro",
+  "external_id": "PMC13370752",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-01-01T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Multimodal laminar characterization of visual areas along the cortical hierarchy.",
+  "updated": null
+}

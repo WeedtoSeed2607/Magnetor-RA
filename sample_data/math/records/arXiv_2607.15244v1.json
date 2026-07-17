@@ -1,0 +1,18 @@
+{
+  "abstract": "We show, using group theoretic constructions, that the system of elliptic partial differential equations whose solutions determine the constant mean curvature immersions into hyperbolic 3 space are equivalent to the elliptic Liouville equation. In particular, the Darboux integrability of each equation shows that each of these equations admit an equivalent quotient representation which descends to an equivalence of the equations. The explicit map providing the equivalence is given.",
+  "authors": [
+    "Mark E. Fels",
+    "Thomas A. Ivey"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.15244v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15244v1",
+  "published": "2026-07-16T17:43:40+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "On the Darboux Integrability of the Constant Mean Curvature One Equation for Surfaces in Hyperbolic 3 space",
+  "updated": "2026-07-16T17:43:40+00:00"
+}

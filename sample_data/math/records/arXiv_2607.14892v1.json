@@ -1,0 +1,17 @@
+{
+  "abstract": "We study four-wave kinetic equations in space dimension three with power-law dispersion $\u03c9(p)=|p|^a$ and collision kernels with high-frequency growth measured by $\u03b2$. In weighted $L^\\infty$ spaces, we identify the sharp decay threshold $$ s_c=4\u03b2+3-\\frac a2. $$ For $s>s_c$, we prove local well-posedness by establishing trilinear bounds for the full gain-loss collision operator. For $s<s_c$, we prove ill-posedness by constructing data concentrated near a high-low-low-high resonant configuration. This threshold captures the balance between the high-frequency strength of the kernel and the geometry of the resonant manifold. The proof also shows that gain-loss cancellations are essential in the most delicate regimes.",
+  "authors": [
+    "Xilu Zhu"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.14892v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.14892v1",
+  "published": "2026-07-16T12:09:08+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Sharp decay thresholds in weighted $L^\\infty$ for wave kinetic equations with power-law dispersion",
+  "updated": "2026-07-16T12:09:08+00:00"
+}

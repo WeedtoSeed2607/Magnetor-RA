@@ -1,0 +1,23 @@
+{
+  "abstract": "Aim We aim to determine whether individuals with adult-onset hydrocephalus have an increased risk of incident epilepsy over time. Methods We analysed data from the UK Biobank cohort. Diagnoses of \u201chydrocephalus\u201d and \u201cepilepsy\u201d were identified through ICD-10-coded health records, excluding congenital and secondary cases. The association between these two diseases was investigated using logistic regression (adjusted for age and sex); subsequently, we performed a sampled cohort study to evaluate the hazard ratio (HR) for incident epilepsy in people with adult-onset hydrocephalus using Cox proportional hazards models with a dedicated sensitivity analysis including different sets of covariates such as demographic, lifestyle, vascular, and genetic factors. Results Our cohort included 483,790 controls, 5,028 individuals with epilepsy, and 320 with adult-onset hydrocephalus. Hydrocephalus and epilepsy were strongly associated (OR: 9.6, 95% CI: 6.4\u201313.8, p < 0.001). Adjusted Cox models demonstrated a markedly increased risk of incident epilepsy in people with adult-onset hydrocephalus, with HR values ranging from 14.62 (95% CI: 7.91\u201327.00, p < 0.001) to 23.80 (95% CI: 12.87\u201344.03, p < 0.001) across models, after adjusting for multiple covariates. Results were also consistent after excluding people with comorbid neurodegenerative dementias such as Alzheimer\u2019s disease. Conclusions We demonstrated a markedly increased risk of epilepsy in adult-onset hydrocephalus, independent of vascular and neurodegenerative comorbidities and not attributable to shunt-related complications. These findings underscore the importance of increased diagnostic vigilance, as seizures may be under-recognized in this population, and support further research to clarify mechanisms and optimize management strategies. Supplementary Information The online version contains supplementary material available at 10.1007/s10072-026-09227-6.",
+  "authors": [
+    "Buonocore J",
+    "Fortunato F",
+    "Fratto E",
+    "Sammarra I",
+    "Gambardella A",
+    "Quattrone A",
+    "Quattrone A"
+  ],
+  "doi": "10.1007/s10072-026-09227-6",
+  "domain": "neuro",
+  "external_id": "PMC13372835",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-16T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Risk of epilepsy in people with adult-onset hydrocephalus: insights from the UK Biobank.",
+  "updated": null
+}

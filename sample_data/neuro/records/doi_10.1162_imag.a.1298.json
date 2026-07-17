@@ -1,0 +1,18 @@
+{
+  "abstract": "Abstract Transcranial Magnetic Stimulation (TMS) is a promising tool to probe and enhance cognitive control, yet effects are often inconsistent across individuals. These inconsistencies may arise from individual differences in Lateral Frontoparietal (Control) Network (L-FPN) and Medial Frontoparietal (Default) Network (M-FPN) interactions, essential for suppressing internal distraction and facilitating cognitive control. We tested whether baseline connectivity between the L-FPN and M-FPN moderates TMS outcomes in cognitive control tasks. We used the generalized drift rate as a task-general behavioral index of cognitive control, as it overcomes the reliability and interpretability limitations of standard difference measures. Participants completed inhibition (Stroop), working memory (n-back), and flexibility (Navon) tasks before and after intermittent theta-burst stimulation (iTBS) to the L-FPN, dorsal frontoparietal (attention) network (D-FPN), or cranial vertex. Stimulation targets were defined using individualized resting-state parcellations to maximize precision. We found that baseline connectivity moderated stimulation outcomes: individuals with more integrated L-FPN/M-FPN networks benefited most from L-FPN stimulation, whereas those with more segregated networks showed greater improvements from D-FPN stimulation. Notably, stimulation of a single site did not uniformly enhance performance, underscoring the importance of individual network profiles. These findings highlight L-FPN/M-FPN interactions as a basis for individualized TMS interventions and the utility of combining precise network mapping with robust behavioral modeling to optimize neuromodulation interventions.",
+  "authors": [
+    "Kim B",
+    "Medaglia JD"
+  ],
+  "doi": "10.1162/IMAG.a.1298",
+  "domain": "neuro",
+  "external_id": "PMC13370750",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-01-01T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Frontoparietal control-default mode connectivity predicts TMS effects on cognitive control.",
+  "updated": null
+}

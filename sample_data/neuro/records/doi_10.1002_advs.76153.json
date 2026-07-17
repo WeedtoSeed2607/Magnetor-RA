@@ -1,0 +1,21 @@
+{
+  "abstract": "ABSTRACT Accurate perception of subtle visuo\u2010motor errors is essential for perceptual and sensorimotor learning, and supports timely corrective actions in precision\u2010based task. However, conventional perceptual training, typically based on response\u2010accuracy feedback, is limited in improving sensitivity to small, subtle errors. While prior approaches have focused on modulating sensory regions to enhance perceptual learning, we propose an alternative approach that targets a cognitive neural marker: the error positivity (Pe), a component of the error\u2010related potential (ErrP) originating in the anterior cingulate cortex, a key decision\u2010making region. We hypothesize that the Pe, which reflects conscious awareness of errors, serves as a modifiable neural correlate of error perception. In a five\u2010day longitudinal study, we show that providing real\u2010time feedback on the presence or absence of ErrPs during perceptual training accelerates perceptual learning at 3 \u2218 errors and enhances perceptual performance at 6 \u2218 errors without accelerating the learning rate, relative to behavioral training alone. These behavioral gains were accompanied by increase in Pe amplitude. Together, these findings offer new neurophysiological insights into the mechanisms of error perception, and establish ErrP\u2010based brain\u2010computer interface interventions as a promising approach for fostering perceptual learning in domains where detecting subtle errors is critical.",
+  "authors": [
+    "Liu DH",
+    "Iwane F",
+    "Zhang M",
+    "Cohen LG",
+    "Mill\u00e1n JDR"
+  ],
+  "doi": "10.1002/advs.76153",
+  "domain": "neuro",
+  "external_id": "PMC13370092",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-15T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Brain\u2010Computer Interface Training Fosters Perceptual Skills to Detect Errors.",
+  "updated": null
+}

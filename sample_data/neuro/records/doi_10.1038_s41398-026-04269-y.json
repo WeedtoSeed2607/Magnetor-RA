@@ -1,0 +1,25 @@
+{
+  "abstract": "First episodes of affective disorders often emerge during adolescence and young adulthood. Alterations in resting-state functional connectivity (RSFC) have been reported in affective disorders, yet findings are heterogeneous and associations of RSFC with subclinical affective symptoms in community samples remain limited. A better understanding of these underlying neurobiological mechanisms may aid in identifying early vulnerability markers of affective disorders. We examined associations between affective symptom severity and both static and dynamic RSFC using resting-state fMRI data from 512 adolescents and young adults (aged 14\u201323) drawn from an age- and sex-stratified population-based sample. Group independent component analysis was used to derive RSFC measures. Associations with depressive and manic symptom severity were assessed while controlling for age and sex. Dynamic RSFC was analyzed using a sliding-window approach. Static RSFC showed significant effects of age and sex but no associations with affective symptoms. Dynamic RSFC analysis identified four connectivity states. In one state, manic symptom severity and its interaction with depressive symptom severity were associated with connectivity between the postcentral gyrus and the right superior temporal gyrus. Additionally, the dynamic index fraction of time showed interactions of affective symptoms with age and sex. Overall, RSFC measures demonstrated limited sensitivity to subclinical affective symptom variation in community youth, with only a single state-specific association observed. These findings suggest that subtle alterations in somatomotor-default mode network connectivity may reflect early vulnerability-related processes, though replications and further research are required. Key limitations include the use of very brief symptom measures and developmental heterogeneity across the sample.",
+  "authors": [
+    "Henneberg PM",
+    "Beesdo-Baum K",
+    "Marxen M",
+    "Joshi G",
+    "Hilbert K",
+    "Muehlhan M",
+    "Huth F",
+    "Mikolas P",
+    "Mennigen E"
+  ],
+  "doi": "10.1038/s41398-026-04269-y",
+  "domain": "neuro",
+  "external_id": "PMC13369973",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-07-15T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Changes in resting-state functional connectivity linked to affective symptoms: insights from a population-based study of adolescents and young adults.",
+  "updated": null
+}

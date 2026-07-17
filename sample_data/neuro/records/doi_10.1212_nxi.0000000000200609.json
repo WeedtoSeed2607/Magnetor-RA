@@ -1,0 +1,31 @@
+{
+  "abstract": "Background and Objectives Ravulizumab, a complement component 5 inhibitor, was approved for the treatment of adults with anti\u2013aquaporin-4 antibody\u2013positive (AQP4-Ab+) neuromyelitis optica spectrum disorder (NMOSD) based on results of the primary treatment period (PTP) of CHAMPION-NMOSD, a phase 3, open-label, external placebo-controlled trial. Here, we report the final efficacy and safety results of CHAMPION-NMOSD (PTP and the long-term extension [LTE]). Methods Adult patients with AQP4-Ab+ NMOSD received an IV, weight-based loading dose of ravulizumab on day 1 and a maintenance dose on day 15 and every 8 weeks thereafter. After completion of the PTP (up to 2.5 years), patients could enter the LTE. The primary endpoint was time to first adjudicated on-trial relapse. The placebo group of the eculizumab phase 3 trial PREVENT was used as an external comparator because eculizumab availability at CHAMPION-NMOSD initiation precluded the use of concurrent placebo control. Results Of 58 patients enrolled in the trial, 56 entered and 55 completed the LTE. The overall median (range) follow-up was 170.3 (11.0\u2013243.0) weeks, with 100.8 (53\u2013137) weeks during the LTE. No patient receiving ravulizumab had an adjudicated on-trial relapse throughout the PTP (84.0 patient-years) and LTE (105.7 patient-years); relative reduction in risk of relapse vs placebo (n = 47) was 98.9% (95% CI 91.8\u2013100; p < 0.0001). Treatment-emergent adverse events (TEAEs) and serious TEAEs were reported in 94.8% and 27.6% of patients, respectively, during the PTP and LTE. Most TEAEs were grade 1 and unrelated to ravulizumab. One patient discontinued ravulizumab because of TEAEs. Two cases of meningococcal infection occurred during the PTP; none occurred in the LTE. One death due to hypertensive heart disease (unrelated to ravulizumab) occurred during the LTE. Discussion Long-term ravulizumab treatment (median follow-up, >3 years) continued to show significant relapse risk reduction in patients with AQP4-Ab+ NMOSD, and the safety profile was consistent with the known safety profile for ravulizumab. Trial Registration Information ClinicalTrials.gov, NCT04201262 ; EudraCT: 2019-003352-37. Submitted December 11, 2019. First patient enrolled: December 13, 2019. clinicaltrials.gov/study/NCT04201262 . Classification of Evidence This study provides Class III evidence that long-term ravulizumab treatment, as compared with placebo, decreases the probability of clinical relapse in patients with AQP4-Ab+ NMOSD.",
+  "authors": [
+    "Pittock SJ",
+    "Barnett MH",
+    "Bennett JL",
+    "Berthele A",
+    "de S\u00e8ze J",
+    "Levy M",
+    "Nakashima I",
+    "Oreja-Guevara C",
+    "Palace J",
+    "Paul F",
+    "Pozzilli C",
+    "Pathak R",
+    "Allen K",
+    "Parks B",
+    "Kim HJ"
+  ],
+  "doi": "10.1212/NXI.0000000000200609",
+  "domain": "neuro",
+  "external_id": "PMC13372128",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-09-01T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Long-Term Ravulizumab Efficacy and Safety in AQP4 Antibody-Positive Neuromyelitis Optica Spectrum Disorder: Final CHAMPION-NMOSD Results.",
+  "updated": null
+}

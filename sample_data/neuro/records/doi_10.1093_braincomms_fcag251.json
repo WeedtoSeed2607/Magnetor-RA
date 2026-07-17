@@ -1,0 +1,24 @@
+{
+  "abstract": "Abstract Cognitive impairment is a common complaint in older adults, yet its evaluation relies largely on subjective reports and cognitive tests with variable sensitivity. Identifying objective neurophysiological markers of brain function may enable earlier detection and more individualized intervention strategies. A total of 454 participants (mean age 61.4 \u00b1 7.5 years; 45.3% females) underwent bilateral dorsolateral prefrontal cortex (DLPFC) transcranial magnetic stimulation (TMS)-EEG with the Delphi-MD system, alongside cognitive testing (Monreal Cognitive Assessment [MoCA] and NeuroTrax domains: memory, attention and executive function) and emotional inventories. Linear regression tested demographic and clinical predictors of cognition. K-means clustering identified cognitive subgroups, with between-cluster interhemispheric connectivity (IHC) differences assessed by Mann\u2013Whitney U-tests. Binary logistic regression with 5000 bootstrap resamples evaluated IHC as a predictor of cognitive cluster membership. Older age was associated with lower MoCA (worse) ( P < 0.001), while male sex associated with worse verbal memory ( P < 0.001); no factors were associated with attention or executive function. K-means clustering yielded two groups based on MoCA and domain scores: cognitively normal (CN, n = 367) and cognitively impaired (CI, n = 68), differing across all domains (all P < 0.001). CI participants displayed reduced DLPFC IHC ( P < 0.001). Logistic regression confirmed that reduced IHC strongly predicted impairment: one-unit decrease in right DLPFC IHC corresponded to approximately 4.35-fold higher odds of impairment (reciprocal OR = 4.35, 95% CIboot = 1.82\u201310.00), while a one-unit decrease in left DLPFC IHC corresponded to 3.03-fold higher odds of impairment (reciprocal OR = 3.03, 95% CIboot = 1.30\u20136.67). These effects were independent of age and sex. Reduced DLPFC IHC measured by TMS-EEG is robustly associated with increased risk of cognitive impairment, supporting its potential as an objective, early neurophysiological biomarker quantifying cognitive decline.",
+  "authors": [
+    "Zifman N",
+    "Fogel H",
+    "Rosenberg R",
+    "Levy-Lamdan O",
+    "Verhovski N",
+    "Strauss T",
+    "Bischof E",
+    "Goshen A"
+  ],
+  "doi": "10.1093/braincomms/fcag251",
+  "domain": "neuro",
+  "external_id": "PMC13372024",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-01-01T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Interhemispheric connectivity measured with transcranial magnetic stimulation and EEG as an objective marker of cognitive risk.",
+  "updated": null
+}

@@ -1,0 +1,21 @@
+{
+  "abstract": "Background Emerging epidemiological evidence indicates that groups in low socioeconomic positions exhibit more pronounced health benefits from nature exposure compared to more privileged groups. We have previously posited one possible mechanism underlying this phenomenon through our framework: (susceptibility to stress) groups in low socioeconomic positions are often exposed to more early-life stressors, which can induce a lifelong susceptibility to stress through various neurobiological pathways; (environmental sensitivity) susceptibility to stress, traditionally understood as heightened reactivity to stressors, could also encompass enhanced responsivity to health-protective exposures, inducing greater risks in adverse environments, but also greater benefits in protective environments. Objective Examine the moderation effect of early life stress on the association between residential nature exposure and fasting glucose. Methods We assessed the impact of residential nature exposure (Normalized Difference Vegetation Index) on glucose dysregulation (elevated levels of fasting blood glucose) with a specific focus on the moderation effect of early life stress (Stress and Adversity Inventory for Adults) using baseline data from a cohort of 340 nursing students. Results An initial analysis did not support our linear dose-response hypothesis. However, a theory-guided exploration revealed a significant curvilinear trend wherein participants with higher but also lower exposure to early-life stressors both exhibited lower levels of fasting glucose when living in greener neighborhoods. By contrast, for participants with relatively moderate early-life stressor exposure, there was no association between neighborhood greenness and fasting glucose. Discussion Our findings contribute to growing evidence and further support the idea that increasing access to nature within disadvantaged neighborhoods could be an effective strategy to mitigate metabolic risks and attenuate health disparities among vulnerable populations. As the evidence for this framework expands, it could inform more targeted interventions that leverage individual differences in environmental sensitivity to promote health equity, ultimately providing more nuanced and socioeconomically attuned approaches to public health.",
+  "authors": [
+    "Eisen AM",
+    "Cede\u00f1o Laurent JG",
+    "Spengler JD",
+    "Slavich GM",
+    "Olvera-Alvarez HA"
+  ],
+  "doi": "10.1371/journal.pone.0352771",
+  "domain": "neuro",
+  "external_id": "PMC13349149",
+  "full_text_available": true,
+  "license": "PMC open-access subset",
+  "pdf_url": null,
+  "published": "2026-01-01T00:00:00+00:00",
+  "raw": {},
+  "source": "PubMed Central",
+  "title": "Early life stress enhances the association between residential nature exposure and fasting blood glucose.",
+  "updated": null
+}

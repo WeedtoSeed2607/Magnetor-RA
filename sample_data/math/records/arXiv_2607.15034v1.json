@@ -1,0 +1,23 @@
+{
+  "abstract": "We present an extension of the template-based approach for Schur numbers developed by Rowley. This new form of template construction, which we call shifted S-templates, was discovered during a conversation with ChatGPT 5.5 Pro, then refined, verified, and extended to multiple shifted S-templates. These new templates generalize the first ones by giving more flexibility in the coloring. Using this added flexibility with the new way to color the special label cells of the template, we exhibit a template which yields the recurrence $S(k+2) \\geq 10S(k)+2$, improving on the classical Abbott-Hanson recurrence $S(k+2) \\geq 9S(k)+4$ for the same step. Combined with the known bounds $S(6) \\geq 536$ and $S(11) \\geq 203\\,828$, this implies $S(8) \\geq 5\\,362$ and $S(13) \\geq 2\\,038\\,282$, improving the previously listed lower bounds $5\\,286$ and $2\\,011\\,290$.",
+  "authors": [
+    "Nils Bengone",
+    "Amine Brouk",
+    "Max Grinsztajn",
+    "T\u00e9rence Helbert",
+    "Bao Lugherini",
+    "Arpad Rimmel",
+    "Joanna Tomasik"
+  ],
+  "doi": null,
+  "domain": "math",
+  "external_id": "2607.15034v1",
+  "full_text_available": true,
+  "license": "arXiv (open access, full text)",
+  "pdf_url": "https://arxiv.org/pdf/2607.15034v1",
+  "published": "2026-07-16T14:15:53+00:00",
+  "raw": {},
+  "source": "arXiv",
+  "title": "Shifted S-templates and improved lower bounds for Schur numbers",
+  "updated": "2026-07-16T14:15:53+00:00"
+}
