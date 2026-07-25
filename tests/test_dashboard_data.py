@@ -149,3 +149,42 @@ def test_search_access_gates_and_validates_password() -> None:
 def test_search_access_stays_unlocked_once_ok() -> None:
     # Already unlocked this session -> stays unlocked without re-entry.
     assert search_access("s3cret", None, True) == (True, None)
+
+
+def _graph_doc() -> dict[str, object]:
+    return {
+        "query": "q",
+        "nodes": [
+            {"id": "A", "title": "Alpha paper on codes", "influence": 1.0, "stable": True},
+            {"id": "B", "title": "Beta", "influence": 0.5, "is_retracted": True},
+            {"id": "C", "title": "Gamma", "influence": 0.2, "stable": False},
+        ],
+        "edges": [["B", "A"], ["C", "A"]],
+    }
+
+
+def test_graph_dot_is_a_digraph_with_nodes_and_edges() -> None:
+    from magnetor.dashboard_data import graph_dot
+
+    dot = graph_dot(_graph_doc())
+    assert dot.startswith("digraph EvidenceGraph {")
+    assert '"A"' in dot and '"B" -> "A"' in dot
+    assert "#d9534f" in dot  # retracted node coloured red
+    assert "#f0ad4e" in dot  # unstable-rank node coloured orange
+
+
+def test_graph_dot_respects_top_n_and_prunes_edges() -> None:
+    from magnetor.dashboard_data import graph_dot
+
+    dot = graph_dot(_graph_doc(), top_n=1)  # keep only node A
+    assert '"A"' in dot
+    assert "->" not in dot  # both edges had an endpoint that was dropped
+
+
+def test_graph_dot_escapes_quotes_in_titles() -> None:
+    from magnetor.dashboard_data import graph_dot
+
+    node = {"id": "A", "title": 'He said "hi"', "influence": 0.5}
+    doc: dict[str, object] = {"nodes": [node], "edges": []}
+    dot = graph_dot(doc)
+    assert '"hi"' not in dot  # inner double-quotes were neutralised

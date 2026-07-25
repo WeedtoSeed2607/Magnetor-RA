@@ -34,9 +34,14 @@ from magnetor.deepdive import (
 from magnetor.embeddings.base import Embedder
 from magnetor.embeddings.voyage import VoyageEmbedder
 from magnetor.errors import MagnetorError
+from magnetor.graph import build_graph_document, save_graph
+from magnetor.graph_scoring import score_graph
+from magnetor.harvest import DEFAULT_EXPAND_PER_ROUND, OpenAlexClient, WorksSource, run_harvest
+from magnetor.harvest import DEFAULT_LIMIT as HARVEST_DEFAULT_LIMIT
 from magnetor.indexing import DEFAULT_BATCH_SIZE, EmbeddingResult, open_index, run_embedding
 from magnetor.pipeline import DEFAULT_LIMIT, build_default_source, run_acquisition
 from magnetor.resources import DomainStore
+from magnetor.robustness import DEFAULT_RESAMPLES, bootstrap_rank_cis
 from magnetor.router import (
     DEFAULT_MARGIN,
     ROUTING_LOG_FILENAME,
@@ -63,6 +68,11 @@ def _build_embedder() -> Embedder:
     return VoyageEmbedder()
 
 
+def _build_works_source() -> WorksSource:
+    """Construct the default works source (indirection lets tests inject a fake)."""
+    return OpenAlexClient()
+
+
 def main(argv: Sequence[str] | None = None) -> int:
     """CLI entry point. Returns a process exit code."""
     parser = _build_parser()
@@ -83,8 +93,62 @@ def main(argv: Sequence[str] | None = None) -> int:
         return _run_trends(args)
     if args.command == "dashboard":
         return _run_dashboard(args)
+    if args.command == "harvest":
+        return _run_harvest(args)
     parser.print_help()
     return 2
+
+
+def _run_harvest(args: argparse.Namespace) -> int:
+    """Branch C (ADR-0006): harvest -> score -> robustness -> persist a graph."""
+    try:
+        result = run_harvest(
+            _build_works_source(), args.query, limit=args.limit,
+            expand_rounds=args.expand, expand_per_round=args.expand_top,
+        )
+    except MagnetorError as exc:
+        print(f"error: {exc}", file=sys.stderr)
+        return 2
+    if not result.papers:
+        print(f"[harvest] no papers for {args.query!r}", file=sys.stderr)
+        return 1
+
+    scores = score_graph(result)
+    robustness = bootstrap_rank_cis(result, resamples=args.resamples)
+    document = build_graph_document(result, scores, robustness, top_n=args.top_n)
+    path = save_graph(document)
+
+    leak = robustness.boundary_leakage
+    if result.expansion_rounds:
+        print(
+            f"[harvest] {result.n_fetched} papers, {len(result.edges)} in-set edges; "
+            f"leakage {result.seed_leakage:.0%} -> {leak:.0%} "
+            f"after {result.expansion_rounds} expansion round(s)"
+        )
+    else:
+        print(
+            f"[harvest] {result.n_fetched} papers, {len(result.edges)} in-set edges; "
+            f"boundary leakage {leak:.0%}"
+        )
+    if leak >= 0.5:
+        print(
+            "  note: leakage still high — raise --expand / --expand-top for a more "
+            "complete lineage.",
+            file=sys.stderr,
+        )
+    if result.self_referencing_ids:
+        ids = ", ".join(result.self_referencing_ids)
+        print(
+            f"  flag: dropped {len(result.self_referencing_ids)} self-citation edge(s) "
+            f"(upstream OpenAlex data error) on: {ids}",
+            file=sys.stderr,
+        )
+    for node in document["nodes"][:5]:
+        ci = f"CI {node['lo_rank']}-{node['hi_rank']}" if node["lo_rank"] else "-"
+        title = node["title"][:52]
+        print(f"  infl {node['influence']:.2f}  in={node['in_degree']:<3} {ci}  {title}")
+    print(f"  saved -> {path}")
+    return 0
 
 
 def _dashboard_command(port: int | None) -> list[str]:
@@ -523,6 +587,33 @@ def _build_parser() -> argparse.ArgumentParser:
     )
     dashboard.add_argument(
         "--port", type=int, default=None, help="Port for the Streamlit server."
+    )
+
+    harvest = sub.add_parser(
+        "harvest",
+        help="Branch C (ADR-0006): build an Evidence Graph for a query (offline batch).",
+    )
+    harvest.add_argument("query", help="The research question or keyword to harvest.")
+    harvest.add_argument(
+        "--limit", type=int, default=HARVEST_DEFAULT_LIMIT,
+        help=f"Papers to harvest from OpenAlex (default: {HARVEST_DEFAULT_LIMIT}).",
+    )
+    harvest.add_argument(
+        "--resamples", type=int, default=DEFAULT_RESAMPLES,
+        help=f"Bootstrap resamples for rank CIs (default: {DEFAULT_RESAMPLES}).",
+    )
+    harvest.add_argument(
+        "--top-n", type=int, default=60,
+        help="Keep the top-N most influential nodes in the saved graph (default: 60).",
+    )
+    harvest.add_argument(
+        "--expand", type=int, default=2,
+        help="Snowball rounds pulling in missing foundational papers to cut "
+             "boundary leakage (default: 2; 0 = seed only).",
+    )
+    harvest.add_argument(
+        "--expand-top", type=int, default=DEFAULT_EXPAND_PER_ROUND,
+        help=f"Foundational works pulled in per round (default: {DEFAULT_EXPAND_PER_ROUND}).",
     )
 
     show = sub.add_parser("show", help="Print stored records for a domain (read-only).")

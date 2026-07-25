@@ -249,3 +249,35 @@ def test_dashboard_run_reports_missing_streamlit(capsys, monkeypatch) -> None:
     err = capsys.readouterr().err
     assert code == 2
     assert "streamlit is not installed" in err
+
+
+class _FakeWorks:
+    """Offline WorksSource for the harvest CLI test — no OpenAlex call."""
+
+    def _work(self, wid: str, refs: tuple[str, ...]) -> dict[str, object]:
+        return {
+            "id": f"https://openalex.org/{wid}",
+            "title": f"Paper {wid}",
+            "publication_year": 2020,
+            "referenced_works": [f"https://openalex.org/{r}" for r in refs],
+            "cited_by_count": 1,
+        }
+
+    def search(self, query: str, *, limit: int) -> list[dict[str, object]]:
+        return [self._work("A", ()), self._work("B", ("A",)), self._work("C", ("A", "B"))]
+
+    def fetch_by_ids(self, ids: object) -> list[dict[str, object]]:
+        return []  # CLI test uses --expand 0; no expansion fetch expected
+
+
+def test_harvest_builds_and_saves_graph(capsys, monkeypatch) -> None:
+    monkeypatch.setattr("magnetor.cli._build_works_source", lambda: _FakeWorks())
+    code = main(["harvest", "quantum error correction", "--resamples", "30"])
+    out = capsys.readouterr().out
+    assert code == 0
+    assert "3 papers" in out and "saved ->" in out
+
+    from magnetor.graph import load_graph
+    doc = load_graph("quantum error correction")
+    assert doc is not None
+    assert doc["nodes"][0]["id"] == "A"  # most in-set-cited ranks first

@@ -119,6 +119,57 @@ def linked(title: str, url: str | None) -> str:
     return f"[{title}]({url})" if url else title
 
 
+def _dot_escape(text: str) -> str:
+    return text.replace("\\", " ").replace('"', "'").replace("\n", " ")
+
+
+def _short_label(title: str, words: int = 4) -> str:
+    parts = title.split()
+    return " ".join(parts[:words]) + ("…" if len(parts) > words else "")
+
+
+def graph_dot(document: dict[str, object], *, top_n: int = 40) -> str:
+    """Render an Evidence Graph document (ADR-0006 L4) as a Graphviz DOT string.
+
+    Node size = influence; colour encodes state — red retracted (integrity),
+    orange unstable rank (bootstrap CI), blue otherwise. Streamlit renders DOT
+    client-side, so no system Graphviz binary is required.
+    """
+    nodes = list(_as_dicts(document.get("nodes")))[:top_n]
+    keep = {str(n.get("id")) for n in nodes}
+    lines = [
+        "digraph EvidenceGraph {",
+        "  rankdir=LR;",
+        '  bgcolor="transparent";',
+        '  node [shape=circle, style=filled, fixedsize=true, fontsize=8,'
+        ' fontname="sans-serif"];',
+    ]
+    for node in nodes:
+        influence = _as_float(node.get("influence"))
+        width = 0.4 + 1.6 * influence
+        if node.get("is_retracted"):
+            fill = "#d9534f"  # retracted — integrity flag
+        elif node.get("stable") is False:
+            fill = "#f0ad4e"  # rank unstable under bootstrap
+        else:
+            fill = "#5b9bd5"
+        label = _dot_escape(_short_label(str(node.get("title") or node.get("id"))))
+        nid = _dot_escape(str(node.get("id")))
+        lines.append(f'  "{nid}" [label="{label}", width={width:.2f}, fillcolor="{fill}"];')
+    edges = document.get("edges")
+    for edge in edges if isinstance(edges, list) else []:
+        if isinstance(edge, list) and len(edge) == 2:
+            u, v = str(edge[0]), str(edge[1])
+            if u in keep and v in keep:
+                lines.append(f'  "{u}" -> "{v}" [color="#bbbbbb", arrowsize=0.5];')
+    lines.append("}")
+    return "\n".join(lines)
+
+
+def _as_float(value: object) -> float:
+    return float(value) if isinstance(value, (int, float)) else 0.0
+
+
 def search_access(
     expected: str | None, entered: str | None, already_ok: bool
 ) -> tuple[bool, str | None]:

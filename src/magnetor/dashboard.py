@@ -23,6 +23,7 @@ from magnetor.dashboard_data import (
     banner_lines,
     citation_url,
     frontier_feed,
+    graph_dot,
     linked,
     load_trends,
     paper_url,
@@ -32,6 +33,7 @@ from magnetor.deepdive import DeepDiveResult, Path, build_deep_dive
 from magnetor.embeddings.base import Embedder
 from magnetor.embeddings.voyage import VoyageEmbedder
 from magnetor.errors import MagnetorError
+from magnetor.graph import list_graphs, load_graph
 from magnetor.indexing import open_index
 from magnetor.router import CrossDomainRouter
 from magnetor.types import Domain
@@ -192,6 +194,55 @@ def main() -> None:
         _render_frontier(active)
     # Sentiment panel (Spec 11) omitted: the sentiment module is optional and
     # not enabled, and must never be blended into the Topic-Trend Banner.
+    st.divider()
+    _render_evidence_graph()
+
+
+def _render_evidence_graph() -> None:
+    """Branch C (ADR-0006): the query-relative influence node map."""
+    st.subheader("Evidence Graph — query-relative influence (Branch C)")
+    graphs = list_graphs()
+    if not graphs:
+        st.info('No graphs yet — build one with `magnetor harvest "<your question>"`.')
+        return
+
+    labels = [f"{g['query']}  ·  {g['n_nodes']} papers" for g in graphs]
+    choice = st.selectbox("Harvested question", range(len(graphs)), format_func=lambda i: labels[i])
+    document = load_graph(str(graphs[choice]["query"]))
+    if not document:
+        st.warning("Could not load that graph.")
+        return
+
+    leak = float(document.get("boundary_leakage") or 0.0)
+    n_nodes = len(document.get("nodes", []))
+    when = str(document.get("generated_at", "?"))[:10]
+    st.caption(
+        f"{n_nodes} nodes · generated {when} · node size = influence · "
+        "🔴 retracted · 🟠 rank unstable"
+    )
+    if leak >= 0.5:
+        st.warning(
+            f"Boundary leakage {leak:.0%}: most citations point outside the harvested set, "
+            "so this is a partial slice of the lineage (snowball expansion pending)."
+        )
+
+    top_n = st.slider("Nodes to draw", min_value=10, max_value=80, value=40, step=5)
+    st.graphviz_chart(graph_dot(document, top_n=top_n), width="stretch")
+
+    st.markdown("**Most influential — traceable pathway**")
+    for node in document.get("nodes", [])[:10]:
+        flags = " 🔴" if node.get("is_retracted") else ""
+        flags += " 🟠" if node.get("stable") is False else ""
+        ci = ""
+        if node.get("lo_rank"):
+            ci = f" · rank {node.get('lo_rank')}-{node.get('hi_rank')}"
+        title = linked(str(node.get("title") or node.get("id")), str(node.get("url") or "") or None)
+        st.markdown(
+            f"- {title}{flags}  \n"
+            f"  <small>influence {float(node.get('influence') or 0):.2f} · "
+            f"in-set citations {node.get('in_degree', 0)}{ci}</small>",
+            unsafe_allow_html=True,
+        )
 
 
 # Streamlit runs the entry script in a module named "__main__" and re-executes
