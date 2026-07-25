@@ -1,0 +1,2185 @@
+{
+  "query": "Defining Empathy",
+  "generated_at": "2026-07-25T10:44:44.967853+00:00",
+  "n_fetched": 318,
+  "boundary_leakage": 0.8758,
+  "resamples": 1000,
+  "self_citations_removed": [
+    "W2144872492",
+    "W3006940001",
+    "W2114329813",
+    "W4283709489"
+  ],
+  "nodes": [
+    {
+      "id": "W2016250205",
+      "title": "A scale for the measurement of empathic ability.",
+      "year": 1949,
+      "doi": "10.1037/h0061728",
+      "url": "https://doi.org/10.1037/h0061728",
+      "venue": "Journal of Consulting Psychology",
+      "in_degree": 19,
+      "pagerank": 0.033928,
+      "influence": 1.0,
+      "median_rank": 1.0,
+      "lo_rank": 1,
+      "hi_rank": 2,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W1624895288",
+      "title": "Exploratory Investigations of Empathy",
+      "year": 1969,
+      "doi": "10.1016/s0065-2601(08)60080-5",
+      "url": "https://doi.org/10.1016/s0065-2601(08)60080-5",
+      "venue": "Advances in experimental social psychology",
+      "in_degree": 26,
+      "pagerank": 0.026234,
+      "influence": 0.9969,
+      "median_rank": 2.0,
+      "lo_rank": 1,
+      "hi_rank": 6,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2335841795",
+      "title": "Mind, Self, and Society",
+      "year": 2015,
+      "doi": "10.7208/chicago/9780226112879.001.0001",
+      "url": "https://doi.org/10.7208/chicago/9780226112879.001.0001",
+      "venue": null,
+      "in_degree": 14,
+      "pagerank": 0.018612,
+      "influence": 0.9937,
+      "median_rank": 4.0,
+      "lo_rank": 1,
+      "hi_rank": 10,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W1980083892",
+      "title": "Measuring individual differences in empathy: Evidence for a multidimensional approach.",
+      "year": 1983,
+      "doi": "10.1037/0022-3514.44.1.113",
+      "url": "https://doi.org/10.1037/0022-3514.44.1.113",
+      "venue": "Journal of Personality and Social Psychology",
+      "in_degree": 69,
+      "pagerank": 0.018345,
+      "influence": 0.9906,
+      "median_rank": 4.0,
+      "lo_rank": 2,
+      "hi_rank": 8,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2041889512",
+      "title": "The necessary and sufficient conditions of therapeutic personality change.",
+      "year": 1957,
+      "doi": "10.1037/h0045357",
+      "url": "https://doi.org/10.1037/h0045357",
+      "venue": "Journal of Consulting Psychology",
+      "in_degree": 18,
+      "pagerank": 0.017749,
+      "influence": 0.9874,
+      "median_rank": 5.0,
+      "lo_rank": 2,
+      "hi_rank": 10,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W1989477529",
+      "title": "Premotor cortex and the recognition of motor actions",
+      "year": 1996,
+      "doi": "10.1016/0926-6410(95)00038-0",
+      "url": "https://doi.org/10.1016/0926-6410(95)00038-0",
+      "venue": "Cognitive Brain Research",
+      "in_degree": 17,
+      "pagerank": 0.017732,
+      "influence": 0.9843,
+      "median_rank": 6.0,
+      "lo_rank": 2,
+      "hi_rank": 13,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2018621954",
+      "title": "Personality and empathy.",
+      "year": 1950,
+      "doi": "10.1037/h0061674",
+      "url": "https://doi.org/10.1037/h0061674",
+      "venue": "Journal of Consulting Psychology",
+      "in_degree": 13,
+      "pagerank": 0.017381,
+      "influence": 0.9811,
+      "median_rank": 6.0,
+      "lo_rank": 2,
+      "hi_rank": 10,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2076371757",
+      "title": "A measure of emotional empathy1",
+      "year": 1972,
+      "doi": "10.1111/j.1467-6494.1972.tb00078.x",
+      "url": "https://doi.org/10.1111/j.1467-6494.1972.tb00078.x",
+      "venue": "Journal of Personality",
+      "in_degree": 47,
+      "pagerank": 0.017204,
+      "influence": 0.978,
+      "median_rank": 6.0,
+      "lo_rank": 3,
+      "hi_rank": 8,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2068607682",
+      "title": "Empathy and altruism.",
+      "year": 1975,
+      "doi": "10.1037//0022-3514.32.6.1134",
+      "url": "https://doi.org/10.1037//0022-3514.32.6.1134",
+      "venue": "Journal of Personality and Social Psychology",
+      "in_degree": 22,
+      "pagerank": 0.013283,
+      "influence": 0.9748,
+      "median_rank": 8.0,
+      "lo_rank": 4,
+      "hi_rank": 13,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2146425356",
+      "title": "Development of an empathy scale.",
+      "year": 1969,
+      "doi": "10.1037/h0027580",
+      "url": "https://doi.org/10.1037/h0027580",
+      "venue": "Journal of Consulting and Clinical Psychology",
+      "in_degree": 39,
+      "pagerank": 0.012263,
+      "influence": 0.9717,
+      "median_rank": 9.0,
+      "lo_rank": 6,
+      "hi_rank": 13,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2064649728",
+      "title": "Empathy in Six- and Seven-Year-Olds",
+      "year": 1968,
+      "doi": "10.2307/1127365",
+      "url": "https://doi.org/10.2307/1127365",
+      "venue": "Child Development",
+      "in_degree": 18,
+      "pagerank": 0.011679,
+      "influence": 0.9686,
+      "median_rank": 11.0,
+      "lo_rank": 6,
+      "hi_rank": 16,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2120019338",
+      "title": "Action recognition in the premotor cortex",
+      "year": 1996,
+      "doi": "10.1093/brain/119.2.593",
+      "url": "https://doi.org/10.1093/brain/119.2.593",
+      "venue": "Brain",
+      "in_degree": 20,
+      "pagerank": 0.011228,
+      "influence": 0.9654,
+      "median_rank": 11.0,
+      "lo_rank": 6,
+      "hi_rank": 21,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W1980940875",
+      "title": "What Is Empathy and Can It Be Taught?",
+      "year": 1992,
+      "doi": "10.7326/0003-4819-116-10-843",
+      "url": "https://doi.org/10.7326/0003-4819-116-10-843",
+      "venue": "Annals of Internal Medicine",
+      "in_degree": 15,
+      "pagerank": 0.010993,
+      "influence": 0.9623,
+      "median_rank": 12.0,
+      "lo_rank": 7,
+      "hi_rank": 30,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2011130450",
+      "title": "Empathic mediation of helping: A two-stage model.",
+      "year": 1978,
+      "doi": "10.1037/0022-3514.36.7.752",
+      "url": "https://doi.org/10.1037/0022-3514.36.7.752",
+      "venue": "Journal of Personality and Social Psychology",
+      "in_degree": 19,
+      "pagerank": 0.010557,
+      "influence": 0.9591,
+      "median_rank": 13.0,
+      "lo_rank": 8,
+      "hi_rank": 20,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2079786579",
+      "title": "The distinction between sympathy and empathy: To call forth a concept, a word is needed.",
+      "year": 1986,
+      "doi": "10.1037/0022-3514.50.2.314",
+      "url": "https://doi.org/10.1037/0022-3514.50.2.314",
+      "venue": "Journal of Personality and Social Psychology",
+      "in_degree": 22,
+      "pagerank": 0.010523,
+      "influence": 0.956,
+      "median_rank": 13.0,
+      "lo_rank": 9,
+      "hi_rank": 33,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2153480757",
+      "title": "Empathy: Its ultimate and proximate bases",
+      "year": 2002,
+      "doi": "10.1017/s0140525x02000018",
+      "url": "https://doi.org/10.1017/s0140525x02000018",
+      "venue": "Behavioral and Brain Sciences",
+      "in_degree": 57,
+      "pagerank": 0.010066,
+      "influence": 0.9528,
+      "median_rank": 14.0,
+      "lo_rank": 10,
+      "hi_rank": 18,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W1853322427",
+      "title": "Empathy",
+      "year": 2018,
+      "doi": "10.4324/9780429493898",
+      "url": "https://doi.org/10.4324/9780429493898",
+      "venue": null,
+      "in_degree": 38,
+      "pagerank": 0.009791,
+      "influence": 0.9497,
+      "median_rank": 15.0,
+      "lo_rank": 11,
+      "hi_rank": 20,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2116146623",
+      "title": "Empathy for Pain Involves the Affective but not Sensory Components of Pain",
+      "year": 2004,
+      "doi": "10.1126/science.1093535",
+      "url": "https://doi.org/10.1126/science.1093535",
+      "venue": "Science",
+      "in_degree": 47,
+      "pagerank": 0.009271,
+      "influence": 0.9465,
+      "median_rank": 17.0,
+      "lo_rank": 13,
+      "hi_rank": 21,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2135370090",
+      "title": "The altruism question: toward a social-psychological answer",
+      "year": 1992,
+      "doi": "10.5860/choice.29-4797",
+      "url": "https://doi.org/10.5860/choice.29-4797",
+      "venue": "Choice Reviews Online",
+      "in_degree": 36,
+      "pagerank": 0.009153,
+      "influence": 0.9434,
+      "median_rank": 17.0,
+      "lo_rank": 11,
+      "hi_rank": 22,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2143919010",
+      "title": "Pain-related neurons in the human cingulate cortex",
+      "year": 1999,
+      "doi": "10.1038/8065",
+      "url": "https://doi.org/10.1038/8065",
+      "venue": "Nature Neuroscience",
+      "in_degree": 19,
+      "pagerank": 0.009074,
+      "influence": 0.9403,
+      "median_rank": 17.0,
+      "lo_rank": 10,
+      "hi_rank": 24,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2092593063",
+      "title": "Developmental synthesis of affect and cognition and its implications for altruistic motivation.",
+      "year": 1975,
+      "doi": "10.1037/0012-1649.11.5.607",
+      "url": "https://doi.org/10.1037/0012-1649.11.5.607",
+      "venue": "Developmental Psychology",
+      "in_degree": 19,
+      "pagerank": 0.008429,
+      "influence": 0.9371,
+      "median_rank": 20.0,
+      "lo_rank": 10,
+      "hi_rank": 27,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W85091029",
+      "title": "A multidimensional approach to individual differences in empathy",
+      "year": 1980,
+      "doi": null,
+      "url": "https://openalex.org/W85091029",
+      "venue": "Medical Entomology and Zoology",
+      "in_degree": 36,
+      "pagerank": 0.008207,
+      "influence": 0.934,
+      "median_rank": 20.0,
+      "lo_rank": 14,
+      "hi_rank": 29,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2141538250",
+      "title": "Does the chimpanzee have a theory of mind?",
+      "year": 1978,
+      "doi": "10.1017/s0140525x00076512",
+      "url": "https://doi.org/10.1017/s0140525x00076512",
+      "venue": "Behavioral and Brain Sciences",
+      "in_degree": 15,
+      "pagerank": 0.008108,
+      "influence": 0.9308,
+      "median_rank": 21.0,
+      "lo_rank": 17,
+      "hi_rank": 43,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2110475150",
+      "title": "Neural mechanisms of empathy in humans: A relay from neural systems for imitation to limbic areas",
+      "year": 2003,
+      "doi": "10.1073/pnas.0935845100",
+      "url": "https://doi.org/10.1073/pnas.0935845100",
+      "venue": "Proceedings of the National Academy of Sciences",
+      "in_degree": 29,
+      "pagerank": 0.00786,
+      "influence": 0.9277,
+      "median_rank": 21.0,
+      "lo_rank": 15,
+      "hi_rank": 27,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2019924339",
+      "title": "Both of Us Disgusted in My Insula",
+      "year": 2003,
+      "doi": "10.1016/s0896-6273(03)00679-2",
+      "url": "https://doi.org/10.1016/s0896-6273(03)00679-2",
+      "venue": "Neuron",
+      "in_degree": 31,
+      "pagerank": 0.007333,
+      "influence": 0.9245,
+      "median_rank": 24.0,
+      "lo_rank": 18,
+      "hi_rank": 29,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2027508313",
+      "title": "The Jefferson Scale of Physician Empathy: Development and Preliminary Psychometric Data",
+      "year": 2001,
+      "doi": "10.1177/00131640121971158",
+      "url": "https://doi.org/10.1177/00131640121971158",
+      "venue": "Educational and Psychological Measurement",
+      "in_degree": 27,
+      "pagerank": 0.007275,
+      "influence": 0.9214,
+      "median_rank": 24.0,
+      "lo_rank": 16,
+      "hi_rank": 34,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2096476371",
+      "title": "The Functional Architecture of Human Empathy",
+      "year": 2004,
+      "doi": "10.1177/1534582304267187",
+      "url": "https://doi.org/10.1177/1534582304267187",
+      "venue": "Behavioral and Cognitive Neuroscience Reviews",
+      "in_degree": 51,
+      "pagerank": 0.007214,
+      "influence": 0.9182,
+      "median_rank": 24.0,
+      "lo_rank": 19,
+      "hi_rank": 28,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2012295155",
+      "title": "Empathy: Historic and Current Conceptualizations, Measurement, and a Cognitive Theoretical Perspective",
+      "year": 2009,
+      "doi": "10.1159/000271488",
+      "url": "https://doi.org/10.1159/000271488",
+      "venue": "Human Development",
+      "in_degree": 13,
+      "pagerank": 0.007113,
+      "influence": 0.9151,
+      "median_rank": 25.0,
+      "lo_rank": 17,
+      "hi_rank": 50,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W1526777738",
+      "title": "From Detached Concern to Empathy: Humanizing Medical Practice",
+      "year": 2001,
+      "doi": "10.1093/acprof:osobl/9780195111194.001.0001",
+      "url": "https://doi.org/10.1093/acprof:osobl/9780195111194.001.0001",
+      "venue": null,
+      "in_degree": 12,
+      "pagerank": 0.006845,
+      "influence": 0.9119,
+      "median_rank": 26.0,
+      "lo_rank": 19,
+      "hi_rank": 82,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W4242300465",
+      "title": "Empathy: a social psychological approach",
+      "year": 1996,
+      "doi": "10.5860/choice.34-2454",
+      "url": "https://doi.org/10.5860/choice.34-2454",
+      "venue": "Choice Reviews Online",
+      "in_degree": 30,
+      "pagerank": 0.00648,
+      "influence": 0.9088,
+      "median_rank": 27.0,
+      "lo_rank": 21,
+      "hi_rank": 35,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W4294255555",
+      "title": "The chameleon effect: The perception\u2013behavior link and social interaction.",
+      "year": 1999,
+      "doi": "10.1037/0022-3514.76.6.893",
+      "url": "https://doi.org/10.1037/0022-3514.76.6.893",
+      "venue": "Journal of Personality and Social Psychology",
+      "in_degree": 14,
+      "pagerank": 0.006304,
+      "influence": 0.9057,
+      "median_rank": 29.0,
+      "lo_rank": 12,
+      "hi_rank": 86,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2057494997",
+      "title": "Dimensions of therapist response as causal factors in therapeutic change.",
+      "year": 1962,
+      "doi": "10.1037/h0093918",
+      "url": "https://doi.org/10.1037/h0093918",
+      "venue": "The Psychological Monographs",
+      "in_degree": 14,
+      "pagerank": 0.006156,
+      "influence": 0.9025,
+      "median_rank": 30.0,
+      "lo_rank": 19,
+      "hi_rank": 56,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W1515738417",
+      "title": "Empathy and its development",
+      "year": 1987,
+      "doi": null,
+      "url": "https://openalex.org/W1515738417",
+      "venue": null,
+      "in_degree": 28,
+      "pagerank": 0.006029,
+      "influence": 0.8994,
+      "median_rank": 30.0,
+      "lo_rank": 24,
+      "hi_rank": 37,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2091490281",
+      "title": "Is altruism part of human nature?",
+      "year": 1981,
+      "doi": "10.1037/0022-3514.40.1.121",
+      "url": "https://doi.org/10.1037/0022-3514.40.1.121",
+      "venue": "Journal of Personality and Social Psychology",
+      "in_degree": 15,
+      "pagerank": 0.005981,
+      "influence": 0.8962,
+      "median_rank": 31.0,
+      "lo_rank": 22,
+      "hi_rank": 44,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2087743410",
+      "title": "A model of empathic understanding and adherence to treatment regimens in practitioner-patient relationships",
+      "year": 1990,
+      "doi": "10.1016/0277-9536(90)90188-x",
+      "url": "https://doi.org/10.1016/0277-9536(90)90188-x",
+      "venue": "Social Science & Medicine",
+      "in_degree": 12,
+      "pagerank": 0.005756,
+      "influence": 0.8931,
+      "median_rank": 33.0,
+      "lo_rank": 26,
+      "hi_rank": 96,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W1977527811",
+      "title": "Sympathy, empathy, and physician resource utilization",
+      "year": 1991,
+      "doi": "10.1007/bf02598163",
+      "url": "https://doi.org/10.1007/bf02598163",
+      "venue": "Journal of General Internal Medicine",
+      "in_degree": 20,
+      "pagerank": 0.005653,
+      "influence": 0.8899,
+      "median_rank": 33.0,
+      "lo_rank": 25,
+      "hi_rank": 48,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2080559986",
+      "title": "A Model of Empathic Communication in the Medical Interview",
+      "year": 1997,
+      "doi": "10.1001/jama.1997.03540320082047",
+      "url": "https://doi.org/10.1001/jama.1997.03540320082047",
+      "venue": "JAMA",
+      "in_degree": 15,
+      "pagerank": 0.005643,
+      "influence": 0.8868,
+      "median_rank": 33.0,
+      "lo_rank": 23,
+      "hi_rank": 56,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2142823391",
+      "title": "How do you feel? Interoception: the sense of the physiological condition of the body",
+      "year": 2002,
+      "doi": "10.1038/nrn894",
+      "url": "https://doi.org/10.1038/nrn894",
+      "venue": "Nature reviews. Neuroscience",
+      "in_degree": 18,
+      "pagerank": 0.00564,
+      "influence": 0.8836,
+      "median_rank": 34.0,
+      "lo_rank": 22,
+      "hi_rank": 57,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2029615977",
+      "title": "Communication Patterns of Primary Care Physicians",
+      "year": 1997,
+      "doi": "10.1001/jama.1997.03540280088045",
+      "url": "https://doi.org/10.1001/jama.1997.03540280088045",
+      "venue": "JAMA",
+      "in_degree": 11,
+      "pagerank": 0.005351,
+      "influence": 0.8805,
+      "median_rank": 36.0,
+      "lo_rank": 26,
+      "hi_rank": 62,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2013216276",
+      "title": "Sex differences in empathy and related capacities.",
+      "year": 1983,
+      "doi": "10.1037/0033-2909.94.1.100",
+      "url": "https://doi.org/10.1037/0033-2909.94.1.100",
+      "venue": "Psychological Bulletin",
+      "in_degree": 17,
+      "pagerank": 0.005293,
+      "influence": 0.8774,
+      "median_rank": 37.0,
+      "lo_rank": 28,
+      "hi_rank": 55,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2058521226",
+      "title": "How do we perceive the pain of others? A window into the neural processes involved in empathy",
+      "year": 2004,
+      "doi": "10.1016/j.neuroimage.2004.09.006",
+      "url": "https://doi.org/10.1016/j.neuroimage.2004.09.006",
+      "venue": "NeuroImage",
+      "in_degree": 29,
+      "pagerank": 0.00529,
+      "influence": 0.8742,
+      "median_rank": 38.0,
+      "lo_rank": 28,
+      "hi_rank": 48,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2005210865",
+      "title": "The relation of empathy to prosocial and related behaviors.",
+      "year": 1987,
+      "doi": "10.1037/0033-2909.101.1.91",
+      "url": "https://doi.org/10.1037/0033-2909.101.1.91",
+      "venue": "Psychological Bulletin",
+      "in_degree": 25,
+      "pagerank": 0.005192,
+      "influence": 0.8711,
+      "median_rank": 39.0,
+      "lo_rank": 29,
+      "hi_rank": 53,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2100545904",
+      "title": "Physician Empathy: Definition, Components, Measurement, and Relationship to Gender and Specialty",
+      "year": 2002,
+      "doi": "10.1176/appi.ajp.159.9.1563",
+      "url": "https://doi.org/10.1176/appi.ajp.159.9.1563",
+      "venue": "American Journal of Psychiatry",
+      "in_degree": 22,
+      "pagerank": 0.005189,
+      "influence": 0.8679,
+      "median_rank": 38.0,
+      "lo_rank": 28,
+      "hi_rank": 53,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2027814249",
+      "title": "Empathy: A physiological substrate.",
+      "year": 1992,
+      "doi": "10.1037/0022-3514.63.2.234",
+      "url": "https://doi.org/10.1037/0022-3514.63.2.234",
+      "venue": "Journal of Personality and Social Psychology",
+      "in_degree": 20,
+      "pagerank": 0.005076,
+      "influence": 0.8648,
+      "median_rank": 40.0,
+      "lo_rank": 31,
+      "hi_rank": 55,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2027690865",
+      "title": "Perspective-taking and altruism.",
+      "year": 1982,
+      "doi": "10.1037/0033-2909.91.1.143",
+      "url": "https://doi.org/10.1037/0033-2909.91.1.143",
+      "venue": "Psychological Bulletin",
+      "in_degree": 11,
+      "pagerank": 0.005074,
+      "influence": 0.8616,
+      "median_rank": 41.0,
+      "lo_rank": 30,
+      "hi_rank": 57,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2023967132",
+      "title": "Vicarious responses to pain in anterior cingulate cortex: Is empathy a multisensory issue?",
+      "year": 2004,
+      "doi": "10.3758/cabn.4.2.270",
+      "url": "https://doi.org/10.3758/cabn.4.2.270",
+      "venue": "Cognitive Affective & Behavioral Neuroscience",
+      "in_degree": 25,
+      "pagerank": 0.005051,
+      "influence": 0.8585,
+      "median_rank": 41.0,
+      "lo_rank": 30,
+      "hi_rank": 51,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2505624357",
+      "title": "Development of Prosocial Motivation: Empathy and Guilt",
+      "year": 1982,
+      "doi": "10.1016/b978-0-12-234980-5.50016-x",
+      "url": "https://doi.org/10.1016/b978-0-12-234980-5.50016-x",
+      "venue": "Elsevier eBooks",
+      "in_degree": 18,
+      "pagerank": 0.005049,
+      "influence": 0.8553,
+      "median_rank": 40.0,
+      "lo_rank": 30,
+      "hi_rank": 57,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2102919714",
+      "title": "What is clinical empathy?",
+      "year": 2003,
+      "doi": "10.1046/j.1525-1497.2003.21017.x",
+      "url": "https://doi.org/10.1046/j.1525-1497.2003.21017.x",
+      "venue": "Journal of General Internal Medicine",
+      "in_degree": 16,
+      "pagerank": 0.005027,
+      "influence": 0.8522,
+      "median_rank": 42.0,
+      "lo_rank": 33,
+      "hi_rank": 63,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2147093380",
+      "title": "The Social Neuroscience of Empathy",
+      "year": 2009,
+      "doi": "10.1111/j.1749-6632.2009.04418.x",
+      "url": "https://doi.org/10.1111/j.1749-6632.2009.04418.x",
+      "venue": "Annals of the New York Academy of Sciences",
+      "in_degree": 27,
+      "pagerank": 0.004973,
+      "influence": 0.8491,
+      "median_rank": 42.0,
+      "lo_rank": 31,
+      "hi_rank": 54,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2001653987",
+      "title": "Sex differences in empathy and related behaviors.",
+      "year": 1977,
+      "doi": "10.1037/0033-2909.84.4.712",
+      "url": "https://doi.org/10.1037/0033-2909.84.4.712",
+      "venue": "Psychological Bulletin",
+      "in_degree": 11,
+      "pagerank": 0.004895,
+      "influence": 0.8459,
+      "median_rank": 44.0,
+      "lo_rank": 29,
+      "hi_rank": 63,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2979429647",
+      "title": "Interaction of affect and cognition in empathy.",
+      "year": 1985,
+      "doi": null,
+      "url": "https://openalex.org/W2979429647",
+      "venue": null,
+      "in_degree": 17,
+      "pagerank": 0.00488,
+      "influence": 0.8428,
+      "median_rank": 43.0,
+      "lo_rank": 32,
+      "hi_rank": 59,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2107231193",
+      "title": "I feel how you feel but not always: the empathic brain and its modulation",
+      "year": 2008,
+      "doi": "10.1016/j.conb.2008.07.012",
+      "url": "https://doi.org/10.1016/j.conb.2008.07.012",
+      "venue": "Current Opinion in Neurobiology",
+      "in_degree": 18,
+      "pagerank": 0.004822,
+      "influence": 0.8396,
+      "median_rank": 45.0,
+      "lo_rank": 38,
+      "hi_rank": 92,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2126293656",
+      "title": "Is empathic emotion a source of altruistic motivation?",
+      "year": 1981,
+      "doi": "10.1037/0022-3514.40.2.290",
+      "url": "https://doi.org/10.1037/0022-3514.40.2.290",
+      "venue": "Journal of Personality and Social Psychology",
+      "in_degree": 12,
+      "pagerank": 0.004707,
+      "influence": 0.8365,
+      "median_rank": 47.0,
+      "lo_rank": 35,
+      "hi_rank": 64,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2103710664",
+      "title": "Reinterpreting the empathy\u2013altruism relationship: When one into one equals oneness.",
+      "year": 1997,
+      "doi": "10.1037/0022-3514.73.3.481",
+      "url": "https://doi.org/10.1037/0022-3514.73.3.481",
+      "venue": "Journal of Personality and Social Psychology",
+      "in_degree": 18,
+      "pagerank": 0.004653,
+      "influence": 0.8333,
+      "median_rank": 47.0,
+      "lo_rank": 35,
+      "hi_rank": 63,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2072683973",
+      "title": "Is empathy-induced helping due to self\u2013other merging?",
+      "year": 1997,
+      "doi": "10.1037/0022-3514.73.3.495",
+      "url": "https://doi.org/10.1037/0022-3514.73.3.495",
+      "venue": "Journal of Personality and Social Psychology",
+      "in_degree": 14,
+      "pagerank": 0.004465,
+      "influence": 0.8302,
+      "median_rank": 50.0,
+      "lo_rank": 36,
+      "hi_rank": 66,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2127223658",
+      "title": "Narrative Medicine",
+      "year": 2001,
+      "doi": "10.1001/jama.286.15.1897",
+      "url": "https://doi.org/10.1001/jama.286.15.1897",
+      "venue": "JAMA",
+      "in_degree": 12,
+      "pagerank": 0.004398,
+      "influence": 0.827,
+      "median_rank": 52.0,
+      "lo_rank": 33,
+      "hi_rank": 78,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W1963705969",
+      "title": "Empathy in medical students as related to academic performance, clinical competence and gender",
+      "year": 2002,
+      "doi": "10.1046/j.1365-2923.2002.01234.x",
+      "url": "https://doi.org/10.1046/j.1365-2923.2002.01234.x",
+      "venue": "Medical Education",
+      "in_degree": 19,
+      "pagerank": 0.004394,
+      "influence": 0.8239,
+      "median_rank": 51.0,
+      "lo_rank": 37,
+      "hi_rank": 66,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2097714468",
+      "title": "Mirror neurons and the simulation theory of mind-reading",
+      "year": 1998,
+      "doi": "10.1016/s1364-6613(98)01262-5",
+      "url": "https://doi.org/10.1016/s1364-6613(98)01262-5",
+      "venue": "Trends in Cognitive Sciences",
+      "in_degree": 13,
+      "pagerank": 0.004386,
+      "influence": 0.8208,
+      "median_rank": 51.0,
+      "lo_rank": 39,
+      "hi_rank": 69,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2157258415",
+      "title": "The Neural Substrate of Human Empathy: Effects of Perspective-taking and Cognitive Appraisal",
+      "year": 2007,
+      "doi": "10.1162/jocn.2007.19.1.42",
+      "url": "https://doi.org/10.1162/jocn.2007.19.1.42",
+      "venue": "Journal of Cognitive Neuroscience",
+      "in_degree": 28,
+      "pagerank": 0.00436,
+      "influence": 0.8176,
+      "median_rank": 51.0,
+      "lo_rank": 43,
+      "hi_rank": 60,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W1975000068",
+      "title": "Empathy and Moral Development: Implications for Caring and Justice",
+      "year": 2001,
+      "doi": "10.2307/3089337",
+      "url": "https://doi.org/10.2307/3089337",
+      "venue": "Contemporary Sociology A Journal of Reviews",
+      "in_degree": 25,
+      "pagerank": 0.004316,
+      "influence": 0.8145,
+      "median_rank": 52.0,
+      "lo_rank": 41,
+      "hi_rank": 63,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    }
+  ],
+  "edges": [
+    [
+      "W2102919714",
+      "W2029615977"
+    ],
+    [
+      "W2102919714",
+      "W2080559986"
+    ],
+    [
+      "W2102919714",
+      "W2127223658"
+    ],
+    [
+      "W2027814249",
+      "W1624895288"
+    ],
+    [
+      "W2027814249",
+      "W1980083892"
+    ],
+    [
+      "W2027814249",
+      "W2005210865"
+    ],
+    [
+      "W2027814249",
+      "W2011130450"
+    ],
+    [
+      "W2027814249",
+      "W2012295155"
+    ],
+    [
+      "W2027814249",
+      "W2013216276"
+    ],
+    [
+      "W2027814249",
+      "W2016250205"
+    ],
+    [
+      "W2027814249",
+      "W2027690865"
+    ],
+    [
+      "W2027814249",
+      "W2064649728"
+    ],
+    [
+      "W2027814249",
+      "W2076371757"
+    ],
+    [
+      "W2027814249",
+      "W2079786579"
+    ],
+    [
+      "W2027814249",
+      "W2146425356"
+    ],
+    [
+      "W2064649728",
+      "W2016250205"
+    ],
+    [
+      "W2064649728",
+      "W2018621954"
+    ],
+    [
+      "W2023967132",
+      "W1989477529"
+    ],
+    [
+      "W2023967132",
+      "W2019924339"
+    ],
+    [
+      "W2023967132",
+      "W2110475150"
+    ],
+    [
+      "W2023967132",
+      "W2116146623"
+    ],
+    [
+      "W2023967132",
+      "W2143919010"
+    ],
+    [
+      "W2023967132",
+      "W2153480757"
+    ],
+    [
+      "W1980083892",
+      "W85091029"
+    ],
+    [
+      "W1980083892",
+      "W2011130450"
+    ],
+    [
+      "W1980083892",
+      "W2012295155"
+    ],
+    [
+      "W1980083892",
+      "W2016250205"
+    ],
+    [
+      "W1980083892",
+      "W2076371757"
+    ],
+    [
+      "W1980083892",
+      "W2146425356"
+    ],
+    [
+      "W1980083892",
+      "W2335841795"
+    ],
+    [
+      "W2153480757",
+      "W1515738417"
+    ],
+    [
+      "W2153480757",
+      "W1624895288"
+    ],
+    [
+      "W2153480757",
+      "W1975000068"
+    ],
+    [
+      "W2153480757",
+      "W1989477529"
+    ],
+    [
+      "W2153480757",
+      "W2012295155"
+    ],
+    [
+      "W2153480757",
+      "W2027814249"
+    ],
+    [
+      "W2153480757",
+      "W2064649728"
+    ],
+    [
+      "W2153480757",
+      "W2068607682"
+    ],
+    [
+      "W2153480757",
+      "W2079786579"
+    ],
+    [
+      "W2153480757",
+      "W2091490281"
+    ],
+    [
+      "W2153480757",
+      "W2097714468"
+    ],
+    [
+      "W2153480757",
+      "W2103710664"
+    ],
+    [
+      "W2153480757",
+      "W2120019338"
+    ],
+    [
+      "W2153480757",
+      "W2126293656"
+    ],
+    [
+      "W2153480757",
+      "W2135370090"
+    ],
+    [
+      "W2153480757",
+      "W2141538250"
+    ],
+    [
+      "W2153480757",
+      "W2143919010"
+    ],
+    [
+      "W2153480757",
+      "W2979429647"
+    ],
+    [
+      "W2096476371",
+      "W1515738417"
+    ],
+    [
+      "W2096476371",
+      "W1624895288"
+    ],
+    [
+      "W2096476371",
+      "W1853322427"
+    ],
+    [
+      "W2096476371",
+      "W1980083892"
+    ],
+    [
+      "W2096476371",
+      "W2019924339"
+    ],
+    [
+      "W2096476371",
+      "W2023967132"
+    ],
+    [
+      "W2096476371",
+      "W2027814249"
+    ],
+    [
+      "W2096476371",
+      "W2072683973"
+    ],
+    [
+      "W2096476371",
+      "W2076371757"
+    ],
+    [
+      "W2096476371",
+      "W2091490281"
+    ],
+    [
+      "W2096476371",
+      "W2097714468"
+    ],
+    [
+      "W2096476371",
+      "W2103710664"
+    ],
+    [
+      "W2096476371",
+      "W2110475150"
+    ],
+    [
+      "W2096476371",
+      "W2116146623"
+    ],
+    [
+      "W2096476371",
+      "W2135370090"
+    ],
+    [
+      "W2096476371",
+      "W2143919010"
+    ],
+    [
+      "W2096476371",
+      "W2146425356"
+    ],
+    [
+      "W2096476371",
+      "W2153480757"
+    ],
+    [
+      "W2096476371",
+      "W4242300465"
+    ],
+    [
+      "W2096476371",
+      "W4294255555"
+    ],
+    [
+      "W2116146623",
+      "W2019924339"
+    ],
+    [
+      "W2116146623",
+      "W2027814249"
+    ],
+    [
+      "W2116146623",
+      "W2076371757"
+    ],
+    [
+      "W2116146623",
+      "W2110475150"
+    ],
+    [
+      "W2116146623",
+      "W2141538250"
+    ],
+    [
+      "W2116146623",
+      "W2142823391"
+    ],
+    [
+      "W2116146623",
+      "W2143919010"
+    ],
+    [
+      "W2116146623",
+      "W2153480757"
+    ],
+    [
+      "W85091029",
+      "W2001653987"
+    ],
+    [
+      "W85091029",
+      "W2011130450"
+    ],
+    [
+      "W85091029",
+      "W2012295155"
+    ],
+    [
+      "W85091029",
+      "W2016250205"
+    ],
+    [
+      "W85091029",
+      "W2018621954"
+    ],
+    [
+      "W85091029",
+      "W2064649728"
+    ],
+    [
+      "W85091029",
+      "W2076371757"
+    ],
+    [
+      "W85091029",
+      "W2146425356"
+    ],
+    [
+      "W85091029",
+      "W2335841795"
+    ],
+    [
+      "W2147093380",
+      "W1515738417"
+    ],
+    [
+      "W2147093380",
+      "W1624895288"
+    ],
+    [
+      "W2147093380",
+      "W1853322427"
+    ],
+    [
+      "W2147093380",
+      "W2013216276"
+    ],
+    [
+      "W2147093380",
+      "W2019924339"
+    ],
+    [
+      "W2147093380",
+      "W2023967132"
+    ],
+    [
+      "W2147093380",
+      "W2027690865"
+    ],
+    [
+      "W2147093380",
+      "W2058521226"
+    ],
+    [
+      "W2147093380",
+      "W2096476371"
+    ],
+    [
+      "W2147093380",
+      "W2107231193"
+    ],
+    [
+      "W2147093380",
+      "W2110475150"
+    ],
+    [
+      "W2147093380",
+      "W2116146623"
+    ],
+    [
+      "W2147093380",
+      "W2135370090"
+    ],
+    [
+      "W2147093380",
+      "W2142823391"
+    ],
+    [
+      "W2147093380",
+      "W2143919010"
+    ],
+    [
+      "W2147093380",
+      "W2153480757"
+    ],
+    [
+      "W2147093380",
+      "W2157258415"
+    ],
+    [
+      "W2147093380",
+      "W4242300465"
+    ],
+    [
+      "W2147093380",
+      "W4294255555"
+    ],
+    [
+      "W2076371757",
+      "W2016250205"
+    ],
+    [
+      "W2076371757",
+      "W2018621954"
+    ],
+    [
+      "W2076371757",
+      "W2041889512"
+    ],
+    [
+      "W1853322427",
+      "W85091029"
+    ],
+    [
+      "W1853322427",
+      "W1980083892"
+    ],
+    [
+      "W1853322427",
+      "W2001653987"
+    ],
+    [
+      "W1853322427",
+      "W2011130450"
+    ],
+    [
+      "W1853322427",
+      "W2012295155"
+    ],
+    [
+      "W1853322427",
+      "W2013216276"
+    ],
+    [
+      "W1853322427",
+      "W2016250205"
+    ],
+    [
+      "W1853322427",
+      "W2018621954"
+    ],
+    [
+      "W1853322427",
+      "W2027690865"
+    ],
+    [
+      "W1853322427",
+      "W2027814249"
+    ],
+    [
+      "W1853322427",
+      "W2064649728"
+    ],
+    [
+      "W1853322427",
+      "W2068607682"
+    ],
+    [
+      "W1853322427",
+      "W2076371757"
+    ],
+    [
+      "W1853322427",
+      "W2079786579"
+    ],
+    [
+      "W1853322427",
+      "W2126293656"
+    ],
+    [
+      "W1853322427",
+      "W2146425356"
+    ],
+    [
+      "W1853322427",
+      "W2335841795"
+    ],
+    [
+      "W1853322427",
+      "W2979429647"
+    ],
+    [
+      "W2146425356",
+      "W2016250205"
+    ],
+    [
+      "W2146425356",
+      "W2018621954"
+    ],
+    [
+      "W2146425356",
+      "W2335841795"
+    ],
+    [
+      "W2005210865",
+      "W85091029"
+    ],
+    [
+      "W2005210865",
+      "W2011130450"
+    ],
+    [
+      "W2005210865",
+      "W2012295155"
+    ],
+    [
+      "W2005210865",
+      "W2013216276"
+    ],
+    [
+      "W2005210865",
+      "W2027690865"
+    ],
+    [
+      "W2005210865",
+      "W2064649728"
+    ],
+    [
+      "W2005210865",
+      "W2068607682"
+    ],
+    [
+      "W2005210865",
+      "W2076371757"
+    ],
+    [
+      "W2005210865",
+      "W2079786579"
+    ],
+    [
+      "W2005210865",
+      "W2091490281"
+    ],
+    [
+      "W2005210865",
+      "W2126293656"
+    ],
+    [
+      "W2005210865",
+      "W2146425356"
+    ],
+    [
+      "W2005210865",
+      "W2335841795"
+    ],
+    [
+      "W2005210865",
+      "W2979429647"
+    ],
+    [
+      "W2157258415",
+      "W1853322427"
+    ],
+    [
+      "W2157258415",
+      "W2023967132"
+    ],
+    [
+      "W2157258415",
+      "W2027690865"
+    ],
+    [
+      "W2157258415",
+      "W2058521226"
+    ],
+    [
+      "W2157258415",
+      "W2072683973"
+    ],
+    [
+      "W2157258415",
+      "W2096476371"
+    ],
+    [
+      "W2157258415",
+      "W2107231193"
+    ],
+    [
+      "W2157258415",
+      "W2116146623"
+    ],
+    [
+      "W2157258415",
+      "W2142823391"
+    ],
+    [
+      "W2157258415",
+      "W2153480757"
+    ],
+    [
+      "W2027508313",
+      "W1977527811"
+    ],
+    [
+      "W2027508313",
+      "W1980083892"
+    ],
+    [
+      "W2027508313",
+      "W1980940875"
+    ],
+    [
+      "W2027508313",
+      "W2076371757"
+    ],
+    [
+      "W2027508313",
+      "W2080559986"
+    ],
+    [
+      "W2027508313",
+      "W2146425356"
+    ],
+    [
+      "W2100545904",
+      "W1853322427"
+    ],
+    [
+      "W2100545904",
+      "W1963705969"
+    ],
+    [
+      "W2100545904",
+      "W1977527811"
+    ],
+    [
+      "W2100545904",
+      "W1980083892"
+    ],
+    [
+      "W2100545904",
+      "W2013216276"
+    ],
+    [
+      "W2100545904",
+      "W2057494997"
+    ],
+    [
+      "W2100545904",
+      "W2076371757"
+    ],
+    [
+      "W2100545904",
+      "W2079786579"
+    ],
+    [
+      "W2100545904",
+      "W2146425356"
+    ],
+    [
+      "W2100545904",
+      "W4242300465"
+    ],
+    [
+      "W2058521226",
+      "W1515738417"
+    ],
+    [
+      "W2058521226",
+      "W1853322427"
+    ],
+    [
+      "W2058521226",
+      "W2019924339"
+    ],
+    [
+      "W2058521226",
+      "W2023967132"
+    ],
+    [
+      "W2058521226",
+      "W2096476371"
+    ],
+    [
+      "W2058521226",
+      "W2110475150"
+    ],
+    [
+      "W2058521226",
+      "W2116146623"
+    ],
+    [
+      "W2058521226",
+      "W2135370090"
+    ],
+    [
+      "W2058521226",
+      "W2143919010"
+    ],
+    [
+      "W2058521226",
+      "W2153480757"
+    ],
+    [
+      "W2058521226",
+      "W4242300465"
+    ],
+    [
+      "W2080559986",
+      "W1980940875"
+    ],
+    [
+      "W2019924339",
+      "W1989477529"
+    ],
+    [
+      "W2019924339",
+      "W2110475150"
+    ],
+    [
+      "W2019924339",
+      "W2120019338"
+    ],
+    [
+      "W2019924339",
+      "W2143919010"
+    ],
+    [
+      "W2110475150",
+      "W2120019338"
+    ],
+    [
+      "W2110475150",
+      "W4294255555"
+    ],
+    [
+      "W2079786579",
+      "W1980083892"
+    ],
+    [
+      "W2079786579",
+      "W2011130450"
+    ],
+    [
+      "W2079786579",
+      "W2013216276"
+    ],
+    [
+      "W2079786579",
+      "W2016250205"
+    ],
+    [
+      "W2079786579",
+      "W2027690865"
+    ],
+    [
+      "W2079786579",
+      "W2041889512"
+    ],
+    [
+      "W2079786579",
+      "W2057494997"
+    ],
+    [
+      "W2079786579",
+      "W2068607682"
+    ],
+    [
+      "W2079786579",
+      "W2076371757"
+    ],
+    [
+      "W2079786579",
+      "W2091490281"
+    ],
+    [
+      "W2079786579",
+      "W2126293656"
+    ],
+    [
+      "W2079786579",
+      "W2335841795"
+    ],
+    [
+      "W2107231193",
+      "W1980083892"
+    ],
+    [
+      "W2107231193",
+      "W1989477529"
+    ],
+    [
+      "W2107231193",
+      "W2019924339"
+    ],
+    [
+      "W2107231193",
+      "W2058521226"
+    ],
+    [
+      "W2107231193",
+      "W2076371757"
+    ],
+    [
+      "W2107231193",
+      "W2116146623"
+    ],
+    [
+      "W2107231193",
+      "W2120019338"
+    ],
+    [
+      "W2107231193",
+      "W2135370090"
+    ],
+    [
+      "W2107231193",
+      "W2141538250"
+    ],
+    [
+      "W2107231193",
+      "W2142823391"
+    ],
+    [
+      "W2107231193",
+      "W2153480757"
+    ],
+    [
+      "W2107231193",
+      "W2157258415"
+    ],
+    [
+      "W1977527811",
+      "W2079786579"
+    ],
+    [
+      "W2103710664",
+      "W1853322427"
+    ],
+    [
+      "W2103710664",
+      "W2011130450"
+    ],
+    [
+      "W2103710664",
+      "W2068607682"
+    ],
+    [
+      "W2103710664",
+      "W2126293656"
+    ],
+    [
+      "W2103710664",
+      "W2135370090"
+    ],
+    [
+      "W2103710664",
+      "W2979429647"
+    ],
+    [
+      "W2013216276",
+      "W2001653987"
+    ],
+    [
+      "W2013216276",
+      "W2011130450"
+    ],
+    [
+      "W2013216276",
+      "W2012295155"
+    ],
+    [
+      "W2013216276",
+      "W2016250205"
+    ],
+    [
+      "W2013216276",
+      "W2018621954"
+    ],
+    [
+      "W2013216276",
+      "W2027690865"
+    ],
+    [
+      "W2013216276",
+      "W2064649728"
+    ],
+    [
+      "W2013216276",
+      "W2068607682"
+    ],
+    [
+      "W2013216276",
+      "W2076371757"
+    ],
+    [
+      "W2013216276",
+      "W2091490281"
+    ],
+    [
+      "W2013216276",
+      "W2146425356"
+    ],
+    [
+      "W2013216276",
+      "W2335841795"
+    ],
+    [
+      "W2013216276",
+      "W2505624357"
+    ],
+    [
+      "W2120019338",
+      "W1989477529"
+    ],
+    [
+      "W1963705969",
+      "W1980083892"
+    ],
+    [
+      "W1963705969",
+      "W2027508313"
+    ],
+    [
+      "W1963705969",
+      "W2076371757"
+    ],
+    [
+      "W1963705969",
+      "W2146425356"
+    ],
+    [
+      "W2505624357",
+      "W1624895288"
+    ],
+    [
+      "W2505624357",
+      "W2064649728"
+    ],
+    [
+      "W2505624357",
+      "W2068607682"
+    ],
+    [
+      "W2505624357",
+      "W2091490281"
+    ],
+    [
+      "W2505624357",
+      "W2092593063"
+    ],
+    [
+      "W2068607682",
+      "W1624895288"
+    ],
+    [
+      "W2011130450",
+      "W1624895288"
+    ],
+    [
+      "W2011130450",
+      "W2016250205"
+    ],
+    [
+      "W2011130450",
+      "W2068607682"
+    ],
+    [
+      "W2057494997",
+      "W2041889512"
+    ],
+    [
+      "W2018621954",
+      "W2016250205"
+    ],
+    [
+      "W2018621954",
+      "W2335841795"
+    ],
+    [
+      "W2091490281",
+      "W1624895288"
+    ],
+    [
+      "W2091490281",
+      "W2064649728"
+    ],
+    [
+      "W2091490281",
+      "W2068607682"
+    ],
+    [
+      "W2091490281",
+      "W2092593063"
+    ],
+    [
+      "W2092593063",
+      "W1624895288"
+    ],
+    [
+      "W2092593063",
+      "W2016250205"
+    ],
+    [
+      "W2092593063",
+      "W2064649728"
+    ],
+    [
+      "W2126293656",
+      "W1624895288"
+    ],
+    [
+      "W2126293656",
+      "W2001653987"
+    ],
+    [
+      "W2126293656",
+      "W2011130450"
+    ],
+    [
+      "W2126293656",
+      "W2068607682"
+    ],
+    [
+      "W2126293656",
+      "W2076371757"
+    ],
+    [
+      "W2126293656",
+      "W2092593063"
+    ],
+    [
+      "W2127223658",
+      "W1526777738"
+    ],
+    [
+      "W2072683973",
+      "W1624895288"
+    ],
+    [
+      "W2072683973",
+      "W1853322427"
+    ],
+    [
+      "W2072683973",
+      "W2011130450"
+    ],
+    [
+      "W2072683973",
+      "W2068607682"
+    ],
+    [
+      "W2072683973",
+      "W2092593063"
+    ],
+    [
+      "W2072683973",
+      "W2103710664"
+    ],
+    [
+      "W2072683973",
+      "W2135370090"
+    ],
+    [
+      "W2027690865",
+      "W2011130450"
+    ],
+    [
+      "W2027690865",
+      "W2064649728"
+    ],
+    [
+      "W2027690865",
+      "W2068607682"
+    ],
+    [
+      "W2027690865",
+      "W2076371757"
+    ],
+    [
+      "W2027690865",
+      "W2092593063"
+    ],
+    [
+      "W2087743410",
+      "W1624895288"
+    ],
+    [
+      "W2087743410",
+      "W1980083892"
+    ],
+    [
+      "W2087743410",
+      "W2011130450"
+    ],
+    [
+      "W2087743410",
+      "W2012295155"
+    ],
+    [
+      "W2087743410",
+      "W2057494997"
+    ],
+    [
+      "W2087743410",
+      "W2076371757"
+    ],
+    [
+      "W2087743410",
+      "W2146425356"
+    ],
+    [
+      "W2087743410",
+      "W2335841795"
+    ],
+    [
+      "W2097714468",
+      "W1989477529"
+    ],
+    [
+      "W2097714468",
+      "W2120019338"
+    ],
+    [
+      "W2001653987",
+      "W1624895288"
+    ],
+    [
+      "W2001653987",
+      "W2064649728"
+    ],
+    [
+      "W2001653987",
+      "W2068607682"
+    ],
+    [
+      "W2001653987",
+      "W2092593063"
+    ]
+  ]
+}

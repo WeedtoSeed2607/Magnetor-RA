@@ -1,0 +1,2887 @@
+{
+  "query": "quantum error correction surface code",
+  "generated_at": "2026-07-24T11:22:19.541139+00:00",
+  "n_fetched": 232,
+  "boundary_leakage": 0.8176,
+  "resamples": 100,
+  "self_citations_removed": [
+    "W4383749449",
+    "W3101479050"
+  ],
+  "nodes": [
+    {
+      "id": "W1999706070",
+      "title": "Scheme for reducing decoherence in quantum computer memory",
+      "year": 1995,
+      "doi": "10.1103/physreva.52.r2493",
+      "url": "https://doi.org/10.1103/physreva.52.r2493",
+      "venue": "Physical Review A",
+      "in_degree": 78,
+      "pagerank": 0.047675,
+      "influence": 1.0,
+      "median_rank": 1.0,
+      "lo_rank": 1,
+      "hi_rank": 2,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W1993248778",
+      "title": "Two-bit gates are universal for quantum computation",
+      "year": 1995,
+      "doi": "10.1103/physreva.51.1015",
+      "url": "https://doi.org/10.1103/physreva.51.1015",
+      "venue": "Physical Review A",
+      "in_degree": 15,
+      "pagerank": 0.0377,
+      "influence": 0.9957,
+      "median_rank": 2.0,
+      "lo_rank": 1,
+      "hi_rank": 4,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2148132004",
+      "title": "Quantum theory, the Church\u2013Turing principle and the universal quantum computer",
+      "year": 1985,
+      "doi": "10.1098/rspa.1985.0070",
+      "url": "https://doi.org/10.1098/rspa.1985.0070",
+      "venue": "Proceedings of the Royal Society of London A Mathematical and Physical Sciences",
+      "in_degree": 15,
+      "pagerank": 0.033107,
+      "influence": 0.9914,
+      "median_rank": 3.0,
+      "lo_rank": 1,
+      "hi_rank": 4,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W1967045838",
+      "title": "Maintaining coherence in quantum computers",
+      "year": 1995,
+      "doi": "10.1103/physreva.51.992",
+      "url": "https://doi.org/10.1103/physreva.51.992",
+      "venue": "Physical Review A",
+      "in_degree": 20,
+      "pagerank": 0.029976,
+      "influence": 0.9871,
+      "median_rank": 4.0,
+      "lo_rank": 2,
+      "hi_rank": 8,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2114207424",
+      "title": "Good quantum error-correcting codes exist",
+      "year": 1996,
+      "doi": "10.1103/physreva.54.1098",
+      "url": "https://doi.org/10.1103/physreva.54.1098",
+      "venue": "Physical Review A",
+      "in_degree": 45,
+      "pagerank": 0.020235,
+      "influence": 0.9828,
+      "median_rank": 5.0,
+      "lo_rank": 4,
+      "hi_rank": 6,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2042474962",
+      "title": "Error Correcting Codes in Quantum Theory",
+      "year": 1996,
+      "doi": "10.1103/physrevlett.77.793",
+      "url": "https://doi.org/10.1103/physrevlett.77.793",
+      "venue": "Physical Review Letters",
+      "in_degree": 42,
+      "pagerank": 0.017436,
+      "influence": 0.9784,
+      "median_rank": 6.0,
+      "lo_rank": 4,
+      "hi_rank": 8,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2049471987",
+      "title": "A single quantum cannot be cloned",
+      "year": 1982,
+      "doi": "10.1038/299802a0",
+      "url": "https://doi.org/10.1038/299802a0",
+      "venue": "Nature",
+      "in_degree": 17,
+      "pagerank": 0.01739,
+      "influence": 0.9741,
+      "median_rank": 7.0,
+      "lo_rank": 2,
+      "hi_rank": 17,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2062258079",
+      "title": "Purification of Noisy Entanglement and Faithful Teleportation via Noisy Channels",
+      "year": 1996,
+      "doi": "10.1103/physrevlett.76.722",
+      "url": "https://doi.org/10.1103/physrevlett.76.722",
+      "venue": "Physical Review Letters",
+      "in_degree": 20,
+      "pagerank": 0.016705,
+      "influence": 0.9698,
+      "median_rank": 7.0,
+      "lo_rank": 5,
+      "hi_rank": 12,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2067763535",
+      "title": "Quantum Computations with Cold Trapped Ions",
+      "year": 1995,
+      "doi": "10.1103/physrevlett.74.4091",
+      "url": "https://doi.org/10.1103/physrevlett.74.4091",
+      "venue": "Physical Review Letters",
+      "in_degree": 19,
+      "pagerank": 0.014847,
+      "influence": 0.9655,
+      "median_rank": 9.0,
+      "lo_rank": 6,
+      "hi_rank": 15,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2179731956",
+      "title": "Simulating physics with computers",
+      "year": 1982,
+      "doi": "10.1007/bf02650179",
+      "url": "https://doi.org/10.1007/bf02650179",
+      "venue": "International Journal of Theoretical Physics",
+      "in_degree": 27,
+      "pagerank": 0.014398,
+      "influence": 0.9612,
+      "median_rank": 10.0,
+      "lo_rank": 6,
+      "hi_rank": 20,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W1631356911",
+      "title": "<i>Quantum Computation and Quantum Information</i>",
+      "year": 2002,
+      "doi": "10.1119/1.1463744",
+      "url": "https://doi.org/10.1119/1.1463744",
+      "venue": "American Journal of Physics",
+      "in_degree": 35,
+      "pagerank": 0.01414,
+      "influence": 0.9569,
+      "median_rank": 10.0,
+      "lo_rank": 6,
+      "hi_rank": 16,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2135273380",
+      "title": "Fault-tolerant quantum computation by anyons",
+      "year": 2003,
+      "doi": "10.1016/s0003-4916(02)00018-0",
+      "url": "https://doi.org/10.1016/s0003-4916(02)00018-0",
+      "venue": "Annals of Physics",
+      "in_degree": 61,
+      "pagerank": 0.013877,
+      "influence": 0.9526,
+      "median_rank": 10.0,
+      "lo_rank": 8,
+      "hi_rank": 13,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2764347725",
+      "title": "Quantum computation and quantum information",
+      "year": 2001,
+      "doi": "10.1145/505482.505499",
+      "url": "https://doi.org/10.1145/505482.505499",
+      "venue": "ACM SIGSOFT Software Engineering Notes",
+      "in_degree": 30,
+      "pagerank": 0.01376,
+      "influence": 0.9483,
+      "median_rank": 11.0,
+      "lo_rank": 7,
+      "hi_rank": 18,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2131690084",
+      "title": "Multiple-particle interference and quantum error correction",
+      "year": 1996,
+      "doi": "10.1098/rspa.1996.0136",
+      "url": "https://doi.org/10.1098/rspa.1996.0136",
+      "venue": "Proceedings of the Royal Society A Mathematical Physical and Engineering Sciences",
+      "in_degree": 35,
+      "pagerank": 0.012659,
+      "influence": 0.944,
+      "median_rank": 13.0,
+      "lo_rank": 9,
+      "hi_rank": 17,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2069711632",
+      "title": "Class of quantum error-correcting codes saturating the quantum Hamming bound",
+      "year": 1996,
+      "doi": "10.1103/physreva.54.1862",
+      "url": "https://doi.org/10.1103/physreva.54.1862",
+      "venue": "Physical Review A",
+      "in_degree": 25,
+      "pagerank": 0.011784,
+      "influence": 0.9397,
+      "median_rank": 16.0,
+      "lo_rank": 12,
+      "hi_rank": 20,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2030867075",
+      "title": "Surface codes: Towards practical large-scale quantum computation",
+      "year": 2012,
+      "doi": "10.1103/physreva.86.032324",
+      "url": "https://doi.org/10.1103/physreva.86.032324",
+      "venue": "Physical Review A",
+      "in_degree": 71,
+      "pagerank": 0.011688,
+      "influence": 0.9353,
+      "median_rank": 15.5,
+      "lo_rank": 12,
+      "hi_rank": 20,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W3100206575",
+      "title": "Multiple particle interference and quantum error correction",
+      "year": 1996,
+      "doi": null,
+      "url": "https://openalex.org/W3100206575",
+      "venue": null,
+      "in_degree": 23,
+      "pagerank": 0.011579,
+      "influence": 0.931,
+      "median_rank": 16.0,
+      "lo_rank": 10,
+      "hi_rank": 20,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2091331782",
+      "title": "Quantum Error Correction and Orthogonal Geometry",
+      "year": 1997,
+      "doi": "10.1103/physrevlett.78.405",
+      "url": "https://doi.org/10.1103/physrevlett.78.405",
+      "venue": "Physical Review Letters",
+      "in_degree": 24,
+      "pagerank": 0.011562,
+      "influence": 0.9267,
+      "median_rank": 17.0,
+      "lo_rank": 13,
+      "hi_rank": 20,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2088636071",
+      "title": "Topological quantum memory",
+      "year": 2002,
+      "doi": "10.1063/1.1499754",
+      "url": "https://doi.org/10.1063/1.1499754",
+      "venue": "Journal of Mathematical Physics",
+      "in_degree": 59,
+      "pagerank": 0.011376,
+      "influence": 0.9224,
+      "median_rank": 18.0,
+      "lo_rank": 11,
+      "hi_rank": 20,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2168676717",
+      "title": "Algorithms for quantum computation: discrete logarithms and factoring",
+      "year": 2002,
+      "doi": "10.1109/sfcs.1994.365700",
+      "url": "https://doi.org/10.1109/sfcs.1994.365700",
+      "venue": null,
+      "in_degree": 20,
+      "pagerank": 0.011375,
+      "influence": 0.9181,
+      "median_rank": 17.0,
+      "lo_rank": 10,
+      "hi_rank": 23,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2092938635",
+      "title": "Perfect Quantum Error Correcting Code",
+      "year": 1996,
+      "doi": "10.1103/physrevlett.77.198",
+      "url": "https://doi.org/10.1103/physrevlett.77.198",
+      "venue": "Physical Review Letters",
+      "in_degree": 23,
+      "pagerank": 0.011255,
+      "influence": 0.9138,
+      "median_rank": 18.0,
+      "lo_rank": 12,
+      "hi_rank": 23,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2060887031",
+      "title": "Mixed-state entanglement and quantum error correction",
+      "year": 1996,
+      "doi": "10.1103/physreva.54.3824",
+      "url": "https://doi.org/10.1103/physreva.54.3824",
+      "venue": "Physical Review A",
+      "in_degree": 28,
+      "pagerank": 0.011235,
+      "influence": 0.9095,
+      "median_rank": 18.0,
+      "lo_rank": 12,
+      "hi_rank": 22,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W3100736866",
+      "title": "Topological quantum memory",
+      "year": 2001,
+      "doi": null,
+      "url": "https://openalex.org/W3100736866",
+      "venue": "CERN Document Server (European Organization for Nuclear Research)",
+      "in_degree": 54,
+      "pagerank": 0.010584,
+      "influence": 0.9052,
+      "median_rank": 20.0,
+      "lo_rank": 12,
+      "hi_rank": 22,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2056281570",
+      "title": "Fault-Tolerant Quantum Computation with High Threshold in Two Dimensions",
+      "year": 2007,
+      "doi": "10.1103/physrevlett.98.190504",
+      "url": "https://doi.org/10.1103/physrevlett.98.190504",
+      "venue": "Physical Review Letters",
+      "in_degree": 45,
+      "pagerank": 0.009129,
+      "influence": 0.9009,
+      "median_rank": 23.0,
+      "lo_rank": 18,
+      "hi_rank": 25,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2167927798",
+      "title": "Fault-tolerant quantum computation",
+      "year": 2002,
+      "doi": "10.1109/sfcs.1996.548464",
+      "url": "https://doi.org/10.1109/sfcs.1996.548464",
+      "venue": null,
+      "in_degree": 24,
+      "pagerank": 0.008896,
+      "influence": 0.8966,
+      "median_rank": 23.0,
+      "lo_rank": 18,
+      "hi_rank": 27,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W4233756358",
+      "title": "Paths, Trees, and Flowers",
+      "year": 1965,
+      "doi": "10.4153/cjm-1965-045-4",
+      "url": "https://doi.org/10.4153/cjm-1965-045-4",
+      "venue": "Canadian Journal of Mathematics",
+      "in_degree": 31,
+      "pagerank": 0.008424,
+      "influence": 0.8922,
+      "median_rank": 25.0,
+      "lo_rank": 18,
+      "hi_rank": 30,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2159566537",
+      "title": "Quantum computations: algorithms and error correction",
+      "year": 1997,
+      "doi": "10.1070/rm1997v052n06abeh002155",
+      "url": "https://doi.org/10.1070/rm1997v052n06abeh002155",
+      "venue": "Russian Mathematical Surveys",
+      "in_degree": 26,
+      "pagerank": 0.00815,
+      "influence": 0.8879,
+      "median_rank": 25.0,
+      "lo_rank": 20,
+      "hi_rank": 32,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2032147770",
+      "title": "Quantum computing with realistically noisy devices",
+      "year": 2005,
+      "doi": "10.1038/nature03350",
+      "url": "https://doi.org/10.1038/nature03350",
+      "venue": "Nature",
+      "in_degree": 33,
+      "pagerank": 0.008024,
+      "influence": 0.8836,
+      "median_rank": 27.0,
+      "lo_rank": 21,
+      "hi_rank": 34,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2052169397",
+      "title": "Fault-tolerant quantum computation with constant error",
+      "year": 1997,
+      "doi": "10.1145/258533.258579",
+      "url": "https://doi.org/10.1145/258533.258579",
+      "venue": null,
+      "in_degree": 22,
+      "pagerank": 0.007804,
+      "influence": 0.8793,
+      "median_rank": 27.0,
+      "lo_rank": 20,
+      "hi_rank": 33,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W1968850365",
+      "title": "Superconducting quantum circuits at the surface code threshold for fault tolerance",
+      "year": 2014,
+      "doi": "10.1038/nature13171",
+      "url": "https://doi.org/10.1038/nature13171",
+      "venue": "Nature",
+      "in_degree": 39,
+      "pagerank": 0.007795,
+      "influence": 0.875,
+      "median_rank": 27.0,
+      "lo_rank": 22,
+      "hi_rank": 30,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W1969329609",
+      "title": "Reliable quantum computers",
+      "year": 1998,
+      "doi": "10.1098/rspa.1998.0167",
+      "url": "https://doi.org/10.1098/rspa.1998.0167",
+      "venue": "Proceedings of the Royal Society A Mathematical Physical and Engineering Sciences",
+      "in_degree": 27,
+      "pagerank": 0.007686,
+      "influence": 0.8707,
+      "median_rank": 27.0,
+      "lo_rank": 23,
+      "hi_rank": 33,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2763302490",
+      "title": "Theory of quantum error-correcting codes",
+      "year": 1997,
+      "doi": "10.1103/physreva.55.900",
+      "url": "https://doi.org/10.1103/physreva.55.900",
+      "venue": "Physical Review A",
+      "in_degree": 27,
+      "pagerank": 0.007321,
+      "influence": 0.8664,
+      "median_rank": 29.0,
+      "lo_rank": 21,
+      "hi_rank": 34,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2079294297",
+      "title": "Universal quantum computation with ideal Clifford gates and noisy ancillas",
+      "year": 2005,
+      "doi": "10.1103/physreva.71.022316",
+      "url": "https://doi.org/10.1103/physreva.71.022316",
+      "venue": "Physical Review A",
+      "in_degree": 30,
+      "pagerank": 0.006913,
+      "influence": 0.8621,
+      "median_rank": 31.0,
+      "lo_rank": 23,
+      "hi_rank": 35,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W1839785972",
+      "title": "Stabilizer Codes and Quantum Error Correction",
+      "year": 1997,
+      "doi": "10.7907/rzr7-dt72.",
+      "url": "https://doi.org/10.7907/rzr7-dt72.",
+      "venue": null,
+      "in_degree": 20,
+      "pagerank": 0.006893,
+      "influence": 0.8578,
+      "median_rank": 30.0,
+      "lo_rank": 24,
+      "hi_rank": 37,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W3023478445",
+      "title": "Polynomial-Time Algorithms for Prime Factorization and Discrete Logarithms on a Quantum Computer",
+      "year": 1997,
+      "doi": "10.1137/s0097539795293172",
+      "url": "https://doi.org/10.1137/s0097539795293172",
+      "venue": "SIAM Journal on Computing",
+      "in_degree": 19,
+      "pagerank": 0.006797,
+      "influence": 0.8534,
+      "median_rank": 31.0,
+      "lo_rank": 25,
+      "hi_rank": 37,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W1963734567",
+      "title": "Charge-insensitive qubit design derived from the Cooper pair box",
+      "year": 2007,
+      "doi": "10.1103/physreva.76.042319",
+      "url": "https://doi.org/10.1103/physreva.76.042319",
+      "venue": "Physical Review A",
+      "in_degree": 29,
+      "pagerank": 0.006735,
+      "influence": 0.8491,
+      "median_rank": 33.0,
+      "lo_rank": 23,
+      "hi_rank": 40,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2040792108",
+      "title": "Universal Quantum Simulators",
+      "year": 1996,
+      "doi": "10.1126/science.273.5278.1073",
+      "url": "https://doi.org/10.1126/science.273.5278.1073",
+      "venue": "Science",
+      "in_degree": 19,
+      "pagerank": 0.006266,
+      "influence": 0.8448,
+      "median_rank": 34.0,
+      "lo_rank": 22,
+      "hi_rank": 51,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W1969246646",
+      "title": "Theory of fault-tolerant quantum computation",
+      "year": 1998,
+      "doi": "10.1103/physreva.57.127",
+      "url": "https://doi.org/10.1103/physreva.57.127",
+      "venue": "Physical Review A",
+      "in_degree": 18,
+      "pagerank": 0.006138,
+      "influence": 0.8405,
+      "median_rank": 35.0,
+      "lo_rank": 29,
+      "hi_rank": 42,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2166065655",
+      "title": "Resilient quantum computation: error models and thresholds",
+      "year": 1998,
+      "doi": "10.1098/rspa.1998.0166",
+      "url": "https://doi.org/10.1098/rspa.1998.0166",
+      "venue": "Proceedings of the Royal Society A Mathematical Physical and Engineering Sciences",
+      "in_degree": 20,
+      "pagerank": 0.006118,
+      "influence": 0.8362,
+      "median_rank": 36.0,
+      "lo_rank": 28,
+      "hi_rank": 40,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2153553676",
+      "title": "Quantum Error Correction with Imperfect Gates",
+      "year": 1997,
+      "doi": "10.1007/978-1-4615-5923-8_19",
+      "url": "https://doi.org/10.1007/978-1-4615-5923-8_19",
+      "venue": null,
+      "in_degree": 11,
+      "pagerank": 0.006026,
+      "influence": 0.8319,
+      "median_rank": 35.0,
+      "lo_rank": 28,
+      "hi_rank": 52,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2068163719",
+      "title": "Strong coupling of a single photon to a superconducting qubit using circuit quantum electrodynamics",
+      "year": 2004,
+      "doi": "10.1038/nature02851",
+      "url": "https://doi.org/10.1038/nature02851",
+      "venue": "Nature",
+      "in_degree": 10,
+      "pagerank": 0.005814,
+      "influence": 0.8276,
+      "median_rank": 37.0,
+      "lo_rank": 30,
+      "hi_rank": 46,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2119388976",
+      "title": "Topological fault-tolerance in cluster state quantum computation",
+      "year": 2007,
+      "doi": "10.1088/1367-2630/9/6/199",
+      "url": "https://doi.org/10.1088/1367-2630/9/6/199",
+      "venue": "New Journal of Physics",
+      "in_degree": 25,
+      "pagerank": 0.005397,
+      "influence": 0.8233,
+      "median_rank": 40.0,
+      "lo_rank": 32,
+      "hi_rank": 48,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W1980856895",
+      "title": "Experimental Quantum Error Correction",
+      "year": 1998,
+      "doi": "10.1103/physrevlett.81.2152",
+      "url": "https://doi.org/10.1103/physrevlett.81.2152",
+      "venue": "Physical Review Letters",
+      "in_degree": 18,
+      "pagerank": 0.005395,
+      "influence": 0.819,
+      "median_rank": 40.0,
+      "lo_rank": 34,
+      "hi_rank": 52,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W1984021697",
+      "title": "Quantum error correction for quantum memories",
+      "year": 2015,
+      "doi": "10.1103/revmodphys.87.307",
+      "url": "https://doi.org/10.1103/revmodphys.87.307",
+      "venue": "Reviews of Modern Physics",
+      "in_degree": 43,
+      "pagerank": 0.005261,
+      "influence": 0.8147,
+      "median_rank": 41.0,
+      "lo_rank": 35,
+      "hi_rank": 46,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2089540019",
+      "title": "State preservation by repetitive error detection in a superconducting quantum circuit",
+      "year": 2015,
+      "doi": "10.1038/nature14270",
+      "url": "https://doi.org/10.1038/nature14270",
+      "venue": "Nature",
+      "in_degree": 34,
+      "pagerank": 0.005227,
+      "influence": 0.8103,
+      "median_rank": 41.0,
+      "lo_rank": 36,
+      "hi_rank": 46,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2002372750",
+      "title": "Quantum Mechanics Helps in Searching for a Needle in a Haystack",
+      "year": 1997,
+      "doi": "10.1103/physrevlett.79.325",
+      "url": "https://doi.org/10.1103/physrevlett.79.325",
+      "venue": "Physical Review Letters",
+      "in_degree": 13,
+      "pagerank": 0.005174,
+      "influence": 0.806,
+      "median_rank": 41.0,
+      "lo_rank": 34,
+      "hi_rank": 56,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W3099972812",
+      "title": "Resilient Quantum Computation: Error Models and Thresholds",
+      "year": 1997,
+      "doi": null,
+      "url": "https://openalex.org/W3099972812",
+      "venue": "CERN Document Server (European Organization for Nuclear Research)",
+      "in_degree": 16,
+      "pagerank": 0.005053,
+      "influence": 0.8017,
+      "median_rank": 42.0,
+      "lo_rank": 33,
+      "hi_rank": 50,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W1972603977",
+      "title": "Active Stabilization, Quantum Computation, and Quantum State Synthesis",
+      "year": 1997,
+      "doi": "10.1103/physrevlett.78.2252",
+      "url": "https://doi.org/10.1103/physrevlett.78.2252",
+      "venue": "Physical Review Letters",
+      "in_degree": 16,
+      "pagerank": 0.004987,
+      "influence": 0.7974,
+      "median_rank": 44.0,
+      "lo_rank": 34,
+      "hi_rank": 57,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2120145199",
+      "title": "QUANTUM ESPRESSO: a modular and open-source software project for quantum simulations of materials",
+      "year": 2009,
+      "doi": "10.1088/0953-8984/21/39/395502",
+      "url": "https://doi.org/10.1088/0953-8984/21/39/395502",
+      "venue": "Journal of Physics Condensed Matter",
+      "in_degree": 2,
+      "pagerank": 0.004938,
+      "influence": 0.7931,
+      "median_rank": 46.0,
+      "lo_rank": 42,
+      "hi_rank": 91,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W1984125696",
+      "title": "Encoding a qubit in an oscillator",
+      "year": 2001,
+      "doi": "10.1103/physreva.64.012310",
+      "url": "https://doi.org/10.1103/physreva.64.012310",
+      "venue": "Physical Review A",
+      "in_degree": 23,
+      "pagerank": 0.004937,
+      "influence": 0.7888,
+      "median_rank": 45.0,
+      "lo_rank": 37,
+      "hi_rank": 59,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2170620327",
+      "title": "Randomized benchmarking of quantum gates",
+      "year": 2008,
+      "doi": "10.1103/physreva.77.012307",
+      "url": "https://doi.org/10.1103/physreva.77.012307",
+      "venue": "Physical Review A",
+      "in_degree": 10,
+      "pagerank": 0.004929,
+      "influence": 0.7845,
+      "median_rank": 45.0,
+      "lo_rank": 33,
+      "hi_rank": 77,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2134210354",
+      "title": "High-threshold universal quantum computation on the surface code",
+      "year": 2009,
+      "doi": "10.1103/physreva.80.052312",
+      "url": "https://doi.org/10.1103/physreva.80.052312",
+      "venue": "Physical Review A",
+      "in_degree": 22,
+      "pagerank": 0.004751,
+      "influence": 0.7802,
+      "median_rank": 47.0,
+      "lo_rank": 37,
+      "hi_rank": 55,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2019024432",
+      "title": "Realization of quantum error correction",
+      "year": 2004,
+      "doi": "10.1038/nature03074",
+      "url": "https://doi.org/10.1038/nature03074",
+      "venue": "Nature",
+      "in_degree": 17,
+      "pagerank": 0.004654,
+      "influence": 0.7759,
+      "median_rank": 48.0,
+      "lo_rank": 41,
+      "hi_rank": 59,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2013754283",
+      "title": "Topological Quantum Distillation",
+      "year": 2006,
+      "doi": "10.1103/physrevlett.97.180501",
+      "url": "https://doi.org/10.1103/physrevlett.97.180501",
+      "venue": "Physical Review Letters",
+      "in_degree": 21,
+      "pagerank": 0.004644,
+      "influence": 0.7716,
+      "median_rank": 49.0,
+      "lo_rank": 38,
+      "hi_rank": 62,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2107453273",
+      "title": "Confinement-Higgs transition in a disordered gauge theory and the accuracy threshold for quantum memory",
+      "year": 2003,
+      "doi": "10.1016/s0003-4916(02)00019-2",
+      "url": "https://doi.org/10.1016/s0003-4916(02)00019-2",
+      "venue": "Annals of Physics",
+      "in_degree": 19,
+      "pagerank": 0.004607,
+      "influence": 0.7672,
+      "median_rank": 48.0,
+      "lo_rank": 37,
+      "hi_rank": 63,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2014633300",
+      "title": "Resilient Quantum Computation",
+      "year": 1998,
+      "doi": "10.1126/science.279.5349.342",
+      "url": "https://doi.org/10.1126/science.279.5349.342",
+      "venue": "Science",
+      "in_degree": 15,
+      "pagerank": 0.004434,
+      "influence": 0.7629,
+      "median_rank": 51.0,
+      "lo_rank": 41,
+      "hi_rank": 66,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2092458348",
+      "title": "Demonstration of a quantum error detection code using a square lattice of four superconducting qubits",
+      "year": 2015,
+      "doi": "10.1038/ncomms7979",
+      "url": "https://doi.org/10.1038/ncomms7979",
+      "venue": "Nature Communications",
+      "in_degree": 28,
+      "pagerank": 0.004324,
+      "influence": 0.7586,
+      "median_rank": 52.0,
+      "lo_rank": 48,
+      "hi_rank": 60,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2990961515",
+      "title": "Quantum Computation and Quantum Information",
+      "year": 2012,
+      "doi": "10.1017/cbo9780511976667",
+      "url": "https://doi.org/10.1017/cbo9780511976667",
+      "venue": "Cambridge University Press eBooks",
+      "in_degree": 15,
+      "pagerank": 0.004284,
+      "influence": 0.7543,
+      "median_rank": 53.0,
+      "lo_rank": 42,
+      "hi_rank": 68,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2052891002",
+      "title": "Simulated Quantum Computation of Molecular Energies",
+      "year": 2005,
+      "doi": "10.1126/science.1113479",
+      "url": "https://doi.org/10.1126/science.1113479",
+      "venue": "Science",
+      "in_degree": 15,
+      "pagerank": 0.004265,
+      "influence": 0.75,
+      "median_rank": 55.0,
+      "lo_rank": 37,
+      "hi_rank": 81,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W1992359860",
+      "title": "Experimental Repetitive Quantum Error Correction",
+      "year": 2011,
+      "doi": "10.1126/science.1203329",
+      "url": "https://doi.org/10.1126/science.1203329",
+      "venue": "Science",
+      "in_degree": 17,
+      "pagerank": 0.004205,
+      "influence": 0.7457,
+      "median_rank": 55.0,
+      "lo_rank": 45,
+      "hi_rank": 70,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    }
+  ],
+  "edges": [
+    [
+      "W1968850365",
+      "W1631356911"
+    ],
+    [
+      "W1968850365",
+      "W1963734567"
+    ],
+    [
+      "W1968850365",
+      "W2030867075"
+    ],
+    [
+      "W1968850365",
+      "W2068163719"
+    ],
+    [
+      "W1968850365",
+      "W2179731956"
+    ],
+    [
+      "W1968850365",
+      "W2990961515"
+    ],
+    [
+      "W2089540019",
+      "W1968850365"
+    ],
+    [
+      "W2089540019",
+      "W1980856895"
+    ],
+    [
+      "W2089540019",
+      "W1992359860"
+    ],
+    [
+      "W2089540019",
+      "W1999706070"
+    ],
+    [
+      "W2089540019",
+      "W2019024432"
+    ],
+    [
+      "W2089540019",
+      "W2030867075"
+    ],
+    [
+      "W2089540019",
+      "W2042474962"
+    ],
+    [
+      "W2089540019",
+      "W2056281570"
+    ],
+    [
+      "W2089540019",
+      "W2092458348"
+    ],
+    [
+      "W2089540019",
+      "W2114207424"
+    ],
+    [
+      "W2089540019",
+      "W2119388976"
+    ],
+    [
+      "W2089540019",
+      "W4233756358"
+    ],
+    [
+      "W2134210354",
+      "W1999706070"
+    ],
+    [
+      "W2134210354",
+      "W2056281570"
+    ],
+    [
+      "W2134210354",
+      "W2062258079"
+    ],
+    [
+      "W2134210354",
+      "W2079294297"
+    ],
+    [
+      "W2134210354",
+      "W2088636071"
+    ],
+    [
+      "W2134210354",
+      "W2119388976"
+    ],
+    [
+      "W2134210354",
+      "W2131690084"
+    ],
+    [
+      "W2134210354",
+      "W3100736866"
+    ],
+    [
+      "W2092458348",
+      "W1839785972"
+    ],
+    [
+      "W2092458348",
+      "W1968850365"
+    ],
+    [
+      "W2092458348",
+      "W1980856895"
+    ],
+    [
+      "W2092458348",
+      "W1992359860"
+    ],
+    [
+      "W2092458348",
+      "W2019024432"
+    ],
+    [
+      "W2092458348",
+      "W2030867075"
+    ],
+    [
+      "W2092458348",
+      "W2056281570"
+    ],
+    [
+      "W2092458348",
+      "W2088636071"
+    ],
+    [
+      "W2092458348",
+      "W2089540019"
+    ],
+    [
+      "W2092458348",
+      "W2135273380"
+    ],
+    [
+      "W2092458348",
+      "W3100736866"
+    ],
+    [
+      "W2030867075",
+      "W1631356911"
+    ],
+    [
+      "W2030867075",
+      "W1839785972"
+    ],
+    [
+      "W2030867075",
+      "W1999706070"
+    ],
+    [
+      "W2030867075",
+      "W2002372750"
+    ],
+    [
+      "W2030867075",
+      "W2056281570"
+    ],
+    [
+      "W2030867075",
+      "W2079294297"
+    ],
+    [
+      "W2030867075",
+      "W2088636071"
+    ],
+    [
+      "W2030867075",
+      "W2107453273"
+    ],
+    [
+      "W2030867075",
+      "W2119388976"
+    ],
+    [
+      "W2030867075",
+      "W2131690084"
+    ],
+    [
+      "W2030867075",
+      "W2134210354"
+    ],
+    [
+      "W2030867075",
+      "W2135273380"
+    ],
+    [
+      "W2030867075",
+      "W2159566537"
+    ],
+    [
+      "W2030867075",
+      "W2764347725"
+    ],
+    [
+      "W2030867075",
+      "W3100206575"
+    ],
+    [
+      "W2030867075",
+      "W3100736866"
+    ],
+    [
+      "W2030867075",
+      "W4233756358"
+    ],
+    [
+      "W2088636071",
+      "W1969246646"
+    ],
+    [
+      "W2088636071",
+      "W1969329609"
+    ],
+    [
+      "W2088636071",
+      "W1972603977"
+    ],
+    [
+      "W2088636071",
+      "W1999706070"
+    ],
+    [
+      "W2088636071",
+      "W2042474962"
+    ],
+    [
+      "W2088636071",
+      "W2069711632"
+    ],
+    [
+      "W2088636071",
+      "W2091331782"
+    ],
+    [
+      "W2088636071",
+      "W2114207424"
+    ],
+    [
+      "W2088636071",
+      "W2131690084"
+    ],
+    [
+      "W2088636071",
+      "W2135273380"
+    ],
+    [
+      "W2088636071",
+      "W2159566537"
+    ],
+    [
+      "W2088636071",
+      "W2166065655"
+    ],
+    [
+      "W2088636071",
+      "W4233756358"
+    ],
+    [
+      "W2135273380",
+      "W2052169397"
+    ],
+    [
+      "W2135273380",
+      "W2069711632"
+    ],
+    [
+      "W2135273380",
+      "W2091331782"
+    ],
+    [
+      "W2135273380",
+      "W2114207424"
+    ],
+    [
+      "W2135273380",
+      "W2153553676"
+    ],
+    [
+      "W2135273380",
+      "W2159566537"
+    ],
+    [
+      "W2135273380",
+      "W2167927798"
+    ],
+    [
+      "W2135273380",
+      "W2168676717"
+    ],
+    [
+      "W3100736866",
+      "W1839785972"
+    ],
+    [
+      "W3100736866",
+      "W1969246646"
+    ],
+    [
+      "W3100736866",
+      "W1969329609"
+    ],
+    [
+      "W3100736866",
+      "W1972603977"
+    ],
+    [
+      "W3100736866",
+      "W1999706070"
+    ],
+    [
+      "W3100736866",
+      "W2042474962"
+    ],
+    [
+      "W3100736866",
+      "W2052169397"
+    ],
+    [
+      "W3100736866",
+      "W2069711632"
+    ],
+    [
+      "W3100736866",
+      "W2091331782"
+    ],
+    [
+      "W3100736866",
+      "W2114207424"
+    ],
+    [
+      "W3100736866",
+      "W2131690084"
+    ],
+    [
+      "W3100736866",
+      "W2135273380"
+    ],
+    [
+      "W3100736866",
+      "W2153553676"
+    ],
+    [
+      "W3100736866",
+      "W2159566537"
+    ],
+    [
+      "W3100736866",
+      "W2166065655"
+    ],
+    [
+      "W3100736866",
+      "W2167927798"
+    ],
+    [
+      "W3100736866",
+      "W3099972812"
+    ],
+    [
+      "W3100736866",
+      "W3100206575"
+    ],
+    [
+      "W3100736866",
+      "W4233756358"
+    ],
+    [
+      "W1984021697",
+      "W1631356911"
+    ],
+    [
+      "W1984021697",
+      "W1839785972"
+    ],
+    [
+      "W1984021697",
+      "W1963734567"
+    ],
+    [
+      "W1984021697",
+      "W1968850365"
+    ],
+    [
+      "W1984021697",
+      "W1972603977"
+    ],
+    [
+      "W1984021697",
+      "W1984125696"
+    ],
+    [
+      "W1984021697",
+      "W2013754283"
+    ],
+    [
+      "W1984021697",
+      "W2014633300"
+    ],
+    [
+      "W1984021697",
+      "W2030867075"
+    ],
+    [
+      "W1984021697",
+      "W2032147770"
+    ],
+    [
+      "W1984021697",
+      "W2052169397"
+    ],
+    [
+      "W1984021697",
+      "W2056281570"
+    ],
+    [
+      "W1984021697",
+      "W2060887031"
+    ],
+    [
+      "W1984021697",
+      "W2079294297"
+    ],
+    [
+      "W1984021697",
+      "W2088636071"
+    ],
+    [
+      "W1984021697",
+      "W2107453273"
+    ],
+    [
+      "W1984021697",
+      "W2119388976"
+    ],
+    [
+      "W1984021697",
+      "W2134210354"
+    ],
+    [
+      "W1984021697",
+      "W2135273380"
+    ],
+    [
+      "W1984021697",
+      "W2159566537"
+    ],
+    [
+      "W1984021697",
+      "W2167927798"
+    ],
+    [
+      "W1984021697",
+      "W2763302490"
+    ],
+    [
+      "W1984021697",
+      "W2764347725"
+    ],
+    [
+      "W1984021697",
+      "W3099972812"
+    ],
+    [
+      "W1984021697",
+      "W3100736866"
+    ],
+    [
+      "W1984021697",
+      "W4233756358"
+    ],
+    [
+      "W2056281570",
+      "W1631356911"
+    ],
+    [
+      "W2056281570",
+      "W2013754283"
+    ],
+    [
+      "W2056281570",
+      "W2032147770"
+    ],
+    [
+      "W2056281570",
+      "W2079294297"
+    ],
+    [
+      "W2056281570",
+      "W2088636071"
+    ],
+    [
+      "W2056281570",
+      "W2107453273"
+    ],
+    [
+      "W2056281570",
+      "W2135273380"
+    ],
+    [
+      "W2056281570",
+      "W2166065655"
+    ],
+    [
+      "W2056281570",
+      "W2764347725"
+    ],
+    [
+      "W2056281570",
+      "W3099972812"
+    ],
+    [
+      "W2056281570",
+      "W3100736866"
+    ],
+    [
+      "W2056281570",
+      "W4233756358"
+    ],
+    [
+      "W1999706070",
+      "W1967045838"
+    ],
+    [
+      "W1999706070",
+      "W1993248778"
+    ],
+    [
+      "W1999706070",
+      "W2148132004"
+    ],
+    [
+      "W1963734567",
+      "W2002372750"
+    ],
+    [
+      "W1963734567",
+      "W2068163719"
+    ],
+    [
+      "W1963734567",
+      "W3023478445"
+    ],
+    [
+      "W2079294297",
+      "W1631356911"
+    ],
+    [
+      "W2079294297",
+      "W1969246646"
+    ],
+    [
+      "W2079294297",
+      "W1972603977"
+    ],
+    [
+      "W2079294297",
+      "W2014633300"
+    ],
+    [
+      "W2079294297",
+      "W2060887031"
+    ],
+    [
+      "W2079294297",
+      "W2088636071"
+    ],
+    [
+      "W2079294297",
+      "W2091331782"
+    ],
+    [
+      "W2079294297",
+      "W2092938635"
+    ],
+    [
+      "W2079294297",
+      "W2114207424"
+    ],
+    [
+      "W2079294297",
+      "W2131690084"
+    ],
+    [
+      "W2079294297",
+      "W2135273380"
+    ],
+    [
+      "W2079294297",
+      "W2179731956"
+    ],
+    [
+      "W2079294297",
+      "W2764347725"
+    ],
+    [
+      "W2079294297",
+      "W3100736866"
+    ],
+    [
+      "W2032147770",
+      "W1631356911"
+    ],
+    [
+      "W2032147770",
+      "W1839785972"
+    ],
+    [
+      "W2032147770",
+      "W1969329609"
+    ],
+    [
+      "W2032147770",
+      "W2014633300"
+    ],
+    [
+      "W2032147770",
+      "W2052169397"
+    ],
+    [
+      "W2032147770",
+      "W2062258079"
+    ],
+    [
+      "W2032147770",
+      "W2159566537"
+    ],
+    [
+      "W2032147770",
+      "W2166065655"
+    ],
+    [
+      "W2032147770",
+      "W2167927798"
+    ],
+    [
+      "W2032147770",
+      "W2179731956"
+    ],
+    [
+      "W2032147770",
+      "W2764347725"
+    ],
+    [
+      "W2032147770",
+      "W3023478445"
+    ],
+    [
+      "W2032147770",
+      "W3099972812"
+    ],
+    [
+      "W2032147770",
+      "W3100206575"
+    ],
+    [
+      "W2114207424",
+      "W1967045838"
+    ],
+    [
+      "W2114207424",
+      "W1993248778"
+    ],
+    [
+      "W2114207424",
+      "W1999706070"
+    ],
+    [
+      "W2114207424",
+      "W2042474962"
+    ],
+    [
+      "W2114207424",
+      "W2049471987"
+    ],
+    [
+      "W2114207424",
+      "W2062258079"
+    ],
+    [
+      "W2114207424",
+      "W2067763535"
+    ],
+    [
+      "W2114207424",
+      "W2148132004"
+    ],
+    [
+      "W2114207424",
+      "W2168676717"
+    ],
+    [
+      "W2114207424",
+      "W3100206575"
+    ],
+    [
+      "W2119388976",
+      "W2013754283"
+    ],
+    [
+      "W2119388976",
+      "W2032147770"
+    ],
+    [
+      "W2119388976",
+      "W2079294297"
+    ],
+    [
+      "W2119388976",
+      "W2088636071"
+    ],
+    [
+      "W2119388976",
+      "W2107453273"
+    ],
+    [
+      "W2119388976",
+      "W2135273380"
+    ],
+    [
+      "W2119388976",
+      "W2166065655"
+    ],
+    [
+      "W2119388976",
+      "W3099972812"
+    ],
+    [
+      "W2119388976",
+      "W3100736866"
+    ],
+    [
+      "W2119388976",
+      "W4233756358"
+    ],
+    [
+      "W1969329609",
+      "W1839785972"
+    ],
+    [
+      "W1969329609",
+      "W1967045838"
+    ],
+    [
+      "W1969329609",
+      "W1969246646"
+    ],
+    [
+      "W1969329609",
+      "W1972603977"
+    ],
+    [
+      "W1969329609",
+      "W1999706070"
+    ],
+    [
+      "W1969329609",
+      "W2040792108"
+    ],
+    [
+      "W1969329609",
+      "W2042474962"
+    ],
+    [
+      "W1969329609",
+      "W2049471987"
+    ],
+    [
+      "W1969329609",
+      "W2052169397"
+    ],
+    [
+      "W1969329609",
+      "W2060887031"
+    ],
+    [
+      "W1969329609",
+      "W2067763535"
+    ],
+    [
+      "W1969329609",
+      "W2069711632"
+    ],
+    [
+      "W1969329609",
+      "W2091331782"
+    ],
+    [
+      "W1969329609",
+      "W2092938635"
+    ],
+    [
+      "W1969329609",
+      "W2114207424"
+    ],
+    [
+      "W1969329609",
+      "W2131690084"
+    ],
+    [
+      "W1969329609",
+      "W2153553676"
+    ],
+    [
+      "W1969329609",
+      "W2167927798"
+    ],
+    [
+      "W1969329609",
+      "W2168676717"
+    ],
+    [
+      "W1969329609",
+      "W2763302490"
+    ],
+    [
+      "W1969329609",
+      "W3099972812"
+    ],
+    [
+      "W1969329609",
+      "W3100206575"
+    ],
+    [
+      "W2040792108",
+      "W1967045838"
+    ],
+    [
+      "W2040792108",
+      "W1993248778"
+    ],
+    [
+      "W2040792108",
+      "W1999706070"
+    ],
+    [
+      "W2040792108",
+      "W2067763535"
+    ],
+    [
+      "W2040792108",
+      "W2148132004"
+    ],
+    [
+      "W2040792108",
+      "W2168676717"
+    ],
+    [
+      "W2040792108",
+      "W2179731956"
+    ],
+    [
+      "W2042474962",
+      "W1999706070"
+    ],
+    [
+      "W2042474962",
+      "W2148132004"
+    ],
+    [
+      "W2107453273",
+      "W1999706070"
+    ],
+    [
+      "W2107453273",
+      "W2042474962"
+    ],
+    [
+      "W2107453273",
+      "W2088636071"
+    ],
+    [
+      "W2107453273",
+      "W2135273380"
+    ],
+    [
+      "W2107453273",
+      "W2153553676"
+    ],
+    [
+      "W2107453273",
+      "W2167927798"
+    ],
+    [
+      "W2107453273",
+      "W3100736866"
+    ],
+    [
+      "W2107453273",
+      "W4233756358"
+    ],
+    [
+      "W3023478445",
+      "W1967045838"
+    ],
+    [
+      "W3023478445",
+      "W1993248778"
+    ],
+    [
+      "W3023478445",
+      "W1999706070"
+    ],
+    [
+      "W3023478445",
+      "W2062258079"
+    ],
+    [
+      "W3023478445",
+      "W2067763535"
+    ],
+    [
+      "W3023478445",
+      "W2148132004"
+    ],
+    [
+      "W3023478445",
+      "W2179731956"
+    ],
+    [
+      "W2052891002",
+      "W2040792108"
+    ],
+    [
+      "W2052891002",
+      "W2179731956"
+    ],
+    [
+      "W1984125696",
+      "W1969246646"
+    ],
+    [
+      "W1984125696",
+      "W1972603977"
+    ],
+    [
+      "W1984125696",
+      "W1999706070"
+    ],
+    [
+      "W1984125696",
+      "W2042474962"
+    ],
+    [
+      "W1984125696",
+      "W2069711632"
+    ],
+    [
+      "W1984125696",
+      "W2091331782"
+    ],
+    [
+      "W1984125696",
+      "W2114207424"
+    ],
+    [
+      "W1984125696",
+      "W2131690084"
+    ],
+    [
+      "W1984125696",
+      "W2166065655"
+    ],
+    [
+      "W2159566537",
+      "W1839785972"
+    ],
+    [
+      "W2159566537",
+      "W1969246646"
+    ],
+    [
+      "W2159566537",
+      "W1999706070"
+    ],
+    [
+      "W2159566537",
+      "W2052169397"
+    ],
+    [
+      "W2159566537",
+      "W2060887031"
+    ],
+    [
+      "W2159566537",
+      "W2062258079"
+    ],
+    [
+      "W2159566537",
+      "W2069711632"
+    ],
+    [
+      "W2159566537",
+      "W2091331782"
+    ],
+    [
+      "W2159566537",
+      "W2092938635"
+    ],
+    [
+      "W2159566537",
+      "W2114207424"
+    ],
+    [
+      "W2159566537",
+      "W2148132004"
+    ],
+    [
+      "W2159566537",
+      "W2153553676"
+    ],
+    [
+      "W2159566537",
+      "W2167927798"
+    ],
+    [
+      "W2159566537",
+      "W2763302490"
+    ],
+    [
+      "W2159566537",
+      "W3100206575"
+    ],
+    [
+      "W2013754283",
+      "W2062258079"
+    ],
+    [
+      "W2013754283",
+      "W2069711632"
+    ],
+    [
+      "W2013754283",
+      "W2079294297"
+    ],
+    [
+      "W2013754283",
+      "W2088636071"
+    ],
+    [
+      "W2013754283",
+      "W2091331782"
+    ],
+    [
+      "W2013754283",
+      "W2135273380"
+    ],
+    [
+      "W2013754283",
+      "W3100736866"
+    ],
+    [
+      "W2131690084",
+      "W1967045838"
+    ],
+    [
+      "W2131690084",
+      "W1993248778"
+    ],
+    [
+      "W2131690084",
+      "W1999706070"
+    ],
+    [
+      "W2131690084",
+      "W2042474962"
+    ],
+    [
+      "W2131690084",
+      "W2062258079"
+    ],
+    [
+      "W2131690084",
+      "W2067763535"
+    ],
+    [
+      "W2131690084",
+      "W2148132004"
+    ],
+    [
+      "W2131690084",
+      "W2168676717"
+    ],
+    [
+      "W2131690084",
+      "W2179731956"
+    ],
+    [
+      "W2052169397",
+      "W1967045838"
+    ],
+    [
+      "W2052169397",
+      "W1969246646"
+    ],
+    [
+      "W2052169397",
+      "W1993248778"
+    ],
+    [
+      "W2052169397",
+      "W1999706070"
+    ],
+    [
+      "W2052169397",
+      "W2002372750"
+    ],
+    [
+      "W2052169397",
+      "W2014633300"
+    ],
+    [
+      "W2052169397",
+      "W2049471987"
+    ],
+    [
+      "W2052169397",
+      "W2060887031"
+    ],
+    [
+      "W2052169397",
+      "W2067763535"
+    ],
+    [
+      "W2052169397",
+      "W2069711632"
+    ],
+    [
+      "W2052169397",
+      "W2091331782"
+    ],
+    [
+      "W2052169397",
+      "W2092938635"
+    ],
+    [
+      "W2052169397",
+      "W2114207424"
+    ],
+    [
+      "W2052169397",
+      "W2148132004"
+    ],
+    [
+      "W2052169397",
+      "W2153553676"
+    ],
+    [
+      "W2052169397",
+      "W2159566537"
+    ],
+    [
+      "W2052169397",
+      "W2167927798"
+    ],
+    [
+      "W2052169397",
+      "W2168676717"
+    ],
+    [
+      "W2052169397",
+      "W2179731956"
+    ],
+    [
+      "W2052169397",
+      "W2763302490"
+    ],
+    [
+      "W2052169397",
+      "W3100206575"
+    ],
+    [
+      "W2166065655",
+      "W1967045838"
+    ],
+    [
+      "W2166065655",
+      "W1993248778"
+    ],
+    [
+      "W2166065655",
+      "W1999706070"
+    ],
+    [
+      "W2166065655",
+      "W2042474962"
+    ],
+    [
+      "W2166065655",
+      "W2049471987"
+    ],
+    [
+      "W2166065655",
+      "W2060887031"
+    ],
+    [
+      "W2166065655",
+      "W2067763535"
+    ],
+    [
+      "W2166065655",
+      "W2069711632"
+    ],
+    [
+      "W2166065655",
+      "W2114207424"
+    ],
+    [
+      "W2166065655",
+      "W2131690084"
+    ],
+    [
+      "W2166065655",
+      "W2148132004"
+    ],
+    [
+      "W2166065655",
+      "W2167927798"
+    ],
+    [
+      "W2166065655",
+      "W2763302490"
+    ],
+    [
+      "W2167927798",
+      "W1967045838"
+    ],
+    [
+      "W2167927798",
+      "W1999706070"
+    ],
+    [
+      "W2167927798",
+      "W2060887031"
+    ],
+    [
+      "W2167927798",
+      "W2062258079"
+    ],
+    [
+      "W2167927798",
+      "W2067763535"
+    ],
+    [
+      "W2167927798",
+      "W2114207424"
+    ],
+    [
+      "W2167927798",
+      "W2131690084"
+    ],
+    [
+      "W2167927798",
+      "W2168676717"
+    ],
+    [
+      "W2167927798",
+      "W3023478445"
+    ],
+    [
+      "W2167927798",
+      "W3100206575"
+    ],
+    [
+      "W2069711632",
+      "W1999706070"
+    ],
+    [
+      "W2069711632",
+      "W2062258079"
+    ],
+    [
+      "W2069711632",
+      "W2114207424"
+    ],
+    [
+      "W1839785972",
+      "W1969246646"
+    ],
+    [
+      "W1839785972",
+      "W1972603977"
+    ],
+    [
+      "W1839785972",
+      "W1999706070"
+    ],
+    [
+      "W1839785972",
+      "W2042474962"
+    ],
+    [
+      "W1839785972",
+      "W2049471987"
+    ],
+    [
+      "W1839785972",
+      "W2052169397"
+    ],
+    [
+      "W1839785972",
+      "W2060887031"
+    ],
+    [
+      "W1839785972",
+      "W2062258079"
+    ],
+    [
+      "W1839785972",
+      "W2067763535"
+    ],
+    [
+      "W1839785972",
+      "W2069711632"
+    ],
+    [
+      "W1839785972",
+      "W2091331782"
+    ],
+    [
+      "W1839785972",
+      "W2092938635"
+    ],
+    [
+      "W1839785972",
+      "W2114207424"
+    ],
+    [
+      "W1839785972",
+      "W2167927798"
+    ],
+    [
+      "W1839785972",
+      "W2168676717"
+    ],
+    [
+      "W1839785972",
+      "W2179731956"
+    ],
+    [
+      "W1839785972",
+      "W2763302490"
+    ],
+    [
+      "W1839785972",
+      "W3099972812"
+    ],
+    [
+      "W1839785972",
+      "W3100206575"
+    ],
+    [
+      "W1969246646",
+      "W1999706070"
+    ],
+    [
+      "W1969246646",
+      "W2052169397"
+    ],
+    [
+      "W1969246646",
+      "W2060887031"
+    ],
+    [
+      "W1969246646",
+      "W2069711632"
+    ],
+    [
+      "W1969246646",
+      "W2091331782"
+    ],
+    [
+      "W1969246646",
+      "W2092938635"
+    ],
+    [
+      "W1969246646",
+      "W2114207424"
+    ],
+    [
+      "W1969246646",
+      "W2131690084"
+    ],
+    [
+      "W1969246646",
+      "W2167927798"
+    ],
+    [
+      "W1969246646",
+      "W3100206575"
+    ],
+    [
+      "W2763302490",
+      "W1999706070"
+    ],
+    [
+      "W2763302490",
+      "W2042474962"
+    ],
+    [
+      "W2763302490",
+      "W2049471987"
+    ],
+    [
+      "W2763302490",
+      "W2060887031"
+    ],
+    [
+      "W2763302490",
+      "W2092938635"
+    ],
+    [
+      "W2763302490",
+      "W2114207424"
+    ],
+    [
+      "W2168676717",
+      "W1967045838"
+    ],
+    [
+      "W2168676717",
+      "W1993248778"
+    ],
+    [
+      "W2168676717",
+      "W2148132004"
+    ],
+    [
+      "W2168676717",
+      "W2179731956"
+    ],
+    [
+      "W1972603977",
+      "W1999706070"
+    ],
+    [
+      "W1972603977",
+      "W2042474962"
+    ],
+    [
+      "W1972603977",
+      "W2062258079"
+    ],
+    [
+      "W1972603977",
+      "W2069711632"
+    ],
+    [
+      "W1972603977",
+      "W2091331782"
+    ],
+    [
+      "W1972603977",
+      "W2092938635"
+    ],
+    [
+      "W1972603977",
+      "W2114207424"
+    ],
+    [
+      "W1972603977",
+      "W2131690084"
+    ],
+    [
+      "W1972603977",
+      "W2763302490"
+    ],
+    [
+      "W2060887031",
+      "W1999706070"
+    ],
+    [
+      "W2060887031",
+      "W2042474962"
+    ],
+    [
+      "W2060887031",
+      "W2049471987"
+    ],
+    [
+      "W2060887031",
+      "W2062258079"
+    ],
+    [
+      "W2060887031",
+      "W2092938635"
+    ],
+    [
+      "W2060887031",
+      "W2114207424"
+    ],
+    [
+      "W2060887031",
+      "W3100206575"
+    ],
+    [
+      "W2091331782",
+      "W1999706070"
+    ],
+    [
+      "W2091331782",
+      "W2042474962"
+    ],
+    [
+      "W2091331782",
+      "W2060887031"
+    ],
+    [
+      "W2091331782",
+      "W2062258079"
+    ],
+    [
+      "W2091331782",
+      "W2069711632"
+    ],
+    [
+      "W2091331782",
+      "W2092938635"
+    ],
+    [
+      "W2091331782",
+      "W2114207424"
+    ],
+    [
+      "W2091331782",
+      "W2131690084"
+    ],
+    [
+      "W1992359860",
+      "W1969329609"
+    ],
+    [
+      "W1992359860",
+      "W1980856895"
+    ],
+    [
+      "W1992359860",
+      "W2019024432"
+    ],
+    [
+      "W1992359860",
+      "W2114207424"
+    ],
+    [
+      "W1992359860",
+      "W2131690084"
+    ],
+    [
+      "W1992359860",
+      "W3100206575"
+    ],
+    [
+      "W1980856895",
+      "W1967045838"
+    ],
+    [
+      "W1980856895",
+      "W1969329609"
+    ],
+    [
+      "W1980856895",
+      "W1999706070"
+    ],
+    [
+      "W1980856895",
+      "W2014633300"
+    ],
+    [
+      "W1980856895",
+      "W2040792108"
+    ],
+    [
+      "W1980856895",
+      "W2067763535"
+    ],
+    [
+      "W1980856895",
+      "W2131690084"
+    ],
+    [
+      "W1980856895",
+      "W3023478445"
+    ],
+    [
+      "W2019024432",
+      "W1631356911"
+    ],
+    [
+      "W2019024432",
+      "W1969329609"
+    ],
+    [
+      "W2019024432",
+      "W1980856895"
+    ],
+    [
+      "W2019024432",
+      "W2114207424"
+    ],
+    [
+      "W2019024432",
+      "W2131690084"
+    ],
+    [
+      "W2019024432",
+      "W2168676717"
+    ],
+    [
+      "W2019024432",
+      "W2764347725"
+    ],
+    [
+      "W2019024432",
+      "W3100206575"
+    ],
+    [
+      "W3099972812",
+      "W1967045838"
+    ],
+    [
+      "W3099972812",
+      "W1993248778"
+    ],
+    [
+      "W3099972812",
+      "W1999706070"
+    ],
+    [
+      "W3099972812",
+      "W2042474962"
+    ],
+    [
+      "W3099972812",
+      "W2049471987"
+    ],
+    [
+      "W3099972812",
+      "W2060887031"
+    ],
+    [
+      "W3099972812",
+      "W2067763535"
+    ],
+    [
+      "W3099972812",
+      "W2069711632"
+    ],
+    [
+      "W3099972812",
+      "W2114207424"
+    ],
+    [
+      "W3099972812",
+      "W2131690084"
+    ],
+    [
+      "W3099972812",
+      "W2148132004"
+    ],
+    [
+      "W3099972812",
+      "W2167927798"
+    ],
+    [
+      "W3099972812",
+      "W2763302490"
+    ],
+    [
+      "W2014633300",
+      "W1967045838"
+    ],
+    [
+      "W2014633300",
+      "W2042474962"
+    ],
+    [
+      "W2014633300",
+      "W2049471987"
+    ],
+    [
+      "W2014633300",
+      "W2060887031"
+    ],
+    [
+      "W2014633300",
+      "W2067763535"
+    ],
+    [
+      "W2014633300",
+      "W2091331782"
+    ],
+    [
+      "W2014633300",
+      "W2092938635"
+    ],
+    [
+      "W2014633300",
+      "W2114207424"
+    ],
+    [
+      "W2014633300",
+      "W2131690084"
+    ],
+    [
+      "W2014633300",
+      "W2763302490"
+    ],
+    [
+      "W2014633300",
+      "W3100206575"
+    ],
+    [
+      "W2062258079",
+      "W1999706070"
+    ],
+    [
+      "W2062258079",
+      "W2049471987"
+    ],
+    [
+      "W2153553676",
+      "W1999706070"
+    ],
+    [
+      "W2153553676",
+      "W2060887031"
+    ],
+    [
+      "W2153553676",
+      "W2062258079"
+    ],
+    [
+      "W2153553676",
+      "W2091331782"
+    ],
+    [
+      "W2153553676",
+      "W2092938635"
+    ],
+    [
+      "W2153553676",
+      "W2114207424"
+    ],
+    [
+      "W2153553676",
+      "W2159566537"
+    ],
+    [
+      "W2153553676",
+      "W2167927798"
+    ],
+    [
+      "W2153553676",
+      "W2168676717"
+    ],
+    [
+      "W2153553676",
+      "W3100206575"
+    ],
+    [
+      "W2170620327",
+      "W2019024432"
+    ],
+    [
+      "W2170620327",
+      "W2032147770"
+    ],
+    [
+      "W2170620327",
+      "W2056281570"
+    ],
+    [
+      "W2170620327",
+      "W2079294297"
+    ],
+    [
+      "W2170620327",
+      "W2179731956"
+    ],
+    [
+      "W2170620327",
+      "W3023478445"
+    ],
+    [
+      "W3100206575",
+      "W1967045838"
+    ],
+    [
+      "W3100206575",
+      "W1993248778"
+    ],
+    [
+      "W3100206575",
+      "W1999706070"
+    ],
+    [
+      "W3100206575",
+      "W2042474962"
+    ],
+    [
+      "W3100206575",
+      "W2062258079"
+    ],
+    [
+      "W3100206575",
+      "W2067763535"
+    ],
+    [
+      "W3100206575",
+      "W2148132004"
+    ],
+    [
+      "W3100206575",
+      "W2168676717"
+    ],
+    [
+      "W3100206575",
+      "W2179731956"
+    ],
+    [
+      "W2092938635",
+      "W1967045838"
+    ],
+    [
+      "W2092938635",
+      "W1999706070"
+    ],
+    [
+      "W2092938635",
+      "W2067763535"
+    ],
+    [
+      "W2067763535",
+      "W1993248778"
+    ],
+    [
+      "W2068163719",
+      "W1631356911"
+    ],
+    [
+      "W2068163719",
+      "W2764347725"
+    ]
+  ]
+}

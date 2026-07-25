@@ -12,3 +12,5 @@ dist/
 # Secrets — API keys never get committed.
 .env
 *.key
+# Rebuildable OpenAlex harvest cache — keep it out of the committed snapshot.
+sample_data/_harvest_cache/

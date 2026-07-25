@@ -1,0 +1,1495 @@
+{
+  "query": "transformer attention mechanisms",
+  "generated_at": "2026-07-23T11:34:16.868190+00:00",
+  "n_fetched": 150,
+  "boundary_leakage": 0.9691,
+  "resamples": 1000,
+  "nodes": [
+    {
+      "id": "W4385245566",
+      "title": "Inline Hardware KV-Cache Compression for Long-Context Transformer Inference: An Architectural Case for a Memory-Path Compression Engine",
+      "year": 2023,
+      "doi": "10.4230/lipics.itp.2023.19",
+      "url": "https://doi.org/10.4230/lipics.itp.2023.19",
+      "venue": "DROPS (Schloss Dagstuhl \u2013 Leibniz Center for Informatics)",
+      "in_degree": 69,
+      "pagerank": 0.16973,
+      "influence": 1.0,
+      "median_rank": 1.0,
+      "lo_rank": 1,
+      "hi_rank": 1,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2896457183",
+      "title": "AI-Assisted Pipeline for Dynamic Generation of Trustworthy Health Supplement Content at Scale",
+      "year": 2018,
+      "doi": "10.4230/lipics.cosit.2022.18",
+      "url": "https://doi.org/10.4230/lipics.cosit.2022.18",
+      "venue": "DROPS (Schloss Dagstuhl \u2013 Leibniz Center for Informatics)",
+      "in_degree": 26,
+      "pagerank": 0.051317,
+      "influence": 0.9933,
+      "median_rank": 2.0,
+      "lo_rank": 1,
+      "hi_rank": 3,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W3170841864",
+      "title": "Rethinking Semantic Segmentation from a Sequence-to-Sequence Perspective with Transformers",
+      "year": 2021,
+      "doi": "10.1109/cvpr46437.2021.00681",
+      "url": "https://doi.org/10.1109/cvpr46437.2021.00681",
+      "venue": null,
+      "in_degree": 22,
+      "pagerank": 0.048845,
+      "influence": 0.9867,
+      "median_rank": 3.0,
+      "lo_rank": 2,
+      "hi_rank": 4,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2964110616",
+      "title": "Transformer-XL: Attentive Language Models beyond a Fixed-Length Context",
+      "year": 2019,
+      "doi": "10.18653/v1/p19-1285",
+      "url": "https://doi.org/10.18653/v1/p19-1285",
+      "venue": null,
+      "in_degree": 13,
+      "pagerank": 0.038434,
+      "influence": 0.98,
+      "median_rank": 4.0,
+      "lo_rank": 2,
+      "hi_rank": 5,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2626778328",
+      "title": "Attention Is All You Need",
+      "year": 2025,
+      "doi": "10.65215/2q58a426",
+      "url": "https://doi.org/10.65215/2q58a426",
+      "venue": null,
+      "in_degree": 13,
+      "pagerank": 0.027238,
+      "influence": 0.9733,
+      "median_rank": 5.0,
+      "lo_rank": 3,
+      "hi_rank": 6,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W3015468748",
+      "title": "Longformer: The Long-Document Transformer",
+      "year": 2020,
+      "doi": "10.48550/arxiv.2004.05150",
+      "url": "https://doi.org/10.48550/arxiv.2004.05150",
+      "venue": "arXiv (Cornell University)",
+      "in_degree": 8,
+      "pagerank": 0.02279,
+      "influence": 0.9667,
+      "median_rank": 6.0,
+      "lo_rank": 4,
+      "hi_rank": 10,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2891815651",
+      "title": "An Improved Relative Self-Attention Mechanism for Transformer with Application to Music Generation",
+      "year": 2018,
+      "doi": null,
+      "url": "https://openalex.org/W2891815651",
+      "venue": "arXiv (Cornell University)",
+      "in_degree": 2,
+      "pagerank": 0.020245,
+      "influence": 0.96,
+      "median_rank": 7.0,
+      "lo_rank": 4,
+      "hi_rank": 15,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W3127751679",
+      "title": "TransUNet: Transformers Make Strong Encoders for Medical Image Segmentation",
+      "year": 2021,
+      "doi": "10.48550/arxiv.2102.04306",
+      "url": "https://doi.org/10.48550/arxiv.2102.04306",
+      "venue": "arXiv (Cornell University)",
+      "in_degree": 11,
+      "pagerank": 0.014816,
+      "influence": 0.9533,
+      "median_rank": 8.0,
+      "lo_rank": 5,
+      "hi_rank": 12,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W3177318507",
+      "title": "Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting",
+      "year": 2021,
+      "doi": "10.1609/aaai.v35i12.17325",
+      "url": "https://doi.org/10.1609/aaai.v35i12.17325",
+      "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+      "in_degree": 7,
+      "pagerank": 0.014418,
+      "influence": 0.9467,
+      "median_rank": 9.0,
+      "lo_rank": 6,
+      "hi_rank": 14,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W3119586106",
+      "title": "End-to-end Lane Shape Prediction with Transformers",
+      "year": 2021,
+      "doi": "10.1109/wacv48630.2021.00374",
+      "url": "https://doi.org/10.1109/wacv48630.2021.00374",
+      "venue": null,
+      "in_degree": 1,
+      "pagerank": 0.013472,
+      "influence": 0.94,
+      "median_rank": 9.0,
+      "lo_rank": 5,
+      "hi_rank": 78,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2946567085",
+      "title": "Adaptive Attention Span in Transformers",
+      "year": 2019,
+      "doi": "10.18653/v1/p19-1032",
+      "url": "https://doi.org/10.18653/v1/p19-1032",
+      "venue": null,
+      "in_degree": 2,
+      "pagerank": 0.012441,
+      "influence": 0.9333,
+      "median_rank": 11.0,
+      "lo_rank": 5,
+      "hi_rank": 34,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W3033529678",
+      "title": "Conv-Linformer: Boosting Linformer's Performance with Convolution in Small-Scale Settings",
+      "year": 2020,
+      "doi": "10.48550/arxiv.2006.04768",
+      "url": "https://doi.org/10.48550/arxiv.2006.04768",
+      "venue": "arXiv (Cornell University)",
+      "in_degree": 5,
+      "pagerank": 0.012288,
+      "influence": 0.9267,
+      "median_rank": 11.0,
+      "lo_rank": 7,
+      "hi_rank": 16,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2963563276",
+      "title": "Video action transformer network",
+      "year": null,
+      "doi": null,
+      "url": "https://openalex.org/W2963563276",
+      "venue": "Oxford University Research Archive (ORA) (University of Oxford)",
+      "in_degree": 5,
+      "pagerank": 0.012205,
+      "influence": 0.92,
+      "median_rank": 10.0,
+      "lo_rank": 3,
+      "hi_rank": 16,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W3210586215",
+      "title": "TPH-YOLOv5: Improved YOLOv5 Based on Transformer Prediction Head for Object Detection on Drone-captured Scenarios",
+      "year": 2021,
+      "doi": "10.1109/iccvw54120.2021.00312",
+      "url": "https://doi.org/10.1109/iccvw54120.2021.00312",
+      "venue": null,
+      "in_degree": 2,
+      "pagerank": 0.011699,
+      "influence": 0.9133,
+      "median_rank": 12.0,
+      "lo_rank": 9,
+      "hi_rank": 28,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W3133696297",
+      "title": "Transformer in Transformer",
+      "year": 2021,
+      "doi": "10.48550/arxiv.2103.00112",
+      "url": "https://doi.org/10.48550/arxiv.2103.00112",
+      "venue": "arXiv (Cornell University)",
+      "in_degree": 7,
+      "pagerank": 0.010563,
+      "influence": 0.9067,
+      "median_rank": 13.0,
+      "lo_rank": 8,
+      "hi_rank": 17,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W4200049650",
+      "title": "A novel time\u2013frequency Transformer based on self\u2013attention mechanism and its application in fault diagnosis of rolling bearings",
+      "year": 2021,
+      "doi": "10.1016/j.ymssp.2021.108616",
+      "url": "https://doi.org/10.1016/j.ymssp.2021.108616",
+      "venue": "Mechanical Systems and Signal Processing",
+      "in_degree": 3,
+      "pagerank": 0.010217,
+      "influence": 0.9,
+      "median_rank": 14.0,
+      "lo_rank": 11,
+      "hi_rank": 22,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W3045733172",
+      "title": "Big Bird: Transformers for Longer Sequences",
+      "year": 2020,
+      "doi": "10.48550/arxiv.2007.14062",
+      "url": "https://doi.org/10.48550/arxiv.2007.14062",
+      "venue": "arXiv (Cornell University)",
+      "in_degree": 2,
+      "pagerank": 0.010206,
+      "influence": 0.8933,
+      "median_rank": 15.0,
+      "lo_rank": 7,
+      "hi_rank": 46,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2954731415",
+      "title": "Enhancing the Locality and Breaking the Memory Bottleneck of Transformer on Time Series Forecasting",
+      "year": 2019,
+      "doi": "10.48550/arxiv.1907.00235",
+      "url": "https://doi.org/10.48550/arxiv.1907.00235",
+      "venue": "arXiv (Cornell University)",
+      "in_degree": 4,
+      "pagerank": 0.007369,
+      "influence": 0.8867,
+      "median_rank": 18.0,
+      "lo_rank": 13,
+      "hi_rank": 29,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W4313007769",
+      "title": "CSWin Transformer: A General Vision Transformer Backbone with Cross-Shaped Windows",
+      "year": 2022,
+      "doi": "10.1109/cvpr52688.2022.01181",
+      "url": "https://doi.org/10.1109/cvpr52688.2022.01181",
+      "venue": "2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+      "in_degree": 5,
+      "pagerank": 0.007364,
+      "influence": 0.88,
+      "median_rank": 17.0,
+      "lo_rank": 14,
+      "hi_rank": 28,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W3157528469",
+      "title": "Twins: Revisiting the Design of Spatial Attention in Vision Transformers",
+      "year": 2021,
+      "doi": "10.48550/arxiv.2104.13840",
+      "url": "https://doi.org/10.48550/arxiv.2104.13840",
+      "venue": "arXiv (Cornell University)",
+      "in_degree": 5,
+      "pagerank": 0.007281,
+      "influence": 0.8733,
+      "median_rank": 18.0,
+      "lo_rank": 14,
+      "hi_rank": 28,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W4283029931",
+      "title": "Swin-Transformer-Enabled YOLOv5 with Attention Mechanism for Small Object Detection on Satellite Images",
+      "year": 2022,
+      "doi": "10.3390/rs14122861",
+      "url": "https://doi.org/10.3390/rs14122861",
+      "venue": "Remote Sensing",
+      "in_degree": 2,
+      "pagerank": 0.007034,
+      "influence": 0.8667,
+      "median_rank": 19.0,
+      "lo_rank": 15,
+      "hi_rank": 39,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2112796928",
+      "title": "Gradient-based learning applied to document recognition",
+      "year": 1998,
+      "doi": "10.1109/5.726791",
+      "url": "https://doi.org/10.1109/5.726791",
+      "venue": "Proceedings of the IEEE",
+      "in_degree": 5,
+      "pagerank": 0.006818,
+      "influence": 0.86,
+      "median_rank": 20.0,
+      "lo_rank": 15,
+      "hi_rank": 30,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W3204614423",
+      "title": "UTNet: A Hybrid Transformer Architecture for Medical Image Segmentation",
+      "year": 2021,
+      "doi": "10.1007/978-3-030-87199-4_6",
+      "url": "https://doi.org/10.1007/978-3-030-87199-4_6",
+      "venue": "Lecture notes in computer science",
+      "in_degree": 2,
+      "pagerank": 0.006782,
+      "influence": 0.8533,
+      "median_rank": 20.0,
+      "lo_rank": 15,
+      "hi_rank": 45,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W3012871709",
+      "title": "Heterogeneous Graph Transformer",
+      "year": 2020,
+      "doi": "10.1145/3366423.3380027",
+      "url": "https://doi.org/10.1145/3366423.3380027",
+      "venue": null,
+      "in_degree": 1,
+      "pagerank": 0.006668,
+      "influence": 0.8467,
+      "median_rank": 21.0,
+      "lo_rank": 17,
+      "hi_rank": 115,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W3128776197",
+      "title": "Spatial-Spectral Transformer for Hyperspectral Image Classification",
+      "year": 2021,
+      "doi": "10.3390/rs13030498",
+      "url": "https://doi.org/10.3390/rs13030498",
+      "venue": "Remote Sensing",
+      "in_degree": 3,
+      "pagerank": 0.006596,
+      "influence": 0.84,
+      "median_rank": 22.0,
+      "lo_rank": 15,
+      "hi_rank": 35,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W3175515048",
+      "title": "PVT v2: Improved baselines with pyramid vision transformer",
+      "year": 2022,
+      "doi": "10.1007/s41095-022-0274-8",
+      "url": "https://doi.org/10.1007/s41095-022-0274-8",
+      "venue": "Computational Visual Media",
+      "in_degree": 6,
+      "pagerank": 0.006504,
+      "influence": 0.8333,
+      "median_rank": 22.0,
+      "lo_rank": 16,
+      "hi_rank": 30,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W3035022492",
+      "title": "Learning Texture Transformer Network for Image Super-Resolution",
+      "year": 2020,
+      "doi": "10.1109/cvpr42600.2020.00583",
+      "url": "https://doi.org/10.1109/cvpr42600.2020.00583",
+      "venue": null,
+      "in_degree": 3,
+      "pagerank": 0.006338,
+      "influence": 0.8267,
+      "median_rank": 23.0,
+      "lo_rank": 15,
+      "hi_rank": 40,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W4385201870",
+      "title": "Transformer Architecture and Attention Mechanisms in Genome Data Analysis: A Comprehensive Review",
+      "year": 2023,
+      "doi": "10.3390/biology12071033",
+      "url": "https://doi.org/10.3390/biology12071033",
+      "venue": "Biology",
+      "in_degree": 1,
+      "pagerank": 0.00572,
+      "influence": 0.82,
+      "median_rank": 26.0,
+      "lo_rank": 22,
+      "hi_rank": 110,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W3205082786",
+      "title": "MDF-SA-DDI: predicting drug\u2013drug interaction events based on multi-source drug fusion, multi-source feature fusion and transformer self-attention mechanism",
+      "year": 2021,
+      "doi": "10.1093/bib/bbab421",
+      "url": "https://doi.org/10.1093/bib/bbab421",
+      "venue": "Briefings in Bioinformatics",
+      "in_degree": 1,
+      "pagerank": 0.00572,
+      "influence": 0.82,
+      "median_rank": 25.0,
+      "lo_rank": 21,
+      "hi_rank": 81,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W3188511781",
+      "title": "Transformer-Based Attention Networks for Continuous Pixel-Wise Prediction",
+      "year": 2021,
+      "doi": "10.1109/iccv48922.2021.01596",
+      "url": "https://doi.org/10.1109/iccv48922.2021.01596",
+      "venue": "2021 IEEE/CVF International Conference on Computer Vision (ICCV)",
+      "in_degree": 1,
+      "pagerank": 0.00572,
+      "influence": 0.82,
+      "median_rank": 27.0,
+      "lo_rank": 23,
+      "hi_rank": 126,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2963351113",
+      "title": "End-to-End Dense Video Captioning with Masked Transformer",
+      "year": 2018,
+      "doi": "10.1109/cvpr.2018.00911",
+      "url": "https://doi.org/10.1109/cvpr.2018.00911",
+      "venue": null,
+      "in_degree": 3,
+      "pagerank": 0.005516,
+      "influence": 0.8,
+      "median_rank": 28.0,
+      "lo_rank": 19,
+      "hi_rank": 48,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W3115390238",
+      "title": "TransTrack: Multiple Object Tracking with Transformer",
+      "year": 2020,
+      "doi": "10.48550/arxiv.2012.15460",
+      "url": "https://doi.org/10.48550/arxiv.2012.15460",
+      "venue": "arXiv (Cornell University)",
+      "in_degree": 3,
+      "pagerank": 0.005484,
+      "influence": 0.7933,
+      "median_rank": 29.0,
+      "lo_rank": 19,
+      "hi_rank": 47,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W3168491317",
+      "title": "DS-TransUNet: Dual Swin Transformer U-Net for Medical Image Segmentation",
+      "year": 2022,
+      "doi": "10.1109/tim.2022.3178991",
+      "url": "https://doi.org/10.1109/tim.2022.3178991",
+      "venue": "IEEE Transactions on Instrumentation and Measurement",
+      "in_degree": 4,
+      "pagerank": 0.005459,
+      "influence": 0.7867,
+      "median_rank": 29.0,
+      "lo_rank": 21,
+      "hi_rank": 37,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W3111535274",
+      "title": "PCT: Point cloud transformer",
+      "year": 2021,
+      "doi": "10.1007/s41095-021-0229-5",
+      "url": "https://doi.org/10.1007/s41095-021-0229-5",
+      "venue": "Computational Visual Media",
+      "in_degree": 4,
+      "pagerank": 0.005262,
+      "influence": 0.78,
+      "median_rank": 30.0,
+      "lo_rank": 23,
+      "hi_rank": 40,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W3137963805",
+      "title": "DeepViT: Towards Deeper Vision Transformer",
+      "year": 2021,
+      "doi": "10.48550/arxiv.2103.11886",
+      "url": "https://doi.org/10.48550/arxiv.2103.11886",
+      "venue": "arXiv (Cornell University)",
+      "in_degree": 4,
+      "pagerank": 0.005023,
+      "influence": 0.7733,
+      "median_rank": 32.0,
+      "lo_rank": 25,
+      "hi_rank": 42,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W3156811085",
+      "title": "LocalViT: Analyzing Locality in Vision Transformers",
+      "year": 2021,
+      "doi": "10.48550/arxiv.2104.05707",
+      "url": "https://doi.org/10.48550/arxiv.2104.05707",
+      "venue": "arXiv (Cornell University)",
+      "in_degree": 3,
+      "pagerank": 0.004964,
+      "influence": 0.7667,
+      "median_rank": 32.0,
+      "lo_rank": 24,
+      "hi_rank": 45,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W3128592650",
+      "title": "Vision Transformers for Remote Sensing Image Classification",
+      "year": 2021,
+      "doi": "10.3390/rs13030516",
+      "url": "https://doi.org/10.3390/rs13030516",
+      "venue": "Remote Sensing",
+      "in_degree": 2,
+      "pagerank": 0.004937,
+      "influence": 0.76,
+      "median_rank": 32.0,
+      "lo_rank": 24,
+      "hi_rank": 46,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W3203841574",
+      "title": "TransBTS: Multimodal Brain Tumor Segmentation Using Transformer",
+      "year": 2021,
+      "doi": "10.1007/978-3-030-87193-2_11",
+      "url": "https://doi.org/10.1007/978-3-030-87193-2_11",
+      "venue": "Lecture notes in computer science",
+      "in_degree": 3,
+      "pagerank": 0.004802,
+      "influence": 0.7533,
+      "median_rank": 33.0,
+      "lo_rank": 27,
+      "hi_rank": 51,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W3212890323",
+      "title": "Autoformer: Decomposition Transformers with Auto-Correlation for\\n Long-Term Series Forecasting",
+      "year": 2021,
+      "doi": "10.48550/arxiv.2106.13008",
+      "url": "https://doi.org/10.48550/arxiv.2106.13008",
+      "venue": "arXiv (Cornell University)",
+      "in_degree": 2,
+      "pagerank": 0.004782,
+      "influence": 0.7467,
+      "median_rank": 34.0,
+      "lo_rank": 22,
+      "hi_rank": 57,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W3198035652",
+      "title": "nnFormer: Interleaved Transformer for Volumetric Segmentation",
+      "year": 2021,
+      "doi": "10.48550/arxiv.2109.03201",
+      "url": "https://doi.org/10.48550/arxiv.2109.03201",
+      "venue": "arXiv (Cornell University)",
+      "in_degree": 2,
+      "pagerank": 0.004735,
+      "influence": 0.74,
+      "median_rank": 34.0,
+      "lo_rank": 24,
+      "hi_rank": 58,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W4319069095",
+      "title": "Spectral\u2013Spatial Morphological Attention Transformer for Hyperspectral Image Classification",
+      "year": 2023,
+      "doi": "10.1109/tgrs.2023.3242346",
+      "url": "https://doi.org/10.1109/tgrs.2023.3242346",
+      "venue": "IEEE Transactions on Geoscience and Remote Sensing",
+      "in_degree": 1,
+      "pagerank": 0.004406,
+      "influence": 0.7333,
+      "median_rank": 37.0,
+      "lo_rank": 25,
+      "hi_rank": 85,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2981165461",
+      "title": "Multimodal Transformer With Multi-View Visual Representation for Image Captioning",
+      "year": 2019,
+      "doi": "10.1109/tcsvt.2019.2947482",
+      "url": "https://doi.org/10.1109/tcsvt.2019.2947482",
+      "venue": "IEEE Transactions on Circuits and Systems for Video Technology",
+      "in_degree": 1,
+      "pagerank": 0.004406,
+      "influence": 0.7333,
+      "median_rank": 38.0,
+      "lo_rank": 26,
+      "hi_rank": 134,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2953273646",
+      "title": "Set Transformer: A Framework for Attention-based Permutation-Invariant\\n Neural Networks",
+      "year": 2018,
+      "doi": "10.48550/arxiv.1810.00825",
+      "url": "https://doi.org/10.48550/arxiv.1810.00825",
+      "venue": "arXiv (Cornell University)",
+      "in_degree": 2,
+      "pagerank": 0.004366,
+      "influence": 0.72,
+      "median_rank": 37.0,
+      "lo_rank": 31,
+      "hi_rank": 56,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W3097237405",
+      "title": "Spatio-Temporal Graph Transformer Networks for Pedestrian Trajectory Prediction",
+      "year": 2020,
+      "doi": "10.1007/978-3-030-58610-2_30",
+      "url": "https://doi.org/10.1007/978-3-030-58610-2_30",
+      "venue": "Lecture notes in computer science",
+      "in_degree": 1,
+      "pagerank": 0.004216,
+      "influence": 0.7133,
+      "median_rank": 40.0,
+      "lo_rank": 31,
+      "hi_rank": 109,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2903739847",
+      "title": "Neural Speech Synthesis with Transformer Network",
+      "year": 2019,
+      "doi": "10.1609/aaai.v33i01.33016706",
+      "url": "https://doi.org/10.1609/aaai.v33i01.33016706",
+      "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+      "in_degree": 2,
+      "pagerank": 0.004207,
+      "influence": 0.7067,
+      "median_rank": 41.0,
+      "lo_rank": 32,
+      "hi_rank": 63,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W4312707458",
+      "title": "TransFusion: Robust LiDAR-Camera Fusion for 3D Object Detection with Transformers",
+      "year": 2022,
+      "doi": "10.1109/cvpr52688.2022.00116",
+      "url": "https://doi.org/10.1109/cvpr52688.2022.00116",
+      "venue": "2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+      "in_degree": 2,
+      "pagerank": 0.004207,
+      "influence": 0.7067,
+      "median_rank": 39.0,
+      "lo_rank": 32,
+      "hi_rank": 60,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W3113177135",
+      "title": "A Generalization of Transformer Networks to Graphs",
+      "year": 2020,
+      "doi": "10.48550/arxiv.2012.09699",
+      "url": "https://doi.org/10.48550/arxiv.2012.09699",
+      "venue": "arXiv (Cornell University)",
+      "in_degree": 2,
+      "pagerank": 0.004207,
+      "influence": 0.7067,
+      "median_rank": 40.0,
+      "lo_rank": 34,
+      "hi_rank": 62,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W3203701986",
+      "title": "Rethinking and Improving Relative Position Encoding for Vision Transformer",
+      "year": 2021,
+      "doi": "10.1109/iccv48922.2021.00988",
+      "url": "https://doi.org/10.1109/iccv48922.2021.00988",
+      "venue": "2021 IEEE/CVF International Conference on Computer Vision (ICCV)",
+      "in_degree": 2,
+      "pagerank": 0.004078,
+      "influence": 0.6867,
+      "median_rank": 42.0,
+      "lo_rank": 35,
+      "hi_rank": 59,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2892009249",
+      "title": "Speech-Transformer: A No-Recurrence Sequence-to-Sequence Model for Speech Recognition",
+      "year": 2018,
+      "doi": "10.1109/icassp.2018.8462506",
+      "url": "https://doi.org/10.1109/icassp.2018.8462506",
+      "venue": null,
+      "in_degree": 2,
+      "pagerank": 0.003993,
+      "influence": 0.68,
+      "median_rank": 43.0,
+      "lo_rank": 36,
+      "hi_rank": 57,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W4285186957",
+      "title": "Convolutional Transformer: An Enhanced Attention Mechanism Architecture for Remaining Useful Life Estimation of Bearings",
+      "year": 2022,
+      "doi": "10.1109/tim.2022.3181933",
+      "url": "https://doi.org/10.1109/tim.2022.3181933",
+      "venue": "IEEE Transactions on Instrumentation and Measurement",
+      "in_degree": 1,
+      "pagerank": 0.003968,
+      "influence": 0.6733,
+      "median_rank": 44.0,
+      "lo_rank": 35,
+      "hi_rank": 85,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W4283726963",
+      "title": "Efficient temporal flow Transformer accompanied with multi-head probsparse self-attention mechanism for remaining useful life prognostics",
+      "year": 2022,
+      "doi": "10.1016/j.ress.2022.108701",
+      "url": "https://doi.org/10.1016/j.ress.2022.108701",
+      "venue": "Reliability Engineering & System Safety",
+      "in_degree": 1,
+      "pagerank": 0.003968,
+      "influence": 0.6733,
+      "median_rank": 46.0,
+      "lo_rank": 36,
+      "hi_rank": 110,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W3021293129",
+      "title": "Synthesizer: Rethinking Self-Attention in Transformer Models",
+      "year": 2020,
+      "doi": "10.48550/arxiv.2005.00743",
+      "url": "https://doi.org/10.48550/arxiv.2005.00743",
+      "venue": "arXiv (Cornell University)",
+      "in_degree": 1,
+      "pagerank": 0.003968,
+      "influence": 0.6733,
+      "median_rank": 46.0,
+      "lo_rank": 35,
+      "hi_rank": 108,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W3139491754",
+      "title": "AgentFormer: Agent-Aware Transformers for Socio-Temporal Multi-Agent Forecasting",
+      "year": 2021,
+      "doi": "10.1109/iccv48922.2021.00967",
+      "url": "https://doi.org/10.1109/iccv48922.2021.00967",
+      "venue": "2021 IEEE/CVF International Conference on Computer Vision (ICCV)",
+      "in_degree": 1,
+      "pagerank": 0.003968,
+      "influence": 0.6733,
+      "median_rank": 47.0,
+      "lo_rank": 37,
+      "hi_rank": 109,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2912351236",
+      "title": "An Analysis of Encoder Representations in Transformer-Based Machine Translation",
+      "year": 2018,
+      "doi": "10.18653/v1/w18-5431",
+      "url": "https://doi.org/10.18653/v1/w18-5431",
+      "venue": null,
+      "in_degree": 1,
+      "pagerank": 0.003968,
+      "influence": 0.6733,
+      "median_rank": 45.0,
+      "lo_rank": 35,
+      "hi_rank": 85,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2990818246",
+      "title": "Entangled Transformer for Image Captioning",
+      "year": 2019,
+      "doi": "10.1109/iccv.2019.00902",
+      "url": "https://doi.org/10.1109/iccv.2019.00902",
+      "venue": null,
+      "in_degree": 1,
+      "pagerank": 0.003904,
+      "influence": 0.64,
+      "median_rank": 48.0,
+      "lo_rank": 37,
+      "hi_rank": 67,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W3117450517",
+      "title": "A Survey on Visual Transformer",
+      "year": 2020,
+      "doi": "10.48550/arxiv.2012.12556",
+      "url": "https://doi.org/10.48550/arxiv.2012.12556",
+      "venue": "arXiv (Cornell University)",
+      "in_degree": 2,
+      "pagerank": 0.003819,
+      "influence": 0.6333,
+      "median_rank": 50.0,
+      "lo_rank": 41,
+      "hi_rank": 58,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W3204255739",
+      "title": "CoTr: Efficiently Bridging CNN and Transformer for 3D Medical Image Segmentation",
+      "year": 2021,
+      "doi": "10.1007/978-3-030-87199-4_16",
+      "url": "https://doi.org/10.1007/978-3-030-87199-4_16",
+      "venue": "Lecture notes in computer science",
+      "in_degree": 2,
+      "pagerank": 0.003796,
+      "influence": 0.6267,
+      "median_rank": 50.0,
+      "lo_rank": 41,
+      "hi_rank": 59,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W3212386989",
+      "title": "Attention mechanisms in computer vision: A survey",
+      "year": 2022,
+      "doi": "10.1007/s41095-022-0271-y",
+      "url": "https://doi.org/10.1007/s41095-022-0271-y",
+      "venue": "Computational Visual Media",
+      "in_degree": 1,
+      "pagerank": 0.003749,
+      "influence": 0.62,
+      "median_rank": 50.0,
+      "lo_rank": 39,
+      "hi_rank": 70,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W3197957534",
+      "title": "UCTransNet: Rethinking the Skip Connections in U-Net from a Channel-Wise Perspective with Transformer",
+      "year": 2022,
+      "doi": "10.1609/aaai.v36i3.20144",
+      "url": "https://doi.org/10.1609/aaai.v36i3.20144",
+      "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+      "in_degree": 1,
+      "pagerank": 0.003749,
+      "influence": 0.62,
+      "median_rank": 52.0,
+      "lo_rank": 44,
+      "hi_rank": 127,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W4312769131",
+      "title": "MViTv2: Improved Multiscale Vision Transformers for Classification and Detection",
+      "year": 2022,
+      "doi": "10.1109/cvpr52688.2022.00476",
+      "url": "https://doi.org/10.1109/cvpr52688.2022.00476",
+      "venue": "2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+      "in_degree": 1,
+      "pagerank": 0.003749,
+      "influence": 0.62,
+      "median_rank": 51.0,
+      "lo_rank": 39,
+      "hi_rank": 117,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    }
+  ],
+  "edges": [
+    [
+      "W3177318507",
+      "W2896457183"
+    ],
+    [
+      "W3177318507",
+      "W2954731415"
+    ],
+    [
+      "W3177318507",
+      "W2964110616"
+    ],
+    [
+      "W3177318507",
+      "W3015468748"
+    ],
+    [
+      "W3177318507",
+      "W3033529678"
+    ],
+    [
+      "W3177318507",
+      "W4385245566"
+    ],
+    [
+      "W3127751679",
+      "W3170841864"
+    ],
+    [
+      "W4385201870",
+      "W4385245566"
+    ],
+    [
+      "W4283029931",
+      "W3210586215"
+    ],
+    [
+      "W3133696297",
+      "W3170841864"
+    ],
+    [
+      "W4313007769",
+      "W3015468748"
+    ],
+    [
+      "W4313007769",
+      "W3133696297"
+    ],
+    [
+      "W4313007769",
+      "W3170841864"
+    ],
+    [
+      "W4313007769",
+      "W4385245566"
+    ],
+    [
+      "W3015468748",
+      "W2946567085"
+    ],
+    [
+      "W3015468748",
+      "W2964110616"
+    ],
+    [
+      "W3015468748",
+      "W3045733172"
+    ],
+    [
+      "W3212386989",
+      "W2626778328"
+    ],
+    [
+      "W3212386989",
+      "W2953273646"
+    ],
+    [
+      "W3212386989",
+      "W2964110616"
+    ],
+    [
+      "W3212386989",
+      "W3111535274"
+    ],
+    [
+      "W3212386989",
+      "W3117450517"
+    ],
+    [
+      "W3212386989",
+      "W3137963805"
+    ],
+    [
+      "W3212386989",
+      "W3170841864"
+    ],
+    [
+      "W3170841864",
+      "W2896457183"
+    ],
+    [
+      "W3170841864",
+      "W2964110616"
+    ],
+    [
+      "W3170841864",
+      "W3119586106"
+    ],
+    [
+      "W3170841864",
+      "W4385245566"
+    ],
+    [
+      "W2964110616",
+      "W2891815651"
+    ],
+    [
+      "W2964110616",
+      "W2896457183"
+    ],
+    [
+      "W2964110616",
+      "W4385245566"
+    ],
+    [
+      "W3210586215",
+      "W4385245566"
+    ],
+    [
+      "W2892009249",
+      "W4385245566"
+    ],
+    [
+      "W3157528469",
+      "W3035022492"
+    ],
+    [
+      "W3157528469",
+      "W3133696297"
+    ],
+    [
+      "W3157528469",
+      "W3170841864"
+    ],
+    [
+      "W2903739847",
+      "W4385245566"
+    ],
+    [
+      "W4285186957",
+      "W2896457183"
+    ],
+    [
+      "W4285186957",
+      "W2964110616"
+    ],
+    [
+      "W4285186957",
+      "W4200049650"
+    ],
+    [
+      "W3175515048",
+      "W2626778328"
+    ],
+    [
+      "W3175515048",
+      "W3133696297"
+    ],
+    [
+      "W3175515048",
+      "W3156811085"
+    ],
+    [
+      "W3175515048",
+      "W3157528469"
+    ],
+    [
+      "W3175515048",
+      "W4385245566"
+    ],
+    [
+      "W3035022492",
+      "W4385245566"
+    ],
+    [
+      "W2954731415",
+      "W2891815651"
+    ],
+    [
+      "W2963563276",
+      "W2963563276"
+    ],
+    [
+      "W2963563276",
+      "W4385245566"
+    ],
+    [
+      "W3012871709",
+      "W2626778328"
+    ],
+    [
+      "W3203841574",
+      "W2626778328"
+    ],
+    [
+      "W3203841574",
+      "W3127751679"
+    ],
+    [
+      "W3168491317",
+      "W3127751679"
+    ],
+    [
+      "W3168491317",
+      "W3170841864"
+    ],
+    [
+      "W3197957534",
+      "W3127751679"
+    ],
+    [
+      "W3197957534",
+      "W3170841864"
+    ],
+    [
+      "W3197957534",
+      "W3204614423"
+    ],
+    [
+      "W2946567085",
+      "W2964110616"
+    ],
+    [
+      "W2946567085",
+      "W4385245566"
+    ],
+    [
+      "W4312769131",
+      "W2963563276"
+    ],
+    [
+      "W4312769131",
+      "W3133696297"
+    ],
+    [
+      "W4312769131",
+      "W3157528469"
+    ],
+    [
+      "W4312769131",
+      "W3170841864"
+    ],
+    [
+      "W4312769131",
+      "W3175515048"
+    ],
+    [
+      "W4312769131",
+      "W4313007769"
+    ],
+    [
+      "W4312769131",
+      "W4385245566"
+    ],
+    [
+      "W4283726963",
+      "W4200049650"
+    ],
+    [
+      "W3128592650",
+      "W2896457183"
+    ],
+    [
+      "W3128592650",
+      "W4385245566"
+    ],
+    [
+      "W4312707458",
+      "W4385245566"
+    ],
+    [
+      "W3097237405",
+      "W2626778328"
+    ],
+    [
+      "W2990818246",
+      "W2963351113"
+    ],
+    [
+      "W2990818246",
+      "W4385245566"
+    ],
+    [
+      "W3204614423",
+      "W2626778328"
+    ],
+    [
+      "W3204614423",
+      "W3033529678"
+    ],
+    [
+      "W3204614423",
+      "W3170841864"
+    ],
+    [
+      "W3204255739",
+      "W2626778328"
+    ],
+    [
+      "W3204255739",
+      "W3127751679"
+    ],
+    [
+      "W3204255739",
+      "W3170841864"
+    ],
+    [
+      "W2963351113",
+      "W4385245566"
+    ],
+    [
+      "W3033529678",
+      "W3015468748"
+    ],
+    [
+      "W3137963805",
+      "W2626778328"
+    ],
+    [
+      "W3137963805",
+      "W3170841864"
+    ],
+    [
+      "W3128776197",
+      "W4385245566"
+    ],
+    [
+      "W2981165461",
+      "W4385245566"
+    ],
+    [
+      "W3156811085",
+      "W2626778328"
+    ],
+    [
+      "W3156811085",
+      "W3115390238"
+    ],
+    [
+      "W3156811085",
+      "W3133696297"
+    ],
+    [
+      "W3021293129",
+      "W3033529678"
+    ],
+    [
+      "W3188511781",
+      "W2964110616"
+    ],
+    [
+      "W3188511781",
+      "W3127751679"
+    ],
+    [
+      "W3188511781",
+      "W3170841864"
+    ],
+    [
+      "W3188511781",
+      "W4385245566"
+    ],
+    [
+      "W3139491754",
+      "W2896457183"
+    ],
+    [
+      "W3139491754",
+      "W3097237405"
+    ],
+    [
+      "W3139491754",
+      "W4385245566"
+    ],
+    [
+      "W3115390238",
+      "W2963563276"
+    ],
+    [
+      "W3115390238",
+      "W3170841864"
+    ],
+    [
+      "W3113177135",
+      "W3012871709"
+    ],
+    [
+      "W2912351236",
+      "W4385245566"
+    ],
+    [
+      "W3117450517",
+      "W2112796928"
+    ],
+    [
+      "W3117450517",
+      "W2963563276"
+    ],
+    [
+      "W3117450517",
+      "W2990818246"
+    ],
+    [
+      "W3117450517",
+      "W3170841864"
+    ],
+    [
+      "W3045733172",
+      "W2946567085"
+    ],
+    [
+      "W3045733172",
+      "W2964110616"
+    ],
+    [
+      "W3045733172",
+      "W3015468748"
+    ],
+    [
+      "W3198035652",
+      "W2112796928"
+    ],
+    [
+      "W3198035652",
+      "W3127751679"
+    ],
+    [
+      "W3198035652",
+      "W3168491317"
+    ],
+    [
+      "W3198035652",
+      "W3203841574"
+    ],
+    [
+      "W3203701986",
+      "W2896457183"
+    ],
+    [
+      "W3203701986",
+      "W2964110616"
+    ],
+    [
+      "W3203701986",
+      "W3170841864"
+    ],
+    [
+      "W3203701986",
+      "W4385245566"
+    ],
+    [
+      "W3119586106",
+      "W4385245566"
+    ]
+  ]
+}
