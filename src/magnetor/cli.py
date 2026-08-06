@@ -40,6 +40,7 @@ from magnetor.harvest import DEFAULT_EXPAND_PER_ROUND, OpenAlexClient, WorksSour
 from magnetor.harvest import DEFAULT_LIMIT as HARVEST_DEFAULT_LIMIT
 from magnetor.indexing import DEFAULT_BATCH_SIZE, EmbeddingResult, open_index, run_embedding
 from magnetor.pipeline import DEFAULT_LIMIT, build_default_source, run_acquisition
+from magnetor.relations import derive_relations
 from magnetor.resources import DomainStore
 from magnetor.robustness import DEFAULT_RESAMPLES, bootstrap_rank_cis
 from magnetor.router import (
@@ -115,7 +116,12 @@ def _run_harvest(args: argparse.Namespace) -> int:
 
     scores = score_graph(result)
     robustness = bootstrap_rank_cis(result, resamples=args.resamples)
-    document = build_graph_document(result, scores, robustness, top_n=args.top_n)
+    # Derived relation layers (L4). Computed from reference lists already in
+    # memory — no extra API calls — and kept out of the influence metric (D4).
+    relations = derive_relations(result)
+    document = build_graph_document(
+        result, scores, robustness, top_n=args.top_n, relations=relations
+    )
     path = save_graph(document)
 
     leak = robustness.boundary_leakage
@@ -130,10 +136,17 @@ def _run_harvest(args: argparse.Namespace) -> int:
             f"[harvest] {result.n_fetched} papers, {len(result.edges)} in-set edges; "
             f"boundary leakage {leak:.0%}"
         )
+    drawn_coupled = len(document.get("biblio_coupled", []))
+    drawn_cocited = len(document.get("co_cited", []))
+    print(
+        f"  relations: {drawn_coupled} bibliographic-coupling, {drawn_cocited} "
+        "co-citation link(s) among the kept nodes (navigational only, not scored)"
+    )
     if leak >= 0.5:
         print(
             "  note: leakage still high — raise --expand / --expand-top for a more "
-            "complete lineage.",
+            "complete lineage. Shared external references are still usable as "
+            "coupling links.",
             file=sys.stderr,
         )
     if result.self_referencing_ids:

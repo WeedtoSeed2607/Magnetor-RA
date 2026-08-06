@@ -16,12 +16,14 @@ from __future__ import annotations
 
 import hashlib
 import json
+from collections.abc import Sequence
 from pathlib import Path
 from typing import Any
 
 from magnetor.config import global_store_path
 from magnetor.graph_scoring import GraphScores
 from magnetor.harvest import HarvestedPaper, HarvestResult
+from magnetor.relations import DerivedRelations, RelationEdge
 from magnetor.robustness import Robustness
 
 GRAPHS_DIR = "graphs"
@@ -39,8 +41,15 @@ def build_graph_document(
     robustness: Robustness,
     *,
     top_n: int | None = None,
+    relations: DerivedRelations | None = None,
 ) -> dict[str, Any]:
-    """Merge papers + scores + rank intervals into one graph document."""
+    """Merge papers + scores + rank intervals into one graph document.
+
+    ``relations`` adds the derived co-citation / bibliographic-coupling layers
+    (ADR-0006 L4). They are stored under their own keys and never merged into
+    ``edges``, which stays the real citation backbone (I2). Omitting them writes a
+    document identical to before, so graphs harvested earlier still load.
+    """
     paper_by_id = {p.openalex_id: p for p in result.papers}
     score_by_id = {s.openalex_id: s for s in scores.scored}
     interval_by_id = {r.openalex_id: r for r in robustness.intervals}
@@ -75,7 +84,7 @@ def build_graph_document(
             }
         )
     edges = [[u, v] for u, v in result.edges if u in keep and v in keep]
-    return {
+    document: dict[str, Any] = {
         "query": result.query,
         "generated_at": result.generated_at,
         "n_fetched": result.n_fetched,
@@ -86,6 +95,21 @@ def build_graph_document(
         "nodes": nodes,
         "edges": edges,
     }
+    if relations is not None:
+        document["biblio_coupled"] = _relation_rows(relations.biblio_coupled, keep)
+        document["co_cited"] = _relation_rows(relations.co_cited, keep)
+    return document
+
+
+def _relation_rows(
+    edges: Sequence[RelationEdge], keep: set[str]
+) -> list[list[str | int]]:
+    """Derived edges as ``[source, target, weight]``, pruned to the kept nodes."""
+    return [
+        [e.source, e.target, e.weight]
+        for e in edges
+        if e.source in keep and e.target in keep
+    ]
 
 
 def query_hash(query: str) -> str:
