@@ -188,3 +188,112 @@ def test_graph_dot_escapes_quotes_in_titles() -> None:
     doc: dict[str, object] = {"nodes": [node], "edges": []}
     dot = graph_dot(doc)
     assert '"hi"' not in dot  # inner double-quotes were neutralised
+
+
+def test_graph_dot_colours_traced_legs_distinctly() -> None:
+    from magnetor.dashboard_data import graph_dot
+
+    dot = graph_dot(_graph_doc(), traced={("B", "A"): "roots", ("C", "A"): "development"})
+    assert '"B" -> "A" [color="#8e44ad", penwidth=3.0' in dot  # roots leg, purple
+    assert '"C" -> "A" [color="#1f9d55", penwidth=3.0' in dot  # development leg, green
+
+
+def test_graph_dot_outlines_highlighted_and_anchor_nodes() -> None:
+    from magnetor.dashboard_data import graph_dot
+
+    dot = graph_dot(_graph_doc(), highlighted=["B"], anchor="A")
+    anchor_line = next(line for line in dot.splitlines() if line.strip().startswith('"A"'))
+    highlighted_line = next(line for line in dot.splitlines() if line.strip().startswith('"B"'))
+    assert "peripheries=2" in anchor_line  # anchor is doubled
+    assert "peripheries=2" not in highlighted_line
+    assert "penwidth=2.5" in highlighted_line
+
+
+def test_graph_dot_pins_traced_nodes_below_the_top_n_cut() -> None:
+    from magnetor.dashboard_data import graph_dot
+
+    # C ranks last and would be cut by top_n=1, but it carries a traced edge:
+    # dropping it would leave the pathway pointing at a node that was never drawn.
+    dot = graph_dot(_graph_doc(), top_n=1, traced={("C", "A"): "development"})
+    assert '"C"' in dot
+    assert '"C" -> "A"' in dot
+    assert '"B"' not in dot  # untraced and below the cut -> still pruned
+
+
+def test_node_detail_reports_absent_values_as_unavailable() -> None:
+    from magnetor.dashboard_data import node_detail
+
+    lines = "\n".join(node_detail({"id": "A", "title": "T", "influence": 0.5}))
+    assert "unavailable" in lines  # missing year/venue/CI never render as 0
+    assert "0.500" in lines
+
+
+def test_node_detail_never_exposes_an_abstract() -> None:
+    from magnetor.dashboard_data import node_detail
+
+    node = {"id": "A", "title": "T", "influence": 0.1, "abstract": "LEAKEDBODY"}
+    assert "LEAKEDBODY" not in "\n".join(node_detail(node))
+
+
+def test_graph_dot_draws_relation_layers_arrowless_and_dashed() -> None:
+    from magnetor.dashboard_data import graph_dot
+
+    doc = _graph_doc()
+    doc["biblio_coupled"] = [["A", "C", 5]]
+    dot = graph_dot(doc, layers=["biblio_coupled"])
+    line = next(ln for ln in dot.splitlines() if "8d6e63" in ln)
+    assert "style=dashed" in line
+    assert "dir=none" in line  # a derived relation asserts no precedence
+    # The citation backbone keeps its arrows and stays visually separate (I2).
+    assert '"B" -> "A" [color="#8a8a8a", arrowsize=0.5];' in dot
+
+
+def test_graph_dot_omits_relation_layers_unless_requested() -> None:
+    from magnetor.dashboard_data import graph_dot
+
+    doc = _graph_doc()
+    doc["biblio_coupled"] = [["A", "C", 5]]
+    assert "8d6e63" not in graph_dot(doc)
+
+
+def test_graph_dot_only_nodes_restricts_to_a_subgraph() -> None:
+    from magnetor.dashboard_data import graph_dot
+
+    dot = graph_dot(_graph_doc(), only_nodes=["A", "B"])
+    assert '"C"' not in dot
+    assert '"B" -> "A"' in dot
+    assert '"C" -> "A"' not in dot  # pruned with its endpoint
+
+
+def test_relation_rows_tolerate_graphs_without_the_layer() -> None:
+    from magnetor.dashboard_data import relation_rows
+
+    assert relation_rows(_graph_doc(), "biblio_coupled") == ()
+    assert relation_rows({"co_cited": "nonsense"}, "co_cited") == ()
+    assert relation_rows({"co_cited": [["A", "B", 4], ["bad"]]}, "co_cited") == (("A", "B", 4),)
+
+
+def test_related_papers_ranks_by_weight_and_excludes_self() -> None:
+    from magnetor.dashboard_data import related_papers
+
+    doc: dict[str, object] = {"biblio_coupled": [["A", "B", 3], ["A", "C", 9], ["B", "C", 1]]}
+    assert related_papers(doc, "A", "biblio_coupled") == (("C", 9), ("B", 3))
+    assert related_papers(doc, "A", "biblio_coupled", limit=1) == (("C", 9),)
+
+
+def test_node_detail_surfaces_integrity_and_review_flags() -> None:
+    from magnetor.dashboard_data import node_detail
+
+    lines = "\n".join(
+        node_detail(
+            {
+                "id": "A", "title": "T", "influence": 0.9, "median_rank": 3,
+                "lo_rank": 2, "hi_rank": 7, "stable": False,
+                "is_retracted": True, "is_review": True,
+            }
+        )
+    )
+    assert "Retracted" in lines
+    assert "Review article" in lines
+    assert "2-7" in lines
+    assert "unstable" in lines

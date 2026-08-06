@@ -14,19 +14,26 @@ Rendering only; the testable view-model logic lives in ``dashboard_data.py``.
 from __future__ import annotations
 
 import os
+from dataclasses import dataclass
+from typing import Any
 
 import streamlit as st
 
 from magnetor.citations import SemanticScholarClient
 from magnetor.config import all_domains, get_domain_config
 from magnetor.dashboard_data import (
+    GRAPH_DISCLAIMER,
+    RELATION_LABELS,
     banner_lines,
     citation_url,
     frontier_feed,
     graph_dot,
     linked,
     load_trends,
+    node_detail,
     paper_url,
+    related_papers,
+    relation_rows,
     search_access,
 )
 from magnetor.deepdive import DeepDiveResult, Path, build_deep_dive
@@ -34,7 +41,29 @@ from magnetor.embeddings.base import Embedder
 from magnetor.embeddings.voyage import VoyageEmbedder
 from magnetor.errors import MagnetorError
 from magnetor.graph import list_graphs, load_graph
+from magnetor.harvest_jobs import (
+    DONE,
+    RUNNING,
+    harvest_ui_enabled,
+    job_for,
+    log_tail,
+    start_harvest,
+)
 from magnetor.indexing import open_index
+from magnetor.pathways import (
+    DEFAULT_ALPHA,
+    DEFAULT_ANCHOR_THRESHOLD,
+    DEFAULT_FLOOR,
+    DEFAULT_MAX_DEPTH,
+    INDIRECT,
+    LINEAGE,
+    ProgressionPath,
+    connect,
+    graph_view,
+    highlight,
+    path_edges,
+    progression_paths,
+)
 from magnetor.router import CrossDomainRouter
 from magnetor.types import Domain
 
@@ -201,9 +230,16 @@ def main() -> None:
 def _render_evidence_graph() -> None:
     """Branch C (ADR-0006): the query-relative influence node map."""
     st.subheader("Evidence Graph — query-relative influence (Branch C)")
+    _render_harvest_launcher()
     graphs = list_graphs()
     if not graphs:
-        st.info('No graphs yet — build one with `magnetor harvest "<your question>"`.')
+        hint = (
+            "No graphs yet — harvest one above, or run "
+            '`magnetor harvest "<your question>"`.'
+            if harvest_ui_enabled()
+            else 'No graphs yet — build one with `magnetor harvest "<your question>"`.'
+        )
+        st.info(hint)
         return
 
     labels = [f"{g['query']}  ·  {g['n_nodes']} papers" for g in graphs]
@@ -226,23 +262,394 @@ def _render_evidence_graph() -> None:
             "so this is a partial slice of the lineage (snowball expansion pending)."
         )
 
+    raw_nodes = document.get("nodes")
+    listed = raw_nodes if isinstance(raw_nodes, list) else []
+    all_nodes: list[dict[str, Any]] = [n for n in listed if isinstance(n, dict)]
+    node_by_id = {str(n.get("id")): n for n in all_nodes}
+
+    traced, highlighted, anchor = _render_pathway_controls(document, choice)
+    inspect = _render_connection_controls(document, all_nodes, choice)
+    if inspect.hide_paths:
+        traced, highlighted, anchor = {}, (), None
+    traced = {**traced, **inspect.edges}
+    highlighted = tuple(dict.fromkeys((*highlighted, *inspect.nodes)))
+
     top_n = st.slider("Nodes to draw", min_value=10, max_value=80, value=40, step=5)
-    st.graphviz_chart(graph_dot(document, top_n=top_n), width="stretch")
+    st.graphviz_chart(
+        graph_dot(
+            document,
+            top_n=top_n,
+            traced=traced,
+            highlighted=highlighted,
+            anchor=anchor,
+            layers=inspect.layers,
+            only_nodes=inspect.only_nodes,
+        ),
+        width="stretch",
+    )
+    legend = []
+    if any(leg in ("roots", "development") for leg in traced.values()):
+        legend.append(
+            "🟣 **purple** back toward roots · 🟢 **green** forward into later work"
+        )
+    if any(leg == "link" for leg in traced.values()):
+        legend.append("🔵 **teal** the connection between the papers you picked")
+    if "biblio_coupled" in inspect.layers:
+        legend.append("**brown dashed** shares references (no citation between them)")
+    if "co_cited" in inspect.layers:
+        legend.append("**indigo dotted** cited together by the same later papers")
+    if legend:
+        st.caption("Edge key — " + " · ".join(legend) + ".")
+    st.info(GRAPH_DISCLAIMER)
+
+    _render_node_detail(document, all_nodes)
 
     st.markdown("**Most influential — traceable pathway**")
-    for node in document.get("nodes", [])[:10]:
-        flags = " 🔴" if node.get("is_retracted") else ""
-        flags += " 🟠" if node.get("stable") is False else ""
-        ci = ""
-        if node.get("lo_rank"):
-            ci = f" · rank {node.get('lo_rank')}-{node.get('hi_rank')}"
-        title = linked(str(node.get("title") or node.get("id")), str(node.get("url") or "") or None)
-        st.markdown(
-            f"- {title}{flags}  \n"
-            f"  <small>influence {float(node.get('influence') or 0):.2f} · "
-            f"in-set citations {node.get('in_degree', 0)}{ci}</small>",
-            unsafe_allow_html=True,
+    for node in all_nodes[:10]:
+        st.markdown(_influence_line(node), unsafe_allow_html=True)
+    if anchor and anchor in node_by_id:
+        st.caption(
+            "Origin is the earliest *relevant* paper **in available data** — with "
+            "boundary leakage the field's true origin is very likely outside this set."
         )
+
+
+def _render_harvest_launcher() -> None:
+    """Start a harvest from the page instead of a terminal (ADR-0006 I5 preserved).
+
+    The button only *spawns* the CLI; the request returns immediately and status
+    comes from polling files. Hidden entirely unless ``MAGNETOR_ENABLE_HARVEST_UI``
+    is set, so a hosted deployment can never spawn a job or spend quota.
+    """
+    if not harvest_ui_enabled():
+        return
+    with st.expander("Harvest a new question (runs in the background)"):
+        st.caption(
+            "Builds a new Evidence Graph from OpenAlex. This takes minutes, so it "
+            "runs as a background job — you can keep using the dashboard, and the "
+            "graph appears in the picker below when it finishes."
+        )
+        query = st.text_input(
+            "Research question to harvest",
+            key="harvest_new_query",
+            placeholder="e.g. topological quantum error correction",
+        )
+        limit = st.slider("Papers to fetch", 50, 500, 200, 50, key="harvest_limit")
+        expand = st.slider(
+            "Snowball rounds", 0, 3, 2, key="harvest_expand",
+            help="Extra passes pulling in foundational papers the seed set cites. "
+            "Cuts boundary leakage but lengthens the run.",
+        )
+        if st.button("Start harvest", disabled=not query.strip(), key="harvest_start"):
+            start_harvest(query.strip(), limit=limit, expand=expand)
+            st.session_state["harvest_watching"] = query.strip()
+            st.rerun()
+        _render_harvest_status()
+
+
+def _render_harvest_status() -> None:
+    """Poll the watched job's exit marker and show its log tail."""
+    watching = str(st.session_state.get("harvest_watching") or "")
+    if not watching:
+        return
+    job = job_for(watching)
+    if job is None:
+        return
+    if job.status == RUNNING:
+        st.info(f"Harvesting {watching!r} — started {job.started_at[:19]}Z")
+        st.button("Refresh status", key="harvest_refresh")
+    elif job.status == DONE:
+        st.success(f"Finished: {watching!r}. Select it in the picker below.")
+    else:
+        st.error(
+            f"Harvest failed (exit {job.exit_code}). The log below has the reason — "
+            "a query with no OpenAlex results is the usual cause."
+        )
+    tail = log_tail(job)
+    if tail:
+        st.code("\n".join(tail))
+
+
+def _influence_line(node: dict[str, Any]) -> str:
+    """One bullet in the influence list: title link, flags, and score components."""
+    flags = " 🔴" if node.get("is_retracted") else ""
+    flags += " 🟠" if node.get("stable") is False else ""
+    ci = ""
+    if node.get("lo_rank"):
+        ci = f" · rank {node.get('lo_rank')}-{node.get('hi_rank')}"
+    title = linked(str(node.get("title") or node.get("id")), str(node.get("url") or "") or None)
+    return (
+        f"- {title}{flags}  \n"
+        f"  <small>influence {float(node.get('influence') or 0):.2f} · "
+        f"in-set citations {node.get('in_degree', 0)}{ci}</small>"
+    )
+
+
+def _advance_alternative(key: str, total: int) -> None:
+    """Step the k-best cursor. A callback, so the new index is live on the rerun."""
+    st.session_state[key] = (int(st.session_state.get(key, 0)) + 1) % max(1, total)
+
+
+def _render_pathway_controls(
+    document: dict[str, object], choice: int
+) -> tuple[dict[tuple[str, str], str], tuple[str, ...], str | None]:
+    """L5.2 + L5.3: graph-scoped search, alpha blend, and the k-best "Next" cursor.
+
+    Returns what the renderer needs — traced edges, highlighted nodes, anchor —
+    all empty until a sub-query is entered, so the default view is unchanged.
+    """
+    st.markdown("**Trace a pathway inside this graph**")
+    subquery = st.text_input(
+        "Keyword or sub-question",
+        key=f"graph_subquery_{choice}",
+        placeholder="e.g. surface code decoders",
+        help=(
+            "Searches within the graph already loaded above — it does not harvest "
+            "anything new. Matching is on titles only (abstracts are deliberately "
+            "not stored in a graph artifact), so try the field's own vocabulary."
+        ),
+    )
+    if not subquery.strip():
+        return {}, (), None
+
+    alt_key = f"graph_path_alt_{choice}"
+    last_key = f"graph_lastq_{choice}"
+    if st.session_state.get(last_key) != subquery:
+        st.session_state[last_key] = subquery
+        st.session_state[alt_key] = 0
+
+    alpha = st.slider(
+        "Weighting: influence <-> keyword (alpha)",
+        min_value=0.0,
+        max_value=1.0,
+        value=DEFAULT_ALPHA,
+        step=0.05,
+        help=(
+            "alpha=1 follows the keyword alone; alpha=0 follows influence alone. "
+            "Lower it to lengthen the roots leg, since foundational papers rarely "
+            "match a keyword."
+        ),
+    )
+    with st.expander("Advanced path controls"):
+        threshold = st.slider(
+            "Origin relevance threshold", 0.0, 1.0, DEFAULT_ANCHOR_THRESHOLD, 0.01,
+            help="How relevant a paper must be to qualify as the origin. Lower it and a "
+            "barely-relevant older paper can win the origin.",
+        )
+        floor = st.slider(
+            "Step weight floor", 0.0, 0.5, DEFAULT_FLOOR, 0.01,
+            help="The walk continues until no next paper clears this weight (open-ended).",
+        )
+        depth = st.slider("Max steps per leg", 1, 12, DEFAULT_MAX_DEPTH)
+
+    view = graph_view(document)
+    found = highlight(view, subquery)
+    if not any(score > 0 for score in found.relevance.values()):
+        st.warning("No paper title in this graph matches those terms — nothing to trace.")
+        return {}, (), None
+
+    paths = progression_paths(
+        view, subquery, alpha=alpha, threshold=threshold, floor=floor, max_depth=depth
+    )
+    if not paths:
+        st.info(
+            "Relevant papers are highlighted, but none clears the origin threshold — "
+            "lower it in Advanced to trace a path."
+        )
+        return {}, found.selected, None
+
+    index = int(st.session_state.get(alt_key, 0)) % len(paths)
+    path = paths[index]
+    st.caption(f"Pathway {index + 1} of {len(paths)} · {len(path.nodes)} papers")
+    st.button(
+        "Next alternative →",
+        on_click=_advance_alternative,
+        args=(alt_key, len(paths)),
+        help="Step to the next-most-probable progression.",
+    )
+    _render_path_chain(path, document)
+    return path_edges(path), found.selected, path.anchor
+
+
+def _render_path_chain(path: ProgressionPath, document: dict[str, object]) -> None:
+    """List the traced chain in reading order: oldest root → origin → latest work."""
+    raw_nodes = document.get("nodes")
+    entries = [n for n in (raw_nodes if isinstance(raw_nodes, list) else []) if isinstance(n, dict)]
+    by_id = {str(n.get("id")): n for n in entries}
+    for node_id in path.nodes:
+        node = by_id.get(node_id)
+        if node is None:
+            continue
+        title = linked(str(node.get("title") or node_id), str(node.get("url") or "") or None)
+        is_origin = node_id == path.anchor
+        marker = " <- **origin (earliest relevant in available data)**" if is_origin else ""
+        year = node.get("year") or "?"
+        st.markdown(f"- {year} · {title}{marker}")
+
+
+@dataclass(frozen=True, slots=True)
+class _InspectState:
+    """What the inspect panel contributes to the drawing."""
+
+    hide_paths: bool
+    edges: dict[tuple[str, str], str]
+    nodes: tuple[str, ...]
+    only_nodes: tuple[str, ...] | None
+    layers: tuple[str, ...]
+
+
+def _short(node: dict[str, Any] | None, node_id: str, width: int = 46) -> str:
+    if node is None:
+        return node_id
+    title = str(node.get("title") or node_id)
+    return title if len(title) <= width else title[: width - 1] + "…"
+
+
+def _render_connection_controls(
+    document: dict[str, Any], all_nodes: list[dict[str, Any]], choice: int
+) -> _InspectState:
+    """Pick papers, ask whether they are connected, and overlay the answer.
+
+    Selection rather than clicking the image: ``st.graphviz_chart`` emits a static
+    picture with no click events. The gesture differs from the ask; the question
+    answered is the same one.
+    """
+    by_id = {str(n.get("id")): n for n in all_nodes}
+    st.markdown("**Inspect specific papers**")
+    hide_paths = st.checkbox(
+        "Hide traced pathway",
+        key=f"hide_paths_{choice}",
+        help="Clears the progression overlay so the graph is readable while picking nodes.",
+    )
+
+    labels = {
+        str(n.get("id")): f"{i + 1}. {_short(n, str(n.get('id')), 70)}"
+        for i, n in enumerate(all_nodes)
+    }
+    picked = st.multiselect(
+        "Papers to connect (pick two or more)",
+        options=list(labels),
+        format_func=lambda nid: labels[nid],
+        key=f"connect_pick_{choice}",
+        help="The check runs as soon as two are selected.",
+    )
+
+    available = [k for k in ("biblio_coupled", "co_cited") if relation_rows(document, k)]
+    layers: list[str] = []
+    if available:
+        layers = st.multiselect(
+            "Show derived relation layers",
+            options=available,
+            format_func=lambda k: RELATION_LABELS[k],
+            key=f"layers_{choice}",
+            help="Relations computed from reference lists, not from citations between "
+            "these papers. Drawn dashed and arrowless — they never join the citation "
+            "backbone, and they do not affect any influence score.",
+        )
+    else:
+        st.caption(
+            "Derived relation layers are not stored in this graph — re-harvest the "
+            "question to compute co-citation and bibliographic coupling."
+        )
+
+    if len(picked) < 2:
+        return _InspectState(hide_paths, {}, (), None, tuple(layers))
+
+    report = connect(graph_view(document), picked)
+    for link in report.pairs:
+        left, right = _short(by_id.get(link.a), link.a), _short(by_id.get(link.b), link.b)
+        steps = max(0, len(link.path) - 1)
+        if link.kind == LINEAGE:
+            st.success(f"**{left}** → **{right}** — citation lineage, {steps} step(s).")
+        elif link.kind == INDIRECT:
+            st.info(
+                f"**{left}** ~ **{right}** — no lineage either way; joined through "
+                f"{steps - 1} shared relative(s)."
+            )
+        else:
+            st.warning(
+                f"**{left}** / **{right}** — not connected *within this harvested "
+                "slice*. That is a statement about the harvest, not about the field."
+            )
+        if link.path:
+            chain = "  →  ".join(
+                f"{by_id.get(n, {}).get('year') or '?'} {_short(by_id.get(n), n, 34)}"
+                for n in link.path
+            )
+            st.caption(chain)
+
+    only_nodes: tuple[str, ...] | None = None
+    if st.checkbox(
+        "Show only these papers and the chain between them",
+        key=f"connect_only_{choice}",
+        help="Drops every unrelated node so the connection is readable.",
+    ):
+        only_nodes = tuple(dict.fromkeys((*picked, *report.nodes)))
+    return _InspectState(
+        hide_paths=hide_paths,
+        edges=report.edges,
+        nodes=tuple(dict.fromkeys((*picked, *report.nodes))),
+        only_nodes=only_nodes,
+        layers=tuple(layers),
+    )
+
+
+def _render_node_detail(document: dict[str, Any], all_nodes: list[dict[str, Any]]) -> None:
+    """L5.1(1): the node detail panel — identity, link out, per-metric breakdown.
+
+    Selection rather than click-to-inspect: ``st.graphviz_chart`` renders a static
+    image with no click events, and swapping renderers was declined in favour of
+    keeping the panel dependency-free.
+    """
+    if not all_nodes:
+        return
+    with st.expander("Inspect a paper (full title · link · influence breakdown)"):
+        labels = [
+            f"{i + 1}. {str(n.get('title') or n.get('id'))[:80]}"
+            for i, n in enumerate(all_nodes)
+        ]
+        picked = st.selectbox(
+            "Paper", range(len(all_nodes)), format_func=lambda i: labels[i], key="graph_node_detail"
+        )
+        node = all_nodes[picked]
+        url = str(node.get("url") or "") or None
+        st.markdown(f"### {linked(str(node.get('title') or node.get('id')), url)}")
+        for line in node_detail(node):
+            st.markdown(line)
+        if url:
+            st.markdown(f"[Open the paper ↗]({url})")
+        _render_related(document, all_nodes, str(node.get("id")))
+
+
+def _render_related(
+    document: dict[str, Any], all_nodes: list[dict[str, Any]], node_id: str
+) -> None:
+    """Derived neighbours of one paper — the cross-niche view.
+
+    These are papers standing on the same foundations, which is exactly the set a
+    keyword search cannot reach: most of them never cite this paper and it never
+    cites them.
+    """
+    by_id = {str(n.get("id")): n for n in all_nodes}
+    cites = {
+        (str(e[0]), str(e[1]))
+        for e in (document.get("edges") or [])
+        if isinstance(e, list) and len(e) == 2
+    }
+    for kind in ("biblio_coupled", "co_cited"):
+        related = related_papers(document, node_id, kind)
+        if not related:
+            continue
+        st.markdown(f"**{RELATION_LABELS[kind].capitalize()}:**")
+        for other_id, weight in related:
+            other = by_id.get(other_id)
+            title = linked(
+                str((other or {}).get("title") or other_id),
+                str((other or {}).get("url") or "") or None,
+            )
+            direct = (node_id, other_id) in cites or (other_id, node_id) in cites
+            note = "" if direct else " · _no citation between them_"
+            st.markdown(f"- {title} <small>(weight {weight}{note})</small>", unsafe_allow_html=True)
 
 
 # Streamlit runs the entry script in a module named "__main__" and re-executes
