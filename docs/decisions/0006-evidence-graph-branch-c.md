@@ -1,7 +1,11 @@
 # ADR-0006 — Branch C: The Evidence Graph (PROPOSAL / DRAFT)
 
-Status: **proposal** — weighting classes and their hierarchy are deferred to the
-operator (see §9 Open Decisions). Not yet implemented.
+Status: **partially implemented.** The walking skeleton of §10 steps 1–2 is built
+(L1 harvest, L3.0 in-degree + PageRank, L4 graph, L5 render, L5.1–L5.3
+navigation, L8 bootstrap ranks). The weighting **classes and their hierarchy
+remain deferred to the operator** (§9 Open Decisions, D4) — no multi-signal
+composite exists, so "influence" is still the single PageRank-percentile metric.
+L2 signal registry, L6 positions and L7 audit export are not built.
 
 Supersedes the previously-discussed "point-7 Outlook board" (rigorous definition
 → etymology → history → philosophical roots). That design is **withdrawn**: its
@@ -238,6 +242,20 @@ Naive weighted summation is invalid.
 - Co-citation and bibliographic coupling are the computable form of "compare
   several studies side by side and see which earlier work they all lean on."
   Both are derivable from data already fetched — **no additional API calls**.
+
+> **BUILT 2026-07-30 — `relations.py`.** Measured before building: on a 144-paper
+> sample, direct citation joins **2.2%** of pairs while >=3 shared *external*
+> references join **19.8%**. So the boundary-leakage figure the dashboard reports
+> as a weakness is simultaneously the substrate for the relations the backbone
+> cannot express. On the shipped defaults (>=3 shared refs, >=2 co-citations,
+> top-6 per node for R4 hairball control) the "Defining Morality" graph gains
+> **199 pairs that no citation joins**, taking pair coverage 11.9% -> 23.2%. The
+> pruning is why this is ~2x rather than the ~9x the unpruned sample suggests.
+> Two constraints held: the layers are stored and drawn separately from `cites`
+> (I2 — dashed, arrowless), and they are **excluded from influence** (D4 gates
+> the metric catalogue), so they change what is visible and never what is scored.
+> *Known contaminant:* OpenAlex duplicate records for one paper appear as a
+> strong self-pair and inflate both layers; dedup is outstanding.
 - Persisted as `graphs/<query_hash>.json` — IDs, metrics, edges, provenance.
 
 ### L5 — Rendering
@@ -245,10 +263,28 @@ Interactive network in the dashboard; click a node → paper card with the
 existing `paper_url()` links; filters by class, year, domain, min-influence.
 Node budget enforced (§7 Risk R4).
 
-#### L5.1 — Rendering feedback (operator, 2026-07-23; DEFERRED, not built)
+#### L5.1 — Rendering feedback (operator, 2026-07-23; **BUILT 2026-07-30**)
 
 Captured against the skeleton graph (static Graphviz DOT via `st.graphviz_chart`).
-Recorded only — no implementation in this pass.
+
+**Implemented as** `dashboard_data.node_detail` + `graph_dot`'s `traced` /
+`highlighted` / `anchor` arguments, with two operator decisions on 2026-07-30:
+
+- **(1) is delivered by *selection*, not click.** The renderer stays static — the
+  JS-component swap this section warns about was declined, so a paper is chosen
+  from a list and its detail panel renders beside the graph. Same information,
+  no new dependency, no CDN at runtime.
+- **The abstract is NOT shown, and this section's build note was wrong about it.**
+  "Abstract text is already harvested and persisted on the node" holds only for
+  `HarvestedPaper` in memory; `build_graph_document` deliberately omits it,
+  because §3/I4 forbids bodies in the artifact. Kept omitted. The panel therefore
+  carries identity, the outbound link, and the full per-metric breakdown (C1).
+  §3's "enforced by a test, not a convention" is now actually true —
+  `test_document_stores_no_abstract_bodies` was missing and has been added.
+- **(2) is settled by L5.3's traced path:** the traced legs *are* the pathway, so
+  "unique pathway" needed no separate definition. Untraced edges darkened to
+  `#8a8a8a`; traced legs drawn at `penwidth=3` in purple (roots) / green
+  (development). **(3)** ships as `GRAPH_DISCLAIMER`, rendered under every graph.
 
 1. **Node labels fit inside the node, ellipsis on overflow.** Truncate the title
    to the node width with a trailing "…". Clicking a node opens a detail box:
@@ -277,7 +313,16 @@ Recorded only — no implementation in this pass.
    metrics aren't accurate for every case, at least there's a traceable pathway"
    principle. The existing boundary-leakage warning is a related honesty cue.
 
-#### L5.2 — Query-driven pathway highlighting (operator, 2026-07-23; DEFERRED, not built)
+#### L5.2 — Query-driven pathway highlighting (operator, 2026-07-23; **BUILT 2026-07-30**)
+
+**Implemented** in `pathways.py` as `highlight()` over `personalised_pagerank()`.
+The cheap **lexical** seed was taken, as this section recommends, so no Voyage
+pass and no key are involved. **Honest limitation discovered in build:** the seed
+can only match **titles** — this section assumed "title/abstract", but abstracts
+are absent from the artifact by §3/I4 — so synonym and related-concept matching is
+weaker than described here. The embedding seed remains the stated upgrade path.
+Dangling teleport mass returns to the seed rather than uniformly, so relevance
+cannot leak away from the query.
 
 **Ask:** a *second* search box, scoped to an already-loaded graph, that takes a
 sub-query (operator example: "Mizar System Applications") and **highlights the
@@ -320,7 +365,7 @@ system, no query involved. A clean standalone win.
   per-domain Branch-B pipeline), so the *embedding* seed variant would need a new
   Voyage pass; the *lexical* seed variant needs nothing new.
 
-#### L5.3 — Traceable progression paths, k-best (operator, 2026-07-23; DEFERRED, not built)
+#### L5.3 — Traceable progression paths, k-best (operator, 2026-07-23; **BUILT 2026-07-30**)
 
 Refines L5.2 from a highlighted node *set* to a single ordered **path** with
 ranked alternatives — the operator's clarified intent.
@@ -379,16 +424,32 @@ not authoritative (reuse L5.1(3) disclaimer).
 2. **Step weighting = tunable blend:** `w(v) = α·keyword_relevance(v) +
    (1-α)·influence(v)`, with **α exposed as a slider** (keyword ↔ influence);
    default α mid. Path probability = normalised product along the walk.
-3. **Endpoint — PROPOSED default (confirm):** open-ended forward walk, stopping
-   when no next step clears a relevance floor, or at a max depth. Alternative:
-   run to the newest relevant frontier node.
+3. **Endpoint — CONFIRMED (operator, 2026-07-30):** open-ended walk, stopping
+   when no next step clears the floor or at max depth. The walk may not stop
+   *voluntarily*: every step multiplies by p<1, so an opt-out would make the empty
+   path always win. Rejected alternative: run to the newest relevant frontier.
 
-**Direction — assumption to confirm:** "progression" is read as **forward in
-time** = anchor → papers that cite it (cited→citing traversal). If the operator
-means anchor → its antecedents (backward toward roots), the traversal flips.
+**Direction — RESOLVED, and the assumption was wrong (operator, 2026-07-30):**
+"progression" is **two-way**, not forward-only. One path runs
+`roots ← origin → development`, so it shows both what the origin was built on and
+what grew out of it. Implemented as two k-best walks from the anchor — `roots`
+follows stored citing→cited edges, `development` follows them reversed — joined
+into a single chain, oldest first. Each step carries its leg tag, and the renderer
+draws tagged edges thick and leg-coloured (purple back / green forward) so the
+path can also be traced by eye, per the operator's requirement.
 
-Status: origin + weighting locked; endpoint + direction are stated assumptions.
-Build-ready once those two are confirmed.
+**One further deviation, forced by the two-way requirement:** the floor is applied
+to the **blended** weight `w(v)`, not to raw keyword relevance as written above. A
+raw relevance floor severs the roots leg immediately — foundational papers are
+general and rarely contain the keyword (verified: on the QEC graph, tracing
+"decoders improved" reaches its 1996 root only because influence carries that
+leg). Lowering α lengthens the roots leg.
+
+Status: **built** in `pathways.py`; k-best DP memoised on `(node, depth)`, which
+doubles as the cycle guard this section asks for. Verified against the real
+harvested QEC graph: "surface code" anchors on *Perfect Quantum Error Correcting
+Code* (1996), "fault tolerant threshold" on Aharonov–Ben-Or (1997) — i.e. the
+origin rule does surface genuine field roots once snowball expansion has run.
 - **"Pathway" still needs a definition** — same open question as L5.1(2): a
   single traced path, the induced subgraph of top-relevance nodes, or the
   PPR-weighted lineage. PPR naturally yields a *weighted node set*, so
@@ -536,6 +597,18 @@ and does not transfer uniformly to these checks. Sampling is therefore **tiered*
 **Power note:** confound tests are underpowered at n=30 (detecting r≈0.3 at 80%
 power needs n≈85). An undetected confound is a shipped confound — these belong
 in Tier 2 regardless of screening outcome.
+
+**Addendum (2026-07-30) — starting a harvest from the dashboard.** The operator
+asked to launch harvests from the page rather than a terminal. This does *not*
+reopen D1/I5: the page **spawns** the CLI as a detached background job and then
+only reads files (log, exit marker, then the graph), so nothing long-running ever
+occupies a request cycle. Implemented in `harvest_jobs.py`, gated by
+`MAGNETOR_ENABLE_HARVEST_UI` — default-deny, set only by the local `mag.cmd`
+launcher and never by `streamlit_app.py`, so a hosted deployment cannot spawn
+processes or spend quota from a public URL. Completion is read from an exit
+marker written by a wrapper process, not inferred from the artifact and not from
+a PID probe (`os.kill(pid, 0)` terminates the target on Windows rather than
+testing it).
 
 ---
 

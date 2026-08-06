@@ -14,3 +14,6 @@ dist/
 *.key
 # Rebuildable OpenAlex harvest cache — keep it out of the committed snapshot.
 sample_data/_harvest_cache/
+# Background-job records: runtime state, and their logs embed local paths. The
+# hosted app never runs harvests, so it has no use for them either.
+sample_data/harvest_jobs/

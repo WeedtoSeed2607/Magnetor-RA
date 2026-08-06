@@ -9,4 +9,8 @@ rem never leaks secrets into tests.
 if exist "%~dp0.env" for /f "usebackq eol=# tokens=1,* delims==" %%A in ("%~dp0.env") do set "%%A=%%B"
 rem Storage defaults to a user-writable folder unless already set.
 if "%MAGNETOR_DATA_ROOT%"=="" set "MAGNETOR_DATA_ROOT=%LOCALAPPDATA%\Magnetor\data"
+rem This is the *local* launcher, so the dashboard may start harvests from its own
+rem UI (they still run as background jobs, never in the request cycle). The hosted
+rem entry point never sets this, keeping process-spawning off the public app.
+if "%MAGNETOR_ENABLE_HARVEST_UI%"=="" set "MAGNETOR_ENABLE_HARVEST_UI=1"
 "%~dp0.venv\Scripts\python.exe" -m magnetor.cli %*
