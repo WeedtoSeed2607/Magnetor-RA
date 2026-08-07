@@ -16,6 +16,7 @@ from magnetor.harvest_jobs import (
     job_for,
     log_tail,
     recent_jobs,
+    start_anchor,
     start_harvest,
 )
 
@@ -63,6 +64,25 @@ def test_start_harvest_spawns_the_cli_with_the_query_and_knobs(monkeypatch, tmp_
     # The query is passed as its own argv entry, never interpolated into a shell
     # string, so a question containing quotes or "&" cannot become a command.
     assert not any(part.startswith("&") for part in argv)
+
+
+def test_start_anchor_spawns_the_anchor_subcommand(monkeypatch, tmp_path) -> None:
+    fake = _no_spawn(monkeypatch)
+    job = start_anchor("10.1037/abc", limit=80, backward=1, forward_fanout=3,
+                       jobs_dir=tmp_path)
+    argv = fake.calls[0]
+    assert "anchor" in argv and "harvest" not in argv
+    assert "10.1037/abc" in argv
+    assert argv[argv.index("--backward") + 1] == "1"
+    assert argv[argv.index("--forward-fanout") + 1] == "3"
+    assert job.status == RUNNING
+
+
+def test_anchor_and_harvest_jobs_are_tracked_the_same_way(monkeypatch, tmp_path) -> None:
+    _no_spawn(monkeypatch)
+    start_anchor("10.1037/abc", jobs_dir=tmp_path)
+    found = job_for("10.1037/abc", jobs_dir=tmp_path)
+    assert found is not None and found.status == RUNNING
 
 
 def test_started_job_is_running_until_the_marker_appears(monkeypatch, tmp_path) -> None:

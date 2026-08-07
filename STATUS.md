@@ -22,6 +22,8 @@ optional `[dashboard]` extra. Code on GitHub: **WeedtoSeed2607/Magnetor-RA**
 | Branch C navigation (L5.1–L5.3) | In-graph search box; Personalised-PageRank highlighting; **two-way** k-best progression paths (roots ← origin → development) with "Next"; node detail panel; leg-coloured edges; rough-guide disclaimer. | `dashboard` |
 | Branch C relations (L4) | Co-citation + bibliographic coupling, computed from reference lists already held — **no extra API calls**. Own layers in the graph doc, dashed/arrowless in the render (I2), **excluded from influence** (D4). On the Morality graph they add 199 pairs the citation backbone cannot express. | `harvest` |
 | Branch C node inspection | Hide-pathway toggle; pick 2+ papers and get lineage / indirect / unconnected with the chain shown and highlighted; subgraph-only view; per-paper "shares references with" list. | `dashboard` |
+| Branch C anchored mode | Build a graph outward from **one paper** (DOI / OpenAlex id / link) instead of a question: backward through references, forward through citers. Implemented as a `WorksSource`, so the whole harvest pipeline is inherited unchanged. | `anchor` |
+| Branch C lineage export | Download a traced lineage as a folder: reading order, CSV, BibTeX, provenance. Citations and links, never the PDFs. | `dashboard` |
 | Branch C harvest launcher | Start a harvest from the page instead of a terminal. Spawns the CLI as a **background job** (I5 intact — never in the request cycle), polls an exit marker, tails the log. Off unless `MAGNETOR_ENABLE_HARVEST_UI=1`, which only `mag.cmd` sets, so the hosted app can never spawn a job. | `dashboard` |
 
 **Recent (this session):** snowball expansion (leakage 96%→82%, pulls true field
@@ -106,7 +108,11 @@ click-on-node needs the deferred interactive component.
    see foundational-completeness metric above.
 6. Password gate is a speed bump (plain `==`, no rate-limit), not access control.
 7. Snapshot staleness (`generated_at`) not surfaced in the dashboard.
-8. **In-graph search matches titles only** (L5.2). Abstracts are absent from graph
+8. **Anchored mode's seed always ranks first, tautologically.** The set is built
+   from papers citing the seed, so its in-degree measures the gathering, not the
+   literature. The ranking is only meaningful *among the other* papers. Flagged in
+   the CLI and the UI; not fixable without a different normalisation.
+9. **In-graph search matches titles only** (L5.2). Abstracts are absent from graph
    artifacts by design (§3/I4), so a sub-query misses synonyms and any concept not
    named in the title — "decoder" finds nothing in the QEC graph even though the
    topic is present. Embedding the seed is the known fix; it needs a Voyage pass

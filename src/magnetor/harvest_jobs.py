@@ -82,7 +82,50 @@ def start_harvest(
     top_n: int = 60,
     jobs_dir: Path | None = None,
 ) -> HarvestJob:
-    """Spawn ``magnetor harvest`` in the background and record the job.
+    """Spawn ``magnetor harvest`` in the background and record the job."""
+    return _start(
+        query,
+        [
+            "harvest", query,
+            "--limit", str(limit),
+            "--expand", str(expand),
+            "--expand-top", str(expand_top),
+            "--resamples", str(resamples),
+            "--top-n", str(top_n),
+        ],
+        jobs_dir=jobs_dir,
+    )
+
+
+def start_anchor(
+    reference: str,
+    *,
+    limit: int = 200,
+    backward: int = 2,
+    forward_fanout: int = 0,
+    resamples: int = 1000,
+    top_n: int = 60,
+    jobs_dir: Path | None = None,
+) -> HarvestJob:
+    """Spawn ``magnetor anchor`` — a graph built outward from one paper."""
+    return _start(
+        reference,
+        [
+            "anchor", reference,
+            "--limit", str(limit),
+            "--backward", str(backward),
+            "--forward-fanout", str(forward_fanout),
+            "--resamples", str(resamples),
+            "--top-n", str(top_n),
+        ],
+        jobs_dir=jobs_dir,
+    )
+
+
+def _start(
+    label: str, cli_args: list[str], *, jobs_dir: Path | None = None
+) -> HarvestJob:
+    """Spawn a CLI subcommand in the background and record the job.
 
     Returns immediately; the caller polls :func:`job_for`. The child inherits the
     current environment, so ``MAGNETOR_DATA_ROOT`` and any keys loaded from
@@ -90,19 +133,13 @@ def start_harvest(
     """
     root = _jobs_root(jobs_dir)
     root.mkdir(parents=True, exist_ok=True)
-    digest = query_hash(query)
+    digest = query_hash(label)
     log_path = root / f"{digest}.log"
     marker = root / f"{digest}.exit"
     marker.unlink(missing_ok=True)  # a rerun must not inherit the old verdict
 
-    command = [
-        sys.executable, "-m", "magnetor.cli", "harvest", query,
-        "--limit", str(limit),
-        "--expand", str(expand),
-        "--expand-top", str(expand_top),
-        "--resamples", str(resamples),
-        "--top-n", str(top_n),
-    ]
+    command = [sys.executable, "-m", "magnetor.cli", *cli_args]
+    query = label
     started_at = dt.datetime.now(dt.UTC).isoformat()
     with log_path.open("w", encoding="utf-8") as log:
         log.write(f"$ {' '.join(command)}\n")

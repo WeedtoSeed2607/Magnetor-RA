@@ -48,6 +48,7 @@ from magnetor.harvest_jobs import (
     harvest_ui_enabled,
     job_for,
     log_tail,
+    start_anchor,
     start_harvest,
 )
 from magnetor.indexing import open_index
@@ -333,25 +334,58 @@ def _render_harvest_launcher() -> None:
     """
     if not harvest_ui_enabled():
         return
-    with st.expander("Harvest a new question (runs in the background)"):
+    with st.expander("Build a new graph (runs in the background)"):
         st.caption(
             "Builds a new Evidence Graph from OpenAlex. This takes minutes, so it "
             "runs as a background job — you can keep using the dashboard, and the "
             "graph appears in the picker below when it finishes."
         )
+        mode = st.radio(
+            "Start from",
+            _BUILD_MODES,
+            horizontal=True,
+            key="harvest_mode",
+            help="A question gathers papers matching a keyword search. A paper "
+            "gathers its citation neighbourhood instead — what it was built on and "
+            "what has built on it since.",
+        )
+        anchored = mode == _BUILD_MODES[1]
         query = st.text_input(
-            "Research question to harvest",
+            "Paper (DOI, OpenAlex id, or a link)" if anchored else "Research question",
             key="harvest_new_query",
-            placeholder="e.g. topological quantum error correction",
+            placeholder="10.1037/0033-295x.108.4.814"
+            if anchored
+            else "e.g. topological quantum error correction",
         )
         limit = st.slider("Papers to fetch", 50, 500, 200, 50, key="harvest_limit")
-        expand = st.slider(
-            "Snowball rounds", 0, 3, 2, key="harvest_expand",
-            help="Extra passes pulling in foundational papers the seed set cites. "
-            "Cuts boundary leakage but lengthens the run.",
-        )
-        if st.button("Start harvest", disabled=not query.strip(), key="harvest_start"):
-            start_harvest(query.strip(), limit=limit, expand=expand)
+        if anchored:
+            backward = st.slider(
+                "Hops back toward antecedents", 1, 3, 2, key="anchor_backward",
+                help="Cheap — references arrive with each paper already fetched.",
+            )
+            fanout = st.slider(
+                "Also expand this many citing papers forward", 0, 10, 0,
+                key="anchor_forward",
+                help="0 expands the seed alone. Each extra paper costs another query, "
+                "so raise this only when the neighbourhood is too thin.",
+            )
+            st.caption(
+                "Note: the seed will rank top by construction — the set is built from "
+                "papers citing it. Read the ranking among the *other* papers."
+            )
+        else:
+            expand = st.slider(
+                "Snowball rounds", 0, 3, 2, key="harvest_expand",
+                help="Extra passes pulling in foundational papers the seed set cites. "
+                "Cuts boundary leakage but lengthens the run.",
+            )
+        if st.button("Start build", disabled=not query.strip(), key="harvest_start"):
+            if anchored:
+                start_anchor(
+                    query.strip(), limit=limit, backward=backward, forward_fanout=fanout
+                )
+            else:
+                start_harvest(query.strip(), limit=limit, expand=expand)
             st.session_state["harvest_watching"] = query.strip()
             st.rerun()
         _render_harvest_status()
@@ -508,6 +542,10 @@ def _render_path_chain(path: ProgressionPath, document: dict[str, object]) -> No
 #: count, so hiding the backbone is the main lever on responsiveness as well as
 #: on legibility.
 _EDGE_MODES = ("All citations", "Only what I'm tracing", "No edges at all")
+
+#: The operator's two entry points (concern 5): start from a question when you do
+#: not know where to begin, or from a paper you already have to trace its evolution.
+_BUILD_MODES = ("A research question", "A specific paper")
 
 
 @dataclass(frozen=True, slots=True)

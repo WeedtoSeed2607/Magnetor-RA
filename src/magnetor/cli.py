@@ -15,6 +15,13 @@ import sys
 from collections.abc import Sequence
 from pathlib import Path
 
+from magnetor.anchored import (
+    DEFAULT_BACKWARD_HOPS,
+    DEFAULT_FORWARD_FANOUT,
+    NeighbourSource,
+    OpenAlexNeighbours,
+    run_anchored_harvest,
+)
 from magnetor.citations import SemanticScholarClient
 from magnetor.config import (
     DomainConfig,
@@ -36,7 +43,13 @@ from magnetor.embeddings.voyage import VoyageEmbedder
 from magnetor.errors import MagnetorError
 from magnetor.graph import build_graph_document, save_graph
 from magnetor.graph_scoring import score_graph
-from magnetor.harvest import DEFAULT_EXPAND_PER_ROUND, OpenAlexClient, WorksSource, run_harvest
+from magnetor.harvest import (
+    DEFAULT_EXPAND_PER_ROUND,
+    HarvestResult,
+    OpenAlexClient,
+    WorksSource,
+    run_harvest,
+)
 from magnetor.harvest import DEFAULT_LIMIT as HARVEST_DEFAULT_LIMIT
 from magnetor.indexing import DEFAULT_BATCH_SIZE, EmbeddingResult, open_index, run_embedding
 from magnetor.pipeline import DEFAULT_LIMIT, build_default_source, run_acquisition
@@ -74,6 +87,11 @@ def _build_works_source() -> WorksSource:
     return OpenAlexClient()
 
 
+def _build_neighbour_source() -> NeighbourSource:
+    """Construct the default citation-neighbourhood source (fakeable in tests)."""
+    return OpenAlexNeighbours()
+
+
 def main(argv: Sequence[str] | None = None) -> int:
     """CLI entry point. Returns a process exit code."""
     parser = _build_parser()
@@ -96,6 +114,8 @@ def main(argv: Sequence[str] | None = None) -> int:
         return _run_dashboard(args)
     if args.command == "harvest":
         return _run_harvest(args)
+    if args.command == "anchor":
+        return _run_anchor(args)
     parser.print_help()
     return 2
 
@@ -113,7 +133,39 @@ def _run_harvest(args: argparse.Namespace) -> int:
     if not result.papers:
         print(f"[harvest] no papers for {args.query!r}", file=sys.stderr)
         return 1
+    return _persist_graph(result, args)
 
+
+def _run_anchor(args: argparse.Namespace) -> int:
+    """Branch C — build a graph outward from one paper rather than a question."""
+    try:
+        result = run_anchored_harvest(
+            _build_neighbour_source(), args.paper, limit=args.limit,
+            backward_hops=args.backward, forward_fanout=args.forward_fanout,
+            expand_rounds=args.expand,
+        )
+    except MagnetorError as exc:
+        print(f"error: {exc}", file=sys.stderr)
+        return 2
+    if not result.papers:
+        print(f"[anchor] no neighbourhood found for {args.paper!r}", file=sys.stderr)
+        return 1
+    print(f"[anchor] seed resolved to {result.query!r}")
+    print(
+        "  caveat: the seed ranks top by construction — the set was built from papers "
+        "citing it, so its in-degree is an artefact of the gathering, not a finding. "
+        "Read the ranking among the OTHER papers.",
+        file=sys.stderr,
+    )
+    return _persist_graph(result, args)
+
+
+def _persist_graph(result: HarvestResult, args: argparse.Namespace) -> int:
+    """Score, measure robustness, derive relations, persist, and report.
+
+    Shared by ``harvest`` and ``anchor``: the two differ only in how the working
+    set is gathered, so everything after that is one code path.
+    """
     scores = score_graph(result)
     robustness = bootstrap_rank_cis(result, resamples=args.resamples)
     # Derived relation layers (L4). Computed from reference lists already in
@@ -627,6 +679,40 @@ def _build_parser() -> argparse.ArgumentParser:
     harvest.add_argument(
         "--expand-top", type=int, default=DEFAULT_EXPAND_PER_ROUND,
         help=f"Foundational works pulled in per round (default: {DEFAULT_EXPAND_PER_ROUND}).",
+    )
+
+    anchor = sub.add_parser(
+        "anchor",
+        help="Branch C: build an Evidence Graph outward from ONE paper "
+             "(DOI, OpenAlex id, or a link), to trace how it evolved.",
+    )
+    anchor.add_argument("paper", help="Seed paper: a DOI, an OpenAlex id (W...), or a URL.")
+    anchor.add_argument(
+        "--limit", type=int, default=HARVEST_DEFAULT_LIMIT,
+        help=f"Papers in the neighbourhood (default: {HARVEST_DEFAULT_LIMIT}).",
+    )
+    anchor.add_argument(
+        "--backward", type=int, default=DEFAULT_BACKWARD_HOPS,
+        help=f"Hops toward antecedents (default: {DEFAULT_BACKWARD_HOPS}). Cheap - "
+             "references arrive inline.",
+    )
+    anchor.add_argument(
+        "--forward-fanout", type=int, default=DEFAULT_FORWARD_FANOUT,
+        help="First-hop citing papers that are themselves expanded forward "
+             f"(default: {DEFAULT_FORWARD_FANOUT} = seed only). Each one costs a query.",
+    )
+    anchor.add_argument(
+        "--expand", type=int, default=0,
+        help="Snowball rounds (default: 0). An anchored set is already closed "
+             "around its seed, so expansion mostly adds unrelated foundations.",
+    )
+    anchor.add_argument(
+        "--resamples", type=int, default=DEFAULT_RESAMPLES,
+        help=f"Bootstrap resamples for rank CIs (default: {DEFAULT_RESAMPLES}).",
+    )
+    anchor.add_argument(
+        "--top-n", type=int, default=60,
+        help="Keep the top-N most influential nodes in the saved graph (default: 60).",
     )
 
     show = sub.add_parser("show", help="Print stored records for a domain (read-only).")
