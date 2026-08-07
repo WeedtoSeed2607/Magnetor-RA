@@ -40,6 +40,7 @@ from magnetor.deepdive import DeepDiveResult, Path, build_deep_dive
 from magnetor.embeddings.base import Embedder
 from magnetor.embeddings.voyage import VoyageEmbedder
 from magnetor.errors import MagnetorError
+from magnetor.export import LineageSet, lineage_bundle, slugify, zip_bundle
 from magnetor.graph import list_graphs, load_graph
 from magnetor.harvest_jobs import (
     DONE,
@@ -477,6 +478,13 @@ def _render_pathway_controls(
         help="Step to the next-most-probable progression.",
     )
     _render_path_chain(path, document)
+    _offer_download(
+        document,
+        [LineageSet(label=f"Progression for {subquery!r}", kind="progression",
+                    routes=(path.nodes,))],
+        key=f"dl_path_{choice}",
+        label="Download this progression",
+    )
     return path_edges(path), found.selected, path.anchor
 
 
@@ -512,6 +520,29 @@ class _InspectState:
     nodes: tuple[str, ...]
     only_nodes: tuple[str, ...] | None
     layers: tuple[str, ...]
+
+
+def _offer_download(
+    document: dict[str, Any], sets: list[LineageSet], *, key: str, label: str
+) -> None:
+    """Package traced routes as a citation folder the researcher can keep.
+
+    Metadata and resolvable links, never the papers themselves — see
+    ``export.py`` for why. Built eagerly because Streamlit's download button
+    needs the bytes up front; the bundle is small enough that this is free.
+    """
+    if not any(item.routes for item in sets):
+        return
+    files = lineage_bundle(document, sets)
+    st.download_button(
+        label,
+        data=zip_bundle(files),
+        file_name=f"{slugify(str(document.get('query', '')))}-lineages.zip",
+        mime="application/zip",
+        key=key,
+        help="A folder of citations: reading order, CSV, BibTeX, and the provenance. "
+        "Not the PDFs — most are paywalled, so each entry carries its DOI link.",
+    )
 
 
 def _short(node: dict[str, Any] | None, node_id: str, width: int = 46) -> str:
@@ -612,6 +643,21 @@ def _render_connection_controls(
             st.caption(
                 f"_Showing the {DEFAULT_MAX_PATHS} shortest lineages; there may be more._"
             )
+
+    _offer_download(
+        document,
+        [
+            LineageSet(
+                label=f"{_short(by_id.get(link.a), link.a, 40)} -> "
+                f"{_short(by_id.get(link.b), link.b, 40)}",
+                kind=link.kind,
+                routes=link.lineages or ((link.path,) if link.path else ()),
+            )
+            for link in report.pairs
+        ],
+        key=f"dl_connect_{choice}",
+        label="Download these lineages",
+    )
 
     only_nodes: tuple[str, ...] | None = None
     if st.checkbox(
