@@ -55,6 +55,7 @@ from magnetor.pathways import (
     DEFAULT_ANCHOR_THRESHOLD,
     DEFAULT_FLOOR,
     DEFAULT_MAX_DEPTH,
+    DEFAULT_MAX_PATHS,
     INDIRECT,
     LINEAGE,
     ProgressionPath,
@@ -275,18 +276,26 @@ def _render_evidence_graph() -> None:
     highlighted = tuple(dict.fromkeys((*highlighted, *inspect.nodes)))
 
     top_n = st.slider("Nodes to draw", min_value=10, max_value=80, value=40, step=5)
-    st.graphviz_chart(
-        graph_dot(
-            document,
-            top_n=top_n,
-            traced=traced,
-            highlighted=highlighted,
-            anchor=anchor,
-            layers=inspect.layers,
-            only_nodes=inspect.only_nodes,
-        ),
-        width="stretch",
+    dot = graph_dot(
+        document,
+        top_n=top_n,
+        traced=traced,
+        highlighted=highlighted,
+        anchor=anchor,
+        layers=inspect.layers,
+        only_nodes=inspect.only_nodes,
+        show_backbone=inspect.show_backbone,
     )
+    st.graphviz_chart(dot, width="stretch")
+    drawn = dot.count(" -> ")
+    if drawn > 250:
+        # The browser lays this out; past a few hundred edges it stops being
+        # interactive, and the cause is never obvious from the picture itself.
+        st.caption(
+            f"⚠️ {drawn} edges drawn — layout runs in your browser and gets slow "
+            "here. Switch **Edges to draw** to *Only what I'm tracing*, or lower "
+            "**Nodes to draw**."
+        )
     legend = []
     if any(leg in ("roots", "development") for leg in traced.values()):
         legend.append(
@@ -487,11 +496,18 @@ def _render_path_chain(path: ProgressionPath, document: dict[str, object]) -> No
         st.markdown(f"- {year} · {title}{marker}")
 
 
+#: Edge-display modes. Graphviz lays out in the browser and its cost tracks edge
+#: count, so hiding the backbone is the main lever on responsiveness as well as
+#: on legibility.
+_EDGE_MODES = ("All citations", "Only what I'm tracing", "No edges at all")
+
+
 @dataclass(frozen=True, slots=True)
 class _InspectState:
     """What the inspect panel contributes to the drawing."""
 
     hide_paths: bool
+    show_backbone: bool
     edges: dict[tuple[str, str], str]
     nodes: tuple[str, ...]
     only_nodes: tuple[str, ...] | None
@@ -516,11 +532,17 @@ def _render_connection_controls(
     """
     by_id = {str(n.get("id")): n for n in all_nodes}
     st.markdown("**Inspect specific papers**")
-    hide_paths = st.checkbox(
-        "Hide traced pathway",
-        key=f"hide_paths_{choice}",
-        help="Clears the progression overlay so the graph is readable while picking nodes.",
+    mode = st.radio(
+        "Edges to draw",
+        _EDGE_MODES,
+        horizontal=True,
+        key=f"edge_mode_{choice}",
+        help="Hiding the citation backbone clears the clutter and is also what makes "
+        "the graph responsive — the browser lays it out, and ~213 citations plus the "
+        "relation layers is past the point where that stays interactive.",
     )
+    show_backbone = mode == _EDGE_MODES[0]
+    hide_paths = mode == _EDGE_MODES[2]
 
     labels = {
         str(n.get("id")): f"{i + 1}. {_short(n, str(n.get('id')), 70)}"
@@ -553,9 +575,16 @@ def _render_connection_controls(
         )
 
     if len(picked) < 2:
-        return _InspectState(hide_paths, {}, (), None, tuple(layers))
+        return _InspectState(hide_paths, show_backbone, {}, (), None, tuple(layers))
 
-    report = connect(graph_view(document), picked)
+    expand = st.checkbox(
+        "Show every lineage, not just the shortest",
+        value=True,
+        key=f"connect_expand_{choice}",
+        help="Citation lineages branch and rejoin, so the shortest chain alone "
+        "understates the link. Capped at 8 routes per pair.",
+    )
+    report = connect(graph_view(document), picked, expand=expand)
     for link in report.pairs:
         left, right = _short(by_id.get(link.a), link.a), _short(by_id.get(link.b), link.b)
         steps = max(0, len(link.path) - 1)
@@ -571,12 +600,18 @@ def _render_connection_controls(
                 f"**{left}** / **{right}** — not connected *within this harvested "
                 "slice*. That is a statement about the harvest, not about the field."
             )
-        if link.path:
+        routes = link.lineages or ((link.path,) if link.path else ())
+        for index, route in enumerate(routes, start=1):
             chain = "  →  ".join(
                 f"{by_id.get(n, {}).get('year') or '?'} {_short(by_id.get(n), n, 34)}"
-                for n in link.path
+                for n in route
             )
-            st.caption(chain)
+            prefix = f"**{index}.** " if len(routes) > 1 else ""
+            st.caption(f"{prefix}{chain}")
+        if len(routes) >= DEFAULT_MAX_PATHS:
+            st.caption(
+                f"_Showing the {DEFAULT_MAX_PATHS} shortest lineages; there may be more._"
+            )
 
     only_nodes: tuple[str, ...] | None = None
     if st.checkbox(
@@ -587,6 +622,7 @@ def _render_connection_controls(
         only_nodes = tuple(dict.fromkeys((*picked, *report.nodes)))
     return _InspectState(
         hide_paths=hide_paths,
+        show_backbone=show_backbone,
         edges=report.edges,
         nodes=tuple(dict.fromkeys((*picked, *report.nodes))),
         only_nodes=only_nodes,

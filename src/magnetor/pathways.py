@@ -454,15 +454,25 @@ UNCONNECTED = "none"
 LINK = "link"
 
 
+#: Distinct lineages reported per pair when expanding. A dense citation graph can
+#: hold combinatorially many simple paths, so enumeration is always capped.
+DEFAULT_MAX_PATHS = 8
+DEFAULT_PATH_DEPTH = 8
+
+
 @dataclass(frozen=True, slots=True)
 class PairLink:
-    """How two selected papers relate, with the chain that shows it."""
+    """How two selected papers relate, with the chain(s) that show it."""
 
     a: str
     b: str
     kind: str  # LINEAGE | INDIRECT | UNCONNECTED
-    path: tuple[str, ...]  # ordered, from a to b; empty when unconnected
-    edges: tuple[tuple[str, str], ...]  # the chain in stored citing->cited form
+    path: tuple[str, ...]  # the shortest chain, from a to b; empty when unconnected
+    edges: tuple[tuple[str, str], ...]  # every drawn step, stored citing->cited form
+    #: Every distinct lineage found, shortest first, when expansion is requested.
+    #: The first entry is ``path``; later ones are longer routes between the same
+    #: two papers. Empty when not expanded.
+    lineages: tuple[tuple[str, ...], ...] = ()
 
 
 @dataclass(frozen=True, slots=True)
@@ -497,7 +507,50 @@ def _bfs(adjacency: Mapping[str, set[str]], start: str, goal: str) -> tuple[str,
     return None
 
 
-def connect(view: GraphView, selected: Sequence[str]) -> ConnectionReport:
+def _all_simple_paths(
+    adjacency: Mapping[str, set[str]],
+    start: str,
+    goal: str,
+    *,
+    limit: int,
+    max_depth: int,
+) -> list[tuple[str, ...]]:
+    """Up to ``limit`` distinct simple chains from ``start`` to ``goal``, shortest first.
+
+    ``max_depth`` is counted in **edges**, so 1 admits only a direct hop.
+
+    Depth-first with the current chain as the visited set, so a node never repeats
+    and enumeration terminates even if the graph contains a cycle. Both the depth
+    bound and the result cap are load-bearing: the number of simple paths between
+    two nodes grows combinatorially, and this runs inside a page render.
+    """
+    found: list[tuple[str, ...]] = []
+    stack: list[tuple[str, tuple[str, ...]]] = [(start, (start,))]
+    while stack and len(found) < limit:
+        node, chain = stack.pop()
+        if len(chain) > max_depth:
+            continue
+        for neighbour in sorted(adjacency.get(node, ()), reverse=True):
+            if neighbour in chain:
+                continue
+            if neighbour == goal:
+                found.append((*chain, goal))
+                if len(found) >= limit:
+                    break
+            else:
+                stack.append((neighbour, (*chain, neighbour)))
+    found.sort(key=len)
+    return found
+
+
+def connect(
+    view: GraphView,
+    selected: Sequence[str],
+    *,
+    expand: bool = False,
+    max_paths: int = DEFAULT_MAX_PATHS,
+    max_depth: int = DEFAULT_PATH_DEPTH,
+) -> ConnectionReport:
     """Check whether selected papers are connected, and by what chain.
 
     Three answers, because in a citation DAG "connected" is genuinely ambiguous
@@ -511,6 +564,11 @@ def connect(view: GraphView, selected: Sequence[str]) -> ConnectionReport:
       but neither descends from the other.
     - **none** — different components of this graph. Note the honest reading:
       unconnected *in the harvested slice*, not unrelated in the literature.
+
+    With ``expand`` every distinct lineage between the pair is enumerated rather
+    than only the shortest, and all of their edges are highlighted together —
+    citation lineages routinely branch and rejoin, so the shortest chain alone
+    understates how two papers are linked.
     """
     directed: dict[str, set[str]] = defaultdict(set)
     undirected: dict[str, set[str]] = defaultdict(set)
@@ -538,9 +596,29 @@ def connect(view: GraphView, selected: Sequence[str]) -> ConnectionReport:
         if not chain:
             pairs.append(PairLink(a=a, b=b, kind=UNCONNECTED, path=(), edges=()))
             continue
-        steps = tuple(orient(chain[i], chain[i + 1]) for i in range(len(chain) - 1))
-        pairs.append(PairLink(a=a, b=b, kind=kind, path=chain, edges=steps))
-        touched.update(chain)
+
+        lineages: tuple[tuple[str, ...], ...] = ()
+        if expand:
+            # Expand in whichever direction the shortest chain already runs, so
+            # the alternatives are routes between the same two papers.
+            source, target = chain[0], chain[-1]
+            graph = directed if kind == LINEAGE else undirected
+            found = _all_simple_paths(
+                graph, source, target, limit=max_paths, max_depth=max_depth
+            )
+            lineages = tuple(found) or (chain,)
+            chain = lineages[0]
+
+        steps: list[tuple[str, str]] = []
+        for route in lineages or (chain,):
+            touched.update(route)
+            steps.extend(orient(route[i], route[i + 1]) for i in range(len(route) - 1))
+        pairs.append(
+            PairLink(
+                a=a, b=b, kind=kind, path=chain,
+                edges=tuple(dict.fromkeys(steps)), lineages=lineages,
+            )
+        )
         for step in steps:
             overlay[step] = LINK
     return ConnectionReport(

@@ -241,6 +241,65 @@ def test_connect_deduplicates_and_ignores_a_single_selection() -> None:
     assert connect(view, ["MID"]).all_connected is False
 
 
+def _branching_doc() -> dict[str, Any]:
+    """NEW reaches OLD three ways: direct, via MID, and via ALT."""
+    doc = _doc()
+    doc["nodes"].append(_node("ALT", "Alternate route", 2015, 0.4))
+    doc["edges"] += [["NEW", "ALT"], ["ALT", "OLD"]]
+    return doc
+
+
+def test_expand_returns_every_lineage_shortest_first() -> None:
+    view = graph_view(_branching_doc())
+    link = connect(view, ["NEW", "OLD"], expand=True).pairs[0]
+    assert len(link.lineages) == 3
+    assert link.lineages[0] == ("NEW", "OLD")  # shortest first
+    assert [len(route) for route in link.lineages] == sorted(
+        len(route) for route in link.lineages
+    )
+    assert {"MID", "ALT"} <= set().union(*(set(r) for r in link.lineages))
+
+
+def test_expand_highlights_every_route_not_only_the_shortest() -> None:
+    view = graph_view(_branching_doc())
+    plain = connect(view, ["NEW", "OLD"])
+    expanded = connect(view, ["NEW", "OLD"], expand=True)
+    assert len(expanded.pairs[0].edges) > len(plain.pairs[0].edges)
+    assert set(expanded.nodes) >= {"NEW", "MID", "ALT", "OLD"}
+    for edge in expanded.edges:
+        assert edge in view.edges  # every overlay edge must be drawable
+
+
+def test_expand_is_capped() -> None:
+    view = graph_view(_branching_doc())
+    link = connect(view, ["NEW", "OLD"], expand=True, max_paths=1).pairs[0]
+    assert len(link.lineages) == 1
+
+
+def test_expand_respects_the_depth_bound() -> None:
+    view = graph_view(_branching_doc())
+    # max_depth counts EDGES: 1 admits only the direct hop, 2 lets the detours in.
+    assert connect(view, ["NEW", "OLD"], expand=True, max_depth=1).pairs[0].lineages == (
+        ("NEW", "OLD"),
+    )
+    assert len(connect(view, ["NEW", "OLD"], expand=True, max_depth=2).pairs[0].lineages) == 3
+
+
+def test_expand_terminates_on_a_cycle() -> None:
+    doc = _branching_doc()
+    doc["edges"].append(["OLD", "NEW"])  # cycle
+    link = connect(graph_view(doc), ["NEW", "OLD"], expand=True).pairs[0]
+    assert link.lineages
+    for route in link.lineages:
+        assert len(set(route)) == len(route)  # simple paths only
+
+
+def test_expand_leaves_unconnected_pairs_alone() -> None:
+    report = connect(graph_view(_doc()), ["DECOY", "MID"], expand=True)
+    assert report.pairs[0].kind == UNCONNECTED
+    assert report.pairs[0].lineages == ()
+
+
 def test_alternatives_are_ranked_by_probability() -> None:
     doc = _doc()
     # Give MID a second, weaker line of development so a "Next" path exists.

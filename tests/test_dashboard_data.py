@@ -248,6 +248,38 @@ def test_graph_dot_draws_relation_layers_arrowless_and_dashed() -> None:
     assert '"B" -> "A" [color="#8a8a8a", arrowsize=0.5];' in dot
 
 
+def test_graph_dot_hides_the_backbone_but_keeps_traced_edges() -> None:
+    from magnetor.dashboard_data import graph_dot
+
+    dot = graph_dot(_graph_doc(), show_backbone=False, traced={("B", "A"): "link"})
+    assert '"B" -> "A"' in dot  # the traced edge survives
+    assert "#0b7285" in dot  # drawn as a connection
+    assert '"C" -> "A"' not in dot  # every untraced citation is gone
+    # Nodes are still emitted, so papers remain visible with no edges at all.
+    assert '"C" [' in dot
+
+
+def test_graph_dot_hiding_the_backbone_shrinks_the_layout() -> None:
+    """Edge count is what makes the browser-side layout hang, so this is the lever."""
+    from magnetor.dashboard_data import graph_dot
+
+    full = graph_dot(_graph_doc()).count("->")
+    bare = graph_dot(_graph_doc(), show_backbone=False).count("->")
+    assert bare == 0
+    assert full > bare
+
+
+def test_graph_dot_caps_relation_edges() -> None:
+    from magnetor.dashboard_data import graph_dot
+
+    doc = _graph_doc()
+    doc["co_cited"] = [["A", "B", 9], ["A", "C", 8], ["B", "C", 7]]
+    dot = graph_dot(doc, layers=["co_cited"], max_relation_edges=2)
+    assert dot.count("5c6bc0") == 2  # only the two strongest drawn
+    assert '"A" -> "B"' in dot  # weight 9 kept
+    assert '"B" -> "C"' not in dot  # weight 7 dropped
+
+
 def test_graph_dot_omits_relation_layers_unless_requested() -> None:
     from magnetor.dashboard_data import graph_dot
 

@@ -156,6 +156,11 @@ RELATION_LABELS = {
     "co_cited": "cited alongside",
 }
 
+#: Strongest derived links drawn per layer. Graphviz runs client-side and its
+#: layout cost scales with edges: uncapped, co-citation alone adds 265 edges to a
+#: 60-node graph and the browser stops responding.
+MAX_RELATION_EDGES = 40
+
 
 def relation_rows(document: Mapping[str, object], kind: str) -> tuple[tuple[str, str, int], ...]:
     """Parse one derived relation layer, tolerating graphs harvested before it existed."""
@@ -196,6 +201,8 @@ def graph_dot(
     anchor: str | None = None,
     layers: Collection[str] = (),
     only_nodes: Collection[str] | None = None,
+    show_backbone: bool = True,
+    max_relation_edges: int = MAX_RELATION_EDGES,
 ) -> str:
     """Render an Evidence Graph document (ADR-0006 L4) as a Graphviz DOT string.
 
@@ -215,6 +222,14 @@ def graph_dot(
     ``co_cited``); they render dashed and arrowless, never merged into the
     citation backbone (I2). ``only_nodes`` restricts the drawing to a subgraph,
     which is how a cluttered graph is reduced to just the papers under inspection.
+
+    ``show_backbone=False`` drops every untraced citation, leaving bare nodes plus
+    whatever is being traced. This is a **layout** control as much as a visual
+    one: Graphviz runs in the browser, and its cost is driven by edge count, not
+    node count. On a 60-node graph the backbone alone is ~213 edges and both
+    relation layers push it past 540, which is where the render stops being
+    interactive. ``max_relation_edges`` caps each derived layer at its strongest
+    links for the same reason.
     """
     traced = traced or {}
     highlighted = set(highlighted or ())
@@ -267,14 +282,15 @@ def graph_dot(
                 lines.append(
                     f'  "{u}" -> "{v}" [color="{colour}", penwidth=3.0, arrowsize=0.9];'
                 )
-            else:
+            elif show_backbone:
                 # Darker than the original near-white grey (L5.1(2)) so untraced
                 # citations stay legible without competing with a traced leg.
                 lines.append(f'  "{u}" -> "{v}" [color="#8a8a8a", arrowsize=0.5];')
 
     for layer in layers:
         colour, style = _RELATION_STYLES.get(layer, ("#999999", "dashed"))
-        for a, b, weight in relation_rows(document, layer):
+        rows = sorted(relation_rows(document, layer), key=lambda r: -r[2])
+        for a, b, weight in rows[:max_relation_edges]:
             if a in keep and b in keep:
                 # dir=none: a derived relation is symmetric and asserts no
                 # precedence, so drawing an arrowhead would misstate it.
