@@ -52,6 +52,7 @@ from magnetor.harvest_jobs import (
     start_harvest,
 )
 from magnetor.indexing import open_index
+from magnetor.narrowing import BROAD, assess
 from magnetor.pathways import (
     DEFAULT_ALPHA,
     DEFAULT_ANCHOR_THRESHOLD,
@@ -264,6 +265,7 @@ def _render_evidence_graph() -> None:
             f"Boundary leakage {leak:.0%}: most citations point outside the harvested set, "
             "so this is a partial slice of the lineage (snowball expansion pending)."
         )
+    _render_breadth(document)
 
     raw_nodes = document.get("nodes")
     listed = raw_nodes if isinstance(raw_nodes, list) else []
@@ -412,6 +414,52 @@ def _render_harvest_status() -> None:
     tail = log_tail(job)
     if tail:
         st.code("\n".join(tail))
+
+
+def _render_breadth(document: dict[str, Any]) -> None:
+    """Say whether the query was too broad, and what would narrow it (concern 2).
+
+    Suggestions are only shown when the graph actually reads as broad. On a
+    focused graph the same machinery still returns phrases, but recommending a
+    narrowing nobody needs is how a useful signal becomes noise.
+    """
+    report = assess(document)
+    stats = (
+        f"{report.pair_coverage:.0%} of paper pairs are citation-linked · "
+        f"{report.components} component(s) · "
+        f"{report.largest_component_share:.0%} in the largest"
+    )
+    if not report.is_broad:
+        st.caption(f"Query looks **focused** — {stats}.")
+        return
+
+    label = "broad" if report.verdict == BROAD else "scattered"
+    st.warning(
+        f"This query looks **{label}** — {stats}. The papers it gathered largely "
+        "do not cite one another, which usually means several literatures were "
+        "collected side by side rather than one lineage."
+    )
+    if not report.suggestions:
+        st.caption("No sub-topic in this graph was cohesive enough to suggest.")
+        return
+    st.markdown("**Narrower questions this graph already contains:**")
+    for suggestion in report.suggestions:
+        cols = st.columns([5, 1])
+        cols[0].markdown(
+            f"- **{suggestion.phrase}** — {suggestion.papers} papers "
+            f"({suggestion.share:.0%}), citing each other "
+            f"{suggestion.cohesion:.1f}x more densely than the graph average"
+        )
+        if harvest_ui_enabled() and cols[1].button(
+            "Harvest", key=f"narrow_{suggestion.phrase}", help=f"Harvest {suggestion.phrase!r}"
+        ):
+            start_harvest(suggestion.phrase)
+            st.session_state["harvest_watching"] = suggestion.phrase
+            st.rerun()
+    st.caption(
+        "Cohesion is measured against this graph only, and the broad/focused "
+        "cutoffs are declared conventions rather than calibrated thresholds."
+    )
 
 
 def _influence_line(node: dict[str, Any]) -> str:
