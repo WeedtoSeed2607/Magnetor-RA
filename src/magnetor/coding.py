@@ -88,6 +88,29 @@ STAGNANT = "stagnant"
 DEGENERATING = "degenerating"
 UNDETERMINED = "undetermined"
 
+#: How far a verdict can be trusted, which is a separate question from what the
+#: verdict says. The gate is deterministic; its inputs are not, and a crisp label
+#: over unmeasured coding manufactures confidence the evidence has not earned.
+UNVALIDATED = "unvalidated"  # agreement never measured
+UNRELIABLE = "unreliable"  # measured, below the floor
+USABLE = "usable"
+FIRM = "firm"
+
+#: Years without a gate-passing revision before a programme reads as stalled.
+#: II.2 requires a window to be *stipulated and declared a convention*, because
+#: Lakatos gives no rule for when a lull becomes degeneration — the defect he
+#: charged Kuhn with. A decade is the source's own example, not a calibration.
+DEFAULT_DEGENERATION_WINDOW = 10
+
+#: The unit mismatch, carried with every output rather than buried in a docstring.
+#: III.1 codes the *claim* as a ``(model, context, problem)`` triple and III.3's
+#: fields are per-*revision*; this instrument attaches them to a paper. A paper is
+#: not a revision: one can contain several, and one revision can span papers.
+CODING_UNIT_CAVEAT = (
+    "Coded per paper. The source's unit is the claim, and the gate's fields are "
+    "per-revision, so a paper carrying more than one revision is coded as one."
+)
+
 #: Reliability floors from III.6, carried as declared conventions.
 ALPHA_FLOOR = 0.67
 ALPHA_FIRM = 0.80
@@ -394,20 +417,42 @@ def _defeater(values: Mapping[str, str]) -> str:
     return ""
 
 
-def programme_verdict(claims: Sequence[CodedClaim]) -> Verdict:
-    """Roll per-paper judgements into one programme-level reading.
+def programme_verdict(
+    claims: Sequence[CodedClaim],
+    *,
+    years: Mapping[str, int | None] | None = None,
+    window_years: int = DEFAULT_DEGENERATION_WINDOW,
+    as_of: int | None = None,
+) -> Verdict:
+    """Roll per-paper judgements into one programme-level reading, then run the clock.
 
-    Deliberately pessimistic: one degenerating revision outweighs several
-    progressive ones, because Lakatos's question is whether the programme is
-    still generating novel content, not how much of its output is respectable.
+    Two stipulations, both declared rather than derived:
+
+    **The roll-up is pessimistic.** One degenerating revision outweighs several
+    progressive ones, because Lakatos's question is whether the programme is still
+    generating novel content, not how much of its output is respectable. Neither
+    Lakatos nor the source states this rule — it is a convention of this
+    implementation and is named as one so it can be disagreed with specifically.
+
+    **The clock needs publication years.** Lakatos's contribution over Kuhn is a
+    *temporal* index, so a gate without one is the framework with its distinctive
+    part removed. Pass ``years`` and a programme whose last gate-passing revision
+    predates ``as_of - window_years`` reads stagnant however good those revisions
+    were. Without years the clock is skipped and the reason says so, because
+    silently omitting a criterion is how a partial instrument comes to look whole.
+
+    ``as_of`` defaults to the current year. For a historical study it must be set
+    to the cut-off date being coded at (II.14), or every past programme reads as
+    stalled by construction.
     """
-    judged = [judge(claim.values) for claim in claims]
-    decided = [v for v in judged if v.verdict != UNDETERMINED]
+    judged = [(claim, judge(claim.values)) for claim in claims]
+    decided = [(c, v) for c, v in judged if v.verdict != UNDETERMINED]
     if not decided:
         return Verdict(UNDETERMINED, "no revision has been coded through the gate.")
-    counts = Counter(v.verdict for v in decided)
-    defeated = [v for v in decided if v.is_defeated]
+    counts = Counter(v.verdict for _c, v in decided)
+    defeated = [v for _c, v in decided if v.is_defeated]
     summary = ", ".join(f"{n} {verdict}" for verdict, n in counts.most_common())
+
     if counts[PROGRESSIVE] == 0:
         worst = DEGENERATING if counts[DEGENERATING] else STAGNANT
         return Verdict(worst, f"no coded revision passed the gate ({summary}).")
@@ -415,12 +460,114 @@ def programme_verdict(claims: Sequence[CodedClaim]) -> Verdict:
         return Verdict(
             STAGNANT,
             f"progress is mixed with degeneration ({summary}); a programme is not "
-            "progressive because some of its revisions are.",
+            "progressive because some of its revisions are. [Stipulated roll-up: "
+            "one degenerating revision holds the programme back.]",
         )
-    return Verdict(
-        PROGRESSIVE,
-        f"{summary}."
-        + (f" {len(defeated)} verdict(s) defeated on evidential grounds." if defeated else ""),
+
+    tail = (
+        f" {len(defeated)} verdict(s) defeated on evidential grounds." if defeated else ""
+    )
+    clock = _clock(decided, years=years, window_years=window_years, as_of=as_of)
+    if clock is not None:
+        return clock
+    note = (
+        ""
+        if years is not None
+        else " Clock not run: no publication years supplied, so this reports the "
+        "gate only and cannot say whether the programme is still moving."
+    )
+    return Verdict(PROGRESSIVE, f"{summary}.{tail}{note}")
+
+
+def _clock(
+    decided: Sequence[tuple[CodedClaim, Verdict]],
+    *,
+    years: Mapping[str, int | None] | None,
+    window_years: int,
+    as_of: int | None,
+) -> Verdict | None:
+    """Stagnation by lull (II.2), or ``None`` when the clock cannot or need not fire."""
+    if years is None:
+        return None
+    passing = [
+        years.get(claim.paper_id)
+        for claim, verdict in decided
+        if verdict.verdict == PROGRESSIVE
+    ]
+    known = [year for year in passing if isinstance(year, int)]
+    if not known:
+        return Verdict(
+            UNDETERMINED,
+            "no publication year is known for any gate-passing revision, so the "
+            "degeneration window cannot be applied.",
+        )
+    latest = max(known)
+    reference = as_of if as_of is not None else dt.datetime.now(dt.UTC).year
+    if reference - latest > window_years:
+        return Verdict(
+            STAGNANT,
+            f"the last gate-passing revision dates to {latest}, more than the "
+            f"stipulated {window_years}-year window before {reference}. Passing the "
+            "gate in the past is not the same as still moving. [Window is a declared "
+            "convention, not a calibration.]",
+        )
+    return None
+
+
+@dataclass(frozen=True, slots=True)
+class QualifiedVerdict:
+    """A verdict together with how far its inputs can carry it."""
+
+    verdict: Verdict
+    standing: str  # UNVALIDATED | UNRELIABLE | USABLE | FIRM
+    gate_reliability: tuple[FieldReliability, ...]
+    caveat: str
+
+    @property
+    def is_trustworthy(self) -> bool:
+        return self.standing in (USABLE, FIRM)
+
+
+def qualify(verdict: Verdict, claims: Sequence[CodedClaim]) -> QualifiedVerdict:
+    """Attach the measured agreement on the fields the verdict was computed from.
+
+    The gate is a deterministic function of judgements that are not themselves
+    deterministic, so the label it emits is never stronger than the coding beneath
+    it — and being crisp, it reads stronger. Standing is the *worst* of the three
+    gate fields rather than an average: a verdict is only as good as its weakest
+    necessary input, and averaging would let one well-agreed field mask another
+    nobody can reproduce.
+    """
+    measured = tuple(reliability(claims, name) for name in _GATE)
+    alphas = [item.alpha for item in measured]
+
+    if any(alpha is None for alpha in alphas):
+        standing = UNVALIDATED
+        caveat = (
+            "Agreement on the gate's fields has never been measured — no paper here "
+            "carries two independent codings. This verdict is one coder's reasoning "
+            "made explicit, not a measurement. " + CODING_UNIT_CAVEAT
+        )
+    elif any(alpha < ALPHA_FLOOR for alpha in alphas if alpha is not None):
+        weakest = min((a for a in alphas if a is not None), default=0.0)
+        standing = UNRELIABLE
+        caveat = (
+            f"Coders do not reliably agree on at least one gate field (lowest alpha "
+            f"{weakest:.2f}, floor {ALPHA_FLOOR}). III.6 treats that as a finding "
+            "about the framework rather than a coding error, so read the "
+            "disagreement before the verdict. " + CODING_UNIT_CAVEAT
+        )
+    elif all(alpha >= ALPHA_FIRM for alpha in alphas if alpha is not None):
+        standing = FIRM
+        caveat = CODING_UNIT_CAVEAT
+    else:
+        standing = USABLE
+        caveat = (
+            f"Agreement clears the {ALPHA_FLOOR} floor but not the {ALPHA_FIRM} bar "
+            "for firm conclusions. " + CODING_UNIT_CAVEAT
+        )
+    return QualifiedVerdict(
+        verdict=verdict, standing=standing, gate_reliability=measured, caveat=caveat
     )
 
 

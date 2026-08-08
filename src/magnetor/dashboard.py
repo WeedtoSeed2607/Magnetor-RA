@@ -24,11 +24,17 @@ from magnetor.coding import (
     ALPHA_FIRM,
     ALPHA_FLOOR,
     FIELDS,
+    FIRM,
+    UNRELIABLE,
     UNSET,
+    UNVALIDATED,
+    USABLE,
+    QualifiedVerdict,
     current_coder,
     judge,
     prefill,
     programme_verdict,
+    qualify,
     reliability_report,
     to_csv,
 )
@@ -491,6 +497,34 @@ _CODING_FIELDS = (
 )
 
 
+#: How a verdict's standing is shown. An unvalidated or unreliable verdict is
+#: demoted visually, not merely footnoted: the gate is deterministic and therefore
+#: reads more confident than the coding it rests on.
+_STANDING_STYLE = {
+    UNVALIDATED: ("⚪", "unvalidated — agreement never measured"),
+    UNRELIABLE: ("🔴", "unreliable — coders do not agree"),
+    USABLE: ("🟡", "usable — clears the floor, not the firm bar"),
+    FIRM: ("🟢", "firm"),
+}
+
+
+def _render_verdict(title: str, qualified: QualifiedVerdict) -> None:
+    """Show a verdict with its standing, never on its own."""
+    mark, standing = _STANDING_STYLE.get(qualified.standing, ("⚪", qualified.standing))
+    st.markdown(f"**{title}: `{qualified.verdict.verdict}`** — {mark} {standing}")
+    st.caption(qualified.verdict.reason)
+    if not qualified.is_trustworthy:
+        st.warning(qualified.caveat)
+    else:
+        st.caption(qualified.caveat)
+    alphas = ", ".join(
+        f"{item.field_name} alpha="
+        + ("--" if item.alpha is None else f"{item.alpha:.2f}")
+        for item in qualified.gate_reliability
+    )
+    st.caption(f"Gate-field agreement: {alphas}")
+
+
 def _render_coding(document: dict[str, Any], node: dict[str, Any]) -> None:
     """Part III coding form for one paper, plus inter-coder reliability.
 
@@ -525,19 +559,23 @@ def _render_coding(document: dict[str, Any], node: dict[str, Any]) -> None:
                 record_coding(query, paper_id, chosen, note=note)
                 st.success("Recorded.")
 
-        live = judge(chosen)
-        st.markdown(f"**Lakatosian gate (II.9): `{live.verdict}`**")
-        st.caption(live.reason)
-        if live.is_defeated:
-            st.warning(f"Verdict defeated — {live.defeated_by}.")
-
         claims = load_coding(query)
+        live = qualify(judge(chosen), claims)
+        _render_verdict("Lakatosian gate (II.9), this paper", live)
+        if live.verdict.is_defeated:
+            st.warning(f"Verdict defeated — {live.verdict.defeated_by}.")
+
         if not claims:
             return
 
-        rolled = programme_verdict(claims)
-        st.markdown(f"**Across everything coded here: `{rolled.verdict}`**")
-        st.caption(rolled.reason)
+        # The clock needs publication years; without them the roll-up says so
+        # rather than reporting a gate result as if it were a trajectory.
+        years = {
+            str(n.get("id")): (n.get("year") if isinstance(n.get("year"), int) else None)
+            for n in all_nodes_of(document)
+        }
+        rolled = qualify(programme_verdict(claims, years=years), claims)
+        _render_verdict("Across everything coded here", rolled)
         st.markdown(f"**{len(claims)} judgement(s) recorded for this graph.**")
         report = reliability_report(claims)
         for item in report:

@@ -121,7 +121,15 @@ click-on-node needs the deferred interactive component.
    papers with no abstract vs 43.2% for those with one, and OpenAlex holds no
    abstract for 20% of works. A third of that rate is absent data, not a bad
    classifier. The coding instrument exists partly to measure this.
-10. **The coding corpus is unbuilt and the manual unpiloted** — the source
+10. **The verdict layer is a consistency check, not a measurement.** It reports
+    whether one coder's judgement hangs together under II.9. Known gaps, all
+    surfaced in the UI: the unit is the **paper**, but III.1 codes the *claim* and
+    III.3's fields are per-*revision*; core/belt is **not pre-registered**, so
+    Feyerabend's retrospective-relabelling objection stands; the pessimistic
+    roll-up and the 10-year window are **stipulations of this implementation**,
+    not the source's; and defeaters live in code rather than the versioned profile
+    file II.4 asks for.
+11. **The coding corpus is unbuilt and the manual unpiloted** — the source
     document says so itself (Part IV.1). What exists is the instrument and its
     alpha; the historical episode set of II.14 does not exist.
 11. **In-graph search matches titles only** (L5.2). Abstracts are absent from graph
