@@ -41,6 +41,13 @@ from magnetor.embeddings.base import Embedder
 from magnetor.embeddings.voyage import VoyageEmbedder
 from magnetor.errors import MagnetorError
 from magnetor.export import LineageSet, lineage_bundle, slugify, zip_bundle
+from magnetor.facets import (
+    UNCLASSIFIED,
+    cross_facet_neighbours,
+    facet_counts,
+    node_facets,
+    unclassified_breakdown,
+)
 from magnetor.graph import list_graphs, load_graph
 from magnetor.harvest_jobs import (
     DONE,
@@ -266,6 +273,7 @@ def _render_evidence_graph() -> None:
             "so this is a partial slice of the lineage (snowball expansion pending)."
         )
     _render_breadth(document)
+    _render_facets(all_nodes_of(document))
 
     raw_nodes = document.get("nodes")
     listed = raw_nodes if isinstance(raw_nodes, list) else []
@@ -414,6 +422,35 @@ def _render_harvest_status() -> None:
     tail = log_tail(job)
     if tail:
         st.code("\n".join(tail))
+
+
+def all_nodes_of(document: dict[str, Any]) -> list[dict[str, Any]]:
+    raw = document.get("nodes")
+    listed = raw if isinstance(raw, list) else []
+    return [n for n in listed if isinstance(n, dict)]
+
+
+def _render_facets(all_nodes: list[dict[str, Any]]) -> None:
+    """How this graph's papers approach their subject, and how much is unreadable."""
+    counts = facet_counts(all_nodes)
+    if not counts or set(counts) == {UNCLASSIFIED}:
+        if all_nodes and "facets" not in all_nodes[0]:
+            st.caption(
+                "Approach facets are not stored in this graph — re-harvest the "
+                "question to classify it."
+            )
+        return
+    named = {k: v for k, v in counts.items() if k != UNCLASSIFIED}
+    if named:
+        spread = " · ".join(f"**{facet}** {count}" for facet, count in named.items())
+        st.caption(f"Approaches represented — {spread}.")
+    unclassified, blind = unclassified_breakdown(all_nodes)
+    if unclassified:
+        st.caption(
+            f"{unclassified} paper(s) unclassified, {blind} of them because OpenAlex "
+            "holds no abstract to read. Facets are a screening heuristic and have "
+            "not been checked against human coders."
+        )
 
 
 def _render_breadth(document: dict[str, Any]) -> None:
@@ -804,6 +841,14 @@ def _render_related(
         for e in (document.get("edges") or [])
         if isinstance(e, list) and len(e) == 2
     }
+    facets = node_facets(by_id.get(node_id, {}))
+    if facets != (UNCLASSIFIED,):
+        st.markdown("**Approach:** " + " · ".join(facets))
+    evidence = (by_id.get(node_id) or {}).get("facet_evidence")
+    if isinstance(evidence, dict) and evidence:
+        terms = "; ".join(f"{k}: {', '.join(v)}" for k, v in evidence.items())
+        st.caption(f"Classified from these terms — {terms}")
+
     for kind in ("biblio_coupled", "co_cited"):
         related = related_papers(document, node_id, kind)
         if not related:
@@ -818,6 +863,20 @@ def _render_related(
             direct = (node_id, other_id) in cites or (other_id, node_id) in cites
             note = "" if direct else " · _no citation between them_"
             st.markdown(f"- {title} <small>(weight {weight}{note})</small>", unsafe_allow_html=True)
+
+        cross = cross_facet_neighbours(node_id, list(related), by_id)
+        if cross:
+            st.markdown("**...of those, approaching it differently:**")
+            for other_id, weight, different in cross:
+                other = by_id.get(other_id)
+                title = linked(
+                    str((other or {}).get("title") or other_id),
+                    str((other or {}).get("url") or "") or None,
+                )
+                st.markdown(
+                    f"- {title} <small>— **{', '.join(different)}** (weight {weight})</small>",
+                    unsafe_allow_html=True,
+                )
 
 
 # Streamlit runs the entry script in a module named "__main__" and re-executes

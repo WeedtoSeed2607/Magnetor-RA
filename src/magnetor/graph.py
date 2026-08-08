@@ -21,6 +21,7 @@ from pathlib import Path
 from typing import Any
 
 from magnetor.config import global_store_path
+from magnetor.facets import FacetIndex
 from magnetor.graph_scoring import GraphScores
 from magnetor.harvest import HarvestedPaper, HarvestResult
 from magnetor.relations import DerivedRelations, RelationEdge
@@ -42,6 +43,7 @@ def build_graph_document(
     *,
     top_n: int | None = None,
     relations: DerivedRelations | None = None,
+    facets: FacetIndex | None = None,
 ) -> dict[str, Any]:
     """Merge papers + scores + rank intervals into one graph document.
 
@@ -54,6 +56,7 @@ def build_graph_document(
     score_by_id = {s.openalex_id: s for s in scores.scored}
     interval_by_id = {r.openalex_id: r for r in robustness.intervals}
 
+    facet_by_id = facets.by_id() if facets is not None else {}
     ordered = [s.openalex_id for s in scores.scored]  # already influence-desc
     if top_n is not None:
         ordered = ordered[:top_n]
@@ -83,6 +86,15 @@ def build_graph_document(
                 "is_review": paper.is_review,
             }
         )
+        assignment = facet_by_id.get(nid)
+        if assignment is not None:
+            # The label and the terms that produced it — never the abstract the
+            # terms were matched against (section 3 / I4).
+            nodes[-1]["facets"] = list(assignment.facets)
+            nodes[-1]["facet_evidence"] = {
+                facet: list(terms) for facet, terms in assignment.evidence.items()
+            }
+            nodes[-1]["had_abstract"] = assignment.had_abstract
     edges = [[u, v] for u, v in result.edges if u in keep and v in keep]
     document: dict[str, Any] = {
         "query": result.query,

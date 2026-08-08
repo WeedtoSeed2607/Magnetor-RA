@@ -41,6 +41,7 @@ from magnetor.deepdive import (
 from magnetor.embeddings.base import Embedder
 from magnetor.embeddings.voyage import VoyageEmbedder
 from magnetor.errors import MagnetorError
+from magnetor.facets import classify, facet_counts
 from magnetor.graph import build_graph_document, save_graph
 from magnetor.graph_scoring import score_graph
 from magnetor.harvest import (
@@ -171,8 +172,12 @@ def _persist_graph(result: HarvestResult, args: argparse.Namespace) -> int:
     # Derived relation layers (L4). Computed from reference lists already in
     # memory — no extra API calls — and kept out of the influence metric (D4).
     relations = derive_relations(result)
+    # Facets are classified here, while abstracts are still in memory; only the
+    # label and its evidence terms reach the document (section 3 / I4).
+    facets = classify(result)
     document = build_graph_document(
-        result, scores, robustness, top_n=args.top_n, relations=relations
+        result, scores, robustness, top_n=args.top_n,
+        relations=relations, facets=facets,
     )
     path = save_graph(document)
 
@@ -194,6 +199,10 @@ def _persist_graph(result: HarvestResult, args: argparse.Namespace) -> int:
         f"  relations: {drawn_coupled} bibliographic-coupling, {drawn_cocited} "
         "co-citation link(s) among the kept nodes (navigational only, not scored)"
     )
+    spread = facet_counts(document["nodes"])
+    if spread:
+        summary = ", ".join(f"{facet} {count}" for facet, count in spread.items())
+        print(f"  facets (multi-label, screening heuristic): {summary}")
     if leak >= 0.5:
         print(
             "  note: leakage still high — raise --expand / --expand-top for a more "
