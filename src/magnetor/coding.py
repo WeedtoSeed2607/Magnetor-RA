@@ -116,6 +116,217 @@ ALPHA_FLOOR = 0.67
 ALPHA_FIRM = 0.80
 
 
+#: What a field does to the verdict. The distinction is the whole navigational
+#: problem: thirteen fields look equally weighty on a form, but only three decide
+#: anything, four can void a decision, and the rest are recorded for the corpus.
+GATE = "gate"
+DEFEATER = "defeater"
+CONTEXT = "context"
+
+
+@dataclass(frozen=True, slots=True)
+class FieldGuide:
+    """Everything a coder needs to answer one field without guessing."""
+
+    question: str  # what is actually being asked
+    role: str  # GATE | DEFEATER | CONTEXT
+    look_for: str  # where in the paper the answer lives
+    effect: str  # what this does to the outcome
+    values: dict[str, str]  # value -> what choosing it asserts
+
+
+FIELD_GUIDE: dict[str, FieldGuide] = {
+    # --- the gate: these three, and only these three, decide the verdict ---
+    "independently_measurable": FieldGuide(
+        question="Can what this revision added be measured by anything other than "
+        "the fit that motivated it?",
+        role=GATE,
+        look_for="An instrument, dataset or observation that could confirm the added "
+        "term without reusing the anomaly it was introduced to explain. The source's "
+        "worked case: a 'regret' term was added to a foraging model, and independent "
+        "neural correlates were later found — so it passes.",
+        effect="No here means degenerating, whatever else is true.",
+        values={
+            "yes": "An independent operation exists that could confirm the addition.",
+            "no": "The addition is visible only in the fit that produced it — the "
+            "textbook ad hoc rescue.",
+        },
+    ),
+    "excess_content": FieldGuide(
+        question="Does the revised theory predict anything outside the anomaly it "
+        "was built to explain?",
+        role=GATE,
+        look_for="A claim following from the revision about some other condition, "
+        "population, scale or domain. Explaining the original anomaly better does "
+        "not count — that is what it was built for.",
+        effect="No here means stagnant: checkable, but content-free.",
+        values={
+            "yes": "The revision entails at least one prediction beyond its anomaly.",
+            "no": "It accounts for its anomaly and nothing further.",
+        },
+    ),
+    "use_novel": FieldGuide(
+        question="Was that prediction about facts not used in constructing the "
+        "revision?",
+        role=GATE,
+        look_for="Whether the confirming evidence was already known and fitted to. "
+        "Publication dates help but do not settle it: a fact can predate the revision "
+        "and still not have been used in building it.",
+        effect="No means stagnant. Undeterminable means undetermined — the source is "
+        "explicit that this judgement requires reading, not metadata.",
+        values={
+            "yes": "The confirming facts were not used in building the revision.",
+            "no": "The revision was fitted to the facts that now support it.",
+            "undeterminable": "The record does not say which came first.",
+        },
+    ),
+    # --- defeaters: they cannot create a pass, only void one ---
+    "core_or_belt": FieldGuide(
+        question="Is this claim part of the programme's unrevisable core, or its "
+        "testable protective belt?",
+        role=DEFEATER,
+        look_for="Whether abandoning the claim would end the programme (core) or "
+        "merely revise it (belt).",
+        effect="Decides whether an integrity problem defeats the verdict: only "
+        "core-supporting evidence does.",
+        values={
+            "core": "Abandoning this would end the programme.",
+            "belt": "A testable auxiliary that can be revised.",
+            "undeclared": "The paper does not mark which it is.",
+        },
+    ),
+    "integrity_status": FieldGuide(
+        question="What is the publication's integrity record?",
+        role=DEFEATER,
+        look_for="Retraction notices, expressions of concern, corrections, PubPeer "
+        "threads. Prefilled as retracted only when OpenAlex flags it.",
+        effect="Defeats a passing verdict when the paper is also core-supporting.",
+        values={
+            "clean": "Checked, and no notice found.",
+            "corrected": "A correction has been issued.",
+            "expression-of-concern": "The publisher has raised a concern.",
+            "retracted": "Withdrawn.",
+            "contested-unresolved": "Disputed, with nothing settled.",
+            "not-checked": "Nobody has looked. Never assume this means clean.",
+        },
+    ),
+    "confirmation_independence": FieldGuide(
+        question="Who produced the confirming evidence?",
+        role=DEFEATER,
+        look_for="Author overlap and mentorship lineage between the original claim "
+        "and its confirmations.",
+        effect="Same-lab confirmation defeats the verdict: corroboration by the "
+        "originating group is weak evidence, which Lakatos's scheme cannot register.",
+        values={
+            "same-lab": "Confirmed only by the group that made the claim.",
+            "same-lineage": "Confirmed within one mentorship or collaboration tree.",
+            "independent": "Confirmed by an unrelated group.",
+            "adversarial": "Confirmed under a design agreed with sceptics — the "
+            "strongest and rarest.",
+        },
+    ),
+    "replication_attempt_status": FieldGuide(
+        question="Has anyone attempted to replicate it?",
+        role=DEFEATER,
+        look_for="Replication attempts, whatever their outcome. 'No failed "
+        "replications' is uninformative if nobody tried.",
+        effect="None-attempted defeats the verdict: absence of falsification is not "
+        "corroboration.",
+        values={
+            "none-attempted": "Untested. Nothing has been risked.",
+            "succeeded": "Replicated.",
+            "failed": "A replication attempt failed.",
+            "mixed": "Attempts disagree.",
+        },
+    ),
+    # --- context: recorded for the corpus, no effect on this verdict ---
+    "explanation_type": FieldGuide(
+        question="What kind of explanation is being offered?",
+        role=CONTEXT,
+        look_for="Whether the claim describes a pattern, gives a mechanism, or says "
+        "what something is for.",
+        effect="Recorded. This is the field whose coder agreement tests the "
+        "framework itself.",
+        values={
+            "descriptive": "Characterises a phenomenon without explaining it.",
+            "mechanistic": "Says how the system produces it.",
+            "normative": "Says what it is for, or what would be optimal.",
+            "none-of-the-above": "Fits none — a real and reportable outcome.",
+        },
+    ),
+    "level_sense": FieldGuide(
+        question="In which sense is 'level' being used?",
+        role=CONTEXT,
+        look_for="Whether the paper means physical scale, substrate abstraction, "
+        "part-whole constitution, degree of idealisation, or dynamical autonomy.",
+        effect="Recorded. Drift in the unspecified rate is itself a signal of a "
+        "field clarifying.",
+        values={
+            "L_scale": "Spatiotemporal grain.",
+            "L_comp": "Substrate abstraction — survives an implementation swap.",
+            "L_const": "Constitutive part-whole. Contested.",
+            "L_ideal": "Degree of idealisation.",
+            "L_dyn": "Dynamically autonomous coarse-graining.",
+            "unspecified": "The paper does not say. A finding, not a blank.",
+        },
+    ),
+    "interp_schema_type": FieldGuide(
+        question="How does the model connect to the world?",
+        role=CONTEXT,
+        look_for="The stated mapping between model terms and measured quantities.",
+        effect="Recorded. Mature theories convert T3 into T1 over time.",
+        values={
+            "T0": "Instrument chain — model term to measured signal.",
+            "T1": "Denotation — term to a quantity with units.",
+            "T2": "Restriction — what is deliberately not tracked.",
+            "T3": "Analogy — structural correspondence without denotation.",
+        },
+    ),
+    "data_or_phenomenon": FieldGuide(
+        question="Is the claim about the data, or about the phenomenon inferred "
+        "from it?",
+        role=CONTEXT,
+        look_for="Whether the claim would survive a different instrument.",
+        effect="Recorded. Datum-claims are predicted to replicate worse.",
+        values={
+            "datum-claim": "About this instrument's output.",
+            "phenomenon-claim": "About a stable feature inferred from data.",
+        },
+    ),
+    "normative_subscript": FieldGuide(
+        question="Which sense of 'goal' is meant?",
+        role=CONTEXT,
+        look_for="Whether the goal was selected for, ascribed by the modeller, or "
+        "estimated from behaviour.",
+        effect="Recorded. Only N_sel answers why the phenomenon exists.",
+        values={
+            "N_sel": "The goal the system was selected for.",
+            "N_asc": "A goal ascribed as a predictive heuristic.",
+            "N_fit": "An objective function estimated from behaviour.",
+            "not-applicable": "No normative claim.",
+        },
+    ),
+    "claim_type": FieldGuide(
+        question="What kind of claim is it?",
+        role=CONTEXT,
+        look_for="Whether it stipulates a meaning, derives a result, reports an "
+        "observation, or tells someone what to do.",
+        effect="Recorded. Separates what could be tested from what was defined.",
+        values={
+            "stipulative": "True by definition.",
+            "formal": "Derived mathematically.",
+            "empirical": "Answerable by observation.",
+            "imperative": "A recommendation.",
+        },
+    ),
+}
+
+
+def fields_by_role(role: str) -> tuple[str, ...]:
+    """Field names carrying a given role, in the guide's order."""
+    return tuple(name for name, guide in FIELD_GUIDE.items() if guide.role == role)
+
+
 class CodingError(ValueError):
     """A value outside its field's vocabulary."""
 

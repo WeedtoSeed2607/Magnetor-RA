@@ -23,14 +23,20 @@ from magnetor.citations import SemanticScholarClient
 from magnetor.coding import (
     ALPHA_FIRM,
     ALPHA_FLOOR,
+    CONTEXT,
+    DEFAULT_DEGENERATION_WINDOW,
+    DEFEATER,
+    FIELD_GUIDE,
     FIELDS,
     FIRM,
+    GATE,
     UNRELIABLE,
     UNSET,
     UNVALIDATED,
     USABLE,
     QualifiedVerdict,
     current_coder,
+    fields_by_role,
     judge,
     prefill,
     programme_verdict,
@@ -236,50 +242,96 @@ def _render_frontier(active: Domain) -> None:
 
 
 def main() -> None:
+    """Four workspaces rather than one page.
+
+    The branches answer different questions and are used at different moments —
+    trends survey a domain, the graph traces one lineage, the verdict layer
+    appraises a single paper. Stacking them made every panel compete with panels
+    the reader was not using; splitting them lets each carry its own controls.
+    """
     st.set_page_config(page_title="Magnetor", layout="wide")
-    st.title("Magnetor — Domain-Aware Research Platform")
-    st.caption("Silo the data, federate the answer.")
+    st.navigation(
+        [
+            st.Page(_page_trends, title="Trends", icon="📈", default=True),
+            st.Page(_page_deep_dive, title="Deep-dive", icon="🔬"),
+            st.Page(_page_graph, title="Evidence Graph", icon="🕸️"),
+            st.Page(_page_verdict, title="Verdict layer", icon="⚖️"),
+        ]
+    ).run()
 
-    domain_token = st.sidebar.selectbox("Active domain", [d.value for d in all_domains()])
-    active = Domain(domain_token)
-    query = st.sidebar.text_input("Deep-dive query (Branch B)")
-    force_domain = st.sidebar.checkbox("Force this domain (skip routing)", value=False)
-    unlocked = _search_unlocked()
 
+def _active_domain() -> Domain:
+    """Domain picker, rendered by whichever page needs one."""
+    token = st.sidebar.selectbox(
+        "Active domain", [d.value for d in all_domains()], key="active_domain"
+    )
+    return Domain(token)
+
+
+def _page_trends() -> None:
+    st.title("Trends")
+    st.caption(
+        "Branch A — what a stored domain corpus is talking about, and what is "
+        "newly emerging. Statistic-anchored: every line names the counts behind it."
+    )
+    active = _active_domain()
     _render_banner(active)
     st.divider()
-    primary, secondary = st.columns([2, 1])
-    with primary:
-        _render_primary(active, query, force_domain, unlocked)
-    with secondary:
-        _render_frontier(active)
     # Sentiment panel (Spec 11) omitted: the sentiment module is optional and
     # not enabled, and must never be blended into the Topic-Trend Banner.
-    st.divider()
+    _render_frontier(active)
+
+
+def _page_deep_dive() -> None:
+    st.title("Deep-dive")
+    st.caption(
+        "Branch B — route one question to a domain and expand it through the "
+        "citations of its closest stored papers."
+    )
+    active = _active_domain()
+    query = st.sidebar.text_input("Deep-dive query", key="deepdive_query")
+    force_domain = st.sidebar.checkbox(
+        "Force this domain (skip routing)", value=False, key="deepdive_force"
+    )
+    _render_primary(active, query, force_domain, _search_unlocked())
+
+
+def _page_graph() -> None:
+    st.title("Evidence Graph")
+    st.caption(
+        "Branch C — build a citation map around a question or a paper, then trace "
+        "how the work actually descended."
+    )
     _render_evidence_graph()
+
+
+def _pick_graph(key: str) -> tuple[int, dict[str, Any]] | None:
+    """Shared graph picker: the graph page and the verdict layer both need one."""
+    graphs = list_graphs()
+    if not graphs:
+        st.info(
+            "No graphs yet — build one on the **Evidence Graph** page, or run "
+            '`magnetor harvest "<your question>"`.'
+        )
+        return None
+    labels = [f"{g['query']}  ·  {g['n_nodes']} papers" for g in graphs]
+    choice = st.selectbox(
+        "Harvested question", range(len(graphs)), format_func=lambda i: labels[i], key=key
+    )
+    document = load_graph(str(graphs[choice]["query"]))
+    if not document:
+        st.warning("Could not load that graph.")
+        return None
+    return choice, document
 
 
 def _render_evidence_graph() -> None:
     """Branch C (ADR-0006): the query-relative influence node map."""
-    st.subheader("Evidence Graph — query-relative influence (Branch C)")
     _render_harvest_launcher()
-    graphs = list_graphs()
-    if not graphs:
-        hint = (
-            "No graphs yet — harvest one above, or run "
-            '`magnetor harvest "<your question>"`.'
-            if harvest_ui_enabled()
-            else 'No graphs yet — build one with `magnetor harvest "<your question>"`.'
-        )
-        st.info(hint)
+    picked = _pick_graph("graph_page")
+    if picked is None:
         return
-
-    labels = [f"{g['query']}  ·  {g['n_nodes']} papers" for g in graphs]
-    choice = st.selectbox("Harvested question", range(len(graphs)), format_func=lambda i: labels[i])
-    document = load_graph(str(graphs[choice]["query"]))
-    if not document:
-        st.warning("Could not load that graph.")
-        return
+    choice, document = picked
 
     leak = float(document.get("boundary_leakage") or 0.0)
     n_nodes = len(document.get("nodes", []))
@@ -525,76 +577,201 @@ def _render_verdict(title: str, qualified: QualifiedVerdict) -> None:
     st.caption(f"Gate-field agreement: {alphas}")
 
 
-def _render_coding(document: dict[str, Any], node: dict[str, Any]) -> None:
-    """Part III coding form for one paper, plus inter-coder reliability.
+def _pretty(name: str) -> str:
+    return name.replace("_", " ").capitalize()
 
-    Records are append-only and attributed: III.6 needs two or more independent
-    coders, and a field that falls below the alpha floor is a finding about the
-    framework rather than a coding failure to patch.
+
+def _code_field(name: str, default: str, prefix: str) -> str:
+    """One coding control, carrying its own question and its value meanings.
+
+    The question goes under the control where it cannot be missed; where to look
+    and what each value asserts go in the tooltip, so a coder who knows the field
+    is not slowed by a paragraph they have already read.
     """
+    guide = FIELD_GUIDE.get(name)
+    options = (UNSET, *FIELDS[name])
+    tip = None
+    if guide is not None:
+        meanings = "\n".join(f"- **{v}** — {m}" for v, m in guide.values.items())
+        tip = (
+            f"**Where to look.** {guide.look_for}\n\n"
+            f"**Values.**\n{meanings}\n\n"
+            f"**Effect.** {guide.effect}\n\n"
+            f"_Recorded as `{name}`._"
+        )
+    value = st.selectbox(
+        _pretty(name),
+        options,
+        index=options.index(default) if default in options else 0,
+        key=f"{prefix}_{name}",
+        help=tip,
+    )
+    if guide is not None:
+        st.caption(guide.question)
+    return str(value)
+
+
+def _page_verdict() -> None:
+    """The Lakatosian appraisal workspace: input, settings, output — in that order."""
+    st.title("Verdict layer")
+    st.caption(
+        "Appraise one revision against Lakatos's test: did it add something "
+        "measurable, does that something predict beyond the problem it was "
+        "invented for, and was the prediction made before the facts were in?"
+    )
+    picked = _pick_graph("verdict_graph")
+    if picked is None:
+        return
+    _choice, document = picked
+    all_nodes = all_nodes_of(document)
+    if not all_nodes:
+        st.info("This graph has no papers to appraise.")
+        return
     query = str(document.get("query", ""))
+
+    # ---- 1. what goes in -------------------------------------------------
+    st.header("1 · What you put in")
+    st.markdown(
+        "**A paper you have read.** This layer appraises *your reading*, not the "
+        "paper. The graph stores identifiers, numbers and edges — never the text — "
+        "so nothing here is inferred from content. Only the retraction flag is "
+        "pre-filled; every other answer is yours."
+    )
+    st.markdown(
+        "**Roughly five to ten minutes per paper**, and it needs the methods and "
+        "results sections, not the abstract. Two coders must do it independently "
+        "for the agreement statistic to mean anything."
+    )
+    labels = [
+        f"{i + 1}. {_short(n, str(n.get('id')), 70)}" for i, n in enumerate(all_nodes)
+    ]
+    index = st.selectbox(
+        "Paper to appraise", range(len(all_nodes)), format_func=lambda i: labels[i],
+        key="verdict_paper",
+    )
+    node = all_nodes[index]
     paper_id = str(node.get("id"))
-    with st.expander("Code this paper (Lakatosian instrument, Part III)"):
+    url = str(node.get("url") or "") or None
+    st.markdown(f"### {linked(str(node.get('title') or paper_id), url)}")
+    st.caption(
+        f"{node.get('year') or 'year unknown'} · {node.get('venue') or 'venue unknown'} · "
+        f"influence {float(node.get('influence') or 0):.2f} · "
+        f"in-set citations {node.get('in_degree', 0)}"
+    )
+    st.caption(f"Coding as **{current_coder()}** — set `MAGNETOR_CODER` to change this.")
+
+    # ---- 2. what each setting does --------------------------------------
+    st.header("2 · What each setting does")
+    defaults = prefill(node)
+    chosen: dict[str, str] = {}
+
+    st.subheader("The gate — these three decide the verdict")
+    st.markdown(
+        "All three must pass for *progressive*. They are **necessary conditions**, "
+        "not a score: a strong answer here cannot compensate for a weak one there."
+    )
+    for name in fields_by_role(GATE):
+        chosen[name] = _code_field(name, defaults.get(name, UNSET), "verdict")
+
+    st.subheader("Defeaters — these can void a pass, never create one")
+    st.markdown(
+        "A defeated verdict still passed the gate; the evidence underneath it will "
+        "not bear the weight. Defeat is **binary and auditable** rather than a "
+        "weighted downgrade, because a weighted one would be neither."
+    )
+    for name in fields_by_role(DEFEATER):
+        chosen[name] = _code_field(name, defaults.get(name, UNSET), "verdict")
+
+    with st.expander("Context — recorded for the corpus, no effect on this verdict"):
+        st.markdown(
+            "These describe the claim rather than appraise it. They do not move the "
+            "verdict, but they are what a reliability study measures: if coders "
+            "cannot agree on them, that is a finding about the framework itself."
+        )
+        for name in fields_by_role(CONTEXT):
+            chosen[name] = _code_field(name, defaults.get(name, UNSET), "verdict")
+
+    note = st.text_input("Note (optional)", key="verdict_note")
+
+    # ---- 3. what comes out ----------------------------------------------
+    st.header("3 · What comes out")
+    claims = load_coding(query)
+    live = qualify(judge(chosen), claims)
+    _render_verdict("This paper, right now", live)
+    if live.verdict.is_defeated:
+        st.warning(f"Verdict defeated — {live.verdict.defeated_by}.")
+
+    with st.expander("How to read the two labels"):
+        st.markdown(
+            "**The verdict** says what your answers imply.\n\n"
+            "| Verdict | Reached when |\n|---|---|\n"
+            "| `progressive` | all three gate answers pass |\n"
+            "| `stagnant` | measurable, but no excess content or not use-novel |\n"
+            "| `degenerating` | the addition is not independently measurable |\n"
+            "| `undetermined` | a gate field is unanswered, or novelty cannot be told |\n"
+        )
+        st.markdown(
+            "**The standing** says how far the verdict can be trusted — a separate "
+            "question, because the gate is deterministic while the judgements "
+            "feeding it are not.\n\n"
+            "| Standing | Meaning |\n|---|---|\n"
+            "| ⚪ `unvalidated` | no paper here has two independent codings, so "
+            "agreement is unmeasured |\n"
+            f"| 🔴 `unreliable` | coders measurably disagree (below {ALPHA_FLOOR}) |\n"
+            f"| 🟡 `usable` | clears {ALPHA_FLOOR} |\n"
+            f"| 🟢 `firm` | clears {ALPHA_FIRM} |\n"
+        )
         st.caption(
-            f"Coding as **{current_coder()}** — set `MAGNETOR_CODER` to attribute "
-            "your judgements. Records are append-only, so a second coder's "
-            "disagreement is kept rather than overwritten: it is the measurement."
+            "Total agreement also reads unvalidated: with no variance there is no "
+            "expected disagreement to normalise against, so reliability is "
+            "unestablished rather than perfect."
         )
-        defaults = prefill(node)
-        chosen: dict[str, str] = {}
-        for name in _CODING_FIELDS:
-            options = (UNSET, *FIELDS[name])
-            default = defaults.get(name, UNSET)
-            chosen[name] = st.selectbox(
-                name,
-                options,
-                index=options.index(default) if default in options else 0,
-                key=f"code_{paper_id}_{name}",
-            )
-        note = st.text_input("Note (optional)", key=f"code_note_{paper_id}")
-        if st.button("Save coding", key=f"code_save_{paper_id}"):
-            if all(value == UNSET for value in chosen.values()):
-                st.warning("Nothing judged — set at least one field before saving.")
-            else:
-                record_coding(query, paper_id, chosen, note=note)
-                st.success("Recorded.")
 
-        claims = load_coding(query)
-        live = qualify(judge(chosen), claims)
-        _render_verdict("Lakatosian gate (II.9), this paper", live)
-        if live.verdict.is_defeated:
-            st.warning(f"Verdict defeated — {live.verdict.defeated_by}.")
+    if st.button("Save this appraisal", key="verdict_save", type="primary"):
+        if all(value == UNSET for value in chosen.values()):
+            st.warning("Nothing judged yet — answer at least one setting first.")
+        else:
+            record_coding(query, paper_id, chosen, note=note)
+            st.success("Recorded. Append-only: a second coder's disagreement is kept.")
 
-        if not claims:
-            return
-
-        # The clock needs publication years; without them the roll-up says so
-        # rather than reporting a gate result as if it were a trajectory.
-        years = {
-            str(n.get("id")): (n.get("year") if isinstance(n.get("year"), int) else None)
-            for n in all_nodes_of(document)
-        }
-        rolled = qualify(programme_verdict(claims, years=years), claims)
-        _render_verdict("Across everything coded here", rolled)
-        st.markdown(f"**{len(claims)} judgement(s) recorded for this graph.**")
-        report = reliability_report(claims)
-        for item in report:
-            alpha = "—" if item.alpha is None else f"{item.alpha:.2f}"
-            st.markdown(
-                f"- `{item.field_name}` — alpha {alpha} "
-                f"({item.units} double-coded, {item.coders} coder(s)) · {item.verdict}"
-            )
-        st.download_button(
-            "Download coding (CSV)",
-            data=to_csv(claims),
-            file_name=f"{slugify(query)}-coding.csv",
-            mime="text/csv",
-            key=f"code_dl_{paper_id}",
+    if not claims:
+        st.info(
+            "Nothing saved for this graph yet. Appraise the same paper as a second "
+            "coder to make the agreement statistic computable."
         )
-        st.caption(
-            f"Floors are the manual's declared conventions: alpha >= {ALPHA_FLOOR} "
-            f"usable, >= {ALPHA_FIRM} firm. They are conventions, not calibrations."
+        return
+
+    st.subheader("Across everything coded here")
+    years = {
+        str(n.get("id")): (n.get("year") if isinstance(n.get("year"), int) else None)
+        for n in all_nodes
+    }
+    rolled = qualify(programme_verdict(claims, years=years), claims)
+    _render_verdict("Programme", rolled)
+    st.caption(
+        f"The clock uses a stipulated {DEFAULT_DEGENERATION_WINDOW}-year window: a "
+        "programme whose last gate-passing revision is older than that reads "
+        "stagnant however good those revisions were."
+    )
+
+    st.markdown(f"**{len(claims)} judgement(s) recorded.**")
+    for item in reliability_report(claims):
+        alpha = "--" if item.alpha is None else f"{item.alpha:.2f}"
+        st.markdown(
+            f"- `{item.field_name}` — alpha {alpha} "
+            f"({item.units} double-coded, {item.coders} coder(s)) · {item.verdict}"
         )
+    st.download_button(
+        "Download coding (CSV)",
+        data=to_csv(claims),
+        file_name=f"{slugify(query)}-coding.csv",
+        mime="text/csv",
+        key="verdict_download",
+    )
+    st.caption(
+        f"Floors are declared conventions: alpha >= {ALPHA_FLOOR} usable, "
+        f">= {ALPHA_FIRM} firm. Conventions, not calibrations."
+    )
 
 
 def _render_gaps(document: dict[str, Any], all_nodes: list[dict[str, Any]]) -> None:
@@ -1007,7 +1184,7 @@ def _render_node_detail(document: dict[str, Any], all_nodes: list[dict[str, Any]
         if url:
             st.markdown(f"[Open the paper ↗]({url})")
         _render_related(document, all_nodes, str(node.get("id")))
-        _render_coding(document, node)
+        st.caption("To appraise this paper's revision, use the **Verdict layer** page.")
 
 
 def _render_related(
