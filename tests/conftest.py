@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import datetime as dt
+import zlib
 from collections.abc import Iterable, Sequence
 
 import pytest
@@ -68,6 +69,12 @@ class FakeEmbedder:
 
     Maps each text to a fixed-length vector by hashing its words into buckets,
     so semantically-similar strings (shared words) land near each other.
+
+    Uses ``zlib.crc32`` rather than the built-in ``hash``. Python randomises
+    string hashing per process, so with only eight buckets the built-in made
+    bucket assignment differ on every run — occasionally colliding words from
+    unrelated topics and failing an otherwise sound similarity test. A fixture
+    that varies per process cannot support an assertion about similarity.
     """
 
     def __init__(self, dimension: int = 8) -> None:
@@ -80,7 +87,7 @@ class FakeEmbedder:
     def _vector(self, text: str) -> list[float]:
         vec = [0.0] * self._dimension
         for word in text.lower().split():
-            vec[hash(word) % self._dimension] += 1.0
+            vec[zlib.crc32(word.encode()) % self._dimension] += 1.0
         # Guarantee a non-zero vector so cosine is well-defined.
         if not any(vec):
             vec[0] = 1.0

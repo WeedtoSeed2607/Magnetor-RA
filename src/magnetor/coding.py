@@ -70,7 +70,23 @@ FIELDS: dict[str, tuple[str, ...]] = {
     ),
     "confirmation_independence": ("same-lab", "same-lineage", "independent", "adversarial"),
     "replication_attempt_status": ("none-attempted", "succeeded", "failed", "mixed"),
+    # --- III.3, per-revision: the fields the II.9 gate runs on ---
+    "independently_measurable": ("yes", "no"),
+    "excess_content": ("yes", "no"),
+    "use_novel": ("yes", "no", "undeterminable"),
+    "parsimony_out_of_sample": ("improved", "neutral", "worse", "not-applicable"),
+    "form_derived_independently": ("yes", "no"),
+    "novelty_sense": ("temporal", "use-novel", "both", "neither"),
 }
+
+#: The II.9 gate's three necessary criteria, in order. Criteria 4 and 5
+#: (parsimony, non-arbitrary form) are strength grades and never decide a verdict.
+_GATE = ("independently_measurable", "excess_content", "use_novel")
+
+PROGRESSIVE = "progressive"
+STAGNANT = "stagnant"
+DEGENERATING = "degenerating"
+UNDETERMINED = "undetermined"
 
 #: Reliability floors from III.6, carried as declared conventions.
 ALPHA_FLOOR = 0.67
@@ -289,6 +305,123 @@ def reliability_report(claims: Sequence[CodedClaim]) -> tuple[FieldReliability, 
 def coverage(claims: Sequence[CodedClaim], field_name: str) -> int:
     """Distinct papers with at least one judgement on this field."""
     return len({c.paper_id for c in claims if c.value(field_name) != UNSET})
+
+
+@dataclass(frozen=True, slots=True)
+class Verdict:
+    """A II.9 judgement on one revision, with the reasoning kept attached."""
+
+    verdict: str  # PROGRESSIVE | STAGNANT | DEGENERATING | UNDETERMINED
+    reason: str
+    defeated_by: str = ""
+
+    @property
+    def is_defeated(self) -> bool:
+        return bool(self.defeated_by)
+
+
+def judge(values: Mapping[str, str]) -> Verdict:
+    """Apply the II.9 gate: progressive only if criteria 1-3 all pass.
+
+    The gate is deliberately not a score. Criterion 4 (parsimony) and criterion 5
+    (non-arbitrary functional form) are strength grades in the source and stay
+    that way here, because averaging a necessary condition against a grade is how
+    a failed criterion gets bought off by a strong one.
+
+    Three outcomes rather than two. *Stagnant* — measurable but content-free —
+    is the category the binary forces false verdicts on, and the source calls it
+    "the largest and most under-recognised". *Undetermined* is returned whenever
+    the gate cannot be evaluated, because III.4E is explicit that absence of
+    falsification is not corroboration and must never be read as progress.
+    """
+    measurable = values.get("independently_measurable", UNSET)
+    content = values.get("excess_content", UNSET)
+    novel = values.get("use_novel", UNSET)
+
+    if any(values.get(name, UNSET) == UNSET for name in _GATE):
+        missing = [name for name in _GATE if values.get(name, UNSET) == UNSET]
+        return Verdict(
+            UNDETERMINED,
+            f"not yet coded: {', '.join(missing)}. Absence of falsification is not "
+            "corroboration, so this is undetermined rather than progressive.",
+        )
+
+    defeat = _defeater(values)
+    if measurable == "no":
+        return Verdict(
+            DEGENERATING,
+            "the added term is not measurable by any operation other than the fit "
+            "that motivated it (criterion 1).",
+            defeat,
+        )
+    if content == "no" or novel == "no":
+        failed = "excess content" if content == "no" else "use-novelty"
+        return Verdict(
+            STAGNANT,
+            f"measurable, but fails {failed} (criteria 2-3): the revision is "
+            "checkable and yet predicts nothing outside the anomaly it was built for.",
+            defeat,
+        )
+    if novel == "undeterminable":
+        return Verdict(
+            UNDETERMINED,
+            "use-novelty could not be determined from the available record, and "
+            "the source is explicit that this requires reading rather than metadata.",
+            defeat,
+        )
+    return Verdict(
+        PROGRESSIVE,
+        "independently measurable, carries excess content, and that content is "
+        "use-novel (criteria 1-3).",
+        defeat,
+    )
+
+
+def _defeater(values: Mapping[str, str]) -> str:
+    """III.4E defeaters — binary and auditable, never a weighted downgrade.
+
+    A weighted downgrade would reintroduce exactly the invented precision II.4
+    rejects, so a verdict is either defeated or it is not.
+    """
+    if values.get("integrity_status") in ("retracted", "contested-unresolved") and values.get(
+        "core_or_belt"
+    ) == "core":
+        return "rests on core-supporting evidence that is retracted or contested"
+    if values.get("confirmation_independence") == "same-lab":
+        return "every confirmation comes from the originating lab"
+    if values.get("replication_attempt_status") == "none-attempted":
+        return "no replication has been attempted, so nothing has been risked"
+    return ""
+
+
+def programme_verdict(claims: Sequence[CodedClaim]) -> Verdict:
+    """Roll per-paper judgements into one programme-level reading.
+
+    Deliberately pessimistic: one degenerating revision outweighs several
+    progressive ones, because Lakatos's question is whether the programme is
+    still generating novel content, not how much of its output is respectable.
+    """
+    judged = [judge(claim.values) for claim in claims]
+    decided = [v for v in judged if v.verdict != UNDETERMINED]
+    if not decided:
+        return Verdict(UNDETERMINED, "no revision has been coded through the gate.")
+    counts = Counter(v.verdict for v in decided)
+    defeated = [v for v in decided if v.is_defeated]
+    summary = ", ".join(f"{n} {verdict}" for verdict, n in counts.most_common())
+    if counts[PROGRESSIVE] == 0:
+        worst = DEGENERATING if counts[DEGENERATING] else STAGNANT
+        return Verdict(worst, f"no coded revision passed the gate ({summary}).")
+    if counts[DEGENERATING]:
+        return Verdict(
+            STAGNANT,
+            f"progress is mixed with degeneration ({summary}); a programme is not "
+            "progressive because some of its revisions are.",
+        )
+    return Verdict(
+        PROGRESSIVE,
+        f"{summary}."
+        + (f" {len(defeated)} verdict(s) defeated on evidential grounds." if defeated else ""),
+    )
 
 
 def to_csv(claims: Iterable[CodedClaim]) -> str:

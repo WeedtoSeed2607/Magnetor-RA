@@ -26,7 +26,9 @@ from magnetor.coding import (
     FIELDS,
     UNSET,
     current_coder,
+    judge,
     prefill,
+    programme_verdict,
     reliability_report,
     to_csv,
 )
@@ -60,6 +62,7 @@ from magnetor.facets import (
     node_facets,
     unclassified_breakdown,
 )
+from magnetor.gaps import facet_gaps, read_gaps
 from magnetor.graph import list_graphs, load_graph
 from magnetor.harvest_jobs import (
     DONE,
@@ -286,6 +289,7 @@ def _render_evidence_graph() -> None:
         )
     _render_breadth(document)
     _render_facets(all_nodes_of(document))
+    _render_gaps(document, all_nodes_of(document))
 
     raw_nodes = document.get("nodes")
     listed = raw_nodes if isinstance(raw_nodes, list) else []
@@ -478,6 +482,12 @@ _CODING_FIELDS = (
     "claim_type",
     "core_or_belt",
     "integrity_status",
+    # III.3 — the three the II.9 gate runs on, plus the evidential defeaters.
+    "independently_measurable",
+    "excess_content",
+    "use_novel",
+    "confirmation_independence",
+    "replication_attempt_status",
 )
 
 
@@ -515,9 +525,19 @@ def _render_coding(document: dict[str, Any], node: dict[str, Any]) -> None:
                 record_coding(query, paper_id, chosen, note=note)
                 st.success("Recorded.")
 
+        live = judge(chosen)
+        st.markdown(f"**Lakatosian gate (II.9): `{live.verdict}`**")
+        st.caption(live.reason)
+        if live.is_defeated:
+            st.warning(f"Verdict defeated — {live.defeated_by}.")
+
         claims = load_coding(query)
         if not claims:
             return
+
+        rolled = programme_verdict(claims)
+        st.markdown(f"**Across everything coded here: `{rolled.verdict}`**")
+        st.caption(rolled.reason)
         st.markdown(f"**{len(claims)} judgement(s) recorded for this graph.**")
         report = reliability_report(claims)
         for item in report:
@@ -536,6 +556,45 @@ def _render_coding(document: dict[str, Any], node: dict[str, Any]) -> None:
         st.caption(
             f"Floors are the manual's declared conventions: alpha >= {ALPHA_FLOOR} "
             f"usable, >= {ALPHA_FIRM} firm. They are conventions, not calibrations."
+        )
+
+
+def _render_gaps(document: dict[str, Any], all_nodes: list[dict[str, Any]]) -> None:
+    """What this map is missing: works it leans on, and axes nobody took."""
+    found = read_gaps(document)
+    axes = facet_gaps(all_nodes)
+    if not found and not axes:
+        return
+    with st.expander("Open gaps — what this map is missing"):
+        if found:
+            st.markdown(
+                "**Foundational works cited from inside this set but absent from it.** "
+                "Boundary leakage says how much points outside; this says what."
+            )
+            for gap in found[:10]:
+                label = gap.title or f"`{gap.openalex_id}` (no metadata returned)"
+                st.markdown(
+                    f"- [{label}]({gap.url}) — cited by **{gap.cited_by_in_set}** "
+                    f"paper(s) here ({gap.share:.0%})"
+                    + (f" · {gap.year}" if gap.year else "")
+                )
+            st.caption(
+                "Some entries resolve to no metadata — usually a merged or withdrawn "
+                "OpenAlex record. They keep their count rather than being dropped, "
+                "because removing them would understate the incompleteness."
+            )
+        if axes:
+            absent = [g.facet for g in axes if g.absent]
+            thin = [(g.facet, g.papers) for g in axes if not g.absent]
+            st.markdown("**Approaches barely taken on this question.**")
+            if absent:
+                st.markdown(f"- Not represented at all: {', '.join(absent)}")
+            for facet, papers in thin:
+                st.markdown(f"- `{facet}` — only {papers} paper(s)")
+        st.caption(
+            "A gap is an absence in a harvested slice, and absence has cheap "
+            "explanations: not indexed, not applicable, or tried and uncited. Read "
+            "this as a prompt for attention, never as a verdict about the field."
         )
 
 

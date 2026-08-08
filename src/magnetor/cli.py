@@ -42,6 +42,7 @@ from magnetor.embeddings.base import Embedder
 from magnetor.embeddings.voyage import VoyageEmbedder
 from magnetor.errors import MagnetorError
 from magnetor.facets import classify, facet_counts
+from magnetor.gaps import WorkFetcher, enrich, foundational_gaps, gap_rows
 from magnetor.graph import build_graph_document, save_graph
 from magnetor.graph_scoring import score_graph
 from magnetor.harvest import (
@@ -123,9 +124,10 @@ def main(argv: Sequence[str] | None = None) -> int:
 
 def _run_harvest(args: argparse.Namespace) -> int:
     """Branch C (ADR-0006): harvest -> score -> robustness -> persist a graph."""
+    source = _build_works_source()
     try:
         result = run_harvest(
-            _build_works_source(), args.query, limit=args.limit,
+            source, args.query, limit=args.limit,
             expand_rounds=args.expand, expand_per_round=args.expand_top,
         )
     except MagnetorError as exc:
@@ -134,14 +136,15 @@ def _run_harvest(args: argparse.Namespace) -> int:
     if not result.papers:
         print(f"[harvest] no papers for {args.query!r}", file=sys.stderr)
         return 1
-    return _persist_graph(result, args)
+    return _persist_graph(result, args, source)
 
 
 def _run_anchor(args: argparse.Namespace) -> int:
     """Branch C — build a graph outward from one paper rather than a question."""
+    source = _build_neighbour_source()
     try:
         result = run_anchored_harvest(
-            _build_neighbour_source(), args.paper, limit=args.limit,
+            source, args.paper, limit=args.limit,
             backward_hops=args.backward, forward_fanout=args.forward_fanout,
             expand_rounds=args.expand,
         )
@@ -158,10 +161,12 @@ def _run_anchor(args: argparse.Namespace) -> int:
         "Read the ranking among the OTHER papers.",
         file=sys.stderr,
     )
-    return _persist_graph(result, args)
+    return _persist_graph(result, args, source)
 
 
-def _persist_graph(result: HarvestResult, args: argparse.Namespace) -> int:
+def _persist_graph(
+    result: HarvestResult, args: argparse.Namespace, source: WorkFetcher | None = None
+) -> int:
     """Score, measure robustness, derive relations, persist, and report.
 
     Shared by ``harvest`` and ``anchor``: the two differ only in how the working
@@ -179,6 +184,18 @@ def _persist_graph(result: HarvestResult, args: argparse.Namespace) -> int:
         result, scores, robustness, top_n=args.top_n,
         relations=relations, facets=facets,
     )
+    # Foundational gaps: outside works the set repeatedly leans on. Identifiers
+    # come free from the reference lists; titles need one batch fetch, since by
+    # definition these works were never retrieved.
+    found_gaps = foundational_gaps(result)
+    if found_gaps and source is not None:
+        try:
+            found_gaps = enrich(
+                found_gaps, source.fetch_by_ids([g.openalex_id for g in found_gaps])
+            )
+        except MagnetorError as exc:  # a gap list without titles still beats none
+            print(f"  note: gap titles unavailable ({exc})", file=sys.stderr)
+    document["foundational_gaps"] = gap_rows(found_gaps)
     path = save_graph(document)
 
     leak = robustness.boundary_leakage
@@ -203,6 +220,12 @@ def _persist_graph(result: HarvestResult, args: argparse.Namespace) -> int:
     if spread:
         summary = ", ".join(f"{facet} {count}" for facet, count in spread.items())
         print(f"  facets (multi-label, screening heuristic): {summary}")
+    rows = document.get("foundational_gaps") or []
+    if rows:
+        print(
+            f"  gaps: {len(rows)} outside work(s) cited by 2+ harvested papers but "
+            f"absent from the map; the strongest by {rows[0][1]} paper(s)"
+        )
     if leak >= 0.5:
         print(
             "  note: leakage still high — raise --expand / --expand-top for a more "
