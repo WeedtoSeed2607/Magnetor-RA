@@ -22,6 +22,8 @@ optional `[dashboard]` extra. Code on GitHub: **WeedtoSeed2607/Magnetor-RA**
 | Branch C navigation (L5.1–L5.3) | In-graph search box; Personalised-PageRank highlighting; **two-way** k-best progression paths (roots ← origin → development) with "Next"; node detail panel; leg-coloured edges; rough-guide disclaimer. | `dashboard` |
 | Branch C relations (L4) | Co-citation + bibliographic coupling, computed from reference lists already held — **no extra API calls**. Own layers in the graph doc, dashed/arrowless in the render (I2), **excluded from influence** (D4). On the Morality graph they add 199 pairs the citation backbone cannot express. | `harvest` |
 | Branch C node inspection | Hide-pathway toggle; pick 2+ papers and get lineage / indirect / unconnected with the chain shown and highlighted; subgraph-only view; per-paper "shares references with" list. | `dashboard` |
+| Branch C facets | Multi-label **approach** classification (empirical / formal / mechanistic / normative / conceptual / linguistic / unclassified) done at harvest time from title+abstract; only the label and its evidence terms persist. Drives **cross-facet discovery**: papers sharing your foundations that attack the problem differently. | `harvest`, `anchor` |
+| Branch C coding instrument | Part III schema, append-only per-graph store, prefill that never asserts more than was checked, and **Krippendorff's alpha** per field with the manual's floors. The instrument, not the study. | `dashboard` |
 | Branch C breadth check | Judges whether a query was too broad **from the graph** (pair coverage + fragmentation share, not the query string) and proposes narrower questions ranked by citation **cohesion** rather than word frequency. One click harvests a suggestion. | `dashboard` |
 | Branch C anchored mode | Build a graph outward from **one paper** (DOI / OpenAlex id / link) instead of a question: backward through references, forward through citers. Implemented as a `WorksSource`, so the whole harvest pipeline is inherited unchanged. | `anchor` |
 | Branch C lineage export | Download a traced lineage as a folder: reading order, CSV, BibTeX, provenance. Citations and links, never the PDFs. | `dashboard` |
@@ -113,7 +115,16 @@ click-on-node needs the deferred interactive component.
    from papers citing the seed, so its in-degree measures the gathering, not the
    literature. The ranking is only meaningful *among the other* papers. Flagged in
    the CLI and the UI; not fixable without a different normalisation.
-9. **In-graph search matches titles only** (L5.2). Abstracts are absent from graph
+9. **Facets are an unvalidated screening heuristic.** Lexicon matching, never
+   measured against human coders, so the manual's reliability floor is unmet.
+   54% of works come out `unclassified` — and the split is the point: 96.5% for
+   papers with no abstract vs 43.2% for those with one, and OpenAlex holds no
+   abstract for 20% of works. A third of that rate is absent data, not a bad
+   classifier. The coding instrument exists partly to measure this.
+10. **The coding corpus is unbuilt and the manual unpiloted** — the source
+    document says so itself (Part IV.1). What exists is the instrument and its
+    alpha; the historical episode set of II.14 does not exist.
+11. **In-graph search matches titles only** (L5.2). Abstracts are absent from graph
    artifacts by design (§3/I4), so a sub-query misses synonyms and any concept not
    named in the title — "decoder" finds nothing in the QEC graph even though the
    topic is present. Embedding the seed is the known fix; it needs a Voyage pass

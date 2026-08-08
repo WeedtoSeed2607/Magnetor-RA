@@ -20,6 +20,18 @@ from typing import Any
 import streamlit as st
 
 from magnetor.citations import SemanticScholarClient
+from magnetor.coding import (
+    ALPHA_FIRM,
+    ALPHA_FLOOR,
+    FIELDS,
+    UNSET,
+    current_coder,
+    prefill,
+    reliability_report,
+    to_csv,
+)
+from magnetor.coding import load as load_coding
+from magnetor.coding import record as record_coding
 from magnetor.config import all_domains, get_domain_config
 from magnetor.dashboard_data import (
     GRAPH_DISCLAIMER,
@@ -453,6 +465,80 @@ def _render_facets(all_nodes: list[dict[str, Any]]) -> None:
         )
 
 
+#: Fields offered in the coding form. The full Part III schema is wider, but the
+#: rest needs full text; offering a box that cannot be answered from what is on
+#: screen invites guessing, which is the one thing a reliability study cannot
+#: survive.
+_CODING_FIELDS = (
+    "explanation_type",
+    "level_sense",
+    "interp_schema_type",
+    "data_or_phenomenon",
+    "normative_subscript",
+    "claim_type",
+    "core_or_belt",
+    "integrity_status",
+)
+
+
+def _render_coding(document: dict[str, Any], node: dict[str, Any]) -> None:
+    """Part III coding form for one paper, plus inter-coder reliability.
+
+    Records are append-only and attributed: III.6 needs two or more independent
+    coders, and a field that falls below the alpha floor is a finding about the
+    framework rather than a coding failure to patch.
+    """
+    query = str(document.get("query", ""))
+    paper_id = str(node.get("id"))
+    with st.expander("Code this paper (Lakatosian instrument, Part III)"):
+        st.caption(
+            f"Coding as **{current_coder()}** — set `MAGNETOR_CODER` to attribute "
+            "your judgements. Records are append-only, so a second coder's "
+            "disagreement is kept rather than overwritten: it is the measurement."
+        )
+        defaults = prefill(node)
+        chosen: dict[str, str] = {}
+        for name in _CODING_FIELDS:
+            options = (UNSET, *FIELDS[name])
+            default = defaults.get(name, UNSET)
+            chosen[name] = st.selectbox(
+                name,
+                options,
+                index=options.index(default) if default in options else 0,
+                key=f"code_{paper_id}_{name}",
+            )
+        note = st.text_input("Note (optional)", key=f"code_note_{paper_id}")
+        if st.button("Save coding", key=f"code_save_{paper_id}"):
+            if all(value == UNSET for value in chosen.values()):
+                st.warning("Nothing judged — set at least one field before saving.")
+            else:
+                record_coding(query, paper_id, chosen, note=note)
+                st.success("Recorded.")
+
+        claims = load_coding(query)
+        if not claims:
+            return
+        st.markdown(f"**{len(claims)} judgement(s) recorded for this graph.**")
+        report = reliability_report(claims)
+        for item in report:
+            alpha = "—" if item.alpha is None else f"{item.alpha:.2f}"
+            st.markdown(
+                f"- `{item.field_name}` — alpha {alpha} "
+                f"({item.units} double-coded, {item.coders} coder(s)) · {item.verdict}"
+            )
+        st.download_button(
+            "Download coding (CSV)",
+            data=to_csv(claims),
+            file_name=f"{slugify(query)}-coding.csv",
+            mime="text/csv",
+            key=f"code_dl_{paper_id}",
+        )
+        st.caption(
+            f"Floors are the manual's declared conventions: alpha >= {ALPHA_FLOOR} "
+            f"usable, >= {ALPHA_FIRM} firm. They are conventions, not calibrations."
+        )
+
+
 def _render_breadth(document: dict[str, Any]) -> None:
     """Say whether the query was too broad, and what would narrow it (concern 2).
 
@@ -824,6 +910,7 @@ def _render_node_detail(document: dict[str, Any], all_nodes: list[dict[str, Any]
         if url:
             st.markdown(f"[Open the paper ↗]({url})")
         _render_related(document, all_nodes, str(node.get("id")))
+        _render_coding(document, node)
 
 
 def _render_related(
