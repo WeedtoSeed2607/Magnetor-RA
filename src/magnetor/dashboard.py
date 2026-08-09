@@ -30,10 +30,12 @@ from magnetor.coding import (
     FIELDS,
     FIRM,
     GATE,
+    STANDING_PLAIN,
     UNRELIABLE,
     UNSET,
     UNVALIDATED,
     USABLE,
+    VERDICT_PLAIN,
     QualifiedVerdict,
     current_coder,
     fields_by_role,
@@ -268,12 +270,47 @@ def _active_domain() -> Domain:
     return Domain(token)
 
 
+def _lead(text: str) -> None:
+    """The one sentence a reader must not be able to miss."""
+    st.markdown(_LEAD_CSS, unsafe_allow_html=True)
+    st.markdown(f'<p class="mag-lead">{text}</p>', unsafe_allow_html=True)
+
+
+def _sub(text: str) -> None:
+    st.markdown(f'<p class="mag-sub">{text}</p>', unsafe_allow_html=True)
+
+
 def _page_trends() -> None:
     st.title("Trends")
-    st.caption(
-        "Branch A — what a stored domain corpus is talking about, and what is "
-        "newly emerging. Statistic-anchored: every line names the counts behind it."
+    _lead(
+        "What is this subject talking about lately — and which words are suddenly "
+        "showing up far more than they used to?"
     )
+    _sub(
+        "<b>Why that is worth knowing.</b> A word appearing sharply more often is "
+        "usually the first visible sign of a question opening up. Seeing it early is "
+        "the difference between joining a conversation and arriving after it ended."
+    )
+    st.markdown(
+        "**What you do:** pick a subject on the left. Nothing is fetched — this reads "
+        "the papers already collected on your machine.\n\n"
+        "**What you get:** the main themes and whether each is growing or shrinking, "
+        "then individual words that have jumped in frequency.\n\n"
+        "**Where it leads:** this is the widest view in the app. Use it to find a "
+        "question worth following, then take that question to the **Evidence Graph** "
+        "to see where it came from."
+    )
+    with st.expander("Read the numbers carefully"):
+        st.markdown(
+            "- **Small batches lie.** A handful of new papers can make any word look "
+            "explosive. Where that happens the line says `LOW SUPPORT` — believe the "
+            "warning, not the percentage.\n"
+            "- **A rising word is not a rising field.** It may be one team's habit, "
+            "or a rename of something old.\n"
+            "- **It only knows what you collected.** Nothing here is a statement "
+            "about the literature at large."
+        )
+    st.divider()
     active = _active_domain()
     _render_banner(active)
     st.divider()
@@ -284,24 +321,77 @@ def _page_trends() -> None:
 
 def _page_deep_dive() -> None:
     st.title("Deep-dive")
-    st.caption(
-        "Branch B — route one question to a domain and expand it through the "
-        "citations of its closest stored papers."
+    _lead(
+        "Ask a question in your own words and get the handful of papers closest to "
+        "it — plus what they were built on and who has built on them."
     )
+    _sub(
+        "<b>Why that is worth knowing.</b> Getting from a vague question to a few "
+        "specific papers is the slowest part of starting anything. This does it in "
+        "one step, by meaning rather than by keyword, so papers that use different "
+        "words for your idea still surface."
+    )
+    st.markdown(
+        "**What you do:** type your question in the box on the left. Leave the subject "
+        "on automatic unless you already know where it belongs.\n\n"
+        "**What you get:** if one paper is a clear match, that paper with its "
+        "references and its citations. If several compete, a short list of the "
+        "positions instead — which itself tells you the question is contested.\n\n"
+        "**Where it leads:** this finds you *a paper*. The **Evidence Graph** then "
+        "traces where that paper came from, and the **Verdict layer** judges whether "
+        "it actually added anything."
+    )
+    with st.expander("What this needs, and what it cannot do"):
+        st.markdown(
+            "- **It searches only papers you have collected**, so an empty result "
+            "usually means the subject has not been gathered yet.\n"
+            "- **It costs a little.** Understanding your question uses a paid service, "
+            "unlike the rest of the app.\n"
+            "- **Closest is not best.** The top paper is the nearest in meaning, "
+            "which is not the same as the most important or the most correct."
+        )
+    st.divider()
     active = _active_domain()
-    query = st.sidebar.text_input("Deep-dive query", key="deepdive_query")
+    query = st.sidebar.text_input("Your question", key="deepdive_query")
     force_domain = st.sidebar.checkbox(
-        "Force this domain (skip routing)", value=False, key="deepdive_force"
+        "Search this subject only", value=False, key="deepdive_force"
     )
     _render_primary(active, query, force_domain, _search_unlocked())
 
 
 def _page_graph() -> None:
     st.title("Evidence Graph")
-    st.caption(
-        "Branch C — build a citation map around a question or a paper, then trace "
-        "how the work actually descended."
+    _lead(
+        "See where an idea came from: which older work a question was built on, and "
+        "which papers quietly rest on the same foundations without ever citing each "
+        "other."
     )
+    _sub(
+        "<b>Why that is worth knowing.</b> Search shows you what matches your words. "
+        "It cannot show you what a field <em>stands on</em>. Following citations "
+        "backwards finds the papers everyone leans on — including the ones nobody "
+        "mentions any more because they have become assumptions."
+    )
+    st.markdown(
+        "**What you do:** build a map, either from a question or from one paper you "
+        "already have. It runs in the background and takes a few minutes.\n\n"
+        "**What you get:** a map where bigger dots are papers that mattered more "
+        "*to this question*. You can pick any two and ask how they connect, follow a "
+        "line from its oldest traceable root to today, and download the whole trail "
+        "as a reading list.\n\n"
+        "**Where it leads:** pick any paper here and take it to the **Verdict layer** "
+        "to judge whether it moved its field forward."
+    )
+    with st.expander("What the map is not"):
+        st.markdown(
+            "- **It is a slice, not the whole field.** Most references from these "
+            "papers point outside the map. The page tells you what is missing.\n"
+            "- **Size means importance *here*.** The same paper would be a different "
+            "size on a map built from a different question.\n"
+            "- **An 'oldest root' is the oldest one we could reach**, not the true "
+            "beginning. Very old work is thinly recorded everywhere."
+        )
+    st.divider()
     _render_evidence_graph()
 
 
@@ -561,20 +651,29 @@ _STANDING_STYLE = {
 
 
 def _render_verdict(title: str, qualified: QualifiedVerdict) -> None:
-    """Show a verdict with its standing, never on its own."""
-    mark, standing = _STANDING_STYLE.get(qualified.standing, ("⚪", qualified.standing))
-    st.markdown(f"**{title}: `{qualified.verdict.verdict}`** — {mark} {standing}")
-    st.caption(qualified.verdict.reason)
-    if not qualified.is_trustworthy:
-        st.warning(qualified.caveat)
-    else:
-        st.caption(qualified.caveat)
-    alphas = ", ".join(
-        f"{item.field_name} alpha="
-        + ("--" if item.alpha is None else f"{item.alpha:.2f}")
-        for item in qualified.gate_reliability
+    """Show a result in plain words, then how much weight it carries, then what to do.
+
+    The previous version stacked four internal caveats into one paragraph — what
+    the unit of analysis was, what had and had not been measured, what the source
+    document calls things. None of it told the reader what to do next, which is
+    the only reason to show a caveat at all.
+    """
+    verdict = qualified.verdict.verdict
+    headline, meaning = VERDICT_PLAIN.get(verdict, (verdict, ""))
+    mark, _label = _STANDING_STYLE.get(qualified.standing, ("⚪", qualified.standing))
+    trust, trust_meaning, what_to_do = STANDING_PLAIN.get(
+        qualified.standing, ("", "", "")
     )
-    st.caption(f"Gate-field agreement: {alphas}")
+
+    st.markdown(f"#### {title}: {headline}")
+    st.markdown(meaning)
+    st.caption(f"Called *{verdict}* in the literature. {qualified.verdict.reason}")
+
+    st.markdown(f"**{mark} How much this counts: {trust}** — {trust_meaning}")
+    if qualified.is_trustworthy:
+        st.caption(what_to_do)
+    else:
+        st.info(f"**What to do:** {what_to_do}")
 
 
 def _pretty(name: str) -> str:
@@ -611,14 +710,87 @@ def _code_field(name: str, default: str, prefix: str) -> str:
     return str(value)
 
 
-def _page_verdict() -> None:
-    """The Lakatosian appraisal workspace: input, settings, output — in that order."""
-    st.title("Verdict layer")
-    st.caption(
-        "Appraise one revision against Lakatos's test: did it add something "
-        "measurable, does that something predict beyond the problem it was "
-        "invented for, and was the prediction made before the facts were in?"
+_LEAD_CSS = """
+<style>
+.mag-lead { font-size: 1.28rem; line-height: 1.55; font-weight: 700; margin: 0 0 .6rem; }
+.mag-sub  { font-size: 1.02rem; line-height: 1.6; margin: 0 0 .5rem; }
+</style>
+"""
+
+
+def _render_verdict_intro() -> None:
+    """Say what the page is for before saying how it works.
+
+    Written for someone who has never met Lakatos. The framework's own words —
+    appraisal, gate, defeater, corroboration — describe the machinery, and a
+    reader who does not already know the machinery cannot get to the purpose
+    through them. Purpose first, mechanism second, vocabulary only where it earns
+    its place.
+    """
+    st.markdown(_LEAD_CSS, unsafe_allow_html=True)
+    st.markdown(
+        '<p class="mag-lead">When an idea runs into trouble, someone patches it. '
+        "This page helps you judge whether a patch was <em>real progress</em> — or "
+        "just a way of making the trouble go away.</p>",
+        unsafe_allow_html=True,
     )
+    st.markdown(
+        '<p class="mag-sub"><b>Why that is worth knowing.</b> An idea that keeps '
+        "making new, checkable predictions still has ground left to cover. One that "
+        "only explains away its own problems has usually run out. You can often see "
+        "which is which years before anyone can say who was right.</p>",
+        unsafe_allow_html=True,
+    )
+
+    st.markdown("**The test is three questions about the paper's new idea:**")
+    st.markdown(
+        "1. **Can you check it separately?** Is there some other measurement or "
+        "observation that could confirm what was added — or does it only ever show "
+        "up in the very problem it was invented for?\n"
+        "2. **Does it reach further?** Does the patched idea say anything about a "
+        "situation beyond the problem it was built to solve?\n"
+        "3. **Did it call the shot first?** Was that further prediction made before "
+        "anyone knew how it would turn out?"
+    )
+    st.markdown(
+        "All three yes → **moving forward**. Fail the first → **falling back**. "
+        "Fail either of the others → **standing still**."
+    )
+
+    with st.expander("Why three questions can say anything about promise"):
+        st.markdown(
+            "Because they measure **reach, not correctness**.\n\n"
+            "An idea can be wrong and still be moving forward — it was making real "
+            "bets that could have failed. An idea can be perfectly correct and "
+            "standing still — it stopped making them. What the three questions "
+            "measure is how much room is left to explore, which is the thing you "
+            "actually need when deciding where to spend your reading time.\n\n"
+            "This is why *falling back* is the harshest result. A patch you can only "
+            "see inside the problem it was built for cannot fail, and something that "
+            "cannot fail cannot teach you anything new."
+        )
+
+    with st.expander("Read this before you start"):
+        st.markdown(
+            "- **It judges your reading, not the paper.** The answers are yours. "
+            "Careless answers give a confident-looking result that means nothing.\n"
+            "- **One person's answers are an opinion.** Two people answering "
+            "separately is the point at which it becomes something you can measure. "
+            "The page tells you which of the two you are looking at.\n"
+            "- **You need the actual paper** — the methods and results, not the "
+            "abstract. Nothing here is read automatically.\n"
+            "- **It says nothing about true or false.** An idea can be moving "
+            "forward and turn out wrong.\n"
+            "- **A missing answer is never a good sign.** Unanswered stays "
+            "*undetermined*; it never quietly counts as a pass."
+        )
+
+
+def _page_verdict() -> None:
+    """The appraisal workspace: input, settings, output — in that order."""
+    st.title("Verdict layer")
+    _render_verdict_intro()
+    st.divider()
     picked = _pick_graph("verdict_graph")
     if picked is None:
         return
@@ -630,17 +802,15 @@ def _page_verdict() -> None:
     query = str(document.get("query", ""))
 
     # ---- 1. what goes in -------------------------------------------------
-    st.header("1 · What you put in")
+    st.header("Step 1 · Choose the paper")
     st.markdown(
-        "**A paper you have read.** This layer appraises *your reading*, not the "
-        "paper. The graph stores identifiers, numbers and edges — never the text — "
-        "so nothing here is inferred from content. Only the retraction flag is "
-        "pre-filled; every other answer is yours."
-    )
-    st.markdown(
-        "**Roughly five to ten minutes per paper**, and it needs the methods and "
-        "results sections, not the abstract. Two coders must do it independently "
-        "for the agreement statistic to mean anything."
+        "**What you do:** pick a paper you have actually read.\n\n"
+        "**What this does:** decides which idea gets judged. Nothing is read for "
+        "you — this tool only knows titles, dates and who cited whom, never what "
+        "any paper says. So the whole judgement rests on your reading.\n\n"
+        "**Why it comes first:** the three questions in Step 2 can only be answered "
+        "by someone who has seen the paper's methods and results. Expect five to "
+        "ten minutes per paper."
     )
     labels = [
         f"{i + 1}. {_short(n, str(n.get('id')), 70)}" for i, n in enumerate(all_nodes)
@@ -658,120 +828,145 @@ def _page_verdict() -> None:
         f"influence {float(node.get('influence') or 0):.2f} · "
         f"in-set citations {node.get('in_degree', 0)}"
     )
-    st.caption(f"Coding as **{current_coder()}** — set `MAGNETOR_CODER` to change this.")
+    st.caption(
+        f"Your answers will be saved under the name **{current_coder()}** — set "
+        "`MAGNETOR_CODER` to change it. Names matter because the whole point is "
+        "comparing two readers."
+    )
 
     # ---- 2. what each setting does --------------------------------------
-    st.header("2 · What each setting does")
+    st.header("Step 2 · Answer the questions")
+    st.markdown(
+        "**What you do:** answer three questions about the paper from Step 1. Then, "
+        "if you can, four more about how much the evidence behind it can be "
+        "trusted.\n\n"
+        "**What this does:** your three answers — and only those three — decide the "
+        "result in Step 3. The four extra ones can *cancel* a good result but can "
+        "never create one, because trustworthy evidence for a patch that goes "
+        "nowhere is still a patch that goes nowhere."
+    )
     defaults = prefill(node)
     chosen: dict[str, str] = {}
 
-    st.subheader("The gate — these three decide the verdict")
+    st.subheader("The three that decide")
     st.markdown(
-        "All three must pass for *progressive*. They are **necessary conditions**, "
-        "not a score: a strong answer here cannot compensate for a weak one there."
+        "All three must be *yes* for **moving forward**. A confident yes here "
+        "cannot make up for a no there — each one has to hold on its own."
     )
     for name in fields_by_role(GATE):
         chosen[name] = _code_field(name, defaults.get(name, UNSET), "verdict")
 
-    st.subheader("Defeaters — these can void a pass, never create one")
+    st.subheader("Reasons to distrust a good result")
     st.markdown(
-        "A defeated verdict still passed the gate; the evidence underneath it will "
-        "not bear the weight. Defeat is **binary and auditable** rather than a "
-        "weighted downgrade, because a weighted one would be neither."
+        "These ask *who checked the work*. If a paper passes the three questions "
+        "but nobody outside the original group ever tested it, the result still "
+        "stands — you just should not lean on it. Answering these cancels a pass "
+        "outright rather than nudging it down, so the reason is always visible "
+        "instead of hidden inside a number."
     )
     for name in fields_by_role(DEFEATER):
         chosen[name] = _code_field(name, defaults.get(name, UNSET), "verdict")
 
-    with st.expander("Context — recorded for the corpus, no effect on this verdict"):
+    with st.expander("Optional · describe the paper (changes nothing above)"):
         st.markdown(
-            "These describe the claim rather than appraise it. They do not move the "
-            "verdict, but they are what a reliability study measures: if coders "
-            "cannot agree on them, that is a finding about the framework itself."
+            "These record *what kind* of claim the paper makes. They do not touch "
+            "the result. They exist so that a collection of judged papers can later "
+            "be searched and compared — and because if two readers cannot agree on "
+            "them, that tells you the framework's own categories are unclear."
         )
         for name in fields_by_role(CONTEXT):
             chosen[name] = _code_field(name, defaults.get(name, UNSET), "verdict")
 
-    note = st.text_input("Note (optional)", key="verdict_note")
+    note = st.text_input(
+        "Anything you want to remember about this judgement (optional)",
+        key="verdict_note",
+    )
 
     # ---- 3. what comes out ----------------------------------------------
-    st.header("3 · What comes out")
+    st.header("Step 3 · Read the result")
+    st.markdown(
+        "**What you do:** read the two lines below, then save if you are happy with "
+        "your answers.\n\n"
+        "**What this does:** turns your Step 2 answers into a judgement about where "
+        "this line of work is heading — and tells you how much that judgement is "
+        "worth, which depends entirely on whether anyone else has answered too.\n\n"
+        "**Why it needs the other steps:** the first line is only ever as careful as "
+        "your reading in Step 1. The second line only becomes meaningful once a "
+        "second person has done Step 2 without seeing your answers."
+    )
     claims = load_coding(query)
     live = qualify(judge(chosen), claims)
-    _render_verdict("This paper, right now", live)
+    _render_verdict("This paper", live)
     if live.verdict.is_defeated:
-        st.warning(f"Verdict defeated — {live.verdict.defeated_by}.")
-
-    with st.expander("How to read the two labels"):
-        st.markdown(
-            "**The verdict** says what your answers imply.\n\n"
-            "| Verdict | Reached when |\n|---|---|\n"
-            "| `progressive` | all three gate answers pass |\n"
-            "| `stagnant` | measurable, but no excess content or not use-novel |\n"
-            "| `degenerating` | the addition is not independently measurable |\n"
-            "| `undetermined` | a gate field is unanswered, or novelty cannot be told |\n"
-        )
-        st.markdown(
-            "**The standing** says how far the verdict can be trusted — a separate "
-            "question, because the gate is deterministic while the judgements "
-            "feeding it are not.\n\n"
-            "| Standing | Meaning |\n|---|---|\n"
-            "| ⚪ `unvalidated` | no paper here has two independent codings, so "
-            "agreement is unmeasured |\n"
-            f"| 🔴 `unreliable` | coders measurably disagree (below {ALPHA_FLOOR}) |\n"
-            f"| 🟡 `usable` | clears {ALPHA_FLOOR} |\n"
-            f"| 🟢 `firm` | clears {ALPHA_FIRM} |\n"
-        )
-        st.caption(
-            "Total agreement also reads unvalidated: with no variance there is no "
-            "expected disagreement to normalise against, so reliability is "
-            "unestablished rather than perfect."
+        st.warning(
+            f"**But do not lean on it:** {live.verdict.defeated_by}. The paper passed "
+            "the three questions; the evidence underneath it will not carry the weight."
         )
 
-    if st.button("Save this appraisal", key="verdict_save", type="primary"):
+    if st.button("Save this judgement", key="verdict_save", type="primary"):
         if all(value == UNSET for value in chosen.values()):
-            st.warning("Nothing judged yet — answer at least one setting first.")
+            st.warning("Nothing answered yet — answer at least one question first.")
         else:
             record_coding(query, paper_id, chosen, note=note)
-            st.success("Recorded. Append-only: a second coder's disagreement is kept.")
+            st.success(
+                "Saved. Earlier answers are never overwritten, so if someone else "
+                "judges this paper differently, both are kept — that difference is "
+                "what makes the second line meaningful."
+            )
 
     if not claims:
         st.info(
-            "Nothing saved for this graph yet. Appraise the same paper as a second "
-            "coder to make the agreement statistic computable."
+            "**Nothing saved for this question yet.** Save your answers, then have "
+            "someone else judge the same paper without seeing them. That is the step "
+            "that turns an opinion into something you can measure."
         )
         return
 
-    st.subheader("Across everything coded here")
+    st.divider()
+    st.subheader("All the papers judged for this question")
+    st.markdown(
+        "One paper tells you about one idea. Several tell you whether the whole line "
+        "of work is still moving — including whether it stopped years ago."
+    )
     years = {
         str(n.get("id")): (n.get("year") if isinstance(n.get("year"), int) else None)
         for n in all_nodes
     }
     rolled = qualify(programme_verdict(claims, years=years), claims)
-    _render_verdict("Programme", rolled)
+    _render_verdict("This line of work", rolled)
     st.caption(
-        f"The clock uses a stipulated {DEFAULT_DEGENERATION_WINDOW}-year window: a "
-        "programme whose last gate-passing revision is older than that reads "
-        "stagnant however good those revisions were."
+        f"A line of work counts as stalled if its most recent forward step is more "
+        f"than {DEFAULT_DEGENERATION_WINDOW} years old. That number is a choice we "
+        "made, not something measured — change it if your field moves faster."
     )
 
-    st.markdown(f"**{len(claims)} judgement(s) recorded.**")
-    for item in reliability_report(claims):
-        alpha = "--" if item.alpha is None else f"{item.alpha:.2f}"
+    with st.expander(f"Where people agreed and disagreed ({len(claims)} judgements)"):
         st.markdown(
-            f"- `{item.field_name}` — alpha {alpha} "
-            f"({item.units} double-coded, {item.coders} coder(s)) · {item.verdict}"
+            "Each row is one question. A high number means independent readers gave "
+            "the same answer; a low one means the question is being read differently "
+            "by different people, which is worth knowing before you trust any result "
+            "built on it."
         )
-    st.download_button(
-        "Download coding (CSV)",
-        data=to_csv(claims),
-        file_name=f"{slugify(query)}-coding.csv",
-        mime="text/csv",
-        key="verdict_download",
-    )
-    st.caption(
-        f"Floors are declared conventions: alpha >= {ALPHA_FLOOR} usable, "
-        f">= {ALPHA_FIRM} firm. Conventions, not calibrations."
-    )
+        for item in reliability_report(claims):
+            agreement = (
+                "not measurable yet" if item.alpha is None else f"{item.alpha:.2f}"
+            )
+            st.markdown(
+                f"- **{_pretty(item.field_name)}** — agreement {agreement} "
+                f"· {item.units} paper(s) judged twice by {item.coders} reader(s)"
+            )
+        st.caption(
+            f"Above {ALPHA_FLOOR} is usable, above {ALPHA_FIRM} is solid. Those two "
+            "cut-offs are conventions from the research-methods literature, not "
+            "measurements of anything here."
+        )
+        st.download_button(
+            "Download all judgements (CSV)",
+            data=to_csv(claims),
+            file_name=f"{slugify(query)}-judgements.csv",
+            mime="text/csv",
+            key="verdict_download",
+        )
 
 
 def _render_gaps(document: dict[str, Any], all_nodes: list[dict[str, Any]]) -> None:

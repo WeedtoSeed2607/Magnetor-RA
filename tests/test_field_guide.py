@@ -59,10 +59,18 @@ def test_gate_guides_name_their_failure_outcome() -> None:
         assert outcome in FIELD_GUIDE[name].effect.lower(), name
 
 
-def test_defeater_guides_say_they_only_void() -> None:
+def test_defeater_guides_say_they_only_take_away() -> None:
+    """A reader must be able to see that these cannot earn a good result.
+
+    Matched on meaning rather than on the internal word "defeater", which is a
+    term of art from defeasible reasoning and appears nowhere the reader can see.
+    """
     for name in fields_by_role(DEFEATER):
         effect = FIELD_GUIDE[name].effect.lower()
-        assert "defeat" in effect or "decides whether" in effect, name
+        assert any(
+            phrase in effect
+            for phrase in ("cancel", "decides whether", "take", "not lean")
+        ), name
 
 
 def test_not_checked_is_never_described_as_clean() -> None:

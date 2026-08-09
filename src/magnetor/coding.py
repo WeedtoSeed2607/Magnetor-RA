@@ -102,14 +102,64 @@ FIRM = "firm"
 #: charged Kuhn with. A decade is the source's own example, not a calibration.
 DEFAULT_DEGENERATION_WINDOW = 10
 
-#: The unit mismatch, carried with every output rather than buried in a docstring.
-#: III.1 codes the *claim* as a ``(model, context, problem)`` triple and III.3's
-#: fields are per-*revision*; this instrument attaches them to a paper. A paper is
-#: not a revision: one can contain several, and one revision can span papers.
+#: The unit mismatch, said in words a reader can act on. Underneath it is III.1
+#: coding the *claim* while this attaches fields to a paper — but "the source's
+#: unit is the claim" tells a reader nothing they can do. What they can do is
+#: pick which idea they are judging when a paper carries several.
 CODING_UNIT_CAVEAT = (
-    "Coded per paper. The source's unit is the claim, and the gate's fields are "
-    "per-revision, so a paper carrying more than one revision is coded as one."
+    "You are judging the paper's main new idea. If it puts forward more than one, "
+    "pick the one you care about and judge that — the answers cannot separate them."
 )
+
+#: Plain meanings for the two labels this layer produces. Kept beside the values
+#: so the words on screen cannot drift from the words in the code.
+VERDICT_MEANING = {
+    PROGRESSIVE: (
+        "Moving forward",
+        "It added something you can check, and that something reaches past the "
+        "problem it was invented for.",
+    ),
+    STAGNANT: (
+        "Standing still",
+        "Safe, but it does not reach past the problem it was built to solve. "
+        "Nothing new to go and look for.",
+    ),
+    DEGENERATING: (
+        "Falling back",
+        "The patch only shows up in the very thing it was meant to explain. "
+        "There is no separate way to check it.",
+    ),
+    UNDETERMINED: (
+        "Not enough answers yet",
+        "At least one of the three questions is unanswered, so there is nothing "
+        "to add up. An unanswered question is never counted as a good sign.",
+    ),
+}
+
+STANDING_MEANING = {
+    UNVALIDATED: (
+        "Only you have judged this",
+        "Nobody else has read this paper here, so there is no way to tell whether "
+        "another reader would answer as you did. This is your reasoning written "
+        "down clearly — useful, but not yet evidence.",
+    ),
+    UNRELIABLE: (
+        "Readers disagree",
+        "Two people judged the same papers and gave different answers. That is "
+        "worth knowing in itself: it usually means the question is unclear, not "
+        "that someone got it wrong.",
+    ),
+    USABLE: (
+        "Readers mostly agree",
+        "Independent readers reach the same answers often enough to rely on, "
+        "though not so consistently that you should lean hard on one result.",
+    ),
+    FIRM: (
+        "Readers agree closely",
+        "Independent readers reach the same answers, so the result reflects the "
+        "paper rather than who happened to read it.",
+    ),
+}
 
 #: Reliability floors from III.6, carried as declared conventions.
 ALPHA_FLOOR = 0.67
@@ -122,6 +172,87 @@ ALPHA_FIRM = 0.80
 GATE = "gate"
 DEFEATER = "defeater"
 CONTEXT = "context"
+
+#: Plain names for the reader. The internal words describe how the code works —
+#: a "gate" is a control-flow shape, a "defeater" is a term of art from defeasible
+#: reasoning — and neither tells someone what they are being asked to do. What the
+#: reader needs is what the group *is for*, in words they already own.
+ROLE_PLAIN = {
+    GATE: (
+        "The three questions that decide",
+        "Answer these and you have your result. Nothing else can change it.",
+    ),
+    DEFEATER: (
+        "Warning signs",
+        "These can only take a result away, never grant one. A paper can pass the "
+        "three questions and still rest on evidence that will not hold.",
+    ),
+    CONTEXT: (
+        "Background notes",
+        "These describe the paper rather than judge it. They change nothing here, "
+        "but they are what makes a collection of these judgements worth having later.",
+    ),
+}
+
+#: What each result means, said the way you would say it aloud. The Lakatosian
+#: terms are kept beside the plain reading rather than replaced: they are what the
+#: literature calls these things, and hiding them would leave the reader unable to
+#: look anything up.
+VERDICT_PLAIN = {
+    PROGRESSIVE: (
+        "Moving forward",
+        "The new idea can be checked on its own, it reaches past the problem it was "
+        "built for, and it called that shot before anyone knew the answer. There is "
+        "still ground left to cover here.",
+    ),
+    STAGNANT: (
+        "Standing still",
+        "The idea is real and checkable, but it only covers the problem it was "
+        "invented for — or it was right about something already known. Safe, and not "
+        "currently going anywhere.",
+    ),
+    DEGENERATING: (
+        "Falling back",
+        "The addition can only be seen inside the very problem it was built to fix. "
+        "Something that cannot fail cannot teach you anything, which is why this is "
+        "the harshest of the three.",
+    ),
+    UNDETERMINED: (
+        "Not enough answered yet",
+        "One of the three deciding questions is still open, so there is no result. "
+        "An unanswered question never quietly counts as a pass.",
+    ),
+}
+
+#: How much weight the result carries, and — the part that was missing — what to
+#: do about it. A label the reader cannot act on is a label they will ignore.
+STANDING_PLAIN = {
+    UNVALIDATED: (
+        "Your reading only",
+        "Nobody else has answered these questions about this paper, so this is your "
+        "considered opinion rather than a measurement.",
+        "Ask a colleague to answer the same questions without seeing yours. Where you "
+        "agree, the result stands. Where you differ, the question was unclear.",
+    ),
+    UNRELIABLE: (
+        "Readers disagree",
+        "Two or more people answered and did not match, so the result is not stable "
+        "enough to lean on.",
+        "Look at which question you disagreed on before trusting anything here. "
+        "Persistent disagreement usually means the question is badly posed, which is "
+        "worth knowing in itself.",
+    ),
+    USABLE: (
+        "Broadly agreed",
+        "Independent readers mostly matched.",
+        "Fine to work from. Add more readers before putting it in print.",
+    ),
+    FIRM: (
+        "Strongly agreed",
+        "Independent readers matched closely.",
+        "You can lean on this.",
+    ),
+}
 
 
 @dataclass(frozen=True, slots=True)
@@ -145,11 +276,12 @@ FIELD_GUIDE: dict[str, FieldGuide] = {
         "term without reusing the anomaly it was introduced to explain. The source's "
         "worked case: a 'regret' term was added to a foraging model, and independent "
         "neural correlates were later found — so it passes.",
-        effect="No here means degenerating, whatever else is true.",
+        effect="Answer no and the result is **patching, not discovering** "
+        "(degenerating), whatever the other two answers are. An idea you can only "
+        "see in the problem it was invented for is not yet a finding.",
         values={
-            "yes": "An independent operation exists that could confirm the addition.",
-            "no": "The addition is visible only in the fit that produced it — the "
-            "textbook ad hoc rescue.",
+            "yes": "There is some other way to check it.",
+            "no": "It can only be seen in the problem it was built to solve.",
         },
     ),
     "excess_content": FieldGuide(
@@ -159,10 +291,11 @@ FIELD_GUIDE: dict[str, FieldGuide] = {
         look_for="A claim following from the revision about some other condition, "
         "population, scale or domain. Explaining the original anomaly better does "
         "not count — that is what it was built for.",
-        effect="No here means stagnant: checkable, but content-free.",
+        effect="Answer no and the result is **standing still** (stagnant): the idea "
+        "is checkable but tells us nothing we were not already looking at.",
         values={
-            "yes": "The revision entails at least one prediction beyond its anomaly.",
-            "no": "It accounts for its anomaly and nothing further.",
+            "yes": "It says something about a situation beyond the original problem.",
+            "no": "It covers its own problem and nothing further.",
         },
     ),
     "use_novel": FieldGuide(
@@ -172,12 +305,14 @@ FIELD_GUIDE: dict[str, FieldGuide] = {
         look_for="Whether the confirming evidence was already known and fitted to. "
         "Publication dates help but do not settle it: a fact can predate the revision "
         "and still not have been used in building it.",
-        effect="No means stagnant. Undeterminable means undetermined — the source is "
-        "explicit that this judgement requires reading, not metadata.",
+        effect="Answer no and the result is **standing still** (stagnant) — being "
+        "right about what you already knew is not a discovery. If you genuinely "
+        "cannot tell, say so: the result becomes *not enough answered yet* rather "
+        "than a guess.",
         values={
-            "yes": "The confirming facts were not used in building the revision.",
-            "no": "The revision was fitted to the facts that now support it.",
-            "undeterminable": "The record does not say which came first.",
+            "yes": "The supporting facts came in afterwards, or were not used.",
+            "no": "The idea was shaped to fit facts already in hand.",
+            "undeterminable": "The paper does not make clear which came first.",
         },
     ),
     # --- defeaters: they cannot create a pass, only void one ---
@@ -187,12 +322,13 @@ FIELD_GUIDE: dict[str, FieldGuide] = {
         role=DEFEATER,
         look_for="Whether abandoning the claim would end the programme (core) or "
         "merely revise it (belt).",
-        effect="Decides whether an integrity problem defeats the verdict: only "
-        "core-supporting evidence does.",
+        effect="Decides whether a problem with the evidence matters. If the paper "
+        "holds up a core idea and its evidence is retracted, the result is cancelled. "
+        "If it is a side branch, it is noted and no more.",
         values={
-            "core": "Abandoning this would end the programme.",
-            "belt": "A testable auxiliary that can be revised.",
-            "undeclared": "The paper does not mark which it is.",
+            "core": "Give this up and the whole line of work goes with it.",
+            "belt": "A working assumption that could be changed without starting over.",
+            "undeclared": "The paper does not say which it is.",
         },
     ),
     "integrity_status": FieldGuide(
@@ -200,7 +336,8 @@ FIELD_GUIDE: dict[str, FieldGuide] = {
         role=DEFEATER,
         look_for="Retraction notices, expressions of concern, corrections, PubPeer "
         "threads. Prefilled as retracted only when OpenAlex flags it.",
-        effect="Defeats a passing verdict when the paper is also core-supporting.",
+        effect="Cancels a good result when the paper is holding up a core idea. A "
+        "withdrawn paper can still have passed all three questions on paper.",
         values={
             "clean": "Checked, and no notice found.",
             "corrected": "A correction has been issued.",
@@ -215,8 +352,8 @@ FIELD_GUIDE: dict[str, FieldGuide] = {
         role=DEFEATER,
         look_for="Author overlap and mentorship lineage between the original claim "
         "and its confirmations.",
-        effect="Same-lab confirmation defeats the verdict: corroboration by the "
-        "originating group is weak evidence, which Lakatos's scheme cannot register.",
+        effect="Cancels a good result if the only people who confirmed it are the "
+        "people who found it. A group checking its own work is not a check.",
         values={
             "same-lab": "Confirmed only by the group that made the claim.",
             "same-lineage": "Confirmed within one mentorship or collaboration tree.",
@@ -230,8 +367,8 @@ FIELD_GUIDE: dict[str, FieldGuide] = {
         role=DEFEATER,
         look_for="Replication attempts, whatever their outcome. 'No failed "
         "replications' is uninformative if nobody tried.",
-        effect="None-attempted defeats the verdict: absence of falsification is not "
-        "corroboration.",
+        effect="Cancels a good result if nobody has ever tried to repeat it. Never "
+        "having been proved wrong is not the same as having been tested.",
         values={
             "none-attempted": "Untested. Nothing has been risked.",
             "succeeded": "Replicated.",
@@ -755,18 +892,16 @@ def qualify(verdict: Verdict, claims: Sequence[CodedClaim]) -> QualifiedVerdict:
     if any(alpha is None for alpha in alphas):
         standing = UNVALIDATED
         caveat = (
-            "Agreement on the gate's fields has never been measured — no paper here "
-            "carries two independent codings. This verdict is one coder's reasoning "
-            "made explicit, not a measurement. " + CODING_UNIT_CAVEAT
+            "To turn this into something you can rely on, have a second person read "
+            "the same paper and answer independently. Until then it stays one "
+            "reader's view. " + CODING_UNIT_CAVEAT
         )
     elif any(alpha < ALPHA_FLOOR for alpha in alphas if alpha is not None):
-        weakest = min((a for a in alphas if a is not None), default=0.0)
         standing = UNRELIABLE
         caveat = (
-            f"Coders do not reliably agree on at least one gate field (lowest alpha "
-            f"{weakest:.2f}, floor {ALPHA_FLOOR}). III.6 treats that as a finding "
-            "about the framework rather than a coding error, so read the "
-            "disagreement before the verdict. " + CODING_UNIT_CAVEAT
+            "Look at where the two readers split before trusting any single result. "
+            "Persistent disagreement usually means the question itself needs "
+            "sharpening. " + CODING_UNIT_CAVEAT
         )
     elif all(alpha >= ALPHA_FIRM for alpha in alphas if alpha is not None):
         standing = FIRM
@@ -774,8 +909,8 @@ def qualify(verdict: Verdict, claims: Sequence[CodedClaim]) -> QualifiedVerdict:
     else:
         standing = USABLE
         caveat = (
-            f"Agreement clears the {ALPHA_FLOOR} floor but not the {ALPHA_FIRM} bar "
-            "for firm conclusions. " + CODING_UNIT_CAVEAT
+            "Good enough to compare papers against each other, not good enough to "
+            "rest a conclusion on one of them. " + CODING_UNIT_CAVEAT
         )
     return QualifiedVerdict(
         verdict=verdict, standing=standing, gate_reliability=measured, caveat=caveat
