@@ -48,7 +48,7 @@ from magnetor.coding import (
 )
 from magnetor.coding import load as load_coding
 from magnetor.coding import record as record_coding
-from magnetor.config import all_domains, get_domain_config
+from magnetor.config import all_domains, get_domain_config, load_env_file
 from magnetor.dashboard_data import (
     GRAPH_DISCLAIMER,
     RELATION_LABELS,
@@ -106,6 +106,12 @@ from magnetor.pathways import (
 )
 from magnetor.router import CrossDomainRouter
 from magnetor.types import Domain
+from magnetor.vectors import VECTOR_FILENAME, stored_count
+
+# Pick up the project's .env before anything asks for an API key. Only mag.cmd
+# used to do this, so a dashboard started any other way had the corpus but no key
+# — and reported it as "no results", which points at the wrong problem entirely.
+load_env_file()
 
 
 @st.cache_resource
@@ -171,7 +177,7 @@ def _render_primary(active: Domain, query: str, force_domain: bool, unlocked: bo
         st.error(str(exc))
         return
     if result.path is None:
-        st.warning("No results — has this domain been embedded? (`magnetor embed`)")
+        _explain_no_results(active, force_domain)
         return
 
     label = result.domain.value if result.domain else "-"
@@ -185,6 +191,40 @@ def _render_primary(active: Domain, query: str, force_domain: bool, unlocked: bo
         _render_anchor(result)
     elif result.path is Path.FIELD_MAP and result.field_map is not None:
         _render_field_map(result)
+
+
+def _embedded_count(domain: Domain) -> int:
+    return stored_count(get_domain_config(domain).storage_dir / VECTOR_FILENAME)
+
+
+def _explain_no_results(active: Domain, force_domain: bool) -> None:
+    """Name the actual reason there were no matches.
+
+    The old message asked "has this domain been embedded?" for every empty
+    result, which sent the reader to `magnetor embed` even when the subject was
+    simply empty or the search had been narrowed to an empty one. A message that
+    points at the wrong problem costs more than no message.
+    """
+    stocked = {d: _embedded_count(d) for d in all_domains()}
+    if force_domain and stocked.get(active, 0) == 0:
+        ready = [d.value for d, n in stocked.items() if n > 0]
+        st.warning(
+            f"**No papers collected for {active.value} yet**, and the search was "
+            f"limited to it. Untick *Search this subject only*, or choose one of: "
+            f"{', '.join(ready) if ready else 'none are stocked'}."
+        )
+        return
+    if not any(stocked.values()):
+        st.warning(
+            "**Nothing has been collected yet.** Gather papers first with "
+            "`magnetor acquire all`, then `magnetor embed all`."
+        )
+        return
+    st.warning(
+        "**No paper came close enough to match.** The collection covers "
+        + ", ".join(f"{d.value} ({n})" for d, n in stocked.items() if n)
+        + " — try wording closer to one of those subjects."
+    )
 
 
 def _render_anchor(result: DeepDiveResult) -> None:

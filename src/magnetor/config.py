@@ -16,6 +16,40 @@ from magnetor.errors import ConfigError
 from magnetor.types import AcquisitionMode, Domain
 
 
+def load_env_file(path: Path | None = None) -> list[str]:
+    """Load ``KEY=value`` lines from the project's ``.env`` into the environment.
+
+    ``mag.cmd`` already does this for the CLI, which left anything started another
+    way — ``streamlit run`` directly, an IDE, a launch config — without the API
+    key, and therefore with a working corpus it could not search. Doing it in
+    process closes that gap whatever the entry point.
+
+    Existing environment variables always win, so a real environment, a container
+    secret or Streamlit's own secrets store is never overridden by a stale file.
+    A missing file is normal (hosted deployments have none) and returns nothing.
+
+    Returns the names that were set, for logging — never the values.
+    """
+    target = path or Path(__file__).resolve().parents[2] / ".env"
+    if not target.exists():
+        return []
+    applied: list[str] = []
+    try:
+        text = target.read_text(encoding="utf-8")
+    except OSError:
+        return []
+    for line in text.splitlines():
+        stripped = line.strip()
+        if not stripped or stripped.startswith("#") or "=" not in stripped:
+            continue
+        name, _, value = stripped.partition("=")
+        name, value = name.strip(), value.strip().strip('"').strip("'")
+        if name and value and name not in os.environ:
+            os.environ[name] = value
+            applied.append(name)
+    return applied
+
+
 def _default_data_root() -> Path:
     """User-writable storage root.
 
