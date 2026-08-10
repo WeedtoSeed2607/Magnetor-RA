@@ -344,7 +344,6 @@ def _render_frontier(active: Domain) -> None:
     st.subheader("Frontier Feed")
     feed = frontier_feed(active, load_trends(active))
     st.markdown("**Words gaining ground**")
-    st.caption("Open one to see the papers using it — those are what is driving it.")
     if feed.anomalies:
         for a in feed.anomalies[:8]:
             raw = a.get("delta", 0.0)
@@ -434,24 +433,13 @@ def _sub(text: str) -> None:
 
 def _page_trends() -> None:
     st.title("Trends")
+    # The subject is chosen before the description so the description can name it.
+    active = _active_domain()
     _lead(
-        "What is this subject talking about lately — and which words are suddenly "
-        "showing up far more than they used to?"
+        "You can use this to inspect and understand the latest sentiment in your "
+        "field of research and why is it so."
     )
-    _sub(
-        "<b>Why that is worth knowing.</b> A word appearing sharply more often is "
-        "usually the first visible sign of a question opening up. Seeing it early is "
-        "the difference between joining a conversation and arriving after it ended."
-    )
-    st.markdown(
-        "**What you do:** pick a subject on the left. Nothing is fetched — this reads "
-        "the papers already collected on your machine.\n\n"
-        "**What you get:** the main themes and whether each is growing or shrinking, "
-        "then individual words that have jumped in frequency.\n\n"
-        "**Where it leads:** this is the widest view in the app. Use it to find a "
-        "question worth following, then take that question to the **Evidence Graph** "
-        "to see where it came from."
-    )
+    _sub(f"Never miss an update on the latest scoop of {active.value}.")
     with st.expander("Read the numbers carefully"):
         st.markdown(
             "- **Small batches lie.** A handful of new papers can make any word look "
@@ -463,7 +451,6 @@ def _page_trends() -> None:
             "about the literature at large."
         )
     st.divider()
-    active = _active_domain()
     _render_banner(active)
     st.divider()
     # Sentiment panel (Spec 11) omitted: the sentiment module is optional and
@@ -514,34 +501,27 @@ def _page_deep_dive() -> None:
 def _page_graph() -> None:
     st.title("Evidence Graph")
     _lead(
-        "See where an idea came from: which older work a question was built on, and "
-        "which papers quietly rest on the same foundations without ever citing each "
-        "other."
+        "Use our PageRank system to find out the history, evolution and the world of "
+        "theories you are interested."
     )
     _sub(
-        "<b>Why that is worth knowing.</b> Search shows you what matches your words. "
-        "It cannot show you what a field <em>stands on</em>. Following citations "
-        "backwards finds the papers everyone leans on — including the ones nobody "
-        "mentions any more because they have become assumptions."
+        "Gain inspiration, a bird's eye view and communicate the lost links between "
+        "your theory's origin and where you are right now."
     )
     st.markdown(
-        "**What you do:** build a map, either from a question or from one paper you "
-        "already have. It runs in the background and takes a few minutes.\n\n"
-        "**What you get:** a map where bigger dots are papers that mattered more "
-        "*to this question*. You can pick any two and ask how they connect, follow a "
-        "line from its oldest traceable root to today, and download the whole trail "
-        "as a reading list.\n\n"
-        "**Where it leads:** pick any paper here and take it to the **Verdict layer** "
-        "to judge whether it moved its field forward."
+        "There is an influence ranking that also determines which paper has triggered "
+        "further research on a particular TOI. It's determined by the PageRank "
+        "system.\n\n"
+        "You may also use a tracer to narrow your lineage scope, if interested to "
+        "do so."
     )
     with st.expander("What the map is not"):
         st.markdown(
-            "- **It is a slice, not the whole field.** Most references from these "
-            "papers point outside the map. The page tells you what is missing.\n"
-            "- **Size means importance *here*.** The same paper would be a different "
-            "size on a map built from a different question.\n"
-            "- **An 'oldest root' is the oldest one we could reach**, not the true "
-            "beginning. Very old work is thinly recorded everywhere."
+            "1. The papers are only relevant within the scope of your query and "
+            "influence.\n"
+            "2. Oldest paper is the oldest from the query, not the oldest itself.\n"
+            "3. The lineages aren't contextually accounted for completely, this is "
+            "a work in progress."
         )
     st.divider()
     _render_evidence_graph()
@@ -881,16 +861,17 @@ def _render_verdict_intro() -> None:
     """
     st.markdown(_LEAD_CSS, unsafe_allow_html=True)
     st.markdown(
-        '<p class="mag-lead">When an idea runs into trouble, someone patches it. '
-        "This page helps you judge whether a patch was <em>real progress</em> — or "
-        "just a way of making the trouble go away.</p>",
+        '<p class="mag-lead">Imre Lakatos was a philosopher of science who had a '
+        "bright idea, one fine morning, to test the utility and the chances of "
+        "progression of any scientific theory involved; To check its ability to "
+        "predict novel predictions and entire new fields in order to further solve "
+        "it.</p>",
         unsafe_allow_html=True,
     )
     st.markdown(
-        '<p class="mag-sub"><b>Why that is worth knowing.</b> An idea that keeps '
-        "making new, checkable predictions still has ground left to cover. One that "
-        "only explains away its own problems has usually run out. You can often see "
-        "which is which years before anyone can say who was right.</p>",
+        '<p class="mag-sub">We modeled it mathematically, packaging it in a simple '
+        "3 step solution: Choose the paper, set and answer the parameters and yield "
+        "the result.</p>",
         unsafe_allow_html=True,
     )
 
@@ -1186,7 +1167,11 @@ def _render_breadth(document: dict[str, Any]) -> None:
     if not report.suggestions:
         st.caption("No sub-topic in this graph was cohesive enough to suggest.")
         return
-    st.markdown("**Narrower questions this graph already contains:**")
+    st.markdown("**For narrower questions**")
+    st.caption(
+        "The density referred to is how much each paper is interconnected to each "
+        "other."
+    )
     for suggestion in report.suggestions:
         cols = st.columns([5, 1])
         cols[0].markdown(
