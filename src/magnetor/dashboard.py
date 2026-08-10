@@ -65,6 +65,7 @@ from magnetor.dashboard_data import (
     search_access,
 )
 from magnetor.deepdive import DeepDiveResult, Path, build_deep_dive
+from magnetor.diagnostics import Diagnosis, diagnose_no_results, diagnose_no_trends
 from magnetor.embeddings.base import Embedder
 from magnetor.embeddings.voyage import VoyageEmbedder
 from magnetor.errors import MagnetorError
@@ -104,6 +105,7 @@ from magnetor.pathways import (
     path_edges,
     progression_paths,
 )
+from magnetor.resources import DomainStore
 from magnetor.router import CrossDomainRouter
 from magnetor.types import Domain
 from magnetor.vectors import VECTOR_FILENAME, stored_count
@@ -132,6 +134,15 @@ def _deep_dive(query: str, domain: Domain | None) -> DeepDiveResult:
     )
 
 
+def _record_count(domain: Domain) -> int | None:
+    """Papers held for a subject, or ``None`` if the store could not be read."""
+    try:
+        config = get_domain_config(domain)
+        return DomainStore(domain, config.storage_dir).record_count()
+    except (OSError, MagnetorError):
+        return None
+
+
 def _render_banner(active: Domain) -> None:
     st.subheader("Topic-Trend Banner")
     trends = load_trends(active)
@@ -139,8 +150,14 @@ def _render_banner(active: Domain) -> None:
     if lines:
         for line in lines:
             st.markdown(f"- {line}")
-    else:
-        st.info(f"No trends yet for **{active.value}** — run `magnetor trends {active.value}`.")
+        return
+    # An empty banner used to always say "run magnetor trends", which does
+    # nothing when the subject holds no papers. Diagnose it instead.
+    _render_diagnosis(
+        diagnose_no_trends(
+            records=_record_count(active), trends_present=trends is not None
+        )
+    )
 
 
 def _search_unlocked() -> bool:
@@ -193,37 +210,51 @@ def _render_primary(active: Domain, query: str, force_domain: bool, unlocked: bo
         _render_field_map(result)
 
 
-def _embedded_count(domain: Domain) -> int:
-    return stored_count(get_domain_config(domain).storage_dir / VECTOR_FILENAME)
+def _stocked_counts() -> dict[str, int] | None:
+    """Papers per subject, or ``None`` if that could not be read.
+
+    Returning ``None`` rather than an empty dict matters: an unreadable corpus
+    must not be diagnosed as an empty one.
+    """
+    try:
+        return {
+            d.value: stored_count(get_domain_config(d).storage_dir / VECTOR_FILENAME)
+            for d in all_domains()
+        }
+    except OSError:
+        return None
+
+
+def _render_diagnosis(found: Diagnosis) -> None:
+    """Show the conclusion and, underneath it, what was actually looked at.
+
+    The evidence is on screen rather than in a log because that is what makes the
+    claim checkable. A reader who disagrees with the conclusion can see which
+    observation produced it.
+    """
+    if found.is_identified:
+        st.warning(f"**{found.headline}**\n\n{found.remedy}")
+    else:
+        st.info(f"**{found.headline}**\n\n{found.remedy}")
+    with st.expander("What was checked"):
+        for check in found.evidence:
+            mark = "✅" if check.observed else "❌" if check.conclusive else "❔"
+            st.markdown(f"- {mark} **{check.name}** — {check.detail}")
+        if not found.is_identified:
+            st.caption(
+                "No cause is being named because the checks above are incomplete. "
+                "Guessing here is what produced misleading messages before."
+            )
 
 
 def _explain_no_results(active: Domain, force_domain: bool) -> None:
-    """Name the actual reason there were no matches.
-
-    The old message asked "has this domain been embedded?" for every empty
-    result, which sent the reader to `magnetor embed` even when the subject was
-    simply empty or the search had been narrowed to an empty one. A message that
-    points at the wrong problem costs more than no message.
-    """
-    stocked = {d: _embedded_count(d) for d in all_domains()}
-    if force_domain and stocked.get(active, 0) == 0:
-        ready = [d.value for d, n in stocked.items() if n > 0]
-        st.warning(
-            f"**No papers collected for {active.value} yet**, and the search was "
-            f"limited to it. Untick *Search this subject only*, or choose one of: "
-            f"{', '.join(ready) if ready else 'none are stocked'}."
+    """Diagnose an empty search from checked facts only."""
+    _render_diagnosis(
+        diagnose_no_results(
+            api_key_present=bool(os.environ.get("MAGNETOR_VOYAGE_API_KEY")),
+            stocked=_stocked_counts(),
+            forced_subject=active.value if force_domain else None,
         )
-        return
-    if not any(stocked.values()):
-        st.warning(
-            "**Nothing has been collected yet.** Gather papers first with "
-            "`magnetor acquire all`, then `magnetor embed all`."
-        )
-        return
-    st.warning(
-        "**No paper came close enough to match.** The collection covers "
-        + ", ".join(f"{d.value} ({n})" for d, n in stocked.items() if n)
-        + " — try wording closer to one of those subjects."
     )
 
 
