@@ -15,10 +15,12 @@ from __future__ import annotations
 
 import os
 from dataclasses import dataclass
+from pathlib import Path as FsPath
 from typing import Any
 
 import streamlit as st
 
+from magnetor import config as config_module
 from magnetor.citations import SemanticScholarClient
 from magnetor.coding import (
     ALPHA_FIRM,
@@ -48,7 +50,12 @@ from magnetor.coding import (
 )
 from magnetor.coding import load as load_coding
 from magnetor.coding import record as record_coding
-from magnetor.config import all_domains, get_domain_config, load_env_file
+from magnetor.config import (
+    all_domains,
+    candidate_data_roots,
+    get_domain_config,
+    load_env_file,
+)
 from magnetor.dashboard_data import (
     GRAPH_DISCLAIMER,
     RELATION_LABELS,
@@ -247,6 +254,27 @@ def _render_diagnosis(found: Diagnosis) -> None:
             )
 
 
+def _corpus_size_at(root: FsPath) -> int:
+    """Vectors held under a candidate root, across every subject."""
+    total = 0
+    for domain in all_domains():
+        try:
+            total += stored_count(root / domain.value / VECTOR_FILENAME)
+        except OSError:
+            continue
+    return total
+
+
+def _elsewhere() -> dict[str, int]:
+    """Other plausible corpus locations, so a misdirected app can say so."""
+    active = config_module.DATA_ROOT
+    return {
+        str(root): _corpus_size_at(root)
+        for root in candidate_data_roots()
+        if root != active
+    }
+
+
 def _explain_no_results(active: Domain, force_domain: bool) -> None:
     """Diagnose an empty search from checked facts only."""
     _render_diagnosis(
@@ -254,6 +282,8 @@ def _explain_no_results(active: Domain, force_domain: bool) -> None:
             api_key_present=bool(os.environ.get("MAGNETOR_VOYAGE_API_KEY")),
             stocked=_stocked_counts(),
             forced_subject=active.value if force_domain else None,
+            location=str(config_module.DATA_ROOT),
+            elsewhere=_elsewhere(),
         )
     )
 

@@ -29,6 +29,7 @@ from dataclasses import dataclass
 UNKNOWN = "unknown"
 NO_API_KEY = "no-api-key"
 NOTHING_COLLECTED = "nothing-collected"
+WRONG_LOCATION = "wrong-location"
 SUBJECT_EMPTY = "subject-empty"
 NO_CLOSE_MATCH = "no-close-match"
 TRENDS_NOT_RUN = "trends-not-run"
@@ -85,6 +86,8 @@ def diagnose_no_results(
     api_key_present: bool | None,
     stocked: Mapping[str, int] | None,
     forced_subject: str | None,
+    location: str | None = None,
+    elsewhere: Mapping[str, int] | None = None,
 ) -> Diagnosis:
     """Why a search returned nothing.
 
@@ -117,20 +120,53 @@ def diagnose_no_results(
 
     total = sum(stocked.values())
     stocked_names = [name for name, n in stocked.items() if n > 0]
+    # Always say *where* it looked. A count of zero has two very different
+    # causes — nothing collected, or the wrong folder consulted — and without the
+    # location the message cannot tell them apart, which is the same failure this
+    # module exists to prevent, one level down.
+    seen_at = f" (looked in {location})" if location else ""
     evidence.append(
         Check(
             "papers collected",
             total > 0,
-            f"{total} across {len(stocked_names)} subject(s)"
-            if total
-            else "none in any subject",
+            (f"{total} across {len(stocked_names)} subject(s)" if total else "none found")
+            + seen_at,
         )
     )
     if total == 0:
+        # Before concluding the corpus is empty, look at the other places it
+        # plausibly lives. An empty folder and a misdirected app produce the same
+        # count, and only one of them is fixed by collecting more papers.
+        found_elsewhere = {
+            place: n for place, n in (elsewhere or {}).items() if n > 0
+        }
+        if found_elsewhere:
+            best = max(found_elsewhere, key=lambda p: found_elsewhere[p])
+            evidence.append(
+                Check(
+                    "papers in other known folders",
+                    True,
+                    "; ".join(f"{n} in {p}" for p, n in found_elsewhere.items()),
+                )
+            )
+            return Diagnosis(
+                WRONG_LOCATION,
+                "Your papers exist — this app is reading the wrong folder.",
+                f"Point it at the corpus: set `MAGNETOR_DATA_ROOT={best}`, or start "
+                "the dashboard with `mag.cmd dashboard`, which sets it for you. "
+                "Nothing needs collecting or re-embedding.",
+                tuple(evidence),
+            )
+        if elsewhere is not None:
+            evidence.append(
+                Check("papers in other known folders", False, "none there either")
+            )
         return Diagnosis(
             NOTHING_COLLECTED,
-            "There are no papers to search yet.",
-            "Collect some first: `magnetor acquire all`, then `magnetor embed all`.",
+            "No papers were found in the folder this app is reading.",
+            "If you have collected papers already, the app is reading the wrong "
+            "folder — set `MAGNETOR_DATA_ROOT` to it. If you have not, collect "
+            "some: `magnetor acquire all`, then `magnetor embed all`.",
             tuple(evidence),
         )
 

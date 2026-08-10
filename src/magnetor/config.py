@@ -50,6 +50,31 @@ def load_env_file(path: Path | None = None) -> list[str]:
     return applied
 
 
+def candidate_data_roots() -> tuple[Path, ...]:
+    """Every place a corpus plausibly lives, in preference order, deduplicated.
+
+    The resolved root depends on environment variables, so a process started
+    without ``LOCALAPPDATA`` silently reads an empty folder and the app looks like
+    it has no papers. Listing the alternatives turns that dead end into a fix: if
+    the corpus is somewhere else, it can be pointed at rather than guessed about.
+    """
+    found: list[Path] = []
+    override = os.environ.get("MAGNETOR_DATA_ROOT")
+    if override:
+        found.append(Path(override))
+    local_appdata = os.environ.get("LOCALAPPDATA")
+    if local_appdata:
+        found.append(Path(local_appdata) / "Magnetor" / "data")
+    found.append(Path.home() / ".magnetor" / "data")
+    found.append(Path.home() / "AppData" / "Local" / "Magnetor" / "data")
+    found.append(Path(__file__).resolve().parents[2] / "sample_data")
+    unique: list[Path] = []
+    for path in found:
+        if path not in unique:
+            unique.append(path)
+    return tuple(unique)
+
+
 def _default_data_root() -> Path:
     """User-writable storage root.
 
