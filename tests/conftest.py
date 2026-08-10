@@ -33,13 +33,14 @@ def make_paper(
     doi: str | None = None,
     published: dt.datetime | None = None,
     abstract: str = "An abstract.",
+    title: str = "A Test Paper",
 ) -> Paper:
     """Build a Paper with sensible defaults for tests."""
     return Paper(
         domain=domain,
         source="test",
         external_id=external_id,
-        title="A Test Paper",
+        title=title,
         abstract=abstract,
         authors=("Ada Lovelace",),
         published=published or dt.datetime(2026, 6, 20, tzinfo=dt.UTC),

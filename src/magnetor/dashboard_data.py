@@ -13,7 +13,8 @@ Panel mapping (Spec 11):
 from __future__ import annotations
 
 import json
-from collections.abc import Collection, Mapping
+import re
+from collections.abc import Collection, Mapping, Sequence
 from dataclasses import dataclass
 
 from magnetor.citations import Citation
@@ -82,6 +83,58 @@ def _as_dicts(value: object) -> tuple[dict[str, object], ...]:
     if not isinstance(value, list):
         return ()
     return tuple(item for item in value if isinstance(item, dict))
+
+
+def papers_for_term(
+    domain: Domain, term: str, *, limit: int = 5, scan: int = 400
+) -> tuple[Paper, ...]:
+    """The stored papers actually using a term, newest first.
+
+    A trend line says a word is rising; it never said which work is driving it,
+    which left the reader with a signal and no way to act on it. Matching is a
+    whole-word search over title and abstract — the same text the trend engine
+    counted, so the papers shown are the ones behind the number.
+    """
+    needle = term.strip().lower()
+    if not needle:
+        return ()
+    pattern = re.compile(rf"\b{re.escape(needle)}", re.IGNORECASE)
+    store = DomainStore(domain, get_domain_config(domain).storage_dir)
+    found = [
+        paper
+        for paper in store.read_records(limit=scan)
+        if pattern.search(f"{paper.title} {paper.abstract or ''}")
+    ]
+    return tuple(found[:limit])
+
+
+def papers_for_topic(
+    domain: Domain,
+    keywords: Sequence[str],
+    *,
+    limit: int = 5,
+    scan: int = 400,
+    min_hits: int = 2,
+) -> tuple[tuple[Paper, int], ...]:
+    """Papers matching a topic's keywords, best match first, with the hit count.
+
+    A topic has no per-paper assignment stored, so membership is approximated by
+    how many of its keywords a paper uses. Requiring more than one keyword keeps
+    out papers that merely share the topic's most common word.
+    """
+    terms = [k.strip().lower() for k in keywords if k.strip()]
+    if not terms:
+        return ()
+    patterns = [re.compile(rf"\b{re.escape(t)}", re.IGNORECASE) for t in terms]
+    store = DomainStore(domain, get_domain_config(domain).storage_dir)
+    scored: list[tuple[Paper, int]] = []
+    for paper in store.read_records(limit=scan):
+        text = f"{paper.title} {paper.abstract or ''}"
+        hits = sum(1 for p in patterns if p.search(text))
+        if hits >= min_hits:
+            scored.append((paper, hits))
+    scored.sort(key=lambda item: item[1], reverse=True)
+    return tuple(scored[:limit])
 
 
 def _arxiv_abs(external_id: str) -> str:

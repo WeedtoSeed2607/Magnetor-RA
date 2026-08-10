@@ -67,6 +67,8 @@ from magnetor.dashboard_data import (
     load_trends,
     node_detail,
     paper_url,
+    papers_for_term,
+    papers_for_topic,
     related_papers,
     relation_rows,
     search_access,
@@ -114,7 +116,7 @@ from magnetor.pathways import (
 )
 from magnetor.resources import DomainStore
 from magnetor.router import CrossDomainRouter
-from magnetor.types import Domain
+from magnetor.types import Domain, Paper
 from magnetor.vectors import VECTOR_FILENAME, stored_count
 
 # Pick up the project's .env before anything asks for an API key. Only mag.cmd
@@ -213,8 +215,27 @@ def _render_primary(active: Domain, query: str, force_domain: bool, unlocked: bo
     )
     if result.path is Path.ANCHOR_LOCK and result.anchor is not None:
         _render_anchor(result)
+        _render_others(result)
     elif result.path is Path.FIELD_MAP and result.field_map is not None:
         _render_field_map(result)
+
+
+def _render_others(result: DeepDiveResult) -> None:
+    """The next-closest papers, so one anchor is not a dead end."""
+    if not result.others:
+        return
+    st.markdown("### Other close matches")
+    st.caption(
+        "The anchor above was the single closest paper. These came next — open one "
+        "if the anchor was not what you meant."
+    )
+    for position in result.others:
+        url = paper_url(position.paper)
+        st.markdown(
+            f"{position.rank}. {linked(position.paper.title, url)}  "
+            f"<small>({position.score:.3f})</small>",
+            unsafe_allow_html=True,
+        )
 
 
 def _stocked_counts() -> dict[str, int] | None:
@@ -322,25 +343,55 @@ def _render_field_map(result: DeepDiveResult) -> None:
 def _render_frontier(active: Domain) -> None:
     st.subheader("Frontier Feed")
     feed = frontier_feed(active, load_trends(active))
-    st.markdown("**Emerging terms** (volume-normalized)")
+    st.markdown("**Words gaining ground**")
+    st.caption("Open one to see the papers using it — those are what is driving it.")
     if feed.anomalies:
         for a in feed.anomalies[:8]:
             raw = a.get("delta", 0.0)
             delta = float(raw) if isinstance(raw, (int, float)) else 0.0
-            st.markdown(f"- `{a.get('term')}`  (+{delta:.2f}/doc)")
+            term = str(a.get("term") or "")
+            with st.expander(f"{term}  ·  +{delta:.2f} per paper"):
+                _render_paper_list(papers_for_term(active, term))
     else:
         st.caption("none")
-    st.markdown("**Hot clusters**")
+    st.markdown("**Themes gaining ground**")
     if feed.hot_clusters:
         for topic in feed.hot_clusters[:5]:
             raw_kws = topic.get("keywords")
-            keywords = raw_kws if isinstance(raw_kws, list) else []
-            kws = ", ".join(str(k) for k in keywords[:5])
-            st.markdown(f"- {kws}")
+            keywords = [str(k) for k in (raw_kws if isinstance(raw_kws, list) else [])]
+            kws = ", ".join(keywords[:5])
+            with st.expander(kws or "(unnamed theme)"):
+                matched = papers_for_topic(active, keywords[:6])
+                if matched:
+                    st.caption(
+                        "Papers using several of these words — more matched words "
+                        "first. Themes have no stored paper list, so this is a "
+                        "keyword match, not the model's own grouping."
+                    )
+                    for paper, hits in matched:
+                        st.markdown(
+                            f"- {linked(paper.title, paper_url(paper))} "
+                            f"<small>({hits} of these words)</small>",
+                            unsafe_allow_html=True,
+                        )
+                else:
+                    st.caption("No stored paper uses more than one of these words.")
     else:
         st.caption("none")
-    st.markdown("**Recent papers**")
+    st.markdown("**Most recently collected**")
+    st.caption("Newest arrivals, regardless of whether they are gaining attention.")
     for paper in feed.recent:
+        st.markdown(f"- {linked(paper.title, paper_url(paper))}")
+
+
+def _render_paper_list(papers: tuple[Paper, ...]) -> None:
+    if not papers:
+        st.caption(
+            "No stored paper uses this word — it may come from an abstract the "
+            "trend engine read but this search does not reach."
+        )
+        return
+    for paper in papers:
         st.markdown(f"- {linked(paper.title, paper_url(paper))}")
 
 

@@ -84,6 +84,11 @@ class DeepDiveResult:
     anchor: AnchorLock | None = None
     field_map: FieldMap | None = None
     routing: Routing | None = None
+    #: The next-closest papers after the anchor. Anchor-Lock reports a single
+    #: source-of-truth paper, which is right for the path but leaves a reader with
+    #: nowhere to go when the anchor is not the paper they wanted — the retrieval
+    #: found others and there was no reason to discard them.
+    others: tuple[Position, ...] = ()
 
 
 def build_deep_dive(
@@ -124,9 +129,19 @@ def build_deep_dive(
                 forward=tuple(forward),
                 backward=tuple(backward),
             )
+        runners_up = tuple(
+            Position(
+                rank=rank,
+                paper=papers[(hit.domain, hit.external_id)],
+                score=hit.score,
+            )
+            for rank, hit in enumerate(hits[1:DEFAULT_POSITIONS], start=2)
+            if (hit.domain, hit.external_id) in papers
+        )
         return DeepDiveResult(
             query=query, domain=top.domain, path=Path.ANCHOR_LOCK,
-            top_score=top.score, threshold=threshold, anchor=anchor, routing=routing,
+            top_score=top.score, threshold=threshold, anchor=anchor,
+            routing=routing, others=runners_up,
         )
 
     positions = [
