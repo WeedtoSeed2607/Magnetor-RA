@@ -2,26 +2,25 @@
 
 Run via ``magnetor dashboard`` (or ``python -m streamlit run`` on this file).
 
-Four panels per Spec 11:
-- Topic-Trend Banner (Branch A) — statistic-anchored, replaces "mood of season"
-- Primary Viewport (Branch B) — Anchor Paper Card or Field Map; domain labelled
-- Frontier Feed (Branch A) — anomaly alerts, hot clusters, recent papers
-- Sentiment panel (optional) — the module is deferred, so it is not shown
+Three pages:
+- Trends (Branch A) — Topic-Trend Banner and Frontier Feed, statistic-anchored
+- Evidence Graph (Branch C) — harvest, trace, inspect, export
+- Verdict layer — Lakatosian appraisal of one paper at a time
+
+Branch B's Primary Viewport was removed from the dashboard as redundant; the
+deep-dive itself is untouched and still runs from ``magnetor deepdive``.
+The Sentiment panel (Spec 11, optional) remains deferred and is not shown.
 
 Rendering only; the testable view-model logic lives in ``dashboard_data.py``.
 """
 
 from __future__ import annotations
 
-import os
 from dataclasses import dataclass
-from pathlib import Path as FsPath
 from typing import Any
 
 import streamlit as st
 
-from magnetor import config as config_module
-from magnetor.citations import SemanticScholarClient
 from magnetor.coding import (
     ALPHA_FIRM,
     ALPHA_FLOOR,
@@ -52,7 +51,6 @@ from magnetor.coding import load as load_coding
 from magnetor.coding import record as record_coding
 from magnetor.config import (
     all_domains,
-    candidate_data_roots,
     get_domain_config,
     load_env_file,
 )
@@ -60,7 +58,6 @@ from magnetor.dashboard_data import (
     GRAPH_DISCLAIMER,
     RELATION_LABELS,
     banner_lines,
-    citation_url,
     frontier_feed,
     graph_dot,
     linked,
@@ -71,12 +68,8 @@ from magnetor.dashboard_data import (
     papers_for_topic,
     related_papers,
     relation_rows,
-    search_access,
 )
-from magnetor.deepdive import DeepDiveResult, Path, build_deep_dive
-from magnetor.diagnostics import Diagnosis, diagnose_no_results, diagnose_no_trends
-from magnetor.embeddings.base import Embedder
-from magnetor.embeddings.voyage import VoyageEmbedder
+from magnetor.diagnostics import Diagnosis, diagnose_no_trends
 from magnetor.errors import MagnetorError
 from magnetor.export import LineageSet, lineage_bundle, slugify, zip_bundle
 from magnetor.facets import (
@@ -97,7 +90,6 @@ from magnetor.harvest_jobs import (
     start_anchor,
     start_harvest,
 )
-from magnetor.indexing import open_index
 from magnetor.narrowing import BROAD, assess
 from magnetor.pathways import (
     DEFAULT_ALPHA,
@@ -115,32 +107,12 @@ from magnetor.pathways import (
     progression_paths,
 )
 from magnetor.resources import DomainStore
-from magnetor.router import CrossDomainRouter
 from magnetor.types import Domain, Paper
-from magnetor.vectors import VECTOR_FILENAME, stored_count
 
 # Pick up the project's .env before anything asks for an API key. Only mag.cmd
 # used to do this, so a dashboard started any other way had the corpus but no key
 # — and reported it as "no results", which points at the wrong problem entirely.
 load_env_file()
-
-
-@st.cache_resource
-def _embedder() -> Embedder:
-    return VoyageEmbedder()
-
-
-@st.cache_resource
-def _router() -> CrossDomainRouter:
-    embedder = _embedder()
-    indices = {d: open_index(get_domain_config(d), embedder) for d in all_domains()}
-    return CrossDomainRouter(indices)
-
-
-def _deep_dive(query: str, domain: Domain | None) -> DeepDiveResult:
-    return build_deep_dive(
-        _embedder(), _router(), query, SemanticScholarClient(), domain=domain
-    )
 
 
 def _record_count(domain: Domain) -> int | None:
@@ -169,90 +141,6 @@ def _render_banner(active: Domain) -> None:
     )
 
 
-def _search_unlocked() -> bool:
-    """Password-gate the live deep-dive (Spec 7.2) when hosted publicly.
-
-    A password set via ``MAGNETOR_SEARCH_PASSWORD`` (Streamlit secret in the
-    cloud) protects the query box so a public link can't drain the API key.
-    No password configured → open, which is the local-dev default.
-    """
-    expected = os.environ.get("MAGNETOR_SEARCH_PASSWORD")
-    already_ok = bool(st.session_state.get("_search_ok"))
-    entered = None
-    if expected and not already_ok:
-        entered = st.sidebar.text_input("🔒 Search password", type="password")
-    unlocked, error = search_access(expected, entered, already_ok)
-    if unlocked and expected:
-        st.session_state["_search_ok"] = True
-    if error:
-        st.sidebar.error(error)
-    return unlocked
-
-
-def _render_primary(active: Domain, query: str, force_domain: bool, unlocked: bool) -> None:
-    st.subheader("Primary Viewport")
-    if not query:
-        st.caption("Enter a query in the sidebar to run a Branch B deep-dive.")
-        return
-    if not unlocked:
-        st.info("🔒 Search is password-protected — enter the password in the sidebar.")
-        return
-    try:
-        result = _deep_dive(query, active if force_domain else None)
-    except MagnetorError as exc:
-        st.error(str(exc))
-        return
-    if result.path is None:
-        _explain_no_results(active, force_domain)
-        return
-
-    label = result.domain.value if result.domain else "-"
-    score = result.top_score if result.top_score is not None else 0.0
-    threshold = result.threshold if result.threshold is not None else 0.0
-    st.caption(
-        f"domain **{label}**  ·  path **{result.path.value}**  ·  "
-        f"score {score:.3f} vs threshold {threshold:.3f}"
-    )
-    if result.path is Path.ANCHOR_LOCK and result.anchor is not None:
-        _render_anchor(result)
-        _render_others(result)
-    elif result.path is Path.FIELD_MAP and result.field_map is not None:
-        _render_field_map(result)
-
-
-def _render_others(result: DeepDiveResult) -> None:
-    """The next-closest papers, so one anchor is not a dead end."""
-    if not result.others:
-        return
-    st.markdown("### Other close matches")
-    st.caption(
-        "The anchor above was the single closest paper. These came next — open one "
-        "if the anchor was not what you meant."
-    )
-    for position in result.others:
-        url = paper_url(position.paper)
-        st.markdown(
-            f"{position.rank}. {linked(position.paper.title, url)}  "
-            f"<small>({position.score:.3f})</small>",
-            unsafe_allow_html=True,
-        )
-
-
-def _stocked_counts() -> dict[str, int] | None:
-    """Papers per subject, or ``None`` if that could not be read.
-
-    Returning ``None`` rather than an empty dict matters: an unreadable corpus
-    must not be diagnosed as an empty one.
-    """
-    try:
-        return {
-            d.value: stored_count(get_domain_config(d).storage_dir / VECTOR_FILENAME)
-            for d in all_domains()
-        }
-    except OSError:
-        return None
-
-
 def _render_diagnosis(found: Diagnosis) -> None:
     """Show the conclusion and, underneath it, what was actually looked at.
 
@@ -273,71 +161,6 @@ def _render_diagnosis(found: Diagnosis) -> None:
                 "No cause is being named because the checks above are incomplete. "
                 "Guessing here is what produced misleading messages before."
             )
-
-
-def _corpus_size_at(root: FsPath) -> int:
-    """Vectors held under a candidate root, across every subject."""
-    total = 0
-    for domain in all_domains():
-        try:
-            total += stored_count(root / domain.value / VECTOR_FILENAME)
-        except OSError:
-            continue
-    return total
-
-
-def _elsewhere() -> dict[str, int]:
-    """Other plausible corpus locations, so a misdirected app can say so."""
-    active = config_module.DATA_ROOT
-    return {
-        str(root): _corpus_size_at(root)
-        for root in candidate_data_roots()
-        if root != active
-    }
-
-
-def _explain_no_results(active: Domain, force_domain: bool) -> None:
-    """Diagnose an empty search from checked facts only."""
-    _render_diagnosis(
-        diagnose_no_results(
-            api_key_present=bool(os.environ.get("MAGNETOR_VOYAGE_API_KEY")),
-            stocked=_stocked_counts(),
-            forced_subject=active.value if force_domain else None,
-            location=str(config_module.DATA_ROOT),
-            elsewhere=_elsewhere(),
-        )
-    )
-
-
-def _render_anchor(result: DeepDiveResult) -> None:
-    anchor = result.anchor
-    assert anchor is not None
-    st.markdown("### 🔒 Anchor")
-    st.markdown(f"**{linked(anchor.paper.title, paper_url(anchor.paper))}**")
-    st.write(anchor.paper.abstract or "(no abstract)")
-    left, right = st.columns(2)
-    with left:
-        st.markdown(f"**Cited by ({len(anchor.forward)})**")
-        for c in anchor.forward[:10]:
-            year = f" ({c.year})" if c.year else ""
-            st.markdown(f"- {linked(c.title, citation_url(c))}{year}")
-    with right:
-        st.markdown(f"**References ({len(anchor.backward)})**")
-        for c in anchor.backward[:10]:
-            year = f" ({c.year})" if c.year else ""
-            st.markdown(f"- {linked(c.title, citation_url(c))}{year}")
-
-
-def _render_field_map(result: DeepDiveResult) -> None:
-    field_map = result.field_map
-    assert field_map is not None
-    st.markdown("### 🗺️ Field Map — competing positions")
-    for pos in field_map.positions:
-        with st.expander(f"[{pos.rank}] {pos.score:.3f} — {pos.paper.title}"):
-            url = paper_url(pos.paper)
-            if url:
-                st.markdown(f"🔗 {linked('Open paper', url)}")
-            st.write(pos.paper.abstract or "(no abstract)")
 
 
 def _render_frontier(active: Domain) -> None:
@@ -395,18 +218,17 @@ def _render_paper_list(papers: tuple[Paper, ...]) -> None:
 
 
 def main() -> None:
-    """Four workspaces rather than one page.
+    """Three workspaces rather than one page.
 
-    The branches answer different questions and are used at different moments —
-    trends survey a domain, the graph traces one lineage, the verdict layer
-    appraises a single paper. Stacking them made every panel compete with panels
-    the reader was not using; splitting them lets each carry its own controls.
+    They answer different questions at different moments — trends survey a
+    subject, the graph traces one lineage, the verdict layer appraises a single
+    paper. Stacking them made every panel compete with panels the reader was not
+    using; splitting them lets each carry its own controls.
     """
     st.set_page_config(page_title="Magnetor", layout="wide")
     st.navigation(
         [
             st.Page(_page_trends, title="Trends", icon="📈", default=True),
-            st.Page(_page_deep_dive, title="Deep-dive", icon="🔬"),
             st.Page(_page_graph, title="Evidence Graph", icon="🕸️"),
             st.Page(_page_verdict, title="Verdict layer", icon="⚖️"),
         ]
@@ -456,46 +278,6 @@ def _page_trends() -> None:
     # Sentiment panel (Spec 11) omitted: the sentiment module is optional and
     # not enabled, and must never be blended into the Topic-Trend Banner.
     _render_frontier(active)
-
-
-def _page_deep_dive() -> None:
-    st.title("Deep-dive")
-    _lead(
-        "Ask a question in your own words and get the handful of papers closest to "
-        "it — plus what they were built on and who has built on them."
-    )
-    _sub(
-        "<b>Why that is worth knowing.</b> Getting from a vague question to a few "
-        "specific papers is the slowest part of starting anything. This does it in "
-        "one step, by meaning rather than by keyword, so papers that use different "
-        "words for your idea still surface."
-    )
-    st.markdown(
-        "**What you do:** type your question in the box on the left. Leave the subject "
-        "on automatic unless you already know where it belongs.\n\n"
-        "**What you get:** if one paper is a clear match, that paper with its "
-        "references and its citations. If several compete, a short list of the "
-        "positions instead — which itself tells you the question is contested.\n\n"
-        "**Where it leads:** this finds you *a paper*. The **Evidence Graph** then "
-        "traces where that paper came from, and the **Verdict layer** judges whether "
-        "it actually added anything."
-    )
-    with st.expander("What this needs, and what it cannot do"):
-        st.markdown(
-            "- **It searches only papers you have collected**, so an empty result "
-            "usually means the subject has not been gathered yet.\n"
-            "- **It costs a little.** Understanding your question uses a paid service, "
-            "unlike the rest of the app.\n"
-            "- **Closest is not best.** The top paper is the nearest in meaning, "
-            "which is not the same as the most important or the most correct."
-        )
-    st.divider()
-    active = _active_domain()
-    query = st.sidebar.text_input("Your question", key="deepdive_query")
-    force_domain = st.sidebar.checkbox(
-        "Search this subject only", value=False, key="deepdive_force"
-    )
-    _render_primary(active, query, force_domain, _search_unlocked())
 
 
 def _page_graph() -> None:
