@@ -64,7 +64,7 @@ _WORD = re.compile(r"[a-z][a-z0-9-]+")
 
 # Broader than the pathway seed's list: phrase extraction needs to drop the
 # connective tissue that would otherwise head every n-gram.
-_STOPWORDS = frozenset(
+STOPWORDS = frozenset(
     {
         "the", "a", "an", "and", "or", "of", "in", "on", "for", "to", "with", "by",
         "from", "at", "as", "is", "are", "be", "was", "were", "its", "their", "this",
@@ -152,7 +152,7 @@ def _tokens(title: str) -> list[str]:
     return [
         word
         for word in _WORD.findall(title.lower())
-        if len(word) > 2 and word not in _STOPWORDS
+        if len(word) > 2 and word not in STOPWORDS
     ]
 
 

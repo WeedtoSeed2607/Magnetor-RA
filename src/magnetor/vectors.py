@@ -115,6 +115,23 @@ class VectorIndex:
         return _normalise(arr)
 
 
+def load_embeddings(path: Path) -> tuple[tuple[str, ...], NDArray[np.float32]]:
+    """Every persisted id and its vector, aligned by row; empty if there is none.
+
+    Reads the file directly rather than through :class:`VectorIndex`, which has to
+    be told a dimension and therefore implies an embedder — and an API key. Work
+    that only groups vectors already on disk should need neither. The stored rows
+    are unit length, so Euclidean distance between them is a monotone function of
+    cosine and clustering can assume either.
+    """
+    if not path.exists():
+        return (), np.empty((0, 0), dtype=np.float32)
+    with np.load(path) as data:
+        ids = tuple(str(i) for i in data["ids"])
+        matrix: NDArray[np.float32] = data["matrix"].astype(np.float32)
+    return ids, matrix
+
+
 def stored_count(path: Path) -> int:
     """Number of vectors persisted at ``path``, or 0 if it does not exist.
 

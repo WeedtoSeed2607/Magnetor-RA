@@ -65,7 +65,6 @@ from magnetor.dashboard_data import (
     node_detail,
     paper_url,
     papers_for_term,
-    papers_for_topic,
     related_papers,
     relation_rows,
 )
@@ -107,7 +106,9 @@ from magnetor.pathways import (
     progression_paths,
 )
 from magnetor.resources import DomainStore
+from magnetor.themes import ThemeReport, discover_themes
 from magnetor.types import Domain, Paper
+from magnetor.vectors import VECTOR_FILENAME, load_embeddings
 
 # Pick up the project's .env before anything asks for an API key. Only mag.cmd
 # used to do this, so a dashboard started any other way had the corpus but no key
@@ -176,34 +177,56 @@ def _render_frontier(active: Domain) -> None:
                 _render_paper_list(papers_for_term(active, term))
     else:
         st.caption("none")
-    st.markdown("**Themes gaining ground**")
-    if feed.hot_clusters:
-        for topic in feed.hot_clusters[:5]:
-            raw_kws = topic.get("keywords")
-            keywords = [str(k) for k in (raw_kws if isinstance(raw_kws, list) else [])]
-            kws = ", ".join(keywords[:5])
-            with st.expander(kws or "(unnamed theme)"):
-                matched = papers_for_topic(active, keywords[:6])
-                if matched:
-                    st.caption(
-                        "Papers using several of these words — more matched words "
-                        "first. Themes have no stored paper list, so this is a "
-                        "keyword match, not the model's own grouping."
-                    )
-                    for paper, hits in matched:
-                        st.markdown(
-                            f"- {linked(paper.title, paper_url(paper))} "
-                            f"<small>({hits} of these words)</small>",
-                            unsafe_allow_html=True,
-                        )
-                else:
-                    st.caption("No stored paper uses more than one of these words.")
-    else:
-        st.caption("none")
+    _render_themes(active)
     st.markdown("**Most recently collected**")
     st.caption("Newest arrivals, regardless of whether they are gaining attention.")
     for paper in feed.recent:
         st.markdown(f"- {linked(paper.title, paper_url(paper))}")
+
+
+@st.cache_data(show_spinner=False)
+def _themes_for(domain_token: str) -> ThemeReport:
+    """Group a subject's papers by meaning. Cached: the corpus rarely moves."""
+    domain = Domain(domain_token)
+    config = get_domain_config(domain)
+    ids, vectors = load_embeddings(config.storage_dir / VECTOR_FILENAME)
+    store = DomainStore(domain, config.storage_dir)
+    papers = {p.external_id: p for p in store.read_records()}
+    return discover_themes(ids, vectors, papers)
+
+
+def _render_themes(active: Domain) -> None:
+    """Groups of papers that mean similar things, growing ones first."""
+    st.markdown("**Themes gaining ground**")
+    try:
+        report = _themes_for(active.value)
+    except (OSError, MagnetorError, ValueError) as exc:
+        st.caption(f"Themes unavailable: {exc}")
+        return
+    if not report.usable:
+        st.caption(report.reason or "none")
+        return
+    st.caption(
+        f"Papers grouped by what they are about, not by shared wording. "
+        f"Share is of the last {report.window_days} days against everything before."
+    )
+    papers = {p.external_id: p for p in DomainStore(
+        active, get_domain_config(active).storage_dir
+    ).read_records()}
+    for theme in report.themes:
+        arrow = "▲" if theme.drift > 0 else "▼" if theme.drift < 0 else "—"
+        with st.expander(
+            f"{arrow} {theme.name}  ·  {theme.share_now:.0%} of recent papers "
+            f"(was {theme.share_before:.0%})"
+        ):
+            st.caption(
+                f"{theme.size} papers in this group — {theme.recent} in the last "
+                f"{report.window_days} days, {theme.earlier} before that."
+            )
+            for pid in theme.examples:
+                paper = papers.get(pid)
+                if paper is not None:
+                    st.markdown(f"- {linked(paper.title, paper_url(paper))}")
 
 
 def _render_paper_list(papers: tuple[Paper, ...]) -> None:
