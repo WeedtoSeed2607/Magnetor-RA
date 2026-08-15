@@ -21,6 +21,7 @@ from typing import Any
 
 import streamlit as st
 
+from magnetor.chronology import check as check_chronology
 from magnetor.coding import (
     ALPHA_FIRM,
     ALPHA_FLOOR,
@@ -89,6 +90,8 @@ from magnetor.harvest_jobs import (
     start_anchor,
     start_harvest,
 )
+from magnetor.naming import list_sets as list_naming_sets
+from magnetor.naming_ui import INTRO, SUBTITLE, judge_step, result_step, write_step
 from magnetor.narrowing import BROAD, assess
 from magnetor.pathways import (
     DEFAULT_ALPHA,
@@ -206,23 +209,53 @@ def _render_themes(active: Domain) -> None:
     if not report.usable:
         st.caption(report.reason or "none")
         return
-    st.caption(
-        f"Papers grouped by what they are about, not by shared wording. "
-        f"Share is of the last {report.window_days} days against everything before."
-    )
+    growth = report.spans_the_window
+    if growth:
+        st.caption(
+            f"Papers grouped by what they are about, not by shared wording. "
+            f"Share is of the last {report.window_days} days against everything before."
+        )
+    else:
+        st.caption("Papers grouped by what they are about, not by shared wording.")
+        st.info(
+            f"These papers only cover {report.span_days} days. Saying a topic is "
+            f"growing means comparing one stretch of time against an earlier one, "
+            f"and there is no earlier stretch here yet — every paper arrived in the "
+            f"same batch. The groups below are real. The change figures are held "
+            f"back until this subject has been collected for {report.window_days} "
+            f"days or more."
+        )
+    note = report.dates.note()
+    if note:
+        st.caption(note)
+
     papers = {p.external_id: p for p in DomainStore(
         active, get_domain_config(active).storage_dir
     ).read_records()}
     for theme in report.themes:
-        arrow = "▲" if theme.drift > 0 else "▼" if theme.drift < 0 else "—"
-        with st.expander(
-            f"{arrow} {theme.name}  ·  {theme.share_now:.0%} of recent papers "
-            f"(was {theme.share_before:.0%})"
-        ):
-            st.caption(
-                f"{theme.size} papers in this group — {theme.recent} in the last "
-                f"{report.window_days} days, {theme.earlier} before that."
+        if growth:
+            arrow = "▲" if theme.drift > 0 else "▼" if theme.drift < 0 else "—"
+            heading = (
+                f"{arrow} {theme.name}  ·  {theme.share_now:.0%} of recent papers "
+                f"(was {theme.share_before:.0%})"
             )
+        else:
+            heading = f"{theme.name}  ·  {theme.size} papers"
+        with st.expander(heading):
+            if growth:
+                st.caption(
+                    f"{theme.size} papers in this group — {theme.recent} in the "
+                    f"last {report.window_days} days, {theme.earlier} before that."
+                )
+                unplaced = theme.size - theme.recent - theme.earlier
+                if unplaced:
+                    st.caption(
+                        f"The other {unplaced} are in this group but are not "
+                        f"counted above, because their publication date is missing, "
+                        f"too vague, or set in the future."
+                    )
+            else:
+                st.caption(f"{theme.size} papers in this group.")
             for pid in theme.examples:
                 paper = papers.get(pid)
                 if paper is not None:
@@ -254,8 +287,68 @@ def main() -> None:
             st.Page(_page_trends, title="Trends", icon="📈", default=True),
             st.Page(_page_graph, title="Evidence Graph", icon="🕸️"),
             st.Page(_page_verdict, title="Verdict layer", icon="⚖️"),
+            st.Page(_page_naming, title="Name the groups", icon="🏷️"),
         ]
     ).run()
+
+
+@st.cache_data(show_spinner=False)
+def _titles_for(domain_token: str) -> dict[str, str]:
+    """Paper id to title for one subject. Cached: the corpus rarely moves."""
+    domain = Domain(domain_token)
+    store = DomainStore(domain, get_domain_config(domain).storage_dir)
+    return {p.external_id: p.title for p in store.read_records()}
+
+
+def _page_naming() -> None:
+    """Stage 1: can two readers agree on what a group of papers is about?
+
+    A page rather than only a terminal prompt, because the experiment needs a
+    *second* person and asking them to run a Windows command with their name as
+    a flag is a good way to not get a second person.
+    """
+    st.title("Name the groups")
+    _lead(INTRO)
+    _sub(SUBTITLE)
+
+    sets = list_naming_sets()
+    if not sets:
+        st.info(
+            "No groups have been frozen yet. Run "
+            "`magnetor name freeze --domain qm` first."
+        )
+        return
+    naming_set = sets[0]
+    if len(sets) > 1:
+        index = st.selectbox(
+            "Which batch",
+            range(len(sets)),
+            format_func=lambda i: f"{sets[i].domain} · {len(sets[i].clusters)} groups",
+        )
+        naming_set = sets[index]
+
+    who = st.text_input(
+        "Your name",
+        key="naming_coder",
+        help="Used to keep your answers separate from the other reader's.",
+    ).strip()
+    if not who:
+        st.warning("Type your name to start. Use the same name each time you return.")
+        return
+
+    step = st.radio(
+        "Step",
+        ("1 · Write the names", "2 · Judge the names", "3 · Result"),
+        horizontal=True,
+    )
+    st.divider()
+    titles = _titles_for(naming_set.domain)
+    if step.startswith("1"):
+        write_step(naming_set, titles, who)
+    elif step.startswith("2"):
+        judge_step(naming_set, titles, who)
+    else:
+        result_step(naming_set)
 
 
 def _active_domain() -> Domain:
@@ -372,6 +465,12 @@ def _render_evidence_graph() -> None:
             f"Boundary leakage {leak:.0%}: most citations point outside the harvested set, "
             "so this is a partial slice of the lineage (snowball expansion pending)."
         )
+    # Checked against the same view the lineage tracing walks, so the warning
+    # describes the very edges a reader is about to follow.
+    view = graph_view(document)
+    dates = check_chronology({node.id: node.year for node in view.nodes}, view.edges)
+    if dates.impossible:
+        st.warning(dates.note())
     _render_breadth(document)
     _render_facets(all_nodes_of(document))
     _render_gaps(document, all_nodes_of(document))

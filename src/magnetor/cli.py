@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import json
 import subprocess
 import sys
 from collections.abc import Sequence
@@ -54,6 +55,22 @@ from magnetor.harvest import (
 )
 from magnetor.harvest import DEFAULT_LIMIT as HARVEST_DEFAULT_LIMIT
 from magnetor.indexing import DEFAULT_BATCH_SIZE, EmbeddingResult, open_index, run_embedding
+from magnetor.naming import (
+    VERDICT_PROMPT,
+    VERDICTS,
+    NamingSet,
+    agreement,
+    bundle,
+    freeze,
+    import_lines,
+    list_sets,
+    load_set,
+    to_judge,
+    to_name,
+    visible,
+    write_judgement,
+    write_name,
+)
 from magnetor.pipeline import DEFAULT_LIMIT, build_default_source, run_acquisition
 from magnetor.relations import derive_relations
 from magnetor.resources import DomainStore
@@ -66,6 +83,7 @@ from magnetor.router import (
     Routing,
     retrieve,
 )
+from magnetor.themes import DEFAULT_THEMES, discover_themes
 from magnetor.trends import (
     DEFAULT_NUM_TOPICS,
     DEFAULT_SLICE_DAYS,
@@ -73,7 +91,7 @@ from magnetor.trends import (
     run_trend_analysis,
 )
 from magnetor.types import AcquisitionResult, Domain, Paper
-from magnetor.vectors import VECTOR_FILENAME, stored_count
+from magnetor.vectors import VECTOR_FILENAME, load_embeddings, stored_count
 
 #: Characters of abstract to show per record unless ``--full`` is given.
 _ABSTRACT_PREVIEW = 240
@@ -118,6 +136,8 @@ def main(argv: Sequence[str] | None = None) -> int:
         return _run_harvest(args)
     if args.command == "anchor":
         return _run_anchor(args)
+    if args.command == "name":
+        return _run_name(args)
     parser.print_help()
     return 2
 
@@ -137,6 +157,202 @@ def _run_harvest(args: argparse.Namespace) -> int:
         print(f"[harvest] no papers for {args.query!r}", file=sys.stderr)
         return 1
     return _persist_graph(result, args, source)
+
+
+def _resolve_set(set_id: str | None) -> NamingSet | None:
+    """The set asked for, or the only one there is. Never a guess between several."""
+    if set_id:
+        return load_set(set_id)
+    available = list_sets()
+    if len(available) == 1:
+        return available[0]
+    if not available:
+        print("No frozen sets yet. Run `magnetor name freeze --domain <token>` first.")
+        return None
+    print("Several frozen sets exist. Name one with --set:")
+    for candidate in available:
+        print(f"  {candidate.set_id}  {candidate.domain}  "
+              f"{len(candidate.clusters)} groups  {candidate.created_at[:10]}")
+    return None
+
+
+def _cluster_titles(
+    domain_token: str, paper_ids: Sequence[str], limit: int
+) -> list[str]:
+    """Titles for a frozen cluster — the only thing a reader is shown while naming.
+
+    ``limit`` of 0 means every paper. Truncating is offered but not the default:
+    a reader shown ten of thirty-five names those ten, and two readers would then
+    be agreeing about an excerpt rather than about the group.
+    """
+    domain = resolve_domain(domain_token)
+    config = get_domain_config(domain)
+    store = DomainStore(domain, config.storage_dir)
+    titles = {p.external_id: p.title for p in store.read_records()}
+    wanted = paper_ids if limit <= 0 else paper_ids[:limit]
+    return [titles.get(pid, f"({pid} — title not stored)") for pid in wanted]
+
+
+def _ask(prompt: str) -> str:
+    """Read one line, treating EOF as an empty answer so a pipe ends cleanly.
+
+    Uses :func:`visible` rather than ``strip``: a pasted or piped line can carry a
+    byte-order mark, which is not whitespace and would read as a real answer.
+    """
+    try:
+        return visible(input(prompt))
+    except EOFError:
+        return ""
+
+
+def _run_name(args: argparse.Namespace) -> int:
+    if args.step == "freeze":
+        return _run_name_freeze(args)
+    naming_set = _resolve_set(args.set_id)
+    if naming_set is None:
+        return 1
+    if args.step == "write":
+        return _run_name_write(args, naming_set)
+    if args.step == "judge":
+        return _run_name_judge(args, naming_set)
+    if args.step == "bundle":
+        return _run_name_bundle(args, naming_set)
+    if args.step == "import":
+        return _run_name_import(args, naming_set)
+    return _run_name_report(naming_set)
+
+
+def _run_name_freeze(args: argparse.Namespace) -> int:
+    if not args.domain:
+        print("freeze needs --domain.")
+        return 2
+    domain = resolve_domain(args.domain)
+    config = get_domain_config(domain)
+    ids, vectors = load_embeddings(config.storage_dir / VECTOR_FILENAME)
+    store = DomainStore(domain, config.storage_dir)
+    papers = {p.external_id: p for p in store.read_records()}
+    report = discover_themes(ids, vectors, papers, n_themes=args.clusters)
+    if not report.usable:
+        print(f"Nothing to freeze: {report.reason}")
+        return 1
+    frozen = freeze(
+        domain.value,
+        [(theme.members, theme.label) for theme in report.themes],
+    )
+    print(f"Frozen {len(frozen.clusters)} group(s) from {domain.value} "
+          f"as set {frozen.set_id}.")
+    print("The membership is now fixed, so every reader names the same groups.")
+    print(f"\nNext: `magnetor name write --set {frozen.set_id} --as <your-name>`")
+    return 0
+
+
+def _run_name_write(args: argparse.Namespace, naming_set: NamingSet) -> int:
+    pending = to_name(naming_set, coder=args.coder)
+    if not pending:
+        print("You have named every group in this set.")
+        print(f"Next: `magnetor name judge --set {naming_set.set_id} "
+              f"--as {args.coder or '<your-name>'}`")
+        return 0
+    print(f"{len(pending)} group(s) left to name. One short line each — what are "
+          f"these papers about?")
+    print("The computed keywords are deliberately not shown: they would be easier "
+          "to paraphrase than the papers are to read.\n")
+    for cluster in pending:
+        print("=" * 72)
+        for title in _cluster_titles(naming_set.domain, cluster.paper_ids, args.titles):
+            print(f"  - {title}")
+        extra = len(cluster.paper_ids) - args.titles
+        if extra > 0:
+            print(f"  ... and {extra} more in this group")
+        answer = _ask("\nName for this group (blank to stop): ")
+        if not answer:
+            print("Stopped. Your finished groups are saved.")
+            return 0
+        write_name(naming_set, cluster.cluster_id, answer, coder=args.coder)
+    print("\nAll groups named.")
+    return 0
+
+
+def _run_name_judge(args: argparse.Namespace, naming_set: NamingSet) -> int:
+    pending = to_judge(naming_set, judge=args.coder)
+    if not pending:
+        print("Nothing left to rule on. Run `magnetor name report` for the figure.")
+        return 0
+    keys = {v[0]: v for v in VERDICTS}
+    print(f"{len(pending)} name(s) to rule on. You will see your own among them, "
+          "unmarked — that is deliberate.\n")
+    for candidate in pending:
+        cluster = naming_set.cluster(candidate.cluster_id)
+        if cluster is None:
+            continue
+        print("=" * 72)
+        for title in _cluster_titles(naming_set.domain, cluster.paper_ids, args.titles):
+            print(f"  - {title}")
+        print(f'\n  Proposed name:  "{candidate.text}"')
+        for verdict in VERDICTS:
+            print(f"    [{verdict[0]}] {VERDICT_PROMPT[verdict]}")
+        answer = _ask("\nYour ruling (a/p/r, blank to stop): ").lower()
+        if not answer:
+            print("Stopped. Your finished rulings are saved.")
+            return 0
+        if answer[0] not in keys:
+            print("Not one of a/p/r — stopping rather than recording a guess.")
+            return 1
+        write_judgement(naming_set, candidate, keys[answer[0]], judge=args.coder)
+    print("\nAll names ruled on.")
+    return 0
+
+
+def _run_name_bundle(args: argparse.Namespace, naming_set: NamingSet) -> int:
+    """Write the self-contained file the public naming app reads."""
+    domain = resolve_domain(naming_set.domain)
+    config = get_domain_config(domain)
+    store = DomainStore(domain, config.storage_dir)
+    titles = {p.external_id: p.title for p in store.read_records()}
+    target = Path(args.out) if args.out else Path("naming_bundle.json")
+    payload = bundle(naming_set, titles)
+    target.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+    clusters = payload["clusters"]
+    papers = payload["titles"]
+    print(f"Wrote {target} — {len(clusters) if isinstance(clusters, list) else 0} "
+          f"group(s), {len(papers) if isinstance(papers, dict) else 0} titles.")
+    print("It carries cluster membership and titles only: no abstracts, no keys, "
+          "no corpus, and not the computed keywords.")
+    print("\nDeploy `naming_app.py` with this file beside it, then share the link.")
+    return 0
+
+
+def _run_name_import(args: argparse.Namespace, naming_set: NamingSet) -> int:
+    """Merge a remote reader's returned answers."""
+    source = Path(args.file)
+    if not source.exists():
+        print(f"No such file: {source}")
+        return 1
+    added, skipped = import_lines(naming_set.set_id, source.read_text(encoding="utf-8"))
+    print(f"Merged {added} record(s); skipped {skipped} already present or unreadable.")
+    if added:
+        print(f"Run `magnetor name report --set {naming_set.set_id}` for the figure.")
+    return 0
+
+
+def _run_name_report(naming_set: NamingSet) -> int:
+    result = agreement(naming_set.set_id)
+    print(f"Set {naming_set.set_id} · {naming_set.domain} · "
+          f"{len(naming_set.clusters)} groups")
+    print(result.summary())
+    if result.single_judged:
+        print(f"{result.single_judged} name(s) have only one ruling and cannot "
+              "contribute to the figure.")
+    if result.verdict_spread:
+        spread = ", ".join(f"{k} {v}" for k, v in result.verdict_spread.items())
+        print(f"Rulings so far: {spread}")
+    if result.alpha is not None:
+        print(
+            "\nAbove 0.80 the readers agree firmly; 0.67 to 0.80 is usable; below "
+            "that the disagreement is about the question, not the readers — and "
+            "that is a finding, not a failure."
+        )
+    return 0
 
 
 def _run_anchor(args: argparse.Namespace) -> int:
@@ -745,6 +961,48 @@ def _build_parser() -> argparse.ArgumentParser:
     anchor.add_argument(
         "--top-n", type=int, default=60,
         help="Keep the top-N most influential nodes in the saved graph (default: 60).",
+    )
+
+    name = sub.add_parser(
+        "name",
+        help="Stage 1: measure whether two readers agree on what a group is about.",
+    )
+    name.add_argument(
+        "step",
+        choices=("freeze", "write", "judge", "report", "bundle", "import"),
+        help=(
+            "freeze: snapshot clusters once. write: name them. judge: rule on every "
+            "name, unattributed. report: the agreement figure. bundle: write the "
+            "file the public app reads. import: merge a remote reader's answers."
+        ),
+    )
+    name.add_argument(
+        "--out", default=None,
+        help="Where to write the bundle (bundle only; default naming_bundle.json).",
+    )
+    name.add_argument(
+        "--file", default=None,
+        help="The .jsonl a remote reader sent back (import only).",
+    )
+    name.add_argument(
+        "--domain", default=None, help="Domain to freeze clusters from (freeze only)."
+    )
+    name.add_argument(
+        "--set", dest="set_id", default=None,
+        help="Which frozen set to work on. Defaults to the only one, if there is one.",
+    )
+    name.add_argument(
+        "--clusters", type=int, default=DEFAULT_THEMES,
+        help=f"Groups to freeze (default: {DEFAULT_THEMES}).",
+    )
+    name.add_argument(
+        "--titles", type=int, default=0,
+        help="Cap the titles shown per group. Default 0 = show every paper, "
+             "because naming a group from an excerpt names the excerpt.",
+    )
+    name.add_argument(
+        "--as", dest="coder", default=None,
+        help="Who is working. Overrides MAGNETOR_CODER, so two people can share a machine.",
     )
 
     show = sub.add_parser("show", help="Print stored records for a domain (read-only).")
