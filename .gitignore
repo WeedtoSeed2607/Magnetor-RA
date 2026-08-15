@@ -17,3 +17,7 @@ sample_data/_harvest_cache/
 # Background-job records: runtime state, and their logs embed local paths. The
 # hosted app never runs harvests, so it has no use for them either.
 sample_data/harvest_jobs/
+
+# Answers written by the public naming app. Runtime data about people, and
+# on a hosted deploy it is per-container anyway — it travels by export/import.
+.naming_data/
