@@ -31,12 +31,13 @@ import datetime as dt
 import re
 from collections import Counter
 from collections.abc import Mapping, Sequence
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 
 import numpy as np
 from numpy.typing import NDArray
 from sklearn.cluster import AgglomerativeClustering
 
+from magnetor.dating import DateQuality, Placement, place, tally
 from magnetor.narrowing import STOPWORDS
 from magnetor.types import Paper
 
@@ -52,6 +53,39 @@ DEFAULT_LABEL_TERMS = 4
 DEFAULT_EXAMPLES = 3
 
 _WORD = re.compile(r"[a-z][a-z0-9-]{2,}")
+
+#: LaTeX control sequences. 107 of the 394 stored abstracts carry them, and
+#: ``\mathbb{R}`` tokenises to the word *mathbb*, which then labelled the largest
+#: maths group. Stripping the command form is precise: it removes the markup and
+#: leaves an ordinary use of the same letters (``log-normal``) untouched.
+_LATEX = re.compile(r"\\[a-zA-Z]+")
+
+#: Closed-class English — determiners, pronouns, conjunctions, auxiliaries,
+#: quantifiers. The rule for adding here is grammatical, not taste: a word that
+#: cannot head a noun phrase cannot name a subject, in any domain.
+#:
+#: These need their own list because the outside-rate subtraction in
+#: :func:`_label_for` cannot reach them. That mechanism removes words spread
+#: evenly across groups; *there*, *but* and *every* cluster with theorem-writing
+#: style, so they read as genuinely distinctive of a group — of its prose, not of
+#: its subject. Measured before adding: they took 3 of maths' 24 label slots.
+#:
+#: sklearn's ``ENGLISH_STOP_WORDS`` was the obvious shortcut and is not used: it
+#: carries *system*, *computer*, *interest* and *fire*, each of which names a real
+#: subject in this corpus.
+_FUNCTION_WORDS = frozenset(
+    {
+        "every", "each", "all", "any", "some", "none", "another", "other",
+        "others", "either", "neither", "enough", "one", "ones", "two", "three",
+        "but", "yet", "nor", "because", "since", "unless", "though", "whereas",
+        "there", "here", "then", "where", "again", "further", "once", "still",
+        "already", "always", "never", "often", "rather", "quite", "very", "too",
+        "only", "even", "just", "more", "most", "less", "least",
+        "will", "shall", "would", "could", "should", "must", "might",
+        "have", "has", "had", "been", "being", "did", "done",
+        "they", "them", "him", "her", "his", "who", "whom", "whose", "its",
+    }
+)
 
 #: Academic boilerplate on top of the shared stopwords. These survive frequency
 #: scoring because they are spread evenly across every group, so subtracting the
@@ -81,11 +115,18 @@ class Theme:
 
     label: tuple[str, ...]  # words common inside, rare outside
     size: int
-    recent: int  # members published inside the window
+    #: Members placed inside the window. ``recent + earlier`` can be less than
+    #: ``size``: a member whose date is missing, too coarse or in the future
+    #: still belongs to the group but cannot sit on either side of the cutoff.
+    recent: int
     earlier: int
     share_now: float  # of all recent papers, the fraction in this group
     share_before: float
     examples: tuple[str, ...]  # external ids nearest the group's centre
+    #: Every member, nearest the centre first. ``examples`` is the head of this.
+    #: Needed whole by :mod:`magnetor.naming`: a reader asked to name a group has
+    #: to be shown the group, and a sample would have them name the sample.
+    members: tuple[str, ...] = ()
 
     @property
     def drift(self) -> float:
@@ -103,15 +144,27 @@ class ThemeReport:
     papers: int
     window_days: int
     reason: str = ""  # why there is nothing to show, when there is nothing
+    #: What the before-and-after comparison could actually use.
+    dates: DateQuality = field(default_factory=DateQuality)
+    #: Days between the oldest and newest placed paper. A corpus spanning less
+    #: than ``window_days`` cannot support a before-and-after claim at all — the
+    #: cutoff falls inside a single batch and splits it arbitrarily.
+    span_days: int = 0
 
     @property
     def usable(self) -> bool:
         return bool(self.themes)
 
+    @property
+    def spans_the_window(self) -> bool:
+        """Whether the corpus is long enough for ``drift`` to mean anything."""
+        return self.span_days >= self.window_days
+
 
 def _terms(text: str) -> set[str]:
-    ignored = STOPWORDS | _BOILERPLATE
-    return {w for w in _WORD.findall(text.lower()) if w not in ignored}
+    ignored = STOPWORDS | _BOILERPLATE | _FUNCTION_WORDS
+    stripped = _LATEX.sub(" ", text).lower()
+    return {w for w in _WORD.findall(stripped) if w not in ignored}
 
 
 def _label_for(
@@ -195,21 +248,40 @@ def discover_themes(
         corpus_frequency.update(doc)
 
     moment = now or dt.datetime.now(tz=dt.UTC)
-    cutoff = moment - dt.timedelta(days=window_days)
+    # Placement is decided once per paper, not recomputed per group, so a paper
+    # counted as recent for the corpus is the same paper counted as recent for
+    # its theme. The shares would not sum to 1 otherwise.
+    placements = {
+        pid: place(
+            papers[pid].published,
+            papers[pid].published_precision,
+            now=moment,
+            window_days=window_days,
+        )
+        for pid in members_ids
+    }
+    placed = {Placement.RECENT, Placement.EARLIER}
+    unrecorded = sum(
+        1
+        for pid in members_ids
+        if papers[pid].published_precision is None and placements[pid] in placed
+    )
+    quality = tally(placements, unrecorded)
+    total_recent = quality.recent
+    total_earlier = quality.earlier
 
-    def is_recent(pid: str) -> bool:
-        published = papers[pid].published
-        return published is not None and published >= cutoff
-
-    total_recent = sum(1 for pid in members_ids if is_recent(pid))
-    total_earlier = len(members_ids) - total_recent
+    placed_dates = [
+        papers[pid].published for pid in members_ids if placements[pid] in placed
+    ]
+    known = [stamp for stamp in placed_dates if stamp is not None]
+    span = (max(known) - min(known)).days if known else 0
 
     found: list[Theme] = []
     for cluster in sorted(set(labels.tolist())):
         indexes = [i for i, value in enumerate(labels) if value == cluster]
         group_ids = [members_ids[i] for i in indexes]
-        recent = sum(1 for pid in group_ids if is_recent(pid))
-        earlier = len(group_ids) - recent
+        recent = sum(1 for pid in group_ids if placements[pid] is Placement.RECENT)
+        earlier = sum(1 for pid in group_ids if placements[pid] is Placement.EARLIER)
 
         inside_words: Counter[str] = Counter()
         for i in indexes:
@@ -218,6 +290,7 @@ def discover_themes(
 
         centroid = rows[indexes].mean(axis=0)
         order = np.argsort(-(rows[indexes] @ centroid))
+        by_closeness = tuple(group_ids[int(i)] for i in order)
         found.append(
             Theme(
                 label=_label_for(
@@ -232,10 +305,19 @@ def discover_themes(
                 earlier=earlier,
                 share_now=recent / total_recent if total_recent else 0.0,
                 share_before=earlier / total_earlier if total_earlier else 0.0,
-                examples=tuple(group_ids[int(i)] for i in order[:examples]),
+                examples=by_closeness[:examples],
+                members=by_closeness,
             )
         )
 
     # Growing first: the question is what is happening now, not what is largest.
-    found.sort(key=lambda t: (-t.drift, -t.recent))
-    return ThemeReport(tuple(found), len(members_ids), window_days)
+    # Unless the corpus is shorter than the window, in which case "growing" is not
+    # a fact about the subject at all — the cutoff falls inside a single batch and
+    # splits it arbitrarily. Order by size then, which is at least true.
+    if span >= window_days:
+        found.sort(key=lambda t: (-t.drift, -t.recent))
+    else:
+        found.sort(key=lambda t: (-t.size, t.name))
+    return ThemeReport(
+        tuple(found), len(members_ids), window_days, dates=quality, span_days=span
+    )
