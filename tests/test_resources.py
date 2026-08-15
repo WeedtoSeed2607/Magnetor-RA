@@ -2,13 +2,15 @@
 
 from __future__ import annotations
 
+import dataclasses
 import datetime as dt
+import json
 
 import pytest
 
 from magnetor.errors import MagnetorError
 from magnetor.resources import DomainStore
-from magnetor.types import Domain
+from magnetor.types import DatePrecision, Domain
 from tests.conftest import make_paper
 
 
@@ -23,6 +25,49 @@ def test_store_and_dedup(tmp_path) -> None:
     # Second store of the same key is a no-op.
     assert store.store(paper) is False
     assert len(store.known_keys()) == 1
+
+
+def test_source_specific_fields_survive_the_round_trip(tmp_path) -> None:
+    """Subject tags are captured at harvest but only read back at analysis time."""
+    store = _store(tmp_path)
+    paper = dataclasses.replace(
+        make_paper(),
+        raw={"primary_category": "math.CO", "categories": "math.CO math.NT"},
+    )
+    store.store(paper)
+    assert store.read_records()[0].raw == {
+        "primary_category": "math.CO",
+        "categories": "math.CO math.NT",
+    }
+
+
+def test_date_precision_survives_the_round_trip(tmp_path) -> None:
+    store = _store(tmp_path)
+    store.store(make_paper(published_precision=DatePrecision.YEAR))
+    assert store.read_records()[0].published_precision is DatePrecision.YEAR
+
+
+def test_a_record_without_a_stored_precision_reads_back_as_unrecorded(tmp_path) -> None:
+    """Records written before the field existed must not read back as day-exact."""
+    store = _store(tmp_path)
+    store.store(make_paper(external_id="legacy"))
+    path = next((store.root / "records").glob("*.json"))
+    data = json.loads(path.read_text(encoding="utf-8"))
+    del data["published_precision"]
+    path.write_text(json.dumps(data), encoding="utf-8")
+
+    assert store.read_records()[0].published_precision is None
+
+
+def test_an_unrecognised_stored_precision_is_treated_as_unrecorded(tmp_path) -> None:
+    store = _store(tmp_path)
+    store.store(make_paper(external_id="odd"))
+    path = next((store.root / "records").glob("*.json"))
+    data = json.loads(path.read_text(encoding="utf-8"))
+    data["published_precision"] = "fortnight"
+    path.write_text(json.dumps(data), encoding="utf-8")
+
+    assert store.read_records()[0].published_precision is None
 
 
 def test_store_rejects_foreign_domain(tmp_path) -> None:

@@ -27,6 +27,7 @@ from sklearn.decomposition import LatentDirichletAllocation
 from sklearn.feature_extraction.text import CountVectorizer
 
 from magnetor.config import DomainConfig, global_store_path
+from magnetor.dating import placeable
 from magnetor.resources import DomainStore
 from magnetor.types import Domain, Paper
 
@@ -97,12 +98,28 @@ def run_trend_analysis(
             reason=f"volume gate: {new_docs} new docs < {config.trend_min_new_docs}",
         )
 
-    dated = [p for p in store.read_records() if p.published is not None and _text(p)]
+    # A paper only earns a time slice if its date can actually name one. An
+    # ahead-of-print issue date sits in the future and would stretch the slice
+    # labels past today; a year-only date names no slice at all. Both used to be
+    # bucketed anyway, which put papers in periods they were never published in.
+    records = [p for p in store.read_records() if _text(p)]
+    dated = [
+        p
+        for p in records
+        if placeable(
+            p.published, p.published_precision, now=moment, window_days=slice_days
+        )
+    ]
     if len(dated) < num_topics:
         store.record_trend_run(moment, record_count=record_count)
+        dropped = len(records) - len(dated)
+        detail = f" ({dropped} had no date precise enough to slice)" if dropped else ""
         return TrendResult(
             domain=config.domain, ran=True, n_docs=len(dated),
-            reason=f"too few documents ({len(dated)}) to model {num_topics} topics",
+            reason=(
+                f"too few documents ({len(dated)}) to model "
+                f"{num_topics} topics{detail}"
+            ),
         )
 
     texts = [_text(p) for p in dated]

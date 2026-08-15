@@ -8,7 +8,7 @@ from collections.abc import Iterable, Sequence
 
 import pytest
 
-from magnetor.types import Domain, Paper
+from magnetor.types import DatePrecision, Domain, Paper
 
 
 @pytest.fixture(autouse=True)
@@ -32,6 +32,7 @@ def make_paper(
     external_id: str = "2601.00001",
     doi: str | None = None,
     published: dt.datetime | None = None,
+    published_precision: DatePrecision | None = DatePrecision.DAY,
     abstract: str = "An abstract.",
     title: str = "A Test Paper",
 ) -> Paper:
@@ -44,6 +45,7 @@ def make_paper(
         abstract=abstract,
         authors=("Ada Lovelace",),
         published=published or dt.datetime(2026, 6, 20, tzinfo=dt.UTC),
+        published_precision=published_precision,
         doi=doi,
     )
 

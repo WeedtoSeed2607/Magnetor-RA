@@ -23,7 +23,7 @@ import httpx
 
 from magnetor import _http
 from magnetor.errors import ParseError
-from magnetor.types import Domain, Paper
+from magnetor.types import DatePrecision, Domain, Paper
 
 _ESEARCH_URL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi"
 _ESUMMARY_URL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi"
@@ -147,6 +147,7 @@ class PubMedCentralSource:
                 doi = str(aid.get("value")) or None
                 break
         external_id = f"PMC{uid}"
+        dated = _parse_pubdate(str(record.get("pubdate", "")))
         return Paper(
             domain=self.domain,
             source="PubMed Central",
@@ -154,7 +155,8 @@ class PubMedCentralSource:
             title=_clean(str(record.get("title", ""))),
             abstract=abstracts.get(external_id, ""),
             authors=authors,
-            published=_parse_pubdate(str(record.get("pubdate", ""))),
+            published=dated[0] if dated else None,
+            published_precision=dated[1] if dated else None,
             doi=doi,
             pdf_url=None,
             # Search is OA-filtered (_OA_FILTER), so these flags are truthful;
@@ -212,10 +214,53 @@ def _parse_abstracts(xml: str) -> dict[str, str]:
             continue
         abstract = next(article.iter("abstract"), None)
         if abstract is not None:
-            text = _clean(" ".join(abstract.itertext()))
+            text = _abstract_text(abstract)
             if text:
                 result[pmc_id] = text
     return result
+
+
+def _abstract_text(abstract: ET.Element) -> str:
+    """Flatten a JATS abstract, keeping any section labels the publisher supplied.
+
+    Structured abstracts — the medical convention since the Ad Hoc Working Group
+    proposed them in 1987 — wrap each part as
+    ``<sec><title>Methods</title><p>...</p></sec>``. Joining every string with
+    ``itertext()`` ran the label straight into the sentence after it,
+    ``"Methods We recruited..."``, which reads as ordinary prose and cannot be
+    told apart from it afterwards. Writing ``"Methods: We recruited..."`` keeps a
+    structure a reader, and a later parser, can still see.
+
+    Abstracts with no ``<sec>`` are joined exactly as before: there is no
+    structure to keep, and most physics and maths abstracts are a single block.
+    """
+    if not abstract.findall("sec"):
+        return _clean(" ".join(abstract.itertext()))
+    parts: list[str] = []
+    for child in abstract:
+        if child.tag != "sec":
+            loose = _clean(" ".join(child.itertext()))
+            if loose:
+                parts.append(loose)
+            continue
+        title_element = child.find("title")
+        label = (
+            _clean(" ".join(title_element.itertext()))
+            if title_element is not None
+            else ""
+        )
+        body = _clean(
+            " ".join(
+                text
+                for element in child
+                if element is not title_element
+                for text in element.itertext()
+            )
+        )
+        section = f"{label}: {body}" if label and body else (body or label)
+        if section:
+            parts.append(section)
+    return _clean(" ".join(parts))
 
 
 def _article_pmc_id(article: ET.Element) -> str | None:
@@ -232,13 +277,30 @@ def _clean(value: str) -> str:
     return " ".join(value.split())
 
 
-def _parse_pubdate(value: str) -> dt.datetime | None:
-    """Parse E-utilities pubdate, which may be ``YYYY``, ``YYYY Mon`` or full."""
+#: Accepted ``pubdate`` shapes, most precise first, each with what it actually
+#: pins down. Order matters: ``%Y`` would happily match the year off a fuller
+#: string if tried first.
+_PUBDATE_FORMATS: tuple[tuple[str, DatePrecision], ...] = (
+    ("%Y %b %d", DatePrecision.DAY),
+    ("%Y %b", DatePrecision.MONTH),
+    ("%Y", DatePrecision.YEAR),
+)
+
+
+def _parse_pubdate(value: str) -> tuple[dt.datetime, DatePrecision] | None:
+    """Parse an E-utilities pubdate, keeping how precise it actually was.
+
+    ``strptime`` fills absent components with January 1st, so ``2026`` and
+    ``2026 Jan 01`` produce the identical datetime. Returning the precision
+    alongside is the only thing that lets a caller tell a year-wide record from
+    a day-exact one — see :mod:`magnetor.dating`.
+    """
     if not value:
         return None
-    for fmt in ("%Y %b %d", "%Y %b", "%Y"):
+    for fmt, precision in _PUBDATE_FORMATS:
         try:
-            return dt.datetime.strptime(value, fmt).replace(tzinfo=dt.UTC)
+            parsed = dt.datetime.strptime(value, fmt).replace(tzinfo=dt.UTC)
         except ValueError:
             continue
+        return parsed, precision
     return None

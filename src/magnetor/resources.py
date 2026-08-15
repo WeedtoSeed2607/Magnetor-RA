@@ -18,7 +18,7 @@ import os
 from pathlib import Path
 
 from magnetor.errors import MagnetorError
-from magnetor.types import Domain, Paper
+from magnetor.types import DatePrecision, Domain, Paper
 
 _STATE_FILENAME = "_state.json"
 _RECORDS_DIRNAME = "records"
@@ -205,6 +205,9 @@ def _paper_to_json(paper: Paper) -> str:
     data = dataclasses.asdict(paper)
     data["domain"] = paper.domain.value
     data["published"] = paper.published.isoformat() if paper.published else None
+    data["published_precision"] = (
+        paper.published_precision.value if paper.published_precision else None
+    )
     data["updated"] = paper.updated.isoformat() if paper.updated else None
     data["authors"] = list(paper.authors)
     return json.dumps(data, indent=2, sort_keys=True)
@@ -224,6 +227,7 @@ def _paper_from_json(text: str) -> Paper:
         abstract=str(data.get("abstract", "")),
         authors=tuple(str(a) for a in _as_list(data.get("authors"))),
         published=_from_iso(data.get("published")),
+        published_precision=_precision(data.get("published_precision")),
         updated=_from_iso(data.get("updated")),
         doi=_opt_str(data.get("doi")),
         pdf_url=_opt_str(data.get("pdf_url")),
@@ -239,6 +243,20 @@ def _as_list(value: object) -> list[object]:
 
 def _opt_str(value: object) -> str | None:
     return str(value) if value not in (None, "") else None
+
+
+def _precision(value: object) -> DatePrecision | None:
+    """Read back a stored date precision.
+
+    Absent means *not recorded* — records written before precision was tracked
+    keep ``None``, which callers must not read as day-exact.
+    """
+    if not isinstance(value, str) or not value:
+        return None
+    try:
+        return DatePrecision(value)
+    except ValueError:
+        return None
 
 
 def _from_iso(value: object) -> dt.datetime | None:

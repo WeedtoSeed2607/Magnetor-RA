@@ -24,6 +24,21 @@ class Domain(StrEnum):
     HISTORY = "history"
 
 
+class DatePrecision(StrEnum):
+    """How finely a source actually dated a paper.
+
+    Sources differ: arXiv gives a timestamp, PubMed may give only a year. Both
+    parse to a ``datetime``, because the missing parts get filled with January
+    1st — so without this the two are indistinguishable afterwards. Stored
+    beside the date so a caller can decline to answer a question the date is
+    too coarse for (:mod:`magnetor.dating`).
+    """
+
+    DAY = "day"
+    MONTH = "month"
+    YEAR = "year"
+
+
 class AcquisitionMode(StrEnum):
     """How a domain is ingested (Spec Section 4)."""
 
@@ -50,6 +65,9 @@ class Paper:
     abstract: str
     authors: tuple[str, ...]
     published: dt.datetime | None
+    #: Granularity of ``published``. ``None`` means a record stored before this
+    #: was tracked — *not recorded*, which is not the same as *day-exact*.
+    published_precision: DatePrecision | None = None
     updated: dt.datetime | None = None
     doi: str | None = None
     pdf_url: str | None = None

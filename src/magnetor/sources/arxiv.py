@@ -15,7 +15,7 @@ import httpx
 
 from magnetor import _http
 from magnetor.errors import ParseError
-from magnetor.types import Domain, Paper
+from magnetor.types import DatePrecision, Domain, Paper
 
 _API_URL = "https://export.arxiv.org/api/query"
 
@@ -122,20 +122,57 @@ class ArxivSource:
                 pdf_url = link.get("href")
                 break
         doi = _text(entry.find("arxiv:doi", _NS)) or None
+        published = _parse_dt(_text(entry.find("atom:published", _NS)))
         return Paper(
+            raw=_categories(entry),
             domain=self._domain,
             source="arXiv",
             external_id=external_id,
             title=_clean(_text(entry.find("atom:title", _NS))),
             abstract=_clean(_text(entry.find("atom:summary", _NS))),
             authors=authors,
-            published=_parse_dt(_text(entry.find("atom:published", _NS))),
+            published=published,
+            # arXiv timestamps the submission to the second, so a parsed date is
+            # always day-exact. Stated rather than assumed: a caller must not have
+            # to know which source a record came from to know what its date means.
+            published_precision=DatePrecision.DAY if published else None,
             updated=_parse_dt(_text(entry.find("atom:updated", _NS))),
             doi=doi,
             pdf_url=pdf_url,
             full_text_available=pdf_url is not None,
             license="arXiv (open access, full text)",
         )
+
+
+def _categories(entry: ET.Element) -> dict[str, str]:
+    """arXiv's own subject tags for one entry, kept verbatim.
+
+    Authors assign these, so they are a human taxonomy rather than anything this
+    project inferred — the one label on a paper that Magnetor did not compute.
+    Worth keeping for two jobs: naming a cluster of ``math.CO`` papers
+    *combinatorics* instead of by whichever words happened to recur, and giving
+    any future machine-written label something independent to be checked against.
+
+    ``primary_category`` is the author's declared home for the paper; the
+    ``category`` list adds cross-listings, which is where the signal lives when a
+    whole domain is harvested under one term (every ``quant-ph`` paper is
+    ``quant-ph``, so only the cross-lists separate them).
+
+    Lands in ``Paper.raw`` rather than a typed field because it is source-specific
+    — PubMed has no equivalent — which is exactly what ``raw`` is for.
+    """
+    out: dict[str, str] = {}
+    terms = [
+        term
+        for element in entry.findall("atom:category", _NS)
+        if (term := element.get("term"))
+    ]
+    if terms:
+        out["categories"] = " ".join(dict.fromkeys(terms))
+    primary = entry.find("arxiv:primary_category", _NS)
+    if primary is not None and (term := primary.get("term")):
+        out["primary_category"] = term
+    return out
 
 
 def _utcnow() -> dt.datetime:

@@ -11,7 +11,7 @@ from pytest_httpx import HTTPXMock
 from magnetor import _http
 from magnetor.errors import ParseError
 from magnetor.sources.arxiv import ArxivSource
-from magnetor.types import Domain
+from magnetor.types import DatePrecision, Domain
 
 
 def _entry(arxiv_id: str, published: str) -> str:
@@ -48,6 +48,9 @@ _ATOM = """<?xml version="1.0" encoding="UTF-8"?>
     <author><name>Alice Q. Physicist</name></author>
     <author><name>Bob Theorist</name></author>
     <arxiv:doi>10.1000/xyz123</arxiv:doi>
+    <arxiv:primary_category term="quant-ph"/>
+    <category term="quant-ph"/>
+    <category term="cond-mat.supr-con"/>
     <link title="pdf" href="http://arxiv.org/pdf/2606.01234v1"/>
   </entry>
   <entry>
@@ -79,6 +82,38 @@ def test_parses_entry_fields(httpx_mock: HTTPXMock) -> None:
     assert paper.pdf_url == "http://arxiv.org/pdf/2606.01234v1"
     assert paper.full_text_available is True
     assert paper.published == dt.datetime(2026, 6, 20, 10, tzinfo=dt.UTC)
+    # arXiv timestamps submissions, so every parsed date is day-exact — recorded
+    # rather than left for a caller to infer from the source name.
+    assert paper.published_precision is DatePrecision.DAY
+
+
+def test_author_assigned_subject_tags_are_kept(httpx_mock: HTTPXMock) -> None:
+    """The one label on a paper that Magnetor did not compute — worth keeping.
+
+    A whole domain is harvested under one term, so the cross-list is what tells
+    two ``quant-ph`` papers apart.
+    """
+    httpx_mock.add_response(text=_ATOM)
+    with httpx.Client() as client:
+        source = ArxivSource(Domain.QUANTUM_MECHANICS, client=client)
+        papers = list(
+            source.fetch(since=dt.datetime(2026, 6, 15, tzinfo=dt.UTC), limit=1)
+        )
+
+    assert papers[0].raw["primary_category"] == "quant-ph"
+    assert papers[0].raw["categories"] == "quant-ph cond-mat.supr-con"
+
+
+def test_an_entry_without_subject_tags_stores_none(httpx_mock: HTTPXMock) -> None:
+    """Absence stays absence — no placeholder category invented for it."""
+    httpx_mock.add_response(text=_feed(_entry("2606.00003v1", "2026-06-20T10:00:00Z")))
+    with httpx.Client() as client:
+        source = ArxivSource(Domain.QUANTUM_MECHANICS, client=client)
+        papers = list(
+            source.fetch(since=dt.datetime(2026, 6, 15, tzinfo=dt.UTC), limit=1)
+        )
+
+    assert papers[0].raw == {}
 
 
 def test_stops_at_since_floor(httpx_mock: HTTPXMock) -> None:
