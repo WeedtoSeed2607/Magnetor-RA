@@ -47,7 +47,7 @@ def test_a_bundle_survives_the_round_trip(tmp_path) -> None:
     original = _set(tmp_path)
     path = tmp_path / "b.json"
     path.write_text(json.dumps(bundle(original, _TITLES)), encoding="utf-8")
-    restored, titles = read_bundle(path)
+    restored, titles, _seed = read_bundle(path)
     assert restored.set_id == original.set_id
     assert [c.paper_ids for c in restored.clusters] == [
         c.paper_ids for c in original.clusters
@@ -58,8 +58,59 @@ def test_a_bundle_survives_the_round_trip(tmp_path) -> None:
 def test_a_restored_cluster_shows_no_label_rather_than_an_empty_one(tmp_path) -> None:
     path = tmp_path / "b.json"
     path.write_text(json.dumps(bundle(_set(tmp_path), _TITLES)), encoding="utf-8")
-    restored, _ = read_bundle(path)
+    restored, _titles, _seed = read_bundle(path)
     assert all(c.computed_label == () for c in restored.clusters)
+
+
+def test_a_bundle_carries_no_names_unless_asked(tmp_path) -> None:
+    """The naming pass must never ship names; a bundle holding them shows them."""
+    naming_set = _set(tmp_path)
+    # Deliberately not a substring of any title in _TITLES, or the assertion
+    # below would pass on the titles rather than on the absence of the name.
+    write_name(naming_set, naming_set.clusters[0].cluster_id, "ZZZ-secret-name",
+               coder="ada", naming_dir=tmp_path)
+    payload = bundle(naming_set, _TITLES)
+    assert payload["seed"] == []
+    assert "ZZZ-secret-name" not in json.dumps(payload)
+
+
+def test_seeded_names_reach_a_remote_judge(tmp_path, tmp_path_factory) -> None:
+    """The judging pass needs everyone's names, and a container has no other way."""
+    naming_set = _set(tmp_path)
+    for cluster in naming_set.clusters:
+        write_name(naming_set, cluster.cluster_id, f"ada {cluster.cluster_id[:4]}",
+                   coder="ada", naming_dir=tmp_path)
+    path = tmp_path / "b.json"
+    path.write_text(
+        json.dumps(bundle(naming_set, _TITLES,
+                          seed=names(naming_set.set_id, naming_dir=tmp_path))),
+        encoding="utf-8",
+    )
+
+    remote = tmp_path_factory.mktemp("remote")
+    restored, _titles, seed = read_bundle(path)
+    assert seed
+    import_lines(restored.set_id, seed, naming_dir=remote)
+    assert len(to_judge(restored, judge="grace", naming_dir=remote)) == 2
+
+
+def test_seeding_twice_is_harmless(tmp_path, tmp_path_factory) -> None:
+    """The app re-seeds on every page load, so this must be idempotent."""
+    naming_set = _set(tmp_path)
+    write_name(naming_set, naming_set.clusters[0].cluster_id, "ada one",
+               coder="ada", naming_dir=tmp_path)
+    path = tmp_path / "b.json"
+    path.write_text(
+        json.dumps(bundle(naming_set, _TITLES,
+                          seed=names(naming_set.set_id, naming_dir=tmp_path))),
+        encoding="utf-8",
+    )
+    remote = tmp_path_factory.mktemp("remote")
+    _restored, _titles, seed = read_bundle(path)
+    import_lines(naming_set.set_id, seed, naming_dir=remote)
+    added, skipped = import_lines(naming_set.set_id, seed, naming_dir=remote)
+    assert (added, skipped) == (0, 1)
+    assert len(names(naming_set.set_id, naming_dir=remote)) == 1
 
 
 def test_a_reader_exports_only_their_own_work(tmp_path) -> None:

@@ -65,6 +65,7 @@ from magnetor.naming import (
     import_lines,
     list_sets,
     load_set,
+    names,
     to_judge,
     to_name,
     visible,
@@ -310,7 +311,8 @@ def _run_name_bundle(args: argparse.Namespace, naming_set: NamingSet) -> int:
     store = DomainStore(domain, config.storage_dir)
     titles = {p.external_id: p.title for p in store.read_records()}
     target = Path(args.out) if args.out else Path("naming_bundle.json")
-    payload = bundle(naming_set, titles)
+    seed = names(naming_set.set_id) if args.with_names else ()
+    payload = bundle(naming_set, titles, seed=seed)
     target.write_text(json.dumps(payload, indent=2), encoding="utf-8")
     clusters = payload["clusters"]
     papers = payload["titles"]
@@ -318,6 +320,11 @@ def _run_name_bundle(args: argparse.Namespace, naming_set: NamingSet) -> int:
           f"group(s), {len(papers) if isinstance(papers, dict) else 0} titles.")
     print("It carries cluster membership and titles only: no abstracts, no keys, "
           "no corpus, and not the computed keywords.")
+    if args.with_names:
+        seeded = payload["seed"]
+        print(f"Carrying {len(seeded) if isinstance(seeded, list) else 0} name(s) "
+              "so remote readers can judge. Only do this once everyone has "
+              "finished writing — a bundle holding names is one that shows them.")
     print("\nDeploy `naming_app.py` with this file beside it, then share the link.")
     return 0
 
@@ -983,6 +990,11 @@ def _build_parser() -> argparse.ArgumentParser:
     name.add_argument(
         "--file", default=None,
         help="The .jsonl a remote reader sent back (import only).",
+    )
+    name.add_argument(
+        "--with-names", action="store_true",
+        help="Carry every name into the bundle so remote readers can judge "
+             "(bundle only). Use once naming is finished, never before.",
     )
     name.add_argument(
         "--domain", default=None, help="Domain to freeze clusters from (freeze only)."

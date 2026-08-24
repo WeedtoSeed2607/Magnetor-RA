@@ -43,10 +43,14 @@ if str(_ROOT / "src") not in sys.path:
 # resolve to whatever home directory the container happens to have.
 os.environ.setdefault("MAGNETOR_DATA_ROOT", str(_ROOT / ".naming_data"))
 
-import streamlit as st
+import streamlit as st  # noqa: E402
 
-from magnetor.naming import export_lines, read_bundle
-from magnetor.naming_ui import (
+from magnetor.naming import (  # noqa: E402
+    export_lines,
+    import_lines,
+    read_bundle,
+)
+from magnetor.naming_ui import (  # noqa: E402
     INTRO,
     SUBTITLE,
     judge_step,
@@ -70,7 +74,12 @@ def main() -> None:
             "run `magnetor name bundle` and deploy the file it writes."
         )
         return
-    naming_set, titles = read_bundle(BUNDLE)
+    naming_set, titles, seed = read_bundle(BUNDLE)
+    if seed:
+        # Hosted storage is per-container and temporary, so the other readers'
+        # names cannot have survived here. Re-seeding on every load is safe:
+        # import_lines drops records already present.
+        import_lines(naming_set.set_id, seed)
 
     who = st.text_input(
         "Your name",

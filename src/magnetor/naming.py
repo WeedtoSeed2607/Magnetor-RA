@@ -252,7 +252,12 @@ def freeze(
     return naming_set
 
 
-def bundle(naming_set: NamingSet, titles: Mapping[str, str]) -> dict[str, object]:
+def bundle(
+    naming_set: NamingSet,
+    titles: Mapping[str, str],
+    *,
+    seed: Sequence[Name] = (),
+) -> dict[str, object]:
     """Everything a reader needs to do this task, and nothing else.
 
     Written so the public naming app can run with no corpus, no vector index, no
@@ -263,6 +268,14 @@ def bundle(naming_set: NamingSet, titles: Mapping[str, str]) -> dict[str, object
     ``computed_label`` is deliberately excluded. It is in the local snapshot for
     comparison afterwards, but shipping it to the app that shows readers the
     papers would put the words one click from the person meant not to see them.
+
+    ``seed`` carries names into the deployment, and must stay empty until every
+    reader has finished writing — a bundle carrying names is a bundle that shows
+    them, which is precisely what the naming pass must not do. It exists for the
+    judging pass, where a reader has to rule on everyone's names and a hosted
+    container has no other way to learn them. :class:`Candidate` strips
+    authorship at that point, so seeding reveals the names without revealing who
+    wrote which.
     """
     return {
         "set_id": naming_set.set_id,
@@ -277,11 +290,26 @@ def bundle(naming_set: NamingSet, titles: Mapping[str, str]) -> dict[str, object
             for c in naming_set.clusters
             for pid in c.paper_ids
         },
+        "seed": [
+            {
+                "kind": "name",
+                "cluster_id": n.cluster_id,
+                "coder": n.coder,
+                "text": n.text,
+                "at": n.written_at,
+                "source": n.source,
+            }
+            for n in seed
+        ],
     }
 
 
-def read_bundle(path: Path) -> tuple[NamingSet, dict[str, str]]:
+def read_bundle(path: Path) -> tuple[NamingSet, dict[str, str], str]:
     """Load a bundle written by :func:`bundle`.
+
+    Returns the set, the titles, and any seeded names as JSONL ready for
+    :func:`import_lines` — which drops records already present, so seeding on
+    every page load is idempotent rather than something the caller must guard.
 
     The clusters come back with an empty ``computed_label`` because the bundle
     never carried one — an absence the type makes visible rather than a blank
@@ -305,7 +333,13 @@ def read_bundle(path: Path) -> tuple[NamingSet, dict[str, str]]:
     )
     raw = data.get("titles")
     titles = {str(k): str(v) for k, v in raw.items()} if isinstance(raw, dict) else {}
-    return naming_set, titles
+    seeded = data.get("seed")
+    lines = (
+        "\n".join(json.dumps(r, sort_keys=True) for r in seeded if isinstance(r, dict))
+        if isinstance(seeded, list)
+        else ""
+    )
+    return naming_set, titles, lines
 
 
 def export_lines(set_id: str, coder: str, *, naming_dir: Path | None = None) -> str:
