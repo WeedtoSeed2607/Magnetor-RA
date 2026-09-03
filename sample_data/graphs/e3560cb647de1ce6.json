@@ -1,0 +1,3489 @@
+{
+  "query": "Anchored: The emotional dog and its rational tail: A social intuitionist approach to moral judgment. (2001)",
+  "generated_at": "2026-08-07T14:48:14.407844+00:00",
+  "n_fetched": 80,
+  "boundary_leakage": 0.9809,
+  "resamples": 200,
+  "self_citations_removed": [],
+  "nodes": [
+    {
+      "id": "W2123791568",
+      "title": "The emotional dog and its rational tail: A social intuitionist approach to moral judgment.",
+      "year": 2001,
+      "doi": "10.1037/0033-295x.108.4.814",
+      "url": "https://doi.org/10.1037/0033-295x.108.4.814",
+      "venue": "Psychological Review",
+      "in_degree": 79,
+      "pagerank": 0.33117,
+      "influence": 1.0,
+      "median_rank": 1.0,
+      "lo_rank": 1,
+      "hi_rank": 1,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2119659537",
+      "title": "How (and where) does moral judgment work?",
+      "year": 2002,
+      "doi": "10.1016/s1364-6613(02)02011-9",
+      "url": "https://doi.org/10.1016/s1364-6613(02)02011-9",
+      "venue": "Trends in Cognitive Sciences",
+      "in_degree": 11,
+      "pagerank": 0.035235,
+      "influence": 0.9875,
+      "median_rank": 2.0,
+      "lo_rank": 2,
+      "hi_rank": 3,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2142827688",
+      "title": "The Neural Bases of Cognitive Conflict and Control in Moral Judgment",
+      "year": 2004,
+      "doi": "10.1016/j.neuron.2004.09.027",
+      "url": "https://doi.org/10.1016/j.neuron.2004.09.027",
+      "venue": "Neuron",
+      "in_degree": 12,
+      "pagerank": 0.027519,
+      "influence": 0.975,
+      "median_rank": 3.0,
+      "lo_rank": 2,
+      "hi_rank": 5,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2129270050",
+      "title": "Hypnotic Disgust Makes Moral Judgments More Severe",
+      "year": 2005,
+      "doi": "10.1111/j.1467-9280.2005.01614.x",
+      "url": "https://doi.org/10.1111/j.1467-9280.2005.01614.x",
+      "venue": "Psychological Science",
+      "in_degree": 14,
+      "pagerank": 0.027105,
+      "influence": 0.9625,
+      "median_rank": 4.0,
+      "lo_rank": 2,
+      "hi_rank": 6,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2168568233",
+      "title": "The Neural Correlates of Moral Sensitivity: A Functional Magnetic Resonance Imaging Investigation of Basic and Moral Emotions",
+      "year": 2002,
+      "doi": "10.1523/jneurosci.22-07-02730.2002",
+      "url": "https://doi.org/10.1523/jneurosci.22-07-02730.2002",
+      "venue": "Journal of Neuroscience",
+      "in_degree": 4,
+      "pagerank": 0.02583,
+      "influence": 0.95,
+      "median_rank": 4.0,
+      "lo_rank": 1,
+      "hi_rank": 14,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2046411892",
+      "title": "A perspective on judgment and choice: Mapping bounded rationality.",
+      "year": 2003,
+      "doi": "10.1037/0003-066x.58.9.697",
+      "url": "https://doi.org/10.1037/0003-066x.58.9.697",
+      "venue": "American Psychologist",
+      "in_degree": 6,
+      "pagerank": 0.02368,
+      "influence": 0.9375,
+      "median_rank": 6.0,
+      "lo_rank": 3,
+      "hi_rank": 8,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2168401869",
+      "title": "The Role of Conscious Reasoning and Intuition in Moral Judgment",
+      "year": 2006,
+      "doi": "10.1111/j.1467-9280.2006.01834.x",
+      "url": "https://doi.org/10.1111/j.1467-9280.2006.01834.x",
+      "venue": "Psychological Science",
+      "in_degree": 8,
+      "pagerank": 0.017119,
+      "influence": 0.925,
+      "median_rank": 7.0,
+      "lo_rank": 4,
+      "hi_rank": 10,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2159841438",
+      "title": "The self-importance of moral identity.",
+      "year": 2002,
+      "doi": "10.1037//0022-3514.83.6.1423",
+      "url": "https://doi.org/10.1037//0022-3514.83.6.1423",
+      "venue": "Journal of Personality and Social Psychology",
+      "in_degree": 9,
+      "pagerank": 0.017041,
+      "influence": 0.9125,
+      "median_rank": 7.0,
+      "lo_rank": 5,
+      "hi_rank": 10,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2117401803",
+      "title": "Intuitive ethics: how innately prepared intuitions generate culturally variable virtues",
+      "year": 2004,
+      "doi": "10.1162/0011526042365555",
+      "url": "https://doi.org/10.1162/0011526042365555",
+      "venue": "Daedalus",
+      "in_degree": 9,
+      "pagerank": 0.016682,
+      "influence": 0.9,
+      "median_rank": 8.0,
+      "lo_rank": 4,
+      "hi_rank": 10,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2119432837",
+      "title": "Liberals and conservatives rely on different sets of moral foundations.",
+      "year": 2009,
+      "doi": "10.1037/a0015141",
+      "url": "https://doi.org/10.1037/a0015141",
+      "venue": "Journal of Personality and Social Psychology",
+      "in_degree": 10,
+      "pagerank": 0.015879,
+      "influence": 0.8875,
+      "median_rank": 9.0,
+      "lo_rank": 6,
+      "hi_rank": 11,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W4255363074",
+      "title": "The self-importance of moral identity.",
+      "year": 2002,
+      "doi": "10.1037/0022-3514.83.6.1423",
+      "url": "https://doi.org/10.1037/0022-3514.83.6.1423",
+      "venue": "Journal of Personality and Social Psychology",
+      "in_degree": 6,
+      "pagerank": 0.012827,
+      "influence": 0.875,
+      "median_rank": 11.0,
+      "lo_rank": 8,
+      "hi_rank": 13,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2165558852",
+      "title": "The New Synthesis in Moral Psychology",
+      "year": 2007,
+      "doi": "10.1126/science.1137651",
+      "url": "https://doi.org/10.1126/science.1137651",
+      "venue": "Science",
+      "in_degree": 8,
+      "pagerank": 0.012105,
+      "influence": 0.8625,
+      "median_rank": 11.0,
+      "lo_rank": 7,
+      "hi_rank": 16,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2128974935",
+      "title": "Behavioral Ethics in Organizations: A Review",
+      "year": 2006,
+      "doi": "10.1177/0149206306294258",
+      "url": "https://doi.org/10.1177/0149206306294258",
+      "venue": "Journal of Management",
+      "in_degree": 5,
+      "pagerank": 0.011951,
+      "influence": 0.85,
+      "median_rank": 12.0,
+      "lo_rank": 9,
+      "hi_rank": 16,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2140241886",
+      "title": "Damage to the prefrontal cortex increases utilitarian moral judgements",
+      "year": 2007,
+      "doi": "10.1038/nature05631",
+      "url": "https://doi.org/10.1038/nature05631",
+      "venue": "Nature",
+      "in_degree": 7,
+      "pagerank": 0.011527,
+      "influence": 0.8375,
+      "median_rank": 12.0,
+      "lo_rank": 9,
+      "hi_rank": 15,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2123376091",
+      "title": "Reflective and Impulsive Determinants of Social Behavior",
+      "year": 2004,
+      "doi": "10.1207/s15327957pspr0803_1",
+      "url": "https://doi.org/10.1207/s15327957pspr0803_1",
+      "venue": "Personality and Social Psychology Review",
+      "in_degree": 2,
+      "pagerank": 0.011497,
+      "influence": 0.825,
+      "median_rank": 13.0,
+      "lo_rank": 9,
+      "hi_rank": 21,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2141233322",
+      "title": "Cognitive load selectively interferes with utilitarian moral judgment",
+      "year": 2008,
+      "doi": "10.1016/j.cognition.2007.11.004",
+      "url": "https://doi.org/10.1016/j.cognition.2007.11.004",
+      "venue": "Cognition",
+      "in_degree": 3,
+      "pagerank": 0.009838,
+      "influence": 0.8125,
+      "median_rank": 15.0,
+      "lo_rank": 9,
+      "hi_rank": 31,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2155479778",
+      "title": "Dual-Processing Accounts of Reasoning, Judgment, and Social Cognition",
+      "year": 2007,
+      "doi": "10.1146/annurev.psych.59.103006.093629",
+      "url": "https://doi.org/10.1146/annurev.psych.59.103006.093629",
+      "venue": "Annual Review of Psychology",
+      "in_degree": 2,
+      "pagerank": 0.008967,
+      "influence": 0.8,
+      "median_rank": 16.0,
+      "lo_rank": 13,
+      "hi_rank": 28,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2121366015",
+      "title": "Thinking the unthinkable: sacred values and taboo cognitions",
+      "year": 2003,
+      "doi": "10.1016/s1364-6613(03)00135-9",
+      "url": "https://doi.org/10.1016/s1364-6613(03)00135-9",
+      "venue": "Trends in Cognitive Sciences",
+      "in_degree": 1,
+      "pagerank": 0.008768,
+      "influence": 0.7875,
+      "median_rank": 17.0,
+      "lo_rank": 13,
+      "hi_rank": 71,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2096910467",
+      "title": "Mapping the moral domain.",
+      "year": 2011,
+      "doi": "10.1037/a0021847",
+      "url": "https://doi.org/10.1037/a0021847",
+      "venue": "Journal of Personality and Social Psychology",
+      "in_degree": 5,
+      "pagerank": 0.008655,
+      "influence": 0.775,
+      "median_rank": 17.0,
+      "lo_rank": 13,
+      "hi_rank": 25,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2151318005",
+      "title": "Party Over Policy: The Dominating Impact of Group Influence on Political Beliefs.",
+      "year": 2003,
+      "doi": "10.1037/0022-3514.85.5.808",
+      "url": "https://doi.org/10.1037/0022-3514.85.5.808",
+      "venue": "Journal of Personality and Social Psychology",
+      "in_degree": 2,
+      "pagerank": 0.00844,
+      "influence": 0.7625,
+      "median_rank": 18.0,
+      "lo_rank": 14,
+      "hi_rank": 35,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2114038289",
+      "title": "Evolved Disease-Avoidance Mechanisms and Contemporary Xenophobic Attitudes",
+      "year": 2004,
+      "doi": "10.1177/1368430204046142",
+      "url": "https://doi.org/10.1177/1368430204046142",
+      "venue": "Group Processes & Intergroup Relations",
+      "in_degree": 3,
+      "pagerank": 0.007881,
+      "influence": 0.75,
+      "median_rank": 19.0,
+      "lo_rank": 15,
+      "hi_rank": 34,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2084246693",
+      "title": "Social class, solipsism, and contextualism: How the rich are different from the poor.",
+      "year": 2012,
+      "doi": "10.1037/a0028756",
+      "url": "https://doi.org/10.1037/a0028756",
+      "venue": "Psychological Review",
+      "in_degree": 1,
+      "pagerank": 0.007686,
+      "influence": 0.7375,
+      "median_rank": 20.0,
+      "lo_rank": 16,
+      "hi_rank": 41,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2656044294",
+      "title": "Emotion shapes the diffusion of moralized content in social networks",
+      "year": 2017,
+      "doi": "10.1073/pnas.1618923114",
+      "url": "https://doi.org/10.1073/pnas.1618923114",
+      "venue": "Proceedings of the National Academy of Sciences",
+      "in_degree": 1,
+      "pagerank": 0.007686,
+      "influence": 0.7375,
+      "median_rank": 20.0,
+      "lo_rank": 17,
+      "hi_rank": 57,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2135754493",
+      "title": "Motivation and Justification: A Dual\u2010Process Model of Culture in Action",
+      "year": 2009,
+      "doi": "10.1086/597179",
+      "url": "https://doi.org/10.1086/597179",
+      "venue": "American Journal of Sociology",
+      "in_degree": 1,
+      "pagerank": 0.007686,
+      "influence": 0.7375,
+      "median_rank": 21.0,
+      "lo_rank": 18,
+      "hi_rank": 61,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2015990656",
+      "title": "What have we been priming all these years? On the development, mechanisms, and ecology of nonconscious social behavior",
+      "year": 2006,
+      "doi": "10.1002/ejsp.336",
+      "url": "https://doi.org/10.1002/ejsp.336",
+      "venue": "European Journal of Social Psychology",
+      "in_degree": 1,
+      "pagerank": 0.007372,
+      "influence": 0.7,
+      "median_rank": 23.0,
+      "lo_rank": 16,
+      "hi_rank": 67,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2143363557",
+      "title": "Disgust as Embodied Moral Judgment",
+      "year": 2008,
+      "doi": "10.1177/0146167208317771",
+      "url": "https://doi.org/10.1177/0146167208317771",
+      "venue": "Personality and Social Psychology Bulletin",
+      "in_degree": 4,
+      "pagerank": 0.007314,
+      "influence": 0.6875,
+      "median_rank": 24.0,
+      "lo_rank": 18,
+      "hi_rank": 31,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2117155762",
+      "title": "Crime and punishment: Distinguishing the roles of causal and intentional analyses in moral judgment",
+      "year": 2008,
+      "doi": "10.1016/j.cognition.2008.03.006",
+      "url": "https://doi.org/10.1016/j.cognition.2008.03.006",
+      "venue": "Cognition",
+      "in_degree": 3,
+      "pagerank": 0.007263,
+      "influence": 0.675,
+      "median_rank": 24.0,
+      "lo_rank": 20,
+      "hi_rank": 32,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2476494993",
+      "title": "Elevation and the positive psychology of morality.",
+      "year": 2003,
+      "doi": "10.1037/10594-012",
+      "url": "https://doi.org/10.1037/10594-012",
+      "venue": "American Psychological Association eBooks",
+      "in_degree": 2,
+      "pagerank": 0.007202,
+      "influence": 0.6625,
+      "median_rank": 25.0,
+      "lo_rank": 18,
+      "hi_rank": 36,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W1568809335",
+      "title": "The neural basis of human moral cognition",
+      "year": 2005,
+      "doi": "10.1038/nrn1768",
+      "url": "https://doi.org/10.1038/nrn1768",
+      "venue": "Nature reviews. Neuroscience",
+      "in_degree": 2,
+      "pagerank": 0.007075,
+      "influence": 0.65,
+      "median_rank": 26.0,
+      "lo_rank": 20,
+      "hi_rank": 35,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W1966869088",
+      "title": "The Emotional Construction of Morals",
+      "year": 2009,
+      "doi": "10.1093/acprof:oso/9780199571543.001.0001",
+      "url": "https://doi.org/10.1093/acprof:oso/9780199571543.001.0001",
+      "venue": null,
+      "in_degree": 2,
+      "pagerank": 0.007075,
+      "influence": 0.65,
+      "median_rank": 26.0,
+      "lo_rank": 21,
+      "hi_rank": 37,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2140777058",
+      "title": "Bad apples, bad cases, and bad barrels: Meta-analytic evidence about sources of unethical decisions at work.",
+      "year": 2010,
+      "doi": "10.1037/a0017103",
+      "url": "https://doi.org/10.1037/a0017103",
+      "venue": "Journal of Applied Psychology",
+      "in_degree": 2,
+      "pagerank": 0.006981,
+      "influence": 0.625,
+      "median_rank": 27.0,
+      "lo_rank": 20,
+      "hi_rank": 37,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2009233285",
+      "title": "The effects of moral judgment and moral identity on moral behavior: An empirical examination of the moral individual.",
+      "year": 2007,
+      "doi": "10.1037/0021-9010.92.6.1610",
+      "url": "https://doi.org/10.1037/0021-9010.92.6.1610",
+      "venue": "Journal of Applied Psychology",
+      "in_degree": 2,
+      "pagerank": 0.006981,
+      "influence": 0.625,
+      "median_rank": 27.0,
+      "lo_rank": 21,
+      "hi_rank": 37,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2104256533",
+      "title": "Why do humans reason? Arguments for an argumentative theory",
+      "year": 2011,
+      "doi": "10.1017/s0140525x10000968",
+      "url": "https://doi.org/10.1017/s0140525x10000968",
+      "venue": "Behavioral and Brain Sciences",
+      "in_degree": 2,
+      "pagerank": 0.006845,
+      "influence": 0.6,
+      "median_rank": 28.0,
+      "lo_rank": 24,
+      "hi_rank": 42,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2166301207",
+      "title": "Moral Conviction: Another Contributor to Attitude Strength or Something More?",
+      "year": 2005,
+      "doi": "10.1037/0022-3514.88.6.895",
+      "url": "https://doi.org/10.1037/0022-3514.88.6.895",
+      "venue": "Journal of Personality and Social Psychology",
+      "in_degree": 1,
+      "pagerank": 0.006783,
+      "influence": 0.5875,
+      "median_rank": 29.0,
+      "lo_rank": 21,
+      "hi_rank": 59,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2120107374",
+      "title": "The Moral Roots of Environmental Attitudes",
+      "year": 2012,
+      "doi": "10.1177/0956797612449177",
+      "url": "https://doi.org/10.1177/0956797612449177",
+      "venue": "Psychological Science",
+      "in_degree": 1,
+      "pagerank": 0.00654,
+      "influence": 0.575,
+      "median_rank": 31.0,
+      "lo_rank": 27,
+      "hi_rank": 71,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2108616861",
+      "title": "Mind Perception Is the Essence of Morality",
+      "year": 2012,
+      "doi": "10.1080/1047840x.2012.651387",
+      "url": "https://doi.org/10.1080/1047840x.2012.651387",
+      "venue": "Psychological Inquiry",
+      "in_degree": 2,
+      "pagerank": 0.006463,
+      "influence": 0.5625,
+      "median_rank": 31.0,
+      "lo_rank": 28,
+      "hi_rank": 40,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2003654197",
+      "title": "Understanding Libertarian Morality: The Psychological Dispositions of Self-Identified Libertarians",
+      "year": 2012,
+      "doi": "10.1371/journal.pone.0042366",
+      "url": "https://doi.org/10.1371/journal.pone.0042366",
+      "venue": "PLoS ONE",
+      "in_degree": 2,
+      "pagerank": 0.006453,
+      "influence": 0.55,
+      "median_rank": 31.0,
+      "lo_rank": 27,
+      "hi_rank": 39,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2138131209",
+      "title": "Tracing the threads: How five moral concerns (especially Purity) help explain culture war attitudes",
+      "year": 2012,
+      "doi": "10.1016/j.jrp.2012.01.006",
+      "url": "https://doi.org/10.1016/j.jrp.2012.01.006",
+      "venue": "Journal of Research in Personality",
+      "in_degree": 2,
+      "pagerank": 0.006209,
+      "influence": 0.5375,
+      "median_rank": 34.0,
+      "lo_rank": 29,
+      "hi_rank": 40,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2018738210",
+      "title": "Moral psychology is relationship regulation: Moral motives for unity, hierarchy, equality, and proportionality.",
+      "year": 2011,
+      "doi": "10.1037/a0021867",
+      "url": "https://doi.org/10.1037/a0021867",
+      "venue": "Psychological Review",
+      "in_degree": 2,
+      "pagerank": 0.006199,
+      "influence": 0.525,
+      "median_rank": 34.0,
+      "lo_rank": 29,
+      "hi_rank": 41,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2792835787",
+      "title": "The psychological roots of anti-vaccination attitudes: A 24-nation investigation.",
+      "year": 2018,
+      "doi": "10.1037/hea0000586",
+      "url": "https://doi.org/10.1037/hea0000586",
+      "venue": "Health Psychology",
+      "in_degree": 1,
+      "pagerank": 0.006158,
+      "influence": 0.5125,
+      "median_rank": 34.0,
+      "lo_rank": 30,
+      "hi_rank": 49,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2044237036",
+      "title": "Nobody's watching?",
+      "year": 2005,
+      "doi": "10.1016/j.evolhumbehav.2005.01.002",
+      "url": "https://doi.org/10.1016/j.evolhumbehav.2005.01.002",
+      "venue": "Evolution and Human Behavior",
+      "in_degree": 1,
+      "pagerank": 0.005999,
+      "influence": 0.5,
+      "median_rank": 36.0,
+      "lo_rank": 32,
+      "hi_rank": 61,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2119482439",
+      "title": "WHY EMPLOYEES DO BAD THINGS: MORAL DISENGAGEMENT AND UNETHICAL ORGANIZATIONAL BEHAVIOR",
+      "year": 2012,
+      "doi": "10.1111/j.1744-6570.2011.01237.x",
+      "url": "https://doi.org/10.1111/j.1744-6570.2011.01237.x",
+      "venue": "Personnel Psychology",
+      "in_degree": 1,
+      "pagerank": 0.005967,
+      "influence": 0.4875,
+      "median_rank": 38.0,
+      "lo_rank": 33,
+      "hi_rank": 72,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2034534447",
+      "title": "Ethical and Unethical Leadership: Exploring New Avenues for Future Research",
+      "year": 2010,
+      "doi": "10.5840/beq201020439",
+      "url": "https://doi.org/10.5840/beq201020439",
+      "venue": "Business Ethics Quarterly",
+      "in_degree": 1,
+      "pagerank": 0.005967,
+      "influence": 0.4875,
+      "median_rank": 36.0,
+      "lo_rank": 32,
+      "hi_rank": 45,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2111945000",
+      "title": "Microbes, mating, and morality: Individual differences in three functional domains of disgust.",
+      "year": 2009,
+      "doi": "10.1037/a0015474",
+      "url": "https://doi.org/10.1037/a0015474",
+      "venue": "Journal of Personality and Social Psychology",
+      "in_degree": 1,
+      "pagerank": 0.005903,
+      "influence": 0.4625,
+      "median_rank": 38.0,
+      "lo_rank": 34,
+      "hi_rank": 58,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2027076429",
+      "title": "A mutualistic approach to morality: The evolution of fairness by partner choice",
+      "year": 2013,
+      "doi": "10.1017/s0140525x11002202",
+      "url": "https://doi.org/10.1017/s0140525x11002202",
+      "venue": "Behavioral and Brain Sciences",
+      "in_degree": 1,
+      "pagerank": 0.005699,
+      "influence": 0.45,
+      "median_rank": 39.0,
+      "lo_rank": 35,
+      "hi_rank": 42,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W3016902371",
+      "title": "Using social and behavioural science to support COVID-19 pandemic response",
+      "year": 2020,
+      "doi": "10.1038/s41562-020-0884-z",
+      "url": "https://doi.org/10.1038/s41562-020-0884-z",
+      "venue": "Nature Human Behaviour",
+      "in_degree": 0,
+      "pagerank": 0.005394,
+      "influence": 0.4375,
+      "median_rank": 44.0,
+      "lo_rank": 40,
+      "hi_rank": 47,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2110777095",
+      "title": "Understanding and using the Implicit Association Test: III. Meta-analysis of predictive validity.",
+      "year": 2009,
+      "doi": "10.1037/a0015575",
+      "url": "https://doi.org/10.1037/a0015575",
+      "venue": "Journal of Personality and Social Psychology",
+      "in_degree": 0,
+      "pagerank": 0.005394,
+      "influence": 0.4375,
+      "median_rank": 41.0,
+      "lo_rank": 38,
+      "hi_rank": 44,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": true
+    },
+    {
+      "id": "W2128106636",
+      "title": "Political Ideology: Its Structure, Functions, and Elective Affinities",
+      "year": 2008,
+      "doi": "10.1146/annurev.psych.60.110707.163600",
+      "url": "https://doi.org/10.1146/annurev.psych.60.110707.163600",
+      "venue": "Annual Review of Psychology",
+      "in_degree": 0,
+      "pagerank": 0.005394,
+      "influence": 0.4375,
+      "median_rank": 61.0,
+      "lo_rank": 58,
+      "hi_rank": 64,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2128662472",
+      "title": "The Social Brain: Neural Basis of Social Knowledge",
+      "year": 2008,
+      "doi": "10.1146/annurev.psych.60.110707.163514",
+      "url": "https://doi.org/10.1146/annurev.psych.60.110707.163514",
+      "venue": "Annual Review of Psychology",
+      "in_degree": 0,
+      "pagerank": 0.005394,
+      "influence": 0.4375,
+      "median_rank": 56.0,
+      "lo_rank": 54,
+      "hi_rank": 59,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2120618638",
+      "title": "How Emotion Shapes Behavior: Feedback, Anticipation, and Reflection, Rather Than Direct Causation",
+      "year": 2007,
+      "doi": "10.1177/1088868307301033",
+      "url": "https://doi.org/10.1177/1088868307301033",
+      "venue": "Personality and Social Psychology Review",
+      "in_degree": 0,
+      "pagerank": 0.005394,
+      "influence": 0.4375,
+      "median_rank": 50.0,
+      "lo_rank": 48,
+      "hi_rank": 53,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W4292545669",
+      "title": "Moral Foundations Theory",
+      "year": 2013,
+      "doi": "10.1016/b978-0-12-407236-7.00002-4",
+      "url": "https://doi.org/10.1016/b978-0-12-407236-7.00002-4",
+      "venue": "Advances in experimental social psychology",
+      "in_degree": 0,
+      "pagerank": 0.005394,
+      "influence": 0.4375,
+      "median_rank": 63.0,
+      "lo_rank": 61,
+      "hi_rank": 65,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2060224295",
+      "title": "The origins and nature of compassion focused therapy",
+      "year": 2014,
+      "doi": "10.1111/bjc.12043",
+      "url": "https://doi.org/10.1111/bjc.12043",
+      "venue": "British Journal of Clinical Psychology",
+      "in_degree": 0,
+      "pagerank": 0.005394,
+      "influence": 0.4375,
+      "median_rank": 47.0,
+      "lo_rank": 44,
+      "hi_rank": 50,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W1995835640",
+      "title": "Exploring Intuition and its Role in Managerial Decision Making",
+      "year": 2007,
+      "doi": "10.5465/amr.2007.23463682",
+      "url": "https://doi.org/10.5465/amr.2007.23463682",
+      "venue": "Academy of Management Review",
+      "in_degree": 0,
+      "pagerank": 0.005394,
+      "influence": 0.4375,
+      "median_rank": 48.0,
+      "lo_rank": 46,
+      "hi_rank": 51,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W3017894014",
+      "title": "Functional Fear Predicts Public Health Compliance in the COVID-19 Pandemic",
+      "year": 2020,
+      "doi": "10.1007/s11469-020-00281-5",
+      "url": "https://doi.org/10.1007/s11469-020-00281-5",
+      "venue": "International Journal of Mental Health and Addiction",
+      "in_degree": 0,
+      "pagerank": 0.005394,
+      "influence": 0.4375,
+      "median_rank": 58.0,
+      "lo_rank": 56,
+      "hi_rank": 61,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W4248926310",
+      "title": "Simulating Minds",
+      "year": 2006,
+      "doi": "10.1093/0195138929.001.0001",
+      "url": "https://doi.org/10.1093/0195138929.001.0001",
+      "venue": null,
+      "in_degree": 0,
+      "pagerank": 0.005394,
+      "influence": 0.4375,
+      "median_rank": 50.0,
+      "lo_rank": 47,
+      "hi_rank": 53,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2129134806",
+      "title": "The Experience of Emotion",
+      "year": 2006,
+      "doi": "10.1146/annurev.psych.58.110405.085709",
+      "url": "https://doi.org/10.1146/annurev.psych.58.110405.085709",
+      "venue": "Annual Review of Psychology",
+      "in_degree": 0,
+      "pagerank": 0.005394,
+      "influence": 0.4375,
+      "median_rank": 45.0,
+      "lo_rank": 42,
+      "hi_rank": 48,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2117500413",
+      "title": "We Feel, Therefore We Learn: The Relevance of Affective and Social Neuroscience to Education",
+      "year": 2007,
+      "doi": "10.1111/j.1751-228x.2007.00004.x",
+      "url": "https://doi.org/10.1111/j.1751-228x.2007.00004.x",
+      "venue": "Mind Brain and Education",
+      "in_degree": 0,
+      "pagerank": 0.005394,
+      "influence": 0.4375,
+      "median_rank": 70.0,
+      "lo_rank": 69,
+      "hi_rank": 71,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2119858020",
+      "title": "Explanation and Understanding",
+      "year": 2005,
+      "doi": "10.1146/annurev.psych.57.102904.190100",
+      "url": "https://doi.org/10.1146/annurev.psych.57.102904.190100",
+      "venue": "Annual Review of Psychology",
+      "in_degree": 0,
+      "pagerank": 0.005394,
+      "influence": 0.4375,
+      "median_rank": 71.0,
+      "lo_rank": 70,
+      "hi_rank": 72,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2117149792",
+      "title": "Beyond global sociosexual orientations: A more differentiated look at sociosexuality and its effects on courtship and romantic relationships.",
+      "year": 2008,
+      "doi": "10.1037/0022-3514.95.5.1113",
+      "url": "https://doi.org/10.1037/0022-3514.95.5.1113",
+      "venue": "Journal of Personality and Social Psychology",
+      "in_degree": 0,
+      "pagerank": 0.005394,
+      "influence": 0.4375,
+      "median_rank": 62.0,
+      "lo_rank": 60,
+      "hi_rank": 64,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    },
+    {
+      "id": "W2142405223",
+      "title": "Morality and Prosocial Behavior: The Role of Awareness, Responsibility, and Norms in the Norm Activation Model",
+      "year": 2009,
+      "doi": "10.3200/socp.149.4.425-449",
+      "url": "https://doi.org/10.3200/socp.149.4.425-449",
+      "venue": "The Journal of Social Psychology",
+      "in_degree": 0,
+      "pagerank": 0.005394,
+      "influence": 0.4375,
+      "median_rank": 48.0,
+      "lo_rank": 45,
+      "hi_rank": 51,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false
+    }
+  ],
+  "edges": [
+    [
+      "W2046411892",
+      "W2123791568"
+    ],
+    [
+      "W2155479778",
+      "W2123376091"
+    ],
+    [
+      "W2155479778",
+      "W2123791568"
+    ],
+    [
+      "W3016902371",
+      "W2123791568"
+    ],
+    [
+      "W3016902371",
+      "W2656044294"
+    ],
+    [
+      "W2119432837",
+      "W2117401803"
+    ],
+    [
+      "W2119432837",
+      "W2121366015"
+    ],
+    [
+      "W2119432837",
+      "W2123791568"
+    ],
+    [
+      "W2119432837",
+      "W2141233322"
+    ],
+    [
+      "W2123376091",
+      "W2123791568"
+    ],
+    [
+      "W2110777095",
+      "W2123376091"
+    ],
+    [
+      "W2110777095",
+      "W2123791568"
+    ],
+    [
+      "W4255363074",
+      "W2123791568"
+    ],
+    [
+      "W2142827688",
+      "W2046411892"
+    ],
+    [
+      "W2142827688",
+      "W2119659537"
+    ],
+    [
+      "W2142827688",
+      "W2123791568"
+    ],
+    [
+      "W2096910467",
+      "W2117401803"
+    ],
+    [
+      "W2096910467",
+      "W2119432837"
+    ],
+    [
+      "W2096910467",
+      "W2123791568"
+    ],
+    [
+      "W2096910467",
+      "W2159841438"
+    ],
+    [
+      "W2096910467",
+      "W2168401869"
+    ],
+    [
+      "W2165558852",
+      "W2119659537"
+    ],
+    [
+      "W2165558852",
+      "W2123791568"
+    ],
+    [
+      "W2165558852",
+      "W2129270050"
+    ],
+    [
+      "W2165558852",
+      "W2142827688"
+    ],
+    [
+      "W2165558852",
+      "W2168401869"
+    ],
+    [
+      "W2104256533",
+      "W2046411892"
+    ],
+    [
+      "W2104256533",
+      "W2123791568"
+    ],
+    [
+      "W2104256533",
+      "W2155479778"
+    ],
+    [
+      "W2128106636",
+      "W2123791568"
+    ],
+    [
+      "W2128106636",
+      "W2151318005"
+    ],
+    [
+      "W2117401803",
+      "W2123791568"
+    ],
+    [
+      "W2119659537",
+      "W2123791568"
+    ],
+    [
+      "W2119659537",
+      "W2168568233"
+    ],
+    [
+      "W2128662472",
+      "W1568809335"
+    ],
+    [
+      "W2128662472",
+      "W2119659537"
+    ],
+    [
+      "W2128662472",
+      "W2123791568"
+    ],
+    [
+      "W2128662472",
+      "W2140241886"
+    ],
+    [
+      "W2128662472",
+      "W2142827688"
+    ],
+    [
+      "W2128662472",
+      "W2165558852"
+    ],
+    [
+      "W2128974935",
+      "W2123791568"
+    ],
+    [
+      "W2128974935",
+      "W2159841438"
+    ],
+    [
+      "W2128974935",
+      "W2168568233"
+    ],
+    [
+      "W2128974935",
+      "W4255363074"
+    ],
+    [
+      "W2120618638",
+      "W2123791568"
+    ],
+    [
+      "W2159841438",
+      "W2123791568"
+    ],
+    [
+      "W4292545669",
+      "W2003654197"
+    ],
+    [
+      "W4292545669",
+      "W2018738210"
+    ],
+    [
+      "W4292545669",
+      "W2027076429"
+    ],
+    [
+      "W4292545669",
+      "W2096910467"
+    ],
+    [
+      "W4292545669",
+      "W2104256533"
+    ],
+    [
+      "W4292545669",
+      "W2108616861"
+    ],
+    [
+      "W4292545669",
+      "W2114038289"
+    ],
+    [
+      "W4292545669",
+      "W2117401803"
+    ],
+    [
+      "W4292545669",
+      "W2119432837"
+    ],
+    [
+      "W4292545669",
+      "W2123791568"
+    ],
+    [
+      "W4292545669",
+      "W2129270050"
+    ],
+    [
+      "W4292545669",
+      "W2138131209"
+    ],
+    [
+      "W4292545669",
+      "W2141233322"
+    ],
+    [
+      "W4292545669",
+      "W2143363557"
+    ],
+    [
+      "W4292545669",
+      "W2165558852"
+    ],
+    [
+      "W2140777058",
+      "W2015990656"
+    ],
+    [
+      "W2140777058",
+      "W2123791568"
+    ],
+    [
+      "W2140777058",
+      "W2128974935"
+    ],
+    [
+      "W2140241886",
+      "W2123791568"
+    ],
+    [
+      "W2140241886",
+      "W2129270050"
+    ],
+    [
+      "W2140241886",
+      "W2142827688"
+    ],
+    [
+      "W2140241886",
+      "W2168401869"
+    ],
+    [
+      "W2060224295",
+      "W2084246693"
+    ],
+    [
+      "W2060224295",
+      "W2123791568"
+    ],
+    [
+      "W1995835640",
+      "W2046411892"
+    ],
+    [
+      "W1995835640",
+      "W2123791568"
+    ],
+    [
+      "W3017894014",
+      "W2117401803"
+    ],
+    [
+      "W3017894014",
+      "W2119432837"
+    ],
+    [
+      "W3017894014",
+      "W2123791568"
+    ],
+    [
+      "W4248926310",
+      "W2123791568"
+    ],
+    [
+      "W2151318005",
+      "W2123791568"
+    ],
+    [
+      "W2084246693",
+      "W2119659537"
+    ],
+    [
+      "W2084246693",
+      "W2123791568"
+    ],
+    [
+      "W2084246693",
+      "W2165558852"
+    ],
+    [
+      "W2129134806",
+      "W2123791568"
+    ],
+    [
+      "W2129134806",
+      "W2142827688"
+    ],
+    [
+      "W2117500413",
+      "W2123791568"
+    ],
+    [
+      "W2117500413",
+      "W2142827688"
+    ],
+    [
+      "W2119858020",
+      "W2119659537"
+    ],
+    [
+      "W2119858020",
+      "W2123791568"
+    ],
+    [
+      "W2143363557",
+      "W2123791568"
+    ],
+    [
+      "W2143363557",
+      "W2129270050"
+    ],
+    [
+      "W2656044294",
+      "W2119432837"
+    ],
+    [
+      "W2656044294",
+      "W2123791568"
+    ],
+    [
+      "W2656044294",
+      "W2129270050"
+    ],
+    [
+      "W2135754493",
+      "W2123791568"
+    ],
+    [
+      "W2135754493",
+      "W2129270050"
+    ],
+    [
+      "W2135754493",
+      "W2142827688"
+    ],
+    [
+      "W2135754493",
+      "W2155479778"
+    ],
+    [
+      "W2141233322",
+      "W2046411892"
+    ],
+    [
+      "W2141233322",
+      "W2123791568"
+    ],
+    [
+      "W2141233322",
+      "W2140241886"
+    ],
+    [
+      "W2141233322",
+      "W2142827688"
+    ],
+    [
+      "W2141233322",
+      "W2168401869"
+    ],
+    [
+      "W2119482439",
+      "W2123791568"
+    ],
+    [
+      "W2119482439",
+      "W2128974935"
+    ],
+    [
+      "W2119482439",
+      "W2140777058"
+    ],
+    [
+      "W2119482439",
+      "W2159841438"
+    ],
+    [
+      "W2119482439",
+      "W4255363074"
+    ],
+    [
+      "W2111945000",
+      "W2114038289"
+    ],
+    [
+      "W2111945000",
+      "W2123791568"
+    ],
+    [
+      "W2111945000",
+      "W2129270050"
+    ],
+    [
+      "W2117149792",
+      "W2123791568"
+    ],
+    [
+      "W2142405223",
+      "W2123791568"
+    ],
+    [
+      "W2044237036",
+      "W2119659537"
+    ],
+    [
+      "W2044237036",
+      "W2123791568"
+    ],
+    [
+      "W2168401869",
+      "W2119659537"
+    ],
+    [
+      "W2168401869",
+      "W2123791568"
+    ],
+    [
+      "W2168401869",
+      "W2129270050"
+    ],
+    [
+      "W2168401869",
+      "W2142827688"
+    ],
+    [
+      "W2108616861",
+      "W2018738210"
+    ],
+    [
+      "W2108616861",
+      "W2096910467"
+    ],
+    [
+      "W2108616861",
+      "W2117155762"
+    ],
+    [
+      "W2108616861",
+      "W2119432837"
+    ],
+    [
+      "W2108616861",
+      "W2123791568"
+    ],
+    [
+      "W2108616861",
+      "W2129270050"
+    ],
+    [
+      "W2108616861",
+      "W2140241886"
+    ],
+    [
+      "W2108616861",
+      "W2142827688"
+    ],
+    [
+      "W2108616861",
+      "W2143363557"
+    ],
+    [
+      "W2108616861",
+      "W2165558852"
+    ],
+    [
+      "W2108616861",
+      "W2168401869"
+    ],
+    [
+      "W2117155762",
+      "W2123791568"
+    ],
+    [
+      "W2117155762",
+      "W2142827688"
+    ],
+    [
+      "W2117155762",
+      "W2168401869"
+    ],
+    [
+      "W1568809335",
+      "W2123791568"
+    ],
+    [
+      "W1568809335",
+      "W2142827688"
+    ],
+    [
+      "W1568809335",
+      "W2168568233"
+    ],
+    [
+      "W2120107374",
+      "W2117401803"
+    ],
+    [
+      "W2120107374",
+      "W2119432837"
+    ],
+    [
+      "W2120107374",
+      "W2123791568"
+    ],
+    [
+      "W2120107374",
+      "W2166301207"
+    ],
+    [
+      "W2121366015",
+      "W2119659537"
+    ],
+    [
+      "W2121366015",
+      "W2123791568"
+    ],
+    [
+      "W2018738210",
+      "W2117401803"
+    ],
+    [
+      "W2018738210",
+      "W2119432837"
+    ],
+    [
+      "W2018738210",
+      "W2119659537"
+    ],
+    [
+      "W2018738210",
+      "W2123791568"
+    ],
+    [
+      "W2018738210",
+      "W2140241886"
+    ],
+    [
+      "W2018738210",
+      "W2165558852"
+    ],
+    [
+      "W2018738210",
+      "W2168401869"
+    ],
+    [
+      "W2114038289",
+      "W2123791568"
+    ],
+    [
+      "W2034534447",
+      "W2009233285"
+    ],
+    [
+      "W2034534447",
+      "W2123791568"
+    ],
+    [
+      "W2034534447",
+      "W2128974935"
+    ],
+    [
+      "W2034534447",
+      "W2159841438"
+    ],
+    [
+      "W2034534447",
+      "W4255363074"
+    ],
+    [
+      "W2129270050",
+      "W2123791568"
+    ],
+    [
+      "W2792835787",
+      "W2123791568"
+    ],
+    [
+      "W2166301207",
+      "W2119659537"
+    ],
+    [
+      "W2166301207",
+      "W2123791568"
+    ],
+    [
+      "W2015990656",
+      "W2123791568"
+    ],
+    [
+      "W2168568233",
+      "W2123791568"
+    ],
+    [
+      "W2138131209",
+      "W2003654197"
+    ],
+    [
+      "W2138131209",
+      "W2096910467"
+    ],
+    [
+      "W2138131209",
+      "W2117401803"
+    ],
+    [
+      "W2138131209",
+      "W2119432837"
+    ],
+    [
+      "W2138131209",
+      "W2123791568"
+    ],
+    [
+      "W2138131209",
+      "W2129270050"
+    ],
+    [
+      "W2138131209",
+      "W2151318005"
+    ],
+    [
+      "W2003654197",
+      "W2096910467"
+    ],
+    [
+      "W2003654197",
+      "W2119432837"
+    ],
+    [
+      "W2003654197",
+      "W2123791568"
+    ],
+    [
+      "W2003654197",
+      "W2129270050"
+    ],
+    [
+      "W2003654197",
+      "W2165558852"
+    ],
+    [
+      "W2476494993",
+      "W2123791568"
+    ],
+    [
+      "W2027076429",
+      "W2044237036"
+    ],
+    [
+      "W2027076429",
+      "W2096910467"
+    ],
+    [
+      "W2027076429",
+      "W2117155762"
+    ],
+    [
+      "W2027076429",
+      "W2123791568"
+    ],
+    [
+      "W2027076429",
+      "W2129270050"
+    ],
+    [
+      "W2027076429",
+      "W2143363557"
+    ],
+    [
+      "W2027076429",
+      "W2165558852"
+    ],
+    [
+      "W2027076429",
+      "W2476494993"
+    ],
+    [
+      "W1966869088",
+      "W2117401803"
+    ],
+    [
+      "W1966869088",
+      "W2119659537"
+    ],
+    [
+      "W1966869088",
+      "W2123791568"
+    ],
+    [
+      "W1966869088",
+      "W2129270050"
+    ],
+    [
+      "W1966869088",
+      "W2476494993"
+    ],
+    [
+      "W2009233285",
+      "W2123791568"
+    ],
+    [
+      "W2009233285",
+      "W2128974935"
+    ],
+    [
+      "W2009233285",
+      "W2159841438"
+    ]
+  ],
+  "biblio_coupled": [
+    [
+      "W2159841438",
+      "W4255363074",
+      56
+    ],
+    [
+      "W2128974935",
+      "W2140777058",
+      48
+    ],
+    [
+      "W2108616861",
+      "W4292545669",
+      32
+    ],
+    [
+      "W2104256533",
+      "W2155479778",
+      31
+    ],
+    [
+      "W2034534447",
+      "W2128974935",
+      29
+    ],
+    [
+      "W2096910467",
+      "W2119432837",
+      28
+    ],
+    [
+      "W2119482439",
+      "W2128974935",
+      28
+    ],
+    [
+      "W2009233285",
+      "W2128974935",
+      26
+    ],
+    [
+      "W2015990656",
+      "W2123376091",
+      24
+    ],
+    [
+      "W2003654197",
+      "W4292545669",
+      22
+    ],
+    [
+      "W2018738210",
+      "W2108616861",
+      22
+    ],
+    [
+      "W2119432837",
+      "W2123791568",
+      22
+    ],
+    [
+      "W2123791568",
+      "W4292545669",
+      22
+    ],
+    [
+      "W1995835640",
+      "W2046411892",
+      21
+    ],
+    [
+      "W2018738210",
+      "W2027076429",
+      21
+    ],
+    [
+      "W2046411892",
+      "W2155479778",
+      21
+    ],
+    [
+      "W2027076429",
+      "W4292545669",
+      20
+    ],
+    [
+      "W2046411892",
+      "W2104256533",
+      20
+    ],
+    [
+      "W2046411892",
+      "W2123376091",
+      20
+    ],
+    [
+      "W2138131209",
+      "W4292545669",
+      20
+    ],
+    [
+      "W2018738210",
+      "W2096910467",
+      19
+    ],
+    [
+      "W2027076429",
+      "W2044237036",
+      19
+    ],
+    [
+      "W2034534447",
+      "W2119482439",
+      19
+    ],
+    [
+      "W2018738210",
+      "W2119432837",
+      18
+    ],
+    [
+      "W2119659537",
+      "W2123791568",
+      18
+    ],
+    [
+      "W1995835640",
+      "W2155479778",
+      17
+    ],
+    [
+      "W2018738210",
+      "W2123791568",
+      17
+    ],
+    [
+      "W2096910467",
+      "W2123791568",
+      17
+    ],
+    [
+      "W2108616861",
+      "W2117155762",
+      17
+    ],
+    [
+      "W2123376091",
+      "W2123791568",
+      17
+    ],
+    [
+      "W2018738210",
+      "W2084246693",
+      16
+    ],
+    [
+      "W2108616861",
+      "W2123791568",
+      16
+    ],
+    [
+      "W2119432837",
+      "W4292545669",
+      16
+    ],
+    [
+      "W1568809335",
+      "W2119659537",
+      15
+    ],
+    [
+      "W2003654197",
+      "W2138131209",
+      15
+    ],
+    [
+      "W2009233285",
+      "W2140777058",
+      15
+    ],
+    [
+      "W2009233285",
+      "W2159841438",
+      15
+    ],
+    [
+      "W2110777095",
+      "W2123376091",
+      15
+    ],
+    [
+      "W2123791568",
+      "W2143363557",
+      15
+    ],
+    [
+      "W2128662472",
+      "W2129134806",
+      15
+    ],
+    [
+      "W2128662472",
+      "W4248926310",
+      15
+    ],
+    [
+      "W1995835640",
+      "W2104256533",
+      14
+    ],
+    [
+      "W2015990656",
+      "W2123791568",
+      14
+    ],
+    [
+      "W2027076429",
+      "W2108616861",
+      14
+    ],
+    [
+      "W2046411892",
+      "W2123791568",
+      14
+    ],
+    [
+      "W2119432837",
+      "W2128106636",
+      14
+    ],
+    [
+      "W2119482439",
+      "W2140777058",
+      14
+    ],
+    [
+      "W2120618638",
+      "W2129134806",
+      14
+    ],
+    [
+      "W2123791568",
+      "W2166301207",
+      14
+    ],
+    [
+      "W2128974935",
+      "W2159841438",
+      14
+    ],
+    [
+      "W1568809335",
+      "W2128662472",
+      13
+    ],
+    [
+      "W1966869088",
+      "W2027076429",
+      13
+    ],
+    [
+      "W1966869088",
+      "W4248926310",
+      13
+    ],
+    [
+      "W1995835640",
+      "W2123791568",
+      13
+    ],
+    [
+      "W2003654197",
+      "W2096910467",
+      13
+    ],
+    [
+      "W2096910467",
+      "W2108616861",
+      13
+    ],
+    [
+      "W2117500413",
+      "W2128662472",
+      13
+    ],
+    [
+      "W2119659537",
+      "W2168568233",
+      13
+    ],
+    [
+      "W2123791568",
+      "W2165558852",
+      13
+    ],
+    [
+      "W2128662472",
+      "W2140241886",
+      13
+    ],
+    [
+      "W2141233322",
+      "W2142827688",
+      13
+    ],
+    [
+      "W1966869088",
+      "W2018738210",
+      12
+    ],
+    [
+      "W1966869088",
+      "W4292545669",
+      12
+    ],
+    [
+      "W2003654197",
+      "W2018738210",
+      12
+    ],
+    [
+      "W2015990656",
+      "W2120618638",
+      12
+    ],
+    [
+      "W2027076429",
+      "W2119432837",
+      12
+    ],
+    [
+      "W2096910467",
+      "W4292545669",
+      12
+    ],
+    [
+      "W2108616861",
+      "W4248926310",
+      12
+    ],
+    [
+      "W2119659537",
+      "W2142827688",
+      12
+    ],
+    [
+      "W2120618638",
+      "W2123376091",
+      12
+    ],
+    [
+      "W2128106636",
+      "W2138131209",
+      12
+    ],
+    [
+      "W1568809335",
+      "W1966869088",
+      11
+    ],
+    [
+      "W2003654197",
+      "W2108616861",
+      11
+    ],
+    [
+      "W2003654197",
+      "W2119432837",
+      11
+    ],
+    [
+      "W2015990656",
+      "W4248926310",
+      11
+    ],
+    [
+      "W2018738210",
+      "W2166301207",
+      11
+    ],
+    [
+      "W2034534447",
+      "W2140777058",
+      11
+    ],
+    [
+      "W2104256533",
+      "W2123791568",
+      11
+    ],
+    [
+      "W2108616861",
+      "W2128662472",
+      11
+    ],
+    [
+      "W2108616861",
+      "W2141233322",
+      11
+    ],
+    [
+      "W2117155762",
+      "W2141233322",
+      11
+    ],
+    [
+      "W2117500413",
+      "W2140241886",
+      11
+    ],
+    [
+      "W2120618638",
+      "W2123791568",
+      11
+    ],
+    [
+      "W2123376091",
+      "W2155479778",
+      11
+    ],
+    [
+      "W2123791568",
+      "W2155479778",
+      11
+    ],
+    [
+      "W2128974935",
+      "W4255363074",
+      11
+    ],
+    [
+      "W2165558852",
+      "W4292545669",
+      11
+    ],
+    [
+      "W1568809335",
+      "W2140241886",
+      10
+    ],
+    [
+      "W1568809335",
+      "W2168568233",
+      10
+    ],
+    [
+      "W1966869088",
+      "W2123791568",
+      10
+    ],
+    [
+      "W1966869088",
+      "W2166301207",
+      10
+    ],
+    [
+      "W2003654197",
+      "W2166301207",
+      10
+    ],
+    [
+      "W2009233285",
+      "W4255363074",
+      10
+    ],
+    [
+      "W2027076429",
+      "W2084246693",
+      10
+    ],
+    [
+      "W2084246693",
+      "W2119432837",
+      10
+    ],
+    [
+      "W2096910467",
+      "W2138131209",
+      10
+    ],
+    [
+      "W2104256533",
+      "W4248926310",
+      10
+    ],
+    [
+      "W2108616861",
+      "W2138131209",
+      10
+    ],
+    [
+      "W2108616861",
+      "W2143363557",
+      10
+    ],
+    [
+      "W2108616861",
+      "W2166301207",
+      10
+    ],
+    [
+      "W2117155762",
+      "W2168401869",
+      10
+    ],
+    [
+      "W2119659537",
+      "W2128662472",
+      10
+    ],
+    [
+      "W2119659537",
+      "W2128974935",
+      10
+    ],
+    [
+      "W2141233322",
+      "W2168401869",
+      10
+    ],
+    [
+      "W1568809335",
+      "W2128974935",
+      9
+    ],
+    [
+      "W1568809335",
+      "W2129134806",
+      9
+    ],
+    [
+      "W1568809335",
+      "W2142827688",
+      9
+    ],
+    [
+      "W2009233285",
+      "W2119482439",
+      9
+    ],
+    [
+      "W2018738210",
+      "W2141233322",
+      9
+    ],
+    [
+      "W2027076429",
+      "W3016902371",
+      9
+    ],
+    [
+      "W2084246693",
+      "W2096910467",
+      9
+    ],
+    [
+      "W2084246693",
+      "W2108616861",
+      9
+    ],
+    [
+      "W2104256533",
+      "W2108616861",
+      9
+    ],
+    [
+      "W2111945000",
+      "W2114038289",
+      9
+    ],
+    [
+      "W2119432837",
+      "W2138131209",
+      9
+    ],
+    [
+      "W2120618638",
+      "W2128974935",
+      9
+    ],
+    [
+      "W2123376091",
+      "W4248926310",
+      9
+    ],
+    [
+      "W2123791568",
+      "W2142827688",
+      9
+    ],
+    [
+      "W2128106636",
+      "W4292545669",
+      9
+    ],
+    [
+      "W1966869088",
+      "W2140241886",
+      8
+    ],
+    [
+      "W2003654197",
+      "W2084246693",
+      8
+    ],
+    [
+      "W2003654197",
+      "W2128106636",
+      8
+    ],
+    [
+      "W2003654197",
+      "W2143363557",
+      8
+    ],
+    [
+      "W2015990656",
+      "W2046411892",
+      8
+    ],
+    [
+      "W2018738210",
+      "W2140241886",
+      8
+    ],
+    [
+      "W2027076429",
+      "W2166301207",
+      8
+    ],
+    [
+      "W2108616861",
+      "W2119482439",
+      8
+    ],
+    [
+      "W2108616861",
+      "W2119858020",
+      8
+    ],
+    [
+      "W2108616861",
+      "W2140241886",
+      8
+    ],
+    [
+      "W2110777095",
+      "W2123791568",
+      8
+    ],
+    [
+      "W2111945000",
+      "W2143363557",
+      8
+    ],
+    [
+      "W2119482439",
+      "W2159841438",
+      8
+    ],
+    [
+      "W2119858020",
+      "W4248926310",
+      8
+    ],
+    [
+      "W2120618638",
+      "W2143363557",
+      8
+    ],
+    [
+      "W2123376091",
+      "W2129134806",
+      8
+    ],
+    [
+      "W2123791568",
+      "W2159841438",
+      8
+    ],
+    [
+      "W2142827688",
+      "W2168568233",
+      8
+    ],
+    [
+      "W2168568233",
+      "W4248926310",
+      8
+    ],
+    [
+      "W1966869088",
+      "W2111945000",
+      7
+    ],
+    [
+      "W1966869088",
+      "W2165558852",
+      7
+    ],
+    [
+      "W1995835640",
+      "W2123376091",
+      7
+    ],
+    [
+      "W2009233285",
+      "W2034534447",
+      7
+    ],
+    [
+      "W2015990656",
+      "W2110777095",
+      7
+    ],
+    [
+      "W2015990656",
+      "W2119858020",
+      7
+    ],
+    [
+      "W2018738210",
+      "W2044237036",
+      7
+    ],
+    [
+      "W2018738210",
+      "W2121366015",
+      7
+    ],
+    [
+      "W2018738210",
+      "W2165558852",
+      7
+    ],
+    [
+      "W2027076429",
+      "W2111945000",
+      7
+    ],
+    [
+      "W2096910467",
+      "W2165558852",
+      7
+    ],
+    [
+      "W2110777095",
+      "W2155479778",
+      7
+    ],
+    [
+      "W2117500413",
+      "W2119659537",
+      7
+    ],
+    [
+      "W2123791568",
+      "W2129134806",
+      7
+    ],
+    [
+      "W2123791568",
+      "W2140777058",
+      7
+    ],
+    [
+      "W2123791568",
+      "W2151318005",
+      7
+    ],
+    [
+      "W2128106636",
+      "W2151318005",
+      7
+    ],
+    [
+      "W2128662472",
+      "W2142827688",
+      7
+    ],
+    [
+      "W2140241886",
+      "W2165558852",
+      7
+    ],
+    [
+      "W2140241886",
+      "W2168568233",
+      7
+    ],
+    [
+      "W2140777058",
+      "W2159841438",
+      7
+    ],
+    [
+      "W2165558852",
+      "W2168401869",
+      7
+    ],
+    [
+      "W1568809335",
+      "W2117500413",
+      6
+    ],
+    [
+      "W1995835640",
+      "W2128974935",
+      6
+    ],
+    [
+      "W2034534447",
+      "W2128106636",
+      6
+    ],
+    [
+      "W2060224295",
+      "W2084246693",
+      6
+    ],
+    [
+      "W2104256533",
+      "W2151318005",
+      6
+    ],
+    [
+      "W2108616861",
+      "W2168568233",
+      6
+    ],
+    [
+      "W2110777095",
+      "W2119432837",
+      6
+    ],
+    [
+      "W2110777095",
+      "W2159841438",
+      6
+    ],
+    [
+      "W2117155762",
+      "W2119659537",
+      6
+    ],
+    [
+      "W2117155762",
+      "W2140241886",
+      6
+    ],
+    [
+      "W2117500413",
+      "W2120618638",
+      6
+    ],
+    [
+      "W2117500413",
+      "W2123791568",
+      6
+    ],
+    [
+      "W2119432837",
+      "W2151318005",
+      6
+    ],
+    [
+      "W2120107374",
+      "W2138131209",
+      6
+    ],
+    [
+      "W2120618638",
+      "W2656044294",
+      6
+    ],
+    [
+      "W2121366015",
+      "W2123791568",
+      6
+    ],
+    [
+      "W2123791568",
+      "W2476494993",
+      6
+    ],
+    [
+      "W2123791568",
+      "W4255363074",
+      6
+    ],
+    [
+      "W2142827688",
+      "W2168401869",
+      6
+    ],
+    [
+      "W1966869088",
+      "W2168401869",
+      5
+    ],
+    [
+      "W2003654197",
+      "W2135754493",
+      5
+    ],
+    [
+      "W2003654197",
+      "W2656044294",
+      5
+    ],
+    [
+      "W2027076429",
+      "W2656044294",
+      5
+    ],
+    [
+      "W2046411892",
+      "W2121366015",
+      5
+    ],
+    [
+      "W2096910467",
+      "W2114038289",
+      5
+    ],
+    [
+      "W2108616861",
+      "W2656044294",
+      5
+    ],
+    [
+      "W2119482439",
+      "W4255363074",
+      5
+    ],
+    [
+      "W2120107374",
+      "W2142405223",
+      5
+    ],
+    [
+      "W2120107374",
+      "W4292545669",
+      5
+    ],
+    [
+      "W2120618638",
+      "W3016902371",
+      5
+    ],
+    [
+      "W2121366015",
+      "W2151318005",
+      5
+    ],
+    [
+      "W2129134806",
+      "W2129270050",
+      5
+    ],
+    [
+      "W2135754493",
+      "W2141233322",
+      5
+    ],
+    [
+      "W2140777058",
+      "W4255363074",
+      5
+    ],
+    [
+      "W2141233322",
+      "W2656044294",
+      5
+    ],
+    [
+      "W3016902371",
+      "W3017894014",
+      5
+    ],
+    [
+      "W1966869088",
+      "W2044237036",
+      4
+    ],
+    [
+      "W1966869088",
+      "W2135754493",
+      4
+    ],
+    [
+      "W2003654197",
+      "W2120107374",
+      4
+    ],
+    [
+      "W2018738210",
+      "W2120107374",
+      4
+    ],
+    [
+      "W2018738210",
+      "W2476494993",
+      4
+    ],
+    [
+      "W2027076429",
+      "W2135754493",
+      4
+    ],
+    [
+      "W2027076429",
+      "W2476494993",
+      4
+    ],
+    [
+      "W2034534447",
+      "W2060224295",
+      4
+    ],
+    [
+      "W2044237036",
+      "W2046411892",
+      4
+    ],
+    [
+      "W2044237036",
+      "W2096910467",
+      4
+    ],
+    [
+      "W2044237036",
+      "W2111945000",
+      4
+    ],
+    [
+      "W2044237036",
+      "W3016902371",
+      4
+    ],
+    [
+      "W2046411892",
+      "W2114038289",
+      4
+    ],
+    [
+      "W2084246693",
+      "W3016902371",
+      4
+    ],
+    [
+      "W2096910467",
+      "W2135754493",
+      4
+    ],
+    [
+      "W2096910467",
+      "W3017894014",
+      4
+    ],
+    [
+      "W2108616861",
+      "W3016902371",
+      4
+    ],
+    [
+      "W2111945000",
+      "W2117149792",
+      4
+    ],
+    [
+      "W2114038289",
+      "W2128106636",
+      4
+    ],
+    [
+      "W2119858020",
+      "W2166301207",
+      4
+    ],
+    [
+      "W2120618638",
+      "W2129270050",
+      4
+    ],
+    [
+      "W2121366015",
+      "W2166301207",
+      4
+    ],
+    [
+      "W2123791568",
+      "W2129270050",
+      4
+    ],
+    [
+      "W2128974935",
+      "W2129270050",
+      4
+    ],
+    [
+      "W2129270050",
+      "W2143363557",
+      4
+    ],
+    [
+      "W1966869088",
+      "W2117401803",
+      3
+    ],
+    [
+      "W1966869088",
+      "W2476494993",
+      3
+    ],
+    [
+      "W1995835640",
+      "W2121366015",
+      3
+    ],
+    [
+      "W2003654197",
+      "W2142405223",
+      3
+    ],
+    [
+      "W2018738210",
+      "W2060224295",
+      3
+    ],
+    [
+      "W2018738210",
+      "W3017894014",
+      3
+    ],
+    [
+      "W2034534447",
+      "W2142405223",
+      3
+    ],
+    [
+      "W2060224295",
+      "W2120618638",
+      3
+    ],
+    [
+      "W2060224295",
+      "W3016902371",
+      3
+    ],
+    [
+      "W2096910467",
+      "W2117149792",
+      3
+    ],
+    [
+      "W2096910467",
+      "W2117401803",
+      3
+    ],
+    [
+      "W2096910467",
+      "W2476494993",
+      3
+    ],
+    [
+      "W2108616861",
+      "W3017894014",
+      3
+    ],
+    [
+      "W2110777095",
+      "W2117149792",
+      3
+    ],
+    [
+      "W2117149792",
+      "W2138131209",
+      3
+    ],
+    [
+      "W2117149792",
+      "W2165558852",
+      3
+    ],
+    [
+      "W2117401803",
+      "W2119432837",
+      3
+    ],
+    [
+      "W2117401803",
+      "W2119659537",
+      3
+    ],
+    [
+      "W2117401803",
+      "W2165558852",
+      3
+    ],
+    [
+      "W2117401803",
+      "W4292545669",
+      3
+    ],
+    [
+      "W2119432837",
+      "W3017894014",
+      3
+    ],
+    [
+      "W2123791568",
+      "W2142405223",
+      3
+    ],
+    [
+      "W2792835787",
+      "W3016902371",
+      3
+    ],
+    [
+      "W2792835787",
+      "W4292545669",
+      3
+    ]
+  ],
+  "co_cited": [
+    [
+      "W2123791568",
+      "W2129270050",
+      14
+    ],
+    [
+      "W2123791568",
+      "W2142827688",
+      12
+    ],
+    [
+      "W2119659537",
+      "W2123791568",
+      11
+    ],
+    [
+      "W2119432837",
+      "W2123791568",
+      10
+    ],
+    [
+      "W2117401803",
+      "W2123791568",
+      9
+    ],
+    [
+      "W2123791568",
+      "W2159841438",
+      9
+    ],
+    [
+      "W2123791568",
+      "W2165558852",
+      8
+    ],
+    [
+      "W2123791568",
+      "W2168401869",
+      8
+    ],
+    [
+      "W2117401803",
+      "W2119432837",
+      7
+    ],
+    [
+      "W2123791568",
+      "W2140241886",
+      7
+    ],
+    [
+      "W2046411892",
+      "W2123791568",
+      6
+    ],
+    [
+      "W2119432837",
+      "W2129270050",
+      6
+    ],
+    [
+      "W2123791568",
+      "W4255363074",
+      6
+    ],
+    [
+      "W2142827688",
+      "W2168401869",
+      6
+    ],
+    [
+      "W2159841438",
+      "W4255363074",
+      6
+    ],
+    [
+      "W2096910467",
+      "W2123791568",
+      5
+    ],
+    [
+      "W2096910467",
+      "W2129270050",
+      5
+    ],
+    [
+      "W2119432837",
+      "W2165558852",
+      5
+    ],
+    [
+      "W2123791568",
+      "W2128974935",
+      5
+    ],
+    [
+      "W2129270050",
+      "W2142827688",
+      5
+    ],
+    [
+      "W2129270050",
+      "W2165558852",
+      5
+    ],
+    [
+      "W2096910467",
+      "W2119432837",
+      4
+    ],
+    [
+      "W2096910467",
+      "W2165558852",
+      4
+    ],
+    [
+      "W2117401803",
+      "W2129270050",
+      4
+    ],
+    [
+      "W2123791568",
+      "W2143363557",
+      4
+    ],
+    [
+      "W2123791568",
+      "W2168568233",
+      4
+    ],
+    [
+      "W2128974935",
+      "W2159841438",
+      4
+    ],
+    [
+      "W2129270050",
+      "W2143363557",
+      4
+    ],
+    [
+      "W2140241886",
+      "W2142827688",
+      4
+    ],
+    [
+      "W2140241886",
+      "W2168401869",
+      4
+    ],
+    [
+      "W2143363557",
+      "W2165558852",
+      4
+    ],
+    [
+      "W2096910467",
+      "W2143363557",
+      3
+    ],
+    [
+      "W2114038289",
+      "W2123791568",
+      3
+    ],
+    [
+      "W2114038289",
+      "W2129270050",
+      3
+    ],
+    [
+      "W2117155762",
+      "W2123791568",
+      3
+    ],
+    [
+      "W2117401803",
+      "W2165558852",
+      3
+    ],
+    [
+      "W2119432837",
+      "W2143363557",
+      3
+    ],
+    [
+      "W2119432837",
+      "W2168401869",
+      3
+    ],
+    [
+      "W2119659537",
+      "W2129270050",
+      3
+    ],
+    [
+      "W2119659537",
+      "W2142827688",
+      3
+    ],
+    [
+      "W2119659537",
+      "W2165558852",
+      3
+    ],
+    [
+      "W2123791568",
+      "W2141233322",
+      3
+    ],
+    [
+      "W2128974935",
+      "W4255363074",
+      3
+    ],
+    [
+      "W2129270050",
+      "W2168401869",
+      3
+    ],
+    [
+      "W2140241886",
+      "W2165558852",
+      3
+    ],
+    [
+      "W1568809335",
+      "W2123791568",
+      2
+    ],
+    [
+      "W1568809335",
+      "W2140241886",
+      2
+    ],
+    [
+      "W1966869088",
+      "W2123791568",
+      2
+    ],
+    [
+      "W1966869088",
+      "W2140241886",
+      2
+    ],
+    [
+      "W2003654197",
+      "W2096910467",
+      2
+    ],
+    [
+      "W2003654197",
+      "W2117401803",
+      2
+    ],
+    [
+      "W2003654197",
+      "W2119432837",
+      2
+    ],
+    [
+      "W2003654197",
+      "W2123791568",
+      2
+    ],
+    [
+      "W2003654197",
+      "W2129270050",
+      2
+    ],
+    [
+      "W2009233285",
+      "W2123791568",
+      2
+    ],
+    [
+      "W2009233285",
+      "W2128974935",
+      2
+    ],
+    [
+      "W2009233285",
+      "W2159841438",
+      2
+    ],
+    [
+      "W2009233285",
+      "W4255363074",
+      2
+    ],
+    [
+      "W2018738210",
+      "W2096910467",
+      2
+    ],
+    [
+      "W2018738210",
+      "W2119432837",
+      2
+    ],
+    [
+      "W2018738210",
+      "W2123791568",
+      2
+    ],
+    [
+      "W2018738210",
+      "W2129270050",
+      2
+    ],
+    [
+      "W2018738210",
+      "W2143363557",
+      2
+    ],
+    [
+      "W2018738210",
+      "W2165558852",
+      2
+    ],
+    [
+      "W2096910467",
+      "W2117155762",
+      2
+    ],
+    [
+      "W2096910467",
+      "W2117401803",
+      2
+    ],
+    [
+      "W2104256533",
+      "W2123791568",
+      2
+    ],
+    [
+      "W2108616861",
+      "W2123791568",
+      2
+    ],
+    [
+      "W2114038289",
+      "W2117401803",
+      2
+    ],
+    [
+      "W2114038289",
+      "W2119432837",
+      2
+    ],
+    [
+      "W2114038289",
+      "W2138131209",
+      2
+    ],
+    [
+      "W2114038289",
+      "W2143363557",
+      2
+    ],
+    [
+      "W2117155762",
+      "W2129270050",
+      2
+    ],
+    [
+      "W2117155762",
+      "W2140241886",
+      2
+    ],
+    [
+      "W2117155762",
+      "W2143363557",
+      2
+    ],
+    [
+      "W2117155762",
+      "W2165558852",
+      2
+    ],
+    [
+      "W2117401803",
+      "W2119659537",
+      2
+    ],
+    [
+      "W2117401803",
+      "W2138131209",
+      2
+    ],
+    [
+      "W2117401803",
+      "W2141233322",
+      2
+    ],
+    [
+      "W2117401803",
+      "W2168401869",
+      2
+    ],
+    [
+      "W2119432837",
+      "W2138131209",
+      2
+    ],
+    [
+      "W2119659537",
+      "W2140241886",
+      2
+    ],
+    [
+      "W2123376091",
+      "W2123791568",
+      2
+    ],
+    [
+      "W2123791568",
+      "W2138131209",
+      2
+    ],
+    [
+      "W2123791568",
+      "W2140777058",
+      2
+    ],
+    [
+      "W2123791568",
+      "W2151318005",
+      2
+    ],
+    [
+      "W2123791568",
+      "W2155479778",
+      2
+    ],
+    [
+      "W2123791568",
+      "W2476494993",
+      2
+    ],
+    [
+      "W2128974935",
+      "W2140777058",
+      2
+    ],
+    [
+      "W2129270050",
+      "W2138131209",
+      2
+    ],
+    [
+      "W2129270050",
+      "W2476494993",
+      2
+    ],
+    [
+      "W2138131209",
+      "W2143363557",
+      2
+    ],
+    [
+      "W2140777058",
+      "W2159841438",
+      2
+    ],
+    [
+      "W2140777058",
+      "W4255363074",
+      2
+    ],
+    [
+      "W2142827688",
+      "W2165558852",
+      2
+    ],
+    [
+      "W2159841438",
+      "W2168401869",
+      2
+    ]
+  ]
+}

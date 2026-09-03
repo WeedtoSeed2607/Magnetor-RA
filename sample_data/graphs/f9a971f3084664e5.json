@@ -1,0 +1,3785 @@
+{
+  "query": "moral judgment",
+  "generated_at": "2026-08-08T10:17:46.364783+00:00",
+  "n_fetched": 308,
+  "boundary_leakage": 0.8304,
+  "resamples": 1000,
+  "self_citations_removed": [],
+  "nodes": [
+    {
+      "id": "W2074527410",
+      "title": "The Moral Judgment Of The Child",
+      "year": 2013,
+      "doi": "10.4324/9781315009681",
+      "url": "https://doi.org/10.4324/9781315009681",
+      "venue": null,
+      "in_degree": 56,
+      "pagerank": 0.036701,
+      "influence": 1.0,
+      "median_rank": 1.0,
+      "lo_rank": 1,
+      "hi_rank": 1,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
+    },
+    {
+      "id": "W2101856356",
+      "title": "Handbook of socialization: theory and research",
+      "year": 2007,
+      "doi": "10.5860/choice.45-0345",
+      "url": "https://doi.org/10.5860/choice.45-0345",
+      "venue": "Choice Reviews Online",
+      "in_degree": 39,
+      "pagerank": 0.01787,
+      "influence": 0.9968,
+      "median_rank": 2.0,
+      "lo_rank": 1,
+      "hi_rank": 4,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
+    },
+    {
+      "id": "W2129900561",
+      "title": "An fMRI Investigation of Emotional Engagement in Moral Judgment",
+      "year": 2001,
+      "doi": "10.1126/science.1062872",
+      "url": "https://doi.org/10.1126/science.1062872",
+      "venue": "Science",
+      "in_degree": 91,
+      "pagerank": 0.016242,
+      "influence": 0.9935,
+      "median_rank": 3.0,
+      "lo_rank": 2,
+      "hi_rank": 4,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "empirical"
+      ],
+      "facet_evidence": {
+        "empirical": [
+          "fmri",
+          "imaging",
+          "observed"
+        ]
+      },
+      "had_abstract": true
+    },
+    {
+      "id": "W2123791568",
+      "title": "The emotional dog and its rational tail: A social intuitionist approach to moral judgment.",
+      "year": 2001,
+      "doi": "10.1037/0033-295x.108.4.814",
+      "url": "https://doi.org/10.1037/0033-295x.108.4.814",
+      "venue": "Psychological Review",
+      "in_degree": 88,
+      "pagerank": 0.01624,
+      "influence": 0.9903,
+      "median_rank": 3.0,
+      "lo_rank": 2,
+      "hi_rank": 4,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "normative"
+      ],
+      "facet_evidence": {
+        "normative": [
+          "evolutionary",
+          "moral",
+          "rational"
+        ]
+      },
+      "had_abstract": true
+    },
+    {
+      "id": "W2075270873",
+      "title": "Severe disturbance of higher cognition after bilateral frontal lobe ablation",
+      "year": 1985,
+      "doi": "10.1212/wnl.35.12.1731",
+      "url": "https://doi.org/10.1212/wnl.35.12.1731",
+      "venue": "Neurology",
+      "in_degree": 10,
+      "pagerank": 0.012205,
+      "influence": 0.987,
+      "median_rank": 5.0,
+      "lo_rank": 4,
+      "hi_rank": 15,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
+    },
+    {
+      "id": "W2093410327",
+      "title": "Does the autistic child have a \u201ctheory of mind\u201d ?",
+      "year": 1985,
+      "doi": "10.1016/0010-0277(85)90022-8",
+      "url": "https://doi.org/10.1016/0010-0277(85)90022-8",
+      "venue": "Cognition",
+      "in_degree": 9,
+      "pagerank": 0.011848,
+      "influence": 0.9838,
+      "median_rank": 6.0,
+      "lo_rank": 4,
+      "hi_rank": 63,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
+    },
+    {
+      "id": "W2104139158",
+      "title": "An experimental test of the sequentiality of developmental stages in the child's moral judgments.",
+      "year": 1966,
+      "doi": "10.1037/h0023280",
+      "url": "https://doi.org/10.1037/h0023280",
+      "venue": "Journal of Personality and Social Psychology",
+      "in_degree": 9,
+      "pagerank": 0.010592,
+      "influence": 0.9805,
+      "median_rank": 7.0,
+      "lo_rank": 4,
+      "hi_rank": 23,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
+    },
+    {
+      "id": "W2142827688",
+      "title": "The Neural Bases of Cognitive Conflict and Control in Moral Judgment",
+      "year": 2004,
+      "doi": "10.1016/j.neuron.2004.09.027",
+      "url": "https://doi.org/10.1016/j.neuron.2004.09.027",
+      "venue": "Neuron",
+      "in_degree": 64,
+      "pagerank": 0.010442,
+      "influence": 0.9773,
+      "median_rank": 7.0,
+      "lo_rank": 4,
+      "hi_rank": 10,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
+    },
+    {
+      "id": "W1736767019",
+      "title": "Handbook of socialization : theory and research",
+      "year": 2007,
+      "doi": null,
+      "url": "https://openalex.org/W1736767019",
+      "venue": null,
+      "in_degree": 28,
+      "pagerank": 0.010053,
+      "influence": 0.974,
+      "median_rank": 8.0,
+      "lo_rank": 5,
+      "hi_rank": 13,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
+    },
+    {
+      "id": "W1581387623",
+      "title": "Descarte's error : emotion, reason, and the human brain",
+      "year": 1994,
+      "doi": null,
+      "url": "https://openalex.org/W1581387623",
+      "venue": "DigitalGeorgetown (Georgetown University Library)",
+      "in_degree": 20,
+      "pagerank": 0.00961,
+      "influence": 0.9708,
+      "median_rank": 9.0,
+      "lo_rank": 5,
+      "hi_rank": 16,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "normative"
+      ],
+      "facet_evidence": {
+        "normative": [
+          "rational",
+          "rationality"
+        ]
+      },
+      "had_abstract": true
+    },
+    {
+      "id": "W2055892307",
+      "title": "The Development of Social Knowledge. Morality and Convention",
+      "year": 1985,
+      "doi": "10.2307/3121515",
+      "url": "https://doi.org/10.2307/3121515",
+      "venue": "British Journal of Educational Studies",
+      "in_degree": 40,
+      "pagerank": 0.009353,
+      "influence": 0.9675,
+      "median_rank": 9.0,
+      "lo_rank": 6,
+      "hi_rank": 13,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "normative"
+      ],
+      "facet_evidence": {
+        "normative": [
+          "moral",
+          "rationality"
+        ]
+      },
+      "had_abstract": true
+    },
+    {
+      "id": "W2048517502",
+      "title": "Other minds in the brain: a functional imaging study of \u201ctheory of mind\u201d in story comprehension",
+      "year": 1995,
+      "doi": "10.1016/0010-0277(95)00692-r",
+      "url": "https://doi.org/10.1016/0010-0277(95)00692-r",
+      "venue": "Cognition",
+      "in_degree": 14,
+      "pagerank": 0.009114,
+      "influence": 0.9643,
+      "median_rank": 11.0,
+      "lo_rank": 7,
+      "hi_rank": 29,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
+    },
+    {
+      "id": "W3143515237",
+      "title": "In A Different Voice: Psychological Theory And Women's Development",
+      "year": 1982,
+      "doi": null,
+      "url": "https://openalex.org/W3143515237",
+      "venue": null,
+      "in_degree": 16,
+      "pagerank": 0.008254,
+      "influence": 0.961,
+      "median_rank": 12.0,
+      "lo_rank": 9,
+      "hi_rank": 70,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
+    },
+    {
+      "id": "W2107639039",
+      "title": "Influence of social reinforcement and the behavior of models in shaping children's moral judgment.",
+      "year": 1963,
+      "doi": "10.1037/h0044714",
+      "url": "https://doi.org/10.1037/h0044714",
+      "venue": "Journal of Abnormal & Social Psychology",
+      "in_degree": 10,
+      "pagerank": 0.007885,
+      "influence": 0.9578,
+      "median_rank": 14.0,
+      "lo_rank": 6,
+      "hi_rank": 39,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "empirical"
+      ],
+      "facet_evidence": {
+        "empirical": [
+          "experiment",
+          "experimental",
+          "observed"
+        ]
+      },
+      "had_abstract": true
+    },
+    {
+      "id": "W2068477427",
+      "title": "A cognitive developmental approach to morality: investigating the psychopath",
+      "year": 1995,
+      "doi": "10.1016/0010-0277(95)00676-p",
+      "url": "https://doi.org/10.1016/0010-0277(95)00676-p",
+      "venue": "Cognition",
+      "in_degree": 30,
+      "pagerank": 0.007751,
+      "influence": 0.9545,
+      "median_rank": 14.0,
+      "lo_rank": 8,
+      "hi_rank": 24,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
+    },
+    {
+      "id": "W4298185589",
+      "title": "The psychology of interpersonal relations.",
+      "year": 1958,
+      "doi": "10.1037/10628-000",
+      "url": "https://doi.org/10.1037/10628-000",
+      "venue": null,
+      "in_degree": 13,
+      "pagerank": 0.007625,
+      "influence": 0.9513,
+      "median_rank": 15.0,
+      "lo_rank": 11,
+      "hi_rank": 65,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
+    },
+    {
+      "id": "W2108004093",
+      "title": "Affect, culture, and morality, or is it wrong to eat your dog?",
+      "year": 1993,
+      "doi": "10.1037//0022-3514.65.4.613",
+      "url": "https://doi.org/10.1037//0022-3514.65.4.613",
+      "venue": "Journal of Personality and Social Psychology",
+      "in_degree": 35,
+      "pagerank": 0.007483,
+      "influence": 0.9481,
+      "median_rank": 15.0,
+      "lo_rank": 11,
+      "hi_rank": 22,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "normative"
+      ],
+      "facet_evidence": {
+        "normative": [
+          "moral",
+          "norms"
+        ]
+      },
+      "had_abstract": true
+    },
+    {
+      "id": "W1560460460",
+      "title": "Development in Judging Moral Issues",
+      "year": 1980,
+      "doi": "10.2307/1494347",
+      "url": "https://doi.org/10.2307/1494347",
+      "venue": "Canadian Journal of Education / Revue canadienne de l \u00e9ducation",
+      "in_degree": 19,
+      "pagerank": 0.007356,
+      "influence": 0.9448,
+      "median_rank": 16.0,
+      "lo_rank": 11,
+      "hi_rank": 25,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
+    },
+    {
+      "id": "W2076763018",
+      "title": "Mood, misattribution, and judgments of well-being: Informative and directive functions of affective states.",
+      "year": 1983,
+      "doi": "10.1037/0022-3514.45.3.513",
+      "url": "https://doi.org/10.1037/0022-3514.45.3.513",
+      "venue": "Journal of Personality and Social Psychology",
+      "in_degree": 14,
+      "pagerank": 0.00735,
+      "influence": 0.9416,
+      "median_rank": 16.0,
+      "lo_rank": 7,
+      "hi_rank": 36,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
+    },
+    {
+      "id": "W2109128719",
+      "title": "The CAD triad hypothesis: A mapping between three moral emotions (contempt, anger, disgust) and three moral codes (community, autonomy, divinity).",
+      "year": 1999,
+      "doi": "10.1037//0022-3514.76.4.574",
+      "url": "https://doi.org/10.1037//0022-3514.76.4.574",
+      "venue": "Journal of Personality and Social Psychology",
+      "in_degree": 20,
+      "pagerank": 0.006972,
+      "influence": 0.9383,
+      "median_rank": 18.0,
+      "lo_rank": 14,
+      "hi_rank": 54,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
+    },
+    {
+      "id": "W2090004916",
+      "title": "Social Interactions and the Development of Social Concepts in Preschool Children",
+      "year": 1978,
+      "doi": "10.2307/1128704",
+      "url": "https://doi.org/10.2307/1128704",
+      "venue": "Child Development",
+      "in_degree": 14,
+      "pagerank": 0.006761,
+      "influence": 0.9351,
+      "median_rank": 20.0,
+      "lo_rank": 10,
+      "hi_rank": 43,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "conceptual",
+        "empirical"
+      ],
+      "facet_evidence": {
+        "empirical": [
+          "observations",
+          "observed"
+        ],
+        "conceptual": [
+          "concepts",
+          "defining"
+        ]
+      },
+      "had_abstract": true
+    },
+    {
+      "id": "W2168401869",
+      "title": "The Role of Conscious Reasoning and Intuition in Moral Judgment",
+      "year": 2006,
+      "doi": "10.1111/j.1467-9280.2006.01834.x",
+      "url": "https://doi.org/10.1111/j.1467-9280.2006.01834.x",
+      "venue": "Psychological Science",
+      "in_degree": 51,
+      "pagerank": 0.006698,
+      "influence": 0.9318,
+      "median_rank": 20.0,
+      "lo_rank": 14,
+      "hi_rank": 26,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "normative"
+      ],
+      "facet_evidence": {
+        "normative": [
+          "goal",
+          "moral"
+        ]
+      },
+      "had_abstract": true
+    },
+    {
+      "id": "W1966891409",
+      "title": "Continuities and Discontinuities in Childhood and Adult Moral Development",
+      "year": 2009,
+      "doi": "10.1159/000270857",
+      "url": "https://doi.org/10.1159/000270857",
+      "venue": "Human Development",
+      "in_degree": 13,
+      "pagerank": 0.006694,
+      "influence": 0.9286,
+      "median_rank": 21.0,
+      "lo_rank": 11,
+      "hi_rank": 36,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
+    },
+    {
+      "id": "W2167030552",
+      "title": "The Evolution of Reciprocal Altruism",
+      "year": 1971,
+      "doi": "10.1086/406755",
+      "url": "https://doi.org/10.1086/406755",
+      "venue": "The Quarterly Review of Biology",
+      "in_degree": 15,
+      "pagerank": 0.006514,
+      "influence": 0.9253,
+      "median_rank": 22.0,
+      "lo_rank": 16,
+      "hi_rank": 50,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
+    },
+    {
+      "id": "W2140241886",
+      "title": "Damage to the prefrontal cortex increases utilitarian moral judgements",
+      "year": 2007,
+      "doi": "10.1038/nature05631",
+      "url": "https://doi.org/10.1038/nature05631",
+      "venue": "Nature",
+      "in_degree": 49,
+      "pagerank": 0.006488,
+      "influence": 0.9221,
+      "median_rank": 22.0,
+      "lo_rank": 15,
+      "hi_rank": 28,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
+    },
+    {
+      "id": "W1991911963",
+      "title": "Individuals with sociopathic behavior caused by frontal damage fail to respond autonomically to social stimuli",
+      "year": 1990,
+      "doi": "10.1016/0166-4328(90)90144-4",
+      "url": "https://doi.org/10.1016/0166-4328(90)90144-4",
+      "venue": "Behavioural Brain Research",
+      "in_degree": 9,
+      "pagerank": 0.006403,
+      "influence": 0.9188,
+      "median_rank": 23.0,
+      "lo_rank": 8,
+      "hi_rank": 60,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
+    },
+    {
+      "id": "W1492615455",
+      "title": "The Emergence of morality in young children",
+      "year": 1988,
+      "doi": "10.5860/choice.26-1805",
+      "url": "https://doi.org/10.5860/choice.26-1805",
+      "venue": "Choice Reviews Online",
+      "in_degree": 24,
+      "pagerank": 0.006371,
+      "influence": 0.9156,
+      "median_rank": 23.0,
+      "lo_rank": 16,
+      "hi_rank": 35,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "normative"
+      ],
+      "facet_evidence": {
+        "normative": [
+          "ethical",
+          "moral"
+        ]
+      },
+      "had_abstract": true
+    },
+    {
+      "id": "W4253968766",
+      "title": "Affect, culture, and morality, or is it wrong to eat your dog?",
+      "year": 1993,
+      "doi": "10.1037/0022-3514.65.4.613",
+      "url": "https://doi.org/10.1037/0022-3514.65.4.613",
+      "venue": "Journal of Personality and Social Psychology",
+      "in_degree": 32,
+      "pagerank": 0.006184,
+      "influence": 0.9123,
+      "median_rank": 25.0,
+      "lo_rank": 16,
+      "hi_rank": 33,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
+    },
+    {
+      "id": "W1591422284",
+      "title": "A Treatise of Human Nature",
+      "year": 1739,
+      "doi": "10.1017/cbo9780511620409.040",
+      "url": "https://doi.org/10.1017/cbo9780511620409.040",
+      "venue": "Cambridge University Press eBooks",
+      "in_degree": 14,
+      "pagerank": 0.006012,
+      "influence": 0.9091,
+      "median_rank": 26.0,
+      "lo_rank": 17,
+      "hi_rank": 43,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
+    },
+    {
+      "id": "W2119659537",
+      "title": "How (and where) does moral judgment work?",
+      "year": 2002,
+      "doi": "10.1016/s1364-6613(02)02011-9",
+      "url": "https://doi.org/10.1016/s1364-6613(02)02011-9",
+      "venue": "Trends in Cognitive Sciences",
+      "in_degree": 29,
+      "pagerank": 0.005916,
+      "influence": 0.9058,
+      "median_rank": 27.5,
+      "lo_rank": 20,
+      "hi_rank": 37,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
+    },
+    {
+      "id": "W1500891748",
+      "title": "Impairment of social and moral behavior related to early damage in human prefrontal cortex",
+      "year": 1999,
+      "doi": "10.1038/14833",
+      "url": "https://doi.org/10.1038/14833",
+      "venue": "Nature Neuroscience",
+      "in_degree": 19,
+      "pagerank": 0.005783,
+      "influence": 0.9026,
+      "median_rank": 29.0,
+      "lo_rank": 19,
+      "hi_rank": 39,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
+    },
+    {
+      "id": "W1986936900",
+      "title": "The Psychology of Interpersonal Relations.",
+      "year": 1958,
+      "doi": "10.2307/2089062",
+      "url": "https://doi.org/10.2307/2089062",
+      "venue": "American Sociological Review",
+      "in_degree": 15,
+      "pagerank": 0.005781,
+      "influence": 0.8994,
+      "median_rank": 29.0,
+      "lo_rank": 15,
+      "hi_rank": 49,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
+    },
+    {
+      "id": "W655492449",
+      "title": "The measurement of moral judgment",
+      "year": 1987,
+      "doi": null,
+      "url": "https://openalex.org/W655492449",
+      "venue": null,
+      "in_degree": 14,
+      "pagerank": 0.005755,
+      "influence": 0.8961,
+      "median_rank": 28.0,
+      "lo_rank": 16,
+      "hi_rank": 55,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "normative"
+      ],
+      "facet_evidence": {
+        "normative": [
+          "moral",
+          "utility"
+        ]
+      },
+      "had_abstract": true
+    },
+    {
+      "id": "W1966494669",
+      "title": "Culpable control and the psychology of blame.",
+      "year": 2000,
+      "doi": "10.1037/0033-2909.126.4.556",
+      "url": "https://doi.org/10.1037/0033-2909.126.4.556",
+      "venue": "Psychological Bulletin",
+      "in_degree": 15,
+      "pagerank": 0.005666,
+      "influence": 0.8929,
+      "median_rank": 31.0,
+      "lo_rank": 16,
+      "hi_rank": 66,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
+    },
+    {
+      "id": "W2138970402",
+      "title": "Sex Differences in the Development of Moral Reasoning: A Critical Review",
+      "year": 1984,
+      "doi": "10.2307/1130121",
+      "url": "https://doi.org/10.2307/1130121",
+      "venue": "Child Development",
+      "in_degree": 11,
+      "pagerank": 0.005514,
+      "influence": 0.8896,
+      "median_rank": 32.0,
+      "lo_rank": 17,
+      "hi_rank": 63,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
+    },
+    {
+      "id": "W1974480006",
+      "title": "Preserved access and processing of social knowledge in a patient with acquired sociopathy due to ventromedial frontal damage",
+      "year": 1991,
+      "doi": "10.1016/0028-3932(91)90037-9",
+      "url": "https://doi.org/10.1016/0028-3932(91)90037-9",
+      "venue": "Neuropsychologia",
+      "in_degree": 11,
+      "pagerank": 0.00544,
+      "influence": 0.8864,
+      "median_rank": 32.0,
+      "lo_rank": 20,
+      "hi_rank": 57,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
+    },
+    {
+      "id": "W2168568233",
+      "title": "The Neural Correlates of Moral Sensitivity: A Functional Magnetic Resonance Imaging Investigation of Basic and Moral Emotions",
+      "year": 2002,
+      "doi": "10.1523/jneurosci.22-07-02730.2002",
+      "url": "https://doi.org/10.1523/jneurosci.22-07-02730.2002",
+      "venue": "Journal of Neuroscience",
+      "in_degree": 20,
+      "pagerank": 0.005387,
+      "influence": 0.8831,
+      "median_rank": 34.0,
+      "lo_rank": 22,
+      "hi_rank": 52,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "mechanistic",
+        "normative"
+      ],
+      "facet_evidence": {
+        "mechanistic": [
+          "cortex",
+          "mechanism",
+          "neural"
+        ],
+        "normative": [
+          "moral",
+          "values"
+        ]
+      },
+      "had_abstract": true
+    },
+    {
+      "id": "W2485145549",
+      "title": "FROM IS TO OUGHT: How to Commit the Naturalistic Fallacy and Get Away with It in the Study of Moral Development",
+      "year": 1971,
+      "doi": "10.1016/b978-0-12-498640-4.50011-1",
+      "url": "https://doi.org/10.1016/b978-0-12-498640-4.50011-1",
+      "venue": "Elsevier eBooks",
+      "in_degree": 14,
+      "pagerank": 0.005356,
+      "influence": 0.8799,
+      "median_rank": 33.0,
+      "lo_rank": 22,
+      "hi_rank": 56,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "normative"
+      ],
+      "facet_evidence": {
+        "normative": [
+          "moral",
+          "ought"
+        ]
+      },
+      "had_abstract": false
+    },
+    {
+      "id": "W2129270050",
+      "title": "Hypnotic Disgust Makes Moral Judgments More Severe",
+      "year": 2005,
+      "doi": "10.1111/j.1467-9280.2005.01614.x",
+      "url": "https://doi.org/10.1111/j.1467-9280.2005.01614.x",
+      "venue": "Psychological Science",
+      "in_degree": 30,
+      "pagerank": 0.005302,
+      "influence": 0.8766,
+      "median_rank": 35.0,
+      "lo_rank": 25,
+      "hi_rank": 46,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
+    },
+    {
+      "id": "W2002001815",
+      "title": "Level of moral development as a determinant of preference and comprehension of moral judgments made by others1",
+      "year": 1969,
+      "doi": "10.1111/j.1467-6494.1969.tb01742.x",
+      "url": "https://doi.org/10.1111/j.1467-6494.1969.tb01742.x",
+      "venue": "Journal of Personality",
+      "in_degree": 6,
+      "pagerank": 0.005118,
+      "influence": 0.8734,
+      "median_rank": 38.0,
+      "lo_rank": 17,
+      "hi_rank": 78,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
+    },
+    {
+      "id": "W138047100",
+      "title": "In a Different Voice",
+      "year": 1993,
+      "doi": "10.1093/oso/9780192892706.003.0024",
+      "url": "https://doi.org/10.1093/oso/9780192892706.003.0024",
+      "venue": null,
+      "in_degree": 12,
+      "pagerank": 0.005081,
+      "influence": 0.8701,
+      "median_rank": 37.0,
+      "lo_rank": 27,
+      "hi_rank": 64,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "empirical",
+        "normative"
+      ],
+      "facet_evidence": {
+        "empirical": [
+          "observation",
+          "sample"
+        ],
+        "normative": [
+          "moral",
+          "selection"
+        ]
+      },
+      "had_abstract": true
+    },
+    {
+      "id": "W1813376734",
+      "title": "Judgments of Responsibility: A Foundation for a Theory of Social Conduct",
+      "year": 1995,
+      "doi": null,
+      "url": "https://openalex.org/W1813376734",
+      "venue": null,
+      "in_degree": 15,
+      "pagerank": 0.005072,
+      "influence": 0.8669,
+      "median_rank": 38.0,
+      "lo_rank": 24,
+      "hi_rank": 73,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
+    },
+    {
+      "id": "W3121819056",
+      "title": "Intentional action and side effects in ordinary language",
+      "year": 2003,
+      "doi": "10.1111/1467-8284.00419",
+      "url": "https://doi.org/10.1111/1467-8284.00419",
+      "venue": "Analysis",
+      "in_degree": 10,
+      "pagerank": 0.004979,
+      "influence": 0.8636,
+      "median_rank": 40.0,
+      "lo_rank": 27,
+      "hi_rank": 93,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
+    },
+    {
+      "id": "W2164558494",
+      "title": "Telling more than we can know: Verbal reports on mental processes.",
+      "year": 1977,
+      "doi": "10.1037/0033-295x.84.3.231",
+      "url": "https://doi.org/10.1037/0033-295x.84.3.231",
+      "venue": "Psychological Review",
+      "in_degree": 15,
+      "pagerank": 0.004966,
+      "influence": 0.8604,
+      "median_rank": 39.0,
+      "lo_rank": 30,
+      "hi_rank": 60,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
+    },
+    {
+      "id": "W2130142026",
+      "title": "The unbearable automaticity of being.",
+      "year": 1999,
+      "doi": "10.1037/0003-066x.54.7.462",
+      "url": "https://doi.org/10.1037/0003-066x.54.7.462",
+      "venue": "American Psychologist",
+      "in_degree": 10,
+      "pagerank": 0.004964,
+      "influence": 0.8571,
+      "median_rank": 40.0,
+      "lo_rank": 28,
+      "hi_rank": 65,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
+    },
+    {
+      "id": "W595569460",
+      "title": "Morality, moral behavior, and moral development",
+      "year": 1984,
+      "doi": null,
+      "url": "https://openalex.org/W595569460",
+      "venue": "Wiley eBooks",
+      "in_degree": 15,
+      "pagerank": 0.00495,
+      "influence": 0.8539,
+      "median_rank": 40.0,
+      "lo_rank": 26,
+      "hi_rank": 61,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
+    },
+    {
+      "id": "W2141233322",
+      "title": "Cognitive load selectively interferes with utilitarian moral judgment",
+      "year": 2008,
+      "doi": "10.1016/j.cognition.2007.11.004",
+      "url": "https://doi.org/10.1016/j.cognition.2007.11.004",
+      "venue": "Cognition",
+      "in_degree": 32,
+      "pagerank": 0.004874,
+      "influence": 0.8506,
+      "median_rank": 42.0,
+      "lo_rank": 32,
+      "hi_rank": 55,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
+    },
+    {
+      "id": "W2089012547",
+      "title": "Killing, Letting Die, and the Trolley Problem",
+      "year": 1976,
+      "doi": "10.5840/monist197659224",
+      "url": "https://doi.org/10.5840/monist197659224",
+      "venue": "The Monist",
+      "in_degree": 10,
+      "pagerank": 0.004872,
+      "influence": 0.8474,
+      "median_rank": 41.0,
+      "lo_rank": 22,
+      "hi_rank": 80,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
+    },
+    {
+      "id": "W1614387558",
+      "title": "Culture and moral development",
+      "year": 1990,
+      "doi": "10.1017/cbo9781139173728.005",
+      "url": "https://doi.org/10.1017/cbo9781139173728.005",
+      "venue": "Cambridge University Press eBooks",
+      "in_degree": 16,
+      "pagerank": 0.004868,
+      "influence": 0.8442,
+      "median_rank": 41.0,
+      "lo_rank": 29,
+      "hi_rank": 69,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
+    },
+    {
+      "id": "W171450771",
+      "title": "The Development of Toddlers' Moral and Conventional Judgments.",
+      "year": 1990,
+      "doi": null,
+      "url": "https://openalex.org/W171450771",
+      "venue": "Merrill-palmer Quarterly",
+      "in_degree": 10,
+      "pagerank": 0.004766,
+      "influence": 0.8409,
+      "median_rank": 43.0,
+      "lo_rank": 26,
+      "hi_rank": 76,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
+    },
+    {
+      "id": "W2069613430",
+      "title": "Bridging moral cognition and moral action: A critical review of the literature.",
+      "year": 1980,
+      "doi": "10.1037/0033-2909.88.1.1",
+      "url": "https://doi.org/10.1037/0033-2909.88.1.1",
+      "venue": "Psychological Bulletin",
+      "in_degree": 11,
+      "pagerank": 0.004732,
+      "influence": 0.8377,
+      "median_rank": 44.0,
+      "lo_rank": 30,
+      "hi_rank": 76,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
+    },
+    {
+      "id": "W113059328",
+      "title": "The social world of the child",
+      "year": 1977,
+      "doi": null,
+      "url": "https://openalex.org/W113059328",
+      "venue": null,
+      "in_degree": 10,
+      "pagerank": 0.00472,
+      "influence": 0.8344,
+      "median_rank": 43.0,
+      "lo_rank": 29,
+      "hi_rank": 78,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
+    },
+    {
+      "id": "W2158303226",
+      "title": "Functional Networks in Emotional Moral and Nonmoral Social Judgments",
+      "year": 2002,
+      "doi": "10.1006/nimg.2002.1118",
+      "url": "https://doi.org/10.1006/nimg.2002.1118",
+      "venue": "NeuroImage",
+      "in_degree": 17,
+      "pagerank": 0.004555,
+      "influence": 0.8312,
+      "median_rank": 47.0,
+      "lo_rank": 32,
+      "hi_rank": 67,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
+    },
+    {
+      "id": "W183173049",
+      "title": "Essays on moral development",
+      "year": 1981,
+      "doi": null,
+      "url": "https://openalex.org/W183173049",
+      "venue": null,
+      "in_degree": 12,
+      "pagerank": 0.004547,
+      "influence": 0.8279,
+      "median_rank": 48.0,
+      "lo_rank": 39,
+      "hi_rank": 100,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
+    },
+    {
+      "id": "W4246964539",
+      "title": "The CAD triad hypothesis: A mapping between three moral emotions (contempt, anger, disgust) and three moral codes (community, autonomy, divinity).",
+      "year": 1999,
+      "doi": "10.1037/0022-3514.76.4.574",
+      "url": "https://doi.org/10.1037/0022-3514.76.4.574",
+      "venue": "Journal of Personality and Social Psychology",
+      "in_degree": 17,
+      "pagerank": 0.004349,
+      "influence": 0.8247,
+      "median_rank": 51.0,
+      "lo_rank": 38,
+      "hi_rank": 87,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
+    },
+    {
+      "id": "W2053444187",
+      "title": "Reading the mind in cartoons and stories: an fMRI study of \u2018theory of mind\u2019 in verbal and nonverbal tasks",
+      "year": 2000,
+      "doi": "10.1016/s0028-3932(99)00053-6",
+      "url": "https://doi.org/10.1016/s0028-3932(99)00053-6",
+      "venue": "Neuropsychologia",
+      "in_degree": 9,
+      "pagerank": 0.004338,
+      "influence": 0.8214,
+      "median_rank": 52.0,
+      "lo_rank": 31,
+      "hi_rank": 92,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
+    },
+    {
+      "id": "W2107544549",
+      "title": "The Neural Basis of Economic Decision-Making in the Ultimatum Game",
+      "year": 2003,
+      "doi": "10.1126/science.1082976",
+      "url": "https://doi.org/10.1126/science.1082976",
+      "venue": "Science",
+      "in_degree": 12,
+      "pagerank": 0.004301,
+      "influence": 0.8182,
+      "median_rank": 52.0,
+      "lo_rank": 36,
+      "hi_rank": 89,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "mechanistic"
+      ],
+      "facet_evidence": {
+        "mechanistic": [
+          "cortex",
+          "neural",
+          "substrate"
+        ]
+      },
+      "had_abstract": true
+    },
+    {
+      "id": "W2129064092",
+      "title": "Manipulations of Emotional Context Shape Moral Judgment",
+      "year": 2006,
+      "doi": "10.1111/j.1467-9280.2006.01731.x",
+      "url": "https://doi.org/10.1111/j.1467-9280.2006.01731.x",
+      "venue": "Psychological Science",
+      "in_degree": 25,
+      "pagerank": 0.004286,
+      "influence": 0.8149,
+      "median_rank": 53.0,
+      "lo_rank": 42,
+      "hi_rank": 71,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
+    },
+    {
+      "id": "W2124077410",
+      "title": "Ethical Decision Making by Individuals in Organizations: An Issue-Contingent Model",
+      "year": 1991,
+      "doi": "10.5465/amr.1991.4278958",
+      "url": "https://doi.org/10.5465/amr.1991.4278958",
+      "venue": "Academy of Management Review",
+      "in_degree": 8,
+      "pagerank": 0.004283,
+      "influence": 0.8117,
+      "median_rank": 54.0,
+      "lo_rank": 38,
+      "hi_rank": 106,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "normative"
+      ],
+      "facet_evidence": {
+        "normative": [
+          "ethical",
+          "moral"
+        ]
+      },
+      "had_abstract": true
+    },
+    {
+      "id": "W2008412677",
+      "title": "Preschool Children's Conceptions of Moral and Social Rules",
+      "year": 1981,
+      "doi": "10.2307/1129527",
+      "url": "https://doi.org/10.2307/1129527",
+      "venue": "Child Development",
+      "in_degree": 14,
+      "pagerank": 0.004215,
+      "influence": 0.8084,
+      "median_rank": 56.0,
+      "lo_rank": 40,
+      "hi_rank": 86,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
+    }
+  ],
+  "edges": [
+    [
+      "W2123791568",
+      "W113059328"
+    ],
+    [
+      "W2123791568",
+      "W1492615455"
+    ],
+    [
+      "W2123791568",
+      "W1500891748"
+    ],
+    [
+      "W2123791568",
+      "W1560460460"
+    ],
+    [
+      "W2123791568",
+      "W1581387623"
+    ],
+    [
+      "W2123791568",
+      "W1591422284"
+    ],
+    [
+      "W2123791568",
+      "W1991911963"
+    ],
+    [
+      "W2123791568",
+      "W2055892307"
+    ],
+    [
+      "W2123791568",
+      "W2069613430"
+    ],
+    [
+      "W2123791568",
+      "W2076763018"
+    ],
+    [
+      "W2123791568",
+      "W2090004916"
+    ],
+    [
+      "W2123791568",
+      "W2101856356"
+    ],
+    [
+      "W2123791568",
+      "W2108004093"
+    ],
+    [
+      "W2123791568",
+      "W2129900561"
+    ],
+    [
+      "W2123791568",
+      "W2130142026"
+    ],
+    [
+      "W2123791568",
+      "W2164558494"
+    ],
+    [
+      "W2123791568",
+      "W2167030552"
+    ],
+    [
+      "W2123791568",
+      "W2485145549"
+    ],
+    [
+      "W2123791568",
+      "W4253968766"
+    ],
+    [
+      "W2142827688",
+      "W1581387623"
+    ],
+    [
+      "W2142827688",
+      "W1591422284"
+    ],
+    [
+      "W2142827688",
+      "W1736767019"
+    ],
+    [
+      "W2142827688",
+      "W2101856356"
+    ],
+    [
+      "W2142827688",
+      "W2107544549"
+    ],
+    [
+      "W2142827688",
+      "W2109128719"
+    ],
+    [
+      "W2142827688",
+      "W2119659537"
+    ],
+    [
+      "W2142827688",
+      "W2123791568"
+    ],
+    [
+      "W2142827688",
+      "W2129900561"
+    ],
+    [
+      "W2142827688",
+      "W2130142026"
+    ],
+    [
+      "W2142827688",
+      "W4246964539"
+    ],
+    [
+      "W2119659537",
+      "W1500891748"
+    ],
+    [
+      "W2119659537",
+      "W1581387623"
+    ],
+    [
+      "W2119659537",
+      "W1736767019"
+    ],
+    [
+      "W2119659537",
+      "W2048517502"
+    ],
+    [
+      "W2119659537",
+      "W2053444187"
+    ],
+    [
+      "W2119659537",
+      "W2068477427"
+    ],
+    [
+      "W2119659537",
+      "W2101856356"
+    ],
+    [
+      "W2119659537",
+      "W2123791568"
+    ],
+    [
+      "W2119659537",
+      "W2129900561"
+    ],
+    [
+      "W2119659537",
+      "W2130142026"
+    ],
+    [
+      "W2119659537",
+      "W2158303226"
+    ],
+    [
+      "W2119659537",
+      "W2164558494"
+    ],
+    [
+      "W2119659537",
+      "W2167030552"
+    ],
+    [
+      "W2119659537",
+      "W2168568233"
+    ],
+    [
+      "W2141233322",
+      "W1736767019"
+    ],
+    [
+      "W2141233322",
+      "W2055892307"
+    ],
+    [
+      "W2141233322",
+      "W2068477427"
+    ],
+    [
+      "W2141233322",
+      "W2101856356"
+    ],
+    [
+      "W2141233322",
+      "W2109128719"
+    ],
+    [
+      "W2141233322",
+      "W2123791568"
+    ],
+    [
+      "W2141233322",
+      "W2129064092"
+    ],
+    [
+      "W2141233322",
+      "W2129900561"
+    ],
+    [
+      "W2141233322",
+      "W2140241886"
+    ],
+    [
+      "W2141233322",
+      "W2142827688"
+    ],
+    [
+      "W2141233322",
+      "W2168401869"
+    ],
+    [
+      "W2141233322",
+      "W4246964539"
+    ],
+    [
+      "W2168401869",
+      "W2101856356"
+    ],
+    [
+      "W2168401869",
+      "W2119659537"
+    ],
+    [
+      "W2168401869",
+      "W2123791568"
+    ],
+    [
+      "W2168401869",
+      "W2129270050"
+    ],
+    [
+      "W2168401869",
+      "W2129900561"
+    ],
+    [
+      "W2168401869",
+      "W2130142026"
+    ],
+    [
+      "W2168401869",
+      "W2142827688"
+    ],
+    [
+      "W2129270050",
+      "W1581387623"
+    ],
+    [
+      "W2129270050",
+      "W1591422284"
+    ],
+    [
+      "W2129270050",
+      "W2076763018"
+    ],
+    [
+      "W2129270050",
+      "W2123791568"
+    ],
+    [
+      "W2129064092",
+      "W2123791568"
+    ],
+    [
+      "W2129064092",
+      "W2129900561"
+    ],
+    [
+      "W2129064092",
+      "W2142827688"
+    ],
+    [
+      "W2107639039",
+      "W2074527410"
+    ],
+    [
+      "W2002001815",
+      "W2104139158"
+    ],
+    [
+      "W2158303226",
+      "W138047100"
+    ],
+    [
+      "W2158303226",
+      "W655492449"
+    ],
+    [
+      "W2158303226",
+      "W1500891748"
+    ],
+    [
+      "W2158303226",
+      "W2048517502"
+    ],
+    [
+      "W2158303226",
+      "W2068477427"
+    ],
+    [
+      "W2158303226",
+      "W2075270873"
+    ],
+    [
+      "W2158303226",
+      "W2129900561"
+    ],
+    [
+      "W2140241886",
+      "W183173049"
+    ],
+    [
+      "W2140241886",
+      "W1500891748"
+    ],
+    [
+      "W2140241886",
+      "W1581387623"
+    ],
+    [
+      "W2140241886",
+      "W1974480006"
+    ],
+    [
+      "W2140241886",
+      "W1991911963"
+    ],
+    [
+      "W2140241886",
+      "W2068477427"
+    ],
+    [
+      "W2140241886",
+      "W2123791568"
+    ],
+    [
+      "W2140241886",
+      "W2129064092"
+    ],
+    [
+      "W2140241886",
+      "W2129270050"
+    ],
+    [
+      "W2140241886",
+      "W2129900561"
+    ],
+    [
+      "W2140241886",
+      "W2142827688"
+    ],
+    [
+      "W2140241886",
+      "W2158303226"
+    ],
+    [
+      "W2140241886",
+      "W2168401869"
+    ],
+    [
+      "W2108004093",
+      "W1492615455"
+    ],
+    [
+      "W2108004093",
+      "W1614387558"
+    ],
+    [
+      "W2108004093",
+      "W2055892307"
+    ],
+    [
+      "W2108004093",
+      "W2090004916"
+    ],
+    [
+      "W2108004093",
+      "W2101856356"
+    ],
+    [
+      "W2108004093",
+      "W2138970402"
+    ],
+    [
+      "W2108004093",
+      "W2164558494"
+    ],
+    [
+      "W2108004093",
+      "W2485145549"
+    ],
+    [
+      "W2068477427",
+      "W171450771"
+    ],
+    [
+      "W2068477427",
+      "W1492615455"
+    ],
+    [
+      "W2068477427",
+      "W2008412677"
+    ],
+    [
+      "W2068477427",
+      "W2055892307"
+    ],
+    [
+      "W2068477427",
+      "W2069613430"
+    ],
+    [
+      "W2068477427",
+      "W2090004916"
+    ],
+    [
+      "W2068477427",
+      "W2093410327"
+    ],
+    [
+      "W2168568233",
+      "W138047100"
+    ],
+    [
+      "W2168568233",
+      "W1500891748"
+    ],
+    [
+      "W2168568233",
+      "W1581387623"
+    ],
+    [
+      "W2168568233",
+      "W1974480006"
+    ],
+    [
+      "W2168568233",
+      "W2048517502"
+    ],
+    [
+      "W2168568233",
+      "W2068477427"
+    ],
+    [
+      "W2168568233",
+      "W2075270873"
+    ],
+    [
+      "W2168568233",
+      "W2109128719"
+    ],
+    [
+      "W2168568233",
+      "W2123791568"
+    ],
+    [
+      "W2168568233",
+      "W2129900561"
+    ],
+    [
+      "W2168568233",
+      "W4246964539"
+    ],
+    [
+      "W2109128719",
+      "W1492615455"
+    ],
+    [
+      "W2109128719",
+      "W1591422284"
+    ],
+    [
+      "W2109128719",
+      "W1614387558"
+    ],
+    [
+      "W2109128719",
+      "W2055892307"
+    ],
+    [
+      "W2109128719",
+      "W2101856356"
+    ],
+    [
+      "W2109128719",
+      "W2108004093"
+    ],
+    [
+      "W2109128719",
+      "W2167030552"
+    ],
+    [
+      "W1500891748",
+      "W655492449"
+    ],
+    [
+      "W1500891748",
+      "W1974480006"
+    ],
+    [
+      "W1966494669",
+      "W1591422284"
+    ],
+    [
+      "W1966494669",
+      "W1813376734"
+    ],
+    [
+      "W1966494669",
+      "W1986936900"
+    ],
+    [
+      "W1966494669",
+      "W2074527410"
+    ],
+    [
+      "W1966494669",
+      "W2130142026"
+    ],
+    [
+      "W1966494669",
+      "W4298185589"
+    ],
+    [
+      "W2069613430",
+      "W113059328"
+    ],
+    [
+      "W2069613430",
+      "W2074527410"
+    ],
+    [
+      "W2069613430",
+      "W2101856356"
+    ],
+    [
+      "W138047100",
+      "W3143515237"
+    ],
+    [
+      "W1986936900",
+      "W2074527410"
+    ],
+    [
+      "W2130142026",
+      "W1581387623"
+    ],
+    [
+      "W2130142026",
+      "W2076763018"
+    ],
+    [
+      "W2090004916",
+      "W2074527410"
+    ],
+    [
+      "W2090004916",
+      "W2101856356"
+    ],
+    [
+      "W2048517502",
+      "W2093410327"
+    ],
+    [
+      "W2008412677",
+      "W2074527410"
+    ],
+    [
+      "W2008412677",
+      "W2090004916"
+    ],
+    [
+      "W1974480006",
+      "W1991911963"
+    ],
+    [
+      "W1974480006",
+      "W2075270873"
+    ],
+    [
+      "W2485145549",
+      "W1736767019"
+    ],
+    [
+      "W2485145549",
+      "W1966891409"
+    ],
+    [
+      "W2485145549",
+      "W2002001815"
+    ],
+    [
+      "W2485145549",
+      "W2104139158"
+    ],
+    [
+      "W2138970402",
+      "W1560460460"
+    ],
+    [
+      "W2138970402",
+      "W1966891409"
+    ],
+    [
+      "W2138970402",
+      "W2101856356"
+    ],
+    [
+      "W2138970402",
+      "W3143515237"
+    ],
+    [
+      "W171450771",
+      "W113059328"
+    ],
+    [
+      "W171450771",
+      "W2008412677"
+    ],
+    [
+      "W171450771",
+      "W2055892307"
+    ],
+    [
+      "W171450771",
+      "W2074527410"
+    ],
+    [
+      "W171450771",
+      "W2090004916"
+    ],
+    [
+      "W1991911963",
+      "W2075270873"
+    ],
+    [
+      "W2053444187",
+      "W2048517502"
+    ],
+    [
+      "W2124077410",
+      "W595569460"
+    ],
+    [
+      "W2124077410",
+      "W1560460460"
+    ],
+    [
+      "W2124077410",
+      "W1986936900"
+    ],
+    [
+      "W2124077410",
+      "W2069613430"
+    ],
+    [
+      "W2124077410",
+      "W2101856356"
+    ],
+    [
+      "W2124077410",
+      "W4298185589"
+    ]
+  ],
+  "biblio_coupled": [
+    [
+      "W2123791568",
+      "W2130142026",
+      22
+    ],
+    [
+      "W2119659537",
+      "W2123791568",
+      18
+    ],
+    [
+      "W2108004093",
+      "W2123791568",
+      17
+    ],
+    [
+      "W2158303226",
+      "W2168568233",
+      16
+    ],
+    [
+      "W2109128719",
+      "W2123791568",
+      15
+    ],
+    [
+      "W2119659537",
+      "W2158303226",
+      14
+    ],
+    [
+      "W2119659537",
+      "W2168568233",
+      13
+    ],
+    [
+      "W2141233322",
+      "W2142827688",
+      13
+    ],
+    [
+      "W2119659537",
+      "W2142827688",
+      12
+    ],
+    [
+      "W2108004093",
+      "W2109128719",
+      10
+    ],
+    [
+      "W1974480006",
+      "W1991911963",
+      9
+    ],
+    [
+      "W2048517502",
+      "W2053444187",
+      9
+    ],
+    [
+      "W2068477427",
+      "W2108004093",
+      9
+    ],
+    [
+      "W2069613430",
+      "W2138970402",
+      9
+    ],
+    [
+      "W2123791568",
+      "W2124077410",
+      8
+    ],
+    [
+      "W2142827688",
+      "W2168568233",
+      8
+    ],
+    [
+      "W171450771",
+      "W2068477427",
+      7
+    ],
+    [
+      "W1986936900",
+      "W2130142026",
+      5
+    ],
+    [
+      "W2130142026",
+      "W2142827688",
+      5
+    ],
+    [
+      "W1500891748",
+      "W2068477427",
+      4
+    ],
+    [
+      "W1966494669",
+      "W2130142026",
+      4
+    ],
+    [
+      "W1986936900",
+      "W2069613430",
+      4
+    ],
+    [
+      "W2008412677",
+      "W2068477427",
+      4
+    ],
+    [
+      "W2069613430",
+      "W2090004916",
+      4
+    ],
+    [
+      "W2090004916",
+      "W2123791568",
+      4
+    ],
+    [
+      "W2107544549",
+      "W2142827688",
+      4
+    ],
+    [
+      "W2123791568",
+      "W2129270050",
+      4
+    ],
+    [
+      "W2129270050",
+      "W2130142026",
+      4
+    ],
+    [
+      "W2129900561",
+      "W2142827688",
+      4
+    ],
+    [
+      "W1500891748",
+      "W1974480006",
+      3
+    ],
+    [
+      "W2053444187",
+      "W2158303226",
+      3
+    ],
+    [
+      "W2119659537",
+      "W2129900561",
+      3
+    ],
+    [
+      "W2123791568",
+      "W2164558494",
+      3
+    ],
+    [
+      "W2129900561",
+      "W2158303226",
+      3
+    ],
+    [
+      "W2130142026",
+      "W2164558494",
+      3
+    ]
+  ],
+  "co_cited": [
+    [
+      "W2123791568",
+      "W2129900561",
+      64
+    ],
+    [
+      "W2129900561",
+      "W2142827688",
+      60
+    ],
+    [
+      "W2129900561",
+      "W2168401869",
+      48
+    ],
+    [
+      "W2129900561",
+      "W2140241886",
+      45
+    ],
+    [
+      "W2123791568",
+      "W2142827688",
+      44
+    ],
+    [
+      "W2123791568",
+      "W2168401869",
+      40
+    ],
+    [
+      "W2140241886",
+      "W2142827688",
+      40
+    ],
+    [
+      "W2142827688",
+      "W2168401869",
+      40
+    ],
+    [
+      "W2140241886",
+      "W2168401869",
+      32
+    ],
+    [
+      "W2123791568",
+      "W2140241886",
+      31
+    ],
+    [
+      "W2108004093",
+      "W2123791568",
+      29
+    ],
+    [
+      "W2123791568",
+      "W4253968766",
+      29
+    ],
+    [
+      "W2129900561",
+      "W2141233322",
+      29
+    ],
+    [
+      "W2108004093",
+      "W4253968766",
+      28
+    ],
+    [
+      "W2123791568",
+      "W2129270050",
+      28
+    ],
+    [
+      "W2119659537",
+      "W2129900561",
+      25
+    ],
+    [
+      "W2123791568",
+      "W2141233322",
+      24
+    ],
+    [
+      "W2129064092",
+      "W2129900561",
+      24
+    ],
+    [
+      "W2055892307",
+      "W2123791568",
+      23
+    ],
+    [
+      "W2068477427",
+      "W2129900561",
+      23
+    ],
+    [
+      "W2123791568",
+      "W2129064092",
+      23
+    ],
+    [
+      "W2141233322",
+      "W2142827688",
+      23
+    ],
+    [
+      "W2119659537",
+      "W2123791568",
+      22
+    ],
+    [
+      "W2129270050",
+      "W2129900561",
+      22
+    ],
+    [
+      "W2140241886",
+      "W2141233322",
+      22
+    ],
+    [
+      "W2068477427",
+      "W2123791568",
+      20
+    ],
+    [
+      "W2129064092",
+      "W2142827688",
+      20
+    ],
+    [
+      "W2129900561",
+      "W4253968766",
+      20
+    ],
+    [
+      "W2141233322",
+      "W2168401869",
+      20
+    ],
+    [
+      "W2055892307",
+      "W2129900561",
+      19
+    ],
+    [
+      "W2108004093",
+      "W2129900561",
+      19
+    ],
+    [
+      "W1492615455",
+      "W2055892307",
+      18
+    ],
+    [
+      "W1500891748",
+      "W2129900561",
+      18
+    ],
+    [
+      "W2055892307",
+      "W2108004093",
+      18
+    ],
+    [
+      "W2129064092",
+      "W2140241886",
+      18
+    ],
+    [
+      "W2129064092",
+      "W2168401869",
+      18
+    ],
+    [
+      "W2119659537",
+      "W2142827688",
+      17
+    ],
+    [
+      "W2129900561",
+      "W2158303226",
+      17
+    ],
+    [
+      "W2129900561",
+      "W2168568233",
+      17
+    ],
+    [
+      "W2055892307",
+      "W4253968766",
+      16
+    ],
+    [
+      "W2109128719",
+      "W2123791568",
+      16
+    ],
+    [
+      "W2129270050",
+      "W2142827688",
+      16
+    ],
+    [
+      "W1492615455",
+      "W1614387558",
+      15
+    ],
+    [
+      "W1736767019",
+      "W2123791568",
+      15
+    ],
+    [
+      "W2074527410",
+      "W2129900561",
+      15
+    ],
+    [
+      "W2109128719",
+      "W4246964539",
+      15
+    ],
+    [
+      "W1581387623",
+      "W2123791568",
+      14
+    ],
+    [
+      "W1736767019",
+      "W2101856356",
+      14
+    ],
+    [
+      "W2068477427",
+      "W2142827688",
+      14
+    ],
+    [
+      "W2074527410",
+      "W2101856356",
+      14
+    ],
+    [
+      "W2074527410",
+      "W2123791568",
+      14
+    ],
+    [
+      "W2074527410",
+      "W2142827688",
+      14
+    ],
+    [
+      "W2123791568",
+      "W4246964539",
+      14
+    ],
+    [
+      "W2129270050",
+      "W2168401869",
+      14
+    ],
+    [
+      "W2142827688",
+      "W2168568233",
+      14
+    ],
+    [
+      "W1492615455",
+      "W2108004093",
+      13
+    ],
+    [
+      "W1736767019",
+      "W2129900561",
+      13
+    ],
+    [
+      "W1986936900",
+      "W2074527410",
+      13
+    ],
+    [
+      "W2068477427",
+      "W2129064092",
+      13
+    ],
+    [
+      "W2123791568",
+      "W2158303226",
+      13
+    ],
+    [
+      "W2123791568",
+      "W2168568233",
+      13
+    ],
+    [
+      "W2142827688",
+      "W2158303226",
+      13
+    ],
+    [
+      "W1500891748",
+      "W2168568233",
+      12
+    ],
+    [
+      "W2055892307",
+      "W2090004916",
+      12
+    ],
+    [
+      "W2068477427",
+      "W2140241886",
+      12
+    ],
+    [
+      "W2068477427",
+      "W2168401869",
+      12
+    ],
+    [
+      "W2074527410",
+      "W2168401869",
+      12
+    ],
+    [
+      "W2101856356",
+      "W2123791568",
+      12
+    ],
+    [
+      "W2108004093",
+      "W2129270050",
+      12
+    ],
+    [
+      "W2109128719",
+      "W2129900561",
+      12
+    ],
+    [
+      "W2119659537",
+      "W2168401869",
+      12
+    ],
+    [
+      "W2129270050",
+      "W4253968766",
+      12
+    ],
+    [
+      "W2140241886",
+      "W4253968766",
+      12
+    ],
+    [
+      "W1492615455",
+      "W2101856356",
+      11
+    ],
+    [
+      "W1492615455",
+      "W2123791568",
+      11
+    ],
+    [
+      "W1500891748",
+      "W2142827688",
+      11
+    ],
+    [
+      "W1500891748",
+      "W2158303226",
+      11
+    ],
+    [
+      "W1581387623",
+      "W2129900561",
+      11
+    ],
+    [
+      "W1614387558",
+      "W2108004093",
+      11
+    ],
+    [
+      "W1813376734",
+      "W2123791568",
+      11
+    ],
+    [
+      "W1986936900",
+      "W4298185589",
+      11
+    ],
+    [
+      "W2008412677",
+      "W2055892307",
+      11
+    ],
+    [
+      "W2101856356",
+      "W2129900561",
+      11
+    ],
+    [
+      "W2107544549",
+      "W2129900561",
+      11
+    ],
+    [
+      "W2123791568",
+      "W2164558494",
+      11
+    ],
+    [
+      "W2123791568",
+      "W2167030552",
+      11
+    ],
+    [
+      "W2158303226",
+      "W2168568233",
+      11
+    ],
+    [
+      "W1500891748",
+      "W2123791568",
+      10
+    ],
+    [
+      "W1591422284",
+      "W2123791568",
+      10
+    ],
+    [
+      "W1591422284",
+      "W2129900561",
+      10
+    ],
+    [
+      "W1614387558",
+      "W2055892307",
+      10
+    ],
+    [
+      "W1813376734",
+      "W1966494669",
+      10
+    ],
+    [
+      "W1813376734",
+      "W2129900561",
+      10
+    ],
+    [
+      "W1966494669",
+      "W2123791568",
+      10
+    ],
+    [
+      "W1966494669",
+      "W2129900561",
+      10
+    ],
+    [
+      "W2068477427",
+      "W2109128719",
+      10
+    ],
+    [
+      "W2076763018",
+      "W2123791568",
+      10
+    ],
+    [
+      "W2108004093",
+      "W2109128719",
+      10
+    ],
+    [
+      "W2119659537",
+      "W2140241886",
+      10
+    ],
+    [
+      "W2129900561",
+      "W2167030552",
+      10
+    ],
+    [
+      "W2129900561",
+      "W4246964539",
+      10
+    ],
+    [
+      "W2140241886",
+      "W2168568233",
+      10
+    ],
+    [
+      "W1560460460",
+      "W2074527410",
+      9
+    ],
+    [
+      "W1813376734",
+      "W2074527410",
+      9
+    ],
+    [
+      "W1813376734",
+      "W2168401869",
+      9
+    ],
+    [
+      "W1813376734",
+      "W4298185589",
+      9
+    ],
+    [
+      "W2008412677",
+      "W2090004916",
+      9
+    ],
+    [
+      "W2048517502",
+      "W2053444187",
+      9
+    ],
+    [
+      "W2055892307",
+      "W2101856356",
+      9
+    ],
+    [
+      "W2055892307",
+      "W2164558494",
+      9
+    ],
+    [
+      "W2068477427",
+      "W4246964539",
+      9
+    ],
+    [
+      "W2074527410",
+      "W4298185589",
+      9
+    ],
+    [
+      "W2107544549",
+      "W2123791568",
+      9
+    ],
+    [
+      "W2108004093",
+      "W2164558494",
+      9
+    ],
+    [
+      "W2109128719",
+      "W2129270050",
+      9
+    ],
+    [
+      "W2119659537",
+      "W2158303226",
+      9
+    ],
+    [
+      "W2129270050",
+      "W4246964539",
+      9
+    ],
+    [
+      "W2129900561",
+      "W2164558494",
+      9
+    ],
+    [
+      "W1492615455",
+      "W2008412677",
+      8
+    ],
+    [
+      "W1492615455",
+      "W2090004916",
+      8
+    ],
+    [
+      "W1500891748",
+      "W1581387623",
+      8
+    ],
+    [
+      "W1560460460",
+      "W2101856356",
+      8
+    ],
+    [
+      "W1581387623",
+      "W2076763018",
+      8
+    ],
+    [
+      "W1614387558",
+      "W2101856356",
+      8
+    ],
+    [
+      "W171450771",
+      "W2055892307",
+      8
+    ],
+    [
+      "W1736767019",
+      "W2055892307",
+      8
+    ],
+    [
+      "W1736767019",
+      "W2142827688",
+      8
+    ],
+    [
+      "W1736767019",
+      "W2168401869",
+      8
+    ],
+    [
+      "W1813376734",
+      "W1986936900",
+      8
+    ],
+    [
+      "W2008412677",
+      "W2123791568",
+      8
+    ],
+    [
+      "W2048517502",
+      "W2129900561",
+      8
+    ],
+    [
+      "W2055892307",
+      "W2167030552",
+      8
+    ],
+    [
+      "W2074527410",
+      "W2107639039",
+      8
+    ],
+    [
+      "W2101856356",
+      "W3143515237",
+      8
+    ],
+    [
+      "W2108004093",
+      "W2167030552",
+      8
+    ],
+    [
+      "W2108004093",
+      "W4246964539",
+      8
+    ],
+    [
+      "W2123791568",
+      "W2130142026",
+      8
+    ],
+    [
+      "W2129900561",
+      "W2130142026",
+      8
+    ],
+    [
+      "W113059328",
+      "W2074527410",
+      7
+    ],
+    [
+      "W113059328",
+      "W2101856356",
+      7
+    ],
+    [
+      "W1581387623",
+      "W2109128719",
+      7
+    ],
+    [
+      "W1591422284",
+      "W2108004093",
+      7
+    ],
+    [
+      "W1614387558",
+      "W2123791568",
+      7
+    ],
+    [
+      "W1614387558",
+      "W4253968766",
+      7
+    ],
+    [
+      "W171450771",
+      "W2008412677",
+      7
+    ],
+    [
+      "W183173049",
+      "W2074527410",
+      7
+    ],
+    [
+      "W1966494669",
+      "W2142827688",
+      7
+    ],
+    [
+      "W1966494669",
+      "W2168401869",
+      7
+    ],
+    [
+      "W1966494669",
+      "W4298185589",
+      7
+    ],
+    [
+      "W1966891409",
+      "W2101856356",
+      7
+    ],
+    [
+      "W1966891409",
+      "W2485145549",
+      7
+    ],
+    [
+      "W1974480006",
+      "W2129900561",
+      7
+    ],
+    [
+      "W1991911963",
+      "W2129900561",
+      7
+    ],
+    [
+      "W2055892307",
+      "W3143515237",
+      7
+    ],
+    [
+      "W2069613430",
+      "W595569460",
+      7
+    ],
+    [
+      "W2074527410",
+      "W595569460",
+      7
+    ],
+    [
+      "W2089012547",
+      "W2129900561",
+      7
+    ],
+    [
+      "W2101856356",
+      "W2164558494",
+      7
+    ],
+    [
+      "W2101856356",
+      "W2485145549",
+      7
+    ],
+    [
+      "W2108004093",
+      "W3143515237",
+      7
+    ],
+    [
+      "W2123791568",
+      "W4298185589",
+      7
+    ],
+    [
+      "W2129900561",
+      "W4298185589",
+      7
+    ],
+    [
+      "W2164558494",
+      "W2167030552",
+      7
+    ],
+    [
+      "W1492615455",
+      "W2167030552",
+      6
+    ],
+    [
+      "W1492615455",
+      "W3143515237",
+      6
+    ],
+    [
+      "W1500891748",
+      "W1974480006",
+      6
+    ],
+    [
+      "W1500891748",
+      "W2048517502",
+      6
+    ],
+    [
+      "W1560460460",
+      "W2069613430",
+      6
+    ],
+    [
+      "W1560460460",
+      "W595569460",
+      6
+    ],
+    [
+      "W1591422284",
+      "W2119659537",
+      6
+    ],
+    [
+      "W1591422284",
+      "W2142827688",
+      6
+    ],
+    [
+      "W1591422284",
+      "W2168401869",
+      6
+    ],
+    [
+      "W171450771",
+      "W2068477427",
+      6
+    ],
+    [
+      "W1966494669",
+      "W1986936900",
+      6
+    ],
+    [
+      "W1966494669",
+      "W3121819056",
+      6
+    ],
+    [
+      "W1966891409",
+      "W2074527410",
+      6
+    ],
+    [
+      "W1974480006",
+      "W2068477427",
+      6
+    ],
+    [
+      "W1974480006",
+      "W2123791568",
+      6
+    ],
+    [
+      "W1974480006",
+      "W2142827688",
+      6
+    ],
+    [
+      "W1986936900",
+      "W2055892307",
+      6
+    ],
+    [
+      "W1986936900",
+      "W2123791568",
+      6
+    ],
+    [
+      "W2008412677",
+      "W2129900561",
+      6
+    ],
+    [
+      "W2055892307",
+      "W2485145549",
+      6
+    ],
+    [
+      "W2074527410",
+      "W2090004916",
+      6
+    ],
+    [
+      "W2074527410",
+      "W3143515237",
+      6
+    ],
+    [
+      "W2076763018",
+      "W2109128719",
+      6
+    ],
+    [
+      "W2107544549",
+      "W2119659537",
+      6
+    ],
+    [
+      "W2107544549",
+      "W2129270050",
+      6
+    ],
+    [
+      "W2107544549",
+      "W2142827688",
+      6
+    ],
+    [
+      "W113059328",
+      "W2485145549",
+      5
+    ],
+    [
+      "W138047100",
+      "W1560460460",
+      5
+    ],
+    [
+      "W138047100",
+      "W595569460",
+      5
+    ],
+    [
+      "W138047100",
+      "W655492449",
+      5
+    ],
+    [
+      "W1492615455",
+      "W2485145549",
+      5
+    ],
+    [
+      "W1500891748",
+      "W1991911963",
+      5
+    ],
+    [
+      "W1500891748",
+      "W2075270873",
+      5
+    ],
+    [
+      "W1560460460",
+      "W1966891409",
+      5
+    ],
+    [
+      "W1560460460",
+      "W2485145549",
+      5
+    ],
+    [
+      "W171450771",
+      "W2090004916",
+      5
+    ],
+    [
+      "W183173049",
+      "W2123791568",
+      5
+    ],
+    [
+      "W1966891409",
+      "W2104139158",
+      5
+    ],
+    [
+      "W1974480006",
+      "W2158303226",
+      5
+    ],
+    [
+      "W1991911963",
+      "W2123791568",
+      5
+    ],
+    [
+      "W1991911963",
+      "W2142827688",
+      5
+    ],
+    [
+      "W2048517502",
+      "W2123791568",
+      5
+    ],
+    [
+      "W2048517502",
+      "W2168401869",
+      5
+    ],
+    [
+      "W2068477427",
+      "W2107544549",
+      5
+    ],
+    [
+      "W2069613430",
+      "W2074527410",
+      5
+    ],
+    [
+      "W2069613430",
+      "W2101856356",
+      5
+    ],
+    [
+      "W2074527410",
+      "W2104139158",
+      5
+    ],
+    [
+      "W2074527410",
+      "W655492449",
+      5
+    ],
+    [
+      "W2075270873",
+      "W2129900561",
+      5
+    ],
+    [
+      "W2076763018",
+      "W2108004093",
+      5
+    ],
+    [
+      "W2090004916",
+      "W2123791568",
+      5
+    ],
+    [
+      "W2101856356",
+      "W595569460",
+      5
+    ],
+    [
+      "W2104139158",
+      "W2107639039",
+      5
+    ],
+    [
+      "W2129270050",
+      "W2130142026",
+      5
+    ],
+    [
+      "W2129900561",
+      "W655492449",
+      5
+    ],
+    [
+      "W2138970402",
+      "W595569460",
+      5
+    ],
+    [
+      "W2140241886",
+      "W3121819056",
+      5
+    ],
+    [
+      "W2168401869",
+      "W3121819056",
+      5
+    ],
+    [
+      "W595569460",
+      "W655492449",
+      5
+    ],
+    [
+      "W113059328",
+      "W138047100",
+      4
+    ],
+    [
+      "W113059328",
+      "W1560460460",
+      4
+    ],
+    [
+      "W113059328",
+      "W183173049",
+      4
+    ],
+    [
+      "W138047100",
+      "W2074527410",
+      4
+    ],
+    [
+      "W1492615455",
+      "W171450771",
+      4
+    ],
+    [
+      "W1560460460",
+      "W183173049",
+      4
+    ],
+    [
+      "W1560460460",
+      "W2138970402",
+      4
+    ],
+    [
+      "W1581387623",
+      "W2130142026",
+      4
+    ],
+    [
+      "W171450771",
+      "W2093410327",
+      4
+    ],
+    [
+      "W1736767019",
+      "W2069613430",
+      4
+    ],
+    [
+      "W1736767019",
+      "W2138970402",
+      4
+    ],
+    [
+      "W1736767019",
+      "W655492449",
+      4
+    ],
+    [
+      "W183173049",
+      "W2101856356",
+      4
+    ],
+    [
+      "W183173049",
+      "W2485145549",
+      4
+    ],
+    [
+      "W1966891409",
+      "W2002001815",
+      4
+    ],
+    [
+      "W2002001815",
+      "W2104139158",
+      4
+    ],
+    [
+      "W2053444187",
+      "W2129900561",
+      4
+    ],
+    [
+      "W2053444187",
+      "W2168401869",
+      4
+    ],
+    [
+      "W2055892307",
+      "W2093410327",
+      4
+    ],
+    [
+      "W2068477427",
+      "W2093410327",
+      4
+    ],
+    [
+      "W2074527410",
+      "W2138970402",
+      4
+    ],
+    [
+      "W2075270873",
+      "W2142827688",
+      4
+    ],
+    [
+      "W2075270873",
+      "W2168568233",
+      4
+    ],
+    [
+      "W2089012547",
+      "W2119659537",
+      4
+    ],
+    [
+      "W2089012547",
+      "W2123791568",
+      4
+    ],
+    [
+      "W2093410327",
+      "W2140241886",
+      4
+    ],
+    [
+      "W2101856356",
+      "W2130142026",
+      4
+    ],
+    [
+      "W1500891748",
+      "W2053444187",
+      3
+    ],
+    [
+      "W1560460460",
+      "W2124077410",
+      3
+    ],
+    [
+      "W1581387623",
+      "W1991911963",
+      3
+    ],
+    [
+      "W1736767019",
+      "W2124077410",
+      3
+    ],
+    [
+      "W1966891409",
+      "W2107639039",
+      3
+    ],
+    [
+      "W1974480006",
+      "W2075270873",
+      3
+    ],
+    [
+      "W1991911963",
+      "W2075270873",
+      3
+    ],
+    [
+      "W2002001815",
+      "W2074527410",
+      3
+    ],
+    [
+      "W2002001815",
+      "W2101856356",
+      3
+    ],
+    [
+      "W2101856356",
+      "W2104139158",
+      3
+    ],
+    [
+      "W2104139158",
+      "W2485145549",
+      3
+    ],
+    [
+      "W2107639039",
+      "W2485145549",
+      3
+    ],
+    [
+      "W2123791568",
+      "W2124077410",
+      3
+    ],
+    [
+      "W138047100",
+      "W2124077410",
+      2
+    ],
+    [
+      "W1736767019",
+      "W2002001815",
+      2
+    ],
+    [
+      "W1986936900",
+      "W2107639039",
+      2
+    ],
+    [
+      "W2069613430",
+      "W2124077410",
+      2
+    ]
+  ],
+  "foundational_gaps": [
+    [
+      "W4285719527",
+      87,
+      0.2825,
+      null,
+      null
+    ],
+    [
+      "W3125217621",
+      29,
+      0.0942,
+      null,
+      null
+    ],
+    [
+      "W3121133311",
+      14,
+      0.0455,
+      null,
+      null
+    ],
+    [
+      "W2117401803",
+      11,
+      0.0357,
+      "Intuitive ethics: how innately prepared intuitions generate culturally variable virtues",
+      2004
+    ],
+    [
+      "W3122562872",
+      11,
+      0.0357,
+      null,
+      null
+    ],
+    [
+      "W6771652962",
+      11,
+      0.0357,
+      null,
+      null
+    ],
+    [
+      "W2994846642",
+      10,
+      0.0325,
+      null,
+      null
+    ],
+    [
+      "W638131199",
+      10,
+      0.0325,
+      "The attribution of blame : causality, responsibility, and blameworthiness",
+      1985
+    ],
+    [
+      "W1260019659",
+      9,
+      0.0292,
+      "Moral Development and Behavior: Theory, Research, and Social Issues",
+      1976
+    ],
+    [
+      "W1498113315",
+      9,
+      0.0292,
+      "Handbook of moral development",
+      2006
+    ],
+    [
+      "W2151137320",
+      9,
+      0.0292,
+      "An Integrative Theory of Prefrontal Cortex Function",
+      2001
+    ],
+    [
+      "W3125923573",
+      9,
+      0.0292,
+      null,
+      null
+    ],
+    [
+      "W3127623214",
+      9,
+      0.0292,
+      "Co-Planar Stereotaxic Atlas of the Human Brain",
+      1988
+    ],
+    [
+      "W1494186755",
+      8,
+      0.026,
+      "Handbook of Affective Sciences",
+      2002
+    ],
+    [
+      "W1542722502",
+      8,
+      0.026,
+      "A Handbook of Child Psychology",
+      1932
+    ],
+    [
+      "W185298493",
+      8,
+      0.026,
+      "The Attribution of Blame",
+      1985
+    ],
+    [
+      "W1965514675",
+      8,
+      0.026,
+      "Implicit social cognition: Attitudes, self-esteem, and stereotypes.",
+      1995
+    ],
+    [
+      "W1972947055",
+      8,
+      0.026,
+      "Moral reasoning and the child with psychopathic tendencies",
+      1997
+    ],
+    [
+      "W1973931642",
+      8,
+      0.026,
+      "In Bad Taste: Evidence for the Oral Origins of Moral Disgust",
+      2009
+    ],
+    [
+      "W1980083892",
+      8,
+      0.026,
+      "Measuring individual differences in empathy: Evidence for a multidimensional approach.",
+      1983
+    ],
+    [
+      "W2003894124",
+      8,
+      0.026,
+      "Theory of mind and moral cognition: exploring the connections",
+      2005
+    ],
+    [
+      "W2035162385",
+      8,
+      0.026,
+      "Limbic abnormalities in affective processing by criminal psychopaths as revealed by functional magnetic resonance imaging",
+      2001
+    ],
+    [
+      "W2036646375",
+      8,
+      0.026,
+      "Gender differences in moral orientation: A meta-analysis.",
+      2000
+    ],
+    [
+      "W2052816467",
+      8,
+      0.026,
+      "Preschool children's conceptions of transgressions: Effects of varying moral and conventional domain-related attributes.",
+      1985
+    ],
+    [
+      "W2062095670",
+      8,
+      0.026,
+      "Body, Psyche, and Culture: The Relationship between Disgust and Morality",
+      1997
+    ]
+  ]
+}

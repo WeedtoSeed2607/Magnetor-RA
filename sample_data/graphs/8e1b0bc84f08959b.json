@@ -1,0 +1,2978 @@
+{
+  "query": "tunneling",
+  "generated_at": "2026-08-10T09:53:23.539839+00:00",
+  "n_fetched": 316,
+  "boundary_leakage": 0.8787,
+  "resamples": 1000,
+  "self_citations_removed": [],
+  "nodes": [
+    {
+      "id": "W2014437371",
+      "title": "Theory of Superconductivity",
+      "year": 1957,
+      "doi": "10.1103/physrev.108.1175",
+      "url": "https://doi.org/10.1103/physrev.108.1175",
+      "venue": "Physical Review",
+      "in_degree": 14,
+      "pagerank": 0.039222,
+      "influence": 1.0,
+      "median_rank": 1.0,
+      "lo_rank": 1,
+      "hi_rank": 1,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
+    },
+    {
+      "id": "W2073782888",
+      "title": "Energy Gap in Superconductors Measured by Electron Tunneling",
+      "year": 1960,
+      "doi": "10.1103/physrevlett.5.147",
+      "url": "https://doi.org/10.1103/physrevlett.5.147",
+      "venue": "Physical Review Letters",
+      "in_degree": 14,
+      "pagerank": 0.020517,
+      "influence": 0.9968,
+      "median_rank": 2.0,
+      "lo_rank": 1,
+      "hi_rank": 4,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
+    },
+    {
+      "id": "W4247777445",
+      "title": "Superconductive Tunneling",
+      "year": 1962,
+      "doi": "10.1103/physrevlett.8.316",
+      "url": "https://doi.org/10.1103/physrevlett.8.316",
+      "venue": "Physical Review Letters",
+      "in_degree": 12,
+      "pagerank": 0.017348,
+      "influence": 0.9937,
+      "median_rank": 3.0,
+      "lo_rank": 2,
+      "hi_rank": 10,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
+    },
+    {
+      "id": "W2506768719",
+      "title": "Tunneling Phenomena in Solids",
+      "year": 1969,
+      "doi": "10.1007/978-1-4684-1752-4",
+      "url": "https://doi.org/10.1007/978-1-4684-1752-4",
+      "venue": null,
+      "in_degree": 9,
+      "pagerank": 0.016367,
+      "influence": 0.9905,
+      "median_rank": 4.0,
+      "lo_rank": 2,
+      "hi_rank": 35,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
+    },
+    {
+      "id": "W1985854442",
+      "title": "Tunnelling from a Many-Particle Point of View",
+      "year": 1961,
+      "doi": "10.1103/physrevlett.6.57",
+      "url": "https://doi.org/10.1103/physrevlett.6.57",
+      "venue": "Physical Review Letters",
+      "in_degree": 17,
+      "pagerank": 0.014504,
+      "influence": 0.9873,
+      "median_rank": 5.0,
+      "lo_rank": 2,
+      "hi_rank": 11,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
+    },
+    {
+      "id": "W2001716999",
+      "title": "Tunneling Through Thin Insulating Layers",
+      "year": 1961,
+      "doi": "10.1063/1.1735973",
+      "url": "https://doi.org/10.1063/1.1735973",
+      "venue": "Journal of Applied Physics",
+      "in_degree": 8,
+      "pagerank": 0.013552,
+      "influence": 0.9842,
+      "median_rank": 6.0,
+      "lo_rank": 2,
+      "hi_rank": 22,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "empirical",
+        "normative"
+      ],
+      "facet_evidence": {
+        "empirical": [
+          "experimental",
+          "measured"
+        ],
+        "normative": [
+          "value",
+          "values"
+        ]
+      },
+      "had_abstract": true
+    },
+    {
+      "id": "W1996418689",
+      "title": "Tunneling between ferromagnetic films",
+      "year": 1975,
+      "doi": "10.1016/0375-9601(75)90174-7",
+      "url": "https://doi.org/10.1016/0375-9601(75)90174-7",
+      "venue": "Physics Letters A",
+      "in_degree": 31,
+      "pagerank": 0.012418,
+      "influence": 0.981,
+      "median_rank": 7.0,
+      "lo_rank": 4,
+      "hi_rank": 12,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
+    },
+    {
+      "id": "W2110167104",
+      "title": "Surface Studies by Scanning Tunneling Microscopy",
+      "year": 1982,
+      "doi": "10.1103/physrevlett.49.57",
+      "url": "https://doi.org/10.1103/physrevlett.49.57",
+      "venue": "Physical Review Letters",
+      "in_degree": 19,
+      "pagerank": 0.0123,
+      "influence": 0.9778,
+      "median_rank": 8.0,
+      "lo_rank": 3,
+      "hi_rank": 14,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
+    },
+    {
+      "id": "W2006405770",
+      "title": "A theory of the electrical breakdown of solid dielectrics",
+      "year": 1934,
+      "doi": "10.1098/rspa.1934.0116",
+      "url": "https://doi.org/10.1098/rspa.1934.0116",
+      "venue": "Proceedings of the Royal Society of London Series A Containing Papers of a Mathematical and Physical Character",
+      "in_degree": 6,
+      "pagerank": 0.0123,
+      "influence": 0.9747,
+      "median_rank": 9.0,
+      "lo_rank": 4,
+      "hi_rank": 29,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
+    },
+    {
+      "id": "W2038293483",
+      "title": "Influence of Dissipation on Quantum Tunneling in Macroscopic Systems",
+      "year": 1981,
+      "doi": "10.1103/physrevlett.46.211",
+      "url": "https://doi.org/10.1103/physrevlett.46.211",
+      "venue": "Physical Review Letters",
+      "in_degree": 7,
+      "pagerank": 0.012133,
+      "influence": 0.9715,
+      "median_rank": 10.0,
+      "lo_rank": 5,
+      "hi_rank": 30,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
+    },
+    {
+      "id": "W1983684958",
+      "title": "Tunneling through a controllable vacuum gap",
+      "year": 1982,
+      "doi": "10.1063/1.92999",
+      "url": "https://doi.org/10.1063/1.92999",
+      "venue": "Applied Physics Letters",
+      "in_degree": 12,
+      "pagerank": 0.011133,
+      "influence": 0.9684,
+      "median_rank": 11.0,
+      "lo_rank": 5,
+      "hi_rank": 18,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "empirical"
+      ],
+      "facet_evidence": {
+        "empirical": [
+          "experiment",
+          "experimental",
+          "observation"
+        ]
+      },
+      "had_abstract": true
+    },
+    {
+      "id": "W1964251388",
+      "title": "Spin Polarization of Electrons Tunneling from Films of Fe, Co, Ni, and Gd",
+      "year": 1973,
+      "doi": "10.1103/physrevb.7.318",
+      "url": "https://doi.org/10.1103/physrevb.7.318",
+      "venue": "Physical review. B, Solid state",
+      "in_degree": 11,
+      "pagerank": 0.011101,
+      "influence": 0.9652,
+      "median_rank": 10.0,
+      "lo_rank": 4,
+      "hi_rank": 17,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "empirical"
+      ],
+      "facet_evidence": {
+        "empirical": [
+          "experimental",
+          "measurements",
+          "observed"
+        ]
+      },
+      "had_abstract": true
+    },
+    {
+      "id": "W2080659521",
+      "title": "Generalized Formula for the Electric Tunnel Effect between Similar Electrodes Separated by a Thin Insulating Film",
+      "year": 1963,
+      "doi": "10.1063/1.1702682",
+      "url": "https://doi.org/10.1063/1.1702682",
+      "venue": "Journal of Applied Physics",
+      "in_degree": 22,
+      "pagerank": 0.010736,
+      "influence": 0.962,
+      "median_rank": 11.0,
+      "lo_rank": 5,
+      "hi_rank": 26,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
+    },
+    {
+      "id": "W2050313003",
+      "title": "Spin-Dependent Tunneling into Ferromagnetic Nickel",
+      "year": 1971,
+      "doi": "10.1103/physrevlett.26.192",
+      "url": "https://doi.org/10.1103/physrevlett.26.192",
+      "venue": "Physical Review Letters",
+      "in_degree": 10,
+      "pagerank": 0.010398,
+      "influence": 0.9589,
+      "median_rank": 12.0,
+      "lo_rank": 5,
+      "hi_rank": 26,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
+    },
+    {
+      "id": "W2003287398",
+      "title": "Direct Measurement of the Superconducting Energy Gap",
+      "year": 1960,
+      "doi": "10.1103/physrevlett.5.461",
+      "url": "https://doi.org/10.1103/physrevlett.5.461",
+      "venue": "Physical Review Letters",
+      "in_degree": 6,
+      "pagerank": 0.010068,
+      "influence": 0.9557,
+      "median_rank": 15.0,
+      "lo_rank": 4,
+      "hi_rank": 31,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
+    },
+    {
+      "id": "W2067326868",
+      "title": "7 \u00d7 7 Reconstruction on Si(111) Resolved in Real Space",
+      "year": 1983,
+      "doi": "10.1103/physrevlett.50.120",
+      "url": "https://doi.org/10.1103/physrevlett.50.120",
+      "venue": "Physical Review Letters",
+      "in_degree": 14,
+      "pagerank": 0.009829,
+      "influence": 0.9525,
+      "median_rank": 16.0,
+      "lo_rank": 7,
+      "hi_rank": 29,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "empirical"
+      ],
+      "facet_evidence": {
+        "empirical": [
+          "experiment",
+          "observed"
+        ]
+      },
+      "had_abstract": true
+    },
+    {
+      "id": "W2161606023",
+      "title": "Electron emission in intense electric fields",
+      "year": 1928,
+      "doi": "10.1098/rspa.1928.0091",
+      "url": "https://doi.org/10.1098/rspa.1928.0091",
+      "venue": "Proceedings of the Royal Society of London Series A Containing Papers of a Mathematical and Physical Character",
+      "in_degree": 7,
+      "pagerank": 0.009407,
+      "influence": 0.9494,
+      "median_rank": 17.0,
+      "lo_rank": 10,
+      "hi_rank": 31,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "empirical"
+      ],
+      "facet_evidence": {
+        "empirical": [
+          "experimental",
+          "experiments"
+        ]
+      },
+      "had_abstract": true
+    },
+    {
+      "id": "W2058122340",
+      "title": "Electric Field Effect in Atomically Thin Carbon Films",
+      "year": 2004,
+      "doi": "10.1126/science.1102896",
+      "url": "https://doi.org/10.1126/science.1102896",
+      "venue": "Science",
+      "in_degree": 15,
+      "pagerank": 0.009353,
+      "influence": 0.9462,
+      "median_rank": 17.0,
+      "lo_rank": 5,
+      "hi_rank": 26,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
+    },
+    {
+      "id": "W2026237155",
+      "title": "The Band Theory of Graphite",
+      "year": 1947,
+      "doi": "10.1103/physrev.71.622",
+      "url": "https://doi.org/10.1103/physrev.71.622",
+      "venue": "Physical Review",
+      "in_degree": 7,
+      "pagerank": 0.009165,
+      "influence": 0.943,
+      "median_rank": 18.0,
+      "lo_rank": 11,
+      "hi_rank": 47,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
+    },
+    {
+      "id": "W1492361996",
+      "title": "Two-dimensional ferroelectric films",
+      "year": 1998,
+      "doi": "10.1038/36069",
+      "url": "https://doi.org/10.1038/36069",
+      "venue": "Nature",
+      "in_degree": 7,
+      "pagerank": 0.009136,
+      "influence": 0.9399,
+      "median_rank": 19.0,
+      "lo_rank": 12,
+      "hi_rank": 30,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
+    },
+    {
+      "id": "W3038515387",
+      "title": "Static and dynamic electricity",
+      "year": 1939,
+      "doi": null,
+      "url": "https://openalex.org/W3038515387",
+      "venue": null,
+      "in_degree": 4,
+      "pagerank": 0.009025,
+      "influence": 0.9367,
+      "median_rank": 18.0,
+      "lo_rank": 5,
+      "hi_rank": 49,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
+    },
+    {
+      "id": "W2032971627",
+      "title": "The Topografiner: An Instrument for Measuring Surface Microtopography",
+      "year": 1972,
+      "doi": "10.1063/1.1685846",
+      "url": "https://doi.org/10.1063/1.1685846",
+      "venue": "Review of Scientific Instruments",
+      "in_degree": 6,
+      "pagerank": 0.008621,
+      "influence": 0.9335,
+      "median_rank": 21.0,
+      "lo_rank": 12,
+      "hi_rank": 34,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "empirical"
+      ],
+      "facet_evidence": {
+        "empirical": [
+          "experiments",
+          "measured",
+          "measurement"
+        ]
+      },
+      "had_abstract": true
+    },
+    {
+      "id": "W2093448028",
+      "title": "Tunneling from an Independent-Particle Point of View",
+      "year": 1961,
+      "doi": "10.1103/physrev.123.85",
+      "url": "https://doi.org/10.1103/physrev.123.85",
+      "venue": "Physical Review",
+      "in_degree": 10,
+      "pagerank": 0.008601,
+      "influence": 0.9304,
+      "median_rank": 20.0,
+      "lo_rank": 9,
+      "hi_rank": 31,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "empirical",
+        "formal"
+      ],
+      "facet_evidence": {
+        "empirical": [
+          "experiments",
+          "observed"
+        ],
+        "formal": [
+          "matrix",
+          "probability"
+        ]
+      },
+      "had_abstract": true
+    },
+    {
+      "id": "W2162448899",
+      "title": "The Modern Corporation and Private Property",
+      "year": 1933,
+      "doi": "10.2307/1115736",
+      "url": "https://doi.org/10.2307/1115736",
+      "venue": "Columbia Law Review",
+      "in_degree": 6,
+      "pagerank": 0.00847,
+      "influence": 0.9272,
+      "median_rank": 22.0,
+      "lo_rank": 16,
+      "hi_rank": 35,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
+    },
+    {
+      "id": "W1968666095",
+      "title": "New Phenomenon in Narrow Germanium<mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mml:mi>p</mml:mi><mml:mo>\u2212</mml:mo><mml:mi>n</mml:mi></mml:math>Junctions",
+      "year": 1958,
+      "doi": "10.1103/physrev.109.603",
+      "url": "https://doi.org/10.1103/physrev.109.603",
+      "venue": "Physical Review",
+      "in_degree": 8,
+      "pagerank": 0.008427,
+      "influence": 0.9241,
+      "median_rank": 21.0,
+      "lo_rank": 7,
+      "hi_rank": 35,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
+    },
+    {
+      "id": "W2067175510",
+      "title": "Study of Superconductors by Electron Tunneling",
+      "year": 1961,
+      "doi": "10.1103/physrev.122.1101",
+      "url": "https://doi.org/10.1103/physrev.122.1101",
+      "venue": "Physical Review",
+      "in_degree": 4,
+      "pagerank": 0.008143,
+      "influence": 0.9209,
+      "median_rank": 22.0,
+      "lo_rank": 9,
+      "hi_rank": 39,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
+    },
+    {
+      "id": "W1967393072",
+      "title": "Large Magnetoresistance at Room Temperature in Ferromagnetic Thin Film Tunnel Junctions",
+      "year": 1995,
+      "doi": "10.1103/physrevlett.74.3273",
+      "url": "https://doi.org/10.1103/physrevlett.74.3273",
+      "venue": "Physical Review Letters",
+      "in_degree": 27,
+      "pagerank": 0.008114,
+      "influence": 0.9177,
+      "median_rank": 22.0,
+      "lo_rank": 12,
+      "hi_rank": 28,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
+    },
+    {
+      "id": "W2087982431",
+      "title": "Handbuch der Physik",
+      "year": 1957,
+      "doi": "10.1080/713826071",
+      "url": "https://doi.org/10.1080/713826071",
+      "venue": "Optica Acta International Journal of Optics",
+      "in_degree": 4,
+      "pagerank": 0.007981,
+      "influence": 0.9146,
+      "median_rank": 24.0,
+      "lo_rank": 8,
+      "hi_rank": 53,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
+    },
+    {
+      "id": "W2121772044",
+      "title": "Ultrathin Epitaxial Graphite:\u2009 2D Electron Gas Properties and a Route toward Graphene-based Nanoelectronics",
+      "year": 2004,
+      "doi": "10.1021/jp040650f",
+      "url": "https://doi.org/10.1021/jp040650f",
+      "venue": "The Journal of Physical Chemistry B",
+      "in_degree": 8,
+      "pagerank": 0.007228,
+      "influence": 0.9114,
+      "median_rank": 27.0,
+      "lo_rank": 7,
+      "hi_rank": 39,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "empirical"
+      ],
+      "facet_evidence": {
+        "empirical": [
+          "observed",
+          "sample",
+          "samples"
+        ]
+      },
+      "had_abstract": true
+    },
+    {
+      "id": "W2059005668",
+      "title": "Exchange Model of Zero-Bias Tunneling Anomalies",
+      "year": 1967,
+      "doi": "10.1103/physrev.154.633",
+      "url": "https://doi.org/10.1103/physrev.154.633",
+      "venue": "Physical Review",
+      "in_degree": 6,
+      "pagerank": 0.006888,
+      "influence": 0.9082,
+      "median_rank": 27.0,
+      "lo_rank": 13,
+      "hi_rank": 61,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
+    },
+    {
+      "id": "W1997410092",
+      "title": "On the Electrical Resistance of Contacts between Solid Conductors",
+      "year": 1930,
+      "doi": "10.1103/physrev.36.1604",
+      "url": "https://doi.org/10.1103/physrev.36.1604",
+      "venue": "Physical Review",
+      "in_degree": 5,
+      "pagerank": 0.006837,
+      "influence": 0.9051,
+      "median_rank": 28.0,
+      "lo_rank": 15,
+      "hi_rank": 49,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
+    },
+    {
+      "id": "W1997219567",
+      "title": "Zener tunneling in semiconductors",
+      "year": 1960,
+      "doi": "10.1016/0022-3697(60)90035-4",
+      "url": "https://doi.org/10.1016/0022-3697(60)90035-4",
+      "venue": "Journal of Physics and Chemistry of Solids",
+      "in_degree": 6,
+      "pagerank": 0.006758,
+      "influence": 0.9019,
+      "median_rank": 29.0,
+      "lo_rank": 19,
+      "hi_rank": 54,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
+    },
+    {
+      "id": "W2003536820",
+      "title": "Magnetic Field Splitting of the Quasiparticle States in Superconducting Aluminum Films",
+      "year": 1970,
+      "doi": "10.1103/physrevlett.25.1270",
+      "url": "https://doi.org/10.1103/physrevlett.25.1270",
+      "venue": "Physical Review Letters",
+      "in_degree": 7,
+      "pagerank": 0.006735,
+      "influence": 0.8987,
+      "median_rank": 28.0,
+      "lo_rank": 15,
+      "hi_rank": 49,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "empirical"
+      ],
+      "facet_evidence": {
+        "empirical": [
+          "experiment",
+          "observed"
+        ]
+      },
+      "had_abstract": true
+    },
+    {
+      "id": "W2072790036",
+      "title": "Conductance and exchange coupling of two ferromagnets separated by a tunneling barrier",
+      "year": 1989,
+      "doi": "10.1103/physrevb.39.6995",
+      "url": "https://doi.org/10.1103/physrevb.39.6995",
+      "venue": "Physical review. B, Condensed matter",
+      "in_degree": 14,
+      "pagerank": 0.00631,
+      "influence": 0.8956,
+      "median_rank": 30.0,
+      "lo_rank": 19,
+      "hi_rank": 39,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
+    },
+    {
+      "id": "W2148016544",
+      "title": "Resistance Minimum in Dilute Magnetic Alloys",
+      "year": 1964,
+      "doi": "10.1143/ptp.32.37",
+      "url": "https://doi.org/10.1143/ptp.32.37",
+      "venue": "Progress of Theoretical Physics",
+      "in_degree": 5,
+      "pagerank": 0.006215,
+      "influence": 0.8924,
+      "median_rank": 31.0,
+      "lo_rank": 13,
+      "hi_rank": 73,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "empirical"
+      ],
+      "facet_evidence": {
+        "empirical": [
+          "experiments",
+          "observed"
+        ]
+      },
+      "had_abstract": true
+    },
+    {
+      "id": "W2009902266",
+      "title": "Quantum tunnelling in a dissipative system",
+      "year": 1983,
+      "doi": "10.1016/0003-4916(83)90202-6",
+      "url": "https://doi.org/10.1016/0003-4916(83)90202-6",
+      "venue": "Annals of Physics",
+      "in_degree": 5,
+      "pagerank": 0.00611,
+      "influence": 0.8892,
+      "median_rank": 32.0,
+      "lo_rank": 25,
+      "hi_rank": 63,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
+    },
+    {
+      "id": "W2035743770",
+      "title": "Condensed-Matter Simulation of a Three-Dimensional Anomaly",
+      "year": 1984,
+      "doi": "10.1103/physrevlett.53.2449",
+      "url": "https://doi.org/10.1103/physrevlett.53.2449",
+      "venue": "Physical Review Letters",
+      "in_degree": 7,
+      "pagerank": 0.005566,
+      "influence": 0.8861,
+      "median_rank": 35.0,
+      "lo_rank": 26,
+      "hi_rank": 78,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
+    },
+    {
+      "id": "W2125284466",
+      "title": "Two-dimensional gas of massless Dirac fermions in graphene",
+      "year": 2005,
+      "doi": "10.1038/nature04233",
+      "url": "https://doi.org/10.1038/nature04233",
+      "venue": "Nature",
+      "in_degree": 15,
+      "pagerank": 0.005538,
+      "influence": 0.8829,
+      "median_rank": 35.0,
+      "lo_rank": 24,
+      "hi_rank": 46,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
+    },
+    {
+      "id": "W2118492507",
+      "title": "Experimental observation of the quantum Hall effect and Berry's phase in graphene",
+      "year": 2005,
+      "doi": "10.1038/nature04235",
+      "url": "https://doi.org/10.1038/nature04235",
+      "venue": "Nature",
+      "in_degree": 14,
+      "pagerank": 0.005384,
+      "influence": 0.8797,
+      "median_rank": 37.0,
+      "lo_rank": 24,
+      "hi_rank": 49,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "empirical"
+      ],
+      "facet_evidence": {
+        "empirical": [
+          "experimental",
+          "observation"
+        ]
+      },
+      "had_abstract": false
+    },
+    {
+      "id": "W2134233006",
+      "title": "Two-dimensional atomic crystals",
+      "year": 2005,
+      "doi": "10.1073/pnas.0502848102",
+      "url": "https://doi.org/10.1073/pnas.0502848102",
+      "venue": "Proceedings of the National Academy of Sciences",
+      "in_degree": 12,
+      "pagerank": 0.005254,
+      "influence": 0.8766,
+      "median_rank": 37.0,
+      "lo_rank": 25,
+      "hi_rank": 57,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
+    },
+    {
+      "id": "W2005489991",
+      "title": "<i>Tunneling in Solids</i>",
+      "year": 1973,
+      "doi": "10.1063/1.3128102",
+      "url": "https://doi.org/10.1063/1.3128102",
+      "venue": "Physics Today",
+      "in_degree": 6,
+      "pagerank": 0.005253,
+      "influence": 0.8734,
+      "median_rank": 38.0,
+      "lo_rank": 28,
+      "hi_rank": 123,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
+    },
+    {
+      "id": "W2064193542",
+      "title": "Ferroelectricity in thin perovskite films",
+      "year": 1999,
+      "doi": "10.1063/1.124536",
+      "url": "https://doi.org/10.1063/1.124536",
+      "venue": "Applied Physics Letters",
+      "in_degree": 7,
+      "pagerank": 0.005246,
+      "influence": 0.8703,
+      "median_rank": 38.0,
+      "lo_rank": 20,
+      "hi_rank": 53,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
+    },
+    {
+      "id": "W1987136431",
+      "title": "Electron tunneling between ferromagnetic films",
+      "year": 1982,
+      "doi": "10.1109/tmag.1982.1061834",
+      "url": "https://doi.org/10.1109/tmag.1982.1061834",
+      "venue": "IEEE Transactions on Magnetics",
+      "in_degree": 11,
+      "pagerank": 0.005245,
+      "influence": 0.8671,
+      "median_rank": 37.0,
+      "lo_rank": 26,
+      "hi_rank": 52,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
+    },
+    {
+      "id": "W2060798601",
+      "title": "Giant magnetic tunneling effect in Fe/Al2O3/Fe junction",
+      "year": 1995,
+      "doi": "10.1016/0304-8853(95)90001-2",
+      "url": "https://doi.org/10.1016/0304-8853(95)90001-2",
+      "venue": "Journal of Magnetism and Magnetic Materials",
+      "in_degree": 17,
+      "pagerank": 0.005017,
+      "influence": 0.8639,
+      "median_rank": 39.0,
+      "lo_rank": 28,
+      "hi_rank": 53,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
+    },
+    {
+      "id": "W2040306273",
+      "title": "Theory of the scanning tunneling microscope",
+      "year": 1985,
+      "doi": "10.1103/physrevb.31.805",
+      "url": "https://doi.org/10.1103/physrevb.31.805",
+      "venue": "Physical review. B, Condensed matter",
+      "in_degree": 10,
+      "pagerank": 0.004914,
+      "influence": 0.8608,
+      "median_rank": 41.0,
+      "lo_rank": 30,
+      "hi_rank": 61,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "empirical"
+      ],
+      "facet_evidence": {
+        "empirical": [
+          "experiment",
+          "experimental",
+          "measurements"
+        ]
+      },
+      "had_abstract": true
+    },
+    {
+      "id": "W2012550359",
+      "title": "Note on the Transmission and Reflection of Wave Packets by Potential Barriers",
+      "year": 1932,
+      "doi": "10.1103/physrev.40.621",
+      "url": "https://doi.org/10.1103/physrev.40.621",
+      "venue": "Physical Review",
+      "in_degree": 6,
+      "pagerank": 0.004831,
+      "influence": 0.8576,
+      "median_rank": 41.0,
+      "lo_rank": 32,
+      "hi_rank": 84,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
+    },
+    {
+      "id": "W2084705579",
+      "title": "Macroscopic Quantum Systems and the Quantum Theory of Measurement",
+      "year": 1980,
+      "doi": "10.1143/ptps.69.80",
+      "url": "https://doi.org/10.1143/ptps.69.80",
+      "venue": "Progress of Theoretical Physics Supplement",
+      "in_degree": 5,
+      "pagerank": 0.004704,
+      "influence": 0.8544,
+      "median_rank": 44.0,
+      "lo_rank": 26,
+      "hi_rank": 83,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
+    },
+    {
+      "id": "W2566706182",
+      "title": "Possible new effects in superconductive tunnelling",
+      "year": 1962,
+      "doi": "10.1016/0031-9163(62)91369-0",
+      "url": "https://doi.org/10.1016/0031-9163(62)91369-0",
+      "venue": "Physics Letters",
+      "in_degree": 8,
+      "pagerank": 0.0047,
+      "influence": 0.8513,
+      "median_rank": 44.0,
+      "lo_rank": 33,
+      "hi_rank": 71,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
+    },
+    {
+      "id": "W2020517872",
+      "title": "Spin-polarized electron tunneling",
+      "year": 1994,
+      "doi": "10.1016/0370-1573(94)90105-8",
+      "url": "https://doi.org/10.1016/0370-1573(94)90105-8",
+      "venue": "Physics Reports",
+      "in_degree": 11,
+      "pagerank": 0.004689,
+      "influence": 0.8481,
+      "median_rank": 43.0,
+      "lo_rank": 30,
+      "hi_rank": 59,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
+    },
+    {
+      "id": "W2024520650",
+      "title": "Theory of Many-Body Effects in Tunneling",
+      "year": 1969,
+      "doi": "10.1103/physrev.186.464",
+      "url": "https://doi.org/10.1103/physrev.186.464",
+      "venue": "Physical Review",
+      "in_degree": 4,
+      "pagerank": 0.00463,
+      "influence": 0.8449,
+      "median_rank": 44.0,
+      "lo_rank": 33,
+      "hi_rank": 121,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
+    },
+    {
+      "id": "W2011035383",
+      "title": "Surface reconstruction on semiconductors",
+      "year": 1976,
+      "doi": "10.1016/0039-6028(76)90372-1",
+      "url": "https://doi.org/10.1016/0039-6028(76)90372-1",
+      "venue": "Surface Science",
+      "in_degree": 4,
+      "pagerank": 0.004598,
+      "influence": 0.8418,
+      "median_rank": 47.0,
+      "lo_rank": 22,
+      "hi_rank": 153,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
+    },
+    {
+      "id": "W2752617332",
+      "title": "Theory of the firm: Managerial behavior, agency costs and ownership structure",
+      "year": 1976,
+      "doi": "10.1016/0304-405x(76)90026-x",
+      "url": "https://doi.org/10.1016/0304-405x(76)90026-x",
+      "venue": "Journal of Financial Economics",
+      "in_degree": 5,
+      "pagerank": 0.004578,
+      "influence": 0.8386,
+      "median_rank": 47.0,
+      "lo_rank": 24,
+      "hi_rank": 72,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
+    },
+    {
+      "id": "W2057786424",
+      "title": "Simple explanation of tunneling spin-polarization of Fe, Co, Ni and its alloys",
+      "year": 1977,
+      "doi": "10.1016/0304-8853(77)90185-8",
+      "url": "https://doi.org/10.1016/0304-8853(77)90185-8",
+      "venue": "Journal of Magnetism and Magnetic Materials",
+      "in_degree": 7,
+      "pagerank": 0.004568,
+      "influence": 0.8354,
+      "median_rank": 46.0,
+      "lo_rank": 27,
+      "hi_rank": 68,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
+    },
+    {
+      "id": "W2002674724",
+      "title": "Traversal Time for Tunneling",
+      "year": 1982,
+      "doi": "10.1103/physrevlett.49.1739",
+      "url": "https://doi.org/10.1103/physrevlett.49.1739",
+      "venue": "Physical Review Letters",
+      "in_degree": 9,
+      "pagerank": 0.004474,
+      "influence": 0.8323,
+      "median_rank": 46.0,
+      "lo_rank": 33,
+      "hi_rank": 65,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
+    },
+    {
+      "id": "W2001761237",
+      "title": "Critical thickness for ferroelectricity in perovskite ultrathin films",
+      "year": 2003,
+      "doi": "10.1038/nature01501",
+      "url": "https://doi.org/10.1038/nature01501",
+      "venue": "Nature",
+      "in_degree": 9,
+      "pagerank": 0.004402,
+      "influence": 0.8291,
+      "median_rank": 48.0,
+      "lo_rank": 34,
+      "hi_rank": 64,
+      "stable": true,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
+    },
+    {
+      "id": "W1991855909",
+      "title": "Diamagnetism of Graphite",
+      "year": 1956,
+      "doi": "10.1103/physrev.104.666",
+      "url": "https://doi.org/10.1103/physrev.104.666",
+      "venue": "Physical Review",
+      "in_degree": 6,
+      "pagerank": 0.004359,
+      "influence": 0.8259,
+      "median_rank": 49.0,
+      "lo_rank": 26,
+      "hi_rank": 148,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "empirical"
+      ],
+      "facet_evidence": {
+        "empirical": [
+          "experiments",
+          "observed"
+        ]
+      },
+      "had_abstract": true
+    },
+    {
+      "id": "W2093169022",
+      "title": "Tunneling, Zero-Bias Anomalies, and Small Superconductors",
+      "year": 1969,
+      "doi": "10.1103/physrev.181.789",
+      "url": "https://doi.org/10.1103/physrev.181.789",
+      "venue": "Physical Review",
+      "in_degree": 7,
+      "pagerank": 0.004242,
+      "influence": 0.8228,
+      "median_rank": 49.0,
+      "lo_rank": 35,
+      "hi_rank": 74,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "empirical"
+      ],
+      "facet_evidence": {
+        "empirical": [
+          "experiment",
+          "measured"
+        ]
+      },
+      "had_abstract": true
+    },
+    {
+      "id": "W2009157175",
+      "title": "Subband spectroscopy by surface channel tunneling",
+      "year": 1978,
+      "doi": "10.1016/0039-6028(78)90489-2",
+      "url": "https://doi.org/10.1016/0039-6028(78)90489-2",
+      "venue": "Surface Science",
+      "in_degree": 7,
+      "pagerank": 0.004174,
+      "influence": 0.8196,
+      "median_rank": 51.0,
+      "lo_rank": 27,
+      "hi_rank": 74,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
+    },
+    {
+      "id": "W3123091495",
+      "title": "Corporate Ownership Around the World",
+      "year": 1999,
+      "doi": "10.1111/0022-1082.00115",
+      "url": "https://doi.org/10.1111/0022-1082.00115",
+      "venue": "The Journal of Finance",
+      "in_degree": 5,
+      "pagerank": 0.003995,
+      "influence": 0.8165,
+      "median_rank": 53.0,
+      "lo_rank": 43,
+      "hi_rank": 101,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
+    },
+    {
+      "id": "W2000080206",
+      "title": "Larmor precession and the traversal time for tunneling",
+      "year": 1983,
+      "doi": "10.1103/physrevb.27.6178",
+      "url": "https://doi.org/10.1103/physrevb.27.6178",
+      "venue": "Physical review. B, Condensed matter",
+      "in_degree": 7,
+      "pagerank": 0.003935,
+      "influence": 0.8133,
+      "median_rank": 52.0,
+      "lo_rank": 36,
+      "hi_rank": 102,
+      "stable": false,
+      "is_retracted": false,
+      "is_review": false,
+      "facets": [
+        "empirical"
+      ],
+      "facet_evidence": {
+        "empirical": [
+          "experiment",
+          "measurement"
+        ]
+      },
+      "had_abstract": true
+    }
+  ],
+  "edges": [
+    [
+      "W2040306273",
+      "W1983684958"
+    ],
+    [
+      "W2040306273",
+      "W1985854442"
+    ],
+    [
+      "W2040306273",
+      "W2067326868"
+    ],
+    [
+      "W2040306273",
+      "W2110167104"
+    ],
+    [
+      "W2110167104",
+      "W1983684958"
+    ],
+    [
+      "W2110167104",
+      "W1997410092"
+    ],
+    [
+      "W2110167104",
+      "W2032971627"
+    ],
+    [
+      "W2110167104",
+      "W2161606023"
+    ],
+    [
+      "W1996418689",
+      "W1964251388"
+    ],
+    [
+      "W1996418689",
+      "W2050313003"
+    ],
+    [
+      "W1996418689",
+      "W2059005668"
+    ],
+    [
+      "W2009902266",
+      "W2038293483"
+    ],
+    [
+      "W2009902266",
+      "W2084705579"
+    ],
+    [
+      "W2566706182",
+      "W4247777445"
+    ],
+    [
+      "W2080659521",
+      "W2001716999"
+    ],
+    [
+      "W2080659521",
+      "W3038515387"
+    ],
+    [
+      "W1967393072",
+      "W1964251388"
+    ],
+    [
+      "W1967393072",
+      "W1987136431"
+    ],
+    [
+      "W1967393072",
+      "W1996418689"
+    ],
+    [
+      "W1967393072",
+      "W2020517872"
+    ],
+    [
+      "W1967393072",
+      "W2059005668"
+    ],
+    [
+      "W1967393072",
+      "W2072790036"
+    ],
+    [
+      "W1967393072",
+      "W2080659521"
+    ],
+    [
+      "W2038293483",
+      "W2506768719"
+    ],
+    [
+      "W1983684958",
+      "W1997410092"
+    ],
+    [
+      "W1983684958",
+      "W2001716999"
+    ],
+    [
+      "W1983684958",
+      "W2032971627"
+    ],
+    [
+      "W1983684958",
+      "W2073782888"
+    ],
+    [
+      "W1983684958",
+      "W2161606023"
+    ],
+    [
+      "W2060798601",
+      "W1964251388"
+    ],
+    [
+      "W2060798601",
+      "W1987136431"
+    ],
+    [
+      "W2060798601",
+      "W1996418689"
+    ],
+    [
+      "W2060798601",
+      "W2072790036"
+    ],
+    [
+      "W2002674724",
+      "W2012550359"
+    ],
+    [
+      "W2002674724",
+      "W2038293483"
+    ],
+    [
+      "W2002674724",
+      "W2084705579"
+    ],
+    [
+      "W2020517872",
+      "W1964251388"
+    ],
+    [
+      "W2020517872",
+      "W1985854442"
+    ],
+    [
+      "W2020517872",
+      "W1987136431"
+    ],
+    [
+      "W2020517872",
+      "W1996418689"
+    ],
+    [
+      "W2020517872",
+      "W2003536820"
+    ],
+    [
+      "W2020517872",
+      "W2005489991"
+    ],
+    [
+      "W2020517872",
+      "W2014437371"
+    ],
+    [
+      "W2020517872",
+      "W2050313003"
+    ],
+    [
+      "W2020517872",
+      "W2057786424"
+    ],
+    [
+      "W2020517872",
+      "W2067175510"
+    ],
+    [
+      "W2020517872",
+      "W2072790036"
+    ],
+    [
+      "W2020517872",
+      "W2073782888"
+    ],
+    [
+      "W2020517872",
+      "W2080659521"
+    ],
+    [
+      "W2020517872",
+      "W2093448028"
+    ],
+    [
+      "W2020517872",
+      "W2110167104"
+    ],
+    [
+      "W2072790036",
+      "W1964251388"
+    ],
+    [
+      "W2072790036",
+      "W1996418689"
+    ],
+    [
+      "W2072790036",
+      "W2000080206"
+    ],
+    [
+      "W2072790036",
+      "W2057786424"
+    ],
+    [
+      "W1985854442",
+      "W2003287398"
+    ],
+    [
+      "W1985854442",
+      "W2014437371"
+    ],
+    [
+      "W1985854442",
+      "W2073782888"
+    ],
+    [
+      "W1997219567",
+      "W1968666095"
+    ],
+    [
+      "W1997219567",
+      "W2006405770"
+    ],
+    [
+      "W2000080206",
+      "W2002674724"
+    ],
+    [
+      "W2093448028",
+      "W1985854442"
+    ],
+    [
+      "W2093448028",
+      "W1997219567"
+    ],
+    [
+      "W2093448028",
+      "W2073782888"
+    ],
+    [
+      "W4247777445",
+      "W1985854442"
+    ],
+    [
+      "W4247777445",
+      "W2001716999"
+    ],
+    [
+      "W4247777445",
+      "W2003287398"
+    ],
+    [
+      "W4247777445",
+      "W2014437371"
+    ],
+    [
+      "W4247777445",
+      "W2067175510"
+    ],
+    [
+      "W4247777445",
+      "W2073782888"
+    ],
+    [
+      "W4247777445",
+      "W2093448028"
+    ],
+    [
+      "W2073782888",
+      "W2014437371"
+    ],
+    [
+      "W2067326868",
+      "W1983684958"
+    ],
+    [
+      "W2067326868",
+      "W2011035383"
+    ],
+    [
+      "W2067326868",
+      "W2110167104"
+    ],
+    [
+      "W1964251388",
+      "W2003536820"
+    ],
+    [
+      "W1964251388",
+      "W2014437371"
+    ],
+    [
+      "W1964251388",
+      "W2050313003"
+    ],
+    [
+      "W1964251388",
+      "W2067175510"
+    ],
+    [
+      "W2050313003",
+      "W2003536820"
+    ],
+    [
+      "W2050313003",
+      "W2014437371"
+    ],
+    [
+      "W2050313003",
+      "W2067175510"
+    ],
+    [
+      "W2050313003",
+      "W2506768719"
+    ],
+    [
+      "W1987136431",
+      "W1964251388"
+    ],
+    [
+      "W1987136431",
+      "W1996418689"
+    ],
+    [
+      "W1987136431",
+      "W2057786424"
+    ],
+    [
+      "W1987136431",
+      "W2093169022"
+    ],
+    [
+      "W2134233006",
+      "W2058122340"
+    ],
+    [
+      "W2134233006",
+      "W2121772044"
+    ],
+    [
+      "W2032971627",
+      "W2080659521"
+    ],
+    [
+      "W2032971627",
+      "W2087982431"
+    ],
+    [
+      "W2125284466",
+      "W2058122340"
+    ],
+    [
+      "W2125284466",
+      "W2121772044"
+    ],
+    [
+      "W2125284466",
+      "W2134233006"
+    ],
+    [
+      "W3123091495",
+      "W2162448899"
+    ],
+    [
+      "W3123091495",
+      "W2752617332"
+    ],
+    [
+      "W2003287398",
+      "W2014437371"
+    ],
+    [
+      "W2003287398",
+      "W2073782888"
+    ],
+    [
+      "W2001761237",
+      "W1492361996"
+    ],
+    [
+      "W2001761237",
+      "W2064193542"
+    ],
+    [
+      "W2118492507",
+      "W2035743770"
+    ],
+    [
+      "W2118492507",
+      "W2058122340"
+    ],
+    [
+      "W2118492507",
+      "W2121772044"
+    ],
+    [
+      "W2059005668",
+      "W2148016544"
+    ],
+    [
+      "W2059005668",
+      "W4247777445"
+    ],
+    [
+      "W2084705579",
+      "W2038293483"
+    ],
+    [
+      "W2009157175",
+      "W4247777445"
+    ],
+    [
+      "W1968666095",
+      "W2006405770"
+    ],
+    [
+      "W2064193542",
+      "W1492361996"
+    ],
+    [
+      "W2003536820",
+      "W1985854442"
+    ],
+    [
+      "W2003536820",
+      "W2014437371"
+    ],
+    [
+      "W2003536820",
+      "W2073782888"
+    ],
+    [
+      "W2003536820",
+      "W4247777445"
+    ],
+    [
+      "W2057786424",
+      "W1964251388"
+    ],
+    [
+      "W2057786424",
+      "W2050313003"
+    ],
+    [
+      "W2057786424",
+      "W2093448028"
+    ],
+    [
+      "W2035743770",
+      "W1991855909"
+    ],
+    [
+      "W2035743770",
+      "W2026237155"
+    ],
+    [
+      "W2093169022",
+      "W2001716999"
+    ],
+    [
+      "W2093169022",
+      "W2014437371"
+    ],
+    [
+      "W2093169022",
+      "W2059005668"
+    ],
+    [
+      "W2752617332",
+      "W2162448899"
+    ],
+    [
+      "W2067175510",
+      "W1985854442"
+    ],
+    [
+      "W2067175510",
+      "W2001716999"
+    ],
+    [
+      "W2067175510",
+      "W2003287398"
+    ],
+    [
+      "W2067175510",
+      "W2014437371"
+    ],
+    [
+      "W2067175510",
+      "W2073782888"
+    ],
+    [
+      "W2024520650",
+      "W1985854442"
+    ],
+    [
+      "W2024520650",
+      "W4247777445"
+    ],
+    [
+      "W1991855909",
+      "W2026237155"
+    ]
+  ],
+  "biblio_coupled": [
+    [
+      "W1964251388",
+      "W2020517872",
+      11
+    ],
+    [
+      "W1967393072",
+      "W2020517872",
+      10
+    ],
+    [
+      "W2118492507",
+      "W2125284466",
+      10
+    ],
+    [
+      "W2003536820",
+      "W2020517872",
+      8
+    ],
+    [
+      "W1967393072",
+      "W2060798601",
+      7
+    ],
+    [
+      "W2752617332",
+      "W3123091495",
+      7
+    ],
+    [
+      "W2020517872",
+      "W2050313003",
+      6
+    ],
+    [
+      "W2020517872",
+      "W4247777445",
+      6
+    ],
+    [
+      "W2000080206",
+      "W2002674724",
+      5
+    ],
+    [
+      "W2020517872",
+      "W2057786424",
+      5
+    ],
+    [
+      "W2020517872",
+      "W2060798601",
+      5
+    ],
+    [
+      "W2067175510",
+      "W4247777445",
+      5
+    ],
+    [
+      "W1964251388",
+      "W2050313003",
+      4
+    ],
+    [
+      "W2001761237",
+      "W2064193542",
+      4
+    ],
+    [
+      "W2002674724",
+      "W2009902266",
+      4
+    ],
+    [
+      "W2009902266",
+      "W2038293483",
+      4
+    ],
+    [
+      "W2020517872",
+      "W2067175510",
+      4
+    ],
+    [
+      "W2118492507",
+      "W2134233006",
+      4
+    ],
+    [
+      "W2125284466",
+      "W2134233006",
+      4
+    ],
+    [
+      "W1968666095",
+      "W1997219567",
+      3
+    ],
+    [
+      "W1983684958",
+      "W2020517872",
+      3
+    ],
+    [
+      "W1983684958",
+      "W2110167104",
+      3
+    ],
+    [
+      "W1985854442",
+      "W2067175510",
+      3
+    ],
+    [
+      "W1985854442",
+      "W4247777445",
+      3
+    ],
+    [
+      "W1987136431",
+      "W2020517872",
+      3
+    ],
+    [
+      "W1987136431",
+      "W2072790036",
+      3
+    ],
+    [
+      "W2000080206",
+      "W2020517872",
+      3
+    ],
+    [
+      "W2003536820",
+      "W2067175510",
+      3
+    ],
+    [
+      "W2003536820",
+      "W4247777445",
+      3
+    ],
+    [
+      "W2020517872",
+      "W2072790036",
+      3
+    ],
+    [
+      "W2020517872",
+      "W2093169022",
+      3
+    ]
+  ],
+  "co_cited": [
+    [
+      "W1967393072",
+      "W1996418689",
+      18
+    ],
+    [
+      "W1967393072",
+      "W2060798601",
+      17
+    ],
+    [
+      "W2118492507",
+      "W2125284466",
+      14
+    ],
+    [
+      "W1996418689",
+      "W2060798601",
+      13
+    ],
+    [
+      "W1996418689",
+      "W2072790036",
+      12
+    ],
+    [
+      "W2067326868",
+      "W2110167104",
+      12
+    ],
+    [
+      "W1983684958",
+      "W2110167104",
+      10
+    ],
+    [
+      "W1987136431",
+      "W1996418689",
+      10
+    ],
+    [
+      "W2058122340",
+      "W2118492507",
+      10
+    ],
+    [
+      "W2058122340",
+      "W2125284466",
+      10
+    ],
+    [
+      "W1987136431",
+      "W2072790036",
+      9
+    ],
+    [
+      "W1996418689",
+      "W2020517872",
+      9
+    ],
+    [
+      "W2014437371",
+      "W2073782888",
+      9
+    ],
+    [
+      "W1967393072",
+      "W2020517872",
+      8
+    ],
+    [
+      "W1967393072",
+      "W2072790036",
+      8
+    ],
+    [
+      "W1996418689",
+      "W2080659521",
+      8
+    ],
+    [
+      "W1964251388",
+      "W1996418689",
+      7
+    ],
+    [
+      "W1983684958",
+      "W2067326868",
+      7
+    ],
+    [
+      "W1985854442",
+      "W2073782888",
+      7
+    ],
+    [
+      "W2020517872",
+      "W2060798601",
+      7
+    ],
+    [
+      "W2058122340",
+      "W2121772044",
+      7
+    ],
+    [
+      "W2058122340",
+      "W2134233006",
+      7
+    ],
+    [
+      "W2060798601",
+      "W2072790036",
+      7
+    ],
+    [
+      "W1967393072",
+      "W2080659521",
+      6
+    ],
+    [
+      "W1985854442",
+      "W2014437371",
+      6
+    ],
+    [
+      "W1985854442",
+      "W4247777445",
+      6
+    ],
+    [
+      "W1996418689",
+      "W2050313003",
+      6
+    ],
+    [
+      "W1996418689",
+      "W2057786424",
+      6
+    ],
+    [
+      "W2001761237",
+      "W2064193542",
+      6
+    ],
+    [
+      "W2003287398",
+      "W2073782888",
+      6
+    ],
+    [
+      "W2020517872",
+      "W2072790036",
+      6
+    ],
+    [
+      "W2035743770",
+      "W2058122340",
+      6
+    ],
+    [
+      "W2072790036",
+      "W2080659521",
+      6
+    ],
+    [
+      "W1964251388",
+      "W2050313003",
+      5
+    ],
+    [
+      "W1964251388",
+      "W2057786424",
+      5
+    ],
+    [
+      "W1985854442",
+      "W2110167104",
+      5
+    ],
+    [
+      "W1987136431",
+      "W2050313003",
+      5
+    ],
+    [
+      "W1987136431",
+      "W2080659521",
+      5
+    ],
+    [
+      "W1991855909",
+      "W2118492507",
+      5
+    ],
+    [
+      "W1991855909",
+      "W2125284466",
+      5
+    ],
+    [
+      "W2000080206",
+      "W2002674724",
+      5
+    ],
+    [
+      "W2003287398",
+      "W2014437371",
+      5
+    ],
+    [
+      "W2003536820",
+      "W2050313003",
+      5
+    ],
+    [
+      "W2014437371",
+      "W4247777445",
+      5
+    ],
+    [
+      "W2035743770",
+      "W2118492507",
+      5
+    ],
+    [
+      "W2035743770",
+      "W2125284466",
+      5
+    ],
+    [
+      "W2080659521",
+      "W2093448028",
+      5
+    ],
+    [
+      "W2118492507",
+      "W2121772044",
+      5
+    ],
+    [
+      "W2118492507",
+      "W2134233006",
+      5
+    ],
+    [
+      "W2121772044",
+      "W2125284466",
+      5
+    ],
+    [
+      "W2125284466",
+      "W2134233006",
+      5
+    ],
+    [
+      "W2162448899",
+      "W2752617332",
+      5
+    ],
+    [
+      "W1492361996",
+      "W2001761237",
+      4
+    ],
+    [
+      "W1492361996",
+      "W2064193542",
+      4
+    ],
+    [
+      "W1964251388",
+      "W1987136431",
+      4
+    ],
+    [
+      "W1964251388",
+      "W2072790036",
+      4
+    ],
+    [
+      "W1967393072",
+      "W2050313003",
+      4
+    ],
+    [
+      "W1968666095",
+      "W2009157175",
+      4
+    ],
+    [
+      "W1985854442",
+      "W2003287398",
+      4
+    ],
+    [
+      "W1985854442",
+      "W2067326868",
+      4
+    ],
+    [
+      "W1985854442",
+      "W2093448028",
+      4
+    ],
+    [
+      "W1987136431",
+      "W2003536820",
+      4
+    ],
+    [
+      "W1991855909",
+      "W2026237155",
+      4
+    ],
+    [
+      "W1991855909",
+      "W2058122340",
+      4
+    ],
+    [
+      "W1991855909",
+      "W2134233006",
+      4
+    ],
+    [
+      "W1996418689",
+      "W2003536820",
+      4
+    ],
+    [
+      "W2001716999",
+      "W2073782888",
+      4
+    ],
+    [
+      "W2003536820",
+      "W2057786424",
+      4
+    ],
+    [
+      "W2003536820",
+      "W2072790036",
+      4
+    ],
+    [
+      "W2011035383",
+      "W2110167104",
+      4
+    ],
+    [
+      "W2014437371",
+      "W2067175510",
+      4
+    ],
+    [
+      "W2026237155",
+      "W2058122340",
+      4
+    ],
+    [
+      "W2026237155",
+      "W2118492507",
+      4
+    ],
+    [
+      "W2026237155",
+      "W2125284466",
+      4
+    ],
+    [
+      "W2038293483",
+      "W2084705579",
+      4
+    ],
+    [
+      "W2057786424",
+      "W2072790036",
+      4
+    ],
+    [
+      "W2073782888",
+      "W4247777445",
+      4
+    ],
+    [
+      "W2121772044",
+      "W2134233006",
+      4
+    ],
+    [
+      "W2566706182",
+      "W4247777445",
+      4
+    ],
+    [
+      "W1967393072",
+      "W2057786424",
+      3
+    ],
+    [
+      "W1983684958",
+      "W1985854442",
+      3
+    ],
+    [
+      "W1985854442",
+      "W2001716999",
+      3
+    ],
+    [
+      "W1985854442",
+      "W2566706182",
+      3
+    ],
+    [
+      "W1996418689",
+      "W2059005668",
+      3
+    ],
+    [
+      "W2001716999",
+      "W2003287398",
+      3
+    ],
+    [
+      "W2001716999",
+      "W2014437371",
+      3
+    ],
+    [
+      "W2001716999",
+      "W2093448028",
+      3
+    ],
+    [
+      "W2002674724",
+      "W2012550359",
+      3
+    ],
+    [
+      "W2003536820",
+      "W2067175510",
+      3
+    ],
+    [
+      "W2005489991",
+      "W2080659521",
+      3
+    ],
+    [
+      "W2011035383",
+      "W2067326868",
+      3
+    ],
+    [
+      "W2014437371",
+      "W2093448028",
+      3
+    ],
+    [
+      "W2020517872",
+      "W2059005668",
+      3
+    ],
+    [
+      "W2032971627",
+      "W2067326868",
+      3
+    ],
+    [
+      "W2032971627",
+      "W2110167104",
+      3
+    ],
+    [
+      "W2040306273",
+      "W2067326868",
+      3
+    ],
+    [
+      "W2059005668",
+      "W2072790036",
+      3
+    ],
+    [
+      "W2059005668",
+      "W2080659521",
+      3
+    ],
+    [
+      "W2073782888",
+      "W2093448028",
+      3
+    ],
+    [
+      "W2162448899",
+      "W3123091495",
+      3
+    ],
+    [
+      "W2752617332",
+      "W3123091495",
+      3
+    ],
+    [
+      "W1492361996",
+      "W1967393072",
+      2
+    ],
+    [
+      "W1492361996",
+      "W1997410092",
+      2
+    ],
+    [
+      "W1964251388",
+      "W2093448028",
+      2
+    ],
+    [
+      "W1968666095",
+      "W2006405770",
+      2
+    ],
+    [
+      "W1983684958",
+      "W2011035383",
+      2
+    ],
+    [
+      "W1985854442",
+      "W2024520650",
+      2
+    ],
+    [
+      "W1985854442",
+      "W2040306273",
+      2
+    ],
+    [
+      "W1985854442",
+      "W2067175510",
+      2
+    ],
+    [
+      "W1996418689",
+      "W2005489991",
+      2
+    ],
+    [
+      "W1996418689",
+      "W2093169022",
+      2
+    ],
+    [
+      "W1997410092",
+      "W2001761237",
+      2
+    ],
+    [
+      "W1997410092",
+      "W2032971627",
+      2
+    ],
+    [
+      "W1997410092",
+      "W2064193542",
+      2
+    ],
+    [
+      "W1997410092",
+      "W2073782888",
+      2
+    ],
+    [
+      "W1997410092",
+      "W2161606023",
+      2
+    ],
+    [
+      "W2000080206",
+      "W2012550359",
+      2
+    ],
+    [
+      "W2001716999",
+      "W2161606023",
+      2
+    ],
+    [
+      "W2001716999",
+      "W3038515387",
+      2
+    ],
+    [
+      "W2003287398",
+      "W2093448028",
+      2
+    ],
+    [
+      "W2003287398",
+      "W4247777445",
+      2
+    ],
+    [
+      "W2005489991",
+      "W2093448028",
+      2
+    ],
+    [
+      "W2005489991",
+      "W2161606023",
+      2
+    ],
+    [
+      "W2005489991",
+      "W2506768719",
+      2
+    ],
+    [
+      "W2006405770",
+      "W2009157175",
+      2
+    ],
+    [
+      "W2012550359",
+      "W2084705579",
+      2
+    ],
+    [
+      "W2014437371",
+      "W2566706182",
+      2
+    ],
+    [
+      "W2032971627",
+      "W2161606023",
+      2
+    ],
+    [
+      "W2050313003",
+      "W2067175510",
+      2
+    ],
+    [
+      "W2067175510",
+      "W2073782888",
+      2
+    ],
+    [
+      "W2067175510",
+      "W2093448028",
+      2
+    ],
+    [
+      "W2073782888",
+      "W2566706182",
+      2
+    ],
+    [
+      "W2080659521",
+      "W2087982431",
+      2
+    ],
+    [
+      "W2080659521",
+      "W2093169022",
+      2
+    ],
+    [
+      "W2080659521",
+      "W2161606023",
+      2
+    ],
+    [
+      "W2080659521",
+      "W2506768719",
+      2
+    ],
+    [
+      "W2080659521",
+      "W3038515387",
+      2
+    ],
+    [
+      "W2093169022",
+      "W4247777445",
+      2
+    ],
+    [
+      "W2093448028",
+      "W2506768719",
+      2
+    ],
+    [
+      "W2148016544",
+      "W4247777445",
+      2
+    ]
+  ],
+  "foundational_gaps": [
+    [
+      "W2052976411",
+      7,
+      0.0222,
+      "Electronic properties of disordered two-dimensional carbon",
+      2006
+    ],
+    [
+      "W4285719527",
+      7,
+      0.0222,
+      null,
+      null
+    ],
+    [
+      "W2070716620",
+      6,
+      0.019,
+      "Intercalation compounds of graphite",
+      2002
+    ],
+    [
+      "W2072393446",
+      6,
+      0.019,
+      "Validity of the Julliere model of spin-dependent tunneling",
+      1997
+    ],
+    [
+      "W2086768702",
+      6,
+      0.019,
+      "Optimum tunnel barrier in ferromagnetic\u2013insulator\u2013ferromagnetic tunneling structures",
+      1997
+    ],
+    [
+      "W2092831789",
+      6,
+      0.019,
+      "Edge state in graphene ribbons: Nanometer size effect and edge shape dependence",
+      1996
+    ],
+    [
+      "W1760544772",
+      5,
+      0.0158,
+      "Quantum Transport of Massless Dirac Fermions",
+      2007
+    ],
+    [
+      "W1982392480",
+      5,
+      0.0158,
+      "Thermionic Emission, Field Emission, and the Transition Region",
+      1956
+    ],
+    [
+      "W1986583880",
+      5,
+      0.0158,
+      "Unconventional quantum Hall effect and Berry\u2019s phase of 2\u03c0 in bilayer graphene",
+      2006
+    ],
+    [
+      "W2031152316",
+      5,
+      0.0158,
+      "Magnetic tunneling applied to memory (invited)",
+      1997
+    ],
+    [
+      "W2031165376",
+      5,
+      0.0158,
+      "Localized states in a<i>d</i>-wave superconductor",
+      1993
+    ],
+    [
+      "W2043773614",
+      5,
+      0.0158,
+      "Quenching of Magnetoresistance by Hot Electrons in Magnetic Tunnel Junctions",
+      1997
+    ],
+    [
+      "W2043865629",
+      5,
+      0.0158,
+      "Layer KKR approach to Bloch-wave transmission and reflection: Application to spin-dependent tunneling",
+      1999
+    ],
+    [
+      "W2054222156",
+      5,
+      0.0158,
+      "Microstructured magnetic tunnel junctions (invited)",
+      1997
+    ],
+    [
+      "W2087980253",
+      5,
+      0.0158,
+      "Strong Suppression of Weak Localization in Graphene",
+      2006
+    ],
+    [
+      "W2101112255",
+      5,
+      0.0158,
+      "Neutrino billiards: time-reversal symmetry-breaking without magnetic fields",
+      1987
+    ],
+    [
+      "W2103480351",
+      5,
+      0.0158,
+      "Coulomb Oscillations and Hall Effect in Quasi-2D Graphite Quantum Dots",
+      2005
+    ],
+    [
+      "W2126874034",
+      5,
+      0.0158,
+      "Electric Field Modulation of Galvanomagnetic Properties of Mesoscopic Graphite",
+      2005
+    ],
+    [
+      "W2137405619",
+      5,
+      0.0158,
+      "Zitterbewegung, chirality, and minimal conductivity in graphene",
+      2006
+    ],
+    [
+      "W2139754676",
+      5,
+      0.0158,
+      "Hall conductivity of a two-dimensional graphite system",
+      2002
+    ],
+    [
+      "W2153101972",
+      5,
+      0.0158,
+      "Phase Analysis of Quantum Oscillations in Graphite",
+      2004
+    ],
+    [
+      "W2155422709",
+      5,
+      0.0158,
+      "Unconventional Integer Quantum Hall Effect in Graphene",
+      2005
+    ],
+    [
+      "W3103394764",
+      5,
+      0.0158,
+      "Atomic Structure of Graphene on SiO2",
+      2007
+    ],
+    [
+      "W4247593491",
+      5,
+      0.0158,
+      "Magnetoelectronics",
+      1998
+    ],
+    [
+      "W1592171891",
+      4,
+      0.0127,
+      "The surface reconstructions of the (100) crystal faces of iridium, platinum and gold",
+      1981
+    ]
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "query": "Defining Morality",
-  "generated_at": "2026-08-06T12:06:39.633920+00:00",
+  "generated_at": "2026-08-08T09:26:48.244942+00:00",
   "n_fetched": 313,
   "boundary_leakage": 0.9196,
   "resamples": 200,
@@ -24,7 +24,18 @@
       "hi_rank": 3,
       "stable": true,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "normative"
+      ],
+      "facet_evidence": {
+        "normative": [
+          "evolutionary",
+          "moral",
+          "rational"
+        ]
+      },
+      "had_abstract": true
     },
     {
       "id": "W2074527410",
@@ -41,7 +52,12 @@
       "hi_rank": 3,
       "stable": true,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
     },
     {
       "id": "W2167030552",
@@ -58,7 +74,12 @@
       "hi_rank": 7,
       "stable": true,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
     },
     {
       "id": "W2090004916",
@@ -75,7 +96,22 @@
       "hi_rank": 8,
       "stable": true,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "conceptual",
+        "empirical"
+      ],
+      "facet_evidence": {
+        "empirical": [
+          "observations",
+          "observed"
+        ],
+        "conceptual": [
+          "concepts",
+          "defining"
+        ]
+      },
+      "had_abstract": true
     },
     {
       "id": "W2055892307",
@@ -92,7 +128,17 @@
       "hi_rank": 7,
       "stable": true,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "normative"
+      ],
+      "facet_evidence": {
+        "normative": [
+          "moral",
+          "rationality"
+        ]
+      },
+      "had_abstract": true
     },
     {
       "id": "W1492615455",
@@ -109,7 +155,17 @@
       "hi_rank": 14,
       "stable": true,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "normative"
+      ],
+      "facet_evidence": {
+        "normative": [
+          "ethical",
+          "moral"
+        ]
+      },
+      "had_abstract": true
     },
     {
       "id": "W4213439731",
@@ -126,7 +182,12 @@
       "hi_rank": 15,
       "stable": true,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
     },
     {
       "id": "W2101856356",
@@ -143,7 +204,12 @@
       "hi_rank": 17,
       "stable": true,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
     },
     {
       "id": "W1736767019",
@@ -160,7 +226,12 @@
       "hi_rank": 41,
       "stable": false,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
     },
     {
       "id": "W4214907476",
@@ -177,7 +248,12 @@
       "hi_rank": 16,
       "stable": true,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
     },
     {
       "id": "W2090157913",
@@ -194,7 +270,12 @@
       "hi_rank": 22,
       "stable": true,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
     },
     {
       "id": "W2129900561",
@@ -211,7 +292,18 @@
       "hi_rank": 15,
       "stable": true,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "empirical"
+      ],
+      "facet_evidence": {
+        "empirical": [
+          "fmri",
+          "imaging",
+          "observed"
+        ]
+      },
+      "had_abstract": true
     },
     {
       "id": "W597155665",
@@ -228,7 +320,12 @@
       "hi_rank": 24,
       "stable": true,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
     },
     {
       "id": "W2062663664",
@@ -245,7 +342,12 @@
       "hi_rank": 23,
       "stable": true,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
     },
     {
       "id": "W2010606127",
@@ -262,7 +364,12 @@
       "hi_rank": 35,
       "stable": true,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
     },
     {
       "id": "W2485145549",
@@ -279,7 +386,17 @@
       "hi_rank": 20,
       "stable": true,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "normative"
+      ],
+      "facet_evidence": {
+        "normative": [
+          "moral",
+          "ought"
+        ]
+      },
+      "had_abstract": false
     },
     {
       "id": "W3143515237",
@@ -296,7 +413,12 @@
       "hi_rank": 28,
       "stable": true,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
     },
     {
       "id": "W2053896811",
@@ -313,7 +435,18 @@
       "hi_rank": 27,
       "stable": true,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "conceptual"
+      ],
+      "facet_evidence": {
+        "conceptual": [
+          "concepts",
+          "conceptual",
+          "distinction"
+        ]
+      },
+      "had_abstract": true
     },
     {
       "id": "W2108004093",
@@ -330,7 +463,17 @@
       "hi_rank": 21,
       "stable": true,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "normative"
+      ],
+      "facet_evidence": {
+        "normative": [
+          "moral",
+          "norms"
+        ]
+      },
+      "had_abstract": true
     },
     {
       "id": "W2008412677",
@@ -347,7 +490,12 @@
       "hi_rank": 28,
       "stable": true,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
     },
     {
       "id": "W2164558494",
@@ -364,7 +512,12 @@
       "hi_rank": 31,
       "stable": true,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
     },
     {
       "id": "W2109128719",
@@ -381,7 +534,12 @@
       "hi_rank": 62,
       "stable": false,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
     },
     {
       "id": "W1978812831",
@@ -398,7 +556,12 @@
       "hi_rank": 46,
       "stable": false,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
     },
     {
       "id": "W1614387558",
@@ -415,7 +578,12 @@
       "hi_rank": 31,
       "stable": true,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
     },
     {
       "id": "W250309640",
@@ -432,7 +600,18 @@
       "hi_rank": 68,
       "stable": false,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "normative"
+      ],
+      "facet_evidence": {
+        "normative": [
+          "ethical",
+          "moral",
+          "values"
+        ]
+      },
+      "had_abstract": true
     },
     {
       "id": "W2097780989",
@@ -449,7 +628,12 @@
       "hi_rank": 33,
       "stable": true,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
     },
     {
       "id": "W4253968766",
@@ -466,7 +650,12 @@
       "hi_rank": 29,
       "stable": true,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
     },
     {
       "id": "W2126474339",
@@ -483,7 +672,12 @@
       "hi_rank": 31,
       "stable": true,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
     },
     {
       "id": "W2039357705",
@@ -500,7 +694,17 @@
       "hi_rank": 76,
       "stable": false,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "empirical"
+      ],
+      "facet_evidence": {
+        "empirical": [
+          "measured",
+          "participants"
+        ]
+      },
+      "had_abstract": true
     },
     {
       "id": "W2167251605",
@@ -517,7 +721,12 @@
       "hi_rank": 32,
       "stable": true,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
     },
     {
       "id": "W183173049",
@@ -534,7 +743,12 @@
       "hi_rank": 51,
       "stable": false,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
     },
     {
       "id": "W4206954593",
@@ -551,7 +765,12 @@
       "hi_rank": 38,
       "stable": true,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
     },
     {
       "id": "W2117401803",
@@ -568,7 +787,12 @@
       "hi_rank": 45,
       "stable": true,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
     },
     {
       "id": "W2084496451",
@@ -585,7 +809,18 @@
       "hi_rank": 44,
       "stable": true,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "empirical"
+      ],
+      "facet_evidence": {
+        "empirical": [
+          "evaluation",
+          "experimental",
+          "subjects"
+        ]
+      },
+      "had_abstract": true
     },
     {
       "id": "W2944865435",
@@ -602,7 +837,12 @@
       "hi_rank": 47,
       "stable": true,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
     },
     {
       "id": "W2119432837",
@@ -619,7 +859,12 @@
       "hi_rank": 38,
       "stable": true,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
     },
     {
       "id": "W1659631989",
@@ -636,7 +881,18 @@
       "hi_rank": 72,
       "stable": false,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "normative"
+      ],
+      "facet_evidence": {
+        "normative": [
+          "adaptive",
+          "evolutionary",
+          "selection"
+        ]
+      },
+      "had_abstract": true
     },
     {
       "id": "W2081626486",
@@ -653,7 +909,12 @@
       "hi_rank": 53,
       "stable": true,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
     },
     {
       "id": "W2085876742",
@@ -670,7 +931,19 @@
       "hi_rank": 80,
       "stable": false,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "empirical"
+      ],
+      "facet_evidence": {
+        "empirical": [
+          "empirical",
+          "experimental",
+          "samples",
+          "subjects"
+        ]
+      },
+      "had_abstract": true
     },
     {
       "id": "W1896027656",
@@ -687,7 +960,12 @@
       "hi_rank": 66,
       "stable": false,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
     },
     {
       "id": "W2068477427",
@@ -704,7 +982,12 @@
       "hi_rank": 60,
       "stable": true,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
     },
     {
       "id": "W2058961302",
@@ -718,10 +1001,15 @@
       "influence": 0.869,
       "median_rank": 41.0,
       "lo_rank": 15,
-      "hi_rank": 268,
+      "hi_rank": 253,
       "stable": false,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
     },
     {
       "id": "W2159841438",
@@ -738,7 +1026,17 @@
       "hi_rank": 78,
       "stable": false,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "empirical"
+      ],
+      "facet_evidence": {
+        "empirical": [
+          "measured",
+          "measurement"
+        ]
+      },
+      "had_abstract": true
     },
     {
       "id": "W2119659537",
@@ -755,7 +1053,12 @@
       "hi_rank": 57,
       "stable": true,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
     },
     {
       "id": "W2129270050",
@@ -772,7 +1075,12 @@
       "hi_rank": 54,
       "stable": true,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
     },
     {
       "id": "W2026567452",
@@ -789,7 +1097,12 @@
       "hi_rank": 73,
       "stable": false,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
     },
     {
       "id": "W2096694261",
@@ -806,7 +1119,12 @@
       "hi_rank": 60,
       "stable": true,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
     },
     {
       "id": "W2142827688",
@@ -823,7 +1141,12 @@
       "hi_rank": 58,
       "stable": true,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
     },
     {
       "id": "W171450771",
@@ -840,7 +1163,12 @@
       "hi_rank": 58,
       "stable": true,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
     },
     {
       "id": "W3169791305",
@@ -857,7 +1185,12 @@
       "hi_rank": 67,
       "stable": false,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
     },
     {
       "id": "W2489929582",
@@ -874,7 +1207,18 @@
       "hi_rank": 71,
       "stable": false,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "normative"
+      ],
+      "facet_evidence": {
+        "normative": [
+          "moral",
+          "rationality",
+          "value"
+        ]
+      },
+      "had_abstract": true
     },
     {
       "id": "W1542722502",
@@ -891,7 +1235,12 @@
       "hi_rank": 69,
       "stable": false,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": false
     },
     {
       "id": "W2098580927",
@@ -908,7 +1257,24 @@
       "hi_rank": 60,
       "stable": true,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "conceptual",
+        "empirical"
+      ],
+      "facet_evidence": {
+        "empirical": [
+          "observations",
+          "observed",
+          "subjects"
+        ],
+        "conceptual": [
+          "concepts",
+          "conceptual",
+          "distinction"
+        ]
+      },
+      "had_abstract": true
     },
     {
       "id": "W2062095670",
@@ -925,7 +1291,17 @@
       "hi_rank": 68,
       "stable": false,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "empirical"
+      ],
+      "facet_evidence": {
+        "empirical": [
+          "observed",
+          "sample"
+        ]
+      },
+      "had_abstract": true
     },
     {
       "id": "W1981958640",
@@ -942,7 +1318,12 @@
       "hi_rank": 67,
       "stable": true,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
     },
     {
       "id": "W4230801243",
@@ -959,7 +1340,17 @@
       "hi_rank": 97,
       "stable": false,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "conceptual"
+      ],
+      "facet_evidence": {
+        "conceptual": [
+          "defining",
+          "philosophical"
+        ]
+      },
+      "had_abstract": true
     },
     {
       "id": "W2132553791",
@@ -976,7 +1367,12 @@
       "hi_rank": 67,
       "stable": true,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "unclassified"
+      ],
+      "facet_evidence": {},
+      "had_abstract": true
     },
     {
       "id": "W2168401869",
@@ -993,7 +1389,17 @@
       "hi_rank": 72,
       "stable": false,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "normative"
+      ],
+      "facet_evidence": {
+        "normative": [
+          "goal",
+          "moral"
+        ]
+      },
+      "had_abstract": true
     },
     {
       "id": "W2129398602",
@@ -1010,7 +1416,17 @@
       "hi_rank": 66,
       "stable": true,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "conceptual"
+      ],
+      "facet_evidence": {
+        "conceptual": [
+          "concepts",
+          "conceptual"
+        ]
+      },
+      "had_abstract": true
     },
     {
       "id": "W2148521474",
@@ -1027,7 +1443,23 @@
       "hi_rank": 75,
       "stable": true,
       "is_retracted": false,
-      "is_review": false
+      "is_review": false,
+      "facets": [
+        "normative",
+        "empirical"
+      ],
+      "facet_evidence": {
+        "empirical": [
+          "experiment",
+          "experiments"
+        ],
+        "normative": [
+          "moral",
+          "normative",
+          "values"
+        ]
+      },
+      "had_abstract": true
     }
   ],
   "edges": [
@@ -3531,6 +3963,183 @@
       "W2039357705",
       "W2126474339",
       2
+    ]
+  ],
+  "foundational_gaps": [
+    [
+      "W4285719527",
+      51,
+      0.1629,
+      null,
+      null
+    ],
+    [
+      "W3125923573",
+      20,
+      0.0639,
+      null,
+      null
+    ],
+    [
+      "W1581387623",
+      10,
+      0.0319,
+      "Descarte's error : emotion, reason, and the human brain",
+      1994
+    ],
+    [
+      "W1591422284",
+      10,
+      0.0319,
+      "A Treatise of Human Nature",
+      1739
+    ],
+    [
+      "W1989985758",
+      10,
+      0.0319,
+      "The effect of stimulus familiarity on the use of criteria and justifications in children's social reasoning",
+      1983
+    ],
+    [
+      "W1488837022",
+      9,
+      0.0288,
+      "The Handbook of Social Psychology",
+      1969
+    ],
+    [
+      "W2130142026",
+      9,
+      0.0288,
+      "The unbearable automaticity of being.",
+      1999
+    ],
+    [
+      "W1975000068",
+      8,
+      0.0256,
+      "Empathy and Moral Development: Implications for Caring and Justice",
+      2001
+    ],
+    [
+      "W2001233357",
+      8,
+      0.0256,
+      "DESCARTES' ERROR: Emotion, Reason, and the Human Brain",
+      1995
+    ],
+    [
+      "W2032636532",
+      8,
+      0.0256,
+      "Toddlers' social interactions in the context of moral and conventional transgressions in the home.",
+      1989
+    ],
+    [
+      "W2134783586",
+      8,
+      0.0256,
+      "The intelligence of the moral intuitions: A comment on Haidt (2001).",
+      2003
+    ],
+    [
+      "W2149893809",
+      8,
+      0.0256,
+      "The case for motivated reasoning.",
+      1990
+    ],
+    [
+      "W6636397358",
+      8,
+      0.0256,
+      null,
+      null
+    ],
+    [
+      "W113059328",
+      7,
+      0.0224,
+      "The social world of the child",
+      1977
+    ],
+    [
+      "W1500891748",
+      7,
+      0.0224,
+      "Impairment of social and moral behavior related to early damage in human prefrontal cortex",
+      1999
+    ],
+    [
+      "W1945038827",
+      7,
+      0.0224,
+      "Education in the Moral Domain",
+      2001
+    ],
+    [
+      "W1974922386",
+      7,
+      0.0224,
+      "Becoming a Family Member: Family Conflict and the Development of Social Understanding in the Second Year",
+      1985
+    ],
+    [
+      "W1977965034",
+      7,
+      0.0224,
+      "Empathic distress in the newborn.",
+      1976
+    ],
+    [
+      "W1978529020",
+      7,
+      0.0224,
+      "Social judgment and social memory: The role of cue diagnosticity in negativity, positivity, and extremity biases.",
+      1987
+    ],
+    [
+      "W1986936900",
+      7,
+      0.0224,
+      "The Psychology of Interpersonal Relations.",
+      1958
+    ],
+    [
+      "W2018165379",
+      7,
+      0.0224,
+      "The Future of Moral Psychology: Truth, Intuition, and the Pluralist Way",
+      1993
+    ],
+    [
+      "W2032900402",
+      7,
+      0.0224,
+      "Act\u2013rule relations: Children's concepts of social rules.",
+      1980
+    ],
+    [
+      "W2040921706",
+      7,
+      0.0224,
+      "Children's Social Interactions in the Context of Moral and Conventional Transgressions",
+      1982
+    ],
+    [
+      "W2063792498",
+      7,
+      0.0224,
+      "The genetical evolution of social behaviour. I",
+      1964
+    ],
+    [
+      "W2078341485",
+      7,
+      0.0224,
+      "Variation in seriousness of transgressions and children's moral and conventional concepts.",
+      1988
     ]
   ]
 }
