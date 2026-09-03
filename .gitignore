@@ -17,6 +17,9 @@ sample_data/_harvest_cache/
 # Background-job records: runtime state, and their logs embed local paths. The
 # hosted app never runs harvests, so it has no use for them either.
 sample_data/harvest_jobs/
+# Coding judgements are personal working notes, attributed to a named coder and
+# carrying free-text remarks. They are the researcher's, not the app's.
+sample_data/coding/
 
 # Answers written by the public naming app. Runtime data about people, and
 # on a hosted deploy it is per-container anyway — it travels by export/import.
