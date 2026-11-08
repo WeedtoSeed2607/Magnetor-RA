@@ -1,0 +1,49 @@
+# Keeps the hosted app from sleeping.
+#
+# Streamlit Community Cloud sleeps any app without traffic for 12 hours. GitHub
+# documents its own scheduler as best-effort - delayed under load, and queued
+# jobs may be dropped outright - so a 12-hour schedule would have no margin at
+# all against a 12-hour deadline. Every 4 hours survives one missed run and
+# still leaves four hours of slack.
+#
+# The minute is deliberately not :00; GitHub names the top of the hour as its
+# high-load window.
+name: keep-awake
+
+on:
+  schedule:
+    - cron: "17 */4 * * *"
+  workflow_dispatch: # so it can be proved by hand without waiting for the clock
+
+concurrency:
+  group: keep-awake
+  cancel-in-progress: false
+
+jobs:
+  visit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Playwright with Chromium
+        run: |
+          pip install --quiet "playwright>=1.49"
+          playwright install --with-deps chromium
+
+      - name: Visit the app and prove it rendered
+        env:
+          APP_URL: https://magnetor-ra-ldljxqct3v7amar5hgtpss.streamlit.app/
+        run: python .github/scripts/keep_awake.py
+
+      - name: Keep the failure screenshot
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: keep-awake-failure
+          path: keep-awake-failure.png
+          if-no-files-found: ignore

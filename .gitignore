@@ -21,6 +21,9 @@ sample_data/harvest_jobs/
 # carrying free-text remarks. They are the researcher's, not the app's.
 sample_data/coding/
 
+# Diagnostic written by the keep-alive job when it cannot reach a live session.
+keep-awake-failure.png
+
 # Answers written by the public naming app. Runtime data about people, and
 # on a hosted deploy it is per-container anyway — it travels by export/import.
 .naming_data/
